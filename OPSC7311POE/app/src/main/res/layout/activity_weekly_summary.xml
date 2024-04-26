@@ -7,14 +7,16 @@
     android:layout_height="match_parent"
     android:background="@drawable/skyblue"
     android:orientation="vertical"
+    android:textAlignment="center"
     tools:context=".WeeklySummary">
 
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="wrap_content"
         android:layout_height="0dp"
-        android:layout_marginTop="214dp"
-        android:layout_marginBottom="464dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginBottom="500dp"
+
         android:scaleType="centerCrop"
         android:src="@drawable/arc_1"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -25,7 +27,7 @@
         app:layout_constraintVertical_bias="1.0" />
 
     <View
-        android:id="@+id/view"
+        android:id="@+id/chooseWeek"
         android:layout_width="wrap_content"
         android:layout_height="0dp"
         android:background="@color/white"
@@ -34,7 +36,122 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/tvSummary"
+        android:layout_width="361dp"
+        android:layout_height="40dp"
+
+        android:layout_marginBottom="550dp"
+        android:background="@drawable/roundstyle"
+        android:backgroundTint="@color/black"
+        android:fontFamily="sans-serif-medium"
+        android:scaleType="center"
+        android:src="@drawable/arc_1"
+        android:text="@string/weeklyS"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/tvChooseAWeek"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/chooseW"
+        tools:ignore="MissingConstraints"
+        android:textSize="18sp"
+        tools:layout_editor_absoluteX="27dp"
+        tools:layout_editor_absoluteY="307dp" />
+
+    <TextView
+        android:id="@+id/tvGraph"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/choosG"
+        android:textSize="18sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="27dp"
+        tools:layout_editor_absoluteY="368dp" />
+
+    <ImageView
+        android:id="@+id/img_chooseDate"
+        android:layout_width="40dp"
+        android:layout_height="43dp"
+        app:srcCompat="@drawable/baseline_calendar_month_24"
+        tools:layout_editor_absoluteX="170dp"
+        tools:layout_editor_absoluteY="298dp"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/img_piechart"
+        android:layout_width="120dp"
+        android:layout_height="93dp"
+        app:srcCompat="@drawable/piechart"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="27dp"
+        tools:layout_editor_absoluteY="392dp" />
+
+    <ImageView
+        android:id="@+id/img_bar"
+        android:layout_width="120dp"
+        android:layout_height="93dp"
+        app:srcCompat="@drawable/bar"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="266dp"
+        tools:layout_editor_absoluteY="392dp" />
+
+    <TextView
+        android:id="@+id/tvPie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/pie"
+        android:textSize="18sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="27dp"
+        tools:layout_editor_absoluteY="485dp" />
+
+    <TextView
+        android:id="@+id/tvBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/bar"
+        android:textSize="18sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="266dp"
+        tools:layout_editor_absoluteY="485dp" />
+
+    <TextView
+        android:id="@+id/tvgenerate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-medium"
+        android:textColor="@color/blue"
+        android:text="@string/generate"
+        android:textSize="18sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="120dp"
+        tools:layout_editor_absoluteY="518dp" />
+
+    <TextView
+        android:id="@+id/tvOutputSummary"
+        android:layout_width="348dp"
+        android:layout_height="100dp"
+        android:width="1dp"
+        android:background="@drawable/border"
+        android:text=""
+        tools:layout_editor_absoluteX="31dp"
+        tools:layout_editor_absoluteY="553dp"
+        tools:ignore="MissingConstraints" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
