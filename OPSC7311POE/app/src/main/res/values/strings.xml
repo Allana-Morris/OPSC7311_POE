@@ -7,7 +7,7 @@
     <string name="createD">Create a Diagram</string>
     <string name="design">Redesign Home Page</string>
     <string name="progress">View your progress</string>
-    <string name="ongoingtask">Ongoing Tasks:</string>
+    <string name="CurrentTask">Current Tasks:</string>
     <string name="seeAll">See All></string>
     <string name="timer">Timer</string>
     <string name="start">Start</string>
@@ -15,22 +15,25 @@
     <string name="reset">Reset</string>
     <string name="weeklyS">Weekly summary</string>
     <string name="chooseW">Choose a Week:</string>
-    <string name="choosG">Choose your graph:</string>
+    <string name="choose">Choose your graph:</string>
     <string name="add">Add</string>
     <string name="pie">Pie Chart</string>
     <string name="bar">Bar Graph</string>
-    <string name="generate">Generate Summmary</string>
-    <string name="signup">SignUp</string>
-    <string name="fullname">FullName</string>
-    <string name="Register">SignUp</string>
+    <string name="generate">Generate Summary</string>
+    <string name="signup">Sign Up</string>
+    <string name="fullName">Full Name</string>
+    ///
+    <summary>
+        <string name="Register">Sign Up</string>
+    </summary>
     <string name="sign_in_to_lifetime">Sign in to LifeTime</string>
-    <string name="continue_with_google">Continue_with_Google</string>
-    <string name="username">UserName</string>
+    <string name="continue_with_google">Continue with Google</string>
+    <string name="username">Username</string>
     <string name="reset_password">Reset password</string>
-    <string name="no_account">No_account</string>
+    <string name="no_account">No account</string>
     <string name="create_one">Create one</string>
     <string name="current_task">Current Task</string>
-    <string name="digram">Digram</string>
+    <string name="diagram">Diagram</string>
     <string name="_2_20">2:20</string>
     <string name="tasks">Tasks</string>
     <string name="all_taps">All Taps</string>
@@ -39,7 +42,7 @@
     <string name="gym">Gym</string>
     <string name="_3_00_pm_5_40_pm">3:00 PM - 5:40 PM</string>
     <string name="_2_40">2:40</string>
-    <string name="housecleaning">HouseCleaning</string>
+    <string name="housecleaning">House Cleaning</string>
     <string name="_9_00am_9_40_am">9:00AM - 9:40 AM</string>
     <string name="_00_40">00.40</string>
     <string name="_8_00_pm_9_20_pm">8:00 PM - 9:20 PM</string>
@@ -48,7 +51,7 @@
     <string name="name">Name</string>
     <string name="name_">Name</string>
     <string name="icon">Icon</string>
-    <string name="color">Color</string>
+    <string name="color">Colour</string>
     <string name="task_duration">Task Duration</string>
     <string name="_00_30">00:30</string>
     <string name="count_down">Count Down</string>
@@ -56,5 +59,5 @@
     <string name="task_description">Task Description</string>
     <string name="note">Note</string>
     <string name="calendar_">Calendar</string>
-    <string name="aug_19_mon">Aug 19 (Mon)</string>
+    <string name="Date">Aug 19 (Mon)</string>
 </resources>

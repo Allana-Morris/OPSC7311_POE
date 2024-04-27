@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".EnterData"
-    android:background="@drawable/BlueSkyBack">
+    android:background="@drawable/skyblue">
 
 
     <ImageView
@@ -102,7 +102,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
         android:layout_marginTop="20dp"
-        android:text="@string/digram"
+        android:text="@string/diagram"
         android:textColor="@color/black"
         app:layout_constraintStart_toEndOf="@+id/imageView4"
         app:layout_constraintTop_toBottomOf="@+id/textView5" />
@@ -113,7 +113,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
         android:layout_marginTop="120dp"
-        android:text="@string/digram"
+        android:text="@string/diagram"
         android:textColor="@color/black"
         app:layout_constraintStart_toEndOf="@+id/imageView4"
         app:layout_constraintTop_toBottomOf="@+id/textView5" />

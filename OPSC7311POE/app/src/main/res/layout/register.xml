@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/BlueSkyBack">
+    android:background="@drawable/skyblue">
 
 
     <ImageView
@@ -39,7 +39,7 @@
         android:id="@+id/textview1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="25dp"
         android:text="@string/signup"
         android:textColor="@color/black"
         android:textSize="20sp"
@@ -55,7 +55,8 @@
         android:layout_marginTop="20dp"
         android:ems="10"
         android:inputType="text"
-        android:text="@string/fullname"
+        android:minHeight="48dp"
+        android:text="@string/fullName"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -65,32 +66,40 @@
         android:id="@+id/editTextText2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
         android:ems="10"
         android:inputType="text"
+        android:minHeight="48dp"
         android:text="Email"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextText" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextText"
+        tools:ignore="TouchTargetSizeCheck" />
 
     <EditText
         android:id="@+id/editTextText3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
         android:ems="10"
         android:inputType="text"
+        android:minHeight="48dp"
         android:text="UserName"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="@+id/view"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextText2" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextText2"
+        tools:ignore="TouchTargetSizeCheck" />
 
     <EditText
         android:id="@+id/editTextText4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
         android:ems="10"
         android:inputType="text"
+        android:minHeight="48dp"
         android:text="Password"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -101,7 +110,7 @@
         android:id="@+id/Register"
         style="@style/Widget.Material3.Button"
         android:layout_width="193dp"
-        android:layout_height="27dp"
+        android:layout_height="40dp"
         android:layout_marginTop="30dp"
         android:background="@color/black"
         android:text="@string/Register"
@@ -111,18 +120,20 @@
         app:fabSize="auto"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextText4" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextText4"
+        tools:ignore="TouchTargetSizeCheck" />
 
     <Button
         android:id="@+id/login_btn"
-        android:layout_width="193dp"
-        android:layout_height="27dp"
-        android:layout_marginTop="10dp"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="16dp"
         android:background="@color/black"
         android:text="Login"
         android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Register" />
+        app:layout_constraintTop_toBottomOf="@+id/Register"
+        tools:ignore="TouchTargetSizeCheck" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
