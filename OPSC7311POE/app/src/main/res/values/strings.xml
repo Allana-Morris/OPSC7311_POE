@@ -20,7 +20,14 @@
     <string name="pie">Pie Chart</string>
     <string name="bar">Bar Graph</string>
     <string name="generate">Generate Summmary</string>
-
+    <string name="customP">Customize and Personalize</string>
+    <string name="fullname">Full Name:</string>
+    <string name="Email">Email:</string>
+    <string name="editUser">Edit Username:</string>
+    <string name="seePass">See Password</string>
+    <string name="profilePho">Upload a Profile Photo</string>
+    <string name="uploadpic">Upload New</string>
+    <string name="save2">Save</string>
 
 
 
