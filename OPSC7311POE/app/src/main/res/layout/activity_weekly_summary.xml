@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
@@ -7,117 +7,159 @@
     android:layout_height="match_parent"
     android:background="@drawable/skyblue"
     android:orientation="vertical"
-    tools:context=".MainActivity">
+    android:textAlignment="center"
+    tools:context=".WeeklySummary">
 
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginBottom="500dp"
 
-    <TextView
-        android:id="@+id/tvBlackBox"
-        android:layout_width="361dp"
-        android:layout_height="108dp"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="50dp"
-        android:background="@drawable/roundstyle"
-        android:backgroundTint="@color/black"
-
-        android:text="" />
-
-    <SearchView
-        android:layout_width="350dp"
-        android:layout_height="35dp"
-        android:layout_gravity="center_horizontal"
-        android:background="@drawable/roundstyle"
-        android:backgroundTint="@color/white">
-
-    </SearchView>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-
-        <TextView
-            android:id="@+id/tvOngoingTask"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:layout_weight="1"
-            android:fontFamily="sans-serif-medium"
-            android:text="@string/ongoingtask"
-            android:textAlignment="center"
-            android:textColor="@color/black"
-            android:textSize="18sp" />
-
-        <TextView
-            android:id="@+id/tvSeeAll"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:fontFamily="sans-serif-medium"
-            android:text="@string/seeAll"
-            android:textAlignment="center"
-            android:textSize="18sp" />
-
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="97dp"
-        android:layout_marginTop="30dp"
-        android:orientation="horizontal">
-
-        <Button
-            android:id="@+id/btnCreateDiagram"
-            android:layout_width="70dp"
-            android:layout_height="90dp"
-            android:layout_gravity="center_horizontal"
-
-
-            android:layout_marginHorizontal="10dp"
-            android:layout_weight="1"
-            android:background="@drawable/roundstyle"
-            android:backgroundTint="#FFFFFF"
-            android:fontFamily="sans-serif-medium"
-            android:text="@string/createD"
-
-            android:textAlignment="center"
-            android:textColor="@color/black" />
-
-        <Button
-            android:id="@+id/btnRedsighn"
-            android:layout_width="70dp"
-            android:layout_height="90dp"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginHorizontal="10dp"
-
-            android:layout_weight="1"
-            android:background="@drawable/roundstyle"
-            android:backgroundTint="#FFFFFF"
-            android:fontFamily="sans-serif-condensed-medium"
-            android:text="@string/design"
-            android:textAlignment="center" />
-    </LinearLayout>
-
-
-    <Button
-        android:id="@+id/button9"
-        android:layout_width="162dp"
-        android:layout_height="215dp"
-        android:layout_marginHorizontal="20dp"
-
-
-        android:layout_marginTop="30dp"
-        android:background="@drawable/roundstyle"
-        android:backgroundTint="#FFFFFF"
-        android:text="@string/progress" />
-
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginTop="100dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/arc_1"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <View
+        android:id="@+id/chooseWeek"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/tvSummary"
+        android:layout_width="361dp"
+        android:layout_height="40dp"
+
+        android:layout_marginBottom="550dp"
+        android:background="@drawable/roundstyle"
+        android:backgroundTint="@color/black"
+        android:fontFamily="sans-serif-medium"
+        android:scaleType="center"
+        android:src="@drawable/arc_1"
+        android:text="@string/weeklyS"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/tvChooseAWeek"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/chooseW"
+        tools:ignore="MissingConstraints"
+        android:textSize="18sp"
+        tools:layout_editor_absoluteX="27dp"
+        tools:layout_editor_absoluteY="307dp" />
+
+    <TextView
+        android:id="@+id/tvGraph"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/choosG"
+        android:textSize="18sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="27dp"
+        tools:layout_editor_absoluteY="368dp" />
+
+    <ImageView
+        android:id="@+id/img_chooseDate"
+        android:layout_width="40dp"
+        android:layout_height="43dp"
+        app:srcCompat="@drawable/baseline_calendar_month_24"
+        tools:layout_editor_absoluteX="170dp"
+        tools:layout_editor_absoluteY="298dp"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/img_piechart"
+        android:layout_width="120dp"
+        android:layout_height="93dp"
+        app:srcCompat="@drawable/piechart"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="27dp"
+        tools:layout_editor_absoluteY="392dp" />
+
+    <ImageView
+        android:id="@+id/img_bar"
+        android:layout_width="120dp"
+        android:layout_height="93dp"
+        app:srcCompat="@drawable/bar"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="266dp"
+        tools:layout_editor_absoluteY="392dp" />
+
+    <TextView
+        android:id="@+id/tvPie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/pie"
+        android:textSize="18sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="27dp"
+        tools:layout_editor_absoluteY="485dp" />
+
+    <TextView
+        android:id="@+id/tvBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/bar"
+        android:textSize="18sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="266dp"
+        tools:layout_editor_absoluteY="485dp" />
+
+    <TextView
+        android:id="@+id/tvgenerate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-medium"
+        android:textColor="@color/blue"
+        android:text="@string/generate"
+        android:textSize="18sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="120dp"
+        tools:layout_editor_absoluteY="518dp" />
+
+    <TextView
+        android:id="@+id/tvOutputSummary"
+        android:layout_width="348dp"
+        android:layout_height="100dp"
+        android:width="1dp"
+        android:background="@drawable/border"
+        android:text=""
+        tools:layout_editor_absoluteX="31dp"
+        tools:layout_editor_absoluteY="553dp"
+        tools:ignore="MissingConstraints" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="461dp"
+        android:layout_height="wrap_content"
+
+        tools:layout_editor_absoluteX="6dp"
+        tools:layout_editor_absoluteY="649dp"
+        tools:ignore="MissingConstraints">
 
 
         <LinearLayout
@@ -247,4 +289,4 @@
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 
-</LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
