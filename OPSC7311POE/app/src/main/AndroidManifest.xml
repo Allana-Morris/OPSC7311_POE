@@ -13,27 +13,23 @@
         android:theme="@style/Theme.OPSC7311POE"
         tools:targetApi="31">
         <activity
-            android:name=".create_category"
+            android:name=".Profile"
             android:exported="false" />
         <activity
-            android:name=".ViewData"
-            android:exported="false"/>
-        <activity
-            android:name=".view_graphs"
+            android:name=".WeeklySummary"
             android:exported="false" />
         <activity
-            android:name=".StartingPage"
+            android:name=".Timer"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
             android:exported="true">
-
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Login" />
-        <activity android:name=".Register" />
-        <activity android:name=".MainActivity" />
     </application>
 
 </manifest>
