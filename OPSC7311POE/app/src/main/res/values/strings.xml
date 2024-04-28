@@ -22,10 +22,6 @@
     <string name="generate">Generate Summary</string>
     <string name="signup">Sign Up</string>
     <string name="fullName">Full Name</string>
-    ///
-    <summary>
-        <string name="Register">Sign Up</string>
-    </summary>
     <string name="sign_in_to_lifetime">Sign in to LifeTime</string>
     <string name="continue_with_google">Continue with Google</string>
     <string name="username">Username</string>
@@ -54,10 +50,16 @@
     <string name="color">Colour</string>
     <string name="task_duration">Task Duration</string>
     <string name="_00_30">00:30</string>
-    <string name="count_down">Count Down</string>
+    <string name="count_down">Countdown</string>
     <string name="description">Description</string>
     <string name="task_description">Task Description</string>
     <string name="note">Note</string>
     <string name="calendar_">Calendar</string>
     <string name="Date">Aug 19 (Mon)</string>
+    <string name="customP">Customize and Personalize</string>
+    <string name="editUser">Edit Username:</string>
+    <string name="seePass">See Password</string>
+    <string name="profilePho">Upload a Profile Photo</string>
+    <string name="uploadpic">Upload New</string>
+    <string name="save2">Save</string>
 </resources>
