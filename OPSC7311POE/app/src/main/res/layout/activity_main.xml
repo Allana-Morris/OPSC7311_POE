@@ -42,7 +42,7 @@
             android:layout_gravity="center_horizontal"
             android:layout_weight="1"
             android:fontFamily="sans-serif-medium"
-            android:text="@string/ongoingtask"
+            android:text="@string/current_task"
             android:textAlignment="center"
             android:textColor="@color/black"
             android:textSize="18sp" />
