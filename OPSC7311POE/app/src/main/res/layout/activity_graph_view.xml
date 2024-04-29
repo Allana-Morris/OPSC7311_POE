@@ -7,4 +7,12 @@
     android:layout_height="match_parent"
     tools:context=".GraphView">
 
+    <com.google.android.material.bottomappbar.BottomAppBar
+        android:id="@+id/bottomAppBar"
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="652dp"
+        tools:ignore="BottomAppBar,MissingConstraints" />
 </androidx.constraintlayout.widget.ConstraintLayout>
