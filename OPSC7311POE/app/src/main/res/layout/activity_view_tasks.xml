@@ -5,7 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".EnterData"
+    tools:context=".ViewData"
     android:background="@drawable/skyblue">
 
 
@@ -506,7 +506,7 @@
                     android:id="@+id/textView25"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/alarm"
+                    android:text="@string/timer"
                     android:textAlignment="center"
                     android:textSize="12sp" />
             </LinearLayout>
