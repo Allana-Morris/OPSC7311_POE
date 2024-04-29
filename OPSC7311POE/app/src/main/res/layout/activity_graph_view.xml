@@ -15,4 +15,12 @@
         tools:layout_editor_absoluteX="1dp"
         tools:layout_editor_absoluteY="652dp"
         tools:ignore="BottomAppBar,MissingConstraints" />
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="103dp"
+        tools:layout_editor_absoluteY="178dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
