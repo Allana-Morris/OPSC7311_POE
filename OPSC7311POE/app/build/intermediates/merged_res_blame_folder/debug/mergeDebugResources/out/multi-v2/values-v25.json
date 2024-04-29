@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.opsc7311poe.app-mergeDebugResources-29:/values-v25/values-v25.xml",
+            "outputFile": "com.example.opsc7311poe.app-mergeDebugResources-38:/values-v25/values-v25.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Sven\\.gradle\\caches\\transforms-3\\00f883ec43beb4a7ed899fe03063aa5b\\transformed\\appcompat-1.6.1\\res\\values-v25\\values-v25.xml",
+                    "source": "C:\\Users\\Sven\\.gradle\\caches\\transforms-3\\ed09ae00ae5feffe7cbf55e1dab719b9\\transformed\\appcompat-1.6.1\\res\\values-v25\\values-v25.xml",
                     "from": {
                         "startLines": "2,3,4,6",
                         "startColumns": "4,4,4,4",
