@@ -12,6 +12,7 @@
     <color name="white">#FFFFFFFF</color>
     <string name="CurrentTask">Current Tasks:</string>
     <string name="Date">Aug 19 (Mon)</string>
+    <string name="Email">Email</string>
     <string name="_00_30">00:30</string>
     <string name="_00_40">00.40</string>
     <string name="_01_20">01.20</string>
@@ -23,7 +24,6 @@
     <string name="_8_00_pm_9_20_pm">8:00 PM - 9:20 PM</string>
     <string name="_9_00am_9_40_am">9:00AM - 9:40 AM</string>
     <string name="add">Add</string>
-    <string name="alarm">Alarm</string>
     <string name="all_taps">All Taps</string>
     <string name="app_name">OPSC7311 POE</string>
     <string name="bar">Bar Graph</string>

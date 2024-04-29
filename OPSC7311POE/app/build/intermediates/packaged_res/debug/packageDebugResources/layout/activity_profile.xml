@@ -73,14 +73,15 @@
 
     <TextView
         android:id="@+id/tvFullName"
-        android:layout_width="149dp"
+        android:layout_width="118dp"
         android:layout_height="25dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/fullName"
         android:textColor="@color/black"
         android:textSize="18sp"
-        android:text="@string/fullname"
+        tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="22dp"
-        tools:layout_editor_absoluteY="236dp"
-        tools:ignore="MissingConstraints" />
+        tools:layout_editor_absoluteY="236dp" />
 
     <TextView
         android:id="@+id/tvEmail"
@@ -134,40 +135,40 @@
         android:id="@+id/tvFullNameInput"
         android:layout_width="195dp"
         android:layout_height="35dp"
-        android:text=""
         android:background="@drawable/bordertwo"
-        tools:layout_editor_absoluteX="194dp"
-        tools:layout_editor_absoluteY="236dp"
-        tools:ignore="MissingConstraints" />
+        android:text=""
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="188dp"
+        tools:layout_editor_absoluteY="236dp" />
 
     <TextView
         android:id="@+id/textView9"
         android:layout_width="195dp"
         android:layout_height="35dp"
-        android:text=""
         android:background="@drawable/bordertwo"
+        android:text=""
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="189dp"
+        tools:layout_editor_absoluteX="188dp"
         tools:layout_editor_absoluteY="293dp" />
 
     <TextView
         android:id="@+id/textView10"
         android:layout_width="195dp"
         android:layout_height="35dp"
-        android:text=""
         android:background="@drawable/bordertwo"
+        android:text=""
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="194dp"
+        tools:layout_editor_absoluteX="188dp"
         tools:layout_editor_absoluteY="360dp" />
 
     <TextView
         android:id="@+id/textView11"
         android:layout_width="195dp"
         android:layout_height="35dp"
-        android:text=""
         android:background="@drawable/bordertwo"
+        android:text=""
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="194dp"
+        tools:layout_editor_absoluteX="188dp"
         tools:layout_editor_absoluteY="423dp" />
 
     <ImageView
