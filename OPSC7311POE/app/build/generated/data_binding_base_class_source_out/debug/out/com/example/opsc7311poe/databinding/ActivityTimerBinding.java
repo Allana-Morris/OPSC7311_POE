@@ -4,6 +4,7 @@ package com.example.opsc7311poe.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AutoCompleteTextView;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
@@ -11,6 +12,7 @@ import android.widget.TextClock;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.example.opsc7311poe.R;
@@ -23,16 +25,16 @@ public final class ActivityTimerBinding implements ViewBinding {
   private final LinearLayout rootView;
 
   @NonNull
+  public final AutoCompleteTextView autoCompleteTxt;
+
+  @NonNull
+  public final AutoCompleteTextView autoCompleteTxt2;
+
+  @NonNull
   public final Button btnStart;
 
   @NonNull
   public final Button btnStop;
-
-  @NonNull
-  public final Button button5;
-
-  @NonNull
-  public final ImageView imageView14;
 
   @NonNull
   public final ImageView imageView15;
@@ -47,53 +49,76 @@ public final class ActivityTimerBinding implements ViewBinding {
   public final ImageView imageView18;
 
   @NonNull
+  public final ConstraintLayout linearLayout;
+
+  @NonNull
+  public final ConstraintLayout linearLayout2;
+
+  @NonNull
+  public final ConstraintLayout linearLayout4;
+
+  @NonNull
+  public final ConstraintLayout linearLayout5;
+
+  @NonNull
   public final LinearLayout main;
+
+  @NonNull
+  public final Button resetbtn;
+
+  @NonNull
+  public final Button saveTimebtn;
 
   @NonNull
   public final TextClock textClock2;
 
   @NonNull
-  public final TextView textView22;
+  public final TextView tvCalendar;
 
   @NonNull
-  public final TextView textView23;
+  public final TextView tvHome;
 
   @NonNull
-  public final TextView textView24;
-
-  @NonNull
-  public final TextView textView25;
-
-  @NonNull
-  public final TextView textView26;
+  public final TextView tvProfile;
 
   @NonNull
   public final TextView tvTimer;
 
-  private ActivityTimerBinding(@NonNull LinearLayout rootView, @NonNull Button btnStart,
-      @NonNull Button btnStop, @NonNull Button button5, @NonNull ImageView imageView14,
-      @NonNull ImageView imageView15, @NonNull ImageView imageView16,
-      @NonNull ImageView imageView17, @NonNull ImageView imageView18, @NonNull LinearLayout main,
-      @NonNull TextClock textClock2, @NonNull TextView textView22, @NonNull TextView textView23,
-      @NonNull TextView textView24, @NonNull TextView textView25, @NonNull TextView textView26,
-      @NonNull TextView tvTimer) {
+  @NonNull
+  public final TextView tvTimer1;
+
+  private ActivityTimerBinding(@NonNull LinearLayout rootView,
+      @NonNull AutoCompleteTextView autoCompleteTxt, @NonNull AutoCompleteTextView autoCompleteTxt2,
+      @NonNull Button btnStart, @NonNull Button btnStop, @NonNull ImageView imageView15,
+      @NonNull ImageView imageView16, @NonNull ImageView imageView17,
+      @NonNull ImageView imageView18, @NonNull ConstraintLayout linearLayout,
+      @NonNull ConstraintLayout linearLayout2, @NonNull ConstraintLayout linearLayout4,
+      @NonNull ConstraintLayout linearLayout5, @NonNull LinearLayout main, @NonNull Button resetbtn,
+      @NonNull Button saveTimebtn, @NonNull TextClock textClock2, @NonNull TextView tvCalendar,
+      @NonNull TextView tvHome, @NonNull TextView tvProfile, @NonNull TextView tvTimer,
+      @NonNull TextView tvTimer1) {
     this.rootView = rootView;
+    this.autoCompleteTxt = autoCompleteTxt;
+    this.autoCompleteTxt2 = autoCompleteTxt2;
     this.btnStart = btnStart;
     this.btnStop = btnStop;
-    this.button5 = button5;
-    this.imageView14 = imageView14;
     this.imageView15 = imageView15;
     this.imageView16 = imageView16;
     this.imageView17 = imageView17;
     this.imageView18 = imageView18;
+    this.linearLayout = linearLayout;
+    this.linearLayout2 = linearLayout2;
+    this.linearLayout4 = linearLayout4;
+    this.linearLayout5 = linearLayout5;
     this.main = main;
+    this.resetbtn = resetbtn;
+    this.saveTimebtn = saveTimebtn;
     this.textClock2 = textClock2;
-    this.textView22 = textView22;
-    this.textView23 = textView23;
-    this.textView24 = textView24;
-    this.textView25 = textView25;
-    this.textView26 = textView26;
+    this.tvCalendar = tvCalendar;
+    this.tvHome = tvHome;
+    this.tvProfile = tvProfile;
     this.tvTimer = tvTimer;
+    this.tvTimer1 = tvTimer1;
   }
 
   @Override
@@ -123,6 +148,18 @@ public final class ActivityTimerBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.auto_complete_txt;
+      AutoCompleteTextView autoCompleteTxt = ViewBindings.findChildViewById(rootView, id);
+      if (autoCompleteTxt == null) {
+        break missingId;
+      }
+
+      id = R.id.auto_complete_txt2;
+      AutoCompleteTextView autoCompleteTxt2 = ViewBindings.findChildViewById(rootView, id);
+      if (autoCompleteTxt2 == null) {
+        break missingId;
+      }
+
       id = R.id.btnStart;
       Button btnStart = ViewBindings.findChildViewById(rootView, id);
       if (btnStart == null) {
@@ -132,18 +169,6 @@ public final class ActivityTimerBinding implements ViewBinding {
       id = R.id.btnStop;
       Button btnStop = ViewBindings.findChildViewById(rootView, id);
       if (btnStop == null) {
-        break missingId;
-      }
-
-      id = R.id.button5;
-      Button button5 = ViewBindings.findChildViewById(rootView, id);
-      if (button5 == null) {
-        break missingId;
-      }
-
-      id = R.id.imageView14;
-      ImageView imageView14 = ViewBindings.findChildViewById(rootView, id);
-      if (imageView14 == null) {
         break missingId;
       }
 
@@ -171,7 +196,43 @@ public final class ActivityTimerBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.linearLayout;
+      ConstraintLayout linearLayout = ViewBindings.findChildViewById(rootView, id);
+      if (linearLayout == null) {
+        break missingId;
+      }
+
+      id = R.id.linearLayout2;
+      ConstraintLayout linearLayout2 = ViewBindings.findChildViewById(rootView, id);
+      if (linearLayout2 == null) {
+        break missingId;
+      }
+
+      id = R.id.linearLayout4;
+      ConstraintLayout linearLayout4 = ViewBindings.findChildViewById(rootView, id);
+      if (linearLayout4 == null) {
+        break missingId;
+      }
+
+      id = R.id.linearLayout5;
+      ConstraintLayout linearLayout5 = ViewBindings.findChildViewById(rootView, id);
+      if (linearLayout5 == null) {
+        break missingId;
+      }
+
       LinearLayout main = (LinearLayout) rootView;
+
+      id = R.id.resetbtn;
+      Button resetbtn = ViewBindings.findChildViewById(rootView, id);
+      if (resetbtn == null) {
+        break missingId;
+      }
+
+      id = R.id.saveTimebtn;
+      Button saveTimebtn = ViewBindings.findChildViewById(rootView, id);
+      if (saveTimebtn == null) {
+        break missingId;
+      }
 
       id = R.id.textClock2;
       TextClock textClock2 = ViewBindings.findChildViewById(rootView, id);
@@ -179,33 +240,21 @@ public final class ActivityTimerBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.textView22;
-      TextView textView22 = ViewBindings.findChildViewById(rootView, id);
-      if (textView22 == null) {
+      id = R.id.tv_calendar;
+      TextView tvCalendar = ViewBindings.findChildViewById(rootView, id);
+      if (tvCalendar == null) {
         break missingId;
       }
 
-      id = R.id.textView23;
-      TextView textView23 = ViewBindings.findChildViewById(rootView, id);
-      if (textView23 == null) {
+      id = R.id.tv_Home;
+      TextView tvHome = ViewBindings.findChildViewById(rootView, id);
+      if (tvHome == null) {
         break missingId;
       }
 
-      id = R.id.textView24;
-      TextView textView24 = ViewBindings.findChildViewById(rootView, id);
-      if (textView24 == null) {
-        break missingId;
-      }
-
-      id = R.id.textView25;
-      TextView textView25 = ViewBindings.findChildViewById(rootView, id);
-      if (textView25 == null) {
-        break missingId;
-      }
-
-      id = R.id.textView26;
-      TextView textView26 = ViewBindings.findChildViewById(rootView, id);
-      if (textView26 == null) {
+      id = R.id.tv_Profile;
+      TextView tvProfile = ViewBindings.findChildViewById(rootView, id);
+      if (tvProfile == null) {
         break missingId;
       }
 
@@ -215,9 +264,16 @@ public final class ActivityTimerBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityTimerBinding((LinearLayout) rootView, btnStart, btnStop, button5,
-          imageView14, imageView15, imageView16, imageView17, imageView18, main, textClock2,
-          textView22, textView23, textView24, textView25, textView26, tvTimer);
+      id = R.id.tv_timer;
+      TextView tvTimer1 = ViewBindings.findChildViewById(rootView, id);
+      if (tvTimer1 == null) {
+        break missingId;
+      }
+
+      return new ActivityTimerBinding((LinearLayout) rootView, autoCompleteTxt, autoCompleteTxt2,
+          btnStart, btnStop, imageView15, imageView16, imageView17, imageView18, linearLayout,
+          linearLayout2, linearLayout4, linearLayout5, main, resetbtn, saveTimebtn, textClock2,
+          tvCalendar, tvHome, tvProfile, tvTimer, tvTimer1);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

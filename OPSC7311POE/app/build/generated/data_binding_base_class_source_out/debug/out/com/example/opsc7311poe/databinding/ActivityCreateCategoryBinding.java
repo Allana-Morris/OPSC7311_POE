@@ -4,6 +4,7 @@ package com.example.opsc7311poe.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
@@ -21,6 +22,15 @@ public final class ActivityCreateCategoryBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
+  public final ConstraintLayout constraintLayout;
+
+  @NonNull
+  public final EditText ettMaxGoal;
+
+  @NonNull
+  public final EditText ettMinGoal;
+
+  @NonNull
   public final ImageView imageView;
 
   @NonNull
@@ -36,7 +46,10 @@ public final class ActivityCreateCategoryBinding implements ViewBinding {
   public final ImageView imageView18;
 
   @NonNull
-  public final ImageView imageView19;
+  public final ImageView ivBack;
+
+  @NonNull
+  public final ImageView ivPickColour;
 
   @NonNull
   public final ConstraintLayout linearLayout;
@@ -54,54 +67,111 @@ public final class ActivityCreateCategoryBinding implements ViewBinding {
   public final ConstraintLayout main;
 
   @NonNull
-  public final TextView textView21;
-
-  @NonNull
-  public final TextView textView27;
+  public final TextView tvAdd;
 
   @NonNull
   public final TextView tvCalendar;
 
   @NonNull
+  public final TextView tvCategory;
+
+  @NonNull
+  public final TextView tvColour;
+
+  @NonNull
   public final TextView tvHome;
+
+  @NonNull
+  public final TextView tvIcon;
+
+  @NonNull
+  public final TextView tvName;
 
   @NonNull
   public final TextView tvProfile;
 
   @NonNull
+  public final TextView tvTargetHours;
+
+  @NonNull
+  public final TextView tvTimeDash;
+
+  @NonNull
   public final TextView tvTimer;
+
+  @NonNull
+  public final EditText txtName;
+
+  @NonNull
+  public final View vColourPreview;
 
   @NonNull
   public final View view;
 
+  @NonNull
+  public final View view10;
+
+  @NonNull
+  public final View view11;
+
+  @NonNull
+  public final View view12;
+
+  @NonNull
+  public final View view8;
+
+  @NonNull
+  public final View view9;
+
   private ActivityCreateCategoryBinding(@NonNull ConstraintLayout rootView,
-      @NonNull ImageView imageView, @NonNull ImageView imageView15, @NonNull ImageView imageView16,
-      @NonNull ImageView imageView17, @NonNull ImageView imageView18,
-      @NonNull ImageView imageView19, @NonNull ConstraintLayout linearLayout,
-      @NonNull ConstraintLayout linearLayout2, @NonNull ConstraintLayout linearLayout4,
-      @NonNull ConstraintLayout linearLayout5, @NonNull ConstraintLayout main,
-      @NonNull TextView textView21, @NonNull TextView textView27, @NonNull TextView tvCalendar,
-      @NonNull TextView tvHome, @NonNull TextView tvProfile, @NonNull TextView tvTimer,
-      @NonNull View view) {
+      @NonNull ConstraintLayout constraintLayout, @NonNull EditText ettMaxGoal,
+      @NonNull EditText ettMinGoal, @NonNull ImageView imageView, @NonNull ImageView imageView15,
+      @NonNull ImageView imageView16, @NonNull ImageView imageView17,
+      @NonNull ImageView imageView18, @NonNull ImageView ivBack, @NonNull ImageView ivPickColour,
+      @NonNull ConstraintLayout linearLayout, @NonNull ConstraintLayout linearLayout2,
+      @NonNull ConstraintLayout linearLayout4, @NonNull ConstraintLayout linearLayout5,
+      @NonNull ConstraintLayout main, @NonNull TextView tvAdd, @NonNull TextView tvCalendar,
+      @NonNull TextView tvCategory, @NonNull TextView tvColour, @NonNull TextView tvHome,
+      @NonNull TextView tvIcon, @NonNull TextView tvName, @NonNull TextView tvProfile,
+      @NonNull TextView tvTargetHours, @NonNull TextView tvTimeDash, @NonNull TextView tvTimer,
+      @NonNull EditText txtName, @NonNull View vColourPreview, @NonNull View view,
+      @NonNull View view10, @NonNull View view11, @NonNull View view12, @NonNull View view8,
+      @NonNull View view9) {
     this.rootView = rootView;
+    this.constraintLayout = constraintLayout;
+    this.ettMaxGoal = ettMaxGoal;
+    this.ettMinGoal = ettMinGoal;
     this.imageView = imageView;
     this.imageView15 = imageView15;
     this.imageView16 = imageView16;
     this.imageView17 = imageView17;
     this.imageView18 = imageView18;
-    this.imageView19 = imageView19;
+    this.ivBack = ivBack;
+    this.ivPickColour = ivPickColour;
     this.linearLayout = linearLayout;
     this.linearLayout2 = linearLayout2;
     this.linearLayout4 = linearLayout4;
     this.linearLayout5 = linearLayout5;
     this.main = main;
-    this.textView21 = textView21;
-    this.textView27 = textView27;
+    this.tvAdd = tvAdd;
     this.tvCalendar = tvCalendar;
+    this.tvCategory = tvCategory;
+    this.tvColour = tvColour;
     this.tvHome = tvHome;
+    this.tvIcon = tvIcon;
+    this.tvName = tvName;
     this.tvProfile = tvProfile;
+    this.tvTargetHours = tvTargetHours;
+    this.tvTimeDash = tvTimeDash;
     this.tvTimer = tvTimer;
+    this.txtName = txtName;
+    this.vColourPreview = vColourPreview;
     this.view = view;
+    this.view10 = view10;
+    this.view11 = view11;
+    this.view12 = view12;
+    this.view8 = view8;
+    this.view9 = view9;
   }
 
   @Override
@@ -131,6 +201,24 @@ public final class ActivityCreateCategoryBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.constraintLayout;
+      ConstraintLayout constraintLayout = ViewBindings.findChildViewById(rootView, id);
+      if (constraintLayout == null) {
+        break missingId;
+      }
+
+      id = R.id.ett_Max_Goal;
+      EditText ettMaxGoal = ViewBindings.findChildViewById(rootView, id);
+      if (ettMaxGoal == null) {
+        break missingId;
+      }
+
+      id = R.id.ett_Min_Goal;
+      EditText ettMinGoal = ViewBindings.findChildViewById(rootView, id);
+      if (ettMinGoal == null) {
+        break missingId;
+      }
+
       id = R.id.imageView;
       ImageView imageView = ViewBindings.findChildViewById(rootView, id);
       if (imageView == null) {
@@ -161,9 +249,15 @@ public final class ActivityCreateCategoryBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.imageView19;
-      ImageView imageView19 = ViewBindings.findChildViewById(rootView, id);
-      if (imageView19 == null) {
+      id = R.id.iv_Back;
+      ImageView ivBack = ViewBindings.findChildViewById(rootView, id);
+      if (ivBack == null) {
+        break missingId;
+      }
+
+      id = R.id.iv_Pick_Colour;
+      ImageView ivPickColour = ViewBindings.findChildViewById(rootView, id);
+      if (ivPickColour == null) {
         break missingId;
       }
 
@@ -193,15 +287,9 @@ public final class ActivityCreateCategoryBinding implements ViewBinding {
 
       ConstraintLayout main = (ConstraintLayout) rootView;
 
-      id = R.id.textView21;
-      TextView textView21 = ViewBindings.findChildViewById(rootView, id);
-      if (textView21 == null) {
-        break missingId;
-      }
-
-      id = R.id.textView27;
-      TextView textView27 = ViewBindings.findChildViewById(rootView, id);
-      if (textView27 == null) {
+      id = R.id.tv_Add;
+      TextView tvAdd = ViewBindings.findChildViewById(rootView, id);
+      if (tvAdd == null) {
         break missingId;
       }
 
@@ -211,9 +299,33 @@ public final class ActivityCreateCategoryBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.tv_Category;
+      TextView tvCategory = ViewBindings.findChildViewById(rootView, id);
+      if (tvCategory == null) {
+        break missingId;
+      }
+
+      id = R.id.tv_Colour;
+      TextView tvColour = ViewBindings.findChildViewById(rootView, id);
+      if (tvColour == null) {
+        break missingId;
+      }
+
       id = R.id.tv_Home;
       TextView tvHome = ViewBindings.findChildViewById(rootView, id);
       if (tvHome == null) {
+        break missingId;
+      }
+
+      id = R.id.tv_Icon;
+      TextView tvIcon = ViewBindings.findChildViewById(rootView, id);
+      if (tvIcon == null) {
+        break missingId;
+      }
+
+      id = R.id.tv_Name;
+      TextView tvName = ViewBindings.findChildViewById(rootView, id);
+      if (tvName == null) {
         break missingId;
       }
 
@@ -223,9 +335,33 @@ public final class ActivityCreateCategoryBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.tv_Target_Hours;
+      TextView tvTargetHours = ViewBindings.findChildViewById(rootView, id);
+      if (tvTargetHours == null) {
+        break missingId;
+      }
+
+      id = R.id.tv_Time_Dash;
+      TextView tvTimeDash = ViewBindings.findChildViewById(rootView, id);
+      if (tvTimeDash == null) {
+        break missingId;
+      }
+
       id = R.id.tv_timer;
       TextView tvTimer = ViewBindings.findChildViewById(rootView, id);
       if (tvTimer == null) {
+        break missingId;
+      }
+
+      id = R.id.txt_Name;
+      EditText txtName = ViewBindings.findChildViewById(rootView, id);
+      if (txtName == null) {
+        break missingId;
+      }
+
+      id = R.id.v_Colour_Preview;
+      View vColourPreview = ViewBindings.findChildViewById(rootView, id);
+      if (vColourPreview == null) {
         break missingId;
       }
 
@@ -235,10 +371,41 @@ public final class ActivityCreateCategoryBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityCreateCategoryBinding((ConstraintLayout) rootView, imageView, imageView15,
-          imageView16, imageView17, imageView18, imageView19, linearLayout, linearLayout2,
-          linearLayout4, linearLayout5, main, textView21, textView27, tvCalendar, tvHome, tvProfile,
-          tvTimer, view);
+      id = R.id.view10;
+      View view10 = ViewBindings.findChildViewById(rootView, id);
+      if (view10 == null) {
+        break missingId;
+      }
+
+      id = R.id.view11;
+      View view11 = ViewBindings.findChildViewById(rootView, id);
+      if (view11 == null) {
+        break missingId;
+      }
+
+      id = R.id.view12;
+      View view12 = ViewBindings.findChildViewById(rootView, id);
+      if (view12 == null) {
+        break missingId;
+      }
+
+      id = R.id.view8;
+      View view8 = ViewBindings.findChildViewById(rootView, id);
+      if (view8 == null) {
+        break missingId;
+      }
+
+      id = R.id.view9;
+      View view9 = ViewBindings.findChildViewById(rootView, id);
+      if (view9 == null) {
+        break missingId;
+      }
+
+      return new ActivityCreateCategoryBinding((ConstraintLayout) rootView, constraintLayout,
+          ettMaxGoal, ettMinGoal, imageView, imageView15, imageView16, imageView17, imageView18,
+          ivBack, ivPickColour, linearLayout, linearLayout2, linearLayout4, linearLayout5, main,
+          tvAdd, tvCalendar, tvCategory, tvColour, tvHome, tvIcon, tvName, tvProfile, tvTargetHours,
+          tvTimeDash, tvTimer, txtName, vColourPreview, view, view10, view11, view12, view8, view9);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

@@ -4,7 +4,7 @@
             "outputFile": "com.example.opsc7311poe.test.app-mergeDebugAndroidTestResources-3:/values/values.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Sven\\.gradle\\caches\\transforms-3\\ddffa5871761ff64beab7b85e773e19f\\transformed\\core-1.5.0\\res\\values\\values.xml",
+                    "source": "C:\\Users\\reill\\.gradle\\caches\\transforms-3\\ddffa5871761ff64beab7b85e773e19f\\transformed\\core-1.5.0\\res\\values\\values.xml",
                     "from": {
                         "startLines": "4,11",
                         "startColumns": "0,0",
