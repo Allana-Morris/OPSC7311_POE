@@ -132,8 +132,6 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="0.25">
-                android:
-
                 <ImageView
                     android:id="@+id/imageView16"
                     android:layout_width="95dp"
