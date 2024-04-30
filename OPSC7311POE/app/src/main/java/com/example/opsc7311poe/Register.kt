@@ -1,6 +1,7 @@
 package com.example.opsc7311poe
 
 import android.content.Intent
+import android.graphics.Color
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
@@ -8,7 +9,8 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 
 class Register : AppCompatActivity() {
-    override fun onCreate(savedInstanceState: Bundle?) {
+    override fun onCreate(savedInstanceState: Bundle?)
+    {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_register)
 
@@ -17,20 +19,70 @@ class Register : AppCompatActivity() {
 
         signUpButton.setOnClickListener()
         {
-            val username: EditText = findViewById(R.id.txtUserName)
+            val username: EditText = findViewById<EditText?>(R.id.txtUserName)
             val fullName: EditText = findViewById(R.id.txtFullName)
             val email: EditText = findViewById(R.id.txtEmail)
             val password: EditText = findViewById(R.id.txtPassword)
 
-            val user = User(username.text.toString(), fullName.text.toString(),
-                password.text.toString(), email.text.toString());
+            val Validate = validation();
+            var valid = true;
 
-            // val user = User("SexMaster", "Phil Collins", "12345", "hello@gmail.com");
 
-            UserList.users.add(user);
+            if (Validate.checkStringNullOrEmpty(username.text.toString()))
+            {
+                username.setText("please actually enter something")
+                username.setTextColor(Color.RED)
+                valid = false
+            }
 
-            val message = "User signed up: ${user.username}"
-            Toast.makeText(this, message, Toast.LENGTH_SHORT).show()
+            if (Validate.checkStringNullOrEmpty(fullName.text.toString()))
+            {
+                fullName.setText("please actually enter something")
+                fullName.setTextColor(Color.RED)
+                valid = false
+            }
+
+            if (Validate.checkStringNullOrEmpty(email.text.toString()))
+            {
+                email.setText("please actually enter something")
+                email.setTextColor(Color.RED)
+                valid = false
+            }
+
+            if (Validate.checkStringNullOrEmpty(password.text.toString()))
+            {
+                password.setText("please actually enter something")
+                password.setTextColor(Color.RED)
+                valid = false
+            }
+
+            if (Validate.checkExistingUserEmail(email.text.toString()))
+            {
+                email.setText("Account exists")
+                email.setTextColor(Color.RED)
+                valid = false;
+
+            }
+
+            if (Validate.checkExistingUserUserName(username.text.toString()))
+            {
+                username.setText("Account exists")
+                username.setTextColor(Color.RED)
+                valid = false;
+
+            }
+
+            if (valid)
+            {
+                val user = User(username.text.toString(), fullName.text.toString(),
+                    password.text.toString(), email.text.toString())
+
+                UserList.users.add(user);
+
+                val message = "User signed up: ${user.username}"
+                Toast.makeText(this, message, Toast.LENGTH_SHORT).show()
+            }
+
         }
 
         loginButton.setOnClickListener {
