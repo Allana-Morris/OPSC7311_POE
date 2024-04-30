@@ -15,7 +15,7 @@
         android:background="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView"
         app:layout_constraintVertical_bias="0.0" />
@@ -32,11 +32,11 @@
         app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
     <TextView
-        android:id="@+id/textView28"
+        android:id="@+id/tv_Name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="28dp"
         android:text="@string/name"
         android:textColor="@color/black"
         android:textSize="16sp"
@@ -68,10 +68,10 @@
         app:layout_constraintTop_toBottomOf="@+id/view8" />
 
     <TextView
-        android:id="@+id/textView29"
+        android:id="@+id/tv_Icon"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
+        android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
         android:text="@string/icon"
         android:textColor="@color/black"
@@ -80,10 +80,10 @@
         app:layout_constraintTop_toBottomOf="@+id/view9" />
 
     <TextView
-        android:id="@+id/textView30"
+        android:id="@+id/tv_Colour"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
+        android:layout_marginStart="16dp"
         android:layout_marginTop="20dp"
         android:text="@string/color"
         android:textColor="@color/black"
@@ -132,27 +132,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/view11" />
 
-    <View
-        android:id="@+id/view13"
-        android:layout_width="0dp"
-        android:layout_height="2dp"
-        android:layout_marginTop="84dp"
-        android:background="#CECECE"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/view11" />
-
-    <View
-        android:id="@+id/view14"
-        android:layout_width="0dp"
-        android:layout_height="2dp"
-        android:layout_marginTop="40dp"
-        android:background="#CECECE"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/view13" />
-
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="409dp"
@@ -170,20 +149,20 @@
         tools:layou="0dp" />
 
     <TextView
-        android:id="@+id/textView21"
+        android:id="@+id/tv_Category"
         android:layout_width="104dp"
         android:layout_height="34dp"
         android:layout_marginTop="16dp"
         android:text="@string/category"
         android:textColor="@color/black"
         android:textSize="20sp"
-        app:layout_constraintEnd_toStartOf="@+id/textView27"
+        app:layout_constraintEnd_toStartOf="@+id/tv_Add"
         app:layout_constraintHorizontal_bias="0.508"
-        app:layout_constraintStart_toEndOf="@+id/imageView19"
+        app:layout_constraintStart_toEndOf="@+id/iv_Back"
         app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
     <TextView
-        android:id="@+id/textView27"
+        android:id="@+id/tv_Add"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
@@ -193,7 +172,7 @@
         app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
     <ImageView
-        android:id="@+id/imageView19"
+        android:id="@+id/iv_Back"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
@@ -349,18 +328,20 @@
         android:outlineProvider="background"
         app:layout_constraintBottom_toBottomOf="@+id/view11"
         app:layout_constraintTop_toTopOf="@+id/view10"
-        app:layout_constraintVertical_bias="0.222"
+        app:layout_constraintVertical_bias="0.0"
         tools:layout_editor_absoluteX="163dp" />
 
     <TextView
         android:id="@+id/tv_Target_Hours"
-        android:layout_width="91dp"
-        android:layout_height="26dp"
+        android:layout_width="96dp"
+        android:layout_height="36dp"
         android:fontFamily="sans-serif"
         android:text="@string/target_hours"
-        tools:layout_editor_absoluteX="2dp"
-        tools:layout_editor_absoluteY="447dp"
-        tools:ignore="MissingConstraints" />
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="17dp"
+        tools:layout_editor_absoluteY="445dp" />
 
     <EditText
         android:id="@+id/ett_Min_Goal"
