@@ -6,3 +6,7 @@ class User(
     var password: String,
     var email: String
 )
+{
+    // HashMap to store categories for this user
+    val categories: HashMap<String, Category> = HashMap()
+}

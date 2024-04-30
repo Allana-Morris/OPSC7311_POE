@@ -16,11 +16,15 @@
             android:name=".create_category"
             android:exported="false" />
         <activity
+            android:name=".ViewData"
+            android:exported="false"/>
+        <activity
             android:name=".view_graphs"
             android:exported="false" />
         <activity
             android:name=".StartingPage"
             android:exported="true">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
