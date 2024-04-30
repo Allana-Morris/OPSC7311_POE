@@ -32,6 +32,10 @@
         "source": "com.example.opsc7311poe.app-main-36:/layout/activity_create_category.xml"
     },
     {
+        "merged": "com.example.opsc7311poe.app-mergeDebugResources-33:/layout/task_listing.xml",
+        "source": "com.example.opsc7311poe.app-main-36:/layout/task_listing.xml"
+    },
+    {
         "merged": "com.example.opsc7311poe.app-mergeDebugResources-33:/layout/activity_main.xml",
         "source": "com.example.opsc7311poe.app-main-36:/layout/activity_main.xml"
     },

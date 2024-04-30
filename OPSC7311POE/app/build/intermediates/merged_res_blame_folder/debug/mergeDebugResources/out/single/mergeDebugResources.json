@@ -220,6 +220,10 @@
         "source": "com.example.opsc7311poe.app-main-36:/layout/activity_starting_page.xml"
     },
     {
+        "merged": "com.example.opsc7311poe.app-debug-34:/layout_task_listing.xml.flat",
+        "source": "com.example.opsc7311poe.app-main-36:/layout/task_listing.xml"
+    },
+    {
         "merged": "com.example.opsc7311poe.app-debug-34:/layout_activity_timer.xml.flat",
         "source": "com.example.opsc7311poe.app-main-36:/layout/activity_timer.xml"
     },
