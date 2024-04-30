@@ -10,14 +10,13 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 
 class Login : AppCompatActivity() {
-    private var usernameTextView: TextView = findViewById(R.id.tv_Username)
-    private var passwordTextView: TextView = findViewById(R.id.tv_Password)
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_login)
-
+        var usernameTextView: TextView = findViewById(R.id.tv_Username)
+        var passwordTextView: TextView = findViewById(R.id.tv_Password)
         val buttonOpenActivity = findViewById<TextView>(R.id.tv_Open_Register)
         buttonOpenActivity.setOnClickListener {
             val intent = Intent(this, Register::class.java)
@@ -29,8 +28,8 @@ class Login : AppCompatActivity() {
             val userName = usernameTextView.text.toString()
             val password = passwordTextView.text.toString()
             if (authenticate(userName, password)) {
-                val intent = Intent(this, MainActivity::class.java)
-                startActivity(intent)
+                val intent2 = Intent(this, MainActivity::class.java)
+                startActivity(intent2)
             } else {
                 Toast.makeText(this, "Invalid username or password", Toast.LENGTH_SHORT).show()
             }

@@ -44,6 +44,7 @@
         </activity>
         <activity android:name="com.example.opsc7311poe.Login" />
         <activity android:name="com.example.opsc7311poe.Register" />
+        <activity android:name="com.example.opsc7311poe.MainActivity" />
 
         <provider
             android:name="androidx.startup.InitializationProvider"
