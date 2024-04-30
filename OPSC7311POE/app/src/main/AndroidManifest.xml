@@ -13,6 +13,12 @@
         android:theme="@style/Theme.OPSC7311POE"
         tools:targetApi="31">
         <activity
+            android:name=".create_category"
+            android:exported="false" />
+        <activity
+            android:name=".view_graphs"
+            android:exported="false" />
+        <activity
             android:name=".StartingPage"
             android:exported="true">
             <intent-filter>
@@ -21,12 +27,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Login">
-
-        </activity>
-        <activity android:name=".Register">
-
-        </activity>
+        <activity android:name=".Login" />
+        <activity android:name=".Register" />
     </application>
 
 </manifest>
