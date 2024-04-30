@@ -27,14 +27,14 @@ public final class ActivityViewTasksBinding implements ViewBinding {
   public final ConstraintLayout main;
 
   @NonNull
-  public final LinearLayout penis;
+  public final LinearLayout vertLayout;
 
   private ActivityViewTasksBinding(@NonNull ConstraintLayout rootView, @NonNull ImageView imageView,
-      @NonNull ConstraintLayout main, @NonNull LinearLayout penis) {
+      @NonNull ConstraintLayout main, @NonNull LinearLayout vertLayout) {
     this.rootView = rootView;
     this.imageView = imageView;
     this.main = main;
-    this.penis = penis;
+    this.vertLayout = vertLayout;
   }
 
   @Override
@@ -72,13 +72,13 @@ public final class ActivityViewTasksBinding implements ViewBinding {
 
       ConstraintLayout main = (ConstraintLayout) rootView;
 
-      id = R.id.penis;
-      LinearLayout penis = ViewBindings.findChildViewById(rootView, id);
-      if (penis == null) {
+      id = R.id.vertLayout;
+      LinearLayout vertLayout = ViewBindings.findChildViewById(rootView, id);
+      if (vertLayout == null) {
         break missingId;
       }
 
-      return new ActivityViewTasksBinding((ConstraintLayout) rootView, imageView, main, penis);
+      return new ActivityViewTasksBinding((ConstraintLayout) rootView, imageView, main, vertLayout);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

@@ -97,7 +97,6 @@ id linearLayout4
 id linearLayout5
 id listView
 id main
-id penis
 id textClock2
 id textView10
 id textView11
@@ -154,6 +153,7 @@ id txtEmail
 id txtFullName
 id txtPassword
 id txtUserName
+id vertLayout
 id view
 id view10
 id view11

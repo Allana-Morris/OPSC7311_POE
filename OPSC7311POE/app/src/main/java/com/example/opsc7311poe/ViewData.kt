@@ -12,7 +12,7 @@ class ViewData : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_view_tasks)
 
-        val layout: LinearLayout = findViewById(R.id.penis)
+        val layout: LinearLayout = findViewById(R.id.vertLayout)
 
 
 // Adding a category

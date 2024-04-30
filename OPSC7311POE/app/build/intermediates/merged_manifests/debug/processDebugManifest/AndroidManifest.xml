@@ -31,6 +31,9 @@
             android:name="com.example.opsc7311poe.create_category"
             android:exported="false" />
         <activity
+            android:name="com.example.opsc7311poe.ViewData"
+            android:exported="false" />
+        <activity
             android:name="com.example.opsc7311poe.view_graphs"
             android:exported="false" />
         <activity
