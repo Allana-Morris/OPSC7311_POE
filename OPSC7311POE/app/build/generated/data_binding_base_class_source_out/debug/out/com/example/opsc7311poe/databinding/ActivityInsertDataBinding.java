@@ -22,9 +22,6 @@ public final class ActivityInsertDataBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
-  public final EditText editTextText7;
-
-  @NonNull
   public final EditText editTextText8;
 
   @NonNull
@@ -32,9 +29,6 @@ public final class ActivityInsertDataBinding implements ViewBinding {
 
   @NonNull
   public final ImageView imageView;
-
-  @NonNull
-  public final ImageView imageView14;
 
   @NonNull
   public final ImageView imageView15;
@@ -49,49 +43,61 @@ public final class ActivityInsertDataBinding implements ViewBinding {
   public final ImageView imageView18;
 
   @NonNull
-  public final ImageView imageView19;
+  public final ImageView ivBack;
 
   @NonNull
-  public final ImageView imageView20;
+  public final ImageView ivPickColour;
+
+  @NonNull
+  public final ConstraintLayout linearLayout;
+
+  @NonNull
+  public final ConstraintLayout linearLayout2;
+
+  @NonNull
+  public final ConstraintLayout linearLayout4;
+
+  @NonNull
+  public final ConstraintLayout linearLayout5;
 
   @NonNull
   public final ConstraintLayout main;
-
-  @NonNull
-  public final TextView textView21;
-
-  @NonNull
-  public final TextView textView22;
-
-  @NonNull
-  public final TextView textView23;
-
-  @NonNull
-  public final TextView textView24;
-
-  @NonNull
-  public final TextView textView25;
-
-  @NonNull
-  public final TextView textView26;
-
-  @NonNull
-  public final TextView textView27;
-
-  @NonNull
-  public final TextView textView28;
-
-  @NonNull
-  public final TextView textView29;
-
-  @NonNull
-  public final TextView textView30;
 
   @NonNull
   public final TextView textView32;
 
   @NonNull
   public final TextView textView34;
+
+  @NonNull
+  public final TextView tvAdd;
+
+  @NonNull
+  public final TextView tvCalendar;
+
+  @NonNull
+  public final TextView tvCategory;
+
+  @NonNull
+  public final TextView tvColour;
+
+  @NonNull
+  public final TextView tvHome;
+
+  @NonNull
+  public final TextView tvIcon;
+
+  @NonNull
+  public final TextView tvName;
+
+  @NonNull
+  public final TextView tvProfile;
+
+  @NonNull
+  public final TextView tvTimer;
+
+  @NonNull
+  public final EditText txtName;
 
   @NonNull
   public final View view;
@@ -127,43 +133,46 @@ public final class ActivityInsertDataBinding implements ViewBinding {
   public final View view9;
 
   private ActivityInsertDataBinding(@NonNull ConstraintLayout rootView,
-      @NonNull EditText editTextText7, @NonNull EditText editTextText8,
-      @NonNull EditText editTextText9, @NonNull ImageView imageView, @NonNull ImageView imageView14,
-      @NonNull ImageView imageView15, @NonNull ImageView imageView16,
-      @NonNull ImageView imageView17, @NonNull ImageView imageView18,
-      @NonNull ImageView imageView19, @NonNull ImageView imageView20,
-      @NonNull ConstraintLayout main, @NonNull TextView textView21, @NonNull TextView textView22,
-      @NonNull TextView textView23, @NonNull TextView textView24, @NonNull TextView textView25,
-      @NonNull TextView textView26, @NonNull TextView textView27, @NonNull TextView textView28,
-      @NonNull TextView textView29, @NonNull TextView textView30, @NonNull TextView textView32,
-      @NonNull TextView textView34, @NonNull View view, @NonNull View view10, @NonNull View view11,
-      @NonNull View view12, @NonNull View view13, @NonNull View view14, @NonNull View view15,
-      @NonNull View view16, @NonNull View view17, @NonNull View view8, @NonNull View view9) {
+      @NonNull EditText editTextText8, @NonNull EditText editTextText9,
+      @NonNull ImageView imageView, @NonNull ImageView imageView15, @NonNull ImageView imageView16,
+      @NonNull ImageView imageView17, @NonNull ImageView imageView18, @NonNull ImageView ivBack,
+      @NonNull ImageView ivPickColour, @NonNull ConstraintLayout linearLayout,
+      @NonNull ConstraintLayout linearLayout2, @NonNull ConstraintLayout linearLayout4,
+      @NonNull ConstraintLayout linearLayout5, @NonNull ConstraintLayout main,
+      @NonNull TextView textView32, @NonNull TextView textView34, @NonNull TextView tvAdd,
+      @NonNull TextView tvCalendar, @NonNull TextView tvCategory, @NonNull TextView tvColour,
+      @NonNull TextView tvHome, @NonNull TextView tvIcon, @NonNull TextView tvName,
+      @NonNull TextView tvProfile, @NonNull TextView tvTimer, @NonNull EditText txtName,
+      @NonNull View view, @NonNull View view10, @NonNull View view11, @NonNull View view12,
+      @NonNull View view13, @NonNull View view14, @NonNull View view15, @NonNull View view16,
+      @NonNull View view17, @NonNull View view8, @NonNull View view9) {
     this.rootView = rootView;
-    this.editTextText7 = editTextText7;
     this.editTextText8 = editTextText8;
     this.editTextText9 = editTextText9;
     this.imageView = imageView;
-    this.imageView14 = imageView14;
     this.imageView15 = imageView15;
     this.imageView16 = imageView16;
     this.imageView17 = imageView17;
     this.imageView18 = imageView18;
-    this.imageView19 = imageView19;
-    this.imageView20 = imageView20;
+    this.ivBack = ivBack;
+    this.ivPickColour = ivPickColour;
+    this.linearLayout = linearLayout;
+    this.linearLayout2 = linearLayout2;
+    this.linearLayout4 = linearLayout4;
+    this.linearLayout5 = linearLayout5;
     this.main = main;
-    this.textView21 = textView21;
-    this.textView22 = textView22;
-    this.textView23 = textView23;
-    this.textView24 = textView24;
-    this.textView25 = textView25;
-    this.textView26 = textView26;
-    this.textView27 = textView27;
-    this.textView28 = textView28;
-    this.textView29 = textView29;
-    this.textView30 = textView30;
     this.textView32 = textView32;
     this.textView34 = textView34;
+    this.tvAdd = tvAdd;
+    this.tvCalendar = tvCalendar;
+    this.tvCategory = tvCategory;
+    this.tvColour = tvColour;
+    this.tvHome = tvHome;
+    this.tvIcon = tvIcon;
+    this.tvName = tvName;
+    this.tvProfile = tvProfile;
+    this.tvTimer = tvTimer;
+    this.txtName = txtName;
     this.view = view;
     this.view10 = view10;
     this.view11 = view11;
@@ -204,12 +213,6 @@ public final class ActivityInsertDataBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.editTextText7;
-      EditText editTextText7 = ViewBindings.findChildViewById(rootView, id);
-      if (editTextText7 == null) {
-        break missingId;
-      }
-
       id = R.id.editTextText8;
       EditText editTextText8 = ViewBindings.findChildViewById(rootView, id);
       if (editTextText8 == null) {
@@ -225,12 +228,6 @@ public final class ActivityInsertDataBinding implements ViewBinding {
       id = R.id.imageView;
       ImageView imageView = ViewBindings.findChildViewById(rootView, id);
       if (imageView == null) {
-        break missingId;
-      }
-
-      id = R.id.imageView14;
-      ImageView imageView14 = ViewBindings.findChildViewById(rootView, id);
-      if (imageView14 == null) {
         break missingId;
       }
 
@@ -258,79 +255,43 @@ public final class ActivityInsertDataBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.imageView19;
-      ImageView imageView19 = ViewBindings.findChildViewById(rootView, id);
-      if (imageView19 == null) {
+      id = R.id.iv_Back;
+      ImageView ivBack = ViewBindings.findChildViewById(rootView, id);
+      if (ivBack == null) {
         break missingId;
       }
 
-      id = R.id.imageView20;
-      ImageView imageView20 = ViewBindings.findChildViewById(rootView, id);
-      if (imageView20 == null) {
+      id = R.id.iv_Pick_Colour;
+      ImageView ivPickColour = ViewBindings.findChildViewById(rootView, id);
+      if (ivPickColour == null) {
+        break missingId;
+      }
+
+      id = R.id.linearLayout;
+      ConstraintLayout linearLayout = ViewBindings.findChildViewById(rootView, id);
+      if (linearLayout == null) {
+        break missingId;
+      }
+
+      id = R.id.linearLayout2;
+      ConstraintLayout linearLayout2 = ViewBindings.findChildViewById(rootView, id);
+      if (linearLayout2 == null) {
+        break missingId;
+      }
+
+      id = R.id.linearLayout4;
+      ConstraintLayout linearLayout4 = ViewBindings.findChildViewById(rootView, id);
+      if (linearLayout4 == null) {
+        break missingId;
+      }
+
+      id = R.id.linearLayout5;
+      ConstraintLayout linearLayout5 = ViewBindings.findChildViewById(rootView, id);
+      if (linearLayout5 == null) {
         break missingId;
       }
 
       ConstraintLayout main = (ConstraintLayout) rootView;
-
-      id = R.id.textView21;
-      TextView textView21 = ViewBindings.findChildViewById(rootView, id);
-      if (textView21 == null) {
-        break missingId;
-      }
-
-      id = R.id.textView22;
-      TextView textView22 = ViewBindings.findChildViewById(rootView, id);
-      if (textView22 == null) {
-        break missingId;
-      }
-
-      id = R.id.textView23;
-      TextView textView23 = ViewBindings.findChildViewById(rootView, id);
-      if (textView23 == null) {
-        break missingId;
-      }
-
-      id = R.id.textView24;
-      TextView textView24 = ViewBindings.findChildViewById(rootView, id);
-      if (textView24 == null) {
-        break missingId;
-      }
-
-      id = R.id.textView25;
-      TextView textView25 = ViewBindings.findChildViewById(rootView, id);
-      if (textView25 == null) {
-        break missingId;
-      }
-
-      id = R.id.textView26;
-      TextView textView26 = ViewBindings.findChildViewById(rootView, id);
-      if (textView26 == null) {
-        break missingId;
-      }
-
-      id = R.id.textView27;
-      TextView textView27 = ViewBindings.findChildViewById(rootView, id);
-      if (textView27 == null) {
-        break missingId;
-      }
-
-      id = R.id.textView28;
-      TextView textView28 = ViewBindings.findChildViewById(rootView, id);
-      if (textView28 == null) {
-        break missingId;
-      }
-
-      id = R.id.textView29;
-      TextView textView29 = ViewBindings.findChildViewById(rootView, id);
-      if (textView29 == null) {
-        break missingId;
-      }
-
-      id = R.id.textView30;
-      TextView textView30 = ViewBindings.findChildViewById(rootView, id);
-      if (textView30 == null) {
-        break missingId;
-      }
 
       id = R.id.textView32;
       TextView textView32 = ViewBindings.findChildViewById(rootView, id);
@@ -341,6 +302,66 @@ public final class ActivityInsertDataBinding implements ViewBinding {
       id = R.id.textView34;
       TextView textView34 = ViewBindings.findChildViewById(rootView, id);
       if (textView34 == null) {
+        break missingId;
+      }
+
+      id = R.id.tv_Add;
+      TextView tvAdd = ViewBindings.findChildViewById(rootView, id);
+      if (tvAdd == null) {
+        break missingId;
+      }
+
+      id = R.id.tv_calendar;
+      TextView tvCalendar = ViewBindings.findChildViewById(rootView, id);
+      if (tvCalendar == null) {
+        break missingId;
+      }
+
+      id = R.id.tv_Category;
+      TextView tvCategory = ViewBindings.findChildViewById(rootView, id);
+      if (tvCategory == null) {
+        break missingId;
+      }
+
+      id = R.id.tv_Colour;
+      TextView tvColour = ViewBindings.findChildViewById(rootView, id);
+      if (tvColour == null) {
+        break missingId;
+      }
+
+      id = R.id.tv_Home;
+      TextView tvHome = ViewBindings.findChildViewById(rootView, id);
+      if (tvHome == null) {
+        break missingId;
+      }
+
+      id = R.id.tv_Icon;
+      TextView tvIcon = ViewBindings.findChildViewById(rootView, id);
+      if (tvIcon == null) {
+        break missingId;
+      }
+
+      id = R.id.tv_Name;
+      TextView tvName = ViewBindings.findChildViewById(rootView, id);
+      if (tvName == null) {
+        break missingId;
+      }
+
+      id = R.id.tv_Profile;
+      TextView tvProfile = ViewBindings.findChildViewById(rootView, id);
+      if (tvProfile == null) {
+        break missingId;
+      }
+
+      id = R.id.tv_timer;
+      TextView tvTimer = ViewBindings.findChildViewById(rootView, id);
+      if (tvTimer == null) {
+        break missingId;
+      }
+
+      id = R.id.txt_Name;
+      EditText txtName = ViewBindings.findChildViewById(rootView, id);
+      if (txtName == null) {
         break missingId;
       }
 
@@ -410,12 +431,12 @@ public final class ActivityInsertDataBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityInsertDataBinding((ConstraintLayout) rootView, editTextText7,
-          editTextText8, editTextText9, imageView, imageView14, imageView15, imageView16,
-          imageView17, imageView18, imageView19, imageView20, main, textView21, textView22,
-          textView23, textView24, textView25, textView26, textView27, textView28, textView29,
-          textView30, textView32, textView34, view, view10, view11, view12, view13, view14, view15,
-          view16, view17, view8, view9);
+      return new ActivityInsertDataBinding((ConstraintLayout) rootView, editTextText8,
+          editTextText9, imageView, imageView15, imageView16, imageView17, imageView18, ivBack,
+          ivPickColour, linearLayout, linearLayout2, linearLayout4, linearLayout5, main, textView32,
+          textView34, tvAdd, tvCalendar, tvCategory, tvColour, tvHome, tvIcon, tvName, tvProfile,
+          tvTimer, txtName, view, view10, view11, view12, view13, view14, view15, view16, view17,
+          view8, view9);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
