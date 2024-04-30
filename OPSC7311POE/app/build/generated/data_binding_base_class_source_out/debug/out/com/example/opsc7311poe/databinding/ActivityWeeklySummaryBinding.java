@@ -78,9 +78,6 @@ public final class ActivityWeeklySummaryBinding implements ViewBinding {
   public final TextView tvGraph;
 
   @NonNull
-  public final TextView tvOutputSummary;
-
-  @NonNull
   public final TextView tvPie;
 
   @NonNull
@@ -96,8 +93,8 @@ public final class ActivityWeeklySummaryBinding implements ViewBinding {
       @NonNull ImageView imgPiechart, @NonNull ConstraintLayout main, @NonNull TextView textView22,
       @NonNull TextView textView23, @NonNull TextView textView24, @NonNull TextView textView25,
       @NonNull TextView textView26, @NonNull TextView tvBar, @NonNull TextView tvChooseAWeek,
-      @NonNull TextView tvGraph, @NonNull TextView tvOutputSummary, @NonNull TextView tvPie,
-      @NonNull TextView tvSummary, @NonNull TextView tvgenerate) {
+      @NonNull TextView tvGraph, @NonNull TextView tvPie, @NonNull TextView tvSummary,
+      @NonNull TextView tvgenerate) {
     this.rootView = rootView;
     this.chooseWeek = chooseWeek;
     this.imageView = imageView;
@@ -118,7 +115,6 @@ public final class ActivityWeeklySummaryBinding implements ViewBinding {
     this.tvBar = tvBar;
     this.tvChooseAWeek = tvChooseAWeek;
     this.tvGraph = tvGraph;
-    this.tvOutputSummary = tvOutputSummary;
     this.tvPie = tvPie;
     this.tvSummary = tvSummary;
     this.tvgenerate = tvgenerate;
@@ -261,12 +257,6 @@ public final class ActivityWeeklySummaryBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.tvOutputSummary;
-      TextView tvOutputSummary = ViewBindings.findChildViewById(rootView, id);
-      if (tvOutputSummary == null) {
-        break missingId;
-      }
-
       id = R.id.tvPie;
       TextView tvPie = ViewBindings.findChildViewById(rootView, id);
       if (tvPie == null) {
@@ -288,7 +278,7 @@ public final class ActivityWeeklySummaryBinding implements ViewBinding {
       return new ActivityWeeklySummaryBinding((ConstraintLayout) rootView, chooseWeek, imageView,
           imageView14, imageView15, imageView16, imageView17, imageView18, imgBar, imgChooseDate,
           imgPiechart, main, textView22, textView23, textView24, textView25, textView26, tvBar,
-          tvChooseAWeek, tvGraph, tvOutputSummary, tvPie, tvSummary, tvgenerate);
+          tvChooseAWeek, tvGraph, tvPie, tvSummary, tvgenerate);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

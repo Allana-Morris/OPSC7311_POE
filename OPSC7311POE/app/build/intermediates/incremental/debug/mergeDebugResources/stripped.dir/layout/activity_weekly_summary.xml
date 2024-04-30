@@ -142,17 +142,6 @@
         tools:layout_editor_absoluteX="120dp"
         tools:layout_editor_absoluteY="518dp" />
 
-    <TextView
-        android:id="@+id/tvOutputSummary"
-        android:layout_width="348dp"
-        android:layout_height="100dp"
-        android:width="1dp"
-        android:background="@drawable/border"
-        android:text=""
-        tools:layout_editor_absoluteX="31dp"
-        tools:layout_editor_absoluteY="553dp"
-        tools:ignore="MissingConstraints" />
-
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="461dp"
         android:layout_height="wrap_content"

@@ -23,67 +23,67 @@ public final class ActivityLoginBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
+  public final Button btnGoogleSignin;
+
+  @NonNull
   public final Button btnLogin;
-
-  @NonNull
-  public final Button button;
-
-  @NonNull
-  public final EditText editTextText5;
-
-  @NonNull
-  public final EditText editTextText6;
 
   @NonNull
   public final ImageView imageView;
 
   @NonNull
-  public final ImageView imageView2;
+  public final ImageView ivGoogle;
 
   @NonNull
-  public final ImageView imageView3;
+  public final ImageView ivPassword;
 
   @NonNull
-  public final ImageView imageView5;
+  public final ImageView ivUsername;
 
   @NonNull
   public final ConstraintLayout main;
 
   @NonNull
-  public final TextView textView;
-
-  @NonNull
-  public final TextView textView2;
-
-  @NonNull
-  public final TextView textView3;
+  public final TextView tvNoAccount;
 
   @NonNull
   public final TextView tvOpenRegister;
 
   @NonNull
+  public final EditText tvPassword;
+
+  @NonNull
+  public final TextView tvResetPassword;
+
+  @NonNull
+  public final TextView tvTitle;
+
+  @NonNull
+  public final EditText tvUsername;
+
+  @NonNull
   public final View view;
 
-  private ActivityLoginBinding(@NonNull ConstraintLayout rootView, @NonNull Button btnLogin,
-      @NonNull Button button, @NonNull EditText editTextText5, @NonNull EditText editTextText6,
-      @NonNull ImageView imageView, @NonNull ImageView imageView2, @NonNull ImageView imageView3,
-      @NonNull ImageView imageView5, @NonNull ConstraintLayout main, @NonNull TextView textView,
-      @NonNull TextView textView2, @NonNull TextView textView3, @NonNull TextView tvOpenRegister,
+  private ActivityLoginBinding(@NonNull ConstraintLayout rootView, @NonNull Button btnGoogleSignin,
+      @NonNull Button btnLogin, @NonNull ImageView imageView, @NonNull ImageView ivGoogle,
+      @NonNull ImageView ivPassword, @NonNull ImageView ivUsername, @NonNull ConstraintLayout main,
+      @NonNull TextView tvNoAccount, @NonNull TextView tvOpenRegister, @NonNull EditText tvPassword,
+      @NonNull TextView tvResetPassword, @NonNull TextView tvTitle, @NonNull EditText tvUsername,
       @NonNull View view) {
     this.rootView = rootView;
+    this.btnGoogleSignin = btnGoogleSignin;
     this.btnLogin = btnLogin;
-    this.button = button;
-    this.editTextText5 = editTextText5;
-    this.editTextText6 = editTextText6;
     this.imageView = imageView;
-    this.imageView2 = imageView2;
-    this.imageView3 = imageView3;
-    this.imageView5 = imageView5;
+    this.ivGoogle = ivGoogle;
+    this.ivPassword = ivPassword;
+    this.ivUsername = ivUsername;
     this.main = main;
-    this.textView = textView;
-    this.textView2 = textView2;
-    this.textView3 = textView3;
+    this.tvNoAccount = tvNoAccount;
     this.tvOpenRegister = tvOpenRegister;
+    this.tvPassword = tvPassword;
+    this.tvResetPassword = tvResetPassword;
+    this.tvTitle = tvTitle;
+    this.tvUsername = tvUsername;
     this.view = view;
   }
 
@@ -114,27 +114,15 @@ public final class ActivityLoginBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.btn_Google_signin;
+      Button btnGoogleSignin = ViewBindings.findChildViewById(rootView, id);
+      if (btnGoogleSignin == null) {
+        break missingId;
+      }
+
       id = R.id.btn_Login;
       Button btnLogin = ViewBindings.findChildViewById(rootView, id);
       if (btnLogin == null) {
-        break missingId;
-      }
-
-      id = R.id.button;
-      Button button = ViewBindings.findChildViewById(rootView, id);
-      if (button == null) {
-        break missingId;
-      }
-
-      id = R.id.editTextText5;
-      EditText editTextText5 = ViewBindings.findChildViewById(rootView, id);
-      if (editTextText5 == null) {
-        break missingId;
-      }
-
-      id = R.id.editTextText6;
-      EditText editTextText6 = ViewBindings.findChildViewById(rootView, id);
-      if (editTextText6 == null) {
         break missingId;
       }
 
@@ -144,41 +132,29 @@ public final class ActivityLoginBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.imageView2;
-      ImageView imageView2 = ViewBindings.findChildViewById(rootView, id);
-      if (imageView2 == null) {
+      id = R.id.iv_Google;
+      ImageView ivGoogle = ViewBindings.findChildViewById(rootView, id);
+      if (ivGoogle == null) {
         break missingId;
       }
 
-      id = R.id.imageView3;
-      ImageView imageView3 = ViewBindings.findChildViewById(rootView, id);
-      if (imageView3 == null) {
+      id = R.id.iv_Password;
+      ImageView ivPassword = ViewBindings.findChildViewById(rootView, id);
+      if (ivPassword == null) {
         break missingId;
       }
 
-      id = R.id.imageView5;
-      ImageView imageView5 = ViewBindings.findChildViewById(rootView, id);
-      if (imageView5 == null) {
+      id = R.id.iv_Username;
+      ImageView ivUsername = ViewBindings.findChildViewById(rootView, id);
+      if (ivUsername == null) {
         break missingId;
       }
 
       ConstraintLayout main = (ConstraintLayout) rootView;
 
-      id = R.id.textView;
-      TextView textView = ViewBindings.findChildViewById(rootView, id);
-      if (textView == null) {
-        break missingId;
-      }
-
-      id = R.id.textView2;
-      TextView textView2 = ViewBindings.findChildViewById(rootView, id);
-      if (textView2 == null) {
-        break missingId;
-      }
-
-      id = R.id.textView3;
-      TextView textView3 = ViewBindings.findChildViewById(rootView, id);
-      if (textView3 == null) {
+      id = R.id.tv_NoAccount;
+      TextView tvNoAccount = ViewBindings.findChildViewById(rootView, id);
+      if (tvNoAccount == null) {
         break missingId;
       }
 
@@ -188,15 +164,39 @@ public final class ActivityLoginBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.tv_Password;
+      EditText tvPassword = ViewBindings.findChildViewById(rootView, id);
+      if (tvPassword == null) {
+        break missingId;
+      }
+
+      id = R.id.tv_ResetPassword;
+      TextView tvResetPassword = ViewBindings.findChildViewById(rootView, id);
+      if (tvResetPassword == null) {
+        break missingId;
+      }
+
+      id = R.id.tv_Title;
+      TextView tvTitle = ViewBindings.findChildViewById(rootView, id);
+      if (tvTitle == null) {
+        break missingId;
+      }
+
+      id = R.id.tv_Username;
+      EditText tvUsername = ViewBindings.findChildViewById(rootView, id);
+      if (tvUsername == null) {
+        break missingId;
+      }
+
       id = R.id.view;
       View view = ViewBindings.findChildViewById(rootView, id);
       if (view == null) {
         break missingId;
       }
 
-      return new ActivityLoginBinding((ConstraintLayout) rootView, btnLogin, button, editTextText5,
-          editTextText6, imageView, imageView2, imageView3, imageView5, main, textView, textView2,
-          textView3, tvOpenRegister, view);
+      return new ActivityLoginBinding((ConstraintLayout) rootView, btnGoogleSignin, btnLogin,
+          imageView, ivGoogle, ivPassword, ivUsername, main, tvNoAccount, tvOpenRegister,
+          tvPassword, tvResetPassword, tvTitle, tvUsername, view);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

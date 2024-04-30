@@ -3231,8 +3231,8 @@ id btnSave
 id btnSignUp
 id btnStart
 id btnStop
+id btn_Google_signin
 id btn_Login
-id button
 id button5
 id button9
 id buttonPanel
@@ -3309,8 +3309,6 @@ id easeInOut
 id easeOut
 id east
 id edge
-id editTextText5
-id editTextText6
 id editTextText7
 id editTextText8
 id editTextText9
@@ -3375,7 +3373,6 @@ id imageView16
 id imageView17
 id imageView18
 id imageView19
-id imageView2
 id imageView20
 id imageView21
 id imageView22
@@ -3383,9 +3380,7 @@ id imageView23
 id imageView24
 id imageView25
 id imageView26
-id imageView3
 id imageView4
-id imageView5
 id imageView6
 id imageView7
 id imageView8
@@ -3403,6 +3398,9 @@ id invisible
 id inward
 id italic
 id item_touch_helper_previous_elevation
+id iv_Google
+id iv_Password
+id iv_Username
 id jumpToEnd
 id jumpToStart
 id labeled
@@ -3413,6 +3411,10 @@ id legacy
 id line1
 id line3
 id linear
+id linearLayout
+id linearLayout2
+id linearLayout4
+id linearLayout5
 id listMode
 id listView
 id list_item
@@ -3627,7 +3629,6 @@ id textSpacerNoTitle
 id textStart
 id textTop
 id textVi6
-id textView
 id textView10
 id textView11
 id textView12
@@ -3638,7 +3639,6 @@ id textView16
 id textView17
 id textView18
 id textView19
-id textView2
 id textView20
 id textView21
 id textView22
@@ -3649,7 +3649,6 @@ id textView26
 id textView27
 id textView28
 id textView29
-id textView3
 id textView30
 id textView32
 id textView34
@@ -3697,14 +3696,22 @@ id tvFullNameInput
 id tvGraph
 id tvNewPhoto
 id tvOngoingTask
-id tvOutputSummary
 id tvPie
 id tvProfilePhoto
 id tvSeeAll
 id tvSeePassword
 id tvSummary
 id tvTimer
+id tv_Home
+id tv_NoAccount
 id tv_Open_Register
+id tv_Password
+id tv_Profile
+id tv_ResetPassword
+id tv_Title
+id tv_Username
+id tv_calendar
+id tv_timer
 id tvgenerate
 id tvuserProfile
 id txtEmail
@@ -3866,6 +3873,7 @@ layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_calendar
+layout activity_create_category
 layout activity_insert_data
 layout activity_login
 layout activity_main
@@ -3873,6 +3881,7 @@ layout activity_profile
 layout activity_register
 layout activity_starting_page
 layout activity_timer
+layout activity_view_graphs
 layout activity_view_tasks
 layout activity_weekly_summary
 layout custom_dialog
@@ -4020,6 +4029,7 @@ string call_notification_hang_up_action
 string call_notification_incoming_text
 string call_notification_ongoing_text
 string call_notification_screening_text
+string category
 string character_counter_content_description
 string character_counter_overflowed_content_description
 string character_counter_pattern

@@ -28,13 +28,13 @@ public final class ActivityProfileBinding implements ViewBinding {
   public final View empyViews;
 
   @NonNull
-  public final ImageView imageView2;
-
-  @NonNull
   public final ImageView imgPhotoUp;
 
   @NonNull
   public final ImageView imgWhiteBackground;
+
+  @NonNull
+  public final ImageView ivGoogle;
 
   @NonNull
   public final ConstraintLayout main;
@@ -76,9 +76,9 @@ public final class ActivityProfileBinding implements ViewBinding {
   public final TextView tvuserProfile;
 
   private ActivityProfileBinding(@NonNull ConstraintLayout rootView, @NonNull Button btnSave,
-      @NonNull View empyViews, @NonNull ImageView imageView2, @NonNull ImageView imgPhotoUp,
-      @NonNull ImageView imgWhiteBackground, @NonNull ConstraintLayout main,
-      @NonNull TextView textView10, @NonNull TextView textView11, @NonNull TextView textView9,
+      @NonNull View empyViews, @NonNull ImageView imgPhotoUp, @NonNull ImageView imgWhiteBackground,
+      @NonNull ImageView ivGoogle, @NonNull ConstraintLayout main, @NonNull TextView textView10,
+      @NonNull TextView textView11, @NonNull TextView textView9,
       @NonNull TextView tvCustomiseProfile, @NonNull TextView tvEditusername,
       @NonNull TextView tvEmail, @NonNull TextView tvFullName, @NonNull TextView tvFullNameInput,
       @NonNull TextView tvNewPhoto, @NonNull TextView tvProfilePhoto,
@@ -86,9 +86,9 @@ public final class ActivityProfileBinding implements ViewBinding {
     this.rootView = rootView;
     this.btnSave = btnSave;
     this.empyViews = empyViews;
-    this.imageView2 = imageView2;
     this.imgPhotoUp = imgPhotoUp;
     this.imgWhiteBackground = imgWhiteBackground;
+    this.ivGoogle = ivGoogle;
     this.main = main;
     this.textView10 = textView10;
     this.textView11 = textView11;
@@ -143,12 +143,6 @@ public final class ActivityProfileBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.imageView2;
-      ImageView imageView2 = ViewBindings.findChildViewById(rootView, id);
-      if (imageView2 == null) {
-        break missingId;
-      }
-
       id = R.id.img_photoUp;
       ImageView imgPhotoUp = ViewBindings.findChildViewById(rootView, id);
       if (imgPhotoUp == null) {
@@ -158,6 +152,12 @@ public final class ActivityProfileBinding implements ViewBinding {
       id = R.id.img_whiteBackground;
       ImageView imgWhiteBackground = ViewBindings.findChildViewById(rootView, id);
       if (imgWhiteBackground == null) {
+        break missingId;
+      }
+
+      id = R.id.iv_Google;
+      ImageView ivGoogle = ViewBindings.findChildViewById(rootView, id);
+      if (ivGoogle == null) {
         break missingId;
       }
 
@@ -235,10 +235,10 @@ public final class ActivityProfileBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityProfileBinding((ConstraintLayout) rootView, btnSave, empyViews, imageView2,
-          imgPhotoUp, imgWhiteBackground, main, textView10, textView11, textView9,
-          tvCustomiseProfile, tvEditusername, tvEmail, tvFullName, tvFullNameInput, tvNewPhoto,
-          tvProfilePhoto, tvSeePassword, tvuserProfile);
+      return new ActivityProfileBinding((ConstraintLayout) rootView, btnSave, empyViews, imgPhotoUp,
+          imgWhiteBackground, ivGoogle, main, textView10, textView11, textView9, tvCustomiseProfile,
+          tvEditusername, tvEmail, tvFullName, tvFullNameInput, tvNewPhoto, tvProfilePhoto,
+          tvSeePassword, tvuserProfile);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

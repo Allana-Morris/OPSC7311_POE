@@ -50,7 +50,7 @@
         tools:layout_editor_absoluteY="25dp" />
 
     <ImageView
-        android:id="@+id/imageView2"
+        android:id="@+id/iv_Google"
         android:layout_width="61dp"
         android:layout_height="56dp"
         app:srcCompat="@drawable/profilebtn"
