@@ -91,7 +91,7 @@
         app:layout_constraintTop_toBottomOf="@+id/view8" />
 
     <EditText
-        android:id="@+id/editTextText7"
+        android:id="@+id/txt_Name"
         android:layout_width="209dp"
         android:layout_height="26dp"
         android:layout_marginTop="20dp"
@@ -159,7 +159,7 @@
         app:layout_constraintTop_toBottomOf="@+id/view10" />
 
     <ImageView
-        android:id="@+id/imageView20"
+        android:id="@+id/iv_Pick_Colour"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
