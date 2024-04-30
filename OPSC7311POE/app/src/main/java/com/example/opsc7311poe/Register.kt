@@ -58,7 +58,7 @@ class Register : AppCompatActivity() {
 
             if (Validate.checkExistingUserEmail(email.text.toString()))
             {
-                email.setText("Account exists")
+                email.setText("Account already exists")
                 email.setTextColor(Color.RED)
                 valid = false;
 
@@ -66,7 +66,7 @@ class Register : AppCompatActivity() {
 
             if (Validate.checkExistingUserUserName(username.text.toString()))
             {
-                username.setText("Account exists")
+                username.setText("User Name taken")
                 username.setTextColor(Color.RED)
                 valid = false;
 

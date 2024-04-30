@@ -27,10 +27,14 @@ class Login : AppCompatActivity() {
             //Login code - Checks and Stuffs
             val userName = usernameTextView.text.toString()
             val password = passwordTextView.text.toString()
-            if (authenticate(userName, password)) {
+            if (authenticate(userName, password))
+            {
+                var loggedUser = getUser(userName)
+                SessionUser.currentUser = loggedUser;
                 val intent2 = Intent(this, MainActivity::class.java)
                 startActivity(intent2)
-            } else {
+            } else
+            {
                 Toast.makeText(this, "Invalid username or password", Toast.LENGTH_SHORT).show()
             }
         }
@@ -38,5 +42,14 @@ class Login : AppCompatActivity() {
 
     private fun authenticate(username: String, password: String): Boolean {
         return UserList.users.any { it.username == username && it.password == password }
+    }
+    private fun getUser(uName: String): User?
+    {
+        for (user in UserList.users) {
+            if (user.username == uName) {
+                return user
+            }
+        }
+        return null // Return null if no user with the specified email is found
     }
 }
