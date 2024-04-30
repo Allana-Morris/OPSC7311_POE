@@ -10,15 +10,13 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 
 class Login : AppCompatActivity() {
-    private lateinit var usernameTextView: TextView
-    private lateinit var passwordTextView: TextView
+    private var usernameTextView: TextView = findViewById(R.id.tv_Username)
+    private var passwordTextView: TextView = findViewById(R.id.tv_Password)
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_login)
-        usernameTextView = findViewById(R.id.tv_Username)
-        usernameTextView = findViewById(R.id.tv_Password)
 
         val buttonOpenActivity = findViewById<TextView>(R.id.tv_Open_Register)
         buttonOpenActivity.setOnClickListener {

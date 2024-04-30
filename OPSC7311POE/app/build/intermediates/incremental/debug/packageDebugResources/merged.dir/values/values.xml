@@ -33,6 +33,7 @@
     <string name="bar">Bar Graph</string>
     <string name="calendar">Calendar</string>
     <string name="calendar_">Calendar</string>
+    <string name="category">Category</string>
     <string name="choose">Choose your graph:</string>
     <string name="chooseW">Choose a Week:</string>
     <string name="color">Colour</string>
