@@ -16,9 +16,9 @@ class ViewData : AppCompatActivity() {
         super.onCreate(savedInstanceState)
        setContentView(R.layout.activity_view_tasks)
      //   val HomeOpenActivity = findViewById<TextView>(R.id.tv_Home)
-      //  val ProfileOpenActivity = findViewById<TextView>(R.id.tv_Profile)
-     //   val CalendarOpenActivity = findViewById<TextView>(R.id.tv_calendar)
-     //   val TimerOpenActivity = findViewById<TextView>(R.id.tv_timer)
+   //     val ProfileOpenActivity = findViewById<TextView>(R.id.tv_Profile)
+   //     val CalendarOpenActivity = findViewById<TextView>(R.id.tv_calendar)
+    //    val TimerOpenActivity = findViewById<TextView>(R.id.tv_timer)
 
        val btnCreate : FloatingActionButton = findViewById(R.id.createBtn)
 
@@ -30,7 +30,7 @@ class ViewData : AppCompatActivity() {
 
 
 
-   /*     HomeOpenActivity.setOnClickListener()
+/*        HomeOpenActivity.setOnClickListener()
         {
             navBar.OpenHomeButton()
         }
@@ -53,7 +53,7 @@ class ViewData : AppCompatActivity() {
 
         val layout: LinearLayout = findViewById(R.id.vertLayout)
        /*
-
+//this commented out section is not necessary for this page, but you can read it anyway
         // Adding a category catagories have a bunch of params this example is only the name
     //    val workCategory = Category("Work", )
      //   SessionUser.currentUser?.categories?.put(workCategory.name, workCategory)
