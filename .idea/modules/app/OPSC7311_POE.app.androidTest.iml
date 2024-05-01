@@ -41,10 +41,16 @@
     <output-test url="file://$MODULE_DIR$/../../../OPSC7311POE/app/build/intermediates/javac/debugAndroidTest/compileDebugAndroidTestJavaWithJavac/classes" />
     <exclude-output />
     <content url="file://$MODULE_DIR$/../../../OPSC7311POE/app/build/generated/ap_generated_sources/debugAndroidTest/out" />
+    <content url="file://$MODULE_DIR$/../../../OPSC7311POE/app/build/generated/ap_generated_sources/debugAndroidTest/out" />
+    <content url="file://$MODULE_DIR$/../../../OPSC7311POE/app/build/generated/res/resValues/androidTest/debug" />
     <content url="file://$MODULE_DIR$/../../../OPSC7311POE/app/build/generated/res/resValues/androidTest/debug" />
     <content url="file://$MODULE_DIR$/../../../OPSC7311POE/app/src/androidTest">
       <sourceFolder url="file://$MODULE_DIR$/../../../OPSC7311POE/app/src/androidTest/java" isTestSource="true" />
     </content>
+    <content url="file://$MODULE_DIR$/../../../OPSC7311POE/app/src/androidTest">
+      <sourceFolder url="file://$MODULE_DIR$/../../../OPSC7311POE/app/src/androidTest/java" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../../OPSC7311POE/app/src/androidTestDebug" />
     <content url="file://$MODULE_DIR$/../../../OPSC7311POE/app/src/androidTestDebug" />
     <orderEntry type="jdk" jdkName="Android API 34, extension level 7 Platform" jdkType="Android SDK" />
     <orderEntry type="sourceFolder" forTests="false" />

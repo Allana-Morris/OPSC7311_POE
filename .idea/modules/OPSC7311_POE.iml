@@ -6,6 +6,10 @@
       <excludeFolder url="file://$MODULE_DIR$/../../OPSC7311POE/.gradle" />
       <excludeFolder url="file://$MODULE_DIR$/../../OPSC7311POE/build" />
     </content>
+    <content url="file://$MODULE_DIR$/../../OPSC7311POE">
+      <excludeFolder url="file://$MODULE_DIR$/../../OPSC7311POE/.gradle" />
+      <excludeFolder url="file://$MODULE_DIR$/../../OPSC7311POE/build" />
+    </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
