@@ -44,7 +44,7 @@
         app:layout_constraintTop_toBottomOf="@+id/view8" />
 
     <EditText
-        android:id="@+id/txt_Name"
+        android:id="@+id/edtName"
         android:layout_width="212dp"
         android:layout_height="47dp"
         android:layout_marginTop="12dp"
@@ -156,13 +156,13 @@
         android:text="@string/category"
         android:textColor="@color/black"
         android:textSize="20sp"
-        app:layout_constraintEnd_toStartOf="@+id/tv_Add"
+        app:layout_constraintEnd_toStartOf="@+id/tvAddTask"
         app:layout_constraintHorizontal_bias="0.508"
         app:layout_constraintStart_toEndOf="@+id/iv_Back"
         app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
     <TextView
-        android:id="@+id/tv_Add"
+        android:id="@+id/tvAddTask"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"

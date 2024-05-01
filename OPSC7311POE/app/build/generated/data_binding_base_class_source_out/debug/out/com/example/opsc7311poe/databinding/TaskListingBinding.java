@@ -24,25 +24,29 @@ public final class TaskListingBinding implements ViewBinding {
   public final ImageView imgTaskIcon;
 
   @NonNull
-  public final TextView tvRecorded;
+  public final TextView tvTaskDescription;
+
+  @NonNull
+  public final TextView tvTaskEndTime;
 
   @NonNull
   public final TextView tvTaskName;
 
   @NonNull
-  public final TextView tvTaskTime;
+  public final TextView tvTaskStartTime;
 
   @NonNull
   public final View view5;
 
   private TaskListingBinding(@NonNull CardView rootView, @NonNull ImageView imgTaskIcon,
-      @NonNull TextView tvRecorded, @NonNull TextView tvTaskName, @NonNull TextView tvTaskTime,
-      @NonNull View view5) {
+      @NonNull TextView tvTaskDescription, @NonNull TextView tvTaskEndTime,
+      @NonNull TextView tvTaskName, @NonNull TextView tvTaskStartTime, @NonNull View view5) {
     this.rootView = rootView;
     this.imgTaskIcon = imgTaskIcon;
-    this.tvRecorded = tvRecorded;
+    this.tvTaskDescription = tvTaskDescription;
+    this.tvTaskEndTime = tvTaskEndTime;
     this.tvTaskName = tvTaskName;
-    this.tvTaskTime = tvTaskTime;
+    this.tvTaskStartTime = tvTaskStartTime;
     this.view5 = view5;
   }
 
@@ -79,9 +83,15 @@ public final class TaskListingBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.tvRecorded;
-      TextView tvRecorded = ViewBindings.findChildViewById(rootView, id);
-      if (tvRecorded == null) {
+      id = R.id.tvTask_description;
+      TextView tvTaskDescription = ViewBindings.findChildViewById(rootView, id);
+      if (tvTaskDescription == null) {
+        break missingId;
+      }
+
+      id = R.id.tvTask_end_time;
+      TextView tvTaskEndTime = ViewBindings.findChildViewById(rootView, id);
+      if (tvTaskEndTime == null) {
         break missingId;
       }
 
@@ -91,9 +101,9 @@ public final class TaskListingBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.tvTask_time;
-      TextView tvTaskTime = ViewBindings.findChildViewById(rootView, id);
-      if (tvTaskTime == null) {
+      id = R.id.tvTask_start_time;
+      TextView tvTaskStartTime = ViewBindings.findChildViewById(rootView, id);
+      if (tvTaskStartTime == null) {
         break missingId;
       }
 
@@ -103,8 +113,8 @@ public final class TaskListingBinding implements ViewBinding {
         break missingId;
       }
 
-      return new TaskListingBinding((CardView) rootView, imgTaskIcon, tvRecorded, tvTaskName,
-          tvTaskTime, view5);
+      return new TaskListingBinding((CardView) rootView, imgTaskIcon, tvTaskDescription,
+          tvTaskEndTime, tvTaskName, tvTaskStartTime, view5);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

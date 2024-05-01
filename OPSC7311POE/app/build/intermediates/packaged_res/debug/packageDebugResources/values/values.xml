@@ -75,10 +75,12 @@
     <string name="signup">Sign Up</string>
     <string name="start">Start</string>
     <string name="stop">Stop</string>
+    <string name="target_hours">Target Hours</string>
     <string name="task">Task</string>
     <string name="task_description">Task Description</string>
     <string name="task_duration">Task Duration</string>
     <string name="tasks">Tasks</string>
+    <string name="time_dash">-</string>
     <string name="timer">Timer</string>
     <string name="title_activity_login">LoginActivity</string>
     <string name="uploadpic">Upload New</string>
