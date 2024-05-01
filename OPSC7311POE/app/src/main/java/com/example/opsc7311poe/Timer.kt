@@ -31,6 +31,8 @@ class Timer : AppCompatActivity() {
         btnStop = findViewById(R.id.btnStop)
         btnReset = findViewById(R.id.btnReset)
 
+
+
         val HomeOpenActivity = findViewById<TextView>(R.id.tv_Home)
         val ProfileOpenActivity = findViewById<TextView>(R.id.tv_Profile)
         val CalendarOpenActivity = findViewById<TextView>(R.id.tv_calendar)
@@ -71,33 +73,55 @@ class Timer : AppCompatActivity() {
         btnReset.setOnClickListener ()
         {
             secondsElapsed = 0;
+            //for debug purposes display all the recordings for selected Task
+            for (recording in selectedTask.taskRecords)
+            {
+                Toast.makeText(
+                    this,
+                    "Recording duration: " + recording.Duration,
+                    Toast.LENGTH_SHORT
+                )
+                    .show()
+            }
+
         }
 
         btnStop.setOnClickListener {
-            if (isTimerRunning)
+            if (secondsElapsed != 0)
             {
-            stopTimer()
-            val timed = edtTime.text.toString()
-            edtTime.setText("0")
-            secondsElapsed = 0;
 
-            val parts = timed.split(":")
-            val hours = parts[0].toInt()
-            val minutes = parts[1].toInt()
-            val seconds = parts[2].toInt()
 
-            val time = Time(hours, minutes, seconds) // Assuming Time is a custom class representing time
+                stopTimer()
+                val timed = edtTime.text.toString()
+                edtTime.setText("0")
+                secondsElapsed = 0;
 
-            val currentDate = Date()
-            val rec = Recording(currentDate, 0.0, 0.0, time)
-            selectedTask.taskRecords.add(rec)
+                val parts = timed.split(":")
+                val hours = parts[0].toInt()
+                val minutes = parts[1].toInt()
+                val seconds = parts[2].toInt()
 
-            for (recording in selectedTask.taskRecords) {
-                if (recording.RecDate == currentDate) {
-                    Toast.makeText(this, "Recording date: " + recording.RecDate, Toast.LENGTH_SHORT)
-                        .show()
+                val time = Time(
+                    hours,
+                    minutes,
+                    seconds
+                ) // Assuming Time is a custom class representing time
+
+                val currentDate = Date()
+                val rec = Recording(currentDate, 0.0, 0.0, time)
+                //adding a recording object to the list in the right task
+                selectedTask.taskRecords.add(rec)
+
+                for (recording in selectedTask.taskRecords) {
+                    if (recording.RecDate == currentDate) {
+                        Toast.makeText(
+                            this,
+                            "Recording duration: " + recording.Duration,
+                            Toast.LENGTH_SHORT
+                        )
+                            .show()
+                    }
                 }
-            }
             }
         }
 

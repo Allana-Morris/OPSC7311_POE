@@ -66,6 +66,7 @@ id btn_Login
 id button9
 id chooseWeek
 id constraintLayout
+id constraintLayout2
 id createBtn
 id createCatBtn
 id edtDescription
@@ -105,6 +106,7 @@ id linearLayout5
 id listView
 id main
 id repeatSwitch
+id searchView
 id textView10
 id textView11
 id textView32

@@ -6,7 +6,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageView;
-import android.widget.LinearLayout;
+import android.widget.SearchView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -20,7 +20,7 @@ import java.lang.String;
 
 public final class ActivityMainBinding implements ViewBinding {
   @NonNull
-  private final LinearLayout rootView;
+  private final ConstraintLayout rootView;
 
   @NonNull
   public final Button btnCreateDiagram;
@@ -30,6 +30,9 @@ public final class ActivityMainBinding implements ViewBinding {
 
   @NonNull
   public final Button button9;
+
+  @NonNull
+  public final ConstraintLayout constraintLayout2;
 
   @NonNull
   public final ImageView imageView15;
@@ -44,19 +47,10 @@ public final class ActivityMainBinding implements ViewBinding {
   public final ImageView imageView18;
 
   @NonNull
-  public final ConstraintLayout linearLayout;
+  public final ConstraintLayout main;
 
   @NonNull
-  public final ConstraintLayout linearLayout2;
-
-  @NonNull
-  public final ConstraintLayout linearLayout4;
-
-  @NonNull
-  public final ConstraintLayout linearLayout5;
-
-  @NonNull
-  public final LinearLayout main;
+  public final SearchView searchView;
 
   @NonNull
   public final TextView tvBlackBox;
@@ -79,28 +73,25 @@ public final class ActivityMainBinding implements ViewBinding {
   @NonNull
   public final TextView tvTimer;
 
-  private ActivityMainBinding(@NonNull LinearLayout rootView, @NonNull Button btnCreateDiagram,
-      @NonNull Button btnRedsighn, @NonNull Button button9, @NonNull ImageView imageView15,
+  private ActivityMainBinding(@NonNull ConstraintLayout rootView, @NonNull Button btnCreateDiagram,
+      @NonNull Button btnRedsighn, @NonNull Button button9,
+      @NonNull ConstraintLayout constraintLayout2, @NonNull ImageView imageView15,
       @NonNull ImageView imageView16, @NonNull ImageView imageView17,
-      @NonNull ImageView imageView18, @NonNull ConstraintLayout linearLayout,
-      @NonNull ConstraintLayout linearLayout2, @NonNull ConstraintLayout linearLayout4,
-      @NonNull ConstraintLayout linearLayout5, @NonNull LinearLayout main,
-      @NonNull TextView tvBlackBox, @NonNull TextView tvCalendar, @NonNull TextView tvHome,
-      @NonNull TextView tvOngoingTask, @NonNull TextView tvProfile, @NonNull TextView tvSeeAll,
-      @NonNull TextView tvTimer) {
+      @NonNull ImageView imageView18, @NonNull ConstraintLayout main,
+      @NonNull SearchView searchView, @NonNull TextView tvBlackBox, @NonNull TextView tvCalendar,
+      @NonNull TextView tvHome, @NonNull TextView tvOngoingTask, @NonNull TextView tvProfile,
+      @NonNull TextView tvSeeAll, @NonNull TextView tvTimer) {
     this.rootView = rootView;
     this.btnCreateDiagram = btnCreateDiagram;
     this.btnRedsighn = btnRedsighn;
     this.button9 = button9;
+    this.constraintLayout2 = constraintLayout2;
     this.imageView15 = imageView15;
     this.imageView16 = imageView16;
     this.imageView17 = imageView17;
     this.imageView18 = imageView18;
-    this.linearLayout = linearLayout;
-    this.linearLayout2 = linearLayout2;
-    this.linearLayout4 = linearLayout4;
-    this.linearLayout5 = linearLayout5;
     this.main = main;
+    this.searchView = searchView;
     this.tvBlackBox = tvBlackBox;
     this.tvCalendar = tvCalendar;
     this.tvHome = tvHome;
@@ -112,7 +103,7 @@ public final class ActivityMainBinding implements ViewBinding {
 
   @Override
   @NonNull
-  public LinearLayout getRoot() {
+  public ConstraintLayout getRoot() {
     return rootView;
   }
 
@@ -155,6 +146,12 @@ public final class ActivityMainBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.constraintLayout2;
+      ConstraintLayout constraintLayout2 = ViewBindings.findChildViewById(rootView, id);
+      if (constraintLayout2 == null) {
+        break missingId;
+      }
+
       id = R.id.imageView15;
       ImageView imageView15 = ViewBindings.findChildViewById(rootView, id);
       if (imageView15 == null) {
@@ -179,31 +176,13 @@ public final class ActivityMainBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.linearLayout;
-      ConstraintLayout linearLayout = ViewBindings.findChildViewById(rootView, id);
-      if (linearLayout == null) {
+      ConstraintLayout main = (ConstraintLayout) rootView;
+
+      id = R.id.searchView;
+      SearchView searchView = ViewBindings.findChildViewById(rootView, id);
+      if (searchView == null) {
         break missingId;
       }
-
-      id = R.id.linearLayout2;
-      ConstraintLayout linearLayout2 = ViewBindings.findChildViewById(rootView, id);
-      if (linearLayout2 == null) {
-        break missingId;
-      }
-
-      id = R.id.linearLayout4;
-      ConstraintLayout linearLayout4 = ViewBindings.findChildViewById(rootView, id);
-      if (linearLayout4 == null) {
-        break missingId;
-      }
-
-      id = R.id.linearLayout5;
-      ConstraintLayout linearLayout5 = ViewBindings.findChildViewById(rootView, id);
-      if (linearLayout5 == null) {
-        break missingId;
-      }
-
-      LinearLayout main = (LinearLayout) rootView;
 
       id = R.id.tvBlackBox;
       TextView tvBlackBox = ViewBindings.findChildViewById(rootView, id);
@@ -247,10 +226,9 @@ public final class ActivityMainBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityMainBinding((LinearLayout) rootView, btnCreateDiagram, btnRedsighn,
-          button9, imageView15, imageView16, imageView17, imageView18, linearLayout, linearLayout2,
-          linearLayout4, linearLayout5, main, tvBlackBox, tvCalendar, tvHome, tvOngoingTask,
-          tvProfile, tvSeeAll, tvTimer);
+      return new ActivityMainBinding((ConstraintLayout) rootView, btnCreateDiagram, btnRedsighn,
+          button9, constraintLayout2, imageView15, imageView16, imageView17, imageView18, main,
+          searchView, tvBlackBox, tvCalendar, tvHome, tvOngoingTask, tvProfile, tvSeeAll, tvTimer);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
