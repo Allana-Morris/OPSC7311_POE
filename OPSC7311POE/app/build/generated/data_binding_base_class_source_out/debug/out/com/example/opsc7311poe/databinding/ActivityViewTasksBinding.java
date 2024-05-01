@@ -12,6 +12,7 @@ import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.example.opsc7311poe.R;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import java.lang.NullPointerException;
 import java.lang.Override;
 import java.lang.String;
@@ -19,6 +20,12 @@ import java.lang.String;
 public final class ActivityViewTasksBinding implements ViewBinding {
   @NonNull
   private final ConstraintLayout rootView;
+
+  @NonNull
+  public final FloatingActionButton createBtn;
+
+  @NonNull
+  public final FloatingActionButton createCatBtn;
 
   @NonNull
   public final ImageView imageView;
@@ -29,9 +36,13 @@ public final class ActivityViewTasksBinding implements ViewBinding {
   @NonNull
   public final LinearLayout vertLayout;
 
-  private ActivityViewTasksBinding(@NonNull ConstraintLayout rootView, @NonNull ImageView imageView,
-      @NonNull ConstraintLayout main, @NonNull LinearLayout vertLayout) {
+  private ActivityViewTasksBinding(@NonNull ConstraintLayout rootView,
+      @NonNull FloatingActionButton createBtn, @NonNull FloatingActionButton createCatBtn,
+      @NonNull ImageView imageView, @NonNull ConstraintLayout main,
+      @NonNull LinearLayout vertLayout) {
     this.rootView = rootView;
+    this.createBtn = createBtn;
+    this.createCatBtn = createCatBtn;
     this.imageView = imageView;
     this.main = main;
     this.vertLayout = vertLayout;
@@ -64,6 +75,18 @@ public final class ActivityViewTasksBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.createBtn;
+      FloatingActionButton createBtn = ViewBindings.findChildViewById(rootView, id);
+      if (createBtn == null) {
+        break missingId;
+      }
+
+      id = R.id.createCatBtn;
+      FloatingActionButton createCatBtn = ViewBindings.findChildViewById(rootView, id);
+      if (createCatBtn == null) {
+        break missingId;
+      }
+
       id = R.id.imageView;
       ImageView imageView = ViewBindings.findChildViewById(rootView, id);
       if (imageView == null) {
@@ -78,7 +101,8 @@ public final class ActivityViewTasksBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityViewTasksBinding((ConstraintLayout) rootView, imageView, main, vertLayout);
+      return new ActivityViewTasksBinding((ConstraintLayout) rootView, createBtn, createCatBtn,
+          imageView, main, vertLayout);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

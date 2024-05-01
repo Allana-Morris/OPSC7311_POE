@@ -25,9 +25,6 @@ public final class ActivityCalendarBinding implements ViewBinding {
   public final ImageView imageView;
 
   @NonNull
-  public final ImageView imageView14;
-
-  @NonNull
   public final ImageView imageView15;
 
   @NonNull
@@ -55,25 +52,22 @@ public final class ActivityCalendarBinding implements ViewBinding {
   public final ImageView imageView26;
 
   @NonNull
+  public final ConstraintLayout linearLayout;
+
+  @NonNull
+  public final ConstraintLayout linearLayout2;
+
+  @NonNull
+  public final ConstraintLayout linearLayout4;
+
+  @NonNull
+  public final ConstraintLayout linearLayout5;
+
+  @NonNull
   public final ListView listView;
 
   @NonNull
   public final ConstraintLayout main;
-
-  @NonNull
-  public final TextView textView22;
-
-  @NonNull
-  public final TextView textView23;
-
-  @NonNull
-  public final TextView textView24;
-
-  @NonNull
-  public final TextView textView25;
-
-  @NonNull
-  public final TextView textView26;
 
   @NonNull
   public final TextView textView35;
@@ -82,20 +76,33 @@ public final class ActivityCalendarBinding implements ViewBinding {
   public final TextView textView38;
 
   @NonNull
+  public final TextView tvCalendar;
+
+  @NonNull
+  public final TextView tvHome;
+
+  @NonNull
+  public final TextView tvProfile;
+
+  @NonNull
+  public final TextView tvTimer;
+
+  @NonNull
   public final View view;
 
   private ActivityCalendarBinding(@NonNull ConstraintLayout rootView, @NonNull ImageView imageView,
-      @NonNull ImageView imageView14, @NonNull ImageView imageView15,
-      @NonNull ImageView imageView16, @NonNull ImageView imageView17,
-      @NonNull ImageView imageView18, @NonNull ImageView imageView21,
-      @NonNull ImageView imageView23, @NonNull ImageView imageView24,
-      @NonNull ImageView imageView25, @NonNull ImageView imageView26, @NonNull ListView listView,
-      @NonNull ConstraintLayout main, @NonNull TextView textView22, @NonNull TextView textView23,
-      @NonNull TextView textView24, @NonNull TextView textView25, @NonNull TextView textView26,
-      @NonNull TextView textView35, @NonNull TextView textView38, @NonNull View view) {
+      @NonNull ImageView imageView15, @NonNull ImageView imageView16,
+      @NonNull ImageView imageView17, @NonNull ImageView imageView18,
+      @NonNull ImageView imageView21, @NonNull ImageView imageView23,
+      @NonNull ImageView imageView24, @NonNull ImageView imageView25,
+      @NonNull ImageView imageView26, @NonNull ConstraintLayout linearLayout,
+      @NonNull ConstraintLayout linearLayout2, @NonNull ConstraintLayout linearLayout4,
+      @NonNull ConstraintLayout linearLayout5, @NonNull ListView listView,
+      @NonNull ConstraintLayout main, @NonNull TextView textView35, @NonNull TextView textView38,
+      @NonNull TextView tvCalendar, @NonNull TextView tvHome, @NonNull TextView tvProfile,
+      @NonNull TextView tvTimer, @NonNull View view) {
     this.rootView = rootView;
     this.imageView = imageView;
-    this.imageView14 = imageView14;
     this.imageView15 = imageView15;
     this.imageView16 = imageView16;
     this.imageView17 = imageView17;
@@ -105,15 +112,18 @@ public final class ActivityCalendarBinding implements ViewBinding {
     this.imageView24 = imageView24;
     this.imageView25 = imageView25;
     this.imageView26 = imageView26;
+    this.linearLayout = linearLayout;
+    this.linearLayout2 = linearLayout2;
+    this.linearLayout4 = linearLayout4;
+    this.linearLayout5 = linearLayout5;
     this.listView = listView;
     this.main = main;
-    this.textView22 = textView22;
-    this.textView23 = textView23;
-    this.textView24 = textView24;
-    this.textView25 = textView25;
-    this.textView26 = textView26;
     this.textView35 = textView35;
     this.textView38 = textView38;
+    this.tvCalendar = tvCalendar;
+    this.tvHome = tvHome;
+    this.tvProfile = tvProfile;
+    this.tvTimer = tvTimer;
     this.view = view;
   }
 
@@ -147,12 +157,6 @@ public final class ActivityCalendarBinding implements ViewBinding {
       id = R.id.imageView;
       ImageView imageView = ViewBindings.findChildViewById(rootView, id);
       if (imageView == null) {
-        break missingId;
-      }
-
-      id = R.id.imageView14;
-      ImageView imageView14 = ViewBindings.findChildViewById(rootView, id);
-      if (imageView14 == null) {
         break missingId;
       }
 
@@ -210,6 +214,30 @@ public final class ActivityCalendarBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.linearLayout;
+      ConstraintLayout linearLayout = ViewBindings.findChildViewById(rootView, id);
+      if (linearLayout == null) {
+        break missingId;
+      }
+
+      id = R.id.linearLayout2;
+      ConstraintLayout linearLayout2 = ViewBindings.findChildViewById(rootView, id);
+      if (linearLayout2 == null) {
+        break missingId;
+      }
+
+      id = R.id.linearLayout4;
+      ConstraintLayout linearLayout4 = ViewBindings.findChildViewById(rootView, id);
+      if (linearLayout4 == null) {
+        break missingId;
+      }
+
+      id = R.id.linearLayout5;
+      ConstraintLayout linearLayout5 = ViewBindings.findChildViewById(rootView, id);
+      if (linearLayout5 == null) {
+        break missingId;
+      }
+
       id = R.id.listView;
       ListView listView = ViewBindings.findChildViewById(rootView, id);
       if (listView == null) {
@@ -217,36 +245,6 @@ public final class ActivityCalendarBinding implements ViewBinding {
       }
 
       ConstraintLayout main = (ConstraintLayout) rootView;
-
-      id = R.id.textView22;
-      TextView textView22 = ViewBindings.findChildViewById(rootView, id);
-      if (textView22 == null) {
-        break missingId;
-      }
-
-      id = R.id.textView23;
-      TextView textView23 = ViewBindings.findChildViewById(rootView, id);
-      if (textView23 == null) {
-        break missingId;
-      }
-
-      id = R.id.textView24;
-      TextView textView24 = ViewBindings.findChildViewById(rootView, id);
-      if (textView24 == null) {
-        break missingId;
-      }
-
-      id = R.id.textView25;
-      TextView textView25 = ViewBindings.findChildViewById(rootView, id);
-      if (textView25 == null) {
-        break missingId;
-      }
-
-      id = R.id.textView26;
-      TextView textView26 = ViewBindings.findChildViewById(rootView, id);
-      if (textView26 == null) {
-        break missingId;
-      }
 
       id = R.id.textView35;
       TextView textView35 = ViewBindings.findChildViewById(rootView, id);
@@ -260,16 +258,40 @@ public final class ActivityCalendarBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.tv_calendar;
+      TextView tvCalendar = ViewBindings.findChildViewById(rootView, id);
+      if (tvCalendar == null) {
+        break missingId;
+      }
+
+      id = R.id.tv_Home;
+      TextView tvHome = ViewBindings.findChildViewById(rootView, id);
+      if (tvHome == null) {
+        break missingId;
+      }
+
+      id = R.id.tv_Profile;
+      TextView tvProfile = ViewBindings.findChildViewById(rootView, id);
+      if (tvProfile == null) {
+        break missingId;
+      }
+
+      id = R.id.tv_timer;
+      TextView tvTimer = ViewBindings.findChildViewById(rootView, id);
+      if (tvTimer == null) {
+        break missingId;
+      }
+
       id = R.id.view;
       View view = ViewBindings.findChildViewById(rootView, id);
       if (view == null) {
         break missingId;
       }
 
-      return new ActivityCalendarBinding((ConstraintLayout) rootView, imageView, imageView14,
-          imageView15, imageView16, imageView17, imageView18, imageView21, imageView23, imageView24,
-          imageView25, imageView26, listView, main, textView22, textView23, textView24, textView25,
-          textView26, textView35, textView38, view);
+      return new ActivityCalendarBinding((ConstraintLayout) rootView, imageView, imageView15,
+          imageView16, imageView17, imageView18, imageView21, imageView23, imageView24, imageView25,
+          imageView26, linearLayout, linearLayout2, linearLayout4, linearLayout5, listView, main,
+          textView35, textView38, tvCalendar, tvHome, tvProfile, tvTimer, view);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

@@ -37,6 +37,16 @@
         app:layout_constraintVertical_bias="0.0" />
 
     <TextView
+        android:id="@+id/textView99"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="56dp"
+        android:text="End Time"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view12" />
+
+    <TextView
         android:id="@+id/tv_Category"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -48,8 +58,17 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
+    <EditText
+        android:id="@+id/edtTaskName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        tools:layout_editor_absoluteX="101dp"
+        tools:layout_editor_absoluteY="264dp" />
+
     <TextView
-        android:id="@+id/tv_Add"
+        android:id="@+id/tvAddTask"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
@@ -90,18 +109,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/view8" />
 
-    <EditText
-        android:id="@+id/txt_Name"
-        android:layout_width="209dp"
-        android:layout_height="26dp"
-        android:layout_marginTop="20dp"
-        android:ems="10"
-        android:inputType="text"
-        android:text="@string/name"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/view"
-        app:layout_constraintTop_toBottomOf="@+id/view8" />
-
     <View
         android:id="@+id/view9"
         android:layout_width="0dp"
@@ -112,30 +119,18 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/view8" />
 
-    <TextView
-        android:id="@+id/tv_Icon"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="20dp"
-        android:text="@string/icon"
-        android:textColor="@color/black"
-        android:textSize="16sp"
-        app:layout_constraintStart_toStartOf="@+id/view"
-        app:layout_constraintTop_toBottomOf="@+id/view9" />
 
     <TextView
         android:id="@+id/tv_Colour"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="20dp"
-        android:text="@string/color"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="52dp"
+        android:text="repeatable?"
         android:textColor="@color/black"
         android:textSize="16sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/view10" />
-
 
     <View
         android:id="@+id/view10"
@@ -157,16 +152,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/view10" />
-
-    <ImageView
-        android:id="@+id/iv_Pick_Colour"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:layout_marginEnd="20dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/view10"
-        app:srcCompat="@drawable/baseline_color_lens_24" />
 
     <View
         android:id="@+id/view12"
@@ -237,15 +222,28 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
         android:layout_marginTop="10dp"
-        android:text="@string/task_duration"
+        android:text="Start Time"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/view12" />
 
     <EditText
-        android:id="@+id/editTextText8"
+        android:id="@+id/edtStart"
         android:layout_width="164dp"
         android:layout_height="38dp"
         android:layout_marginTop="8dp"
+        android:layout_marginEnd="20dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="@string/_00_30"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="@+id/view"
+        app:layout_constraintTop_toBottomOf="@+id/view12" />
+
+    <EditText
+        android:id="@+id/edtEnd"
+        android:layout_width="164dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="48dp"
         android:layout_marginEnd="20dp"
         android:ems="10"
         android:inputType="text"
@@ -266,7 +264,7 @@
         app:layout_constraintTop_toBottomOf="@+id/view14" />
 
     <EditText
-        android:id="@+id/editTextText9"
+        android:id="@+id/edtDescription"
         android:layout_width="120dp"
         android:layout_height="35dp"
         android:layout_marginEnd="20dp"
@@ -414,5 +412,12 @@
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Switch
+        android:id="@+id/repeatSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="302dp"
+        tools:layout_editor_absoluteY="400dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
