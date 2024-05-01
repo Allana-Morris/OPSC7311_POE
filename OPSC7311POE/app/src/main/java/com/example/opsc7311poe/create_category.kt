@@ -4,6 +4,7 @@ import android.annotation.SuppressLint
 import android.os.Bundle
 import android.text.method.CharacterPickerDialog
 import android.view.View
+import android.widget.EditText
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
@@ -19,11 +20,27 @@ class create_category : AppCompatActivity() {
     @SuppressLint("MissingInflatedId")
     private var mDefaultColour = 0
     private var ivColourPicker: ImageView = findViewById(R.id.iv_Pick_Colour)
-    private var vColourPreview: View = findViewById(R.id.v_Colour_Preview)
+    private var ivColourPreview: View = findViewById(R.id.iv_colourPreview)
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_create_category)
+
+        val AddCategory = findViewById<TextView>(R.id.tvAddTask)
+
+        AddCategory.setOnClickListener(){
+            val catName = findViewById<EditText>(R.id.edtTaskName)
+            val catColor = mDefaultColour
+
+        }
+
+
+
+
+
+
+
+
         val HomeOpenActivity = findViewById<TextView>(R.id.tv_Home)
         val ProfileOpenActivity = findViewById<TextView>(R.id.tv_Profile)
         val CalendarOpenActivity = findViewById<TextView>(R.id.tv_calendar)
@@ -75,7 +92,7 @@ class create_category : AppCompatActivity() {
 
             override fun onOk(dialog: AmbilWarnaDialog?, colour: Int) {
                 mDefaultColour = colour
-                vColourPreview.setBackgroundColor((mDefaultColour))
+                ivColourPreview.setBackgroundColor((mDefaultColour))
             }
         })
         colorPickerDialogue.show()
