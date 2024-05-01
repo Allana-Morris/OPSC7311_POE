@@ -64,6 +64,9 @@
     <string name="add_event">Add Event</string>
     <string name="curent_day">%1$s</string>
     <string name="colourpreview">See Preview of selected Colour</string>
+    <string name="back">←</string>
+    <string name="forward">→</string>
+    <string name="housecleaning">housecleaning</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
