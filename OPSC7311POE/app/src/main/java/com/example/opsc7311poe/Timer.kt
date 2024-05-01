@@ -89,11 +89,9 @@ class Timer : AppCompatActivity() {
         btnStop.setOnClickListener {
             if (secondsElapsed != 0)
             {
-
-
                 stopTimer()
                 val timed = edtTime.text.toString()
-                edtTime.setText("0")
+                edtTime.setText("00:00:00")
                 secondsElapsed = 0;
 
                 val parts = timed.split(":")
