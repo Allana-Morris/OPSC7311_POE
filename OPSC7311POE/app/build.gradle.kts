@@ -52,7 +52,12 @@ dependencies {
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
 
-    implementation("com.github.yukuku:ambilwarna:2.0.1")
+    implementation(libs.ambilwarna)
+    implementation(libs.google.api.client)
+    implementation(libs.google.oauth.client.jetty)
+    implementation(libs.google.api.services.calendar)
+    implementation(libs.google.auth.library.oauth2.http)
+    implementation("com.google.apis:google-api-services-calendar:v3-rev305-1.31.0")
 }
 
 
