@@ -56,13 +56,13 @@ drawable write
 id btnCreateDiagram
 id btnLogin
 id btnRedsighn
+id btnReset
 id btnSave
 id btnSignUp
 id btnStart
 id btnStop
 id btn_Google_signin
 id btn_Login
-id button5
 id button9
 id chooseWeek
 id constraintLayout
@@ -105,7 +105,6 @@ id linearLayout5
 id listView
 id main
 id repeatSwitch
-id textClock2
 id textView10
 id textView11
 id textView32
@@ -155,6 +154,7 @@ id tv_calendar
 id tv_timer
 id tvgenerate
 id tvuserProfile
+id txtClock
 id txtEmail
 id txtFullName
 id txtPassword

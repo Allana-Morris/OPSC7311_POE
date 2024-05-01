@@ -3252,13 +3252,13 @@ int id bounceStart 0x7f08006e
 int id btnCreateDiagram 0x7f08006f
 int id btnLogin 0x7f080070
 int id btnRedsighn 0x7f080071
+int id btnReset 0x7f080275
 int id btnSave 0x7f080072
 int id btnSignUp 0x7f080073
 int id btnStart 0x7f080074
 int id btnStop 0x7f080075
 int id btn_Google_signin 0x7f080076
 int id btn_Login 0x7f080077
-int id button5 0x7f080078
 int id button9 0x7f080079
 int id buttonPanel 0x7f08007a
 int id cache_measures 0x7f08007b
@@ -3646,7 +3646,6 @@ int id tag_unhandled_key_listeners 0x7f0801f8
 int id tag_window_insets_animation_callback 0x7f0801f9
 int id text 0x7f0801fa
 int id text2 0x7f0801fb
-int id textClock2 0x7f0801fc
 int id textEnd 0x7f0801fd
 int id textSpacerNoButtons 0x7f0801fe
 int id textSpacerNoTitle 0x7f0801ff
@@ -3726,6 +3725,7 @@ int id tv_calendar 0x7f080248
 int id tv_timer 0x7f080249
 int id tvgenerate 0x7f08024a
 int id tvuserProfile 0x7f08024b
+int id txtClock 0x7f080277
 int id txtEmail 0x7f08024c
 int id txtFullName 0x7f08024d
 int id txtPassword 0x7f08024e

@@ -3253,13 +3253,13 @@ id bounceStart
 id btnCreateDiagram
 id btnLogin
 id btnRedsighn
+id btnReset
 id btnSave
 id btnSignUp
 id btnStart
 id btnStop
 id btn_Google_signin
 id btn_Login
-id button5
 id button9
 id buttonPanel
 id cache_measures
@@ -3647,7 +3647,6 @@ id tag_unhandled_key_listeners
 id tag_window_insets_animation_callback
 id text
 id text2
-id textClock2
 id textEnd
 id textSpacerNoButtons
 id textSpacerNoTitle
@@ -3727,6 +3726,7 @@ id tv_calendar
 id tv_timer
 id tvgenerate
 id tvuserProfile
+id txtClock
 id txtEmail
 id txtFullName
 id txtPassword
