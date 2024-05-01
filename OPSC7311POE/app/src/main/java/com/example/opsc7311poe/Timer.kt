@@ -74,6 +74,8 @@ class Timer : AppCompatActivity() {
         }
 
         btnStop.setOnClickListener {
+            if (isTimerRunning)
+            {
             stopTimer()
             val timed = edtTime.text.toString()
             edtTime.setText("0")
@@ -92,8 +94,10 @@ class Timer : AppCompatActivity() {
 
             for (recording in selectedTask.taskRecords) {
                 if (recording.RecDate == currentDate) {
-                    Toast.makeText(this, "Recording date: " + recording.RecDate, Toast.LENGTH_SHORT).show()
+                    Toast.makeText(this, "Recording date: " + recording.RecDate, Toast.LENGTH_SHORT)
+                        .show()
                 }
+            }
             }
         }
 
