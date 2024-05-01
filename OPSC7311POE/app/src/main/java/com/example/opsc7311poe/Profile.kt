@@ -8,6 +8,7 @@ class Profile : AppCompatActivity() {
     private val navBar = Navbar()
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_profile)
         val HomeOpenActivity = findViewById<TextView>(R.id.tv_Home)
         val ProfileOpenActivity = findViewById<TextView>(R.id.tv_Profile)
         val CalendarOpenActivity = findViewById<TextView>(R.id.tv_calendar)
