@@ -2,7 +2,6 @@ package com.example.opsc7311poe
 
 import android.content.Intent
 import android.os.Bundle
-import android.widget.Button
 import android.widget.Switch
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
@@ -29,7 +28,7 @@ class InsertData : AppCompatActivity() {
             val desc = findViewById<TextView?>(R.id.edtDescription).text.toString()
 
             //testing catagory
-            val workCategory = Category("Work", 1, 2.0,4.0)
+            val workCategory = Category("Work", 1, 2,4.0, 6.0)
             //adding to the user catagory hashmap
             SessionUser.currentUser?.categories?.put(workCategory.name, workCategory)
             //adding the task to the catagory for user
