@@ -24,29 +24,6 @@ class create_category : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_create_category)
-
-
-        mDefaultColour = 0
-
-        ivColourPicker.setOnClickListener {
-            fun onClick(v: View?) {
-                openColorPickerDialogue()
-            }
-
-        }
-
-        /*
-         mSetColorButton.setOnClickListener(
-            object : OnClickListener() {
-                fun onClick(v: View?) {
-                    // as the mDefaultColor is the global
-                    // variable its value will be changed as
-                    // soon as ok button is clicked from the
-                    // color picker dialog.
-                    gfgTextView.setTextColor(mDefaultColor)
-         */
-
-
         val HomeOpenActivity = findViewById<TextView>(R.id.tv_Home)
         val ProfileOpenActivity = findViewById<TextView>(R.id.tv_Profile)
         val CalendarOpenActivity = findViewById<TextView>(R.id.tv_calendar)
@@ -71,12 +48,23 @@ class create_category : AppCompatActivity() {
         {
             navBar.OpenTimerButton()
         }
+
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+        mDefaultColour = 0
+
+        ivColourPicker.setOnClickListener {
+            fun onClick(v: View?) {
+                openColorPickerDialogue()
+            }
+        }
+
+
     }
+
 
     fun openColorPickerDialogue() {
         val colorPickerDialogue = AmbilWarnaDialog(this, mDefaultColour, object :
@@ -92,4 +80,5 @@ class create_category : AppCompatActivity() {
         })
         colorPickerDialogue.show()
     }
+
 }
