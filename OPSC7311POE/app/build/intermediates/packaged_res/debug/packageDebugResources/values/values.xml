@@ -88,7 +88,7 @@
     <string name="username">Username</string>
     <string name="weeklyS">Weekly summary</string>
     <string name="welcome">"Welcome !"</string>
-    <style name="Base.Theme.OPSC7311POE" parent="Theme.AppCompat.DayNight.NoActionBar">
+    <style name="Base.Theme.OPSC7311POE" parent="Theme.AppCompat.Light.NoActionBar">
         
         
     </style>

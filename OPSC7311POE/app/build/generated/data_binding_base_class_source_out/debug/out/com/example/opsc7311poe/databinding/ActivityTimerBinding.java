@@ -4,10 +4,10 @@ package com.example.opsc7311poe.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.AutoCompleteTextView;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.Spinner;
 import android.widget.TextClock;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
@@ -23,12 +23,6 @@ import java.lang.String;
 public final class ActivityTimerBinding implements ViewBinding {
   @NonNull
   private final LinearLayout rootView;
-
-  @NonNull
-  public final AutoCompleteTextView autoCompleteTxt;
-
-  @NonNull
-  public final AutoCompleteTextView autoCompleteTxt2;
 
   @NonNull
   public final Button btnReset;
@@ -73,6 +67,12 @@ public final class ActivityTimerBinding implements ViewBinding {
   public final Button saveTimebtn;
 
   @NonNull
+  public final Spinner spinCat;
+
+  @NonNull
+  public final Spinner spinTask;
+
+  @NonNull
   public final TextView tvCalendar;
 
   @NonNull
@@ -87,19 +87,16 @@ public final class ActivityTimerBinding implements ViewBinding {
   @NonNull
   public final TextView tvTimer1;
 
-  private ActivityTimerBinding(@NonNull LinearLayout rootView,
-      @NonNull AutoCompleteTextView autoCompleteTxt, @NonNull AutoCompleteTextView autoCompleteTxt2,
-      @NonNull Button btnReset, @NonNull Button btnStart, @NonNull Button btnStop,
-      @NonNull TextClock edtClock, @NonNull ImageView imageView15, @NonNull ImageView imageView16,
+  private ActivityTimerBinding(@NonNull LinearLayout rootView, @NonNull Button btnReset,
+      @NonNull Button btnStart, @NonNull Button btnStop, @NonNull TextClock edtClock,
+      @NonNull ImageView imageView15, @NonNull ImageView imageView16,
       @NonNull ImageView imageView17, @NonNull ImageView imageView18,
       @NonNull ConstraintLayout linearLayout, @NonNull ConstraintLayout linearLayout2,
       @NonNull ConstraintLayout linearLayout4, @NonNull ConstraintLayout linearLayout5,
-      @NonNull LinearLayout main, @NonNull Button saveTimebtn, @NonNull TextView tvCalendar,
-      @NonNull TextView tvHome, @NonNull TextView tvProfile, @NonNull TextView tvTimer,
-      @NonNull TextView tvTimer1) {
+      @NonNull LinearLayout main, @NonNull Button saveTimebtn, @NonNull Spinner spinCat,
+      @NonNull Spinner spinTask, @NonNull TextView tvCalendar, @NonNull TextView tvHome,
+      @NonNull TextView tvProfile, @NonNull TextView tvTimer, @NonNull TextView tvTimer1) {
     this.rootView = rootView;
-    this.autoCompleteTxt = autoCompleteTxt;
-    this.autoCompleteTxt2 = autoCompleteTxt2;
     this.btnReset = btnReset;
     this.btnStart = btnStart;
     this.btnStop = btnStop;
@@ -114,6 +111,8 @@ public final class ActivityTimerBinding implements ViewBinding {
     this.linearLayout5 = linearLayout5;
     this.main = main;
     this.saveTimebtn = saveTimebtn;
+    this.spinCat = spinCat;
+    this.spinTask = spinTask;
     this.tvCalendar = tvCalendar;
     this.tvHome = tvHome;
     this.tvProfile = tvProfile;
@@ -148,18 +147,6 @@ public final class ActivityTimerBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.auto_complete_txt;
-      AutoCompleteTextView autoCompleteTxt = ViewBindings.findChildViewById(rootView, id);
-      if (autoCompleteTxt == null) {
-        break missingId;
-      }
-
-      id = R.id.auto_complete_txt2;
-      AutoCompleteTextView autoCompleteTxt2 = ViewBindings.findChildViewById(rootView, id);
-      if (autoCompleteTxt2 == null) {
-        break missingId;
-      }
-
       id = R.id.btnReset;
       Button btnReset = ViewBindings.findChildViewById(rootView, id);
       if (btnReset == null) {
@@ -240,6 +227,18 @@ public final class ActivityTimerBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.spinCat;
+      Spinner spinCat = ViewBindings.findChildViewById(rootView, id);
+      if (spinCat == null) {
+        break missingId;
+      }
+
+      id = R.id.spinTask;
+      Spinner spinTask = ViewBindings.findChildViewById(rootView, id);
+      if (spinTask == null) {
+        break missingId;
+      }
+
       id = R.id.tv_calendar;
       TextView tvCalendar = ViewBindings.findChildViewById(rootView, id);
       if (tvCalendar == null) {
@@ -270,10 +269,10 @@ public final class ActivityTimerBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityTimerBinding((LinearLayout) rootView, autoCompleteTxt, autoCompleteTxt2,
-          btnReset, btnStart, btnStop, edtClock, imageView15, imageView16, imageView17, imageView18,
-          linearLayout, linearLayout2, linearLayout4, linearLayout5, main, saveTimebtn, tvCalendar,
-          tvHome, tvProfile, tvTimer, tvTimer1);
+      return new ActivityTimerBinding((LinearLayout) rootView, btnReset, btnStart, btnStop,
+          edtClock, imageView15, imageView16, imageView17, imageView18, linearLayout, linearLayout2,
+          linearLayout4, linearLayout5, main, saveTimebtn, spinCat, spinTask, tvCalendar, tvHome,
+          tvProfile, tvTimer, tvTimer1);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
