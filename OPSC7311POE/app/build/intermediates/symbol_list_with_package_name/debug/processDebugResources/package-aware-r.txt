@@ -3308,7 +3308,7 @@ id bounceEnd
 id bounceStart
 id btnLogin
 id btnReset
-id btnSave
+id btnSaveProfile
 id btnSignUp
 id btnStart
 id btnStop
@@ -3345,7 +3345,6 @@ id collapseActionView
 id compress
 id confirm_button
 id constraint
-id constraintLayout
 id container
 id content
 id contentPanel
@@ -3400,10 +3399,14 @@ id edit_query
 id edit_text_id
 id edtClock
 id edtDescription
+id edtEmailEdit
 id edtEnd
+id edtFullNameEdit
 id edtName
+id edtPasswordEdit
 id edtStart
 id edtTaskName
+id edtUserNameEdit
 id elastic
 id embed
 id empyViews
@@ -3679,6 +3682,7 @@ id snackbar_text
 id snap
 id snapMargins
 id south
+id sp_Category
 id spacer
 id special_effects_controller_view_tag
 id spline
@@ -3723,11 +3727,9 @@ id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
 id textTop
-id textView10
-id textView11
+id textView
 id textView32
 id textView34
-id textView9
 id textView99
 id text_input_end_icon
 id text_input_error_icon
@@ -3763,7 +3765,6 @@ id tvCustomiseProfile
 id tvEditusername
 id tvEmail
 id tvFullName
-id tvFullNameInput
 id tvGraph
 id tvNewPhoto
 id tvPie
@@ -3816,9 +3817,6 @@ id view11
 id view12
 id view13
 id view14
-id view15
-id view16
-id view17
 id view5
 id view8
 id view9
