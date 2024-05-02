@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<module external.linked.project.id=":app:unitTest" external.linked.project.path="$MODULE_DIR$/../../../OPSC7311POE/app" external.root.project.path="$MODULE_DIR$/../../../OPSC7311POE" external.system.id="GRADLE" external.system.module.type="sourceSet" version="4">
+<module external.linked.project.id=":app:unitTest" external.linked.project.path="$MODULE_DIR$/../../../OPSC7311POE/app" external.root.project.path="$MODULE_DIR$/../../../OPSC7311POE" external.system.id="GRADLE" external.system.module.type="sourceSet" type="JAVA_MODULE" version="4">
   <component name="FacetManager">
     <facet external-system-id="GRADLE" type="kotlin-language" name="Kotlin">
       <configuration version="5" platform="JVM 1.8" allPlatforms="JVM [1.8]" useProjectSettings="false">
@@ -41,14 +41,9 @@
     <output-test url="file://$MODULE_DIR$/../../../OPSC7311POE/app/build/intermediates/javac/debugUnitTest/compileDebugUnitTestJavaWithJavac/classes" />
     <exclude-output />
     <content url="file://$MODULE_DIR$/../../../OPSC7311POE/app/build/generated/ap_generated_sources/debugUnitTest/out" />
-    <content url="file://$MODULE_DIR$/../../../OPSC7311POE/app/build/generated/ap_generated_sources/debugUnitTest/out" />
     <content url="file://$MODULE_DIR$/../../../OPSC7311POE/app/src/test">
       <sourceFolder url="file://$MODULE_DIR$/../../../OPSC7311POE/app/src/test/java" isTestSource="true" />
     </content>
-    <content url="file://$MODULE_DIR$/../../../OPSC7311POE/app/src/test">
-      <sourceFolder url="file://$MODULE_DIR$/../../../OPSC7311POE/app/src/test/java" isTestSource="true" />
-    </content>
-    <content url="file://$MODULE_DIR$/../../../OPSC7311POE/app/src/testDebug" />
     <content url="file://$MODULE_DIR$/../../../OPSC7311POE/app/src/testDebug" />
     <orderEntry type="jdk" jdkName="Android API 34, extension level 7 Platform" jdkType="Android SDK" />
     <orderEntry type="sourceFolder" forTests="false" />

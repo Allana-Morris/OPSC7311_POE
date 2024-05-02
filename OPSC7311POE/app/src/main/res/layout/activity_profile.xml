@@ -11,23 +11,19 @@
     <ImageView
         android:id="@+id/img_whiteBackground"
         android:layout_width="wrap_content"
-        android:layout_height="0dp"
+        android:layout_height="wrap_content"
         android:layout_marginTop="150dp"
-        android:layout_marginBottom="500dp"
 
         android:scaleType="centerCrop"
         android:src="@drawable/arc_1"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <View
         android:id="@+id/empyViews"
         android:layout_width="wrap_content"
-        android:layout_height="0dp"
+        android:layout_height="wrap_content"
         android:background="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -40,22 +36,26 @@
         android:id="@+id/tvuserProfile"
         android:layout_width="281dp"
         android:layout_height="53dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="25dp"
         android:background="@drawable/roundstyle"
         android:backgroundTint="@color/white"
         android:text=""
         android:textColor="@color/black"
         android:textSize="18sp"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="25dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
 
     <ImageView
         android:id="@+id/iv_Google"
-        android:layout_width="61dp"
-        android:layout_height="56dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="328dp"
+        android:layout_marginTop="25dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/profilebtn"
-        tools:layout_editor_absoluteX="328dp"
-        tools:layout_editor_absoluteY="25dp"
         tools:ignore="MissingConstraints" />
 
     <TextView
@@ -63,318 +63,317 @@
         android:layout_width="225dp"
         android:layout_height="30dp"
 
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="93dp"
         android:fontFamily="sans-serif-medium"
         android:text="@string/customP"
         android:textColor="@color/white"
         android:textSize="18sp"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="35dp"
-        tools:layout_editor_absoluteY="93dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/tvFullName"
         android:layout_width="122dp"
         android:layout_height="32dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="236dp"
         android:fontFamily="sans-serif-medium"
         android:text="@string/fullName"
         android:textColor="@color/black"
         android:textSize="18sp"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="22dp"
-        tools:layout_editor_absoluteY="236dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/edtFullNameEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="223dp"
+        android:layout_marginEnd="12dp"
+        android:ems="10"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edtEmailEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtFullNameEdit" />
+
+    <EditText
+        android:id="@+id/edtUserNameEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="10dp"
+        android:ems="10"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtEmailEdit" />
+
+    <EditText
+        android:id="@+id/edtPasswordEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="10dp"
+        android:ems="10"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtUserNameEdit" />
 
     <TextView
         android:id="@+id/tvEmail"
         android:layout_width="130dp"
         android:layout_height="34dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="293dp"
         android:fontFamily="sans-serif-medium"
         android:text="@string/Email"
         android:textColor="@color/black"
         android:textSize="18sp"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="22dp"
-        tools:layout_editor_absoluteY="293dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/tvEditusername"
         android:layout_width="134dp"
         android:layout_height="29dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="353dp"
         android:fontFamily="sans-serif-medium"
         android:text="@string/editUser"
         android:textColor="@color/black"
         android:textSize="18sp"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="22dp"
-        tools:layout_editor_absoluteY="353dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/tvSeePassword"
         android:layout_width="146dp"
         android:layout_height="20dp"
+        android:layout_marginTop="412dp"
+        android:layout_marginEnd="243dp"
         android:fontFamily="sans-serif-medium"
         android:text="@string/seePass"
         android:textColor="@color/black"
         android:textSize="18sp"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="22dp"
-        tools:layout_editor_absoluteY="412dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/tvProfilePhoto"
         android:layout_width="149dp"
         android:layout_height="25dp"
+        android:layout_marginTop="468dp"
+        android:layout_marginEnd="240dp"
         android:fontFamily="sans-serif-medium"
         android:text="@string/profilePho"
         android:textColor="@color/black"
         android:textSize="18sp"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="22dp"
-        tools:layout_editor_absoluteY="468dp" />
-
-    <TextView
-        android:id="@+id/tvFullNameInput"
-        android:layout_width="196dp"
-        android:layout_height="31dp"
-        android:background="@drawable/bordertwo"
-        android:text=""
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="187dp"
-        tools:layout_editor_absoluteY="236dp" />
-
-    <TextView
-        android:id="@+id/textView9"
-        android:layout_width="195dp"
-        android:layout_height="35dp"
-        android:background="@drawable/bordertwo"
-        android:text=""
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="188dp"
-        tools:layout_editor_absoluteY="293dp" />
-
-    <TextView
-        android:id="@+id/textView10"
-        android:layout_width="195dp"
-        android:layout_height="35dp"
-        android:background="@drawable/bordertwo"
-        android:text=""
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="187dp"
-        tools:layout_editor_absoluteY="353dp" />
-
-    <TextView
-        android:id="@+id/textView11"
-        android:layout_width="195dp"
-        android:layout_height="35dp"
-        android:background="@drawable/bordertwo"
-        android:text=""
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="187dp"
-        tools:layout_editor_absoluteY="412dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
 
     <ImageView
         android:id="@+id/img_photoUp"
         android:layout_width="72dp"
         android:layout_height="55dp"
+        android:layout_marginTop="469dp"
+        android:layout_marginEnd="143dp"
+        android:layout_marginBottom="208dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/uploadphoto"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="196dp"
-        tools:layout_editor_absoluteY="468dp" />
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/tvNewPhoto"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="533dp"
+        android:layout_marginEnd="119dp"
+        android:layout_marginBottom="175dp"
         android:fontFamily="sans-serif-medium"
         android:text="@string/uploadpic"
         android:textColor="@color/black"
         android:textSize="18sp"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="196dp"
-        tools:layout_editor_absoluteY="532dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
 
     <Button
-        android:id="@+id/btnSave"
+        android:id="@+id/btnSaveProfile"
         android:layout_width="151dp"
         android:layout_height="55dp"
+        android:layout_marginTop="574dp"
+        android:layout_marginEnd="129dp"
+        android:layout_marginBottom="103dp"
         android:background="@drawable/roundstyle"
         android:backgroundTint="@color/black"
         android:text="@string/save2"
         android:textAllCaps="false"
         android:textColor="@color/white"
         android:textSize="18sp"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="131dp"
-        tools:layout_editor_absoluteY="573dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/cl_NavBar"
-        android:layout_width="411dp"
-        android:layout_height="112dp"
+        android:layout_width="419dp"
+        android:layout_height="96dp"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent">
 
-        <com.google.android.material.bottomnavigation.BottomNavigationView
-            android:layout_width="416dp"
-            android:layout_height="105dp"
+
+        <LinearLayout
+            android:layout_width="418dp"
+            android:layout_height="94dp"
+            android:layout_marginEnd="1dp"
+            android:orientation="horizontal"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent">
 
             <androidx.constraintlayout.widget.ConstraintLayout
-                android:layout_width="415dp"
+                android:id="@+id/linearLayout"
+                android:layout_width="0dp"
                 android:layout_height="match_parent"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent">
+                android:layout_weight="0.25">
 
+                <ImageView
+                    android:id="@+id/imageView16"
+                    android:layout_width="95dp"
+                    android:layout_height="52dp"
+                    android:layout_marginTop="20dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.555"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/bottom_btn3" />
 
-                <LinearLayout
-                    android:layout_width="416dp"
-                    android:layout_height="113dp"
-                    android:orientation="horizontal"
+                <TextView
+                    android:id="@+id/tv_Profile"
+                    android:layout_width="83dp"
+                    android:layout_height="21dp"
+                    android:layout_marginBottom="4dp"
+                    android:gravity="center"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent">
-
-                    <androidx.constraintlayout.widget.ConstraintLayout
-                        android:id="@+id/linearLayout"
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="0.25">
-
-                        <TextView
-                            android:id="@+id/tv_Profile"
-                            android:layout_width="83dp"
-                            android:layout_height="21dp"
-                            android:layout_marginBottom="4dp"
-                            android:gravity="center"
-                            app:layout_constraintBottom_toBottomOf="parent"
-                            app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintStart_toStartOf="parent"
-                            tools:text="@string/profile" />
-
-                        <ImageButton
-                            android:id="@+id/ib_Profile"
-                            android:layout_width="65dp"
-                            android:layout_height="70dp"
-                            android:layout_marginTop="16dp"
-                            android:background="@color/white"
-                            android:scaleType="centerInside"
-                            app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintHorizontal_bias="0.512"
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toTopOf="parent"
-                            app:srcCompat="@drawable/navprofile"
-                            tools:ignore="SpeakableTextPresentCheck" />
-
-                    </androidx.constraintlayout.widget.ConstraintLayout>
-
-                    <androidx.constraintlayout.widget.ConstraintLayout
-                        android:id="@+id/linearLayout2"
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="0.25">
-
-                        <TextView
-                            android:id="@+id/tv_Home"
-                            android:layout_width="83dp"
-                            android:layout_height="21dp"
-                            android:layout_marginBottom="4dp"
-                            android:gravity="center"
-                            app:layout_constraintBottom_toBottomOf="parent"
-                            app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintHorizontal_bias="0.526"
-                            app:layout_constraintStart_toStartOf="parent"
-                            tools:text="@string/home" />
-
-                        <ImageButton
-                            android:id="@+id/ib_Home"
-                            android:layout_width="65dp"
-                            android:layout_height="70dp"
-                            android:layout_marginTop="16dp"
-                            android:background="@color/white"
-                            android:scaleType="centerInside"
-                            app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintHorizontal_bias="0.512"
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toTopOf="parent"
-                            app:srcCompat="@drawable/house"
-                            tools:ignore="SpeakableTextPresentCheck" />
-
-                    </androidx.constraintlayout.widget.ConstraintLayout>
-
-                    <androidx.constraintlayout.widget.ConstraintLayout
-                        android:id="@+id/linearLayout4"
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="0.25">
-
-                        <TextView
-                            android:id="@+id/tv_calendar"
-                            android:layout_width="83dp"
-                            android:layout_height="21dp"
-                            android:layout_marginBottom="4dp"
-                            android:gravity="center"
-                            app:layout_constraintBottom_toBottomOf="parent"
-                            app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintHorizontal_bias="0.473"
-                            app:layout_constraintStart_toStartOf="parent"
-                            tools:text="@string/calendar" />
-
-                        <ImageButton
-                            android:id="@+id/ib_Calendar"
-                            android:layout_width="65dp"
-                            android:layout_height="70dp"
-                            android:layout_marginTop="16dp"
-                            android:background="@color/white"
-                            android:scaleType="centerInside"
-                            app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintHorizontal_bias="0.512"
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toTopOf="parent"
-                            app:srcCompat="@drawable/calendar"
-                            tools:ignore="SpeakableTextPresentCheck" />
-
-                    </androidx.constraintlayout.widget.ConstraintLayout>
-
-                    <androidx.constraintlayout.widget.ConstraintLayout
-                        android:id="@+id/linearLayout5"
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="0.25">
-
-                        <TextView
-                            android:id="@+id/tv_timer"
-                            android:layout_width="83dp"
-                            android:layout_height="21dp"
-                            android:layout_marginBottom="4dp"
-                            android:gravity="center"
-                            app:layout_constraintBottom_toBottomOf="parent"
-                            app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintHorizontal_bias="0.526"
-                            app:layout_constraintStart_toStartOf="parent"
-                            tools:text="@string/timer" />
-
-                        <ImageButton
-                            android:id="@+id/ib_Timer"
-                            android:layout_width="65dp"
-                            android:layout_height="70dp"
-                            android:layout_marginTop="16dp"
-                            android:background="@color/white"
-                            android:scaleType="centerInside"
-                            app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toTopOf="parent"
-                            app:srcCompat="@drawable/timer"
-                            tools:ignore="SpeakableTextPresentCheck" />
-
-                    </androidx.constraintlayout.widget.ConstraintLayout>
-
-                </LinearLayout>
-
+                    app:layout_constraintStart_toStartOf="parent"
+                    tools:text="@string/profile" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
-        </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/linearLayout2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.25">
+
+                <ImageView
+                    android:id="@+id/imageView15"
+                    android:layout_width="90dp"
+                    android:layout_height="53dp"
+                    android:layout_marginTop="20dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/house" />
+
+                <TextView
+                    android:id="@+id/tv_Home"
+                    android:layout_width="83dp"
+                    android:layout_height="21dp"
+                    android:layout_marginBottom="4dp"
+                    android:gravity="center"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.526"
+                    app:layout_constraintStart_toStartOf="parent"
+                    tools:text="@string/home" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/linearLayout4"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.25">
+
+                <ImageView
+                    android:id="@+id/imageView18"
+                    android:layout_width="90dp"
+                    android:layout_height="54dp"
+                    android:layout_marginTop="20dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/baseline_calendar_month_24" />
+
+                <TextView
+                    android:id="@+id/tv_calendar"
+                    android:layout_width="83dp"
+                    android:layout_height="21dp"
+                    android:layout_marginBottom="4dp"
+                    android:gravity="center"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.473"
+                    app:layout_constraintStart_toStartOf="parent"
+                    tools:text="@string/calendar" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/linearLayout5"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.25">
+
+                <ImageView
+                    android:id="@+id/imageView17"
+                    android:layout_width="91dp"
+                    android:layout_height="54dp"
+                    android:layout_marginTop="20dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/baseline_circle_notifications_24" />
+
+                <TextView
+                    android:id="@+id/tv_timer"
+                    android:layout_width="83dp"
+                    android:layout_height="21dp"
+                    android:layout_marginBottom="4dp"
+                    android:gravity="center"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.526"
+                    app:layout_constraintStart_toStartOf="parent"
+                    tools:text="@string/timer" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
