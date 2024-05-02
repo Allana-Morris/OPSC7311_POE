@@ -1,11 +1,9 @@
 package com.example.opsc7311poe
 
-import android.content.Intent
 import android.os.Bundle
 import android.os.Handler
 import android.widget.Button
 import android.widget.EditText
-import android.widget.ImageButton
 import android.widget.TextClock
 import android.widget.TextView
 import android.widget.Toast
@@ -13,10 +11,10 @@ import androidx.appcompat.app.AppCompatActivity
 import java.sql.Time
 import java.time.Clock
 import java.util.*
-import java.util.Calendar
 
 
 class Timer : AppCompatActivity() {
+    private val navBar = Navbar()
     private lateinit var edtTime: TextClock
     private lateinit var btnStart: Button
     private lateinit var btnStop: Button
@@ -35,33 +33,29 @@ class Timer : AppCompatActivity() {
 
 
 
-        val HomeOpenActivity = findViewById<ImageButton>(R.id.ib_Home)
-        val ProfileOpenActivity = findViewById<ImageButton>(R.id.ib_Profile)
-        val CalendarOpenActivity = findViewById<ImageButton>(R.id.ib_Calendar)
-        val TimerOpenActivity = findViewById<ImageButton>(R.id.ib_Timer)
+        val HomeOpenActivity = findViewById<TextView>(R.id.tv_Home)
+        val ProfileOpenActivity = findViewById<TextView>(R.id.tv_Profile)
+        val CalendarOpenActivity = findViewById<TextView>(R.id.tv_calendar)
+        val TimerOpenActivity = findViewById<TextView>(R.id.tv_timer)
 
-        HomeOpenActivity.setOnClickListener{
-            val intent2 = Intent(this, MainActivity::class.java)
-            startActivity(intent2)
+        HomeOpenActivity.setOnClickListener {
+            navBar.OpenHomeButton()
         }
 
-        ProfileOpenActivity.setOnClickListener{
-            val intent = Intent(this, Profile::class.java)
-            startActivity(intent)
+        ProfileOpenActivity.setOnClickListener {
+            navBar.OpenProfileButton()
         }
 
-        CalendarOpenActivity.setOnClickListener{
-            val intent3 = Intent(this, Calendar::class.java)
-            startActivity(intent3)
+        CalendarOpenActivity.setOnClickListener {
+            navBar.OpenCalendarButton()
         }
 
-        TimerOpenActivity.setOnClickListener{
-            val intent4 = Intent(this, Timer::class.java)
-            startActivity(intent4)
+        TimerOpenActivity.setOnClickListener {
+            navBar.OpenTimerButton()
         }
 
         //creating a fake category and task seeing as we have no way of inputting stuff n things
-        val selectedCat = Category("Work", 1, 0,2.0, 4.0)
+        val selectedCat = Category("Work", 1, 2, 4.0, 8.0)
         //adding to the user category hashmap
         SessionUser.currentUser?.categories?.put(selectedCat.name, selectedCat)
         //adding the task to the category for user
@@ -78,7 +72,7 @@ class Timer : AppCompatActivity() {
 
         btnReset.setOnClickListener ()
         {
-            secondsElapsed = 0
+            secondsElapsed = 0;
             //for debug purposes display all the recordings for selected Task
             for (recording in selectedTask.taskRecords)
             {
@@ -97,8 +91,8 @@ class Timer : AppCompatActivity() {
             {
                 stopTimer()
                 val timed = edtTime.text.toString()
-                edtTime.text = "00:00:00"
-                secondsElapsed = 0
+                edtTime.setText("00:00:00")
+                secondsElapsed = 0;
 
                 val parts = timed.split(":")
                 val hours = parts[0].toInt()
@@ -139,7 +133,7 @@ class Timer : AppCompatActivity() {
             val minutes = (secondsElapsed % 3600) / 60
             val seconds = secondsElapsed % 60
             val timeString = String.format("%02d:%02d:%02d", hours, minutes, seconds)
-            edtTime.text = timeString
+            edtTime.setText(timeString)
             handler.postDelayed(this, 1000)
         }
     }
