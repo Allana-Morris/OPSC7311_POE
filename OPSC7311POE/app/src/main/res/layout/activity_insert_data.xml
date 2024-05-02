@@ -40,12 +40,11 @@
         android:id="@+id/textView99"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="12dp"
-        android:layout_marginTop="12dp"
         android:text="End Time"
+        android:textColor="#000000"
         android:textSize="16sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/view12" />
+        tools:layout_editor_absoluteX="12dp"
+        tools:layout_editor_absoluteY="540dp" />
 
     <TextView
         android:id="@+id/tv_Category"
@@ -65,11 +64,9 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="text"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.931"
-        app:layout_constraintStart_toEndOf="@+id/tv_Name"
-        app:layout_constraintTop_toTopOf="@+id/view8"
-        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck"
+        tools:layout_editor_absoluteX="201dp"
+        tools:layout_editor_absoluteY="364dp" />
 
     <TextView
         android:id="@+id/tvAddTask"
@@ -107,13 +104,11 @@
         android:id="@+id/tv_Name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="12dp"
-        android:layout_marginTop="16dp"
         android:text="@string/name_"
         android:textColor="@color/black"
         android:textSize="16sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/view8" />
+        tools:layout_editor_absoluteX="12dp"
+        tools:layout_editor_absoluteY="372dp" />
 
     <View
         android:id="@+id/view9"
@@ -130,13 +125,11 @@
         android:id="@+id/tv_Colour"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
         android:text="Repeatable?"
         android:textColor="@color/black"
         android:textSize="16sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/view10" />
+        tools:layout_editor_absoluteX="12dp"
+        tools:layout_editor_absoluteY="456dp" />
 
     <View
         android:id="@+id/view10"
@@ -226,76 +219,63 @@
         android:id="@+id/textView32"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="12dp"
-        android:layout_marginTop="12dp"
         android:text="Start Time"
+        android:textColor="@color/black"
         android:textSize="16sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/view11" />
+        tools:layout_editor_absoluteX="12dp"
+        tools:layout_editor_absoluteY="496dp" />
 
     <EditText
         android:id="@+id/edtStart"
         android:layout_width="164dp"
         android:layout_height="38dp"
-        android:layout_marginTop="12dp"
-        android:layout_marginEnd="8dp"
         android:ems="10"
         android:inputType="text"
         android:textSize="10sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/view11"
-        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck"
+        tools:layout_editor_absoluteX="238dp"
+        tools:layout_editor_absoluteY="502dp" />
 
     <EditText
         android:id="@+id/edtEnd"
         android:layout_width="164dp"
         android:layout_height="38dp"
-        android:layout_marginTop="12dp"
-        android:layout_marginEnd="8dp"
         android:ems="10"
         android:inputType="text"
         android:textSize="10sp"
-        app:layout_constraintEnd_toEndOf="@+id/view"
-        app:layout_constraintTop_toBottomOf="@+id/view12"
-        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck"
+        tools:layout_editor_absoluteX="238dp"
+        tools:layout_editor_absoluteY="540dp" />
 
     <TextView
         android:id="@+id/textView34"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="12dp"
-        android:layout_marginTop="12dp"
         android:text="@string/description"
         android:textColor="@color/black"
         android:textSize="16sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/view9" />
+        tools:layout_editor_absoluteX="12dp"
+        tools:layout_editor_absoluteY="416dp" />
 
     <EditText
         android:id="@+id/edtDescription"
-        android:layout_width="164dp"
-        android:layout_height="32dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="16dp"
+        android:layout_width="189dp"
+        android:layout_height="46dp"
         android:ems="10"
         android:inputType="text"
         android:text="@string/task_description"
         android:textSize="10sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/view9"
-        tools:ignore="TouchTargetSizeCheck" />
+        tools:ignore="TouchTargetSizeCheck"
+        tools:layout_editor_absoluteX="202dp"
+        tools:layout_editor_absoluteY="409dp" />
 
     <Switch
         android:id="@+id/repeatSwitch"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="16dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.924"
-        app:layout_constraintStart_toEndOf="@+id/tv_Colour"
-        app:layout_constraintTop_toBottomOf="@+id/view10"
-        tools:ignore="TouchTargetSizeCheck" />
+        tools:ignore="TouchTargetSizeCheck"
+        tools:layout_editor_absoluteX="349dp"
+        tools:layout_editor_absoluteY="456dp" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/cl_NavBar"
@@ -467,5 +447,26 @@
             </androidx.constraintlayout.widget.ConstraintLayout>
         </com.google.android.material.bottomnavigation.BottomNavigationView>
     </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="72dp"
+        android:layout_height="26dp"
+        android:text="@string/category"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        tools:layout_editor_absoluteX="10dp"
+        tools:layout_editor_absoluteY="319dp" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="188dp"
+        android:layout_height="36dp"
+        app:layout_constraintBottom_toTopOf="@+id/view9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.954"
+        app:layout_constraintStart_toEndOf="@+id/textView"
+        app:layout_constraintTop_toTopOf="@+id/view8"
+        app:layout_constraintVertical_bias="0.562" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
