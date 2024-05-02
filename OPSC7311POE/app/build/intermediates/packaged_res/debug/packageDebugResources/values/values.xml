@@ -25,6 +25,7 @@
     <string name="bar">Bar Graph</string>
     <string name="calendar">Calendar</string>
     <string name="calendar_">Calendar</string>
+    <string name="cat_select">Category select</string>
     <string name="category">Category</string>
     <string name="choose">Choose your graph:</string>
     <string name="chooseW">Choose a Week:</string>
@@ -74,6 +75,7 @@
     <string name="task">Task</string>
     <string name="task_description">Task Description</string>
     <string name="task_duration">Task Duration</string>
+    <string name="task_select">Task select</string>
     <string name="tasks">Tasks</string>
     <string name="time_dash">-</string>
     <string name="timer">Timer</string>
@@ -86,7 +88,7 @@
     <string name="username">Username</string>
     <string name="weeklyS">Weekly summary</string>
     <string name="welcome">"Welcome !"</string>
-    <style name="Base.Theme.OPSC7311POE" parent="Theme.Material3.DayNight.NoActionBar">
+    <style name="Base.Theme.OPSC7311POE" parent="Theme.AppCompat.Light.NoActionBar">
         
         
     </style>
