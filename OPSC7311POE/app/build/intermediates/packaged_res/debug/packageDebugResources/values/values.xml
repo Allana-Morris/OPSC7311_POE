@@ -77,7 +77,11 @@
     <string name="tasks">Tasks</string>
     <string name="time_dash">-</string>
     <string name="timer">Timer</string>
+    <string name="title_activity_calendar2">Calendar2</string>
     <string name="title_activity_login">LoginActivity</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_home">Home</string>
+    <string name="title_notifications">Notifications</string>
     <string name="uploadpic">Upload New</string>
     <string name="username">Username</string>
     <string name="weeklyS">Weekly summary</string>

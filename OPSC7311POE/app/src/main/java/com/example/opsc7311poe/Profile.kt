@@ -3,9 +3,7 @@ package com.example.opsc7311poe
 import android.content.Intent
 import android.os.Bundle
 import android.widget.ImageButton
-import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
-import java.util.Calendar
 
 class Profile : AppCompatActivity() {
 
@@ -28,7 +26,7 @@ class Profile : AppCompatActivity() {
         }
 
         CalendarOpenActivity.setOnClickListener{
-            val intent3 = Intent(this, Calendar::class.java)
+            val intent3 = Intent(this, TaskCalendar::class.java)
             startActivity(intent3)
         }
 

@@ -6,7 +6,6 @@ import android.widget.ImageButton
 import android.widget.Switch
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
-import java.util.Calendar
 
 class InsertData : AppCompatActivity() {
 
@@ -30,7 +29,7 @@ class InsertData : AppCompatActivity() {
         }
 
         CalendarOpenActivity.setOnClickListener{
-            val intent3 = Intent(this, Calendar::class.java)
+            val intent3 = Intent(this, TaskCalendar::class.java)
             startActivity(intent3)
         }
 

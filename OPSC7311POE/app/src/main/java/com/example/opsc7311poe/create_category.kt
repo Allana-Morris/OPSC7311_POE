@@ -15,7 +15,6 @@ import androidx.core.view.WindowInsetsCompat
 import yuku.ambilwarna.AmbilWarnaDialog
 import yuku.ambilwarna.AmbilWarnaDialog.OnAmbilWarnaListener
 import java.time.LocalTime
-import java.util.Calendar
 
 class create_category : AppCompatActivity() {
     private val vali = validation()
@@ -65,7 +64,7 @@ class create_category : AppCompatActivity() {
         }
 
         CalendarOpenActivity.setOnClickListener{
-            val intent3 = Intent(this, Calendar::class.java)
+            val intent3 = Intent(this, TaskCalendar::class.java)
             startActivity(intent3)
         }
 
