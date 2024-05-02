@@ -92,8 +92,8 @@
         "source": "C:\\Users\\Sven\\.gradle\\daemon\\8.4\\com.example.opsc7311poe.app-main-37:\\layout\\task_listing.xml"
     },
     {
-        "merged": "com.example.opsc7311poe.app-debug-35:/layout_activity_timer.xml.flat",
-        "source": "com.example.opsc7311poe.app-main-37:/layout/activity_timer.xml"
+        "merged": "com.example.opsc7311poe.app-debug-35:/layout_activity_profile.xml.flat",
+        "source": "com.example.opsc7311poe.app-main-37:/layout/activity_profile.xml"
     },
     {
         "merged": "C:\\Users\\Sven\\.gradle\\daemon\\8.4\\com.example.opsc7311poe.app-debug-35:\\layout_activity_starting_page.xml.flat",

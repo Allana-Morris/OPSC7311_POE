@@ -3254,7 +3254,7 @@ id btnCreateDiagram
 id btnLogin
 id btnRedsighn
 id btnReset
-id btnSave
+id btnSaveProfile
 id btnSignUp
 id btnStart
 id btnStop
@@ -3342,10 +3342,14 @@ id edge
 id edit_query
 id edit_text_id
 id edtDescription
+id edtEmailEdit
 id edtEnd
+id edtFullNameEdit
 id edtName
+id edtPasswordEdit
 id edtStart
 id edtTaskName
+id edtUserNameEdit
 id elastic
 id embed
 id empyViews
@@ -3654,13 +3658,10 @@ id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
 id textTop
-id textView10
-id textView11
 id textView32
 id textView34
 id textView35
 id textView38
-id textView9
 id textView99
 id text_input_end_icon
 id text_input_error_icon
@@ -3696,7 +3697,6 @@ id tvCustomiseProfile
 id tvEditusername
 id tvEmail
 id tvFullName
-id tvFullNameInput
 id tvGraph
 id tvNewPhoto
 id tvOngoingTask
