@@ -51,10 +51,9 @@ class InsertData : AppCompatActivity() {
             val desc = findViewById<TextView?>(R.id.edtDescription).text.toString()
 
             //testing catagory
-            var objCategory = Category()
-            var selectCat =
+            val objCategory = Category()
+            var selectCat = SessionUser.currentUser?.categories?.get(catTask)
             //adding to the user catagory hashmap
-            SessionUser.currentUser?.categories?.put(.name, workCategory)
             //adding the task to the catagory for user
             var CreatedTask = Task(taskName, desc, repeatSwitch.isEnabled, startTime.toDouble(), endTime.toDouble())
             objCategory.tasks[CreatedTask.name] = CreatedTask

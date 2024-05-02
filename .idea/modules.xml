@@ -6,7 +6,6 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/OPSC7311_POE.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/OPSC7311_POE.app.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/OPSC7311_POE.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/OPSC7311_POE.app.androidTest.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/OPSC7311_POE.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/OPSC7311_POE.app.main.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/OPSC7311_POE.app.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/OPSC7311_POE.app.unitTest.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/app.OPSC7311_POE.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/app.OPSC7311_POE.app.androidTest.iml" />
     </modules>
   </component>
