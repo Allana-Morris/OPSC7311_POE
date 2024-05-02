@@ -3951,6 +3951,7 @@ int layout activity_create_category 0x7f0b001e
 int layout activity_insert_data 0x7f0b001f
 int layout activity_login 0x7f0b0020
 int layout activity_main 0x7f0b0021
+int layout activity_main2 0x7f0b007c
 int layout activity_profile 0x7f0b0022
 int layout activity_register 0x7f0b0023
 int layout activity_starting_page 0x7f0b0024

@@ -28,6 +28,9 @@
         android:testOnly="true"
         android:theme="@style/Theme.OPSC7311POE" >
         <activity
+            android:name="com.example.opsc7311poe.MainActivity2"
+            android:exported="false" />
+        <activity
             android:name="com.example.opsc7311poe.TaskCalendar"
             android:exported="false" />
         <activity
