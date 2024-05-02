@@ -192,37 +192,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/view13" />
 
-    <View
-        android:id="@+id/view15"
-        android:layout_width="0dp"
-        android:layout_height="2dp"
-        android:layout_marginTop="80dp"
-        android:background="#CECECE"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/view13" />
-
-    <View
-        android:id="@+id/view16"
-        android:layout_width="0dp"
-        android:layout_height="2dp"
-        android:layout_marginTop="40dp"
-        android:background="#CECECE"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/view15" />
-
-    <View
-        android:id="@+id/view17"
-        android:layout_width="0dp"
-        android:layout_height="2dp"
-        android:layout_marginTop="40dp"
-        android:background="#CECECE"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/view16" />
-
     <TextView
         android:id="@+id/textView32"
         android:layout_width="wrap_content"
@@ -481,7 +450,7 @@
         app:layout_constraintTop_toTopOf="@+id/view8" />
 
     <Spinner
-        android:id="@+id/spinner"
+        android:id="@+id/sp_Category"
         android:layout_width="188dp"
         android:layout_height="36dp"
         app:layout_constraintBottom_toTopOf="@+id/view9"

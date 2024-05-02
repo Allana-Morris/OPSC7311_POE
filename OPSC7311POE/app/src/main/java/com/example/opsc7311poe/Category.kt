@@ -11,4 +11,5 @@ class Category(
     // HashMap to store tasks for this category
     val tasks: HashMap<String, Task> = HashMap()
 
+    constructor() : this("", 0,0,0.0,0.0)
 }

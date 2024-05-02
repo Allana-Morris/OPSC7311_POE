@@ -3,6 +3,7 @@ package com.example.opsc7311poe
 import android.content.Intent
 import android.os.Bundle
 import android.widget.ImageButton
+import android.widget.Spinner
 import android.widget.Switch
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
@@ -42,6 +43,7 @@ class InsertData : AppCompatActivity() {
 
         AddTaskButton.setOnClickListener()
         {
+            val catTask = findViewById<Spinner>(R.id.sp_Category).selectedItem.toString()
             val taskName = findViewById<TextView?>(R.id.edtTaskName).text.toString()
             val repeatSwitch : Switch = findViewById(R.id.repeatSwitch)
             val startTime = findViewById<TextView?>(R.id.edtStart).text.toString()
@@ -49,12 +51,13 @@ class InsertData : AppCompatActivity() {
             val desc = findViewById<TextView?>(R.id.edtDescription).text.toString()
 
             //testing catagory
-            val workCategory = Category("Work", 1, 2,4.0, 6.0)
+            var objCategory = Category()
+            var selectCat =
             //adding to the user catagory hashmap
-            SessionUser.currentUser?.categories?.put(workCategory.name, workCategory)
+            SessionUser.currentUser?.categories?.put(.name, workCategory)
             //adding the task to the catagory for user
             var CreatedTask = Task(taskName, desc, repeatSwitch.isEnabled, startTime.toDouble(), endTime.toDouble())
-            workCategory.tasks[CreatedTask.name] = CreatedTask
+            objCategory.tasks[CreatedTask.name] = CreatedTask
 
             val intent = Intent(this, ViewData::class.java)
             startActivity(intent)
