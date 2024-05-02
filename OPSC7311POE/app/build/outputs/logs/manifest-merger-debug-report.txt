@@ -165,10 +165,10 @@ activity#com.example.opsc7311poe.MainActivity
 ADDED from C:\Users\Sven\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:45:9-50
 	android:name
 		ADDED from C:\Users\Sven\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:45:19-47
-activity#com.example.opsc7311poe.Calendar
-ADDED from C:\Users\Sven\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:46:9-45
+activity#com.example.opsc7311poe.Calenda
+ADDED from C:\Users\Sven\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:46:9-44
 	android:name
-		ADDED from C:\Users\Sven\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:46:19-43
+		ADDED from C:\Users\Sven\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:46:19-42
 uses-sdk
 INJECTED from C:\Users\Sven\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\Sven\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml

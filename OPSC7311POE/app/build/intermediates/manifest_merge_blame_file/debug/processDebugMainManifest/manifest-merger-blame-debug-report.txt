@@ -104,9 +104,9 @@
 59        <activity android:name="com.example.opsc7311poe.MainActivity" />
 59-->C:\Users\Sven\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:45:9-50
 59-->C:\Users\Sven\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:45:19-47
-60        <activity android:name="com.example.opsc7311poe.Calendar" />
-60-->C:\Users\Sven\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:46:9-45
-60-->C:\Users\Sven\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:46:19-43
+60        <activity android:name="com.example.opsc7311poe.Calenda" />
+60-->C:\Users\Sven\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:46:9-44
+60-->C:\Users\Sven\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:46:19-42
 61
 62        <provider
 62-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Sven\.gradle\caches\transforms-3\048b706df1367e36e2cd9ad66e15e8b1\transformed\emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
