@@ -9,6 +9,3 @@ class Recording(
     var EndTime: Double,
     var Duration: Time
 )
-{
-
-}

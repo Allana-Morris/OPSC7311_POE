@@ -69,7 +69,7 @@ id btn_Google_signin
 id btn_Login
 id button9
 id chooseWeek
-id constraintLayout
+id cl_NavBar
 id createBtn
 id createCatBtn
 id dayOfWeekTV
@@ -86,10 +86,6 @@ id ib_Home
 id ib_Profile
 id ib_Timer
 id imageView
-id imageView15
-id imageView16
-id imageView17
-id imageView18
 id imageView22
 id imgTaskIcon
 id img_bar

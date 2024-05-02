@@ -5,6 +5,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
@@ -25,19 +26,22 @@ public final class ActivityProfileBinding implements ViewBinding {
   public final Button btnSave;
 
   @NonNull
+  public final ConstraintLayout clNavBar;
+
+  @NonNull
   public final View empyViews;
 
   @NonNull
-  public final ImageView imageView15;
+  public final ImageButton ibCalendar;
 
   @NonNull
-  public final ImageView imageView16;
+  public final ImageButton ibHome;
 
   @NonNull
-  public final ImageView imageView17;
+  public final ImageButton ibProfile;
 
   @NonNull
-  public final ImageView imageView18;
+  public final ImageButton ibTimer;
 
   @NonNull
   public final ImageView imgPhotoUp;
@@ -112,25 +116,26 @@ public final class ActivityProfileBinding implements ViewBinding {
   public final TextView tvuserProfile;
 
   private ActivityProfileBinding(@NonNull ConstraintLayout rootView, @NonNull Button btnSave,
-      @NonNull View empyViews, @NonNull ImageView imageView15, @NonNull ImageView imageView16,
-      @NonNull ImageView imageView17, @NonNull ImageView imageView18, @NonNull ImageView imgPhotoUp,
-      @NonNull ImageView imgWhiteBackground, @NonNull ImageView ivGoogle,
-      @NonNull ConstraintLayout linearLayout, @NonNull ConstraintLayout linearLayout2,
-      @NonNull ConstraintLayout linearLayout4, @NonNull ConstraintLayout linearLayout5,
-      @NonNull ConstraintLayout main, @NonNull TextView textView10, @NonNull TextView textView11,
-      @NonNull TextView textView9, @NonNull TextView tvCalendar,
-      @NonNull TextView tvCustomiseProfile, @NonNull TextView tvEditusername,
-      @NonNull TextView tvEmail, @NonNull TextView tvFullName, @NonNull TextView tvFullNameInput,
-      @NonNull TextView tvHome, @NonNull TextView tvNewPhoto, @NonNull TextView tvProfile,
-      @NonNull TextView tvProfilePhoto, @NonNull TextView tvSeePassword, @NonNull TextView tvTimer,
-      @NonNull TextView tvuserProfile) {
+      @NonNull ConstraintLayout clNavBar, @NonNull View empyViews, @NonNull ImageButton ibCalendar,
+      @NonNull ImageButton ibHome, @NonNull ImageButton ibProfile, @NonNull ImageButton ibTimer,
+      @NonNull ImageView imgPhotoUp, @NonNull ImageView imgWhiteBackground,
+      @NonNull ImageView ivGoogle, @NonNull ConstraintLayout linearLayout,
+      @NonNull ConstraintLayout linearLayout2, @NonNull ConstraintLayout linearLayout4,
+      @NonNull ConstraintLayout linearLayout5, @NonNull ConstraintLayout main,
+      @NonNull TextView textView10, @NonNull TextView textView11, @NonNull TextView textView9,
+      @NonNull TextView tvCalendar, @NonNull TextView tvCustomiseProfile,
+      @NonNull TextView tvEditusername, @NonNull TextView tvEmail, @NonNull TextView tvFullName,
+      @NonNull TextView tvFullNameInput, @NonNull TextView tvHome, @NonNull TextView tvNewPhoto,
+      @NonNull TextView tvProfile, @NonNull TextView tvProfilePhoto,
+      @NonNull TextView tvSeePassword, @NonNull TextView tvTimer, @NonNull TextView tvuserProfile) {
     this.rootView = rootView;
     this.btnSave = btnSave;
+    this.clNavBar = clNavBar;
     this.empyViews = empyViews;
-    this.imageView15 = imageView15;
-    this.imageView16 = imageView16;
-    this.imageView17 = imageView17;
-    this.imageView18 = imageView18;
+    this.ibCalendar = ibCalendar;
+    this.ibHome = ibHome;
+    this.ibProfile = ibProfile;
+    this.ibTimer = ibTimer;
     this.imgPhotoUp = imgPhotoUp;
     this.imgWhiteBackground = imgWhiteBackground;
     this.ivGoogle = ivGoogle;
@@ -190,33 +195,39 @@ public final class ActivityProfileBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.cl_NavBar;
+      ConstraintLayout clNavBar = ViewBindings.findChildViewById(rootView, id);
+      if (clNavBar == null) {
+        break missingId;
+      }
+
       id = R.id.empyViews;
       View empyViews = ViewBindings.findChildViewById(rootView, id);
       if (empyViews == null) {
         break missingId;
       }
 
-      id = R.id.imageView15;
-      ImageView imageView15 = ViewBindings.findChildViewById(rootView, id);
-      if (imageView15 == null) {
+      id = R.id.ib_Calendar;
+      ImageButton ibCalendar = ViewBindings.findChildViewById(rootView, id);
+      if (ibCalendar == null) {
         break missingId;
       }
 
-      id = R.id.imageView16;
-      ImageView imageView16 = ViewBindings.findChildViewById(rootView, id);
-      if (imageView16 == null) {
+      id = R.id.ib_Home;
+      ImageButton ibHome = ViewBindings.findChildViewById(rootView, id);
+      if (ibHome == null) {
         break missingId;
       }
 
-      id = R.id.imageView17;
-      ImageView imageView17 = ViewBindings.findChildViewById(rootView, id);
-      if (imageView17 == null) {
+      id = R.id.ib_Profile;
+      ImageButton ibProfile = ViewBindings.findChildViewById(rootView, id);
+      if (ibProfile == null) {
         break missingId;
       }
 
-      id = R.id.imageView18;
-      ImageView imageView18 = ViewBindings.findChildViewById(rootView, id);
-      if (imageView18 == null) {
+      id = R.id.ib_Timer;
+      ImageButton ibTimer = ViewBindings.findChildViewById(rootView, id);
+      if (ibTimer == null) {
         break missingId;
       }
 
@@ -360,12 +371,12 @@ public final class ActivityProfileBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityProfileBinding((ConstraintLayout) rootView, btnSave, empyViews,
-          imageView15, imageView16, imageView17, imageView18, imgPhotoUp, imgWhiteBackground,
-          ivGoogle, linearLayout, linearLayout2, linearLayout4, linearLayout5, main, textView10,
-          textView11, textView9, tvCalendar, tvCustomiseProfile, tvEditusername, tvEmail,
-          tvFullName, tvFullNameInput, tvHome, tvNewPhoto, tvProfile, tvProfilePhoto, tvSeePassword,
-          tvTimer, tvuserProfile);
+      return new ActivityProfileBinding((ConstraintLayout) rootView, btnSave, clNavBar, empyViews,
+          ibCalendar, ibHome, ibProfile, ibTimer, imgPhotoUp, imgWhiteBackground, ivGoogle,
+          linearLayout, linearLayout2, linearLayout4, linearLayout5, main, textView10, textView11,
+          textView9, tvCalendar, tvCustomiseProfile, tvEditusername, tvEmail, tvFullName,
+          tvFullNameInput, tvHome, tvNewPhoto, tvProfile, tvProfilePhoto, tvSeePassword, tvTimer,
+          tvuserProfile);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

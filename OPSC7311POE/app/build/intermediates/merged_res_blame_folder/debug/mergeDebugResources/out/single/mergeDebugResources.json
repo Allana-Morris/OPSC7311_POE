@@ -4,24 +4,24 @@
         "source": "C:\\Users\\allan\\Downloads\\OPSC7311_POE-main\\OPSC7311_POE-main\\.gradle\\daemon\\8.4\\com.example.opsc7311poe.app-main-6:\\layout\\activity_calendar.xml"
     },
     {
-        "merged": "C:\\Users\\allan\\Downloads\\OPSC7311_POE-main\\OPSC7311_POE-main\\.gradle\\daemon\\8.4\\com.example.opsc7311poe.app-debug-4:\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\allan\\Downloads\\OPSC7311_POE-main\\OPSC7311_POE-main\\.gradle\\daemon\\8.4\\com.example.opsc7311poe.app-main-6:\\mipmap-xxhdpi\\ic_launcher_round.webp"
-    },
-    {
         "merged": "C:\\Users\\allan\\Downloads\\OPSC7311_POE-main\\OPSC7311_POE-main\\.gradle\\daemon\\8.4\\com.example.opsc7311poe.app-debug-4:\\drawable_bar.png.flat",
         "source": "C:\\Users\\allan\\Downloads\\OPSC7311_POE-main\\OPSC7311_POE-main\\.gradle\\daemon\\8.4\\com.example.opsc7311poe.app-main-6:\\drawable\\bar.png"
     },
     {
-        "merged": "C:\\Users\\allan\\Downloads\\OPSC7311_POE-main\\OPSC7311_POE-main\\.gradle\\daemon\\8.4\\com.example.opsc7311poe.app-debug-4:\\drawable_roundstyle.xml.flat",
-        "source": "C:\\Users\\allan\\Downloads\\OPSC7311_POE-main\\OPSC7311_POE-main\\.gradle\\daemon\\8.4\\com.example.opsc7311poe.app-main-6:\\drawable\\roundstyle.xml"
+        "merged": "C:\\Users\\allan\\Downloads\\OPSC7311_POE-main\\OPSC7311_POE-main\\.gradle\\daemon\\8.4\\com.example.opsc7311poe.app-debug-4:\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\allan\\Downloads\\OPSC7311_POE-main\\OPSC7311_POE-main\\.gradle\\daemon\\8.4\\com.example.opsc7311poe.app-main-6:\\mipmap-xxhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\allan\\Downloads\\OPSC7311_POE-main\\OPSC7311_POE-main\\.gradle\\daemon\\8.4\\com.example.opsc7311poe.app-debug-4:\\drawable_roundstyle2.xml.flat",
+        "source": "C:\\Users\\allan\\Downloads\\OPSC7311_POE-main\\OPSC7311_POE-main\\.gradle\\daemon\\8.4\\com.example.opsc7311poe.app-main-6:\\drawable\\roundstyle2.xml"
     },
     {
         "merged": "C:\\Users\\allan\\Downloads\\OPSC7311_POE-main\\OPSC7311_POE-main\\.gradle\\daemon\\8.4\\com.example.opsc7311poe.app-debug-4:\\mipmap-anydpi_ic_launcher.xml.flat",
         "source": "C:\\Users\\allan\\Downloads\\OPSC7311_POE-main\\OPSC7311_POE-main\\.gradle\\daemon\\8.4\\com.example.opsc7311poe.app-main-6:\\mipmap-anydpi\\ic_launcher.xml"
     },
     {
-        "merged": "C:\\Users\\allan\\Downloads\\OPSC7311_POE-main\\OPSC7311_POE-main\\.gradle\\daemon\\8.4\\com.example.opsc7311poe.app-debug-4:\\drawable_roundstyle2.xml.flat",
-        "source": "C:\\Users\\allan\\Downloads\\OPSC7311_POE-main\\OPSC7311_POE-main\\.gradle\\daemon\\8.4\\com.example.opsc7311poe.app-main-6:\\drawable\\roundstyle2.xml"
+        "merged": "C:\\Users\\allan\\Downloads\\OPSC7311_POE-main\\OPSC7311_POE-main\\.gradle\\daemon\\8.4\\com.example.opsc7311poe.app-debug-4:\\drawable_roundstyle.xml.flat",
+        "source": "C:\\Users\\allan\\Downloads\\OPSC7311_POE-main\\OPSC7311_POE-main\\.gradle\\daemon\\8.4\\com.example.opsc7311poe.app-main-6:\\drawable\\roundstyle.xml"
     },
     {
         "merged": "C:\\Users\\allan\\Downloads\\OPSC7311_POE-main\\OPSC7311_POE-main\\.gradle\\daemon\\8.4\\com.example.opsc7311poe.app-debug-4:\\drawable_box_outline.xml.flat",
@@ -32,16 +32,20 @@
         "source": "C:\\Users\\allan\\Downloads\\OPSC7311_POE-main\\OPSC7311_POE-main\\.gradle\\daemon\\8.4\\com.example.opsc7311poe.app-main-6:\\drawable\\whitescreen.jpg"
     },
     {
+        "merged": "com.example.opsc7311poe.app-debug-4:/layout_activity_calendar.xml.flat",
+        "source": "com.example.opsc7311poe.app-main-6:/layout/activity_calendar.xml"
+    },
+    {
         "merged": "C:\\Users\\allan\\Downloads\\OPSC7311_POE-main\\OPSC7311_POE-main\\.gradle\\daemon\\8.4\\com.example.opsc7311poe.app-debug-4:\\mipmap-xhdpi_ic_launcher.webp.flat",
         "source": "C:\\Users\\allan\\Downloads\\OPSC7311_POE-main\\OPSC7311_POE-main\\.gradle\\daemon\\8.4\\com.example.opsc7311poe.app-main-6:\\mipmap-xhdpi\\ic_launcher.webp"
     },
     {
-        "merged": "C:\\Users\\allan\\Downloads\\OPSC7311_POE-main\\OPSC7311_POE-main\\.gradle\\daemon\\8.4\\com.example.opsc7311poe.app-debug-4:\\drawable_border.xml.flat",
-        "source": "C:\\Users\\allan\\Downloads\\OPSC7311_POE-main\\OPSC7311_POE-main\\.gradle\\daemon\\8.4\\com.example.opsc7311poe.app-main-6:\\drawable\\border.xml"
-    },
-    {
         "merged": "C:\\Users\\allan\\Downloads\\OPSC7311_POE-main\\OPSC7311_POE-main\\.gradle\\daemon\\8.4\\com.example.opsc7311poe.app-debug-4:\\drawable_ic_launcher_foreground.xml.flat",
         "source": "C:\\Users\\allan\\Downloads\\OPSC7311_POE-main\\OPSC7311_POE-main\\.gradle\\daemon\\8.4\\com.example.opsc7311poe.app-main-6:\\drawable\\ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "C:\\Users\\allan\\Downloads\\OPSC7311_POE-main\\OPSC7311_POE-main\\.gradle\\daemon\\8.4\\com.example.opsc7311poe.app-debug-4:\\drawable_border.xml.flat",
+        "source": "C:\\Users\\allan\\Downloads\\OPSC7311_POE-main\\OPSC7311_POE-main\\.gradle\\daemon\\8.4\\com.example.opsc7311poe.app-main-6:\\drawable\\border.xml"
     },
     {
         "merged": "C:\\Users\\allan\\Downloads\\OPSC7311_POE-main\\OPSC7311_POE-main\\.gradle\\daemon\\8.4\\com.example.opsc7311poe.app-debug-4:\\layout_activity_view_tasks.xml.flat",
@@ -50,6 +54,10 @@
     {
         "merged": "C:\\Users\\allan\\Downloads\\OPSC7311_POE-main\\OPSC7311_POE-main\\.gradle\\daemon\\8.4\\com.example.opsc7311poe.app-debug-4:\\drawable_write.png.flat",
         "source": "C:\\Users\\allan\\Downloads\\OPSC7311_POE-main\\OPSC7311_POE-main\\.gradle\\daemon\\8.4\\com.example.opsc7311poe.app-main-6:\\drawable\\write.png"
+    },
+    {
+        "merged": "com.example.opsc7311poe.app-debug-4:/layout_activity_insert_data.xml.flat",
+        "source": "com.example.opsc7311poe.app-main-6:/layout/activity_insert_data.xml"
     },
     {
         "merged": "C:\\Users\\allan\\Downloads\\OPSC7311_POE-main\\OPSC7311_POE-main\\.gradle\\daemon\\8.4\\com.example.opsc7311poe.app-debug-4:\\drawable_thumb.xml.flat",
@@ -66,6 +74,10 @@
     {
         "merged": "C:\\Users\\allan\\Downloads\\OPSC7311_POE-main\\OPSC7311_POE-main\\.gradle\\daemon\\8.4\\com.example.opsc7311poe.app-debug-4:\\drawable_baseline_arrow_back_ios_24.xml.flat",
         "source": "C:\\Users\\allan\\Downloads\\OPSC7311_POE-main\\OPSC7311_POE-main\\.gradle\\daemon\\8.4\\com.example.opsc7311poe.app-main-6:\\drawable\\baseline_arrow_back_ios_24.xml"
+    },
+    {
+        "merged": "com.example.opsc7311poe.app-debug-4:/layout_activity_view_graphs.xml.flat",
+        "source": "com.example.opsc7311poe.app-main-6:/layout/activity_view_graphs.xml"
     },
     {
         "merged": "C:\\Users\\allan\\Downloads\\OPSC7311_POE-main\\OPSC7311_POE-main\\.gradle\\daemon\\8.4\\com.example.opsc7311poe.app-debug-4:\\drawable_calendar.png.flat",
@@ -188,12 +200,20 @@
         "source": "C:\\Users\\allan\\Downloads\\OPSC7311_POE-main\\OPSC7311_POE-main\\.gradle\\daemon\\8.4\\com.example.opsc7311poe.app-main-6:\\mipmap-mdpi\\ic_launcher_round.webp"
     },
     {
+        "merged": "com.example.opsc7311poe.app-debug-4:/layout_activity_timer.xml.flat",
+        "source": "com.example.opsc7311poe.app-main-6:/layout/activity_timer.xml"
+    },
+    {
         "merged": "C:\\Users\\allan\\Downloads\\OPSC7311_POE-main\\OPSC7311_POE-main\\.gradle\\daemon\\8.4\\com.example.opsc7311poe.app-debug-4:\\drawable_baseline_fitness_center_24.xml.flat",
         "source": "C:\\Users\\allan\\Downloads\\OPSC7311_POE-main\\OPSC7311_POE-main\\.gradle\\daemon\\8.4\\com.example.opsc7311poe.app-main-6:\\drawable\\baseline_fitness_center_24.xml"
     },
     {
         "merged": "C:\\Users\\allan\\Downloads\\OPSC7311_POE-main\\OPSC7311_POE-main\\.gradle\\daemon\\8.4\\com.example.opsc7311poe.app-debug-4:\\layout_activity_profile.xml.flat",
         "source": "C:\\Users\\allan\\Downloads\\OPSC7311_POE-main\\OPSC7311_POE-main\\.gradle\\daemon\\8.4\\com.example.opsc7311poe.app-main-6:\\layout\\activity_profile.xml"
+    },
+    {
+        "merged": "com.example.opsc7311poe.app-debug-4:/layout_activity_view_tasks.xml.flat",
+        "source": "com.example.opsc7311poe.app-main-6:/layout/activity_view_tasks.xml"
     },
     {
         "merged": "C:\\Users\\allan\\Downloads\\OPSC7311_POE-main\\OPSC7311_POE-main\\.gradle\\daemon\\8.4\\com.example.opsc7311poe.app-debug-4:\\mipmap-anydpi_ic_launcher_round.xml.flat",
@@ -240,6 +260,10 @@
         "source": "C:\\Users\\allan\\Downloads\\OPSC7311_POE-main\\OPSC7311_POE-main\\.gradle\\daemon\\8.4\\com.example.opsc7311poe.app-main-6:\\drawable\\baseline_auto_graph_24.xml"
     },
     {
+        "merged": "com.example.opsc7311poe.app-debug-4:/layout_activity_weekly_summary.xml.flat",
+        "source": "com.example.opsc7311poe.app-main-6:/layout/activity_weekly_summary.xml"
+    },
+    {
         "merged": "C:\\Users\\allan\\Downloads\\OPSC7311_POE-main\\OPSC7311_POE-main\\.gradle\\daemon\\8.4\\com.example.opsc7311poe.app-debug-4:\\drawable_baseline_cleaning_services_24.xml.flat",
         "source": "C:\\Users\\allan\\Downloads\\OPSC7311_POE-main\\OPSC7311_POE-main\\.gradle\\daemon\\8.4\\com.example.opsc7311poe.app-main-6:\\drawable\\baseline_cleaning_services_24.xml"
     },
@@ -256,6 +280,10 @@
         "source": "C:\\Users\\allan\\Downloads\\OPSC7311_POE-main\\OPSC7311_POE-main\\.gradle\\daemon\\8.4\\com.example.opsc7311poe.app-main-6:\\drawable\\google.png"
     },
     {
+        "merged": "com.example.opsc7311poe.app-debug-4:/layout_activity_profile.xml.flat",
+        "source": "com.example.opsc7311poe.app-main-6:/layout/activity_profile.xml"
+    },
+    {
         "merged": "C:\\Users\\allan\\Downloads\\OPSC7311_POE-main\\OPSC7311_POE-main\\.gradle\\daemon\\8.4\\com.example.opsc7311poe.app-debug-4:\\drawable_ic_launcher_background.xml.flat",
         "source": "C:\\Users\\allan\\Downloads\\OPSC7311_POE-main\\OPSC7311_POE-main\\.gradle\\daemon\\8.4\\com.example.opsc7311poe.app-main-6:\\drawable\\ic_launcher_background.xml"
     },
@@ -266,6 +294,10 @@
     {
         "merged": "C:\\Users\\allan\\Downloads\\OPSC7311_POE-main\\OPSC7311_POE-main\\.gradle\\daemon\\8.4\\com.example.opsc7311poe.app-debug-4:\\layout_activity_view_graphs.xml.flat",
         "source": "C:\\Users\\allan\\Downloads\\OPSC7311_POE-main\\OPSC7311_POE-main\\.gradle\\daemon\\8.4\\com.example.opsc7311poe.app-main-6:\\layout\\activity_view_graphs.xml"
+    },
+    {
+        "merged": "com.example.opsc7311poe.app-debug-4:/layout_activity_create_category.xml.flat",
+        "source": "com.example.opsc7311poe.app-main-6:/layout/activity_create_category.xml"
     },
     {
         "merged": "C:\\Users\\allan\\Downloads\\OPSC7311_POE-main\\OPSC7311_POE-main\\.gradle\\daemon\\8.4\\com.example.opsc7311poe.app-debug-4:\\layout_activity_starting_page.xml.flat",

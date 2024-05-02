@@ -44,18 +44,18 @@
             android:exported="false" />
         <activity
             android:name="com.example.opsc7311poe.StartingPage"
-            android:exported="true" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+            android:exported="true" />
         <activity android:name="com.example.opsc7311poe.Login" />
         <activity android:name="com.example.opsc7311poe.Register" />
         <activity android:name="com.example.opsc7311poe.MainActivity" />
         <activity android:name="com.example.opsc7311poe.Profile" />
         <activity android:name="com.example.opsc7311poe.Calendar" />
+
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
 
         <provider
             android:name="androidx.startup.InitializationProvider"

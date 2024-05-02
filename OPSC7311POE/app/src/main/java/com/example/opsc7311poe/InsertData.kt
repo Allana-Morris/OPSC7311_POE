@@ -43,7 +43,7 @@ class InsertData : AppCompatActivity() {
 
         AddTaskButton.setOnClickListener()
         {
-            val taskName = findViewById<TextView?>(R.id.edtTaskName).text.toString();
+            val taskName = findViewById<TextView?>(R.id.edtTaskName).text.toString()
             val repeatSwitch : Switch = findViewById(R.id.repeatSwitch)
             val startTime = findViewById<TextView?>(R.id.edtStart).text.toString()
             val endTime = findViewById<TextView?>(R.id.edtEnd).text.toString()
@@ -55,7 +55,7 @@ class InsertData : AppCompatActivity() {
             SessionUser.currentUser?.categories?.put(workCategory.name, workCategory)
             //adding the task to the catagory for user
             var CreatedTask = Task(taskName, desc, repeatSwitch.isEnabled, startTime.toDouble(), endTime.toDouble())
-            workCategory.tasks[CreatedTask.name] = CreatedTask;
+            workCategory.tasks[CreatedTask.name] = CreatedTask
 
             val intent = Intent(this, ViewData::class.java)
             startActivity(intent)

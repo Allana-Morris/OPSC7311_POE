@@ -78,7 +78,7 @@ class Timer : AppCompatActivity() {
 
         btnReset.setOnClickListener ()
         {
-            secondsElapsed = 0;
+            secondsElapsed = 0
             //for debug purposes display all the recordings for selected Task
             for (recording in selectedTask.taskRecords)
             {
@@ -97,8 +97,8 @@ class Timer : AppCompatActivity() {
             {
                 stopTimer()
                 val timed = edtTime.text.toString()
-                edtTime.setText("00:00:00")
-                secondsElapsed = 0;
+                edtTime.text = "00:00:00"
+                secondsElapsed = 0
 
                 val parts = timed.split(":")
                 val hours = parts[0].toInt()
@@ -139,7 +139,7 @@ class Timer : AppCompatActivity() {
             val minutes = (secondsElapsed % 3600) / 60
             val seconds = secondsElapsed % 60
             val timeString = String.format("%02d:%02d:%02d", hours, minutes, seconds)
-            edtTime.setText(timeString)
+            edtTime.text = timeString
             handler.postDelayed(this, 1000)
         }
     }

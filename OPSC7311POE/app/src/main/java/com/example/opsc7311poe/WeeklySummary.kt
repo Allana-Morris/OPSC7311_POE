@@ -5,13 +5,14 @@ import android.os.Bundle
 import android.widget.ImageButton
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
+import com.example.opsc7311poe.R.layout
 import java.util.Calendar
 
 class WeeklySummary : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_weekly_summary)
+        setContentView(layout.activity_weekly_summary)
         val HomeOpenActivity = findViewById<ImageButton>(R.id.ib_Home)
         val ProfileOpenActivity = findViewById<ImageButton>(R.id.ib_Profile)
         val CalendarOpenActivity = findViewById<ImageButton>(R.id.ib_Calendar)

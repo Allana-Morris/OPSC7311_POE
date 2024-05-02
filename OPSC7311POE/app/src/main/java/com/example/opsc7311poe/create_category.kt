@@ -31,7 +31,7 @@ class create_category : AppCompatActivity() {
 
         val AddCategory = findViewById<TextView>(R.id.tvAddTask)
 
-        AddCategory.setOnClickListener(){
+        AddCategory.setOnClickListener {
             val catName = findViewById<EditText>(R.id.edtTaskName)
             val catColor = mDefaultColour
             val catIcon = 0

@@ -42,10 +42,10 @@ class Calendar : AppCompatActivity() {
             datenow = onScreenDate
         }
 
-        val HomeOpenActivity = findViewById<ImageButton>(R.id.ib_Home)
-        val ProfileOpenActivity = findViewById<ImageButton>(R.id.ib_Profile)
-        val CalendarOpenActivity = findViewById<ImageButton>(R.id.ib_Calendar)
-        val TimerOpenActivity = findViewById<ImageButton>(R.id.ib_Timer)
+        val HomeOpenActivity = findViewById<ImageButton>(id.ib_Home)
+        val ProfileOpenActivity = findViewById<ImageButton>(id.ib_Profile)
+        val CalendarOpenActivity = findViewById<ImageButton>(id.ib_Calendar)
+        val TimerOpenActivity = findViewById<ImageButton>(id.ib_Timer)
 
         HomeOpenActivity.setOnClickListener{
             val intent2 = Intent(this, MainActivity::class.java)

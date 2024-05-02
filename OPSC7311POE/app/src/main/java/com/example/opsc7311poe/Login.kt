@@ -30,7 +30,7 @@ class Login : AppCompatActivity() {
             if (authenticate(userName, password))
             {
                 var loggedUser = getUser(userName)
-                SessionUser.currentUser = loggedUser;
+                SessionUser.currentUser = loggedUser
                 val intent2 = Intent(this, MainActivity::class.java)
                 startActivity(intent2)
             } else

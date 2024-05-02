@@ -118,6 +118,7 @@
         tools:ignore="MissingConstraints" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cl_NavBar"
         android:layout_width="411dp"
         android:layout_height="112dp"
         app:layout_constraintBottom_toBottomOf="parent"

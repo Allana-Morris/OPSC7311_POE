@@ -4,6 +4,7 @@ package com.example.opsc7311poe.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.ScrollView;
@@ -23,22 +24,25 @@ public final class ActivityCalendarBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
+  public final ConstraintLayout clNavBar;
+
+  @NonNull
   public final TextView dayOfWeekTV;
 
   @NonNull
+  public final ImageButton ibCalendar;
+
+  @NonNull
+  public final ImageButton ibHome;
+
+  @NonNull
+  public final ImageButton ibProfile;
+
+  @NonNull
+  public final ImageButton ibTimer;
+
+  @NonNull
   public final ImageView imageView;
-
-  @NonNull
-  public final ImageView imageView15;
-
-  @NonNull
-  public final ImageView imageView16;
-
-  @NonNull
-  public final ImageView imageView17;
-
-  @NonNull
-  public final ImageView imageView18;
 
   @NonNull
   public final ConstraintLayout linearLayout;
@@ -94,9 +98,10 @@ public final class ActivityCalendarBinding implements ViewBinding {
   @NonNull
   public final View view;
 
-  private ActivityCalendarBinding(@NonNull ConstraintLayout rootView, @NonNull TextView dayOfWeekTV,
-      @NonNull ImageView imageView, @NonNull ImageView imageView15, @NonNull ImageView imageView16,
-      @NonNull ImageView imageView17, @NonNull ImageView imageView18,
+  private ActivityCalendarBinding(@NonNull ConstraintLayout rootView,
+      @NonNull ConstraintLayout clNavBar, @NonNull TextView dayOfWeekTV,
+      @NonNull ImageButton ibCalendar, @NonNull ImageButton ibHome, @NonNull ImageButton ibProfile,
+      @NonNull ImageButton ibTimer, @NonNull ImageView imageView,
       @NonNull ConstraintLayout linearLayout, @NonNull ConstraintLayout linearLayout2,
       @NonNull ConstraintLayout linearLayout3, @NonNull ConstraintLayout linearLayout4,
       @NonNull ConstraintLayout linearLayout5, @NonNull ConstraintLayout linearLayout6,
@@ -105,12 +110,13 @@ public final class ActivityCalendarBinding implements ViewBinding {
       @NonNull TextView tvForward, @NonNull TextView tvHome, @NonNull TextView tvProfile,
       @NonNull TextView tvTimer, @NonNull View vEvent, @NonNull View view) {
     this.rootView = rootView;
+    this.clNavBar = clNavBar;
     this.dayOfWeekTV = dayOfWeekTV;
+    this.ibCalendar = ibCalendar;
+    this.ibHome = ibHome;
+    this.ibProfile = ibProfile;
+    this.ibTimer = ibTimer;
     this.imageView = imageView;
-    this.imageView15 = imageView15;
-    this.imageView16 = imageView16;
-    this.imageView17 = imageView17;
-    this.imageView18 = imageView18;
     this.linearLayout = linearLayout;
     this.linearLayout2 = linearLayout2;
     this.linearLayout3 = linearLayout3;
@@ -158,39 +164,45 @@ public final class ActivityCalendarBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.cl_NavBar;
+      ConstraintLayout clNavBar = ViewBindings.findChildViewById(rootView, id);
+      if (clNavBar == null) {
+        break missingId;
+      }
+
       id = R.id.dayOfWeekTV;
       TextView dayOfWeekTV = ViewBindings.findChildViewById(rootView, id);
       if (dayOfWeekTV == null) {
         break missingId;
       }
 
+      id = R.id.ib_Calendar;
+      ImageButton ibCalendar = ViewBindings.findChildViewById(rootView, id);
+      if (ibCalendar == null) {
+        break missingId;
+      }
+
+      id = R.id.ib_Home;
+      ImageButton ibHome = ViewBindings.findChildViewById(rootView, id);
+      if (ibHome == null) {
+        break missingId;
+      }
+
+      id = R.id.ib_Profile;
+      ImageButton ibProfile = ViewBindings.findChildViewById(rootView, id);
+      if (ibProfile == null) {
+        break missingId;
+      }
+
+      id = R.id.ib_Timer;
+      ImageButton ibTimer = ViewBindings.findChildViewById(rootView, id);
+      if (ibTimer == null) {
+        break missingId;
+      }
+
       id = R.id.imageView;
       ImageView imageView = ViewBindings.findChildViewById(rootView, id);
       if (imageView == null) {
-        break missingId;
-      }
-
-      id = R.id.imageView15;
-      ImageView imageView15 = ViewBindings.findChildViewById(rootView, id);
-      if (imageView15 == null) {
-        break missingId;
-      }
-
-      id = R.id.imageView16;
-      ImageView imageView16 = ViewBindings.findChildViewById(rootView, id);
-      if (imageView16 == null) {
-        break missingId;
-      }
-
-      id = R.id.imageView17;
-      ImageView imageView17 = ViewBindings.findChildViewById(rootView, id);
-      if (imageView17 == null) {
-        break missingId;
-      }
-
-      id = R.id.imageView18;
-      ImageView imageView18 = ViewBindings.findChildViewById(rootView, id);
-      if (imageView18 == null) {
         break missingId;
       }
 
@@ -298,8 +310,8 @@ public final class ActivityCalendarBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityCalendarBinding((ConstraintLayout) rootView, dayOfWeekTV, imageView,
-          imageView15, imageView16, imageView17, imageView18, linearLayout, linearLayout2,
+      return new ActivityCalendarBinding((ConstraintLayout) rootView, clNavBar, dayOfWeekTV,
+          ibCalendar, ibHome, ibProfile, ibTimer, imageView, linearLayout, linearLayout2,
           linearLayout3, linearLayout4, linearLayout5, linearLayout6, listView, main, scrollView2,
           tvAddEvent, tvBack, tvCalendar, tvForward, tvHome, tvProfile, tvTimer, vEvent, view);
     }

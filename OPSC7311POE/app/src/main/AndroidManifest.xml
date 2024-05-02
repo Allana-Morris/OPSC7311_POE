@@ -23,25 +23,28 @@
             android:exported="false" />
         <activity
             android:name=".ViewData"
-            android:exported="false"/>
+            android:exported="false" />
         <activity
             android:name=".view_graphs"
             android:exported="false" />
         <activity
             android:name=".StartingPage"
-            android:exported="true">
+            android:exported="true" />
 
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+
+        <activity />
         <activity android:name=".Login" />
         <activity android:name=".Register" />
         <activity android:name=".MainActivity" />
-        <activity android:name=".Profile"/>
-        <activity android:name=".Calendar"/>
+        <activity android:name=".Profile" />
+        <activity android:name=".Calendar" />
+
+
     </application>
 
 </manifest>

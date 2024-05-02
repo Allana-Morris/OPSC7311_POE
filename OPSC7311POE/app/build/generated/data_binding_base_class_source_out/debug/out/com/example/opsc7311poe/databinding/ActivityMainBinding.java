@@ -32,6 +32,9 @@ public final class ActivityMainBinding implements ViewBinding {
   public final Button button9;
 
   @NonNull
+  public final ConstraintLayout clNavBar;
+
+  @NonNull
   public final ImageButton ibCalendar;
 
   @NonNull
@@ -83,17 +86,19 @@ public final class ActivityMainBinding implements ViewBinding {
   public final TextView tvTimer;
 
   private ActivityMainBinding(@NonNull ConstraintLayout rootView, @NonNull Button btnCreateDiagram,
-      @NonNull Button btnRedsighn, @NonNull Button button9, @NonNull ImageButton ibCalendar,
-      @NonNull ImageButton ibHome, @NonNull ImageButton ibProfile, @NonNull ImageButton ibTimer,
-      @NonNull ConstraintLayout linearLayout, @NonNull ConstraintLayout linearLayout2,
-      @NonNull ConstraintLayout linearLayout4, @NonNull ConstraintLayout linearLayout5,
-      @NonNull ConstraintLayout main, @NonNull SearchView searchView, @NonNull TextView tvBlackBox,
-      @NonNull TextView tvCalendar, @NonNull TextView tvHome, @NonNull TextView tvOngoingTask,
-      @NonNull TextView tvProfile, @NonNull TextView tvSeeAll, @NonNull TextView tvTimer) {
+      @NonNull Button btnRedsighn, @NonNull Button button9, @NonNull ConstraintLayout clNavBar,
+      @NonNull ImageButton ibCalendar, @NonNull ImageButton ibHome, @NonNull ImageButton ibProfile,
+      @NonNull ImageButton ibTimer, @NonNull ConstraintLayout linearLayout,
+      @NonNull ConstraintLayout linearLayout2, @NonNull ConstraintLayout linearLayout4,
+      @NonNull ConstraintLayout linearLayout5, @NonNull ConstraintLayout main,
+      @NonNull SearchView searchView, @NonNull TextView tvBlackBox, @NonNull TextView tvCalendar,
+      @NonNull TextView tvHome, @NonNull TextView tvOngoingTask, @NonNull TextView tvProfile,
+      @NonNull TextView tvSeeAll, @NonNull TextView tvTimer) {
     this.rootView = rootView;
     this.btnCreateDiagram = btnCreateDiagram;
     this.btnRedsighn = btnRedsighn;
     this.button9 = button9;
+    this.clNavBar = clNavBar;
     this.ibCalendar = ibCalendar;
     this.ibHome = ibHome;
     this.ibProfile = ibProfile;
@@ -155,6 +160,12 @@ public final class ActivityMainBinding implements ViewBinding {
       id = R.id.button9;
       Button button9 = ViewBindings.findChildViewById(rootView, id);
       if (button9 == null) {
+        break missingId;
+      }
+
+      id = R.id.cl_NavBar;
+      ConstraintLayout clNavBar = ViewBindings.findChildViewById(rootView, id);
+      if (clNavBar == null) {
         break missingId;
       }
 
@@ -257,7 +268,7 @@ public final class ActivityMainBinding implements ViewBinding {
       }
 
       return new ActivityMainBinding((ConstraintLayout) rootView, btnCreateDiagram, btnRedsighn,
-          button9, ibCalendar, ibHome, ibProfile, ibTimer, linearLayout, linearLayout2,
+          button9, clNavBar, ibCalendar, ibHome, ibProfile, ibTimer, linearLayout, linearLayout2,
           linearLayout4, linearLayout5, main, searchView, tvBlackBox, tvCalendar, tvHome,
           tvOngoingTask, tvProfile, tvSeeAll, tvTimer);
     }
