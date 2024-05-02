@@ -12,7 +12,7 @@ import androidx.core.view.WindowInsetsCompat
 import java.util.Calendar
 
 class MainActivity : AppCompatActivity() {
-    private val navBar = Navbar()
+
     @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
