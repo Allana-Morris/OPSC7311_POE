@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.opsc7311poe.app-mergeDebugResources-33:/values-ldrtl-v17/values-ldrtl-v17.xml",
+            "outputFile": "com.example.opsc7311poe.app-mergeDebugResources-2:/values-ldrtl-v17/values-ldrtl-v17.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Sven\\.gradle\\caches\\transforms-3\\6c8f3584d54ca673d937b7182ccbee41\\transformed\\material-1.11.0\\res\\values-ldrtl-v17\\values-ldrtl-v17.xml",
+                    "source": "C:\\Users\\allan\\Downloads\\OPSC7311_POE-main\\OPSC7311_POE-main\\.gradle\\caches\\transforms-3\\b3eac83f555e2d3a7dfcf239c5cefbb7\\transformed\\material-1.11.0\\res\\values-ldrtl-v17\\values-ldrtl-v17.xml",
                     "from": {
                         "startLines": "2,3",
                         "startColumns": "4,4",

@@ -1,37 +1,29 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.opsc7311poe.app-mergeDebugResources-33:/values-land/values-land.xml",
+            "outputFile": "com.example.opsc7311poe.app-mergeDebugResources-2:/values-land/values-land.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Sven\\.gradle\\caches\\transforms-3\\225b38aabf29f57e7a26788b7a3f5618\\transformed\\appcompat-1.6.1\\res\\values-land\\values-land.xml",
+                    "source": "C:\\Users\\allan\\Downloads\\OPSC7311_POE-main\\OPSC7311_POE-main\\.gradle\\caches\\transforms-3\\b3eac83f555e2d3a7dfcf239c5cefbb7\\transformed\\material-1.11.0\\res\\values-land\\values-land.xml",
                     "from": {
-                        "startLines": "2,3,4",
-                        "startColumns": "4,4,4",
-                        "startOffsets": "55,125,196",
-                        "endColumns": "69,70,67",
-                        "endOffsets": "120,191,259"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\Sven\\.gradle\\caches\\transforms-3\\876bdb9ee31327126beae1a073f720d8\\transformed\\ambilwarna-2.0.1\\res\\values-land\\values-land.xml",
-                    "from": {
-                        "startLines": "4,5",
-                        "startColumns": "4,4",
-                        "startOffsets": "166,219",
-                        "endColumns": "52,51",
-                        "endOffsets": "214,266"
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,26,35,40",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,130,204,277,347,419,489,554,621,691,763,832,901,983,1073,1149,1217,1284,1362,1427,1494,1666,2235,2504",
+                        "endLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,25,34,39,42",
+                        "endColumns": "74,73,72,69,71,69,64,66,69,71,68,68,81,89,75,67,66,77,64,66,10,10,10,10",
+                        "endOffsets": "125,199,272,342,414,484,549,616,686,758,827,896,978,1068,1144,1212,1279,1357,1422,1489,1661,2230,2499,2727"
                     },
                     "to": {
-                        "startLines": "6,7",
-                        "startColumns": "4,4",
-                        "startOffsets": "322,375",
-                        "endColumns": "52,51",
-                        "endOffsets": "370,422"
+                        "startLines": "8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,32,41,46",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "427,502,576,649,719,791,861,926,993,1063,1135,1204,1273,1355,1445,1521,1589,1656,1734,1799,1866,2038,2607,2876",
+                        "endLines": "8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,31,40,45,48",
+                        "endColumns": "74,73,72,69,71,69,64,66,69,71,68,68,81,89,75,67,66,77,64,66,10,10,10,10",
+                        "endOffsets": "497,571,644,714,786,856,921,988,1058,1130,1199,1268,1350,1440,1516,1584,1651,1729,1794,1861,2033,2602,2871,3099"
                     }
                 },
                 {
-                    "source": "C:\\Users\\Sven\\AndroidStudioProjects\\OPSC7311_POE\\OPSC7311POE\\app\\src\\main\\res\\values-land\\dimens.xml",
+                    "source": "C:\\Users\\allan\\AndroidStudioProjects\\OPSC7311_POE\\OPSC7311POE\\app\\src\\main\\res\\values-land\\dimens.xml",
                     "from": {
                         "startLines": "1",
                         "startColumns": "4",
@@ -48,22 +40,30 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Sven\\.gradle\\caches\\transforms-3\\6c8f3584d54ca673d937b7182ccbee41\\transformed\\material-1.11.0\\res\\values-land\\values-land.xml",
+                    "source": "C:\\Users\\allan\\Downloads\\OPSC7311_POE-main\\OPSC7311_POE-main\\.gradle\\caches\\transforms-3\\b1c584f306fb1a24db27addc83ec6539\\transformed\\appcompat-1.6.1\\res\\values-land\\values-land.xml",
                     "from": {
-                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,26,35,40",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "55,130,204,277,347,419,489,554,621,691,763,832,901,983,1073,1149,1217,1284,1362,1427,1494,1666,2235,2504",
-                        "endLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,25,34,39,42",
-                        "endColumns": "74,73,72,69,71,69,64,66,69,71,68,68,81,89,75,67,66,77,64,66,10,10,10,10",
-                        "endOffsets": "125,199,272,342,414,484,549,616,686,758,827,896,978,1068,1144,1212,1279,1357,1422,1489,1661,2230,2499,2727"
+                        "startLines": "2,3,4",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "55,125,196",
+                        "endColumns": "69,70,67",
+                        "endOffsets": "120,191,259"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\allan\\Downloads\\OPSC7311_POE-main\\OPSC7311_POE-main\\.gradle\\caches\\transforms-3\\0aa3dc1e4e41146176c8d391d5877810\\transformed\\ambilwarna-2.0.1\\res\\values-land\\values-land.xml",
+                    "from": {
+                        "startLines": "4,5",
+                        "startColumns": "4,4",
+                        "startOffsets": "166,219",
+                        "endColumns": "52,51",
+                        "endOffsets": "214,266"
                     },
                     "to": {
-                        "startLines": "8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,32,41,46",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "427,502,576,649,719,791,861,926,993,1063,1135,1204,1273,1355,1445,1521,1589,1656,1734,1799,1866,2038,2607,2876",
-                        "endLines": "8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,31,40,45,48",
-                        "endColumns": "74,73,72,69,71,69,64,66,69,71,68,68,81,89,75,67,66,77,64,66,10,10,10,10",
-                        "endOffsets": "497,571,644,714,786,856,921,988,1058,1130,1199,1268,1350,1440,1516,1584,1651,1729,1794,1861,2033,2602,2871,3099"
+                        "startLines": "6,7",
+                        "startColumns": "4,4",
+                        "startOffsets": "322,375",
+                        "endColumns": "52,51",
+                        "endOffsets": "370,422"
                     }
                 }
             ]

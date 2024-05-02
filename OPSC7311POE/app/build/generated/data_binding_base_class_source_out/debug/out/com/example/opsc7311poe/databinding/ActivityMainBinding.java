@@ -5,7 +5,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
-import android.widget.ImageView;
+import android.widget.ImageButton;
 import android.widget.SearchView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
@@ -32,22 +32,22 @@ public final class ActivityMainBinding implements ViewBinding {
   public final Button button9;
 
   @NonNull
-  public final ConstraintLayout constraintLayout2;
+  public final ImageButton ibCalendar;
 
   @NonNull
-  public final ImageView imageView15;
+  public final ImageButton ibHome;
 
   @NonNull
-  public final ImageView imageView16;
+  public final ImageButton ibProfile;
 
   @NonNull
-  public final ImageView imageView17;
-
-  @NonNull
-  public final ImageView imageView18;
+  public final ImageButton ibTimer;
 
   @NonNull
   public final ConstraintLayout main;
+
+  @NonNull
+  public final ConstraintLayout navBar;
 
   @NonNull
   public final SearchView searchView;
@@ -74,10 +74,9 @@ public final class ActivityMainBinding implements ViewBinding {
   public final TextView tvTimer;
 
   private ActivityMainBinding(@NonNull ConstraintLayout rootView, @NonNull Button btnCreateDiagram,
-      @NonNull Button btnRedsighn, @NonNull Button button9,
-      @NonNull ConstraintLayout constraintLayout2, @NonNull ImageView imageView15,
-      @NonNull ImageView imageView16, @NonNull ImageView imageView17,
-      @NonNull ImageView imageView18, @NonNull ConstraintLayout main,
+      @NonNull Button btnRedsighn, @NonNull Button button9, @NonNull ImageButton ibCalendar,
+      @NonNull ImageButton ibHome, @NonNull ImageButton ibProfile, @NonNull ImageButton ibTimer,
+      @NonNull ConstraintLayout main, @NonNull ConstraintLayout navBar,
       @NonNull SearchView searchView, @NonNull TextView tvBlackBox, @NonNull TextView tvCalendar,
       @NonNull TextView tvHome, @NonNull TextView tvOngoingTask, @NonNull TextView tvProfile,
       @NonNull TextView tvSeeAll, @NonNull TextView tvTimer) {
@@ -85,12 +84,12 @@ public final class ActivityMainBinding implements ViewBinding {
     this.btnCreateDiagram = btnCreateDiagram;
     this.btnRedsighn = btnRedsighn;
     this.button9 = button9;
-    this.constraintLayout2 = constraintLayout2;
-    this.imageView15 = imageView15;
-    this.imageView16 = imageView16;
-    this.imageView17 = imageView17;
-    this.imageView18 = imageView18;
+    this.ibCalendar = ibCalendar;
+    this.ibHome = ibHome;
+    this.ibProfile = ibProfile;
+    this.ibTimer = ibTimer;
     this.main = main;
+    this.navBar = navBar;
     this.searchView = searchView;
     this.tvBlackBox = tvBlackBox;
     this.tvCalendar = tvCalendar;
@@ -146,37 +145,37 @@ public final class ActivityMainBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.constraintLayout2;
-      ConstraintLayout constraintLayout2 = ViewBindings.findChildViewById(rootView, id);
-      if (constraintLayout2 == null) {
+      id = R.id.ib_Calendar;
+      ImageButton ibCalendar = ViewBindings.findChildViewById(rootView, id);
+      if (ibCalendar == null) {
         break missingId;
       }
 
-      id = R.id.imageView15;
-      ImageView imageView15 = ViewBindings.findChildViewById(rootView, id);
-      if (imageView15 == null) {
+      id = R.id.ib_Home;
+      ImageButton ibHome = ViewBindings.findChildViewById(rootView, id);
+      if (ibHome == null) {
         break missingId;
       }
 
-      id = R.id.imageView16;
-      ImageView imageView16 = ViewBindings.findChildViewById(rootView, id);
-      if (imageView16 == null) {
+      id = R.id.ib_Profile;
+      ImageButton ibProfile = ViewBindings.findChildViewById(rootView, id);
+      if (ibProfile == null) {
         break missingId;
       }
 
-      id = R.id.imageView17;
-      ImageView imageView17 = ViewBindings.findChildViewById(rootView, id);
-      if (imageView17 == null) {
-        break missingId;
-      }
-
-      id = R.id.imageView18;
-      ImageView imageView18 = ViewBindings.findChildViewById(rootView, id);
-      if (imageView18 == null) {
+      id = R.id.ib_Timer;
+      ImageButton ibTimer = ViewBindings.findChildViewById(rootView, id);
+      if (ibTimer == null) {
         break missingId;
       }
 
       ConstraintLayout main = (ConstraintLayout) rootView;
+
+      id = R.id.navBar;
+      ConstraintLayout navBar = ViewBindings.findChildViewById(rootView, id);
+      if (navBar == null) {
+        break missingId;
+      }
 
       id = R.id.searchView;
       SearchView searchView = ViewBindings.findChildViewById(rootView, id);
@@ -227,8 +226,8 @@ public final class ActivityMainBinding implements ViewBinding {
       }
 
       return new ActivityMainBinding((ConstraintLayout) rootView, btnCreateDiagram, btnRedsighn,
-          button9, constraintLayout2, imageView15, imageView16, imageView17, imageView18, main,
-          searchView, tvBlackBox, tvCalendar, tvHome, tvOngoingTask, tvProfile, tvSeeAll, tvTimer);
+          button9, ibCalendar, ibHome, ibProfile, ibTimer, main, navBar, searchView, tvBlackBox,
+          tvCalendar, tvHome, tvOngoingTask, tvProfile, tvSeeAll, tvTimer);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

@@ -49,7 +49,9 @@
 ========
     <content url="file://$MODULE_DIR$/../../../OPSC7311POE/app/build/generated/ap_generated_sources/debugAndroidTest/out" />
     <content url="file://$MODULE_DIR$/../../../OPSC7311POE/app/build/generated/ap_generated_sources/debugAndroidTest/out" />
-    <content url="file://$MODULE_DIR$/../../../OPSC7311POE/app/build/generated/res/resValues/androidTest/debug" />
+    <content url="file://$MODULE_DIR$/../../../OPSC7311POE/app/build/generated/res/resValues/androidTest/debug">
+      <sourceFolder url="file://$MODULE_DIR$/../../../OPSC7311POE/app/build/generated/res/resValues/androidTest/debug" type="java-test-resource" />
+    </content>
     <content url="file://$MODULE_DIR$/../../../OPSC7311POE/app/build/generated/res/resValues/androidTest/debug" />
     <content url="file://$MODULE_DIR$/../../../OPSC7311POE/app/src/androidTest">
       <sourceFolder url="file://$MODULE_DIR$/../../../OPSC7311POE/app/src/androidTest/java" isTestSource="true" />

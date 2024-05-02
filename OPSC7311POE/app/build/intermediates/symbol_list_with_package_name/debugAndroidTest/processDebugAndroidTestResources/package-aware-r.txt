@@ -1,3 +1,0 @@
-com.example.opsc7311poe.test
-style WhiteBackgroundDialogTheme
-style WhiteBackgroundTheme

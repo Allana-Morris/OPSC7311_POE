@@ -3012,6 +3012,7 @@ drawable border
 drawable bordertwo
 drawable bottom_btn1
 drawable bottom_btn3
+drawable box_outline
 drawable btn_checkbox_checked_mtrl
 drawable btn_checkbox_checked_to_unchecked_mtrl_animation
 drawable btn_checkbox_unchecked_mtrl
@@ -3020,6 +3021,7 @@ drawable btn_radio_off_mtrl
 drawable btn_radio_off_to_on_mtrl_animation
 drawable btn_radio_on_mtrl
 drawable btn_radio_on_to_off_mtrl_animation
+drawable calendar
 drawable design_fab_background
 drawable design_ic_visibility
 drawable design_ic_visibility_off
@@ -3110,6 +3112,7 @@ drawable mtrl_switch_track
 drawable mtrl_switch_track_decoration
 drawable mtrl_tabs_default_indicator
 drawable navigation_empty_icon
+drawable navprofile
 drawable notification_action_background
 drawable notification_bg
 drawable notification_bg_low
@@ -3133,6 +3136,7 @@ drawable search
 drawable skyblue
 drawable test_level_drawable
 drawable thumb
+drawable timer
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
 drawable track
@@ -3306,6 +3310,7 @@ id custom
 id customPanel
 id cut
 id date_picker_actions
+id dayOfWeekTV
 id decelerate
 id decelerateAndComplete
 id decor_content_parent
@@ -3390,6 +3395,10 @@ id home
 id homeAsUp
 id honorRequest
 id horizontal_only
+id ib_Calendar
+id ib_Home
+id ib_Profile
+id ib_Timer
 id icon
 id icon_group
 id ifRoom
@@ -3401,12 +3410,7 @@ id imageView15
 id imageView16
 id imageView17
 id imageView18
-id imageView21
 id imageView22
-id imageView23
-id imageView24
-id imageView25
-id imageView26
 id imgTaskIcon
 id img_bar
 id img_chooseDate
@@ -3426,6 +3430,7 @@ id iv_Google
 id iv_Password
 id iv_Pick_Colour
 id iv_Username
+id iv_colourPreview
 id jumpToEnd
 id jumpToStart
 id labeled
@@ -3438,8 +3443,10 @@ id line3
 id linear
 id linearLayout
 id linearLayout2
+id linearLayout3
 id linearLayout4
 id linearLayout5
+id linearLayout6
 id listMode
 id listView
 id list_item
@@ -3473,6 +3480,7 @@ id matrix
 id message
 id middle
 id mini
+id monthDayText
 id month_grid
 id month_navigation_bar
 id month_navigation_fragment_toggle
@@ -3504,6 +3512,7 @@ id mtrl_picker_text_input_range_start
 id mtrl_picker_title_text
 id mtrl_view_tag_bottom_padding
 id multiply
+id navBar
 id navigation_bar_item_active_indicator_view
 id navigation_bar_item_icon_container
 id navigation_bar_item_icon_view
@@ -3580,6 +3589,7 @@ id scroll
 id scrollIndicatorDown
 id scrollIndicatorUp
 id scrollView
+id scrollView2
 id scrollable
 id searchView
 id search_badge
@@ -3658,8 +3668,6 @@ id textView10
 id textView11
 id textView32
 id textView34
-id textView35
-id textView38
 id textView9
 id textView99
 id text_input_end_icon
@@ -3710,8 +3718,11 @@ id tvTask_end_time
 id tvTask_name
 id tvTask_start_time
 id tvTimer
+id tv_Back
 id tv_Category
 id tv_Colour
+id tv_ColourPreview
+id tv_Forward
 id tv_Home
 id tv_Icon
 id tv_Name
@@ -3724,6 +3735,8 @@ id tv_Target_Hours
 id tv_Time_Dash
 id tv_Title
 id tv_Username
+id tv_add_event
+id tv_add_eventevent
 id tv_calendar
 id tv_timer
 id tvgenerate
@@ -3738,7 +3751,7 @@ id uniform
 id unlabeled
 id up
 id useLogo
-id v_Colour_Preview
+id v_Event
 id vertLayout
 id vertical_only
 id view
@@ -3982,18 +3995,7 @@ mipmap ic_launcher
 mipmap ic_launcher_round
 plurals mtrl_badge_content_description
 string CurrentTask
-string Date
 string Email
-string _00_30
-string _00_40
-string _01_20
-string _12_30_pm_2_50_pm
-string _2_20
-string _2_20_
-string _2_40
-string _3_00_pm_5_40_pm
-string _8_00_pm_9_20_pm
-string _9_00am_9_40_am
 string abc_action_bar_home_description
 string abc_action_bar_up_description
 string abc_action_menu_overflow_description
@@ -4024,10 +4026,12 @@ string abc_toolbar_collapse_description
 string action_sign_in
 string action_sign_in_short
 string add
+string add_event
 string all_taps
 string androidx_startup
 string app_name
 string appbar_scrolling_view_behavior
+string back
 string bar
 string bottom_sheet_behavior
 string bottomsheet_action_collapse
@@ -4052,10 +4056,12 @@ string choose
 string chooseW
 string clear_text_end_icon_content_description
 string color
+string colourpreview
 string continue_with_google
 string count_down
 string createD
 string create_one
+string curent_day
 string current_task
 string customP
 string description
@@ -4067,9 +4073,10 @@ string error_icon_content_description
 string exposed_dropdown_menu_content_description
 string fab_transformation_scrim_behavior
 string fab_transformation_sheet_behavior
+string forward
 string fullName
 string generate
-string gym
+string hello_blank_fragment
 string hide_bottom_view_on_scroll_behavior
 string home
 string housecleaning

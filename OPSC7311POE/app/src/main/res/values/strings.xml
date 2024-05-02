@@ -29,32 +29,19 @@
     <string name="create_one">Create one</string>
     <string name="current_task">Current Task</string>
     <string name="diagram">Diagram</string>
-    <string name="_2_20">2:20</string>
     <string name="tasks">Tasks</string>
     <string name="all_taps">All Taps</string>
-    <string name="_12_30_pm_2_50_pm">12:30 PM - 2:50 PM</string>
-    <string name="_2_20_">2:20</string>
-    <string name="gym">Gym</string>
-    <string name="_3_00_pm_5_40_pm">3:00 PM - 5:40 PM</string>
-    <string name="_2_40">2:40</string>
-    <string name="housecleaning">House Cleaning</string>
-    <string name="_9_00am_9_40_am">9:00AM - 9:40 AM</string>
-    <string name="_00_40">00.40</string>
-    <string name="_8_00_pm_9_20_pm">8:00 PM - 9:20 PM</string>
-    <string name="_01_20">01.20</string>
     <string name="task">Task</string>
     <string name="name">Name</string>
     <string name="name_">Name</string>
     <string name="icon">Icon</string>
     <string name="color">Colour</string>
     <string name="task_duration">Task Duration</string>
-    <string name="_00_30">00:30</string>
     <string name="count_down">Countdown</string>
     <string name="description">Description</string>
     <string name="task_description">Task Description</string>
     <string name="note">Note</string>
     <string name="calendar_">Calendar</string>
-    <string name="Date">Aug 19 (Mon)</string>
     <string name="customP">Customize and Personalize</string>
     <string name="editUser">Edit Username:</string>
     <string name="seePass">See Password</string>
@@ -74,4 +61,12 @@
     <string name="category">Category</string>
     <string name="target_hours">Target Hours</string>
     <string name="time_dash">-</string>
+    <string name="add_event">Add Event</string>
+    <string name="curent_day">%1$s</string>
+    <string name="colourpreview">See Preview of selected Colour</string>
+    <string name="back">←</string>
+    <string name="forward">→</string>
+    <string name="housecleaning">housecleaning</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
