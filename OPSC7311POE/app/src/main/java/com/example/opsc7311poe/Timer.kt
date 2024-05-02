@@ -24,14 +24,14 @@ class Timer : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_timer)
 
-        edtTime = findViewById(R.id.txtClock)
+        edtTime = findViewById(R.id.edtClock)
         btnStart = findViewById(R.id.btnStart)
         btnStop = findViewById(R.id.btnStop)
         btnReset = findViewById(R.id.btnReset)
 
 
 
-        val HomeOpenActivity = findViewById<ImageButton>(R.id.ib_Home)
+      /*  val HomeOpenActivity = findViewById<ImageButton>(R.id.ib_Home)
         val ProfileOpenActivity = findViewById<ImageButton>(R.id.ib_Profile)
         val CalendarOpenActivity = findViewById<ImageButton>(R.id.ib_Calendar)
         val TimerOpenActivity = findViewById<ImageButton>(R.id.ib_Timer)
@@ -55,6 +55,8 @@ class Timer : AppCompatActivity() {
             val intent4 = Intent(this, Timer::class.java)
             startActivity(intent4)
         }
+
+       */
         //creating a fake category and task seeing as we have no way of inputting stuff n things
         val selectedCat = Category("Work", 1, 2, 4.0, 8.0)
         //adding to the user category hashmap

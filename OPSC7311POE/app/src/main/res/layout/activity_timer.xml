@@ -85,7 +85,7 @@
     </LinearLayout>
 
     <TextClock
-        android:id="@+id/textClock2"
+        android:id="@+id/edtClock"
         android:layout_width="350dp"
         android:layout_height="90dp"
         android:layout_gravity="center_horizontal"
@@ -106,7 +106,7 @@
         android:orientation="horizontal">
 
         <Button
-            android:id="@+id/resetbtn"
+            android:id="@+id/btnReset"
             android:layout_width="15dp"
             android:layout_height="wrap_content"
             android:layout_marginRight="20dp"

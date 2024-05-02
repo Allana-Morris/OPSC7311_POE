@@ -23,10 +23,10 @@ public final class ActivityMainBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
-  public final Button btnCreateDiagram;
+  public final Button btnCurrentTasks;
 
   @NonNull
-  public final Button btnRedsighn;
+  public final Button btnSeeAll;
 
   @NonNull
   public final Button button9;
@@ -74,29 +74,22 @@ public final class ActivityMainBinding implements ViewBinding {
   public final TextView tvHome;
 
   @NonNull
-  public final TextView tvOngoingTask;
-
-  @NonNull
   public final TextView tvProfile;
-
-  @NonNull
-  public final TextView tvSeeAll;
 
   @NonNull
   public final TextView tvTimer;
 
-  private ActivityMainBinding(@NonNull ConstraintLayout rootView, @NonNull Button btnCreateDiagram,
-      @NonNull Button btnRedsighn, @NonNull Button button9, @NonNull ConstraintLayout clNavBar,
+  private ActivityMainBinding(@NonNull ConstraintLayout rootView, @NonNull Button btnCurrentTasks,
+      @NonNull Button btnSeeAll, @NonNull Button button9, @NonNull ConstraintLayout clNavBar,
       @NonNull ImageButton ibCalendar, @NonNull ImageButton ibHome, @NonNull ImageButton ibProfile,
       @NonNull ImageButton ibTimer, @NonNull ConstraintLayout linearLayout,
       @NonNull ConstraintLayout linearLayout2, @NonNull ConstraintLayout linearLayout4,
       @NonNull ConstraintLayout linearLayout5, @NonNull ConstraintLayout main,
       @NonNull SearchView searchView, @NonNull TextView tvBlackBox, @NonNull TextView tvCalendar,
-      @NonNull TextView tvHome, @NonNull TextView tvOngoingTask, @NonNull TextView tvProfile,
-      @NonNull TextView tvSeeAll, @NonNull TextView tvTimer) {
+      @NonNull TextView tvHome, @NonNull TextView tvProfile, @NonNull TextView tvTimer) {
     this.rootView = rootView;
-    this.btnCreateDiagram = btnCreateDiagram;
-    this.btnRedsighn = btnRedsighn;
+    this.btnCurrentTasks = btnCurrentTasks;
+    this.btnSeeAll = btnSeeAll;
     this.button9 = button9;
     this.clNavBar = clNavBar;
     this.ibCalendar = ibCalendar;
@@ -112,9 +105,7 @@ public final class ActivityMainBinding implements ViewBinding {
     this.tvBlackBox = tvBlackBox;
     this.tvCalendar = tvCalendar;
     this.tvHome = tvHome;
-    this.tvOngoingTask = tvOngoingTask;
     this.tvProfile = tvProfile;
-    this.tvSeeAll = tvSeeAll;
     this.tvTimer = tvTimer;
   }
 
@@ -145,15 +136,15 @@ public final class ActivityMainBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.btnCreateDiagram;
-      Button btnCreateDiagram = ViewBindings.findChildViewById(rootView, id);
-      if (btnCreateDiagram == null) {
+      id = R.id.btn_CurrentTasks;
+      Button btnCurrentTasks = ViewBindings.findChildViewById(rootView, id);
+      if (btnCurrentTasks == null) {
         break missingId;
       }
 
-      id = R.id.btnRedsighn;
-      Button btnRedsighn = ViewBindings.findChildViewById(rootView, id);
-      if (btnRedsighn == null) {
+      id = R.id.btn_See_All;
+      Button btnSeeAll = ViewBindings.findChildViewById(rootView, id);
+      if (btnSeeAll == null) {
         break missingId;
       }
 
@@ -243,21 +234,9 @@ public final class ActivityMainBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.tvOngoingTask;
-      TextView tvOngoingTask = ViewBindings.findChildViewById(rootView, id);
-      if (tvOngoingTask == null) {
-        break missingId;
-      }
-
       id = R.id.tv_Profile;
       TextView tvProfile = ViewBindings.findChildViewById(rootView, id);
       if (tvProfile == null) {
-        break missingId;
-      }
-
-      id = R.id.tvSeeAll;
-      TextView tvSeeAll = ViewBindings.findChildViewById(rootView, id);
-      if (tvSeeAll == null) {
         break missingId;
       }
 
@@ -267,10 +246,10 @@ public final class ActivityMainBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityMainBinding((ConstraintLayout) rootView, btnCreateDiagram, btnRedsighn,
+      return new ActivityMainBinding((ConstraintLayout) rootView, btnCurrentTasks, btnSeeAll,
           button9, clNavBar, ibCalendar, ibHome, ibProfile, ibTimer, linearLayout, linearLayout2,
-          linearLayout4, linearLayout5, main, searchView, tvBlackBox, tvCalendar, tvHome,
-          tvOngoingTask, tvProfile, tvSeeAll, tvTimer);
+          linearLayout4, linearLayout5, main, searchView, tvBlackBox, tvCalendar, tvHome, tvProfile,
+          tvTimer);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

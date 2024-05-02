@@ -4,8 +4,9 @@ package com.example.opsc7311poe.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AutoCompleteTextView;
 import android.widget.Button;
-import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextClock;
 import android.widget.TextView;
@@ -24,6 +25,12 @@ public final class ActivityTimerBinding implements ViewBinding {
   private final LinearLayout rootView;
 
   @NonNull
+  public final AutoCompleteTextView autoCompleteTxt;
+
+  @NonNull
+  public final AutoCompleteTextView autoCompleteTxt2;
+
+  @NonNull
   public final Button btnReset;
 
   @NonNull
@@ -33,19 +40,19 @@ public final class ActivityTimerBinding implements ViewBinding {
   public final Button btnStop;
 
   @NonNull
-  public final ConstraintLayout clNavBar;
+  public final TextClock edtClock;
 
   @NonNull
-  public final ImageButton ibCalendar;
+  public final ImageView imageView15;
 
   @NonNull
-  public final ImageButton ibHome;
+  public final ImageView imageView16;
 
   @NonNull
-  public final ImageButton ibProfile;
+  public final ImageView imageView17;
 
   @NonNull
-  public final ImageButton ibTimer;
+  public final ImageView imageView18;
 
   @NonNull
   public final ConstraintLayout linearLayout;
@@ -63,6 +70,9 @@ public final class ActivityTimerBinding implements ViewBinding {
   public final LinearLayout main;
 
   @NonNull
+  public final Button saveTimebtn;
+
+  @NonNull
   public final TextView tvCalendar;
 
   @NonNull
@@ -77,37 +87,38 @@ public final class ActivityTimerBinding implements ViewBinding {
   @NonNull
   public final TextView tvTimer1;
 
-  @NonNull
-  public final TextClock txtClock;
-
-  private ActivityTimerBinding(@NonNull LinearLayout rootView, @NonNull Button btnReset,
-      @NonNull Button btnStart, @NonNull Button btnStop, @NonNull ConstraintLayout clNavBar,
-      @NonNull ImageButton ibCalendar, @NonNull ImageButton ibHome, @NonNull ImageButton ibProfile,
-      @NonNull ImageButton ibTimer, @NonNull ConstraintLayout linearLayout,
-      @NonNull ConstraintLayout linearLayout2, @NonNull ConstraintLayout linearLayout4,
-      @NonNull ConstraintLayout linearLayout5, @NonNull LinearLayout main,
-      @NonNull TextView tvCalendar, @NonNull TextView tvHome, @NonNull TextView tvProfile,
-      @NonNull TextView tvTimer, @NonNull TextView tvTimer1, @NonNull TextClock txtClock) {
+  private ActivityTimerBinding(@NonNull LinearLayout rootView,
+      @NonNull AutoCompleteTextView autoCompleteTxt, @NonNull AutoCompleteTextView autoCompleteTxt2,
+      @NonNull Button btnReset, @NonNull Button btnStart, @NonNull Button btnStop,
+      @NonNull TextClock edtClock, @NonNull ImageView imageView15, @NonNull ImageView imageView16,
+      @NonNull ImageView imageView17, @NonNull ImageView imageView18,
+      @NonNull ConstraintLayout linearLayout, @NonNull ConstraintLayout linearLayout2,
+      @NonNull ConstraintLayout linearLayout4, @NonNull ConstraintLayout linearLayout5,
+      @NonNull LinearLayout main, @NonNull Button saveTimebtn, @NonNull TextView tvCalendar,
+      @NonNull TextView tvHome, @NonNull TextView tvProfile, @NonNull TextView tvTimer,
+      @NonNull TextView tvTimer1) {
     this.rootView = rootView;
+    this.autoCompleteTxt = autoCompleteTxt;
+    this.autoCompleteTxt2 = autoCompleteTxt2;
     this.btnReset = btnReset;
     this.btnStart = btnStart;
     this.btnStop = btnStop;
-    this.clNavBar = clNavBar;
-    this.ibCalendar = ibCalendar;
-    this.ibHome = ibHome;
-    this.ibProfile = ibProfile;
-    this.ibTimer = ibTimer;
+    this.edtClock = edtClock;
+    this.imageView15 = imageView15;
+    this.imageView16 = imageView16;
+    this.imageView17 = imageView17;
+    this.imageView18 = imageView18;
     this.linearLayout = linearLayout;
     this.linearLayout2 = linearLayout2;
     this.linearLayout4 = linearLayout4;
     this.linearLayout5 = linearLayout5;
     this.main = main;
+    this.saveTimebtn = saveTimebtn;
     this.tvCalendar = tvCalendar;
     this.tvHome = tvHome;
     this.tvProfile = tvProfile;
     this.tvTimer = tvTimer;
     this.tvTimer1 = tvTimer1;
-    this.txtClock = txtClock;
   }
 
   @Override
@@ -137,6 +148,18 @@ public final class ActivityTimerBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.auto_complete_txt;
+      AutoCompleteTextView autoCompleteTxt = ViewBindings.findChildViewById(rootView, id);
+      if (autoCompleteTxt == null) {
+        break missingId;
+      }
+
+      id = R.id.auto_complete_txt2;
+      AutoCompleteTextView autoCompleteTxt2 = ViewBindings.findChildViewById(rootView, id);
+      if (autoCompleteTxt2 == null) {
+        break missingId;
+      }
+
       id = R.id.btnReset;
       Button btnReset = ViewBindings.findChildViewById(rootView, id);
       if (btnReset == null) {
@@ -155,33 +178,33 @@ public final class ActivityTimerBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.cl_NavBar;
-      ConstraintLayout clNavBar = ViewBindings.findChildViewById(rootView, id);
-      if (clNavBar == null) {
+      id = R.id.edtClock;
+      TextClock edtClock = ViewBindings.findChildViewById(rootView, id);
+      if (edtClock == null) {
         break missingId;
       }
 
-      id = R.id.ib_Calendar;
-      ImageButton ibCalendar = ViewBindings.findChildViewById(rootView, id);
-      if (ibCalendar == null) {
+      id = R.id.imageView15;
+      ImageView imageView15 = ViewBindings.findChildViewById(rootView, id);
+      if (imageView15 == null) {
         break missingId;
       }
 
-      id = R.id.ib_Home;
-      ImageButton ibHome = ViewBindings.findChildViewById(rootView, id);
-      if (ibHome == null) {
+      id = R.id.imageView16;
+      ImageView imageView16 = ViewBindings.findChildViewById(rootView, id);
+      if (imageView16 == null) {
         break missingId;
       }
 
-      id = R.id.ib_Profile;
-      ImageButton ibProfile = ViewBindings.findChildViewById(rootView, id);
-      if (ibProfile == null) {
+      id = R.id.imageView17;
+      ImageView imageView17 = ViewBindings.findChildViewById(rootView, id);
+      if (imageView17 == null) {
         break missingId;
       }
 
-      id = R.id.ib_Timer;
-      ImageButton ibTimer = ViewBindings.findChildViewById(rootView, id);
-      if (ibTimer == null) {
+      id = R.id.imageView18;
+      ImageView imageView18 = ViewBindings.findChildViewById(rootView, id);
+      if (imageView18 == null) {
         break missingId;
       }
 
@@ -210,6 +233,12 @@ public final class ActivityTimerBinding implements ViewBinding {
       }
 
       LinearLayout main = (LinearLayout) rootView;
+
+      id = R.id.saveTimebtn;
+      Button saveTimebtn = ViewBindings.findChildViewById(rootView, id);
+      if (saveTimebtn == null) {
+        break missingId;
+      }
 
       id = R.id.tv_calendar;
       TextView tvCalendar = ViewBindings.findChildViewById(rootView, id);
@@ -241,16 +270,10 @@ public final class ActivityTimerBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.txtClock;
-      TextClock txtClock = ViewBindings.findChildViewById(rootView, id);
-      if (txtClock == null) {
-        break missingId;
-      }
-
-      return new ActivityTimerBinding((LinearLayout) rootView, btnReset, btnStart, btnStop,
-          clNavBar, ibCalendar, ibHome, ibProfile, ibTimer, linearLayout, linearLayout2,
-          linearLayout4, linearLayout5, main, tvCalendar, tvHome, tvProfile, tvTimer, tvTimer1,
-          txtClock);
+      return new ActivityTimerBinding((LinearLayout) rootView, autoCompleteTxt, autoCompleteTxt2,
+          btnReset, btnStart, btnStop, edtClock, imageView15, imageView16, imageView17, imageView18,
+          linearLayout, linearLayout2, linearLayout4, linearLayout5, main, saveTimebtn, tvCalendar,
+          tvHome, tvProfile, tvTimer, tvTimer1);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

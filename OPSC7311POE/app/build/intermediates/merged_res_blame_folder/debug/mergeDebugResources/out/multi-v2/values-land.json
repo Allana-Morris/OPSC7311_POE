@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.opsc7311poe.app-mergeDebugResources-2:/values-land/values-land.xml",
+            "outputFile": "com.example.opsc7311poe.app-mergeDebugResources-47:/values-land/values-land.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\allan\\Downloads\\OPSC7311_POE-main\\OPSC7311_POE-main\\.gradle\\caches\\transforms-3\\fb13ae653f43bc6ba15998a8e3e3c287\\transformed\\ambilwarna-2.0.1\\res\\values-land\\values-land.xml",
+                    "source": "C:\\Users\\Sven\\.gradle\\caches\\transforms-3\\fb13ae653f43bc6ba15998a8e3e3c287\\transformed\\ambilwarna-2.0.1\\res\\values-land\\values-land.xml",
                     "from": {
                         "startLines": "4,5",
                         "startColumns": "4,4",
@@ -21,24 +21,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\allan\\AndroidStudioProjects\\OPSC7311_POE\\OPSC7311POE\\app\\src\\main\\res\\values-land\\dimens.xml",
-                    "from": {
-                        "startLines": "1",
-                        "startColumns": "4",
-                        "startOffsets": "17",
-                        "endColumns": "57",
-                        "endOffsets": "70"
-                    },
-                    "to": {
-                        "startLines": "5",
-                        "startColumns": "4",
-                        "startOffsets": "264",
-                        "endColumns": "57",
-                        "endOffsets": "317"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\allan\\Downloads\\OPSC7311_POE-main\\OPSC7311_POE-main\\.gradle\\caches\\transforms-3\\94b12432f5d12678e6b9286a0c2584e2\\transformed\\material-1.11.0\\res\\values-land\\values-land.xml",
+                    "source": "C:\\Users\\Sven\\.gradle\\caches\\transforms-3\\94b12432f5d12678e6b9286a0c2584e2\\transformed\\material-1.11.0\\res\\values-land\\values-land.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,26,35,40",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -57,13 +40,30 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\allan\\Downloads\\OPSC7311_POE-main\\OPSC7311_POE-main\\.gradle\\caches\\transforms-3\\7fa6b8d730fd83dbb967b74fd9504781\\transformed\\appcompat-1.6.1\\res\\values-land\\values-land.xml",
+                    "source": "C:\\Users\\Sven\\.gradle\\caches\\transforms-3\\7fa6b8d730fd83dbb967b74fd9504781\\transformed\\appcompat-1.6.1\\res\\values-land\\values-land.xml",
                     "from": {
                         "startLines": "2,3,4",
                         "startColumns": "4,4,4",
                         "startOffsets": "55,125,196",
                         "endColumns": "69,70,67",
                         "endOffsets": "120,191,259"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\Sven\\AndroidStudioProjects\\OPSC7311_POE\\OPSC7311POE\\app\\src\\main\\res\\values-land\\dimens.xml",
+                    "from": {
+                        "startLines": "1",
+                        "startColumns": "4",
+                        "startOffsets": "17",
+                        "endColumns": "57",
+                        "endOffsets": "70"
+                    },
+                    "to": {
+                        "startLines": "5",
+                        "startColumns": "4",
+                        "startOffsets": "264",
+                        "endColumns": "57",
+                        "endOffsets": "317"
                     }
                 }
             ]

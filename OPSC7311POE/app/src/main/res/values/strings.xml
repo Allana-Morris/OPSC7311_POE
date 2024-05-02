@@ -67,6 +67,8 @@
     <string name="back">←</string>
     <string name="forward">→</string>
     <string name="housecleaning">housecleaning</string>
+    <string name="cat_select">Category Selection</string>
+    <string name="task_select">Task Selection</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="title_activity_calendar2">Calendar2</string>
