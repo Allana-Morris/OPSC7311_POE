@@ -5,6 +5,9 @@
       <entry key="app">
         <State />
       </entry>
+      <entry key="enterTimeSheet">
+        <State />
+      </entry>
     </value>
   </component>
 </project>
