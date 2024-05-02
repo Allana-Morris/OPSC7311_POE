@@ -76,8 +76,8 @@
         "source": "com.example.opsc7311poe.app-main-37:/layout/activity_profile.xml"
     },
     {
-        "merged": "com.example.opsc7311poe.app-debug-35:/layout_activity_profile.xml.flat",
-        "source": "com.example.opsc7311poe.app-main-37:/layout/activity_profile.xml"
+        "merged": "com.example.opsc7311poe.app-debug-35:/layout_activity_timer.xml.flat",
+        "source": "com.example.opsc7311poe.app-main-37:/layout/activity_timer.xml"
     },
     {
         "merged": "com.example.opsc7311poe.app-debug-35:/drawable_write.png.flat",
