@@ -91,141 +91,177 @@
         tools:ignore="MissingConstraints" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/navBar"
-        android:layout_width="415dp"
+        android:id="@+id/cl_NavBar"
+        android:layout_width="401dp"
+        android:layout_height="147dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
 
-        android:layout_height="173dp"
-        android:layout_marginTop="740dp"
-        android:background="@color/white"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.515"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-
-        <TextView
-            android:id="@+id/tv_Profile"
-            android:layout_width="80dp"
-            android:layout_height="20dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginEnd="8dp"
-            android:layout_marginBottom="24dp"
-            android:gravity="center"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/tv_Home"
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:layout_width="399dp"
+            android:layout_height="153dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            tools:text="@string/profile" />
+            app:layout_constraintTop_toTopOf="parent">
 
-        <TextView
-            android:id="@+id/tv_calendar"
-            android:layout_width="80dp"
-            android:layout_height="20dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginEnd="8dp"
-            android:layout_marginBottom="24dp"
-            android:gravity="center"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/tv_timer"
-            app:layout_constraintStart_toEndOf="@+id/tv_Home"
-            tools:text="@string/calendar" />
-
-        <TextView
-            android:id="@+id/tv_Home"
-            android:layout_width="80dp"
-            android:layout_height="20dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginEnd="8dp"
-            android:layout_marginBottom="24dp"
-            android:gravity="center"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/tv_calendar"
-            app:layout_constraintStart_toEndOf="@+id/tv_Profile"
-            tools:text="@string/home" />
-
-        <TextView
-            android:id="@+id/tv_timer"
-            android:layout_width="80dp"
-            android:layout_height="20dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginEnd="8dp"
-            android:layout_marginBottom="24dp"
-            android:gravity="center"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/tv_calendar"
-            tools:text="@string/timer" />
-
-        <ImageButton
-            android:id="@+id/ib_Profile"
-            android:layout_width="80dp"
-            android:layout_height="80dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="16dp"
-            android:layout_marginEnd="8dp"
-            android:background="@color/white"
-            android:scaleType="centerInside"
-            app:layout_constraintBottom_toTopOf="@+id/tv_Profile"
-            app:layout_constraintEnd_toStartOf="@+id/ib_Home"
-            app:layout_constraintHorizontal_bias="0.933"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.0"
-            app:srcCompat="@drawable/navprofile"
-            tools:ignore="MissingConstraints,SpeakableTextPresentCheck" />
-
-        <ImageButton
-            android:id="@+id/ib_Home"
-            android:layout_width="80dp"
-            android:layout_height="80dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="16dp"
-            android:layout_marginEnd="8dp"
-            android:background="@color/white"
-            android:scaleType="centerInside"
-            app:layout_constraintBottom_toTopOf="@+id/tv_Home"
-            app:layout_constraintEnd_toStartOf="@+id/ib_Calendar"
-            app:layout_constraintStart_toEndOf="@+id/ib_Profile"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.0"
-            app:srcCompat="@drawable/house"
-            tools:ignore="MissingConstraints,SpeakableTextPresentCheck" />
-
-        <ImageButton
-            android:id="@+id/ib_Calendar"
-            android:layout_width="80dp"
-            android:layout_height="80dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginEnd="8dp"
-            android:layout_marginBottom="24dp"
-            android:background="#FFFFFF"
-            android:scaleType="centerInside"
-            app:layout_constraintBottom_toTopOf="@+id/tv_calendar"
-            app:layout_constraintEnd_toStartOf="@+id/ib_Timer"
-            app:layout_constraintStart_toEndOf="@+id/ib_Home"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.64"
-            app:srcCompat="@drawable/calendar"
-            tools:ignore="MissingConstraints,SpeakableTextPresentCheck" />
-
-        <ImageButton
-            android:id="@+id/ib_Timer"
-            android:layout_width="80dp"
-            android:layout_height="80dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="16dp"
-            android:layout_marginEnd="8dp"
-            android:background="@color/white"
-            android:scaleType="centerInside"
-            app:layout_constraintBottom_toTopOf="@+id/tv_timer"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/ib_Calendar"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.0"
-            app:srcCompat="@drawable/timer"
-            tools:ignore="MissingConstraints,SpeakableTextPresentCheck" />
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="wrap_content"
+                android:layout_height="114dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
 
 
+                <LinearLayout
+                    android:layout_width="416dp"
+                    android:layout_height="113dp"
+                    android:background="@color/white"
+                    android:orientation="horizontal"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/linearLayout"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.25">
+
+                        <TextView
+                            android:id="@+id/tv_Profile"
+                            android:layout_width="83dp"
+                            android:layout_height="21dp"
+                            android:layout_marginBottom="4dp"
+                            android:gravity="center"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            tools:text="@string/profile" />
+
+                        <ImageButton
+                            android:id="@+id/ib_Profile"
+                            android:layout_width="65dp"
+                            android:layout_height="70dp"
+                            android:layout_marginTop="16dp"
+                            android:background="@color/white"
+                            android:scaleType="centerInside"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.512"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:srcCompat="@drawable/navprofile"
+                            tools:ignore="SpeakableTextPresentCheck" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/linearLayout2"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.25">
+
+                        <TextView
+                            android:id="@+id/tv_Home"
+                            android:layout_width="83dp"
+                            android:layout_height="21dp"
+                            android:layout_marginBottom="4dp"
+                            android:gravity="center"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.526"
+                            app:layout_constraintStart_toStartOf="parent"
+                            tools:text="@string/home" />
+
+                        <ImageButton
+                            android:id="@+id/ib_Home"
+                            android:layout_width="65dp"
+                            android:layout_height="70dp"
+                            android:layout_marginTop="16dp"
+                            android:background="@color/white"
+                            android:scaleType="centerInside"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.512"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:srcCompat="@drawable/house"
+                            tools:ignore="SpeakableTextPresentCheck" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/linearLayout4"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.25">
+
+                        <TextView
+                            android:id="@+id/tv_calendar"
+                            android:layout_width="83dp"
+                            android:layout_height="21dp"
+                            android:layout_marginBottom="4dp"
+                            android:gravity="center"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.473"
+                            app:layout_constraintStart_toStartOf="parent"
+                            tools:text="@string/calendar" />
+
+                        <ImageButton
+                            android:id="@+id/ib_Calendar"
+                            android:layout_width="65dp"
+                            android:layout_height="70dp"
+                            android:layout_marginTop="16dp"
+                            android:background="@color/white"
+                            android:scaleType="centerInside"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.512"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:srcCompat="@drawable/calendar"
+                            tools:ignore="SpeakableTextPresentCheck" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/linearLayout5"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.25">
+
+                        <TextView
+                            android:id="@+id/tv_timer"
+                            android:layout_width="83dp"
+                            android:layout_height="21dp"
+                            android:layout_marginBottom="4dp"
+                            android:gravity="center"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.526"
+                            app:layout_constraintStart_toStartOf="parent"
+                            tools:text="@string/timer" />
+
+                        <ImageButton
+                            android:id="@+id/ib_Timer"
+                            android:layout_width="65dp"
+                            android:layout_height="70dp"
+                            android:layout_marginTop="16dp"
+                            android:background="@color/white"
+                            android:scaleType="centerInside"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:srcCompat="@drawable/timer"
+                            tools:ignore="SpeakableTextPresentCheck" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </LinearLayout>
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </com.google.android.material.bottomnavigation.BottomNavigationView>
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 

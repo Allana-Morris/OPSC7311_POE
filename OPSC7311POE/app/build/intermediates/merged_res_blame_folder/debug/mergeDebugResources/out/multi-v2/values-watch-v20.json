@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.opsc7311poe.app-mergeDebugResources-33:/values-watch-v20/values-watch-v20.xml",
+            "outputFile": "com.example.opsc7311poe.app-mergeDebugResources-2:/values-watch-v20/values-watch-v20.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Sven\\.gradle\\caches\\transforms-3\\b1c584f306fb1a24db27addc83ec6539\\transformed\\appcompat-1.6.1\\res\\values-watch-v20\\values-watch-v20.xml",
+                    "source": "C:\\Users\\allan\\Downloads\\OPSC7311_POE-main\\OPSC7311_POE-main\\.gradle\\caches\\transforms-3\\7fa6b8d730fd83dbb967b74fd9504781\\transformed\\appcompat-1.6.1\\res\\values-watch-v20\\values-watch-v20.xml",
                     "from": {
                         "startLines": "2,5,8",
                         "startColumns": "4,4,4",

@@ -4,7 +4,7 @@ package com.example.opsc7311poe.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageView;
+import android.widget.ImageButton;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -21,16 +21,19 @@ public final class ActivityViewGraphsBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
-  public final ImageView imageView15;
+  public final ConstraintLayout clNavBar;
 
   @NonNull
-  public final ImageView imageView16;
+  public final ImageButton ibCalendar;
 
   @NonNull
-  public final ImageView imageView17;
+  public final ImageButton ibHome;
 
   @NonNull
-  public final ImageView imageView18;
+  public final ImageButton ibProfile;
+
+  @NonNull
+  public final ImageButton ibTimer;
 
   @NonNull
   public final ConstraintLayout linearLayout;
@@ -60,17 +63,18 @@ public final class ActivityViewGraphsBinding implements ViewBinding {
   public final TextView tvTimer;
 
   private ActivityViewGraphsBinding(@NonNull ConstraintLayout rootView,
-      @NonNull ImageView imageView15, @NonNull ImageView imageView16,
-      @NonNull ImageView imageView17, @NonNull ImageView imageView18,
+      @NonNull ConstraintLayout clNavBar, @NonNull ImageButton ibCalendar,
+      @NonNull ImageButton ibHome, @NonNull ImageButton ibProfile, @NonNull ImageButton ibTimer,
       @NonNull ConstraintLayout linearLayout, @NonNull ConstraintLayout linearLayout2,
       @NonNull ConstraintLayout linearLayout4, @NonNull ConstraintLayout linearLayout5,
       @NonNull ConstraintLayout main, @NonNull TextView tvCalendar, @NonNull TextView tvHome,
       @NonNull TextView tvProfile, @NonNull TextView tvTimer) {
     this.rootView = rootView;
-    this.imageView15 = imageView15;
-    this.imageView16 = imageView16;
-    this.imageView17 = imageView17;
-    this.imageView18 = imageView18;
+    this.clNavBar = clNavBar;
+    this.ibCalendar = ibCalendar;
+    this.ibHome = ibHome;
+    this.ibProfile = ibProfile;
+    this.ibTimer = ibTimer;
     this.linearLayout = linearLayout;
     this.linearLayout2 = linearLayout2;
     this.linearLayout4 = linearLayout4;
@@ -109,27 +113,33 @@ public final class ActivityViewGraphsBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.imageView15;
-      ImageView imageView15 = ViewBindings.findChildViewById(rootView, id);
-      if (imageView15 == null) {
+      id = R.id.cl_NavBar;
+      ConstraintLayout clNavBar = ViewBindings.findChildViewById(rootView, id);
+      if (clNavBar == null) {
         break missingId;
       }
 
-      id = R.id.imageView16;
-      ImageView imageView16 = ViewBindings.findChildViewById(rootView, id);
-      if (imageView16 == null) {
+      id = R.id.ib_Calendar;
+      ImageButton ibCalendar = ViewBindings.findChildViewById(rootView, id);
+      if (ibCalendar == null) {
         break missingId;
       }
 
-      id = R.id.imageView17;
-      ImageView imageView17 = ViewBindings.findChildViewById(rootView, id);
-      if (imageView17 == null) {
+      id = R.id.ib_Home;
+      ImageButton ibHome = ViewBindings.findChildViewById(rootView, id);
+      if (ibHome == null) {
         break missingId;
       }
 
-      id = R.id.imageView18;
-      ImageView imageView18 = ViewBindings.findChildViewById(rootView, id);
-      if (imageView18 == null) {
+      id = R.id.ib_Profile;
+      ImageButton ibProfile = ViewBindings.findChildViewById(rootView, id);
+      if (ibProfile == null) {
+        break missingId;
+      }
+
+      id = R.id.ib_Timer;
+      ImageButton ibTimer = ViewBindings.findChildViewById(rootView, id);
+      if (ibTimer == null) {
         break missingId;
       }
 
@@ -183,9 +193,9 @@ public final class ActivityViewGraphsBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityViewGraphsBinding((ConstraintLayout) rootView, imageView15, imageView16,
-          imageView17, imageView18, linearLayout, linearLayout2, linearLayout4, linearLayout5, main,
-          tvCalendar, tvHome, tvProfile, tvTimer);
+      return new ActivityViewGraphsBinding((ConstraintLayout) rootView, clNavBar, ibCalendar,
+          ibHome, ibProfile, ibTimer, linearLayout, linearLayout2, linearLayout4, linearLayout5,
+          main, tvCalendar, tvHome, tvProfile, tvTimer);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

@@ -24,8 +24,8 @@ class Register : AppCompatActivity() {
             val email: EditText = findViewById(R.id.txtEmail)
             val password: EditText = findViewById(R.id.txtPassword)
 
-            val Validate = validation();
-            var valid = true;
+            val Validate = validation()
+            var valid = true
 
 
             if (Validate.checkStringNullOrEmpty(username.text.toString()))
@@ -60,7 +60,7 @@ class Register : AppCompatActivity() {
             {
                 email.setText("Account already exists")
                 email.setTextColor(Color.RED)
-                valid = false;
+                valid = false
 
             }
 
@@ -68,7 +68,7 @@ class Register : AppCompatActivity() {
             {
                 username.setText("User Name taken")
                 username.setTextColor(Color.RED)
-                valid = false;
+                valid = false
 
             }
 
@@ -77,7 +77,7 @@ class Register : AppCompatActivity() {
                 val user = User(username.text.toString(), fullName.text.toString(),
                     password.text.toString(), email.text.toString())
 
-                UserList.users.add(user);
+                UserList.users.add(user)
 
                 val message = "User signed up: ${user.username}"
                 Toast.makeText(this, message, Toast.LENGTH_SHORT).show()

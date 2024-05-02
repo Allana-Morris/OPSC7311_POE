@@ -1,12 +1,12 @@
 <component name="libraryTable">
   <library name="Gradle: androidx.coordinatorlayout:coordinatorlayout:1.1.0@aar" external-system-id="GRADLE">
     <ANNOTATIONS>
-      <root url="jar://$USER_HOME$/Downloads/OPSC7311_POE-main/OPSC7311_POE-main/.gradle/caches/transforms-3/a916261ac11e21dff8d250546db9843f/transformed/coordinatorlayout-1.1.0/annotations.zip!/" />
+      <root url="jar://$USER_HOME$/Downloads/OPSC7311_POE-main/OPSC7311_POE-main/.gradle/caches/transforms-3/0c91e9a648c09081094011ad6eac82a1/transformed/coordinatorlayout-1.1.0/annotations.zip!/" />
     </ANNOTATIONS>
     <CLASSES>
-      <root url="jar://$USER_HOME$/Downloads/OPSC7311_POE-main/OPSC7311_POE-main/.gradle/caches/transforms-3/a916261ac11e21dff8d250546db9843f/transformed/coordinatorlayout-1.1.0/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/Downloads/OPSC7311_POE-main/OPSC7311_POE-main/.gradle/caches/transforms-3/a916261ac11e21dff8d250546db9843f/transformed/coordinatorlayout-1.1.0/res" />
-      <root url="file://$USER_HOME$/Downloads/OPSC7311_POE-main/OPSC7311_POE-main/.gradle/caches/transforms-3/a916261ac11e21dff8d250546db9843f/transformed/coordinatorlayout-1.1.0/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/Downloads/OPSC7311_POE-main/OPSC7311_POE-main/.gradle/caches/transforms-3/0c91e9a648c09081094011ad6eac82a1/transformed/coordinatorlayout-1.1.0/res" />
+      <root url="jar://$USER_HOME$/Downloads/OPSC7311_POE-main/OPSC7311_POE-main/.gradle/caches/transforms-3/0c91e9a648c09081094011ad6eac82a1/transformed/coordinatorlayout-1.1.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/Downloads/OPSC7311_POE-main/OPSC7311_POE-main/.gradle/caches/transforms-3/0c91e9a648c09081094011ad6eac82a1/transformed/coordinatorlayout-1.1.0/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

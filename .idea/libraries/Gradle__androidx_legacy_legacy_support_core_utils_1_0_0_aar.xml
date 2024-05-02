@@ -1,8 +1,8 @@
 <component name="libraryTable">
   <library name="Gradle: androidx.legacy:legacy-support-core-utils:1.0.0@aar" external-system-id="GRADLE">
     <CLASSES>
-      <root url="jar://$USER_HOME$/Downloads/OPSC7311_POE-main/OPSC7311_POE-main/.gradle/caches/transforms-3/dc5c8e1c71516d4eae76168d86e33b47/transformed/legacy-support-core-utils-1.0.0/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/Downloads/OPSC7311_POE-main/OPSC7311_POE-main/.gradle/caches/transforms-3/dc5c8e1c71516d4eae76168d86e33b47/transformed/legacy-support-core-utils-1.0.0/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/Downloads/OPSC7311_POE-main/OPSC7311_POE-main/.gradle/caches/transforms-3/e2bcdc46b64ce3ac0c8d9346c8fd9d6f/transformed/legacy-support-core-utils-1.0.0/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/Downloads/OPSC7311_POE-main/OPSC7311_POE-main/.gradle/caches/transforms-3/e2bcdc46b64ce3ac0c8d9346c8fd9d6f/transformed/legacy-support-core-utils-1.0.0/jars/classes.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

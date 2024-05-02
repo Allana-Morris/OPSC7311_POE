@@ -9,9 +9,9 @@ class validation
         var bFlag = false
         if (input.isNullOrBlank())
         {
-            bFlag = true;
+            bFlag = true
         }
-        return bFlag;
+        return bFlag
     }
 
     fun checkExistingUserEmail(input: String?): Boolean

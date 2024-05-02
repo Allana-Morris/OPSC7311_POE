@@ -4,6 +4,7 @@ package com.example.opsc7311poe.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
@@ -24,19 +25,22 @@ public final class ActivityWeeklySummaryBinding implements ViewBinding {
   public final View chooseWeek;
 
   @NonNull
+  public final ConstraintLayout clNavBar;
+
+  @NonNull
+  public final ImageButton ibCalendar;
+
+  @NonNull
+  public final ImageButton ibHome;
+
+  @NonNull
+  public final ImageButton ibProfile;
+
+  @NonNull
+  public final ImageButton ibTimer;
+
+  @NonNull
   public final ImageView imageView;
-
-  @NonNull
-  public final ImageView imageView15;
-
-  @NonNull
-  public final ImageView imageView16;
-
-  @NonNull
-  public final ImageView imageView17;
-
-  @NonNull
-  public final ImageView imageView18;
 
   @NonNull
   public final ImageView imgBar;
@@ -93,22 +97,24 @@ public final class ActivityWeeklySummaryBinding implements ViewBinding {
   public final TextView tvgenerate;
 
   private ActivityWeeklySummaryBinding(@NonNull ConstraintLayout rootView, @NonNull View chooseWeek,
-      @NonNull ImageView imageView, @NonNull ImageView imageView15, @NonNull ImageView imageView16,
-      @NonNull ImageView imageView17, @NonNull ImageView imageView18, @NonNull ImageView imgBar,
-      @NonNull ImageView imgChooseDate, @NonNull ImageView imgPiechart,
-      @NonNull ConstraintLayout linearLayout, @NonNull ConstraintLayout linearLayout2,
-      @NonNull ConstraintLayout linearLayout4, @NonNull ConstraintLayout linearLayout5,
-      @NonNull ConstraintLayout main, @NonNull TextView tvBar, @NonNull TextView tvCalendar,
-      @NonNull TextView tvChooseAWeek, @NonNull TextView tvGraph, @NonNull TextView tvHome,
-      @NonNull TextView tvPie, @NonNull TextView tvProfile, @NonNull TextView tvSummary,
-      @NonNull TextView tvTimer, @NonNull TextView tvgenerate) {
+      @NonNull ConstraintLayout clNavBar, @NonNull ImageButton ibCalendar,
+      @NonNull ImageButton ibHome, @NonNull ImageButton ibProfile, @NonNull ImageButton ibTimer,
+      @NonNull ImageView imageView, @NonNull ImageView imgBar, @NonNull ImageView imgChooseDate,
+      @NonNull ImageView imgPiechart, @NonNull ConstraintLayout linearLayout,
+      @NonNull ConstraintLayout linearLayout2, @NonNull ConstraintLayout linearLayout4,
+      @NonNull ConstraintLayout linearLayout5, @NonNull ConstraintLayout main,
+      @NonNull TextView tvBar, @NonNull TextView tvCalendar, @NonNull TextView tvChooseAWeek,
+      @NonNull TextView tvGraph, @NonNull TextView tvHome, @NonNull TextView tvPie,
+      @NonNull TextView tvProfile, @NonNull TextView tvSummary, @NonNull TextView tvTimer,
+      @NonNull TextView tvgenerate) {
     this.rootView = rootView;
     this.chooseWeek = chooseWeek;
+    this.clNavBar = clNavBar;
+    this.ibCalendar = ibCalendar;
+    this.ibHome = ibHome;
+    this.ibProfile = ibProfile;
+    this.ibTimer = ibTimer;
     this.imageView = imageView;
-    this.imageView15 = imageView15;
-    this.imageView16 = imageView16;
-    this.imageView17 = imageView17;
-    this.imageView18 = imageView18;
     this.imgBar = imgBar;
     this.imgChooseDate = imgChooseDate;
     this.imgPiechart = imgPiechart;
@@ -162,33 +168,39 @@ public final class ActivityWeeklySummaryBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.cl_NavBar;
+      ConstraintLayout clNavBar = ViewBindings.findChildViewById(rootView, id);
+      if (clNavBar == null) {
+        break missingId;
+      }
+
+      id = R.id.ib_Calendar;
+      ImageButton ibCalendar = ViewBindings.findChildViewById(rootView, id);
+      if (ibCalendar == null) {
+        break missingId;
+      }
+
+      id = R.id.ib_Home;
+      ImageButton ibHome = ViewBindings.findChildViewById(rootView, id);
+      if (ibHome == null) {
+        break missingId;
+      }
+
+      id = R.id.ib_Profile;
+      ImageButton ibProfile = ViewBindings.findChildViewById(rootView, id);
+      if (ibProfile == null) {
+        break missingId;
+      }
+
+      id = R.id.ib_Timer;
+      ImageButton ibTimer = ViewBindings.findChildViewById(rootView, id);
+      if (ibTimer == null) {
+        break missingId;
+      }
+
       id = R.id.imageView;
       ImageView imageView = ViewBindings.findChildViewById(rootView, id);
       if (imageView == null) {
-        break missingId;
-      }
-
-      id = R.id.imageView15;
-      ImageView imageView15 = ViewBindings.findChildViewById(rootView, id);
-      if (imageView15 == null) {
-        break missingId;
-      }
-
-      id = R.id.imageView16;
-      ImageView imageView16 = ViewBindings.findChildViewById(rootView, id);
-      if (imageView16 == null) {
-        break missingId;
-      }
-
-      id = R.id.imageView17;
-      ImageView imageView17 = ViewBindings.findChildViewById(rootView, id);
-      if (imageView17 == null) {
-        break missingId;
-      }
-
-      id = R.id.imageView18;
-      ImageView imageView18 = ViewBindings.findChildViewById(rootView, id);
-      if (imageView18 == null) {
         break missingId;
       }
 
@@ -296,8 +308,8 @@ public final class ActivityWeeklySummaryBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityWeeklySummaryBinding((ConstraintLayout) rootView, chooseWeek, imageView,
-          imageView15, imageView16, imageView17, imageView18, imgBar, imgChooseDate, imgPiechart,
+      return new ActivityWeeklySummaryBinding((ConstraintLayout) rootView, chooseWeek, clNavBar,
+          ibCalendar, ibHome, ibProfile, ibTimer, imageView, imgBar, imgChooseDate, imgPiechart,
           linearLayout, linearLayout2, linearLayout4, linearLayout5, main, tvBar, tvCalendar,
           tvChooseAWeek, tvGraph, tvHome, tvPie, tvProfile, tvSummary, tvTimer, tvgenerate);
     }

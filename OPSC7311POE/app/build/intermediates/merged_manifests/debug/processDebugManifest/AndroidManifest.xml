@@ -28,7 +28,10 @@
         android:testOnly="true"
         android:theme="@style/Theme.OPSC7311POE" >
         <activity
-            android:name="com.example.opsc7311poe.Profile"
+            android:name="com.example.opsc7311poe.MainActivity2"
+            android:exported="false" />
+        <activity
+            android:name="com.example.opsc7311poe.TaskCalendar"
             android:exported="false" />
         <activity
             android:name="com.example.opsc7311poe.create_category"
@@ -57,7 +60,7 @@
         <activity android:name="com.example.opsc7311poe.Login" />
         <activity android:name="com.example.opsc7311poe.Register" />
         <activity android:name="com.example.opsc7311poe.MainActivity" />
-        <activity android:name="com.example.opsc7311poe.Calendar" />
+        <activity android:name="com.example.opsc7311poe.Profile" />
 
         <provider
             android:name="androidx.startup.InitializationProvider"
@@ -73,6 +76,13 @@
                 android:name="androidx.profileinstaller.ProfileInstallerInitializer"
                 android:value="androidx.startup" />
         </provider>
+
+        <uses-library
+            android:name="androidx.window.extensions"
+            android:required="false" />
+        <uses-library
+            android:name="androidx.window.sidecar"
+            android:required="false" />
 
         <receiver
             android:name="androidx.profileinstaller.ProfileInstallReceiver"

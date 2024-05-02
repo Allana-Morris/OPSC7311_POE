@@ -1,8 +1,8 @@
 <component name="libraryTable">
   <library name="Gradle: androidx.tracing:tracing:1.0.0@aar" external-system-id="GRADLE">
     <CLASSES>
-      <root url="file://$USER_HOME$/Downloads/OPSC7311_POE-main/OPSC7311_POE-main/.gradle/caches/transforms-3/dcf5a11c665317cd195280f86b3d41ad/transformed/tracing-1.0.0/AndroidManifest.xml" />
-      <root url="jar://$USER_HOME$/Downloads/OPSC7311_POE-main/OPSC7311_POE-main/.gradle/caches/transforms-3/dcf5a11c665317cd195280f86b3d41ad/transformed/tracing-1.0.0/jars/classes.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/OPSC7311_POE-main/OPSC7311_POE-main/.gradle/caches/transforms-3/bf28dd6f271d002a24b070eafd31838b/transformed/tracing-1.0.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/Downloads/OPSC7311_POE-main/OPSC7311_POE-main/.gradle/caches/transforms-3/bf28dd6f271d002a24b070eafd31838b/transformed/tracing-1.0.0/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

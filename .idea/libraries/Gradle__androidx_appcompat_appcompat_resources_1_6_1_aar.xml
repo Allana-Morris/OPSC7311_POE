@@ -1,9 +1,9 @@
 <component name="libraryTable">
   <library name="Gradle: androidx.appcompat:appcompat-resources:1.6.1@aar" external-system-id="GRADLE">
     <CLASSES>
-      <root url="file://$USER_HOME$/Downloads/OPSC7311_POE-main/OPSC7311_POE-main/.gradle/caches/transforms-3/f90c45e61edc693ab8eee40c08a8829a/transformed/appcompat-resources-1.6.1/AndroidManifest.xml" />
-      <root url="file://$USER_HOME$/Downloads/OPSC7311_POE-main/OPSC7311_POE-main/.gradle/caches/transforms-3/f90c45e61edc693ab8eee40c08a8829a/transformed/appcompat-resources-1.6.1/res" />
-      <root url="jar://$USER_HOME$/Downloads/OPSC7311_POE-main/OPSC7311_POE-main/.gradle/caches/transforms-3/f90c45e61edc693ab8eee40c08a8829a/transformed/appcompat-resources-1.6.1/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/Downloads/OPSC7311_POE-main/OPSC7311_POE-main/.gradle/caches/transforms-3/60780b445349794efd4040bf604da02c/transformed/appcompat-resources-1.6.1/res" />
+      <root url="file://$USER_HOME$/Downloads/OPSC7311_POE-main/OPSC7311_POE-main/.gradle/caches/transforms-3/60780b445349794efd4040bf604da02c/transformed/appcompat-resources-1.6.1/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/Downloads/OPSC7311_POE-main/OPSC7311_POE-main/.gradle/caches/transforms-3/60780b445349794efd4040bf604da02c/transformed/appcompat-resources-1.6.1/jars/classes.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

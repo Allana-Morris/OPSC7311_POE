@@ -9,10 +9,9 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
-import java.util.Calendar
 
 class MainActivity : AppCompatActivity() {
-    private val navBar = Navbar()
+
     @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -35,7 +34,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         CalendarOpenActivity.setOnClickListener{
-            val intent3 = Intent(this, Calendar::class.java)
+            val intent3 = Intent(this, TaskCalendar::class.java)
             startActivity(intent3)
         }
 

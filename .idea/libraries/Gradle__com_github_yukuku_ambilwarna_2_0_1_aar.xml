@@ -1,9 +1,9 @@
 <component name="libraryTable">
   <library name="Gradle: com.github.yukuku:ambilwarna:2.0.1@aar" external-system-id="GRADLE">
     <CLASSES>
-      <root url="file://$USER_HOME$/Downloads/OPSC7311_POE-main/OPSC7311_POE-main/.gradle/caches/transforms-3/0aa3dc1e4e41146176c8d391d5877810/transformed/ambilwarna-2.0.1/AndroidManifest.xml" />
-      <root url="jar://$USER_HOME$/Downloads/OPSC7311_POE-main/OPSC7311_POE-main/.gradle/caches/transforms-3/0aa3dc1e4e41146176c8d391d5877810/transformed/ambilwarna-2.0.1/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/Downloads/OPSC7311_POE-main/OPSC7311_POE-main/.gradle/caches/transforms-3/0aa3dc1e4e41146176c8d391d5877810/transformed/ambilwarna-2.0.1/res" />
+      <root url="file://$USER_HOME$/Downloads/OPSC7311_POE-main/OPSC7311_POE-main/.gradle/caches/transforms-3/fb13ae653f43bc6ba15998a8e3e3c287/transformed/ambilwarna-2.0.1/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/Downloads/OPSC7311_POE-main/OPSC7311_POE-main/.gradle/caches/transforms-3/fb13ae653f43bc6ba15998a8e3e3c287/transformed/ambilwarna-2.0.1/res" />
+      <root url="jar://$USER_HOME$/Downloads/OPSC7311_POE-main/OPSC7311_POE-main/.gradle/caches/transforms-3/fb13ae653f43bc6ba15998a8e3e3c287/transformed/ambilwarna-2.0.1/jars/classes.jar!/" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.yukuku/ambilwarna/2.0.1/d3cbd0f9c7d3b249246c049829f39a3c703521ac/ambilwarna-2.0.1-javadoc.jar!/" />

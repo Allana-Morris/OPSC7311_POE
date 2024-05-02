@@ -1,6 +1,6 @@
 package com.example.opsc7311poe
 
-public class Category(
+class Category(
     var name: String,
     var icon: Int,
     var colour: Int,
