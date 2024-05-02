@@ -5,6 +5,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
@@ -22,7 +23,19 @@ public final class ActivityProfileBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
-  public final Button btnSave;
+  public final Button btnSaveProfile;
+
+  @NonNull
+  public final EditText edtEmailEdit;
+
+  @NonNull
+  public final EditText edtFullNameEdit;
+
+  @NonNull
+  public final EditText edtPasswordEdit;
+
+  @NonNull
+  public final EditText edtUserNameEdit;
 
   @NonNull
   public final View empyViews;
@@ -64,15 +77,6 @@ public final class ActivityProfileBinding implements ViewBinding {
   public final ConstraintLayout main;
 
   @NonNull
-  public final TextView textView10;
-
-  @NonNull
-  public final TextView textView11;
-
-  @NonNull
-  public final TextView textView9;
-
-  @NonNull
   public final TextView tvCalendar;
 
   @NonNull
@@ -86,9 +90,6 @@ public final class ActivityProfileBinding implements ViewBinding {
 
   @NonNull
   public final TextView tvFullName;
-
-  @NonNull
-  public final TextView tvFullNameInput;
 
   @NonNull
   public final TextView tvHome;
@@ -111,21 +112,25 @@ public final class ActivityProfileBinding implements ViewBinding {
   @NonNull
   public final TextView tvuserProfile;
 
-  private ActivityProfileBinding(@NonNull ConstraintLayout rootView, @NonNull Button btnSave,
-      @NonNull View empyViews, @NonNull ImageView imageView15, @NonNull ImageView imageView16,
+  private ActivityProfileBinding(@NonNull ConstraintLayout rootView, @NonNull Button btnSaveProfile,
+      @NonNull EditText edtEmailEdit, @NonNull EditText edtFullNameEdit,
+      @NonNull EditText edtPasswordEdit, @NonNull EditText edtUserNameEdit, @NonNull View empyViews,
+      @NonNull ImageView imageView15, @NonNull ImageView imageView16,
       @NonNull ImageView imageView17, @NonNull ImageView imageView18, @NonNull ImageView imgPhotoUp,
       @NonNull ImageView imgWhiteBackground, @NonNull ImageView ivGoogle,
       @NonNull ConstraintLayout linearLayout, @NonNull ConstraintLayout linearLayout2,
       @NonNull ConstraintLayout linearLayout4, @NonNull ConstraintLayout linearLayout5,
-      @NonNull ConstraintLayout main, @NonNull TextView textView10, @NonNull TextView textView11,
-      @NonNull TextView textView9, @NonNull TextView tvCalendar,
+      @NonNull ConstraintLayout main, @NonNull TextView tvCalendar,
       @NonNull TextView tvCustomiseProfile, @NonNull TextView tvEditusername,
-      @NonNull TextView tvEmail, @NonNull TextView tvFullName, @NonNull TextView tvFullNameInput,
-      @NonNull TextView tvHome, @NonNull TextView tvNewPhoto, @NonNull TextView tvProfile,
-      @NonNull TextView tvProfilePhoto, @NonNull TextView tvSeePassword, @NonNull TextView tvTimer,
-      @NonNull TextView tvuserProfile) {
+      @NonNull TextView tvEmail, @NonNull TextView tvFullName, @NonNull TextView tvHome,
+      @NonNull TextView tvNewPhoto, @NonNull TextView tvProfile, @NonNull TextView tvProfilePhoto,
+      @NonNull TextView tvSeePassword, @NonNull TextView tvTimer, @NonNull TextView tvuserProfile) {
     this.rootView = rootView;
-    this.btnSave = btnSave;
+    this.btnSaveProfile = btnSaveProfile;
+    this.edtEmailEdit = edtEmailEdit;
+    this.edtFullNameEdit = edtFullNameEdit;
+    this.edtPasswordEdit = edtPasswordEdit;
+    this.edtUserNameEdit = edtUserNameEdit;
     this.empyViews = empyViews;
     this.imageView15 = imageView15;
     this.imageView16 = imageView16;
@@ -139,15 +144,11 @@ public final class ActivityProfileBinding implements ViewBinding {
     this.linearLayout4 = linearLayout4;
     this.linearLayout5 = linearLayout5;
     this.main = main;
-    this.textView10 = textView10;
-    this.textView11 = textView11;
-    this.textView9 = textView9;
     this.tvCalendar = tvCalendar;
     this.tvCustomiseProfile = tvCustomiseProfile;
     this.tvEditusername = tvEditusername;
     this.tvEmail = tvEmail;
     this.tvFullName = tvFullName;
-    this.tvFullNameInput = tvFullNameInput;
     this.tvHome = tvHome;
     this.tvNewPhoto = tvNewPhoto;
     this.tvProfile = tvProfile;
@@ -184,9 +185,33 @@ public final class ActivityProfileBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.btnSave;
-      Button btnSave = ViewBindings.findChildViewById(rootView, id);
-      if (btnSave == null) {
+      id = R.id.btnSaveProfile;
+      Button btnSaveProfile = ViewBindings.findChildViewById(rootView, id);
+      if (btnSaveProfile == null) {
+        break missingId;
+      }
+
+      id = R.id.edtEmailEdit;
+      EditText edtEmailEdit = ViewBindings.findChildViewById(rootView, id);
+      if (edtEmailEdit == null) {
+        break missingId;
+      }
+
+      id = R.id.edtFullNameEdit;
+      EditText edtFullNameEdit = ViewBindings.findChildViewById(rootView, id);
+      if (edtFullNameEdit == null) {
+        break missingId;
+      }
+
+      id = R.id.edtPasswordEdit;
+      EditText edtPasswordEdit = ViewBindings.findChildViewById(rootView, id);
+      if (edtPasswordEdit == null) {
+        break missingId;
+      }
+
+      id = R.id.edtUserNameEdit;
+      EditText edtUserNameEdit = ViewBindings.findChildViewById(rootView, id);
+      if (edtUserNameEdit == null) {
         break missingId;
       }
 
@@ -264,24 +289,6 @@ public final class ActivityProfileBinding implements ViewBinding {
 
       ConstraintLayout main = (ConstraintLayout) rootView;
 
-      id = R.id.textView10;
-      TextView textView10 = ViewBindings.findChildViewById(rootView, id);
-      if (textView10 == null) {
-        break missingId;
-      }
-
-      id = R.id.textView11;
-      TextView textView11 = ViewBindings.findChildViewById(rootView, id);
-      if (textView11 == null) {
-        break missingId;
-      }
-
-      id = R.id.textView9;
-      TextView textView9 = ViewBindings.findChildViewById(rootView, id);
-      if (textView9 == null) {
-        break missingId;
-      }
-
       id = R.id.tv_calendar;
       TextView tvCalendar = ViewBindings.findChildViewById(rootView, id);
       if (tvCalendar == null) {
@@ -309,12 +316,6 @@ public final class ActivityProfileBinding implements ViewBinding {
       id = R.id.tvFullName;
       TextView tvFullName = ViewBindings.findChildViewById(rootView, id);
       if (tvFullName == null) {
-        break missingId;
-      }
-
-      id = R.id.tvFullNameInput;
-      TextView tvFullNameInput = ViewBindings.findChildViewById(rootView, id);
-      if (tvFullNameInput == null) {
         break missingId;
       }
 
@@ -360,12 +361,12 @@ public final class ActivityProfileBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityProfileBinding((ConstraintLayout) rootView, btnSave, empyViews,
-          imageView15, imageView16, imageView17, imageView18, imgPhotoUp, imgWhiteBackground,
-          ivGoogle, linearLayout, linearLayout2, linearLayout4, linearLayout5, main, textView10,
-          textView11, textView9, tvCalendar, tvCustomiseProfile, tvEditusername, tvEmail,
-          tvFullName, tvFullNameInput, tvHome, tvNewPhoto, tvProfile, tvProfilePhoto, tvSeePassword,
-          tvTimer, tvuserProfile);
+      return new ActivityProfileBinding((ConstraintLayout) rootView, btnSaveProfile, edtEmailEdit,
+          edtFullNameEdit, edtPasswordEdit, edtUserNameEdit, empyViews, imageView15, imageView16,
+          imageView17, imageView18, imgPhotoUp, imgWhiteBackground, ivGoogle, linearLayout,
+          linearLayout2, linearLayout4, linearLayout5, main, tvCalendar, tvCustomiseProfile,
+          tvEditusername, tvEmail, tvFullName, tvHome, tvNewPhoto, tvProfile, tvProfilePhoto,
+          tvSeePassword, tvTimer, tvuserProfile);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
