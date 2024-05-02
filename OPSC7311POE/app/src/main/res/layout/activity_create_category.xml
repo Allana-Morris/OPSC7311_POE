@@ -5,8 +5,8 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".create_category"
-    android:background="@drawable/skyblue">
+    android:background="@drawable/skyblue"
+    tools:context=".create_category">
 
     <View
         android:id="@+id/view"
@@ -348,25 +348,29 @@
         android:id="@+id/ett_Min_Goal"
         android:layout_width="80dp"
         android:layout_height="50dp"
+        android:layout_marginEnd="149dp"
         android:ems="10"
         android:inputType="time"
-        tools:layout_editor_absoluteX="182dp"
-        tools:layout_editor_absoluteY="455dp" />
+        android:clickable="true"
+        app:layout_constraintBottom_toBottomOf="@+id/view12"
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <EditText
         android:id="@+id/ett_Max_Goal"
         android:layout_width="80dp"
         android:layout_height="50dp"
+        android:layout_marginEnd="29dp"
+        android:clickable="true"
+        android:editable="false"
         android:ems="10"
         android:inputType="time"
-        tools:layout_editor_absoluteX="302dp"
-        tools:layout_editor_absoluteY="455dp" />
+        app:layout_constraintBottom_toBottomOf="@+id/view12"
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <TextView
         android:id="@+id/tv_Time_Dash"
         android:layout_width="25dp"
         android:layout_height="20dp"
-        android:layout_marginBottom="8dp"
         android:gravity="center"
         android:text="@string/time_dash"
         android:textSize="24sp"

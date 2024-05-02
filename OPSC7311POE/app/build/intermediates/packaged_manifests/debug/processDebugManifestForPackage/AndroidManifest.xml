@@ -57,7 +57,7 @@
         <activity android:name="com.example.opsc7311poe.Login" />
         <activity android:name="com.example.opsc7311poe.Register" />
         <activity android:name="com.example.opsc7311poe.MainActivity" />
-        <activity android:name="com.example.opsc7311poe.Calenda" />
+        <activity android:name="com.example.opsc7311poe.Calendar" />
 
         <provider
             android:name="androidx.startup.InitializationProvider"

@@ -24,12 +24,13 @@ class validation
         return UserList.users.any { it.username == input }
     }
 
-    fun parseTimeToHours(enteredTime: LocalTime): Double{
+    fun parseTimeToHours(enteredTime: LocalTime): Double {
         val hours = enteredTime.hour
         val minutes = enteredTime.minute
         require(hours >= 0 && minutes >= 0 && minutes < 60) { "Invalid time format" }
         return hours + minutes / 60.0
     }
+
 
 
 }

@@ -1,12 +1,14 @@
 package com.example.opsc7311poe
 
 import android.annotation.SuppressLint
+import android.app.TimePickerDialog
 import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import android.widget.EditText
 import android.widget.ImageView
 import android.widget.TextView
+import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -14,6 +16,8 @@ import androidx.core.view.WindowInsetsCompat
 import yuku.ambilwarna.AmbilWarnaDialog
 import yuku.ambilwarna.AmbilWarnaDialog.OnAmbilWarnaListener
 import java.time.LocalTime
+import java.util.*
+
 
 class create_category : AppCompatActivity() {
     private val navBar = Navbar()
@@ -21,32 +25,78 @@ class create_category : AppCompatActivity() {
 
     @SuppressLint("MissingInflatedId")
     private var mDefaultColour = 0
-    private var ivColourPicker: ImageView = findViewById(R.id.iv_Pick_Colour)
-    private var ivColourPreview: View = findViewById(R.id.iv_colourPreview)
+    private lateinit var ivColourPicker: ImageView
+    private lateinit var ivColourPreview: View
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_create_category)
 
+        // Initialize views after setContentView()
+        ivColourPicker = findViewById(R.id.iv_Pick_Colour)
+        ivColourPreview = findViewById(R.id.iv_colourPreview)
+
         val AddCategory = findViewById<TextView>(R.id.tvAddTask)
+        val catMinHours : TextView = findViewById(R.id.ett_Min_Goal)
+        val catMaxHours : TextView = findViewById(R.id.ett_Max_Goal)
 
         AddCategory.setOnClickListener(){
-            val catName = findViewById<EditText>(R.id.edtTaskName)
+            val catName : TextView = findViewById(R.id.edtName)
             val catColor = mDefaultColour
             val catIcon = 0
-            val catMinHours = findViewById<EditText>(R.id.ett_Min_Goal)
-            val catMaxHours = findViewById<EditText>(R.id.ett_Max_Goal)
+
 
             var cateName = catName.text.toString()
             var minHours = catMinHours.text.toString()
             var maxHours = catMaxHours.text.toString()
-            var catMin = vali.parseTimeToHours(LocalTime.parse(minHours))
-            var catMax = vali.parseTimeToHours(LocalTime.parse(maxHours))
+            var catMin = vali.parseTimeToHours(LocalTime.parse(minHours + ":00"))
+            var catMax = vali.parseTimeToHours(LocalTime.parse(maxHours+ ":00"))
 
-           val cate = Category(cateName, catIcon, catColor, catMin, catMax)
+            val cate = Category(cateName, catIcon, catColor, catMin, catMax)
 
             val intent = Intent(this, ViewData::class.java)
             startActivity(intent)
+        }
+        catMinHours.setOnClickListener {
+
+
+            Toast.makeText(this, "it clicked", Toast.LENGTH_SHORT).show()
+            val calendar = java.util.Calendar.getInstance()
+            val hour = calendar.get(java.util.Calendar.HOUR_OF_DAY)
+            val minute = calendar.get(java.util.Calendar.MINUTE)
+
+            val timePickerDialog = TimePickerDialog(
+                this,
+                TimePickerDialog.OnTimeSetListener { _, selectedHour, selectedMinute ->
+                    val selectedTime = LocalTime.of(selectedHour, selectedMinute)
+                    catMinHours.text = selectedTime.toString()
+                },
+                hour,
+                minute,
+                true
+            )
+            timePickerDialog.show()
+        }
+        catMaxHours.setOnClickListener {
+
+
+            Toast.makeText(this, "it clicked", Toast.LENGTH_SHORT).show()
+            val calendar = java.util.Calendar.getInstance()
+            val hour = calendar.get(java.util.Calendar.HOUR_OF_DAY)
+            val minute = calendar.get(java.util.Calendar.MINUTE)
+
+            val timePickerDialog = TimePickerDialog(
+                this,
+                TimePickerDialog.OnTimeSetListener { _, selectedHour, selectedMinute ->
+                    val selectedTime = LocalTime.of(selectedHour, selectedMinute)
+                    catMaxHours.text = selectedTime.toString()
+                },
+                hour,
+                minute,
+                true
+            )
+            timePickerDialog.show()
         }
         val HomeOpenActivity = findViewById<TextView>(R.id.tv_Home)
         val ProfileOpenActivity = findViewById<TextView>(R.id.tv_Profile)
@@ -81,10 +131,9 @@ class create_category : AppCompatActivity() {
         mDefaultColour = 0
 
         ivColourPicker.setOnClickListener {
-            fun onClick(v: View?) {
-                openColorPickerDialogue()
-            }
+            openColorPickerDialogue()
         }
+
 
 
     }
@@ -102,6 +151,8 @@ class create_category : AppCompatActivity() {
             }
         })
         colorPickerDialogue.show()
+        Toast.makeText(this, "it clicked", Toast.LENGTH_SHORT).show()
+
     }
 
 }

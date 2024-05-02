@@ -188,6 +188,10 @@
         "source": "C:\\Users\\Sven\\.gradle\\daemon\\8.4\\com.example.opsc7311poe.app-main-37:\\drawable\\round_btn.xml"
     },
     {
+        "merged": "com.example.opsc7311poe.app-debug-35:/layout_activity_create_category.xml.flat",
+        "source": "com.example.opsc7311poe.app-main-37:/layout/activity_create_category.xml"
+    },
+    {
         "merged": "C:\\Users\\Sven\\.gradle\\daemon\\8.4\\com.example.opsc7311poe.app-debug-35:\\drawable_navprofile.png.flat",
         "source": "C:\\Users\\Sven\\.gradle\\daemon\\8.4\\com.example.opsc7311poe.app-main-37:\\drawable\\navprofile.png"
     },
@@ -246,10 +250,6 @@
     {
         "merged": "C:\\Users\\Sven\\.gradle\\daemon\\8.4\\com.example.opsc7311poe.app-debug-35:\\drawable_homebtn.png.flat",
         "source": "C:\\Users\\Sven\\.gradle\\daemon\\8.4\\com.example.opsc7311poe.app-main-37:\\drawable\\homebtn.png"
-    },
-    {
-        "merged": "com.example.opsc7311poe.app-debug-35:/layout_activity_calendar.xml.flat",
-        "source": "com.example.opsc7311poe.app-main-37:/layout/activity_calendar.xml"
     },
     {
         "merged": "C:\\Users\\Sven\\.gradle\\daemon\\8.4\\com.example.opsc7311poe.app-debug-35:\\drawable_ic_baseline_info_24.xml.flat",
