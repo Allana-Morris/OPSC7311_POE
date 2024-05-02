@@ -42,7 +42,6 @@
         <activity android:name=".MainActivity" />
         <activity android:name=".Profile"/>
         <activity android:name=".Calendar"/>
-        <activity android:name=".Timer"/>
     </application>
 
 </manifest>

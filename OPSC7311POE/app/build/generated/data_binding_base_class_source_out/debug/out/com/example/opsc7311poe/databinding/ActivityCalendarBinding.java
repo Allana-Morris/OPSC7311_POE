@@ -65,9 +65,6 @@ public final class ActivityCalendarBinding implements ViewBinding {
   public final ConstraintLayout main;
 
   @NonNull
-  public final TextView monthDayText;
-
-  @NonNull
   public final ScrollView scrollView2;
 
   @NonNull
@@ -103,11 +100,10 @@ public final class ActivityCalendarBinding implements ViewBinding {
       @NonNull ConstraintLayout linearLayout, @NonNull ConstraintLayout linearLayout2,
       @NonNull ConstraintLayout linearLayout3, @NonNull ConstraintLayout linearLayout4,
       @NonNull ConstraintLayout linearLayout5, @NonNull ConstraintLayout linearLayout6,
-      @NonNull ListView listView, @NonNull ConstraintLayout main, @NonNull TextView monthDayText,
-      @NonNull ScrollView scrollView2, @NonNull TextView tvAddEvent, @NonNull TextView tvBack,
-      @NonNull TextView tvCalendar, @NonNull TextView tvForward, @NonNull TextView tvHome,
-      @NonNull TextView tvProfile, @NonNull TextView tvTimer, @NonNull View vEvent,
-      @NonNull View view) {
+      @NonNull ListView listView, @NonNull ConstraintLayout main, @NonNull ScrollView scrollView2,
+      @NonNull TextView tvAddEvent, @NonNull TextView tvBack, @NonNull TextView tvCalendar,
+      @NonNull TextView tvForward, @NonNull TextView tvHome, @NonNull TextView tvProfile,
+      @NonNull TextView tvTimer, @NonNull View vEvent, @NonNull View view) {
     this.rootView = rootView;
     this.dayOfWeekTV = dayOfWeekTV;
     this.imageView = imageView;
@@ -123,7 +119,6 @@ public final class ActivityCalendarBinding implements ViewBinding {
     this.linearLayout6 = linearLayout6;
     this.listView = listView;
     this.main = main;
-    this.monthDayText = monthDayText;
     this.scrollView2 = scrollView2;
     this.tvAddEvent = tvAddEvent;
     this.tvBack = tvBack;
@@ -243,12 +238,6 @@ public final class ActivityCalendarBinding implements ViewBinding {
 
       ConstraintLayout main = (ConstraintLayout) rootView;
 
-      id = R.id.monthDayText;
-      TextView monthDayText = ViewBindings.findChildViewById(rootView, id);
-      if (monthDayText == null) {
-        break missingId;
-      }
-
       id = R.id.scrollView2;
       ScrollView scrollView2 = ViewBindings.findChildViewById(rootView, id);
       if (scrollView2 == null) {
@@ -311,9 +300,8 @@ public final class ActivityCalendarBinding implements ViewBinding {
 
       return new ActivityCalendarBinding((ConstraintLayout) rootView, dayOfWeekTV, imageView,
           imageView15, imageView16, imageView17, imageView18, linearLayout, linearLayout2,
-          linearLayout3, linearLayout4, linearLayout5, linearLayout6, listView, main, monthDayText,
-          scrollView2, tvAddEvent, tvBack, tvCalendar, tvForward, tvHome, tvProfile, tvTimer,
-          vEvent, view);
+          linearLayout3, linearLayout4, linearLayout5, linearLayout6, listView, main, scrollView2,
+          tvAddEvent, tvBack, tvCalendar, tvForward, tvHome, tvProfile, tvTimer, vEvent, view);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

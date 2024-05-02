@@ -55,7 +55,7 @@ class Timer : AppCompatActivity() {
         }
 
         //creating a fake category and task seeing as we have no way of inputting stuff n things
-        val selectedCat = Category("Work", 1, 2.0, 4.0)
+        val selectedCat = Category("Work", 1, 0,2.0, 4.0)
         //adding to the user category hashmap
         SessionUser.currentUser?.categories?.put(selectedCat.name, selectedCat)
         //adding the task to the category for user

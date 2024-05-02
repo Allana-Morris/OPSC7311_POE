@@ -56,7 +56,6 @@
         <activity android:name="com.example.opsc7311poe.MainActivity" />
         <activity android:name="com.example.opsc7311poe.Profile" />
         <activity android:name="com.example.opsc7311poe.Calendar" />
-        <activity android:name="com.example.opsc7311poe.Timer" />
 
         <provider
             android:name="androidx.startup.InitializationProvider"
