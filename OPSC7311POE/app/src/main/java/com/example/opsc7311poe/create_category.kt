@@ -2,6 +2,7 @@ package com.example.opsc7311poe
 
 import android.annotation.SuppressLint
 import android.app.TimePickerDialog
+import android.content.Context
 import android.content.Intent
 import android.os.Bundle
 import android.view.View
@@ -11,9 +12,12 @@ import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
+import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import androidx.recyclerview.widget.GridLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import yuku.ambilwarna.AmbilWarnaDialog
 import yuku.ambilwarna.AmbilWarnaDialog.OnAmbilWarnaListener
 import java.time.LocalTime
@@ -40,7 +44,7 @@ class create_category : AppCompatActivity() {
         val AddCategory = findViewById<TextView>(R.id.tvAddTask)
         val catMinHours : TextView = findViewById(R.id.ett_Min_Goal)
         val catMaxHours : TextView = findViewById(R.id.ett_Max_Goal)
-
+        val iconPicker : ImageButton = findViewById(R.id.ib_Icon)
         AddCategory.setOnClickListener(){
             val catName : TextView = findViewById(R.id.edtName)
             val catColor = mDefaultColour
@@ -58,6 +62,12 @@ class create_category : AppCompatActivity() {
             val intent = Intent(this, ViewData::class.java)
             startActivity(intent)
         }
+
+        //Icon Picker
+        iconPicker.setOnClickListener{
+            showIconPickerDialog()
+        }
+
         catMinHours.setOnClickListener {
 
 
@@ -98,6 +108,7 @@ class create_category : AppCompatActivity() {
             )
             timePickerDialog.show()
         }
+
         val HomeOpenActivity = findViewById<ImageButton>(R.id.ib_Home)
         val ProfileOpenActivity = findViewById<ImageButton>(R.id.ib_Profile)
         val CalendarOpenActivity = findViewById<ImageButton>(R.id.ib_Calendar)
@@ -151,6 +162,50 @@ class create_category : AppCompatActivity() {
         colorPickerDialogue.show()
         Toast.makeText(this, "it clicked", Toast.LENGTH_SHORT).show()
 
+    }
+    //Get Icons from IconPicker Folder into Mutable List of Ints
+    @SuppressLint("DiscouragedApi")
+    fun getAllIcons(context: Context): List<Int>{
+        val iconResources = mutableListOf<Int>()
+        val packageName = context.packageName
+        val resources = context.resources
+        val iconDir = resources.getIdentifier("iconpicker", "drawable", packageName)
+        val iconNames = resources.getResourceName(iconDir).split("/")
+        val iconPrefix = iconNames.first() + "/"
+
+        val iconIds = resources.getIdentifier(iconPrefix, null, null)
+        val iconFileNames = resources.getResourceEntryName(iconIds)
+
+        val field = R.drawable::class.java.fields
+        for (res in field) {
+            if (res.name.startsWith(iconFileNames)){
+                iconResources.add(res.getInt(null))
+            }
+        }
+        return iconResources
+    }
+
+    fun showIconPickerDialog() {
+        val icons = getAllIcons(this)
+        val dialogView = layoutInflater.inflate(R.layout.icon_picker_dialog, null)
+        val iconView = layoutInflater.inflate(R.layout.icon_item, null)
+        val iconRecyclerView = dialogView.findViewById<RecyclerView>(R.id.iconRecyclerView)
+        val imageView = iconView.findViewById<ImageView>(R.id.iconImageView)
+        iconRecyclerView.layoutManager = GridLayoutManager(this, 3) // Adjust span count as needed
+        iconRecyclerView.adapter = IconAdapter(icons) { selectedIconResId ->
+            // Handle the selected icon here
+            // For example, set it to an ImageView
+            imageView.setImageResource(selectedIconResId)
+        }
+
+        val dialog = AlertDialog.Builder(this)
+            .setView(dialogView)
+            .setTitle("Select an Icon")
+            .setPositiveButton("OK", null)
+            .setNegativeButton("Cancel", null)
+            .create()
+
+        dialog.show()
     }
 
 }
