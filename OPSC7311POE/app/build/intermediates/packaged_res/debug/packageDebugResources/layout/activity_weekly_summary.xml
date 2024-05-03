@@ -57,66 +57,15 @@
         app:layout_constraintVertical_bias="0.664" />
 
     <TextView
-        android:id="@+id/tvChooseAWeek"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="sans-serif-medium"
-        android:text="@string/chooseW"
-        android:textSize="18sp"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="374dp" />
-
-    <TextView
-        android:id="@+id/tvGraph"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="180dp"
-        android:fontFamily="sans-serif-medium"
-        android:text="@string/choose"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toTopOf="@+id/tvgenerate"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="MissingConstraints" />
-
-    <ImageView
-        android:id="@+id/img_chooseDate"
-        android:layout_width="40dp"
-        android:layout_height="43dp"
-        app:srcCompat="@drawable/baseline_calendar_month_24"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="303dp"
-        tools:layout_editor_absoluteY="365dp" />
-
-    <ImageView
-        android:id="@+id/img_piechart"
-        android:layout_width="120dp"
-        android:layout_height="93dp"
-        app:srcCompat="@drawable/piechart"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="36dp"
-        tools:layout_editor_absoluteY="531dp" />
-
-    <ImageView
-        android:id="@+id/img_bar"
-        android:layout_width="120dp"
-        android:layout_height="93dp"
-        app:srcCompat="@drawable/bar"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="275dp"
-        tools:layout_editor_absoluteY="531dp" />
-
-    <TextView
         android:id="@+id/tvPie"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="sans-serif-medium"
         android:text="@string/pie"
         android:textSize="18sp"
-        app:layout_constraintTop_toBottomOf="@+id/img_piechart"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="53dp" />
+        tools:layout_editor_absoluteX="53dp"
+        tools:layout_editor_absoluteY="624dp" />
 
     <TextView
         android:id="@+id/tvBar"
@@ -125,9 +74,9 @@
         android:fontFamily="sans-serif-medium"
         android:text="@string/bar"
         android:textSize="18sp"
-        app:layout_constraintTop_toBottomOf="@+id/img_bar"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="292dp" />
+        tools:layout_editor_absoluteX="292dp"
+        tools:layout_editor_absoluteY="624dp" />
 
     <TextView
         android:id="@+id/tvgenerate"
