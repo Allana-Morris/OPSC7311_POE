@@ -3304,6 +3304,7 @@ id beginning
 id bestChoice
 id blocking
 id bottom
+id bottomNavigationView
 id bounce
 id bounceBoth
 id bounceEnd
@@ -3740,8 +3741,6 @@ id textView
 id textView32
 id textView34
 id textView5
-id textView7
-id textView8
 id textView99
 id text_input_end_icon
 id text_input_error_icon
@@ -3777,6 +3776,7 @@ id tvChooseAWeek
 id tvCustomiseProfile
 id tvEditusername
 id tvEmail
+id tvEndDate
 id tvEndTime
 id tvEntryDate
 id tvEntryTime
@@ -3786,6 +3786,7 @@ id tvNewPhoto
 id tvPie
 id tvProfilePhoto
 id tvSeePassword
+id tvStartDate
 id tvStartTime
 id tvSummary
 id tvTaskSpinner
