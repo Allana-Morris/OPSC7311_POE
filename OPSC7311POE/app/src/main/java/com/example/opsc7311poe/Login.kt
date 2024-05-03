@@ -15,18 +15,24 @@ class Login : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_login)
+        //Initialization of sign in components
         var usernameTextView: TextView = findViewById(R.id.tv_Username)
         var passwordTextView: TextView = findViewById(R.id.tv_Password)
         val buttonOpenActivity = findViewById<TextView>(R.id.tv_Open_Register)
+        val buttonLogin = findViewById<Button>(R.id.btn_Login)
+
+        //onClickListener used to open Register Page
         buttonOpenActivity.setOnClickListener {
             val intent = Intent(this, Register::class.java)
             startActivity(intent)
         }
-        val buttonLogin = findViewById<Button>(R.id.btn_Login)
+
+        //onClickListener used to Login
         buttonLogin.setOnClickListener {
             //Login code - Checks and Stuffs
             val userName = usernameTextView.text.toString()
             val password = passwordTextView.text.toString()
+            //Checks if Username and Password exist in Userlist and is a Valid input
             if (authenticate(userName, password))
             {
                 var loggedUser = getUser(userName)
@@ -40,9 +46,12 @@ class Login : AppCompatActivity() {
         }
     }
 
+    //Authenticates input using Validation class
     private fun authenticate(username: String, password: String): Boolean {
         return UserList.users.any { it.username == username && it.password == password }
     }
+
+    //Gets User Details from User List
     private fun getUser(uName: String): User?
     {
         for (user in UserList.users) {

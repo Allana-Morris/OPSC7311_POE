@@ -29,6 +29,7 @@ class Timer : AppCompatActivity() {
         setContentView(R.layout.activity_timer)
         edtTime.setText("00:00:00")
 
+
         edtTime = findViewById(R.id.edtClock)
         btnStart = findViewById(R.id.btnStart)
         btnStop = findViewById(R.id.btnStop)

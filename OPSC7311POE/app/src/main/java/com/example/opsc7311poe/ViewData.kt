@@ -12,60 +12,68 @@ import androidx.appcompat.app.AppCompatActivity
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 
 class ViewData : AppCompatActivity() {
-   // private val navBar = Navbar()
     @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
        setContentView(R.layout.activity_view_tasks)
+       //Variables for each button on Navbar™
        val HomeOpenActivity = findViewById<ImageButton>(R.id.ib_Home)
        val ProfileOpenActivity = findViewById<ImageButton>(R.id.ib_Profile)
        val CalendarOpenActivity = findViewById<ImageButton>(R.id.ib_Calendar)
        val TimerOpenActivity = findViewById<ImageButton>(R.id.ib_Timer)
 
+       //Intent to open Home Page
        HomeOpenActivity.setOnClickListener{
            val intent2 = Intent(this, MainActivity::class.java)
            startActivity(intent2)
        }
 
+       //Intent to open Profile
        ProfileOpenActivity.setOnClickListener{
            val intent = Intent(this, Profile::class.java)
            startActivity(intent)
        }
 /*
+        //Intent to open Calendar
        CalendarOpenActivity.setOnClickListener{
            val intent3 = Intent(this, TaskCalendar::class.java)
            startActivity(intent3)
        }
 */
+       //Intent to Open Timer
        TimerOpenActivity.setOnClickListener{
            val intent4 = Intent(this, Timer::class.java)
            startActivity(intent4)
        }
 
+       //Declaration of Create Task Button
        val btnCreate : ImageButton = findViewById(R.id.createTask)
 
-       //  Set OnClickListener for the button
+       //  Set OnClickListener for the Task Create button
         btnCreate.setOnClickListener {
             val intent = Intent(this, InsertData::class.java)
             startActivity(intent)
         }
 
+       //Declaration of Create Category Button
        val btnCat : ImageButton = findViewById(R.id.createCat)
 
+       // Set onClickListener for the Category Create button
        btnCat.setOnClickListener {
            val intent2 = Intent(this, create_category::class.java)
            startActivity(intent2)
        }
 
 
-        //this is the fetching user task info section ---------------------------------------------
-
+      //Declaration of Layout where data will be outputted into
         val layout: LinearLayout = findViewById(R.id.vertLayout)
 
+       //For Each loop for Categories
        SessionUser.currentUser?.categories?.forEach{(categoryName, category) ->
         //this is a for each loop to loop through all the retrieved tasks
         category.tasks?.forEach { (taskName, task) ->
 
+            //Show Message - Toast Addition
             Toast.makeText(this, "Task Name: $taskName", Toast.LENGTH_SHORT).show()
 
             // Inflate the layout task_listing.xml for each task and add it to the LinearLayout

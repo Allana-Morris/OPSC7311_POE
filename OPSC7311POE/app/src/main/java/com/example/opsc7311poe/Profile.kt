@@ -8,44 +8,52 @@ import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 
 class Profile : AppCompatActivity() {
-   // private val navBar = Navbar()
+    // private val navBar = Navbar()
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_profile)
-       val HomeOpenActivity = findViewById<ImageButton>(R.id.ib_Home)
-       val ProfileOpenActivity = findViewById<ImageButton>(R.id.ib_Profile)
-       val CalendarOpenActivity = findViewById<ImageButton>(R.id.ib_Calendar)
-       val TimerOpenActivity = findViewById<ImageButton>(R.id.ib_Timer)
 
-       HomeOpenActivity.setOnClickListener{
-           val intent2 = Intent(this, MainActivity::class.java)
-           startActivity(intent2)
-       }
+        //Variables for each button on Navbar™
+        val HomeOpenActivity = findViewById<ImageButton>(R.id.ib_Home)
+        val ProfileOpenActivity = findViewById<ImageButton>(R.id.ib_Profile)
+        val CalendarOpenActivity = findViewById<ImageButton>(R.id.ib_Calendar)
+        val TimerOpenActivity = findViewById<ImageButton>(R.id.ib_Timer)
 
-       ProfileOpenActivity.setOnClickListener{
-           val intent = Intent(this, Profile::class.java)
-           startActivity(intent)
-       }
-       /*
-              CalendarOpenActivity.setOnClickListener{
-                  val intent3 = Intent(this, TaskCalendar::class.java)
-                  startActivity(intent3)
-              }
-       */
-       TimerOpenActivity.setOnClickListener{
-           val intent4 = Intent(this, Timer::class.java)
-           startActivity(intent4)
-       }
+        //Intent to open Home Page
+        HomeOpenActivity.setOnClickListener {
+            val intent2 = Intent(this, MainActivity::class.java)
+            startActivity(intent2)
+        }
 
-       val nameEdit : TextView = findViewById(R.id.edtFullNameEdit)
-        val emailEdit : TextView = findViewById(R.id.edtEmailEdit)
-        val userNameEdit : TextView = findViewById(R.id.edtUserNameEdit)
-        val PassEdit : TextView = findViewById(R.id.edtPasswordEdit)
+        //Intent to open Profile
+        ProfileOpenActivity.setOnClickListener {
+            val intent = Intent(this, Profile::class.java)
+            startActivity(intent)
+        }
+        /*
+        //Intent to open Calendar
+               CalendarOpenActivity.setOnClickListener{
+                   val intent3 = Intent(this, TaskCalendar::class.java)
+                   startActivity(intent3)
+               }
+        */
+        //Intent to Open Timer
+        TimerOpenActivity.setOnClickListener {
+            val intent4 = Intent(this, Timer::class.java)
+            startActivity(intent4)
+        }
 
-        val saveBut : Button = findViewById(R.id.btnSaveProfile)
+        //Initialisation of Inputs
+        val nameEdit: TextView = findViewById(R.id.edtFullNameEdit)
+        val emailEdit: TextView = findViewById(R.id.edtEmailEdit)
+        val userNameEdit: TextView = findViewById(R.id.edtUserNameEdit)
+        val PassEdit: TextView = findViewById(R.id.edtPasswordEdit)
+
+        val saveBut: Button = findViewById(R.id.btnSaveProfile)
 
         setContent()
 
+        //onClickListener for Save Button
         saveBut.setOnClickListener {
             val changedUsername = nameEdit.text.toString()
             val changedEmail = emailEdit.text.toString()
@@ -72,17 +80,16 @@ class Profile : AppCompatActivity() {
         }
 
 
-
     }
 
-    fun setContent()
-    {
-        val nameEdit : TextView = findViewById(R.id.edtFullNameEdit)
-        val emailEdit : TextView = findViewById(R.id.edtEmailEdit)
-        val userNameEdit : TextView = findViewById(R.id.edtUserNameEdit)
-        val PassEdit : TextView = findViewById(R.id.edtPasswordEdit)
+    //Method to update Users data using captured inputs
+    fun setContent() {
+        val nameEdit: TextView = findViewById(R.id.edtFullNameEdit)
+        val emailEdit: TextView = findViewById(R.id.edtEmailEdit)
+        val userNameEdit: TextView = findViewById(R.id.edtUserNameEdit)
+        val PassEdit: TextView = findViewById(R.id.edtPasswordEdit)
 
-        nameEdit.setText( SessionUser.currentUser?.fullName)
+        nameEdit.setText(SessionUser.currentUser?.fullName)
         emailEdit.setText(SessionUser.currentUser?.email)
         userNameEdit.setText(SessionUser.currentUser?.username)
         PassEdit.setText(SessionUser.currentUser?.password)

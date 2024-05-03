@@ -1,7 +1,7 @@
 package com.example.opsc7311poe
 
 import java.util.Date
-
+//Object storing details about each task created by User
 class Task(
     var name : String,
     var description: String,

@@ -1,5 +1,5 @@
 package com.example.opsc7311poe
-
+//Object used to store details about each category
 class Category(
     var name: String,
     var icon: Int,
@@ -11,5 +11,6 @@ class Category(
     // HashMap to store tasks for this category
     val tasks: HashMap<String, Task> = HashMap()
 
-    constructor() : this("", 0,0,0.0,0.0)
+    //Constructor used to reference Category Object
+    constructor() : this("", 0, 0, 0.0, 0.0)
 }

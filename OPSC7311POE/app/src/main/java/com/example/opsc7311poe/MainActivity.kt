@@ -18,27 +18,31 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_main)
-
+        //Variables for each button on Navbar™
         val HomeOpenActivity = findViewById<ImageButton>(R.id.ib_Home)
         val ProfileOpenActivity = findViewById<ImageButton>(R.id.ib_Profile)
         val CalendarOpenActivity = findViewById<ImageButton>(R.id.ib_Calendar)
         val TimerOpenActivity = findViewById<ImageButton>(R.id.ib_Timer)
 
+        //Intent to open Home Page
         HomeOpenActivity.setOnClickListener{
             val intent2 = Intent(this, MainActivity::class.java)
             startActivity(intent2)
         }
 
+        //Intent to open Profile
         ProfileOpenActivity.setOnClickListener{
             val intent = Intent(this, Profile::class.java)
             startActivity(intent)
         }
 /*
+        //Intent to open Calendar
         CalendarOpenActivity.setOnClickListener{
             val intent3 = Intent(this, TaskCalendar::class.java)
             startActivity(intent3)
         }
 */
+        //Intent to Open Timer
         TimerOpenActivity.setOnClickListener{
             val intent4 = Intent(this, Timer::class.java)
             startActivity(intent4)
@@ -50,16 +54,19 @@ class MainActivity : AppCompatActivity() {
         val activityViewTask = findViewById<Button>(R.id.btnViewTasks)
         val activityViewEntries = findViewById<Button>(R.id.btnViewEntries)
 
+        //onClickListener to open InsertData page
         activityCreateTask.setOnClickListener{
             val Taskintent = Intent(this, InsertData::class.java)
             startActivity(Taskintent)
         }
 
+        //onClickListener to open Create Category page
         activityCreateCategory.setOnClickListener{
             val Catintent = Intent(this, create_category::class.java)
             startActivity(Catintent)
         }
 
+        //onClickListener to open Enter Timesheet page
         activityCreateEntry.setOnClickListener {
             val Entryintent = Intent(this, CreateEntry::class.java)
             startActivity(Entryintent)
@@ -75,6 +82,7 @@ class MainActivity : AppCompatActivity() {
             startActivity(ViewEntriesintent)
         }
 
+        //Code used to Welcome User once logged in
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
