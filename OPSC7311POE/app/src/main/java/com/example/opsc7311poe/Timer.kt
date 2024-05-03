@@ -1,4 +1,5 @@
 package com.example.opsc7311poe
+
 import android.content.Intent
 import android.os.Bundle
 import android.os.Handler
@@ -13,7 +14,6 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import java.sql.Time
 import java.util.*
-
 
 class Timer : AppCompatActivity() {
     private lateinit var edtTime: TextClock

@@ -31,52 +31,60 @@
 
     <Spinner
         android:id="@+id/spinCat"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="130dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginBottom="50dp"
         android:background="@drawable/roundstyle"
         android:backgroundTint="@color/white"
         android:padding="30dp"
-        tools:layout_editor_absoluteX="55dp"
-        tools:layout_editor_absoluteY="156dp" />
-
+        app:layout_constraintBottom_toTopOf="@+id/btnStart"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Spinner
         android:id="@+id/spinTask"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="130dp"
+        android:layout_height="100dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="50dp"
         android:background="@drawable/roundstyle"
         android:backgroundTint="@color/white"
         android:padding="30dp"
-        tools:layout_editor_absoluteX="252dp"
-        tools:layout_editor_absoluteY="156dp" />
+        app:layout_constraintBottom_toTopOf="@+id/btnStop"
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <Button
         android:id="@+id/btnStart"
         android:layout_width="130dp"
         android:layout_height="70dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginBottom="36dp"
         android:background="@drawable/roundstyle2"
         android:backgroundTint="@color/black"
         android:text="@string/start"
         android:textColor="@color/green"
-        tools:layout_editor_absoluteX="47dp"
-        tools:layout_editor_absoluteY="296dp" />
+        app:layout_constraintBottom_toTopOf="@+id/edtClock"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/btnStop"
         android:layout_width="130dp"
         android:layout_height="70dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="36dp"
         android:background="@drawable/roundstyle2"
         android:backgroundTint="@color/black"
         android:text="@string/stop"
         android:textColor="@color/Red"
-        tools:layout_editor_absoluteX="257dp"
-        tools:layout_editor_absoluteY="292dp" />
+        app:layout_constraintBottom_toTopOf="@+id/edtClock"
+        app:layout_constraintEnd_toEndOf="parent" />
 
 
     <TextClock
         android:id="@+id/edtClock"
         android:layout_width="345dp"
         android:layout_height="59dp"
+        android:layout_marginTop="288dp"
         android:background="@drawable/roundstyle"
         android:backgroundTint="@color/black"
         android:fontFamily="sans-serif-medium"
@@ -84,26 +92,30 @@
         android:textAlignment="center"
         android:textColor="@color/white"
         android:textSize="35sp"
-        tools:layout_editor_absoluteX="47dp"
-        tools:layout_editor_absoluteY="404dp" />
-
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.636"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTimer" />
 
     <Button
         android:id="@+id/btnReset"
         android:layout_width="130dp"
         android:layout_height="70dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="36dp"
         android:background="@drawable/roundstyle2"
         android:backgroundTint="@color/black"
         android:text="@string/reset"
         android:textColor="@color/white"
-        tools:layout_editor_absoluteX="47dp"
-        tools:layout_editor_absoluteY="508dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtClock" />
 
     <Button
         android:id="@+id/saveTimebtn"
         android:layout_width="130dp"
         android:layout_height="70dp"
-        android:layout_marginEnd="4dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="32dp"
         android:background="@drawable/roundstyle2"
         android:backgroundTint="@color/black"
         android:text="@string/save2"
