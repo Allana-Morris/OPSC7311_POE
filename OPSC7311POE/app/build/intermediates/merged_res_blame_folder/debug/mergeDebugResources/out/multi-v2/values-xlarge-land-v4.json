@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.opsc7311poe.app-mergeDebugResources-47:/values-xlarge-land-v4/values-xlarge-land-v4.xml",
+            "outputFile": "com.example.opsc7311poe.app-mergeDebugResources-65:/values-xlarge-land-v4/values-xlarge-land-v4.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Sven\\.gradle\\caches\\transforms-4\\dac1b189047053ef6670e7ebf43f5e37\\transformed\\ambilwarna-2.0.1\\res\\values-xlarge-land\\values-xlarge-land.xml",
+                    "source": "C:\\Users\\Sven\\.gradle\\caches\\transforms-4\\6d0141d8c96b752294a734563c1140f9\\transformed\\ambilwarna-2.0.1\\res\\values-xlarge-land\\values-xlarge-land.xml",
                     "from": {
                         "startLines": "4,5",
                         "startColumns": "4,4",

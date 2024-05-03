@@ -1,74 +1,78 @@
 [
     {
-        "merged": "com.example.opsc7311poe.app-mergeDebugResources-48:/layout/activity_register.xml",
-        "source": "com.example.opsc7311poe.app-main-51:/layout/activity_register.xml"
+        "merged": "com.example.opsc7311poe.app-mergeDebugResources-66:/layout/activity_insert_data.xml",
+        "source": "com.example.opsc7311poe.app-main-69:/layout/activity_insert_data.xml"
     },
     {
-        "merged": "com.example.opsc7311poe.app-mergeDebugResources-48:/layout/icon_picker_dialog.xml",
-        "source": "com.example.opsc7311poe.app-main-51:/layout/icon_picker_dialog.xml"
+        "merged": "com.example.opsc7311poe.app-mergeDebugResources-66:/layout/activity_profile.xml",
+        "source": "com.example.opsc7311poe.app-main-69:/layout/activity_profile.xml"
     },
     {
-        "merged": "com.example.opsc7311poe.app-mergeDebugResources-48:/layout/activity_view_time_sheet_entry.xml",
-        "source": "com.example.opsc7311poe.app-main-51:/layout/activity_view_time_sheet_entry.xml"
+        "merged": "com.example.opsc7311poe.app-mergeDebugResources-66:/layout/activity_view_tasks.xml",
+        "source": "com.example.opsc7311poe.app-main-69:/layout/activity_view_tasks.xml"
     },
     {
-        "merged": "com.example.opsc7311poe.app-mergeDebugResources-48:/layout/activity_timer.xml",
-        "source": "com.example.opsc7311poe.app-main-51:/layout/activity_timer.xml"
+        "merged": "com.example.opsc7311poe.app-mergeDebugResources-66:/layout/item_select.xml",
+        "source": "com.example.opsc7311poe.app-main-69:/layout/item_select.xml"
     },
     {
-        "merged": "com.example.opsc7311poe.app-mergeDebugResources-48:/layout/activity_view_graphs.xml",
-        "source": "com.example.opsc7311poe.app-main-51:/layout/activity_view_graphs.xml"
+        "merged": "com.example.opsc7311poe.app-mergeDebugResources-66:/layout/activity_register.xml",
+        "source": "com.example.opsc7311poe.app-main-69:/layout/activity_register.xml"
     },
     {
-        "merged": "com.example.opsc7311poe.app-mergeDebugResources-48:/layout/activity_starting_page.xml",
-        "source": "com.example.opsc7311poe.app-main-51:/layout/activity_starting_page.xml"
+        "merged": "com.example.opsc7311poe.app-mergeDebugResources-66:/layout/activity_view_graphs.xml",
+        "source": "com.example.opsc7311poe.app-main-69:/layout/activity_view_graphs.xml"
     },
     {
-        "merged": "com.example.opsc7311poe.app-mergeDebugResources-48:/layout/activity_create_category.xml",
-        "source": "com.example.opsc7311poe.app-main-51:/layout/activity_create_category.xml"
+        "merged": "com.example.opsc7311poe.app-mergeDebugResources-66:/layout/activity_timer.xml",
+        "source": "com.example.opsc7311poe.app-main-69:/layout/activity_timer.xml"
     },
     {
-        "merged": "com.example.opsc7311poe.app-mergeDebugResources-48:/layout/activity_view_tasks.xml",
-        "source": "com.example.opsc7311poe.app-main-51:/layout/activity_view_tasks.xml"
+        "merged": "com.example.opsc7311poe.app-mergeDebugResources-66:/layout/activity_login.xml",
+        "source": "com.example.opsc7311poe.app-main-69:/layout/activity_login.xml"
     },
     {
-        "merged": "com.example.opsc7311poe.app-mergeDebugResources-48:/layout/activity_enter_time_sheet.xml",
-        "source": "com.example.opsc7311poe.app-main-51:/layout/activity_enter_time_sheet.xml"
+        "merged": "com.example.opsc7311poe.app-mergeDebugResources-66:/layout/activity_task_calendar.xml",
+        "source": "com.example.opsc7311poe.app-main-69:/layout/activity_task_calendar.xml"
     },
     {
-        "merged": "com.example.opsc7311poe.app-mergeDebugResources-48:/layout/activity_insert_data.xml",
-        "source": "com.example.opsc7311poe.app-main-51:/layout/activity_insert_data.xml"
+        "merged": "com.example.opsc7311poe.app-mergeDebugResources-66:/layout/activity_enter_time_sheet.xml",
+        "source": "com.example.opsc7311poe.app-main-69:/layout/activity_enter_time_sheet.xml"
     },
     {
-        "merged": "com.example.opsc7311poe.app-mergeDebugResources-48:/layout/activity_weekly_summary.xml",
-        "source": "com.example.opsc7311poe.app-main-51:/layout/activity_weekly_summary.xml"
+        "merged": "com.example.opsc7311poe.app-mergeDebugResources-66:/layout/activity_cat_hours.xml",
+        "source": "com.example.opsc7311poe.app-main-69:/layout/activity_cat_hours.xml"
     },
     {
-        "merged": "com.example.opsc7311poe.app-mergeDebugResources-48:/layout/icon_item.xml",
-        "source": "com.example.opsc7311poe.app-main-51:/layout/icon_item.xml"
+        "merged": "com.example.opsc7311poe.app-mergeDebugResources-66:/layout/icon_picker_dialog.xml",
+        "source": "com.example.opsc7311poe.app-main-69:/layout/icon_picker_dialog.xml"
     },
     {
-        "merged": "com.example.opsc7311poe.app-mergeDebugResources-48:/layout/activity_task_calendar.xml",
-        "source": "com.example.opsc7311poe.app-main-51:/layout/activity_task_calendar.xml"
+        "merged": "com.example.opsc7311poe.app-mergeDebugResources-66:/layout/activity_create_category.xml",
+        "source": "com.example.opsc7311poe.app-main-69:/layout/activity_create_category.xml"
     },
     {
-        "merged": "com.example.opsc7311poe.app-mergeDebugResources-48:/layout/item_select.xml",
-        "source": "com.example.opsc7311poe.app-main-51:/layout/item_select.xml"
+        "merged": "com.example.opsc7311poe.app-mergeDebugResources-66:/layout/activity_weekly_summary.xml",
+        "source": "com.example.opsc7311poe.app-main-69:/layout/activity_weekly_summary.xml"
     },
     {
-        "merged": "com.example.opsc7311poe.app-mergeDebugResources-48:/layout/task_listing.xml",
-        "source": "com.example.opsc7311poe.app-main-51:/layout/task_listing.xml"
+        "merged": "com.example.opsc7311poe.app-mergeDebugResources-66:/layout/icon_item.xml",
+        "source": "com.example.opsc7311poe.app-main-69:/layout/icon_item.xml"
     },
     {
-        "merged": "com.example.opsc7311poe.app-mergeDebugResources-48:/layout/activity_login.xml",
-        "source": "com.example.opsc7311poe.app-main-51:/layout/activity_login.xml"
+        "merged": "com.example.opsc7311poe.app-mergeDebugResources-66:/layout/activity_main.xml",
+        "source": "com.example.opsc7311poe.app-main-69:/layout/activity_main.xml"
     },
     {
-        "merged": "com.example.opsc7311poe.app-mergeDebugResources-48:/layout/activity_main.xml",
-        "source": "com.example.opsc7311poe.app-main-51:/layout/activity_main.xml"
+        "merged": "com.example.opsc7311poe.app-mergeDebugResources-66:/layout/activity_starting_page.xml",
+        "source": "com.example.opsc7311poe.app-main-69:/layout/activity_starting_page.xml"
     },
     {
-        "merged": "com.example.opsc7311poe.app-mergeDebugResources-48:/layout/activity_profile.xml",
-        "source": "com.example.opsc7311poe.app-main-51:/layout/activity_profile.xml"
+        "merged": "com.example.opsc7311poe.app-mergeDebugResources-66:/layout/activity_view_time_sheet_entry.xml",
+        "source": "com.example.opsc7311poe.app-main-69:/layout/activity_view_time_sheet_entry.xml"
+    },
+    {
+        "merged": "com.example.opsc7311poe.app-mergeDebugResources-66:/layout/task_listing.xml",
+        "source": "com.example.opsc7311poe.app-main-69:/layout/task_listing.xml"
     }
 ]
