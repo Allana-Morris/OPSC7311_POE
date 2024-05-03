@@ -26,7 +26,7 @@ class Timer : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_timer)
-        edtTime.setText("00:00:00")
+        edtTime.text = "00:00:00"
 
 
         edtTime = findViewById(R.id.edtClock)
@@ -89,12 +89,12 @@ class Timer : AppCompatActivity() {
 
             spnTask.isEnabled = false
             spnTask.adapter = ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, listOf("No Tasks"))
-            btnSave.isEnabled = false;
+            btnSave.isEnabled = false
         } else {
             // If there are categories, set the spinner to enabled and set its adapter to empty
             spnTask.isEnabled = true
             spnCat.isEnabled = true
-            btnSave.isEnabled = true;
+            btnSave.isEnabled = true
             spnTask.adapter = ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, emptyList())
             spnCat.adapter = ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, emptyList())
         }
@@ -170,7 +170,7 @@ class Timer : AppCompatActivity() {
                     // Your code to work with the selected task goes here
                     if (selectedTask != null) {
                         val timed = edtTime.text.toString()
-                        edtTime.setText("00:00:00")
+                        edtTime.text = "00:00:00"
                         secondsElapsed = 0
 
                         val parts = timed.split(":")
@@ -219,7 +219,7 @@ class Timer : AppCompatActivity() {
 
         btnReset.setOnClickListener ()
         {
-            secondsElapsed = 0;
+            secondsElapsed = 0
             //for debug purposes display all the recordings for selected Task
 
 
@@ -243,7 +243,7 @@ class Timer : AppCompatActivity() {
             val minutes = (secondsElapsed % 3600) / 60
             val seconds = secondsElapsed % 60
             val timeString = String.format("%02d:%02d:%02d", hours, minutes, seconds)
-            edtTime.setText(timeString)
+            edtTime.text = timeString
             handler.postDelayed(this, 1000)
         }
     }

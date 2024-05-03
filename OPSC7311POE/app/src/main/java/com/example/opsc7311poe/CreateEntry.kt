@@ -129,9 +129,9 @@ class CreateEntry : AppCompatActivity() {
 
         tvStart.setOnClickListener()
         {
-            val calendar = java.util.Calendar.getInstance()
-            val hour = calendar.get(java.util.Calendar.HOUR_OF_DAY)
-            val minute = calendar.get(java.util.Calendar.MINUTE)
+            val calendar = Calendar.getInstance()
+            val hour = calendar.get(Calendar.HOUR_OF_DAY)
+            val minute = calendar.get(Calendar.MINUTE)
 
             val timePickerDialog = TimePickerDialog(
                 this,
@@ -154,9 +154,9 @@ class CreateEntry : AppCompatActivity() {
 
         tvEnd.setOnClickListener()
         {
-            val calendar = java.util.Calendar.getInstance()
-            val hour = calendar.get(java.util.Calendar.HOUR_OF_DAY)
-            val minute = calendar.get(java.util.Calendar.MINUTE)
+            val calendar = Calendar.getInstance()
+            val hour = calendar.get(Calendar.HOUR_OF_DAY)
+            val minute = calendar.get(Calendar.MINUTE)
 
             val timePickerDialog = TimePickerDialog(
                 this,
