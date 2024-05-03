@@ -113,6 +113,13 @@ class InsertData : AppCompatActivity() {
             val endTime = findViewById<TextView?>(R.id.edtEnd).text.toString()
             val desc = findViewById<TextView?>(R.id.edtDescription).text.toString()
 
+            //Validation
+            if (catTask.isEmpty() || taskName.isEmpty() || startTime.isEmpty() || endTime.isEmpty() || desc.isEmpty()) {
+                // Show a Toast message indicating that all fields are required
+                Toast.makeText(this@InsertData, "All fields are required", Toast.LENGTH_SHORT).show()
+                return@setOnClickListener
+            }
+
 
             val objCategory = Category()
             var selectCat = SessionUser.currentUser?.categories?.get(catTask)

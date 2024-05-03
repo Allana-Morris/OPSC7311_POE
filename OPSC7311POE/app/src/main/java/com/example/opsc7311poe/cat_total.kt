@@ -4,6 +4,7 @@ import android.app.DatePickerDialog
 import android.os.Bundle
 import android.widget.Button
 import android.widget.TextView
+import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import java.util.Calendar
@@ -33,6 +34,12 @@ class cat_total : AppCompatActivity() {
             // Get the selected start and end dates
             val startDate = start.text.toString()
             val endDate = end.text.toString()
+
+            //validation
+            if (startDate.isEmpty() || endDate.isEmpty()) {
+                Toast.makeText(this, "Please select both start and end dates", Toast.LENGTH_SHORT).show()
+                return@setOnClickListener
+            }
 
             // Perform search and calculate total hours
             val totalHoursByCategory = calculateTotalHoursByCategory(startDate, endDate)
