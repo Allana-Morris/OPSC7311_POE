@@ -11,4 +11,6 @@ class User(
     //Hashmap containing all Categories created by User
     // HashMap to store categories for this user
     val categories: HashMap<String, Category> = HashMap()
+
+    constructor(): this("","","","")
 }

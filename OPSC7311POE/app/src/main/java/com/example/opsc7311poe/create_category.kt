@@ -61,7 +61,8 @@ class create_category : AppCompatActivity() {
 
 
             val cate = Category(cateName, catIcon, catColor, catMin, catMax)
-
+            val users = User()
+            users.categories[cate.name] = cate
             val intent = Intent(this, ViewData::class.java)
             startActivity(intent)
         }
