@@ -165,7 +165,7 @@ class create_category : AppCompatActivity() {
         val iconResources = mutableListOf<Int>()
         val packageName = context.packageName
         val resources = context.resources
-        val iconDir = resources.getIdentifier("drawable/iconpicker", "drawable", packageName)
+        val iconDir = resources.getIdentifier("drawable/iconpick", "drawable", packageName)
         val iconNames = resources.getResourceName(iconDir).split("/")
         val iconPrefix = iconNames.first() + "/"
 

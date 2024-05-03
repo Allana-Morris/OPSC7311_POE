@@ -85,6 +85,7 @@
     <string name="create_entry">Create Timesheet Entry</string>
     <string name="view_tasks">View Tasks</string>
     <string name="view_timesheet">View Timesheet Entries</string>
+    <string name="password">Password</string>
 
 
 </resources>
