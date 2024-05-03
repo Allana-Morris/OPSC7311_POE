@@ -1,9 +1,9 @@
 <component name="libraryTable">
   <library name="Gradle: androidx.fragment:fragment-ktx:1.6.2@aar" external-system-id="GRADLE">
     <CLASSES>
-      <root url="file://$USER_HOME$/Downloads/OPSC7311POE/OPSC7311POE/gradle/wrapper/dists/gradle-8.7-all/caches/transforms-4/d70fd87e158e700b16d85dfea3e8a045/transformed/fragment-ktx-1.6.2/res" />
-      <root url="jar://$USER_HOME$/Downloads/OPSC7311POE/OPSC7311POE/gradle/wrapper/dists/gradle-8.7-all/caches/transforms-4/d70fd87e158e700b16d85dfea3e8a045/transformed/fragment-ktx-1.6.2/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/Downloads/OPSC7311POE/OPSC7311POE/gradle/wrapper/dists/gradle-8.7-all/caches/transforms-4/d70fd87e158e700b16d85dfea3e8a045/transformed/fragment-ktx-1.6.2/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-4/d70fd87e158e700b16d85dfea3e8a045/transformed/fragment-ktx-1.6.2/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-4/d70fd87e158e700b16d85dfea3e8a045/transformed/fragment-ktx-1.6.2/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-4/d70fd87e158e700b16d85dfea3e8a045/transformed/fragment-ktx-1.6.2/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

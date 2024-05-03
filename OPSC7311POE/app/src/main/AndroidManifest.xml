@@ -25,6 +25,9 @@
             android:name=".ViewData"
             android:exported="false" />
         <activity
+            android:name=".cat_total"
+            android:exported="false" />
+        <activity
             android:name=".view_graphs"
             android:exported="false" />
         <activity
