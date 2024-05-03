@@ -6,7 +6,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageButton;
-import android.widget.LinearLayout;
 import android.widget.Spinner;
 import android.widget.TextClock;
 import android.widget.TextView;
@@ -16,13 +15,17 @@ import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.example.opsc7311poe.R;
+import com.google.android.material.bottomnavigation.BottomNavigationView;
 import java.lang.NullPointerException;
 import java.lang.Override;
 import java.lang.String;
 
 public final class ActivityTimerBinding implements ViewBinding {
   @NonNull
-  private final LinearLayout rootView;
+  private final ConstraintLayout rootView;
+
+  @NonNull
+  public final BottomNavigationView bottomNavigationView;
 
   @NonNull
   public final Button btnReset;
@@ -64,7 +67,7 @@ public final class ActivityTimerBinding implements ViewBinding {
   public final ConstraintLayout linearLayout5;
 
   @NonNull
-  public final LinearLayout main;
+  public final ConstraintLayout main;
 
   @NonNull
   public final Button saveTimebtn;
@@ -90,16 +93,18 @@ public final class ActivityTimerBinding implements ViewBinding {
   @NonNull
   public final TextView tvTimer1;
 
-  private ActivityTimerBinding(@NonNull LinearLayout rootView, @NonNull Button btnReset,
+  private ActivityTimerBinding(@NonNull ConstraintLayout rootView,
+      @NonNull BottomNavigationView bottomNavigationView, @NonNull Button btnReset,
       @NonNull Button btnStart, @NonNull Button btnStop, @NonNull ConstraintLayout clNavBar,
       @NonNull TextClock edtClock, @NonNull ImageButton ibCalendar, @NonNull ImageButton ibHome,
       @NonNull ImageButton ibProfile, @NonNull ImageButton ibTimer,
       @NonNull ConstraintLayout linearLayout, @NonNull ConstraintLayout linearLayout2,
       @NonNull ConstraintLayout linearLayout4, @NonNull ConstraintLayout linearLayout5,
-      @NonNull LinearLayout main, @NonNull Button saveTimebtn, @NonNull Spinner spinCat,
+      @NonNull ConstraintLayout main, @NonNull Button saveTimebtn, @NonNull Spinner spinCat,
       @NonNull Spinner spinTask, @NonNull TextView tvCalendar, @NonNull TextView tvHome,
       @NonNull TextView tvProfile, @NonNull TextView tvTimer, @NonNull TextView tvTimer1) {
     this.rootView = rootView;
+    this.bottomNavigationView = bottomNavigationView;
     this.btnReset = btnReset;
     this.btnStart = btnStart;
     this.btnStop = btnStop;
@@ -126,7 +131,7 @@ public final class ActivityTimerBinding implements ViewBinding {
 
   @Override
   @NonNull
-  public LinearLayout getRoot() {
+  public ConstraintLayout getRoot() {
     return rootView;
   }
 
@@ -151,6 +156,12 @@ public final class ActivityTimerBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.bottomNavigationView;
+      BottomNavigationView bottomNavigationView = ViewBindings.findChildViewById(rootView, id);
+      if (bottomNavigationView == null) {
+        break missingId;
+      }
+
       id = R.id.btnReset;
       Button btnReset = ViewBindings.findChildViewById(rootView, id);
       if (btnReset == null) {
@@ -229,7 +240,7 @@ public final class ActivityTimerBinding implements ViewBinding {
         break missingId;
       }
 
-      LinearLayout main = (LinearLayout) rootView;
+      ConstraintLayout main = (ConstraintLayout) rootView;
 
       id = R.id.saveTimebtn;
       Button saveTimebtn = ViewBindings.findChildViewById(rootView, id);
@@ -279,10 +290,10 @@ public final class ActivityTimerBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityTimerBinding((LinearLayout) rootView, btnReset, btnStart, btnStop,
-          clNavBar, edtClock, ibCalendar, ibHome, ibProfile, ibTimer, linearLayout, linearLayout2,
-          linearLayout4, linearLayout5, main, saveTimebtn, spinCat, spinTask, tvCalendar, tvHome,
-          tvProfile, tvTimer, tvTimer1);
+      return new ActivityTimerBinding((ConstraintLayout) rootView, bottomNavigationView, btnReset,
+          btnStart, btnStop, clNavBar, edtClock, ibCalendar, ibHome, ibProfile, ibTimer,
+          linearLayout, linearLayout2, linearLayout4, linearLayout5, main, saveTimebtn, spinCat,
+          spinTask, tvCalendar, tvHome, tvProfile, tvTimer, tvTimer1);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

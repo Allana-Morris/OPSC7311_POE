@@ -22,8 +22,8 @@
 
     <View
         android:id="@+id/empyViews"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="422dp"
+        android:layout_height="579dp"
         android:background="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -196,6 +196,7 @@
         android:layout_width="411dp"
         android:layout_height="112dp"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent">
 
         <com.google.android.material.bottomnavigation.BottomNavigationView
