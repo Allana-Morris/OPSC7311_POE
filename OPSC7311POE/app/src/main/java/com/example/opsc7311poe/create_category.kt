@@ -80,7 +80,6 @@ class create_category : AppCompatActivity() {
         }
         catMaxHours.setOnClickListener {
 
-
             Toast.makeText(this, "it clicked", Toast.LENGTH_SHORT).show()
             val calendar = java.util.Calendar.getInstance()
             val hour = calendar.get(java.util.Calendar.HOUR_OF_DAY)

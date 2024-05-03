@@ -31,7 +31,7 @@
             android:name="com.example.opsc7311poe.TaskCalendar"
             android:exported="false" />
         <activity
-            android:name="com.example.opsc7311poe.enterTimeSheet"
+            android:name="com.example.opsc7311poe.CreateEntry"
             android:exported="false" />
         <activity
             android:name="com.example.opsc7311poe.create_category"

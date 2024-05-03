@@ -4,6 +4,7 @@ package com.example.opsc7311poe.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
@@ -22,6 +23,9 @@ import java.lang.String;
 public final class ActivityEnterTimeSheetBinding implements ViewBinding {
   @NonNull
   private final LinearLayout rootView;
+
+  @NonNull
+  public final Button btnSaveEntry;
 
   @NonNull
   public final ConstraintLayout clNavBar;
@@ -57,16 +61,10 @@ public final class ActivityEnterTimeSheetBinding implements ViewBinding {
   public final LinearLayout main;
 
   @NonNull
-  public final Spinner spinId;
+  public final Spinner spinEntryCat;
 
   @NonNull
-  public final Spinner spinId2;
-
-  @NonNull
-  public final TextView textView3;
-
-  @NonNull
-  public final TextView textView4;
+  public final Spinner spinEntryTask;
 
   @NonNull
   public final TextView textView5;
@@ -81,10 +79,22 @@ public final class ActivityEnterTimeSheetBinding implements ViewBinding {
   public final TextView tvCategorySpinner;
 
   @NonNull
+  public final TextView tvEndTime;
+
+  @NonNull
+  public final TextView tvEntryDate;
+
+  @NonNull
+  public final TextView tvEntryTime;
+
+  @NonNull
   public final TextView tvHome;
 
   @NonNull
   public final TextView tvProfile;
+
+  @NonNull
+  public final TextView tvStartTime;
 
   @NonNull
   public final TextView tvTaskSpinner;
@@ -93,16 +103,19 @@ public final class ActivityEnterTimeSheetBinding implements ViewBinding {
   public final TextView tvTimer;
 
   private ActivityEnterTimeSheetBinding(@NonNull LinearLayout rootView,
-      @NonNull ConstraintLayout clNavBar, @NonNull ImageButton ibCalendar,
-      @NonNull ImageButton ibHome, @NonNull ImageButton ibProfile, @NonNull ImageButton ibTimer,
-      @NonNull ImageView imgPhotoUp, @NonNull ConstraintLayout linearLayout,
-      @NonNull ConstraintLayout linearLayout2, @NonNull ConstraintLayout linearLayout4,
-      @NonNull ConstraintLayout linearLayout5, @NonNull LinearLayout main, @NonNull Spinner spinId,
-      @NonNull Spinner spinId2, @NonNull TextView textView3, @NonNull TextView textView4,
+      @NonNull Button btnSaveEntry, @NonNull ConstraintLayout clNavBar,
+      @NonNull ImageButton ibCalendar, @NonNull ImageButton ibHome, @NonNull ImageButton ibProfile,
+      @NonNull ImageButton ibTimer, @NonNull ImageView imgPhotoUp,
+      @NonNull ConstraintLayout linearLayout, @NonNull ConstraintLayout linearLayout2,
+      @NonNull ConstraintLayout linearLayout4, @NonNull ConstraintLayout linearLayout5,
+      @NonNull LinearLayout main, @NonNull Spinner spinEntryCat, @NonNull Spinner spinEntryTask,
       @NonNull TextView textView5, @NonNull TextView textView6, @NonNull TextView tvCalendar,
-      @NonNull TextView tvCategorySpinner, @NonNull TextView tvHome, @NonNull TextView tvProfile,
-      @NonNull TextView tvTaskSpinner, @NonNull TextView tvTimer) {
+      @NonNull TextView tvCategorySpinner, @NonNull TextView tvEndTime,
+      @NonNull TextView tvEntryDate, @NonNull TextView tvEntryTime, @NonNull TextView tvHome,
+      @NonNull TextView tvProfile, @NonNull TextView tvStartTime, @NonNull TextView tvTaskSpinner,
+      @NonNull TextView tvTimer) {
     this.rootView = rootView;
+    this.btnSaveEntry = btnSaveEntry;
     this.clNavBar = clNavBar;
     this.ibCalendar = ibCalendar;
     this.ibHome = ibHome;
@@ -114,16 +127,18 @@ public final class ActivityEnterTimeSheetBinding implements ViewBinding {
     this.linearLayout4 = linearLayout4;
     this.linearLayout5 = linearLayout5;
     this.main = main;
-    this.spinId = spinId;
-    this.spinId2 = spinId2;
-    this.textView3 = textView3;
-    this.textView4 = textView4;
+    this.spinEntryCat = spinEntryCat;
+    this.spinEntryTask = spinEntryTask;
     this.textView5 = textView5;
     this.textView6 = textView6;
     this.tvCalendar = tvCalendar;
     this.tvCategorySpinner = tvCategorySpinner;
+    this.tvEndTime = tvEndTime;
+    this.tvEntryDate = tvEntryDate;
+    this.tvEntryTime = tvEntryTime;
     this.tvHome = tvHome;
     this.tvProfile = tvProfile;
+    this.tvStartTime = tvStartTime;
     this.tvTaskSpinner = tvTaskSpinner;
     this.tvTimer = tvTimer;
   }
@@ -155,6 +170,12 @@ public final class ActivityEnterTimeSheetBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.btnSaveEntry;
+      Button btnSaveEntry = ViewBindings.findChildViewById(rootView, id);
+      if (btnSaveEntry == null) {
+        break missingId;
+      }
+
       id = R.id.cl_NavBar;
       ConstraintLayout clNavBar = ViewBindings.findChildViewById(rootView, id);
       if (clNavBar == null) {
@@ -217,27 +238,15 @@ public final class ActivityEnterTimeSheetBinding implements ViewBinding {
 
       LinearLayout main = (LinearLayout) rootView;
 
-      id = R.id.spinId;
-      Spinner spinId = ViewBindings.findChildViewById(rootView, id);
-      if (spinId == null) {
+      id = R.id.spinEntryCat;
+      Spinner spinEntryCat = ViewBindings.findChildViewById(rootView, id);
+      if (spinEntryCat == null) {
         break missingId;
       }
 
-      id = R.id.spinId2;
-      Spinner spinId2 = ViewBindings.findChildViewById(rootView, id);
-      if (spinId2 == null) {
-        break missingId;
-      }
-
-      id = R.id.textView3;
-      TextView textView3 = ViewBindings.findChildViewById(rootView, id);
-      if (textView3 == null) {
-        break missingId;
-      }
-
-      id = R.id.textView4;
-      TextView textView4 = ViewBindings.findChildViewById(rootView, id);
-      if (textView4 == null) {
+      id = R.id.spinEntryTask;
+      Spinner spinEntryTask = ViewBindings.findChildViewById(rootView, id);
+      if (spinEntryTask == null) {
         break missingId;
       }
 
@@ -265,6 +274,24 @@ public final class ActivityEnterTimeSheetBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.tvEndTime;
+      TextView tvEndTime = ViewBindings.findChildViewById(rootView, id);
+      if (tvEndTime == null) {
+        break missingId;
+      }
+
+      id = R.id.tvEntryDate;
+      TextView tvEntryDate = ViewBindings.findChildViewById(rootView, id);
+      if (tvEntryDate == null) {
+        break missingId;
+      }
+
+      id = R.id.tvEntryTime;
+      TextView tvEntryTime = ViewBindings.findChildViewById(rootView, id);
+      if (tvEntryTime == null) {
+        break missingId;
+      }
+
       id = R.id.tv_Home;
       TextView tvHome = ViewBindings.findChildViewById(rootView, id);
       if (tvHome == null) {
@@ -274,6 +301,12 @@ public final class ActivityEnterTimeSheetBinding implements ViewBinding {
       id = R.id.tv_Profile;
       TextView tvProfile = ViewBindings.findChildViewById(rootView, id);
       if (tvProfile == null) {
+        break missingId;
+      }
+
+      id = R.id.tvStartTime;
+      TextView tvStartTime = ViewBindings.findChildViewById(rootView, id);
+      if (tvStartTime == null) {
         break missingId;
       }
 
@@ -289,10 +322,11 @@ public final class ActivityEnterTimeSheetBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityEnterTimeSheetBinding((LinearLayout) rootView, clNavBar, ibCalendar,
-          ibHome, ibProfile, ibTimer, imgPhotoUp, linearLayout, linearLayout2, linearLayout4,
-          linearLayout5, main, spinId, spinId2, textView3, textView4, textView5, textView6,
-          tvCalendar, tvCategorySpinner, tvHome, tvProfile, tvTaskSpinner, tvTimer);
+      return new ActivityEnterTimeSheetBinding((LinearLayout) rootView, btnSaveEntry, clNavBar,
+          ibCalendar, ibHome, ibProfile, ibTimer, imgPhotoUp, linearLayout, linearLayout2,
+          linearLayout4, linearLayout5, main, spinEntryCat, spinEntryTask, textView5, textView6,
+          tvCalendar, tvCategorySpinner, tvEndTime, tvEntryDate, tvEntryTime, tvHome, tvProfile,
+          tvStartTime, tvTaskSpinner, tvTimer);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

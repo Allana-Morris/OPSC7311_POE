@@ -31,7 +31,7 @@ class Login : AppCompatActivity() {
             {
                 var loggedUser = getUser(userName)
                 SessionUser.currentUser = loggedUser
-                val intent2 = Intent(this, MainActivity::class.java)
+                val intent2 = Intent(this, Timer::class.java)
                 startActivity(intent2)
             } else
             {

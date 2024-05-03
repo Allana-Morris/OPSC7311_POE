@@ -50,8 +50,8 @@
 32-->C:\Users\Sven\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:17:13-37
 33        <activity
 33-->C:\Users\Sven\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:18:9-20:40
-34            android:name="com.example.opsc7311poe.enterTimeSheet"
-34-->C:\Users\Sven\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:19:13-43
+34            android:name="com.example.opsc7311poe.CreateEntry"
+34-->C:\Users\Sven\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:19:13-40
 35            android:exported="false" />
 35-->C:\Users\Sven\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:20:13-37
 36        <activity
