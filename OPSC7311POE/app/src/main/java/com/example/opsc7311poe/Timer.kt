@@ -51,7 +51,7 @@ class Timer : AppCompatActivity() {
         selectedCat.tasks[selectedTask.name] = selectedTask
 
 
-        /*  val HomeOpenActivity = findViewById<ImageButton>(R.id.ib_Home)
+          val HomeOpenActivity = findViewById<ImageButton>(R.id.ib_Home)
           val ProfileOpenActivity = findViewById<ImageButton>(R.id.ib_Profile)
           val CalendarOpenActivity = findViewById<ImageButton>(R.id.ib_Calendar)
           val TimerOpenActivity = findViewById<ImageButton>(R.id.ib_Timer)
@@ -65,18 +65,18 @@ class Timer : AppCompatActivity() {
               val intent = Intent(this, Profile::class.java)
               startActivity(intent)
           }
-
+/*
           CalendarOpenActivity.setOnClickListener{
               val intent3 = Intent(this, TaskCalendar::class.java)
               startActivity(intent3)
           }
-
+*/
           TimerOpenActivity.setOnClickListener{
               val intent4 = Intent(this, Timer::class.java)
               startActivity(intent4)
           }
 
-         */
+
         // Create a list to hold category names
         val categoryList = mutableListOf<String>()
         val taskList = mutableListOf<String>()

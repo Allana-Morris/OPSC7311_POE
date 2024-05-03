@@ -30,10 +30,7 @@
       <excludeFolder url="file://$MODULE_DIR$/../../../OPSC7311POE/app/.gradle" />
       <excludeFolder url="file://$MODULE_DIR$/../../../OPSC7311POE/app/build" />
     </content>
-    <content url="file://$MODULE_DIR$/../../../OPSC7311POE/app">
-      <excludeFolder url="file://$MODULE_DIR$/../../../OPSC7311POE/app/.gradle" />
-      <excludeFolder url="file://$MODULE_DIR$/../../../OPSC7311POE/app/build" />
-    </content>
+    <content url="file://$MODULE_DIR$/../../../OPSC7311POE/app" />
     <content url="file://$MODULE_DIR$/../../../OPSC7311POE/app">
       <excludeFolder url="file://$MODULE_DIR$/../../../OPSC7311POE/app/.gradle" />
       <excludeFolder url="file://$MODULE_DIR$/../../../OPSC7311POE/app/build" />

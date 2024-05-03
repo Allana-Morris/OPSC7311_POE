@@ -19,76 +19,52 @@
         android:background="@drawable/roundstyle"
         android:backgroundTint="@color/black"
         android:text=""
-        app:layout_constraintBottom_toTopOf="@+id/searchView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.045" />
+        app:layout_constraintTop_toTopOf="parent" />
 
-    <SearchView
-        android:id="@+id/searchView"
-        android:layout_width="247dp"
-        android:layout_height="27dp"
-        android:layout_marginTop="116dp"
-        android:background="@drawable/roundstyle"
-        android:backgroundTint="@color/white"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.506"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="MissingConstraints">
-
-    </SearchView>
-
-    <Button
-        android:id="@+id/btn_CurrentTasks"
-        android:layout_width="106dp"
-        android:layout_height="55dp"
-
-
-        android:layout_marginStart="56dp"
-        android:layout_marginBottom="16dp"
-        android:background="@drawable/roundstyle"
-
-        android:backgroundTint="#FFFFFF"
-        android:fontFamily="sans-serif-medium"
-        android:text="@string/CurrentTask"
-        android:textAlignment="center"
-        android:textColor="@color/black"
-        app:layout_constraintBottom_toTopOf="@+id/button9"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="MissingConstraints,SpeakableTextPresentCheck" />
-
-    <Button
-        android:id="@+id/btn_See_All"
-        android:layout_width="134dp"
-        android:layout_height="66dp"
-
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="307dp"
+        android:layout_height="370dp"
         android:background="@drawable/roundstyle"
         android:backgroundTint="#FFFFFF"
-        android:fontFamily="sans-serif-condensed-medium"
-        android:text="@string/seeAll"
-        android:textAlignment="center"
-        app:layout_constraintBottom_toTopOf="@+id/button9"
+        app:layout_constraintBottom_toTopOf="@+id/cl_NavBar"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/btn_CurrentTasks"
-        tools:ignore="MissingConstraints,SpeakableTextPresentCheck" />
-
-    <Button
-        android:id="@+id/button9"
-        android:layout_width="120dp"
-        android:layout_height="169dp"
-
-
-        android:layout_marginTop="88dp"
-        android:background="@drawable/roundstyle"
-        android:backgroundTint="#FFFFFF"
-        android:text="@string/progress"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.168"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/searchView"
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintTop_toBottomOf="@+id/tvBlackBox">
+
+        <Button
+            android:id="@+id/btnTask"
+            android:layout_width="120dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="28dp"
+            android:text="@string/create_task"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btnCategory"
+            android:layout_width="120dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="28dp"
+            android:layout_marginEnd="16dp"
+            android:text="@string/create_category"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.86"
+            app:layout_constraintStart_toEndOf="@+id/btnTask"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btnTimesheet"
+            android:layout_width="120dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="28dp"
+            android:text="@string/create_entry"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnTask" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/cl_NavBar"

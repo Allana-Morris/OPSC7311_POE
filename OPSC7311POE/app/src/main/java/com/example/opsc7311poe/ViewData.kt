@@ -1,5 +1,6 @@
 package com.example.opsc7311poe
 
+import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -12,6 +13,7 @@ import com.google.android.material.floatingactionbutton.FloatingActionButton
 
 class ViewData : AppCompatActivity() {
    // private val navBar = Navbar()
+    @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
        setContentView(R.layout.activity_view_tasks)
@@ -29,18 +31,18 @@ class ViewData : AppCompatActivity() {
            val intent = Intent(this, Profile::class.java)
            startActivity(intent)
        }
-
+/*
        CalendarOpenActivity.setOnClickListener{
            val intent3 = Intent(this, TaskCalendar::class.java)
            startActivity(intent3)
        }
-
+*/
        TimerOpenActivity.setOnClickListener{
            val intent4 = Intent(this, Timer::class.java)
            startActivity(intent4)
        }
 
-       val btnCreate : FloatingActionButton = findViewById(R.id.createBtn)
+       val btnCreate : ImageButton = findViewById(R.id.createTask)
 
        //  Set OnClickListener for the button
         btnCreate.setOnClickListener {
@@ -48,26 +50,21 @@ class ViewData : AppCompatActivity() {
             startActivity(intent)
         }
 
+       val btnCat : ImageButton = findViewById(R.id.createCat)
+
+       btnCat.setOnClickListener {
+           val intent2 = Intent(this, create_category::class.java)
+           startActivity(intent2)
+       }
+
 
         //this is the fetching user task info section ---------------------------------------------
 
         val layout: LinearLayout = findViewById(R.id.vertLayout)
-       /*
-//this commented out section is not necessary for this page, but you can read it anyway
-        // Adding a category catagories have a bunch of params this example is only the name
-    //    val workCategory = Category("Work", )
-     //   SessionUser.currentUser?.categories?.put(workCategory.name, workCategory)
 
-
-// Adding a task to the Work category, same story with the params
-//        val task1 = Task("eat a fork")
-      //  workCategory.tasks[task1.name] = task1
-*/
-// Retrieving tasks from the Work category, the "Work" is just the desired catagory name
-        val tasksInWorkCategory = SessionUser.currentUser?.categories?.get("Work")?.tasks
-
+       SessionUser.currentUser?.categories?.forEach{(categoryName, category) ->
         //this is a for each loop to loop through all the retrieved tasks
-        tasksInWorkCategory?.forEach { (taskName, task) ->
+        category.tasks?.forEach { (taskName, task) ->
 
             Toast.makeText(this, "Task Name: $taskName", Toast.LENGTH_SHORT).show()
 
@@ -83,5 +80,6 @@ class ViewData : AppCompatActivity() {
             taskEnd.text = task.endTime.toString()
             layout.addView(inflatedView)
         }
+       }
     }
 }
