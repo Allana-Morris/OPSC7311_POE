@@ -78,6 +78,9 @@
     <string name="enter_hours_spent">Enter hours for task</string>
     <string name="task_select">Select Task</string>
     <string name="cat_select">Select Category</string>
+    <string name="create_task">Create Task</string>
+    <string name="create_category">Create Category</string>
+    <string name="create_entry">Create Timesheet Entry</string>
 
 
 </resources>

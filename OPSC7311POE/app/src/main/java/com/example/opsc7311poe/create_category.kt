@@ -112,12 +112,12 @@ class create_category : AppCompatActivity() {
             val intent = Intent(this, Profile::class.java)
             startActivity(intent)
         }
-
+/*
         CalendarOpenActivity.setOnClickListener{
             val intent3 = Intent(this, TaskCalendar::class.java)
             startActivity(intent3)
         }
-
+*/
         TimerOpenActivity.setOnClickListener{
             val intent4 = Intent(this, Timer::class.java)
             startActivity(intent4)
