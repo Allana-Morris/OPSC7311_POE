@@ -78,6 +78,7 @@
     <string name="enter_hours_spent">Enter hours for task</string>
     <string name="task_select">Select Task</string>
     <string name="cat_select">Select Category</string>
-
+   <string name="select">Select</string>
+    <string name="select_end_date">Select End Date</string>
 
 </resources>
