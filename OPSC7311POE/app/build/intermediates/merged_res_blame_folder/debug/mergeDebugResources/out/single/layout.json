@@ -12,16 +12,16 @@
         "source": "C:\\Users\\Sven\\.gradle\\daemon\\8.7\\com.example.opsc7311poe.app-main-51:\\layout\\activity_task_calendar.xml"
     },
     {
-        "merged": "com.example.opsc7311poe.app-mergeDebugResources-48:/layout/activity_view_time_sheet_entry.xml",
-        "source": "com.example.opsc7311poe.app-main-51:/layout/activity_view_time_sheet_entry.xml"
-    },
-    {
         "merged": "C:\\Users\\Sven\\.gradle\\daemon\\8.7\\com.example.opsc7311poe.app-mergeDebugResources-48:\\layout\\activity_main.xml",
         "source": "C:\\Users\\Sven\\.gradle\\daemon\\8.7\\com.example.opsc7311poe.app-main-51:\\layout\\activity_main.xml"
     },
     {
         "merged": "C:\\Users\\Sven\\.gradle\\daemon\\8.7\\com.example.opsc7311poe.app-mergeDebugResources-48:\\layout\\activity_view_tasks.xml",
         "source": "C:\\Users\\Sven\\.gradle\\daemon\\8.7\\com.example.opsc7311poe.app-main-51:\\layout\\activity_view_tasks.xml"
+    },
+    {
+        "merged": "com.example.opsc7311poe.app-mergeDebugResources-48:/layout/activity_cat_hours.xml",
+        "source": "com.example.opsc7311poe.app-main-51:/layout/activity_cat_hours.xml"
     },
     {
         "merged": "C:\\Users\\Sven\\.gradle\\daemon\\8.7\\com.example.opsc7311poe.app-mergeDebugResources-48:\\layout\\activity_view_graphs.xml",
@@ -46,6 +46,10 @@
     {
         "merged": "C:\\Users\\Sven\\.gradle\\daemon\\8.7\\com.example.opsc7311poe.app-mergeDebugResources-48:\\layout\\activity_login.xml",
         "source": "C:\\Users\\Sven\\.gradle\\daemon\\8.7\\com.example.opsc7311poe.app-main-51:\\layout\\activity_login.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sven\\.gradle\\daemon\\8.7\\com.example.opsc7311poe.app-mergeDebugResources-48:\\layout\\activity_cat_hours.xml",
+        "source": "C:\\Users\\Sven\\.gradle\\daemon\\8.7\\com.example.opsc7311poe.app-main-51:\\layout\\activity_cat_hours.xml"
     },
     {
         "merged": "C:\\Users\\Sven\\.gradle\\daemon\\8.7\\com.example.opsc7311poe.app-mergeDebugResources-48:\\layout\\activity_register.xml",
