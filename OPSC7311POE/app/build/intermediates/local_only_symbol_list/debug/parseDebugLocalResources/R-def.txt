@@ -13,6 +13,7 @@ color white
 dimen activity_horizontal_margin
 dimen activity_vertical_margin
 drawable arc_1
+drawable bag
 drawable bar
 drawable baseline_add_24
 drawable baseline_airplay_24
@@ -28,6 +29,7 @@ drawable baseline_color_lens_24
 drawable baseline_discount_24
 drawable baseline_fitness_center_24
 drawable baseline_ios_share_24
+drawable bed
 drawable blueskyback
 drawable border
 drawable bordertwo
@@ -36,6 +38,7 @@ drawable bottom_btn3
 drawable box_outline
 drawable calendar
 drawable categoryicon
+drawable file
 drawable google
 drawable homebtn
 drawable house
@@ -47,6 +50,8 @@ drawable ic_launcher_background
 drawable ic_launcher_foreground
 drawable ic_notifications_black_24dp
 drawable icon
+drawable laptop
+drawable leaf
 drawable logo
 drawable navprofile
 drawable pencilbtn
@@ -56,13 +61,17 @@ drawable round_btn
 drawable roundstyle
 drawable roundstyle2
 drawable search
+drawable shopping
 drawable skyblue
+drawable sport
 drawable taskicon
 drawable thumb
 drawable timer
+drawable tools
 drawable track
 drawable uploadphoto
 drawable whitescreen
+drawable work
 drawable write
 id bottomNavigationView
 id btnCategory
