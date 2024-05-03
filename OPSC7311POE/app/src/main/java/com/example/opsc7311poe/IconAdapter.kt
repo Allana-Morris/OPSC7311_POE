@@ -5,36 +5,50 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import androidx.recyclerview.widget.RecyclerView
+
 //Adaptor used to create Iconpicker popup
 class IconAdapter(
     private val icons: List<Int>,
-    private val onIconClickListener: (Int) -> Unit
-    ) : RecyclerView.Adapter<IconAdapter.IconViewHolder>() {
+    private val onIconClickListener: (Int) -> Unit,
+) : RecyclerView.Adapter<IconAdapter.IconViewHolder>() {
 
-        //Creates Viewholder
-        override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): IconViewHolder {
-            //Creates view
-            val view = LayoutInflater.from(parent.context).inflate(R.layout.icon_item, parent, false)
-            return IconViewHolder(view)
-        }
+    //Creates Viewholder
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): IconViewHolder {
+        val view = LayoutInflater.from(parent.context).inflate(R.layout.icon_item, parent, false)
+        return IconViewHolder(view)
+    }
 
     //Binds Viewholder
-        override fun onBindViewHolder(holder: IconViewHolder, position: Int) {
-            //Variable of Icons position
-            val iconResId = icons[position]
-        //Sets Icon Image view to Icon Image
-            holder.iconImageView.setImageResource(iconResId)
-            holder.itemView.setOnClickListener { onIconClickListener(iconResId) }
-        }
+    override fun onBindViewHolder(holder: IconViewHolder, position: Int) {
+        val iconId = icons[position]
+        holder.bind(iconId)
+    }
 
-        //Counts number of Icons
-        override fun getItemCount(): Int {
-            return icons.size
-        }
+    //Counts number of Icons
+    override fun getItemCount(): Int {
+        return icons.size
+    }
 
     //Icon View Holder!!
-    class IconViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
-        //Declaration of Imageview
-        val iconImageView: ImageView = itemView.findViewById(R.id.iconImageView)
+    inner class IconViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
+        private val iconImageView: ImageView = itemView.findViewById(R.id.iconImageView)
+        fun bind(iconId: Int): Int {
+            var clickedIconId: Int = 0
+            iconImageView.setImageResource(iconId)
+            itemView.setOnClickListener {  // Get the position of the clicked item
+                val position = adapterPosition
+                // Check if the position is valid
+                if (position != RecyclerView.NO_POSITION) {
+                    // Retrieve the icon ID associated with the clicked item
+                    clickedIconId = icons[position]
+                    // Call onItemClick lambda function with the clicked icon ID
+
+                }
+            }
+            return clickedIconId
+        }
     }
-    }
+
+
+}
+
