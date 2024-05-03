@@ -34,7 +34,7 @@
             android:layout_width="match_parent"
             android:layout_height="72dp"
             android:inputType="none"
-            android:text="@string/cat_select" />
+            android:text="@string/category" />
     </com.google.android.material.textfield.TextInputLayout>
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
@@ -48,7 +48,7 @@
             android:layout_width="match_parent"
             android:layout_height="72dp"
             android:inputType="none"
-            android:text="@string/task_select" />
+            android:text="@string/task" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <LinearLayout

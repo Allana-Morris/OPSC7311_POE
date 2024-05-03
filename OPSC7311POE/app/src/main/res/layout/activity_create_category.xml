@@ -210,11 +210,12 @@
         android:layout_width="80dp"
         android:layout_height="50dp"
         android:layout_marginEnd="149dp"
+        android:clickable="true"
         android:ems="10"
         android:inputType="time"
-        android:clickable="true"
         app:layout_constraintBottom_toBottomOf="@+id/view12"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="SpeakableTextPresentCheck" />
 
     <EditText
         android:id="@+id/ett_Max_Goal"
@@ -226,7 +227,8 @@
         android:ems="10"
         android:inputType="time"
         app:layout_constraintBottom_toBottomOf="@+id/view12"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="SpeakableTextPresentCheck" />
 
     <TextView
         android:id="@+id/tv_Time_Dash"
