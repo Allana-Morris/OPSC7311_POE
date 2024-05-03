@@ -50,7 +50,7 @@ class enterTimeSheet : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-        val spinnerId2 = findViewById<Spinner>(R.id.spinId2)
+        val spinnerId2 = findViewById<Spinner>(R.id.spinEntryTask)
         val task = arrayOf("dogs","cats","birds","Rhinos")
         val arrayAdp2 = ArrayAdapter(this@enterTimeSheet,android.R.layout.simple_spinner_dropdown_item,task)
         spinnerId2.adapter = arrayAdp2
@@ -78,7 +78,7 @@ class enterTimeSheet : AppCompatActivity() {
                 Toast.makeText(this@enterTimeSheet,"item is ${task[position]}",Toast.LENGTH_LONG).show()
             }}
 
-        val spinnerId = findViewById<Spinner>(R.id.spinId)
+        val spinnerId = findViewById<Spinner>(R.id.spinEntryCat)
         val category = arrayOf("dogs","cats","birds","Rhinos")
         val arrayAdp = ArrayAdapter(this@enterTimeSheet,android.R.layout.simple_spinner_dropdown_item,category)
         spinnerId.adapter = arrayAdp

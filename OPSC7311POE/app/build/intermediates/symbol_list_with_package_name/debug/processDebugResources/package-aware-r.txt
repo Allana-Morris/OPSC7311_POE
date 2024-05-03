@@ -3306,6 +3306,7 @@ id bounceEnd
 id bounceStart
 id btnLogin
 id btnReset
+id btnSaveEntry
 id btnSaveProfile
 id btnSignUp
 id btnStart
@@ -3680,8 +3681,8 @@ id sp_Category
 id spacer
 id special_effects_controller_view_tag
 id spinCat
-id spinId
-id spinId2
+id spinEntryCat
+id spinEntryTask
 id spinTask
 id spline
 id split_action_bar
@@ -3726,12 +3727,9 @@ id textSpacerNoTitle
 id textStart
 id textTop
 id textView
-id textView3
 id textView32
 id textView34
-id textView4
 id textView5
-id textView6
 id textView99
 id text_input_end_icon
 id text_input_error_icon
@@ -3767,12 +3765,16 @@ id tvChooseAWeek
 id tvCustomiseProfile
 id tvEditusername
 id tvEmail
+id tvEndTime
+id tvEntryDate
+id tvEntryTime
 id tvFullName
 id tvGraph
 id tvNewPhoto
 id tvPie
 id tvProfilePhoto
 id tvSeePassword
+id tvStartTime
 id tvSummary
 id tvTaskSpinner
 id tvTask_description
@@ -3780,6 +3782,7 @@ id tvTask_end_time
 id tvTask_name
 id tvTask_start_time
 id tvTimer
+id tvUpPhoto
 id tv_Back
 id tv_Category
 id tv_Colour

@@ -27,6 +27,7 @@ class Timer : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_timer)
+        edtTime.setText("00:00:00")
 
         edtTime = findViewById(R.id.edtClock)
         btnStart = findViewById(R.id.btnStart)
@@ -83,14 +84,19 @@ class Timer : AppCompatActivity() {
 
         // If there are no categories, disable the task spinner and display "No categories"
         if (categoryList.isEmpty()) {
+            spnCat.isEnabled = false
+            spnCat.adapter = ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, listOf("No categories"))
+
             spnTask.isEnabled = false
-            spnTask.adapter = ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, listOf("No categories"))
+            spnTask.adapter = ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, listOf("No Tasks"))
             btnSave.isEnabled = false;
         } else {
             // If there are categories, set the spinner to enabled and set its adapter to empty
             spnTask.isEnabled = true
+            spnCat.isEnabled = true
             btnSave.isEnabled = true;
             spnTask.adapter = ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, emptyList())
+            spnCat.adapter = ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, emptyList())
         }
 
         // Iterate through the user's categories and add their names to the list
@@ -179,7 +185,7 @@ class Timer : AppCompatActivity() {
                         ) // Assuming Time is a custom class representing time
 
                         val currentDate = Date()
-                        val rec = Recording(currentDate, 0.0, 0.0, time)
+                        val rec = Recording(currentDate, 0.0, 0.0, time, null)
                         //adding a recording object to the list in the right task
                         selectedTask.taskRecords.add(rec)
 

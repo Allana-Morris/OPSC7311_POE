@@ -16,7 +16,7 @@
             android:name=".TaskCalendar"
             android:exported="false" />
         <activity
-            android:name=".enterTimeSheet"
+            android:name=".CreateEntry"
             android:exported="false" />
         <activity
             android:name=".create_category"
