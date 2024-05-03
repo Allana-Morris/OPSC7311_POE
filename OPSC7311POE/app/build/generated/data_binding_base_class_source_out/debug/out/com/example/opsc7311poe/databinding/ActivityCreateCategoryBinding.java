@@ -41,6 +41,9 @@ public final class ActivityCreateCategoryBinding implements ViewBinding {
   public final ImageButton ibHome;
 
   @NonNull
+  public final ImageButton ibIcon;
+
+  @NonNull
   public final ImageButton ibProfile;
 
   @NonNull
@@ -130,8 +133,8 @@ public final class ActivityCreateCategoryBinding implements ViewBinding {
   private ActivityCreateCategoryBinding(@NonNull ConstraintLayout rootView,
       @NonNull ConstraintLayout clNavBar, @NonNull EditText edtName, @NonNull EditText ettMaxGoal,
       @NonNull EditText ettMinGoal, @NonNull ImageButton ibCalendar, @NonNull ImageButton ibHome,
-      @NonNull ImageButton ibProfile, @NonNull ImageButton ibTimer, @NonNull ImageView imageView,
-      @NonNull ImageView ivBack, @NonNull ImageView ivColourPreview,
+      @NonNull ImageButton ibIcon, @NonNull ImageButton ibProfile, @NonNull ImageButton ibTimer,
+      @NonNull ImageView imageView, @NonNull ImageView ivBack, @NonNull ImageView ivColourPreview,
       @NonNull ImageView ivPickColour, @NonNull ConstraintLayout linearLayout,
       @NonNull ConstraintLayout linearLayout2, @NonNull ConstraintLayout linearLayout4,
       @NonNull ConstraintLayout linearLayout5, @NonNull ConstraintLayout main,
@@ -148,6 +151,7 @@ public final class ActivityCreateCategoryBinding implements ViewBinding {
     this.ettMinGoal = ettMinGoal;
     this.ibCalendar = ibCalendar;
     this.ibHome = ibHome;
+    this.ibIcon = ibIcon;
     this.ibProfile = ibProfile;
     this.ibTimer = ibTimer;
     this.imageView = imageView;
@@ -239,6 +243,12 @@ public final class ActivityCreateCategoryBinding implements ViewBinding {
       id = R.id.ib_Home;
       ImageButton ibHome = ViewBindings.findChildViewById(rootView, id);
       if (ibHome == null) {
+        break missingId;
+      }
+
+      id = R.id.ib_Icon;
+      ImageButton ibIcon = ViewBindings.findChildViewById(rootView, id);
+      if (ibIcon == null) {
         break missingId;
       }
 
@@ -413,7 +423,7 @@ public final class ActivityCreateCategoryBinding implements ViewBinding {
       }
 
       return new ActivityCreateCategoryBinding((ConstraintLayout) rootView, clNavBar, edtName,
-          ettMaxGoal, ettMinGoal, ibCalendar, ibHome, ibProfile, ibTimer, imageView, ivBack,
+          ettMaxGoal, ettMinGoal, ibCalendar, ibHome, ibIcon, ibProfile, ibTimer, imageView, ivBack,
           ivColourPreview, ivPickColour, linearLayout, linearLayout2, linearLayout4, linearLayout5,
           main, tvAddTask, tvCalendar, tvCategory, tvColour, tvColourPreview, tvHome, tvIcon,
           tvName, tvProfile, tvTargetHours, tvTimeDash, tvTimer, view, view10, view11, view12,

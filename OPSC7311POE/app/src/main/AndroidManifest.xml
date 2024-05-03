@@ -43,6 +43,9 @@
         <activity android:name=".Register" />
         <activity android:name=".MainActivity" />
         <activity android:name=".Profile" />
+        <activity android:name=".ViewTimeSheetEntry"/>
+        <activity android:name=".InsertData"/>
+
     </application>
 
 </manifest>
