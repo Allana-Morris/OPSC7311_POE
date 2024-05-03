@@ -6,7 +6,6 @@ import android.content.Context
 import android.content.Intent
 import android.os.Bundle
 import android.view.View
-import android.widget.EditText
 import android.widget.ImageButton
 import android.widget.ImageView
 import android.widget.TextView
@@ -21,7 +20,6 @@ import androidx.recyclerview.widget.RecyclerView
 import yuku.ambilwarna.AmbilWarnaDialog
 import yuku.ambilwarna.AmbilWarnaDialog.OnAmbilWarnaListener
 import java.time.LocalTime
-import java.util.*
 
 
 class create_category : AppCompatActivity() {
@@ -151,7 +149,6 @@ class create_category : AppCompatActivity() {
         val colorPickerDialogue = AmbilWarnaDialog(this, mDefaultColour, object :
             OnAmbilWarnaListener {
             override fun onCancel(dialog: AmbilWarnaDialog?) {
-
             }
 
             override fun onOk(dialog: AmbilWarnaDialog?, colour: Int) {
@@ -169,7 +166,7 @@ class create_category : AppCompatActivity() {
         val iconResources = mutableListOf<Int>()
         val packageName = context.packageName
         val resources = context.resources
-        val iconDir = resources.getIdentifier("iconpicker", "drawable", packageName)
+        val iconDir = resources.getIdentifier("drawable/iconpicker", "drawable", packageName)
         val iconNames = resources.getResourceName(iconDir).split("/")
         val iconPrefix = iconNames.first() + "/"
 

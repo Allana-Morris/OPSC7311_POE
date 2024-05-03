@@ -19,6 +19,7 @@ class Register : AppCompatActivity() {
 
         signUpButton.setOnClickListener()
         {
+            //Declaration of input boxes
             val username: EditText = findViewById<EditText?>(R.id.txtUserName)
             val fullName: EditText = findViewById(R.id.txtFullName)
             val email: EditText = findViewById(R.id.txtEmail)
@@ -27,31 +28,31 @@ class Register : AppCompatActivity() {
             val Validate = validation()
             var valid = true
 
-
+            //Whole bunch of Validation if statements
             if (Validate.checkStringNullOrEmpty(username.text.toString()))
             {
-                username.setText("please actually enter something")
+                username.setText("Invalid input: Input can not be blank")
                 username.setTextColor(Color.RED)
                 valid = false
             }
 
             if (Validate.checkStringNullOrEmpty(fullName.text.toString()))
             {
-                fullName.setText("please actually enter something")
+                fullName.setText("Invalid input: Input can not be blank")
                 fullName.setTextColor(Color.RED)
                 valid = false
             }
 
             if (Validate.checkStringNullOrEmpty(email.text.toString()))
             {
-                email.setText("please actually enter something")
+                email.setText("Invalid input: Input can not be blank")
                 email.setTextColor(Color.RED)
                 valid = false
             }
 
             if (Validate.checkStringNullOrEmpty(password.text.toString()))
             {
-                password.setText("please actually enter something")
+                password.setText("Invalid input: Input can not be blank")
                 password.setTextColor(Color.RED)
                 valid = false
             }
@@ -66,12 +67,13 @@ class Register : AppCompatActivity() {
 
             if (Validate.checkExistingUserUserName(username.text.toString()))
             {
-                username.setText("User Name taken")
+                username.setText("Username is already in use, choose a different one")
                 username.setTextColor(Color.RED)
                 valid = false
 
             }
 
+            //Big boss validation if statement
             if (valid)
             {
                 val user = User(username.text.toString(), fullName.text.toString(),
@@ -85,6 +87,7 @@ class Register : AppCompatActivity() {
 
         }
 
+        //Button that logs user in
         loginButton.setOnClickListener {
             // Create an Intent to navigate to ActivityLogin
             val intent = Intent(this, Login ::class.java)
