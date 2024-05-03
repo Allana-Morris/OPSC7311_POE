@@ -83,6 +83,8 @@
     <string name="create_task">Create Task</string>
     <string name="create_category">Create Category</string>
     <string name="create_entry">Create Timesheet Entry</string>
+    <string name="view_tasks">View Tasks</string>
+    <string name="view_timesheet">View Timesheet Entries</string>
 
 
 </resources>

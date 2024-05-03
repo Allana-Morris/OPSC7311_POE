@@ -59,7 +59,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         activityCreateEntry.setOnClickListener {
-            val intent3 = Intent(this, enterTimeSheet::class.java)
+            val intent3 = Intent(this, CreateEntry::class.java)
             startActivity(intent3)
         }
 
