@@ -58,6 +58,8 @@
         <activity android:name="com.example.opsc7311poe.Register" />
         <activity android:name="com.example.opsc7311poe.MainActivity" />
         <activity android:name="com.example.opsc7311poe.Profile" />
+        <activity android:name="com.example.opsc7311poe.ViewTimeSheetEntry" />
+        <activity android:name="com.example.opsc7311poe.InsertData" />
 
         <provider
             android:name="androidx.startup.InitializationProvider"
