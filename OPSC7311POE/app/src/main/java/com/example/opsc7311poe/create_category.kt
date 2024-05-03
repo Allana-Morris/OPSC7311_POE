@@ -1,6 +1,7 @@
 package com.example.opsc7311poe
 
 import android.annotation.SuppressLint
+import android.app.Dialog
 import android.app.TimePickerDialog
 import android.content.Context
 import android.content.Intent
@@ -17,6 +18,7 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import androidx.wear.compose.material.dialog.Dialog
 import yuku.ambilwarna.AmbilWarnaDialog
 import yuku.ambilwarna.AmbilWarnaDialog.OnAmbilWarnaListener
 import java.time.LocalTime
@@ -29,6 +31,7 @@ class create_category : AppCompatActivity() {
     private var mDefaultColour = 0
     private lateinit var ivColourPicker: ImageView
     private lateinit var ivColourPreview: View
+    private var catIcon = 0
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -46,7 +49,7 @@ class create_category : AppCompatActivity() {
         AddCategory.setOnClickListener(){
             val catName : TextView = findViewById(R.id.edtName)
             val catColor = mDefaultColour
-            val catIcon = 0
+
 
 
             var cateName = catName.text.toString()
@@ -54,6 +57,9 @@ class create_category : AppCompatActivity() {
             var maxHours = catMaxHours.text.toString()
             var catMin = vali.parseTimeToHours(LocalTime.parse(minHours + ":00"))
             var catMax = vali.parseTimeToHours(LocalTime.parse(maxHours+ ":00"))
+
+            //validate
+
 
             val cate = Category(cateName, catIcon, catColor, catMin, catMax)
 
@@ -63,7 +69,12 @@ class create_category : AppCompatActivity() {
 
         //Icon Picker
         iconPicker.setOnClickListener{
-            showIconPickerDialog()
+            val il = CreateIconList()
+            il.LoadIcons()
+            showIconPickerDialog(il.icons) {
+                selectedIconId -> catIcon = selectedIconId
+
+            }
         }
 
         catMinHours.setOnClickListener {
@@ -160,49 +171,24 @@ class create_category : AppCompatActivity() {
         Toast.makeText(this, "it clicked", Toast.LENGTH_SHORT).show()
 
     }
-    //Get Icons from IconPicker Folder into Mutable List of Ints
-    @SuppressLint("DiscouragedApi")
-    fun getAllIcons(context: Context): List<Int>{
-        val iconResources = mutableListOf<Int>()
-        val packageName = context.packageName
-        val resources = context.resources
-        val iconDir = resources.getIdentifier("drawable/iconpicker", "drawable", packageName)
-        val iconNames = resources.getResourceName(iconDir).split("/")
-        val iconPrefix = iconNames.first() + "/"
 
-        val iconIds = resources.getIdentifier(iconPrefix, null, null)
-        val iconFileNames = resources.getResourceEntryName(iconIds)
-
-        val field = R.drawable::class.java.fields
-        for (res in field) {
-            if (res.name.startsWith(iconFileNames)){
-                iconResources.add(res.getInt(null))
-            }
-        }
-        return iconResources
-    }
-
-    fun showIconPickerDialog() {
-        val icons = getAllIcons(this)
-        val dialogView = layoutInflater.inflate(R.layout.icon_picker_dialog, null)
-        val iconView = layoutInflater.inflate(R.layout.icon_item, null)
-        val iconRecyclerView = dialogView.findViewById<RecyclerView>(R.id.iconRecyclerView)
-        val imageView = iconView.findViewById<ImageView>(R.id.iconImageView)
-        iconRecyclerView.layoutManager = GridLayoutManager(this, 3) // Adjust span count as needed
-        iconRecyclerView.adapter = IconAdapter(icons) { selectedIconResId ->
-            // Handle the selected icon here
-            // For example, set it to an ImageView
-            imageView.setImageResource(selectedIconResId)
-        }
-
-        val dialog = AlertDialog.Builder(this)
-            .setView(dialogView)
-            .setTitle("Select an Icon")
-            .setPositiveButton("OK", null)
-            .setNegativeButton("Cancel", null)
-            .create()
-
+    fun showIconPickerDialog(iconList: ArrayList<Int>, onIconSelected: (Int) -> Unit) {
+        val dialog = IconPickerDialog(this, iconList, onIconSelected)
         dialog.show()
+    }
+    private class IconPickerDialog(context: Context, private val iconList: ArrayList<Int>, private val onIconSelected: (Int) -> Unit) :
+        Dialog(context) {
+
+        override fun onCreate(savedInstanceState: Bundle?) {
+            super.onCreate(savedInstanceState)
+            setContentView(R.layout.icon_picker_dialog)
+            val recyclerView: RecyclerView = findViewById(R.id.iconRecyclerView)
+            val adapter = IconAdapter(iconList) { iconId ->
+                onIconSelected(iconId)
+                dismiss()
+            }
+            recyclerView.adapter = adapter
+        }
     }
 
 }

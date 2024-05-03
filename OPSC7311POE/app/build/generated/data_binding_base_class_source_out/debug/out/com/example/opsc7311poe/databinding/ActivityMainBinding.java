@@ -6,7 +6,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageButton;
-import android.widget.SearchView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -23,13 +22,13 @@ public final class ActivityMainBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
-  public final Button btnCurrentTasks;
+  public final Button btnCategory;
 
   @NonNull
-  public final Button btnSeeAll;
+  public final Button btnTask;
 
   @NonNull
-  public final Button button9;
+  public final Button btnTimesheet;
 
   @NonNull
   public final ConstraintLayout clNavBar;
@@ -62,9 +61,6 @@ public final class ActivityMainBinding implements ViewBinding {
   public final ConstraintLayout main;
 
   @NonNull
-  public final SearchView searchView;
-
-  @NonNull
   public final TextView tvBlackBox;
 
   @NonNull
@@ -79,18 +75,18 @@ public final class ActivityMainBinding implements ViewBinding {
   @NonNull
   public final TextView tvTimer;
 
-  private ActivityMainBinding(@NonNull ConstraintLayout rootView, @NonNull Button btnCurrentTasks,
-      @NonNull Button btnSeeAll, @NonNull Button button9, @NonNull ConstraintLayout clNavBar,
+  private ActivityMainBinding(@NonNull ConstraintLayout rootView, @NonNull Button btnCategory,
+      @NonNull Button btnTask, @NonNull Button btnTimesheet, @NonNull ConstraintLayout clNavBar,
       @NonNull ImageButton ibCalendar, @NonNull ImageButton ibHome, @NonNull ImageButton ibProfile,
       @NonNull ImageButton ibTimer, @NonNull ConstraintLayout linearLayout,
       @NonNull ConstraintLayout linearLayout2, @NonNull ConstraintLayout linearLayout4,
       @NonNull ConstraintLayout linearLayout5, @NonNull ConstraintLayout main,
-      @NonNull SearchView searchView, @NonNull TextView tvBlackBox, @NonNull TextView tvCalendar,
-      @NonNull TextView tvHome, @NonNull TextView tvProfile, @NonNull TextView tvTimer) {
+      @NonNull TextView tvBlackBox, @NonNull TextView tvCalendar, @NonNull TextView tvHome,
+      @NonNull TextView tvProfile, @NonNull TextView tvTimer) {
     this.rootView = rootView;
-    this.btnCurrentTasks = btnCurrentTasks;
-    this.btnSeeAll = btnSeeAll;
-    this.button9 = button9;
+    this.btnCategory = btnCategory;
+    this.btnTask = btnTask;
+    this.btnTimesheet = btnTimesheet;
     this.clNavBar = clNavBar;
     this.ibCalendar = ibCalendar;
     this.ibHome = ibHome;
@@ -101,7 +97,6 @@ public final class ActivityMainBinding implements ViewBinding {
     this.linearLayout4 = linearLayout4;
     this.linearLayout5 = linearLayout5;
     this.main = main;
-    this.searchView = searchView;
     this.tvBlackBox = tvBlackBox;
     this.tvCalendar = tvCalendar;
     this.tvHome = tvHome;
@@ -136,21 +131,21 @@ public final class ActivityMainBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.btn_CurrentTasks;
-      Button btnCurrentTasks = ViewBindings.findChildViewById(rootView, id);
-      if (btnCurrentTasks == null) {
+      id = R.id.btnCategory;
+      Button btnCategory = ViewBindings.findChildViewById(rootView, id);
+      if (btnCategory == null) {
         break missingId;
       }
 
-      id = R.id.btn_See_All;
-      Button btnSeeAll = ViewBindings.findChildViewById(rootView, id);
-      if (btnSeeAll == null) {
+      id = R.id.btnTask;
+      Button btnTask = ViewBindings.findChildViewById(rootView, id);
+      if (btnTask == null) {
         break missingId;
       }
 
-      id = R.id.button9;
-      Button button9 = ViewBindings.findChildViewById(rootView, id);
-      if (button9 == null) {
+      id = R.id.btnTimesheet;
+      Button btnTimesheet = ViewBindings.findChildViewById(rootView, id);
+      if (btnTimesheet == null) {
         break missingId;
       }
 
@@ -210,12 +205,6 @@ public final class ActivityMainBinding implements ViewBinding {
 
       ConstraintLayout main = (ConstraintLayout) rootView;
 
-      id = R.id.searchView;
-      SearchView searchView = ViewBindings.findChildViewById(rootView, id);
-      if (searchView == null) {
-        break missingId;
-      }
-
       id = R.id.tvBlackBox;
       TextView tvBlackBox = ViewBindings.findChildViewById(rootView, id);
       if (tvBlackBox == null) {
@@ -246,10 +235,10 @@ public final class ActivityMainBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityMainBinding((ConstraintLayout) rootView, btnCurrentTasks, btnSeeAll,
-          button9, clNavBar, ibCalendar, ibHome, ibProfile, ibTimer, linearLayout, linearLayout2,
-          linearLayout4, linearLayout5, main, searchView, tvBlackBox, tvCalendar, tvHome, tvProfile,
-          tvTimer);
+      return new ActivityMainBinding((ConstraintLayout) rootView, btnCategory, btnTask,
+          btnTimesheet, clNavBar, ibCalendar, ibHome, ibProfile, ibTimer, linearLayout,
+          linearLayout2, linearLayout4, linearLayout5, main, tvBlackBox, tvCalendar, tvHome,
+          tvProfile, tvTimer);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

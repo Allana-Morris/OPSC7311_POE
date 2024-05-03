@@ -1,9 +1,9 @@
 <component name="libraryTable">
   <library name="Gradle: androidx.activity:activity:1.8.0@aar" external-system-id="GRADLE">
     <CLASSES>
-      <root url="file://$USER_HOME$/Downloads/OPSC7311POE/OPSC7311POE/gradle/caches/transforms-4/8f709c0097f49d2aee6f512e51095296/transformed/activity-1.8.0/res" />
-      <root url="file://$USER_HOME$/Downloads/OPSC7311POE/OPSC7311POE/gradle/caches/transforms-4/8f709c0097f49d2aee6f512e51095296/transformed/activity-1.8.0/AndroidManifest.xml" />
-      <root url="jar://$USER_HOME$/Downloads/OPSC7311POE/OPSC7311POE/gradle/caches/transforms-4/8f709c0097f49d2aee6f512e51095296/transformed/activity-1.8.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/Downloads/OPSC7311POE/OPSC7311POE/gradle/wrapper/dists/gradle-8.7-all/caches/transforms-4/0ea42374a5b7c1e769cf6223e3b00c2e/transformed/activity-1.8.0/res" />
+      <root url="jar://$USER_HOME$/Downloads/OPSC7311POE/OPSC7311POE/gradle/wrapper/dists/gradle-8.7-all/caches/transforms-4/0ea42374a5b7c1e769cf6223e3b00c2e/transformed/activity-1.8.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/Downloads/OPSC7311POE/OPSC7311POE/gradle/wrapper/dists/gradle-8.7-all/caches/transforms-4/0ea42374a5b7c1e769cf6223e3b00c2e/transformed/activity-1.8.0/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
