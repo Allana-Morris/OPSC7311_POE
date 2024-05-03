@@ -60,8 +60,6 @@ drawable track
 drawable uploadphoto
 drawable whitescreen
 drawable write
-id auto_complete_txt
-id auto_complete_txt2
 id btnLogin
 id btnReset
 id btnSaveProfile
@@ -96,10 +94,6 @@ id ib_Home
 id ib_Profile
 id ib_Timer
 id imageView
-id imageView15
-id imageView16
-id imageView17
-id imageView18
 id imageView22
 id imgTaskIcon
 id img_bar
@@ -126,14 +120,23 @@ id saveTimebtn
 id scrollView2
 id searchView
 id sp_Category
+id spinCat
+id spinId
+id spinId2
+id spinTask
 id textView
+id textView3
 id textView32
 id textView34
+id textView4
+id textView5
+id textView6
 id textView99
 id textview1
 id tvAddTask
 id tvBar
 id tvBlackBox
+id tvCategorySpinner
 id tvChooseAWeek
 id tvCustomiseProfile
 id tvEditusername
@@ -145,6 +148,7 @@ id tvPie
 id tvProfilePhoto
 id tvSeePassword
 id tvSummary
+id tvTaskSpinner
 id tvTask_description
 id tvTask_end_time
 id tvTask_name
@@ -189,6 +193,7 @@ id view5
 id view8
 id view9
 layout activity_create_category
+layout activity_enter_time_sheet
 layout activity_insert_data
 layout activity_login
 layout activity_main
@@ -233,6 +238,8 @@ string description
 string design
 string diagram
 string editUser
+string enter_hours_spent
+string enter_time
 string forward
 string fullName
 string generate
@@ -258,6 +265,7 @@ string reset_password
 string save2
 string seeAll
 string seePass
+string select_date
 string sign_in_to_lifetime
 string signup
 string start
