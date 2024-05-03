@@ -14,7 +14,6 @@ import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.example.opsc7311poe.R;
-import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import java.lang.NullPointerException;
 import java.lang.Override;
 import java.lang.String;
@@ -27,10 +26,10 @@ public final class ActivityViewTasksBinding implements ViewBinding {
   public final ConstraintLayout clNavBar;
 
   @NonNull
-  public final FloatingActionButton createBtn;
+  public final ImageButton createCat;
 
   @NonNull
-  public final FloatingActionButton createCatBtn;
+  public final ImageButton createTask;
 
   @NonNull
   public final ImageButton ibCalendar;
@@ -78,18 +77,17 @@ public final class ActivityViewTasksBinding implements ViewBinding {
   public final LinearLayout vertLayout;
 
   private ActivityViewTasksBinding(@NonNull ConstraintLayout rootView,
-      @NonNull ConstraintLayout clNavBar, @NonNull FloatingActionButton createBtn,
-      @NonNull FloatingActionButton createCatBtn, @NonNull ImageButton ibCalendar,
-      @NonNull ImageButton ibHome, @NonNull ImageButton ibProfile, @NonNull ImageButton ibTimer,
-      @NonNull ImageView imageView, @NonNull ConstraintLayout linearLayout,
-      @NonNull ConstraintLayout linearLayout2, @NonNull ConstraintLayout linearLayout4,
-      @NonNull ConstraintLayout linearLayout5, @NonNull ConstraintLayout main,
-      @NonNull TextView tvCalendar, @NonNull TextView tvHome, @NonNull TextView tvProfile,
-      @NonNull TextView tvTimer, @NonNull LinearLayout vertLayout) {
+      @NonNull ConstraintLayout clNavBar, @NonNull ImageButton createCat,
+      @NonNull ImageButton createTask, @NonNull ImageButton ibCalendar, @NonNull ImageButton ibHome,
+      @NonNull ImageButton ibProfile, @NonNull ImageButton ibTimer, @NonNull ImageView imageView,
+      @NonNull ConstraintLayout linearLayout, @NonNull ConstraintLayout linearLayout2,
+      @NonNull ConstraintLayout linearLayout4, @NonNull ConstraintLayout linearLayout5,
+      @NonNull ConstraintLayout main, @NonNull TextView tvCalendar, @NonNull TextView tvHome,
+      @NonNull TextView tvProfile, @NonNull TextView tvTimer, @NonNull LinearLayout vertLayout) {
     this.rootView = rootView;
     this.clNavBar = clNavBar;
-    this.createBtn = createBtn;
-    this.createCatBtn = createCatBtn;
+    this.createCat = createCat;
+    this.createTask = createTask;
     this.ibCalendar = ibCalendar;
     this.ibHome = ibHome;
     this.ibProfile = ibProfile;
@@ -140,15 +138,15 @@ public final class ActivityViewTasksBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.createBtn;
-      FloatingActionButton createBtn = ViewBindings.findChildViewById(rootView, id);
-      if (createBtn == null) {
+      id = R.id.createCat;
+      ImageButton createCat = ViewBindings.findChildViewById(rootView, id);
+      if (createCat == null) {
         break missingId;
       }
 
-      id = R.id.createCatBtn;
-      FloatingActionButton createCatBtn = ViewBindings.findChildViewById(rootView, id);
-      if (createCatBtn == null) {
+      id = R.id.createTask;
+      ImageButton createTask = ViewBindings.findChildViewById(rootView, id);
+      if (createTask == null) {
         break missingId;
       }
 
@@ -238,8 +236,8 @@ public final class ActivityViewTasksBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityViewTasksBinding((ConstraintLayout) rootView, clNavBar, createBtn,
-          createCatBtn, ibCalendar, ibHome, ibProfile, ibTimer, imageView, linearLayout,
+      return new ActivityViewTasksBinding((ConstraintLayout) rootView, clNavBar, createCat,
+          createTask, ibCalendar, ibHome, ibProfile, ibTimer, imageView, linearLayout,
           linearLayout2, linearLayout4, linearLayout5, main, tvCalendar, tvHome, tvProfile, tvTimer,
           vertLayout);
     }

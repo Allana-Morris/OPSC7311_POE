@@ -14,96 +14,97 @@
         android:id="@+id/tvBlackBox"
         android:layout_width="296dp"
         android:layout_height="87dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="32dp"
 
         android:background="@drawable/roundstyle"
         android:backgroundTint="@color/black"
         android:text=""
-        app:layout_constraintBottom_toTopOf="@+id/searchView"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.513"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.045" />
+        app:layout_constraintTop_toTopOf="parent" />
 
-    <SearchView
-        android:id="@+id/searchView"
-        android:layout_width="247dp"
-        android:layout_height="27dp"
-        android:layout_marginTop="116dp"
-        android:background="@drawable/roundstyle"
-        android:backgroundTint="@color/white"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.506"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="MissingConstraints">
-
-    </SearchView>
-
-    <Button
-        android:id="@+id/btn_CurrentTasks"
-        android:layout_width="106dp"
-        android:layout_height="55dp"
-
-
-        android:layout_marginStart="56dp"
-        android:layout_marginBottom="16dp"
-        android:background="@drawable/roundstyle"
-
-        android:backgroundTint="#FFFFFF"
-        android:fontFamily="sans-serif-medium"
-        android:text="@string/CurrentTask"
-        android:textAlignment="center"
-        android:textColor="@color/black"
-        app:layout_constraintBottom_toTopOf="@+id/button9"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="MissingConstraints,SpeakableTextPresentCheck" />
-
-    <Button
-        android:id="@+id/btn_See_All"
-        android:layout_width="134dp"
-        android:layout_height="66dp"
-
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="307dp"
+        android:layout_height="370dp"
+        android:layout_marginTop="60dp"
         android:background="@drawable/roundstyle"
         android:backgroundTint="#FFFFFF"
-        android:fontFamily="sans-serif-condensed-medium"
-        android:text="@string/seeAll"
-        android:textAlignment="center"
-        app:layout_constraintBottom_toTopOf="@+id/button9"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/btn_CurrentTasks"
-        tools:ignore="MissingConstraints,SpeakableTextPresentCheck" />
-
-    <Button
-        android:id="@+id/button9"
-        android:layout_width="120dp"
-        android:layout_height="169dp"
-
-
-        android:layout_marginTop="88dp"
-        android:background="@drawable/roundstyle"
-        android:backgroundTint="#FFFFFF"
-        android:text="@string/progress"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.168"
+        app:layout_constraintHorizontal_bias="0.519"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/searchView"
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintTop_toBottomOf="@+id/tvBlackBox">
+
+        <Button
+            android:id="@+id/btnTask"
+            android:layout_width="120dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="28dp"
+            android:text="@string/create_task"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btnCategory"
+            android:layout_width="120dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="28dp"
+            android:layout_marginEnd="16dp"
+            android:text="@string/create_category"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/btnTask"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btnTimesheet"
+            android:layout_width="120dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="28dp"
+            android:text="@string/create_entry"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnTask" />
+
+        <Button
+            android:id="@+id/btnViewTasks"
+            android:layout_width="120dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="28dp"
+            android:layout_marginEnd="16dp"
+            android:text="@string/view_tasks"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnCategory" />
+
+        <Button
+            android:id="@+id/btnViewEntries"
+            android:layout_width="120dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="28dp"
+            android:text="@string/view_timesheet"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnTimesheet" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/cl_NavBar"
-        android:layout_width="411dp"
-        android:layout_height="112dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
+        android:layout_width="414dp"
+        android:layout_height="141dp"
+        android:layout_marginTop="60dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout">
 
         <com.google.android.material.bottomnavigation.BottomNavigationView
-            android:layout_width="416dp"
-            android:layout_height="105dp"
+            android:layout_width="411dp"
+            android:layout_height="125dp"
             android:background="#FFFFFF"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent">
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="415dp"
@@ -131,10 +132,11 @@
                             android:id="@+id/tv_Profile"
                             android:layout_width="83dp"
                             android:layout_height="21dp"
-                            android:layout_marginBottom="4dp"
+                            android:layout_marginBottom="16dp"
                             android:gravity="center"
                             app:layout_constraintBottom_toBottomOf="parent"
                             app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.523"
                             app:layout_constraintStart_toStartOf="parent"
                             tools:text="@string/profile" />
 
@@ -142,7 +144,7 @@
                             android:id="@+id/ib_Profile"
                             android:layout_width="65dp"
                             android:layout_height="70dp"
-                            android:layout_marginTop="16dp"
+                            android:layout_marginTop="4dp"
                             android:background="@color/white"
                             android:scaleType="centerInside"
                             app:layout_constraintEnd_toEndOf="parent"
@@ -164,11 +166,11 @@
                             android:id="@+id/tv_Home"
                             android:layout_width="83dp"
                             android:layout_height="21dp"
-                            android:layout_marginBottom="4dp"
+                            android:layout_marginBottom="16dp"
                             android:gravity="center"
                             app:layout_constraintBottom_toBottomOf="parent"
                             app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintHorizontal_bias="0.526"
+                            app:layout_constraintHorizontal_bias="0.523"
                             app:layout_constraintStart_toStartOf="parent"
                             tools:text="@string/home" />
 
@@ -176,11 +178,11 @@
                             android:id="@+id/ib_Home"
                             android:layout_width="65dp"
                             android:layout_height="70dp"
-                            android:layout_marginTop="16dp"
+                            android:layout_marginTop="4dp"
                             android:background="@color/white"
                             android:scaleType="centerInside"
                             app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintHorizontal_bias="0.512"
+                            app:layout_constraintHorizontal_bias="0.589"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toTopOf="parent"
                             app:srcCompat="@drawable/house"
@@ -198,11 +200,11 @@
                             android:id="@+id/tv_calendar"
                             android:layout_width="83dp"
                             android:layout_height="21dp"
-                            android:layout_marginBottom="4dp"
+                            android:layout_marginBottom="16dp"
                             android:gravity="center"
                             app:layout_constraintBottom_toBottomOf="parent"
                             app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintHorizontal_bias="0.473"
+                            app:layout_constraintHorizontal_bias="0.523"
                             app:layout_constraintStart_toStartOf="parent"
                             tools:text="@string/calendar" />
 
@@ -210,7 +212,7 @@
                             android:id="@+id/ib_Calendar"
                             android:layout_width="65dp"
                             android:layout_height="70dp"
-                            android:layout_marginTop="16dp"
+                            android:layout_marginTop="4dp"
                             android:background="@color/white"
                             android:scaleType="centerInside"
                             app:layout_constraintEnd_toEndOf="parent"
@@ -232,11 +234,11 @@
                             android:id="@+id/tv_timer"
                             android:layout_width="83dp"
                             android:layout_height="21dp"
-                            android:layout_marginBottom="4dp"
+                            android:layout_marginBottom="16dp"
                             android:gravity="center"
                             app:layout_constraintBottom_toBottomOf="parent"
                             app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintHorizontal_bias="0.526"
+                            app:layout_constraintHorizontal_bias="0.523"
                             app:layout_constraintStart_toStartOf="parent"
                             tools:text="@string/timer" />
 
@@ -244,10 +246,11 @@
                             android:id="@+id/ib_Timer"
                             android:layout_width="65dp"
                             android:layout_height="70dp"
-                            android:layout_marginTop="16dp"
+                            android:layout_marginTop="4dp"
                             android:background="@color/white"
                             android:scaleType="centerInside"
                             app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.512"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toTopOf="parent"
                             app:srcCompat="@drawable/timer"

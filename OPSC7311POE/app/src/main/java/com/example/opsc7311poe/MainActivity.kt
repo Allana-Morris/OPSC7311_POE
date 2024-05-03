@@ -47,30 +47,39 @@ class MainActivity : AppCompatActivity() {
         val activityCreateTask = findViewById<Button>(R.id.btnTask)
         val activityCreateCategory = findViewById<Button>(R.id.btnCategory)
         val activityCreateEntry = findViewById<Button>(R.id.btnTimesheet)
+        val activityViewTask = findViewById<Button>(R.id.btnViewTasks)
+        val activityViewEntries = findViewById<Button>(R.id.btnViewEntries)
 
         activityCreateTask.setOnClickListener{
-            val intent = Intent(this, InsertData::class.java)
-            startActivity(intent)
+            val Taskintent = Intent(this, InsertData::class.java)
+            startActivity(Taskintent)
         }
 
         activityCreateCategory.setOnClickListener{
-            val intent2 = Intent(this, create_category::class.java)
-            startActivity(intent2)
+            val Catintent = Intent(this, create_category::class.java)
+            startActivity(Catintent)
         }
 
         activityCreateEntry.setOnClickListener {
-            val intent3 = Intent(this, CreateEntry::class.java)
-            startActivity(intent3)
+            val Entryintent = Intent(this, CreateEntry::class.java)
+            startActivity(Entryintent)
+        }
+
+        activityViewTask.setOnClickListener {
+            val ViewTaskintent = Intent(this, ViewData::class.java)
+            startActivity(ViewTaskintent)
+        }
+
+        activityViewEntries.setOnClickListener {
+            val ViewEntriesintent = Intent(this, ViewTimeSheetEntry::class.java)
+            startActivity(ViewEntriesintent)
         }
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
-
             val headerText: TextView = findViewById(R.id.tvBlackBox)
             headerText.text = SessionUser.currentUser?.username ?: "its null L"
-
-
             insets
 
         }

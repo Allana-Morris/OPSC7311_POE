@@ -34,7 +34,10 @@
     <string name="continue_with_google">Continue with Google</string>
     <string name="count_down">Countdown</string>
     <string name="createD">Create a Diagram</string>
+    <string name="create_category">Create Category</string>
+    <string name="create_entry">Create Timesheet Entry</string>
     <string name="create_one">Create one</string>
+    <string name="create_task">Create Task</string>
     <string name="curent_day">%1$s</string>
     <string name="current_task">Current Task</string>
     <string name="customP">Customize and Personalize</string>
@@ -69,7 +72,9 @@
     <string name="save2">Save</string>
     <string name="seeAll">See All></string>
     <string name="seePass">See Password</string>
+    <string name="select">Select</string>
     <string name="select_date">Select date</string>
+    <string name="select_end_date">Select End Date</string>
     <string name="sign_in_to_lifetime">Sign in to LifeTime</string>
     <string name="signup">Sign Up</string>
     <string name="start">Start</string>
@@ -89,6 +94,8 @@
     <string name="title_notifications">Notifications</string>
     <string name="uploadpic">Upload New</string>
     <string name="username">Username</string>
+    <string name="view_tasks">View Tasks</string>
+    <string name="view_timesheet">View Timesheet Entries</string>
     <string name="weeklyS">Weekly summary</string>
     <string name="welcome">"Welcome !"</string>
     <style name="Base.Theme.OPSC7311POE" parent="Theme.AppCompat.Light.NoActionBar">
