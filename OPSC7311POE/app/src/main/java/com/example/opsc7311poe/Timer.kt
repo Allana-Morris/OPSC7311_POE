@@ -77,15 +77,9 @@ class Timer : AppCompatActivity() {
           }
 
          */
-
         // Create a list to hold category names
         val categoryList = mutableListOf<String>()
         val taskList = mutableListOf<String>()
-
-        // Iterate through the user's categories and add their names to the list
-        SessionUser.currentUser?.categories?.forEach { (name, _) ->
-            categoryList.add(name)
-        }
 
         // If there are no categories, disable the task spinner and display "No categories"
         if (categoryList.isEmpty()) {
@@ -101,10 +95,13 @@ class Timer : AppCompatActivity() {
             spnCat.isEnabled = true
             btnSave.isEnabled = true;
             spnTask.adapter = ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, emptyList())
-        //    spnCat.adapter = ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, emptyList())
+            spnCat.adapter = ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, emptyList())
         }
 
-
+        // Iterate through the user's categories and add their names to the list
+        SessionUser.currentUser?.categories?.forEach { (name, _) ->
+            categoryList.add(name)
+        }
 
         // Create an adapter for the category Spinner
         val categoryAdapter = ArrayAdapter(this, android.R.layout.simple_spinner_item, categoryList)
@@ -156,30 +153,58 @@ class Timer : AppCompatActivity() {
         }
 
         btnSave.setOnClickListener {
-            // Get the selected category and task names from spinners
-            val selectedCat = spnCat.selectedItem.toString()
-            val selectedTask = spnTask.selectedItem.toString()
+            if (!isTimerRunning) {
+                val selectedTaskName = spnTask.selectedItem.toString()
 
-            // Assuming you have the necessary parameters to pass
-            val start = "08:00" // Example start time
-            val end = "10:00" // Example end time
+                // Get the selected category name
+                val selectedCategoryName = spnCat.selectedItem.toString()
 
-            // Create an intent to switch to CreateEntry activity
-            val intent = Intent(this, CreateEntry::class.java)
+                // Get the selected category from the user's hashmap
+                val selectedCategory = SessionUser.currentUser?.categories?.get(selectedCategoryName)
 
-            // Use the primary constructor to pass parameters
-            intent.putExtra("PRE_CAT", selectedCat)
-            intent.putExtra("PRE_TASK", selectedTask)
-            intent.putExtra("START_TIME", start)
-            intent.putExtra("END_TIME", end)
-            intent.putExtra("bFlag", true)
+                // If selectedCategory is not null and it contains the selected task
+                if (selectedCategory != null && selectedCategory.tasks.containsKey(selectedTaskName)) {
+                    val selectedTask = selectedCategory.tasks[selectedTaskName]
 
-            // Start the activity with the intent
-            startActivity(intent)
+                    // Your code to work with the selected task goes here
+                    if (selectedTask != null) {
+                        val timed = edtTime.text.toString()
+                        edtTime.setText("00:00:00")
+                        secondsElapsed = 0
+
+                        val parts = timed.split(":")
+                        val hours = parts[0].toInt()
+                        val minutes = parts[1].toInt()
+                        val seconds = parts[2].toInt()
+
+                        val time = Time(
+                            hours,
+                            minutes,
+                            seconds
+                        ) // Assuming Time is a custom class representing time
+
+                        val currentDate = Date()
+                        val rec = Recording(currentDate, 0.0, 0.0, time)
+                        //adding a recording object to the list in the right task
+                        selectedTask.taskRecords.add(rec)
+
+                        for (recording in selectedTask.taskRecords) {
+                            if (recording.RecDate == currentDate) {
+                                Toast.makeText(
+                                    this,
+                                    "Recording duration: " + recording.Duration,
+                                    Toast.LENGTH_SHORT
+                                ).show()
+                            }
+                        }
+                    } else {
+                        Toast.makeText(this, "Selected task is null", Toast.LENGTH_SHORT).show()
+                    }
+                } else {
+                    Toast.makeText(this, "Selected task or category is null", Toast.LENGTH_SHORT).show()
+                }
+            }
         }
-
-
-
 
 
 

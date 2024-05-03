@@ -19,33 +19,10 @@ import java.time.LocalTime
 import java.util.Calendar
 import java.util.Date
 
-class CreateEntry : AppCompatActivity {
-    var selectedCat: String = ""
-    var selectedTask: String = ""
-    var start: String = ""
-    var end: String = ""
-    var fromTimer: Boolean = true
+class CreateEntry : AppCompatActivity() {
 
     val categoryList = mutableListOf<String>()
     val taskList = mutableListOf<String>()
-
-    // Primary constructor
-    constructor(preCat: String, preTask: String, start: String, end: String, bFlag: Boolean) : super() {
-        this.selectedCat = preCat
-        this.selectedTask = preTask
-        this.start = start
-        this.end = end
-        this.fromTimer = bFlag
-    }
-
-    // Secondary constructor
-    constructor() : super() {
-        // Initialize fromTimer to false in the secondary constructor
-        this.fromTimer = false
-    }
-
-
-
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -257,31 +234,6 @@ class CreateEntry : AppCompatActivity {
             }
         }
 
-    }
-    override fun onResume() {
-        super.onResume()
-        // Check if the constructor was used
-        if (fromTimer == true) {
-            Toast.makeText(this, "im here", Toast.LENGTH_SHORT).show()
-            // Populate the TextViews with the values from the constructor parameters
-            findViewById<TextView>(R.id.tvEntryDate).setText(LocalDate.now().toString()) // You can set the date to the current date or use a default value
-            findViewById<TextView>(R.id.tvStartTime).text = start
-            findViewById<TextView>(R.id.tvEndTime).text = end
-
-            // You may also want to pre-select the category and task in the Spinners if they match the constructor parameters
-            val spinCat: Spinner = findViewById(R.id.spinEntryCat)
-            val spinTask: Spinner = findViewById(R.id.spinEntryTask)
-
-            val catIndex = categoryList.indexOf(selectedCat)
-            if (catIndex != -1) {
-                spinCat.setSelection(catIndex)
-            }
-
-            val taskIndex = taskList.indexOf(selectedTask)
-            if (taskIndex != -1) {
-                spinTask.setSelection(taskIndex)
-            }
-       }
     }
 
 }
