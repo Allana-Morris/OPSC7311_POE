@@ -3500,10 +3500,7 @@ int id imageView 0x7f08011e
 int id imageView1 0x7f08011f
 int id imageView22 0x7f080120
 int id imgTaskIcon 0x7f080121
-int id img_bar 0x7f080122
-int id img_chooseDate 0x7f080123
 int id img_photoUp 0x7f080124
-int id img_piechart 0x7f080125
 int id img_whiteBackground 0x7f080126
 int id immediateStop 0x7f080127
 int id included 0x7f080128
@@ -3807,7 +3804,6 @@ int id tvAddTask 0x7f080251
 int id tvBar 0x7f080252
 int id tvBlackBox 0x7f080253
 int id tvCategorySpinner 0x7f080254
-int id tvChooseAWeek 0x7f080255
 int id tvCustomiseProfile 0x7f080256
 int id tvEditusername 0x7f080257
 int id tvEmail 0x7f080258
@@ -3817,7 +3813,6 @@ int id tvEndTime 0x7f08025b
 int id tvEntryDate 0x7f08025c
 int id tvEntryTime 0x7f08025d
 int id tvFullName 0x7f08025e
-int id tvGraph 0x7f08025f
 int id tvNewPhoto 0x7f080260
 int id tvPie 0x7f080261
 int id tvProfilePhoto 0x7f080262

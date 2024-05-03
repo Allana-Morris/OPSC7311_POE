@@ -3501,10 +3501,7 @@ id imageView
 id imageView1
 id imageView22
 id imgTaskIcon
-id img_bar
-id img_chooseDate
 id img_photoUp
-id img_piechart
 id img_whiteBackground
 id immediateStop
 id included
@@ -3808,7 +3805,6 @@ id tvAddTask
 id tvBar
 id tvBlackBox
 id tvCategorySpinner
-id tvChooseAWeek
 id tvCustomiseProfile
 id tvEditusername
 id tvEmail
@@ -3818,7 +3814,6 @@ id tvEndTime
 id tvEntryDate
 id tvEntryTime
 id tvFullName
-id tvGraph
 id tvNewPhoto
 id tvPie
 id tvProfilePhoto

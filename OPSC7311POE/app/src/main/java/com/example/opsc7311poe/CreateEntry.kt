@@ -4,6 +4,7 @@ import android.app.Activity
 import android.app.DatePickerDialog
 import android.app.TimePickerDialog
 import android.content.Intent
+import android.graphics.Bitmap
 import android.net.Uri
 import android.os.Bundle
 import android.provider.MediaStore
@@ -48,19 +49,14 @@ class CreateEntry : AppCompatActivity() {
         resultLauncher = registerForActivityResult(ActivityResultContracts.StartActivityForResult()) { result ->
             if (result.resultCode == Activity.RESULT_OK) {
                 // Handle the result if the operation was successful
-                val selectedImageUri: Uri? = result.data?.data
-                // Now you can use selectedImageUri to access the selected image
-                // For example, you might want to display it in an ImageView
-                if (selectedImageUri != null) {
-                    // Set the selected image to the ImageView
-                    uploaded.setImageURI(selectedImageUri)
-                } else {
-                    Toast.makeText(this@CreateEntry, "Failed to load image", Toast.LENGTH_SHORT).show()
-                }
+                val data: Intent? = result.data
+                val imageBitmap = data?.extras?.get("data") as Bitmap?
+                uploaded.setImageBitmap(imageBitmap) // Set the captured image to the ImageView
             } else {
-                Toast.makeText(this@CreateEntry, "Failed to pick image", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this@CreateEntry, "Failed to capture image", Toast.LENGTH_SHORT).show()
             }
         }
+
 
 
 
@@ -202,11 +198,10 @@ class CreateEntry : AppCompatActivity() {
 
         }
 
-        btnPhoto.setOnClickListener()
-        {
-
-            selectImage()
+        btnPhoto.setOnClickListener {
+            selectImageFromCamera()
         }
+
 
         tvEnd.setOnClickListener()
         {
@@ -275,5 +270,19 @@ class CreateEntry : AppCompatActivity() {
         val intent = Intent(Intent.ACTION_PICK, MediaStore.Images.Media.EXTERNAL_CONTENT_URI)
         resultLauncher.launch(intent)
     }
+    private fun selectImageFromCamera() {
+        // Create an intent to capture an image
+        val takePictureIntent = Intent(MediaStore.ACTION_IMAGE_CAPTURE)
+
+        // Check if there's a camera app to handle the intent
+        if (takePictureIntent.resolveActivity(packageManager) != null) {
+            // Launch the camera app
+            resultLauncher.launch(takePictureIntent)
+        } else {
+            // If no camera app is available, display a toast or handle it in another way
+            Toast.makeText(this, "No camera app available", Toast.LENGTH_SHORT).show()
+        }
+    }
+
 
 }
