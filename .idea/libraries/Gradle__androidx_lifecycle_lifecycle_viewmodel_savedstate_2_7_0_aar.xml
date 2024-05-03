@@ -1,9 +1,9 @@
 <component name="libraryTable">
   <library name="Gradle: androidx.lifecycle:lifecycle-viewmodel-savedstate:2.7.0@aar" external-system-id="GRADLE">
     <CLASSES>
-      <root url="file://$USER_HOME$/Downloads/OPSC7311POE/OPSC7311POE/gradle/wrapper/dists/gradle-8.7-all/caches/transforms-4/96be7e0fad1b7e3d2cd86060edc18e5e/transformed/lifecycle-viewmodel-savedstate-2.7.0/res" />
-      <root url="jar://$USER_HOME$/Downloads/OPSC7311POE/OPSC7311POE/gradle/wrapper/dists/gradle-8.7-all/caches/transforms-4/96be7e0fad1b7e3d2cd86060edc18e5e/transformed/lifecycle-viewmodel-savedstate-2.7.0/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/Downloads/OPSC7311POE/OPSC7311POE/gradle/wrapper/dists/gradle-8.7-all/caches/transforms-4/96be7e0fad1b7e3d2cd86060edc18e5e/transformed/lifecycle-viewmodel-savedstate-2.7.0/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/Downloads/OPSC7311POE/OPSC7311POE/gradle/wrapper/dists/gradle-8.7-all/caches/transforms-4/a3bfd311af208a78a5b3cb7880ed9bb8/transformed/lifecycle-viewmodel-savedstate-2.7.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/Downloads/OPSC7311POE/OPSC7311POE/gradle/wrapper/dists/gradle-8.7-all/caches/transforms-4/a3bfd311af208a78a5b3cb7880ed9bb8/transformed/lifecycle-viewmodel-savedstate-2.7.0/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/Downloads/OPSC7311POE/OPSC7311POE/gradle/wrapper/dists/gradle-8.7-all/caches/transforms-4/a3bfd311af208a78a5b3cb7880ed9bb8/transformed/lifecycle-viewmodel-savedstate-2.7.0/res" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
