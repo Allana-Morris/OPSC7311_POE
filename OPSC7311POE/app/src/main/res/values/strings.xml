@@ -43,4 +43,10 @@
     <string name="note">Note</string>
     <string name="calendar_">Calendar</string>
     <string name="aug_19_mon">Aug 19 (Mon)</string>
+    <string name="enter_time">Enter time</string>
+    <string name="select_date">Select date</string>
+    <string name="enter_hours_spent">Enter hours for task</string>
+    <string name="select">Select</string>
+    <string name="select_end_date">Select End Date</string>
+
 </resources>
