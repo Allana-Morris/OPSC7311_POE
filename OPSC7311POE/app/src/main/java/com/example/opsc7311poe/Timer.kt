@@ -38,18 +38,18 @@ class Timer : AppCompatActivity() {
         val spnTask : Spinner = findViewById(R.id.spinTask)
 
         // Creating a fake category and task seeing as we have no way of inputting stuff n things
-        val selectedCat = Category("Work", 1, 2, 4.0, 8.0)
+       // val selectedCat = Category("Work", 1, 2, 4.0, 8.0)
         // Adding the first category to the user category hashmap
-        SessionUser.currentUser?.categories?.put(selectedCat.name, selectedCat)
+      //  SessionUser.currentUser?.categories?.put(selectedCat.name, selectedCat)
 
         // Creating another fake category and task
-        val fakeCat = Category("Work2", 1, 2, 4.0, 8.0)
+       // val fakeCat = Category("Work2", 1, 2, 4.0, 8.0)
         // Adding the second category to the user category hashmap with a different key
-        SessionUser.currentUser?.categories?.put(fakeCat.name, fakeCat)
+      //  SessionUser.currentUser?.categories?.put(fakeCat.name, fakeCat)
 
         // Adding the task to the first category for the user
-        val selectedTask = Task("Sex ", "Great cardio", true, 36.0, 36.0)
-        selectedCat.tasks[selectedTask.name] = selectedTask
+       // val selectedTask = Task("Sex ", "Great cardio", true, 36.0, 36.0)
+        //selectedCat.tasks[selectedTask.name] = selectedTask
 
 
           val HomeOpenActivity = findViewById<ImageButton>(R.id.ib_Home)
