@@ -175,8 +175,7 @@ class create_category : AppCompatActivity() {
         val catMax = vali.parseTimeToHours(LocalTime.parse("$maxHours:00"))
 
         val cate = Category(cateName, catIcon, catColor, catMin, catMax)
-        val users = User()
-        users.categories[cate.name] = cate
+        SessionUser.currentUser?.categories?.set(cate.name, cate)
         val intent = Intent(this, ViewData::class.java)
         startActivity(intent)
     }
