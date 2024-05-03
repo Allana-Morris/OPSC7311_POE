@@ -3729,7 +3729,6 @@ int id textView 0x7f080216
 int id textView32 0x7f080217
 int id textView34 0x7f080218
 int id textView5 0x7f080219
-int id textView6 0x7f08021a
 int id textView99 0x7f08021b
 int id text_input_end_icon 0x7f08021c
 int id text_input_error_icon 0x7f08021d
@@ -3782,6 +3781,7 @@ int id tvTask_end_time 0x7f08024b
 int id tvTask_name 0x7f08024c
 int id tvTask_start_time 0x7f08024d
 int id tvTimer 0x7f08024e
+int id tvUpPhoto 0x7f08028c
 int id tv_Back 0x7f08024f
 int id tv_Category 0x7f080250
 int id tv_Colour 0x7f080251

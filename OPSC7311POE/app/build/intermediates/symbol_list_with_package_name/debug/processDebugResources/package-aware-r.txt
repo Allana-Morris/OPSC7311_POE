@@ -3730,7 +3730,6 @@ id textView
 id textView32
 id textView34
 id textView5
-id textView6
 id textView99
 id text_input_end_icon
 id text_input_error_icon
@@ -3783,6 +3782,7 @@ id tvTask_end_time
 id tvTask_name
 id tvTask_start_time
 id tvTimer
+id tvUpPhoto
 id tv_Back
 id tv_Category
 id tv_Colour

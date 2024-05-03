@@ -27,6 +27,7 @@ class Timer : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_timer)
+        edtTime.setText("00:00:00")
 
         edtTime = findViewById(R.id.edtClock)
         btnStart = findViewById(R.id.btnStart)
@@ -184,7 +185,7 @@ class Timer : AppCompatActivity() {
                         ) // Assuming Time is a custom class representing time
 
                         val currentDate = Date()
-                        val rec = Recording(currentDate, 0.0, 0.0, time)
+                        val rec = Recording(currentDate, 0.0, 0.0, time, null)
                         //adding a recording object to the list in the right task
                         selectedTask.taskRecords.add(rec)
 

@@ -3,15 +3,21 @@ package com.example.opsc7311poe
 import android.app.Activity
 import android.app.DatePickerDialog
 import android.app.TimePickerDialog
+import android.content.Intent
+import android.net.Uri
 import android.os.Bundle
+import android.provider.MediaStore
 import android.view.View
 import android.widget.AdapterView
 import android.widget.ArrayAdapter
 import android.widget.Button
+import android.widget.ImageView
 import android.widget.Spinner
 import android.widget.TextView
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
+import androidx.activity.result.ActivityResultLauncher
+import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.AppCompatActivity
 import java.sql.Time
 import java.time.LocalDate
@@ -23,6 +29,7 @@ class CreateEntry : AppCompatActivity() {
 
     val categoryList = mutableListOf<String>()
     val taskList = mutableListOf<String>()
+    private lateinit var resultLauncher: ActivityResultLauncher<Intent>
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -35,6 +42,28 @@ class CreateEntry : AppCompatActivity() {
         val tvDate: TextView = findViewById(R.id.tvEntryDate)
         val tvStart: TextView = findViewById(R.id.tvStartTime)
         val tvEnd: TextView = findViewById(R.id.tvEndTime)
+        val btnPhoto : TextView = findViewById(R.id.tvUpPhoto)
+        val uploaded : ImageView = findViewById(R.id.img_photoUp)
+
+        resultLauncher = registerForActivityResult(ActivityResultContracts.StartActivityForResult()) { result ->
+            if (result.resultCode == Activity.RESULT_OK) {
+                // Handle the result if the operation was successful
+                val selectedImageUri: Uri? = result.data?.data
+                // Now you can use selectedImageUri to access the selected image
+                // For example, you might want to display it in an ImageView
+                if (selectedImageUri != null) {
+                    // Set the selected image to the ImageView
+                    uploaded.setImageURI(selectedImageUri)
+                } else {
+                    Toast.makeText(this@CreateEntry, "Failed to load image", Toast.LENGTH_SHORT).show()
+                }
+            } else {
+                Toast.makeText(this@CreateEntry, "Failed to pick image", Toast.LENGTH_SHORT).show()
+            }
+        }
+
+
+
 
         // Retrieve user's categories and populate the category list
         SessionUser.currentUser?.categories?.forEach { (name, _) ->
@@ -173,6 +202,12 @@ class CreateEntry : AppCompatActivity() {
 
         }
 
+        btnPhoto.setOnClickListener()
+        {
+
+            selectImage()
+        }
+
         tvEnd.setOnClickListener()
         {
             val calendar = java.util.Calendar.getInstance()
@@ -234,6 +269,11 @@ class CreateEntry : AppCompatActivity() {
             }
         }
 
+
+    }
+    private fun selectImage() {
+        val intent = Intent(Intent.ACTION_PICK, MediaStore.Images.Media.EXTERNAL_CONTENT_URI)
+        resultLauncher.launch(intent)
     }
 
 }

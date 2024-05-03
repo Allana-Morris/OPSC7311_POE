@@ -129,7 +129,6 @@ id textView
 id textView32
 id textView34
 id textView5
-id textView6
 id textView99
 id textview1
 id tvAddTask
@@ -157,6 +156,7 @@ id tvTask_end_time
 id tvTask_name
 id tvTask_start_time
 id tvTimer
+id tvUpPhoto
 id tv_Back
 id tv_Category
 id tv_Colour

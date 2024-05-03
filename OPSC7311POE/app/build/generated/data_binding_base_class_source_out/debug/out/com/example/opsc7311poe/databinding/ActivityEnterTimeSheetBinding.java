@@ -70,9 +70,6 @@ public final class ActivityEnterTimeSheetBinding implements ViewBinding {
   public final TextView textView5;
 
   @NonNull
-  public final TextView textView6;
-
-  @NonNull
   public final TextView tvCalendar;
 
   @NonNull
@@ -102,6 +99,9 @@ public final class ActivityEnterTimeSheetBinding implements ViewBinding {
   @NonNull
   public final TextView tvTimer;
 
+  @NonNull
+  public final TextView tvUpPhoto;
+
   private ActivityEnterTimeSheetBinding(@NonNull LinearLayout rootView,
       @NonNull Button btnSaveEntry, @NonNull ConstraintLayout clNavBar,
       @NonNull ImageButton ibCalendar, @NonNull ImageButton ibHome, @NonNull ImageButton ibProfile,
@@ -109,11 +109,11 @@ public final class ActivityEnterTimeSheetBinding implements ViewBinding {
       @NonNull ConstraintLayout linearLayout, @NonNull ConstraintLayout linearLayout2,
       @NonNull ConstraintLayout linearLayout4, @NonNull ConstraintLayout linearLayout5,
       @NonNull LinearLayout main, @NonNull Spinner spinEntryCat, @NonNull Spinner spinEntryTask,
-      @NonNull TextView textView5, @NonNull TextView textView6, @NonNull TextView tvCalendar,
+      @NonNull TextView textView5, @NonNull TextView tvCalendar,
       @NonNull TextView tvCategorySpinner, @NonNull TextView tvEndTime,
       @NonNull TextView tvEntryDate, @NonNull TextView tvEntryTime, @NonNull TextView tvHome,
       @NonNull TextView tvProfile, @NonNull TextView tvStartTime, @NonNull TextView tvTaskSpinner,
-      @NonNull TextView tvTimer) {
+      @NonNull TextView tvTimer, @NonNull TextView tvUpPhoto) {
     this.rootView = rootView;
     this.btnSaveEntry = btnSaveEntry;
     this.clNavBar = clNavBar;
@@ -130,7 +130,6 @@ public final class ActivityEnterTimeSheetBinding implements ViewBinding {
     this.spinEntryCat = spinEntryCat;
     this.spinEntryTask = spinEntryTask;
     this.textView5 = textView5;
-    this.textView6 = textView6;
     this.tvCalendar = tvCalendar;
     this.tvCategorySpinner = tvCategorySpinner;
     this.tvEndTime = tvEndTime;
@@ -141,6 +140,7 @@ public final class ActivityEnterTimeSheetBinding implements ViewBinding {
     this.tvStartTime = tvStartTime;
     this.tvTaskSpinner = tvTaskSpinner;
     this.tvTimer = tvTimer;
+    this.tvUpPhoto = tvUpPhoto;
   }
 
   @Override
@@ -256,12 +256,6 @@ public final class ActivityEnterTimeSheetBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.textView6;
-      TextView textView6 = ViewBindings.findChildViewById(rootView, id);
-      if (textView6 == null) {
-        break missingId;
-      }
-
       id = R.id.tv_calendar;
       TextView tvCalendar = ViewBindings.findChildViewById(rootView, id);
       if (tvCalendar == null) {
@@ -322,11 +316,17 @@ public final class ActivityEnterTimeSheetBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.tvUpPhoto;
+      TextView tvUpPhoto = ViewBindings.findChildViewById(rootView, id);
+      if (tvUpPhoto == null) {
+        break missingId;
+      }
+
       return new ActivityEnterTimeSheetBinding((LinearLayout) rootView, btnSaveEntry, clNavBar,
           ibCalendar, ibHome, ibProfile, ibTimer, imgPhotoUp, linearLayout, linearLayout2,
-          linearLayout4, linearLayout5, main, spinEntryCat, spinEntryTask, textView5, textView6,
-          tvCalendar, tvCategorySpinner, tvEndTime, tvEntryDate, tvEntryTime, tvHome, tvProfile,
-          tvStartTime, tvTaskSpinner, tvTimer);
+          linearLayout4, linearLayout5, main, spinEntryCat, spinEntryTask, textView5, tvCalendar,
+          tvCategorySpinner, tvEndTime, tvEntryDate, tvEntryTime, tvHome, tvProfile, tvStartTime,
+          tvTaskSpinner, tvTimer, tvUpPhoto);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
