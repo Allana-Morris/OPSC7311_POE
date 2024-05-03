@@ -6,6 +6,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
@@ -26,6 +27,9 @@ public final class ActivityProfileBinding implements ViewBinding {
   public final Button btnSaveProfile;
 
   @NonNull
+  public final ConstraintLayout clNavBar;
+
+  @NonNull
   public final EditText edtEmailEdit;
 
   @NonNull
@@ -41,16 +45,16 @@ public final class ActivityProfileBinding implements ViewBinding {
   public final View empyViews;
 
   @NonNull
-  public final ImageView imageView15;
+  public final ImageButton ibCalendar;
 
   @NonNull
-  public final ImageView imageView16;
+  public final ImageButton ibHome;
 
   @NonNull
-  public final ImageView imageView17;
+  public final ImageButton ibProfile;
 
   @NonNull
-  public final ImageView imageView18;
+  public final ImageButton ibTimer;
 
   @NonNull
   public final ImageView imgPhotoUp;
@@ -113,29 +117,31 @@ public final class ActivityProfileBinding implements ViewBinding {
   public final TextView tvuserProfile;
 
   private ActivityProfileBinding(@NonNull ConstraintLayout rootView, @NonNull Button btnSaveProfile,
-      @NonNull EditText edtEmailEdit, @NonNull EditText edtFullNameEdit,
-      @NonNull EditText edtPasswordEdit, @NonNull EditText edtUserNameEdit, @NonNull View empyViews,
-      @NonNull ImageView imageView15, @NonNull ImageView imageView16,
-      @NonNull ImageView imageView17, @NonNull ImageView imageView18, @NonNull ImageView imgPhotoUp,
-      @NonNull ImageView imgWhiteBackground, @NonNull ImageView ivGoogle,
-      @NonNull ConstraintLayout linearLayout, @NonNull ConstraintLayout linearLayout2,
-      @NonNull ConstraintLayout linearLayout4, @NonNull ConstraintLayout linearLayout5,
-      @NonNull ConstraintLayout main, @NonNull TextView tvCalendar,
-      @NonNull TextView tvCustomiseProfile, @NonNull TextView tvEditusername,
-      @NonNull TextView tvEmail, @NonNull TextView tvFullName, @NonNull TextView tvHome,
-      @NonNull TextView tvNewPhoto, @NonNull TextView tvProfile, @NonNull TextView tvProfilePhoto,
-      @NonNull TextView tvSeePassword, @NonNull TextView tvTimer, @NonNull TextView tvuserProfile) {
+      @NonNull ConstraintLayout clNavBar, @NonNull EditText edtEmailEdit,
+      @NonNull EditText edtFullNameEdit, @NonNull EditText edtPasswordEdit,
+      @NonNull EditText edtUserNameEdit, @NonNull View empyViews, @NonNull ImageButton ibCalendar,
+      @NonNull ImageButton ibHome, @NonNull ImageButton ibProfile, @NonNull ImageButton ibTimer,
+      @NonNull ImageView imgPhotoUp, @NonNull ImageView imgWhiteBackground,
+      @NonNull ImageView ivGoogle, @NonNull ConstraintLayout linearLayout,
+      @NonNull ConstraintLayout linearLayout2, @NonNull ConstraintLayout linearLayout4,
+      @NonNull ConstraintLayout linearLayout5, @NonNull ConstraintLayout main,
+      @NonNull TextView tvCalendar, @NonNull TextView tvCustomiseProfile,
+      @NonNull TextView tvEditusername, @NonNull TextView tvEmail, @NonNull TextView tvFullName,
+      @NonNull TextView tvHome, @NonNull TextView tvNewPhoto, @NonNull TextView tvProfile,
+      @NonNull TextView tvProfilePhoto, @NonNull TextView tvSeePassword, @NonNull TextView tvTimer,
+      @NonNull TextView tvuserProfile) {
     this.rootView = rootView;
     this.btnSaveProfile = btnSaveProfile;
+    this.clNavBar = clNavBar;
     this.edtEmailEdit = edtEmailEdit;
     this.edtFullNameEdit = edtFullNameEdit;
     this.edtPasswordEdit = edtPasswordEdit;
     this.edtUserNameEdit = edtUserNameEdit;
     this.empyViews = empyViews;
-    this.imageView15 = imageView15;
-    this.imageView16 = imageView16;
-    this.imageView17 = imageView17;
-    this.imageView18 = imageView18;
+    this.ibCalendar = ibCalendar;
+    this.ibHome = ibHome;
+    this.ibProfile = ibProfile;
+    this.ibTimer = ibTimer;
     this.imgPhotoUp = imgPhotoUp;
     this.imgWhiteBackground = imgWhiteBackground;
     this.ivGoogle = ivGoogle;
@@ -191,6 +197,12 @@ public final class ActivityProfileBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.cl_NavBar;
+      ConstraintLayout clNavBar = ViewBindings.findChildViewById(rootView, id);
+      if (clNavBar == null) {
+        break missingId;
+      }
+
       id = R.id.edtEmailEdit;
       EditText edtEmailEdit = ViewBindings.findChildViewById(rootView, id);
       if (edtEmailEdit == null) {
@@ -221,27 +233,27 @@ public final class ActivityProfileBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.imageView15;
-      ImageView imageView15 = ViewBindings.findChildViewById(rootView, id);
-      if (imageView15 == null) {
+      id = R.id.ib_Calendar;
+      ImageButton ibCalendar = ViewBindings.findChildViewById(rootView, id);
+      if (ibCalendar == null) {
         break missingId;
       }
 
-      id = R.id.imageView16;
-      ImageView imageView16 = ViewBindings.findChildViewById(rootView, id);
-      if (imageView16 == null) {
+      id = R.id.ib_Home;
+      ImageButton ibHome = ViewBindings.findChildViewById(rootView, id);
+      if (ibHome == null) {
         break missingId;
       }
 
-      id = R.id.imageView17;
-      ImageView imageView17 = ViewBindings.findChildViewById(rootView, id);
-      if (imageView17 == null) {
+      id = R.id.ib_Profile;
+      ImageButton ibProfile = ViewBindings.findChildViewById(rootView, id);
+      if (ibProfile == null) {
         break missingId;
       }
 
-      id = R.id.imageView18;
-      ImageView imageView18 = ViewBindings.findChildViewById(rootView, id);
-      if (imageView18 == null) {
+      id = R.id.ib_Timer;
+      ImageButton ibTimer = ViewBindings.findChildViewById(rootView, id);
+      if (ibTimer == null) {
         break missingId;
       }
 
@@ -361,9 +373,9 @@ public final class ActivityProfileBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityProfileBinding((ConstraintLayout) rootView, btnSaveProfile, edtEmailEdit,
-          edtFullNameEdit, edtPasswordEdit, edtUserNameEdit, empyViews, imageView15, imageView16,
-          imageView17, imageView18, imgPhotoUp, imgWhiteBackground, ivGoogle, linearLayout,
+      return new ActivityProfileBinding((ConstraintLayout) rootView, btnSaveProfile, clNavBar,
+          edtEmailEdit, edtFullNameEdit, edtPasswordEdit, edtUserNameEdit, empyViews, ibCalendar,
+          ibHome, ibProfile, ibTimer, imgPhotoUp, imgWhiteBackground, ivGoogle, linearLayout,
           linearLayout2, linearLayout4, linearLayout5, main, tvCalendar, tvCustomiseProfile,
           tvEditusername, tvEmail, tvFullName, tvHome, tvNewPhoto, tvProfile, tvProfilePhoto,
           tvSeePassword, tvTimer, tvuserProfile);

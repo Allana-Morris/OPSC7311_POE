@@ -3293,8 +3293,6 @@ id auto
 id autoComplete
 id autoCompleteToEnd
 id autoCompleteToStart
-id auto_complete_txt
-id auto_complete_txt2
 id barrier
 id baseline
 id beginOnFirstDraw
@@ -3462,10 +3460,6 @@ id ignore
 id ignoreRequest
 id image
 id imageView
-id imageView15
-id imageView16
-id imageView17
-id imageView18
 id imageView22
 id imgTaskIcon
 id img_bar
@@ -3685,6 +3679,10 @@ id south
 id sp_Category
 id spacer
 id special_effects_controller_view_tag
+id spinCat
+id spinId
+id spinId2
+id spinTask
 id spline
 id split_action_bar
 id spread
@@ -3728,8 +3726,12 @@ id textSpacerNoTitle
 id textStart
 id textTop
 id textView
+id textView3
 id textView32
 id textView34
+id textView4
+id textView5
+id textView6
 id textView99
 id text_input_end_icon
 id text_input_error_icon
@@ -3760,6 +3762,7 @@ id triangle
 id tvAddTask
 id tvBar
 id tvBlackBox
+id tvCategorySpinner
 id tvChooseAWeek
 id tvCustomiseProfile
 id tvEditusername
@@ -3771,6 +3774,7 @@ id tvPie
 id tvProfilePhoto
 id tvSeePassword
 id tvSummary
+id tvTaskSpinner
 id tvTask_description
 id tvTask_end_time
 id tvTask_name
@@ -3953,6 +3957,7 @@ layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_create_category
+layout activity_enter_time_sheet
 layout activity_insert_data
 layout activity_login
 layout activity_main
@@ -4126,6 +4131,8 @@ string design
 string dest_title
 string diagram
 string editUser
+string enter_hours_spent
+string enter_time
 string error_a11y_label
 string error_icon_content_description
 string exposed_dropdown_menu_content_description
@@ -4270,6 +4277,7 @@ string searchview_clear_text_content_description
 string searchview_navigation_content_description
 string seeAll
 string seePass
+string select_date
 string side_sheet_accessibility_pane_title
 string side_sheet_behavior
 string sign_in_to_lifetime

@@ -28,6 +28,9 @@
             android:name=".view_graphs"
             android:exported="false" />
         <activity
+            android:name=".Timer"
+            android:exported="false" />
+        <activity
             android:name=".StartingPage"
             android:exported="true">
             <intent-filter>

@@ -25,7 +25,7 @@
     <string name="bar">Bar Graph</string>
     <string name="calendar">Calendar</string>
     <string name="calendar_">Calendar</string>
-    <string name="cat_select">Category Selection</string>
+    <string name="cat_select">Select Category</string>
     <string name="category">Category</string>
     <string name="choose">Choose your graph:</string>
     <string name="chooseW">Choose a Week:</string>
@@ -42,6 +42,8 @@
     <string name="design">Redesign Home Page</string>
     <string name="diagram">Diagram</string>
     <string name="editUser">Edit Username:</string>
+    <string name="enter_hours_spent">Enter hours for task</string>
+    <string name="enter_time">Enter time</string>
     <string name="forward">→</string>
     <string name="fullName">Full Name</string>
     <string name="generate">Generate Summary</string>
@@ -67,6 +69,7 @@
     <string name="save2">Save</string>
     <string name="seeAll">See All></string>
     <string name="seePass">See Password</string>
+    <string name="select_date">Select date</string>
     <string name="sign_in_to_lifetime">Sign in to LifeTime</string>
     <string name="signup">Sign Up</string>
     <string name="start">Start</string>
@@ -75,7 +78,7 @@
     <string name="task">Task</string>
     <string name="task_description">Task Description</string>
     <string name="task_duration">Task Duration</string>
-    <string name="task_select">Task Selection</string>
+    <string name="task_select">Select Task</string>
     <string name="tasks">Tasks</string>
     <string name="time_dash">-</string>
     <string name="timer">Timer</string>

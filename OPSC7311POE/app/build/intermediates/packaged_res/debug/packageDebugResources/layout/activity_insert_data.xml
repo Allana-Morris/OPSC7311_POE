@@ -208,13 +208,15 @@
         android:id="@+id/edtStart"
         android:layout_width="188dp"
         android:layout_height="37dp"
+        android:layout_marginEnd="8dp"
         android:ems="10"
         android:inputType="text"
         android:textSize="10sp"
         app:layout_constraintBottom_toTopOf="@+id/view13"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@+id/view12"
-        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck"
-        tools:layout_editor_absoluteX="214dp" />
+        app:layout_constraintVertical_bias="1.0"
+        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
 
     <EditText
         android:id="@+id/edtEnd"
