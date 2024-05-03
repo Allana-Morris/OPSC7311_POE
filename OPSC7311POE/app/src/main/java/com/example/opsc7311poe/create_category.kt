@@ -61,8 +61,8 @@ class create_category : AppCompatActivity() {
 
 
             val cate = Category(cateName, catIcon, catColor, catMin, catMax)
-            val users = User()
-            users.categories[cate.name] = cate
+         //   val users = User()
+            SessionUser.currentUser?.categories?.set(cate.name, cate)
             val intent = Intent(this, ViewData::class.java)
             startActivity(intent)
         }
@@ -189,5 +189,6 @@ class create_category : AppCompatActivity() {
             recyclerView.adapter = adapter
         }
     }
+
 
 }
