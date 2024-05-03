@@ -119,6 +119,7 @@ id iv_Password
 id iv_Pick_Colour
 id iv_Username
 id iv_colourPreview
+id linLayout
 id linearLayout
 id linearLayout2
 id linearLayout3

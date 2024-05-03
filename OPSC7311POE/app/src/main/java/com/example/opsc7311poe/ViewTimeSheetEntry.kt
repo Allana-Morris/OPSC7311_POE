@@ -1,3 +1,4 @@
+package com.example.opsc7311poe
 import android.app.DatePickerDialog
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -8,8 +9,6 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
-import com.example.opsc7311poe.R
-import com.example.opsc7311poe.SessionUser
 import java.util.*
 
 class ViewTimeSheetEntry : AppCompatActivity() {
@@ -23,7 +22,7 @@ class ViewTimeSheetEntry : AppCompatActivity() {
             insets
         }
 
-        val layout: LinearLayout = findViewById(R.id.vertLayout)
+        val layout: LinearLayout = findViewById(R.id.linLayout)
 
         val startDate: TextView = findViewById(R.id.tvStartDate)
         val endDate: TextView = findViewById(R.id.tvEndDate)

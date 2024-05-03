@@ -3500,6 +3500,7 @@ id layout
 id left
 id leftToRight
 id legacy
+id linLayout
 id line1
 id line3
 id linear

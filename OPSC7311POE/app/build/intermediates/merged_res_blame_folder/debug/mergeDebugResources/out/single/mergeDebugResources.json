@@ -1,338 +1,342 @@
 [
     {
-        "merged": "com.example.opsc7311poe.app-debug-49:/drawable_baseline_chevron_right_24.xml.flat",
-        "source": "com.example.opsc7311poe.app-main-51:/drawable/baseline_chevron_right_24.xml"
+        "merged": "C:\\Users\\Sven\\.gradle\\daemon\\8.7\\com.example.opsc7311poe.app-debug-49:\\drawable_uploadphoto.png.flat",
+        "source": "C:\\Users\\Sven\\.gradle\\daemon\\8.7\\com.example.opsc7311poe.app-main-51:\\drawable\\uploadphoto.png"
     },
     {
-        "merged": "com.example.opsc7311poe.app-debug-49:/drawable_arc_1.png.flat",
-        "source": "com.example.opsc7311poe.app-main-51:/drawable/arc_1.png"
+        "merged": "C:\\Users\\Sven\\.gradle\\daemon\\8.7\\com.example.opsc7311poe.app-debug-49:\\drawable_write.png.flat",
+        "source": "C:\\Users\\Sven\\.gradle\\daemon\\8.7\\com.example.opsc7311poe.app-main-51:\\drawable\\write.png"
     },
     {
-        "merged": "com.example.opsc7311poe.app-debug-49:/drawable_skyblue.jpg.flat",
-        "source": "com.example.opsc7311poe.app-main-51:/drawable/skyblue.jpg"
+        "merged": "C:\\Users\\Sven\\.gradle\\daemon\\8.7\\com.example.opsc7311poe.app-debug-49:\\drawable_house.png.flat",
+        "source": "C:\\Users\\Sven\\.gradle\\daemon\\8.7\\com.example.opsc7311poe.app-main-51:\\drawable\\house.png"
     },
     {
-        "merged": "com.example.opsc7311poe.app-debug-49:/layout_activity_weekly_summary.xml.flat",
-        "source": "com.example.opsc7311poe.app-main-51:/layout/activity_weekly_summary.xml"
+        "merged": "C:\\Users\\Sven\\.gradle\\daemon\\8.7\\com.example.opsc7311poe.app-debug-49:\\mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\Sven\\.gradle\\daemon\\8.7\\com.example.opsc7311poe.app-main-51:\\mipmap-xhdpi\\ic_launcher.webp"
     },
     {
-        "merged": "com.example.opsc7311poe.app-debug-49:/drawable_categoryicon.png.flat",
-        "source": "com.example.opsc7311poe.app-main-51:/drawable/categoryicon.png"
+        "merged": "C:\\Users\\Sven\\.gradle\\daemon\\8.7\\com.example.opsc7311poe.app-debug-49:\\drawable_border.xml.flat",
+        "source": "C:\\Users\\Sven\\.gradle\\daemon\\8.7\\com.example.opsc7311poe.app-main-51:\\drawable\\border.xml"
     },
     {
-        "merged": "com.example.opsc7311poe.app-debug-49:/mipmap-hdpi_ic_launcher.webp.flat",
-        "source": "com.example.opsc7311poe.app-main-51:/mipmap-hdpi/ic_launcher.webp"
+        "merged": "C:\\Users\\Sven\\.gradle\\daemon\\8.7\\com.example.opsc7311poe.app-debug-49:\\drawable_bottom_btn3.png.flat",
+        "source": "C:\\Users\\Sven\\.gradle\\daemon\\8.7\\com.example.opsc7311poe.app-main-51:\\drawable\\bottom_btn3.png"
     },
     {
-        "merged": "com.example.opsc7311poe.app-debug-49:/drawable_google.png.flat",
-        "source": "com.example.opsc7311poe.app-main-51:/drawable/google.png"
+        "merged": "C:\\Users\\Sven\\.gradle\\daemon\\8.7\\com.example.opsc7311poe.app-debug-49:\\mipmap-anydpi_ic_launcher.xml.flat",
+        "source": "C:\\Users\\Sven\\.gradle\\daemon\\8.7\\com.example.opsc7311poe.app-main-51:\\mipmap-anydpi\\ic_launcher.xml"
     },
     {
-        "merged": "com.example.opsc7311poe.app-debug-49:/drawable_search.png.flat",
-        "source": "com.example.opsc7311poe.app-main-51:/drawable/search.png"
+        "merged": "C:\\Users\\Sven\\.gradle\\daemon\\8.7\\com.example.opsc7311poe.app-debug-49:\\layout_activity_view_time_sheet_entry.xml.flat",
+        "source": "C:\\Users\\Sven\\.gradle\\daemon\\8.7\\com.example.opsc7311poe.app-main-51:\\layout\\activity_view_time_sheet_entry.xml"
     },
     {
-        "merged": "com.example.opsc7311poe.app-debug-49:/layout_activity_starting_page.xml.flat",
-        "source": "com.example.opsc7311poe.app-main-51:/layout/activity_starting_page.xml"
+        "merged": "C:\\Users\\Sven\\.gradle\\daemon\\8.7\\com.example.opsc7311poe.app-debug-49:\\drawable_calendar.png.flat",
+        "source": "C:\\Users\\Sven\\.gradle\\daemon\\8.7\\com.example.opsc7311poe.app-main-51:\\drawable\\calendar.png"
     },
     {
-        "merged": "com.example.opsc7311poe.app-debug-49:/mipmap-xxxhdpi_ic_launcher.webp.flat",
-        "source": "com.example.opsc7311poe.app-main-51:/mipmap-xxxhdpi/ic_launcher.webp"
+        "merged": "C:\\Users\\Sven\\.gradle\\daemon\\8.7\\com.example.opsc7311poe.app-debug-49:\\drawable_baseline_auto_graph_24.xml.flat",
+        "source": "C:\\Users\\Sven\\.gradle\\daemon\\8.7\\com.example.opsc7311poe.app-main-51:\\drawable\\baseline_auto_graph_24.xml"
     },
     {
-        "merged": "com.example.opsc7311poe.app-debug-49:/layout_activity_view_graphs.xml.flat",
-        "source": "com.example.opsc7311poe.app-main-51:/layout/activity_view_graphs.xml"
+        "merged": "C:\\Users\\Sven\\.gradle\\daemon\\8.7\\com.example.opsc7311poe.app-debug-49:\\drawable_baseline_calendar_month_24.xml.flat",
+        "source": "C:\\Users\\Sven\\.gradle\\daemon\\8.7\\com.example.opsc7311poe.app-main-51:\\drawable\\baseline_calendar_month_24.xml"
     },
     {
-        "merged": "com.example.opsc7311poe.app-debug-49:/layout_icon_item.xml.flat",
-        "source": "com.example.opsc7311poe.app-main-51:/layout/icon_item.xml"
+        "merged": "C:\\Users\\Sven\\.gradle\\daemon\\8.7\\com.example.opsc7311poe.app-debug-49:\\drawable_ic_launcher_foreground.xml.flat",
+        "source": "C:\\Users\\Sven\\.gradle\\daemon\\8.7\\com.example.opsc7311poe.app-main-51:\\drawable\\ic_launcher_foreground.xml"
     },
     {
-        "merged": "com.example.opsc7311poe.app-debug-49:/drawable_baseline_cleaning_services_24.xml.flat",
-        "source": "com.example.opsc7311poe.app-main-51:/drawable/baseline_cleaning_services_24.xml"
+        "merged": "C:\\Users\\Sven\\.gradle\\daemon\\8.7\\com.example.opsc7311poe.app-debug-49:\\drawable_baseline_airplay_24.xml.flat",
+        "source": "C:\\Users\\Sven\\.gradle\\daemon\\8.7\\com.example.opsc7311poe.app-main-51:\\drawable\\baseline_airplay_24.xml"
     },
     {
-        "merged": "com.example.opsc7311poe.app-debug-49:/layout_activity_register.xml.flat",
-        "source": "com.example.opsc7311poe.app-main-51:/layout/activity_register.xml"
+        "merged": "C:\\Users\\Sven\\.gradle\\daemon\\8.7\\com.example.opsc7311poe.app-debug-49:\\drawable_search.png.flat",
+        "source": "C:\\Users\\Sven\\.gradle\\daemon\\8.7\\com.example.opsc7311poe.app-main-51:\\drawable\\search.png"
     },
     {
-        "merged": "com.example.opsc7311poe.app-debug-49:/drawable_ic_baseline_info_24.xml.flat",
-        "source": "com.example.opsc7311poe.app-main-51:/drawable/ic_baseline_info_24.xml"
+        "merged": "C:\\Users\\Sven\\.gradle\\daemon\\8.7\\com.example.opsc7311poe.app-debug-49:\\drawable_baseline_android_24.xml.flat",
+        "source": "C:\\Users\\Sven\\.gradle\\daemon\\8.7\\com.example.opsc7311poe.app-main-51:\\drawable\\baseline_android_24.xml"
     },
     {
-        "merged": "com.example.opsc7311poe.app-debug-49:/layout_activity_insert_data.xml.flat",
-        "source": "com.example.opsc7311poe.app-main-51:/layout/activity_insert_data.xml"
+        "merged": "C:\\Users\\Sven\\.gradle\\daemon\\8.7\\com.example.opsc7311poe.app-debug-49:\\layout_activity_insert_data.xml.flat",
+        "source": "C:\\Users\\Sven\\.gradle\\daemon\\8.7\\com.example.opsc7311poe.app-main-51:\\layout\\activity_insert_data.xml"
     },
     {
-        "merged": "com.example.opsc7311poe.app-debug-49:/drawable_ic_baseline_person_outline_24.xml.flat",
-        "source": "com.example.opsc7311poe.app-main-51:/drawable/ic_baseline_person_outline_24.xml"
+        "merged": "C:\\Users\\Sven\\.gradle\\daemon\\8.7\\com.example.opsc7311poe.app-debug-49:\\layout_activity_timer.xml.flat",
+        "source": "C:\\Users\\Sven\\.gradle\\daemon\\8.7\\com.example.opsc7311poe.app-main-51:\\layout\\activity_timer.xml"
     },
     {
-        "merged": "com.example.opsc7311poe.app-debug-49:/drawable_baseline_calendar_month_24.xml.flat",
-        "source": "com.example.opsc7311poe.app-main-51:/drawable/baseline_calendar_month_24.xml"
+        "merged": "C:\\Users\\Sven\\.gradle\\daemon\\8.7\\com.example.opsc7311poe.app-debug-49:\\drawable_bordertwo.xml.flat",
+        "source": "C:\\Users\\Sven\\.gradle\\daemon\\8.7\\com.example.opsc7311poe.app-main-51:\\drawable\\bordertwo.xml"
     },
     {
-        "merged": "com.example.opsc7311poe.app-debug-49:/mipmap-anydpi_ic_launcher_round.xml.flat",
-        "source": "com.example.opsc7311poe.app-main-51:/mipmap-anydpi/ic_launcher_round.xml"
+        "merged": "C:\\Users\\Sven\\.gradle\\daemon\\8.7\\com.example.opsc7311poe.app-debug-49:\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\Sven\\.gradle\\daemon\\8.7\\com.example.opsc7311poe.app-main-51:\\mipmap-xxhdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "com.example.opsc7311poe.app-debug-49:/drawable_profilebtn.png.flat",
-        "source": "com.example.opsc7311poe.app-main-51:/drawable/profilebtn.png"
+        "merged": "C:\\Users\\Sven\\.gradle\\daemon\\8.7\\com.example.opsc7311poe.app-debug-49:\\drawable_round_btn.xml.flat",
+        "source": "C:\\Users\\Sven\\.gradle\\daemon\\8.7\\com.example.opsc7311poe.app-main-51:\\drawable\\round_btn.xml"
     },
     {
-        "merged": "com.example.opsc7311poe.app-debug-49:/drawable_homebtn.png.flat",
-        "source": "com.example.opsc7311poe.app-main-51:/drawable/homebtn.png"
+        "merged": "C:\\Users\\Sven\\.gradle\\daemon\\8.7\\com.example.opsc7311poe.app-debug-49:\\drawable_taskicon.png.flat",
+        "source": "C:\\Users\\Sven\\.gradle\\daemon\\8.7\\com.example.opsc7311poe.app-main-51:\\drawable\\taskicon.png"
     },
     {
-        "merged": "com.example.opsc7311poe.app-debug-49:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
-        "source": "com.example.opsc7311poe.app-main-51:/mipmap-xxxhdpi/ic_launcher_round.webp"
+        "merged": "C:\\Users\\Sven\\.gradle\\daemon\\8.7\\com.example.opsc7311poe.app-debug-49:\\layout_activity_register.xml.flat",
+        "source": "C:\\Users\\Sven\\.gradle\\daemon\\8.7\\com.example.opsc7311poe.app-main-51:\\layout\\activity_register.xml"
     },
     {
-        "merged": "com.example.opsc7311poe.app-debug-49:/drawable_ic_home_black_24dp.xml.flat",
-        "source": "com.example.opsc7311poe.app-main-51:/drawable/ic_home_black_24dp.xml"
+        "merged": "C:\\Users\\Sven\\.gradle\\daemon\\8.7\\com.example.opsc7311poe.app-debug-49:\\drawable_google.png.flat",
+        "source": "C:\\Users\\Sven\\.gradle\\daemon\\8.7\\com.example.opsc7311poe.app-main-51:\\drawable\\google.png"
     },
     {
-        "merged": "com.example.opsc7311poe.app-debug-49:/mipmap-anydpi_ic_launcher.xml.flat",
-        "source": "com.example.opsc7311poe.app-main-51:/mipmap-anydpi/ic_launcher.xml"
+        "merged": "C:\\Users\\Sven\\.gradle\\daemon\\8.7\\com.example.opsc7311poe.app-debug-49:\\layout_activity_weekly_summary.xml.flat",
+        "source": "C:\\Users\\Sven\\.gradle\\daemon\\8.7\\com.example.opsc7311poe.app-main-51:\\layout\\activity_weekly_summary.xml"
     },
     {
-        "merged": "com.example.opsc7311poe.app-debug-49:/mipmap-xhdpi_ic_launcher.webp.flat",
-        "source": "com.example.opsc7311poe.app-main-51:/mipmap-xhdpi/ic_launcher.webp"
+        "merged": "C:\\Users\\Sven\\.gradle\\daemon\\8.7\\com.example.opsc7311poe.app-debug-49:\\drawable_roundstyle.xml.flat",
+        "source": "C:\\Users\\Sven\\.gradle\\daemon\\8.7\\com.example.opsc7311poe.app-main-51:\\drawable\\roundstyle.xml"
     },
     {
-        "merged": "com.example.opsc7311poe.app-debug-49:/drawable_ic_dashboard_black_24dp.xml.flat",
-        "source": "com.example.opsc7311poe.app-main-51:/drawable/ic_dashboard_black_24dp.xml"
+        "merged": "C:\\Users\\Sven\\.gradle\\daemon\\8.7\\com.example.opsc7311poe.app-debug-49:\\drawable_thumb.xml.flat",
+        "source": "C:\\Users\\Sven\\.gradle\\daemon\\8.7\\com.example.opsc7311poe.app-main-51:\\drawable\\thumb.xml"
     },
     {
-        "merged": "com.example.opsc7311poe.app-debug-49:/xml_backup_rules.xml.flat",
-        "source": "com.example.opsc7311poe.app-main-51:/xml/backup_rules.xml"
+        "merged": "C:\\Users\\Sven\\.gradle\\daemon\\8.7\\com.example.opsc7311poe.app-debug-49:\\drawable_baseline_arrow_back_ios_24.xml.flat",
+        "source": "C:\\Users\\Sven\\.gradle\\daemon\\8.7\\com.example.opsc7311poe.app-main-51:\\drawable\\baseline_arrow_back_ios_24.xml"
     },
     {
-        "merged": "com.example.opsc7311poe.app-debug-49:/drawable_baseline_circle_notifications_24.xml.flat",
-        "source": "com.example.opsc7311poe.app-main-51:/drawable/baseline_circle_notifications_24.xml"
+        "merged": "C:\\Users\\Sven\\.gradle\\daemon\\8.7\\com.example.opsc7311poe.app-debug-49:\\drawable_skyblue.jpg.flat",
+        "source": "C:\\Users\\Sven\\.gradle\\daemon\\8.7\\com.example.opsc7311poe.app-main-51:\\drawable\\skyblue.jpg"
     },
     {
-        "merged": "com.example.opsc7311poe.app-debug-49:/drawable_baseline_add_24.xml.flat",
-        "source": "com.example.opsc7311poe.app-main-51:/drawable/baseline_add_24.xml"
+        "merged": "C:\\Users\\Sven\\.gradle\\daemon\\8.7\\com.example.opsc7311poe.app-debug-49:\\drawable_categoryicon.png.flat",
+        "source": "C:\\Users\\Sven\\.gradle\\daemon\\8.7\\com.example.opsc7311poe.app-main-51:\\drawable\\categoryicon.png"
     },
     {
-        "merged": "com.example.opsc7311poe.app-debug-49:/drawable_bottom_btn3.png.flat",
-        "source": "com.example.opsc7311poe.app-main-51:/drawable/bottom_btn3.png"
+        "merged": "C:\\Users\\Sven\\.gradle\\daemon\\8.7\\com.example.opsc7311poe.app-debug-49:\\drawable_timer.png.flat",
+        "source": "C:\\Users\\Sven\\.gradle\\daemon\\8.7\\com.example.opsc7311poe.app-main-51:\\drawable\\timer.png"
     },
     {
-        "merged": "com.example.opsc7311poe.app-debug-49:/drawable_track.xml.flat",
-        "source": "com.example.opsc7311poe.app-main-51:/drawable/track.xml"
+        "merged": "C:\\Users\\Sven\\.gradle\\daemon\\8.7\\com.example.opsc7311poe.app-debug-49:\\drawable_pencilbtn.png.flat",
+        "source": "C:\\Users\\Sven\\.gradle\\daemon\\8.7\\com.example.opsc7311poe.app-main-51:\\drawable\\pencilbtn.png"
     },
     {
-        "merged": "com.example.opsc7311poe.app-debug-49:/drawable_house.png.flat",
-        "source": "com.example.opsc7311poe.app-main-51:/drawable/house.png"
+        "merged": "C:\\Users\\Sven\\.gradle\\daemon\\8.7\\com.example.opsc7311poe.app-debug-49:\\mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\Sven\\.gradle\\daemon\\8.7\\com.example.opsc7311poe.app-main-51:\\mipmap-xxxhdpi\\ic_launcher.webp"
     },
     {
-        "merged": "com.example.opsc7311poe.app-debug-49:/drawable_write.png.flat",
-        "source": "com.example.opsc7311poe.app-main-51:/drawable/write.png"
+        "merged": "C:\\Users\\Sven\\.gradle\\daemon\\8.7\\com.example.opsc7311poe.app-debug-49:\\drawable_bottom_btn1.png.flat",
+        "source": "C:\\Users\\Sven\\.gradle\\daemon\\8.7\\com.example.opsc7311poe.app-main-51:\\drawable\\bottom_btn1.png"
     },
     {
-        "merged": "com.example.opsc7311poe.app-debug-49:/layout_activity_create_category.xml.flat",
-        "source": "com.example.opsc7311poe.app-main-51:/layout/activity_create_category.xml"
+        "merged": "C:\\Users\\Sven\\.gradle\\daemon\\8.7\\com.example.opsc7311poe.app-debug-49:\\layout_activity_view_graphs.xml.flat",
+        "source": "C:\\Users\\Sven\\.gradle\\daemon\\8.7\\com.example.opsc7311poe.app-main-51:\\layout\\activity_view_graphs.xml"
     },
     {
-        "merged": "com.example.opsc7311poe.app-debug-49:/drawable_baseline_android_24.xml.flat",
-        "source": "com.example.opsc7311poe.app-main-51:/drawable/baseline_android_24.xml"
+        "merged": "C:\\Users\\Sven\\.gradle\\daemon\\8.7\\com.example.opsc7311poe.app-debug-49:\\drawable_baseline_chevron_right_24.xml.flat",
+        "source": "C:\\Users\\Sven\\.gradle\\daemon\\8.7\\com.example.opsc7311poe.app-main-51:\\drawable\\baseline_chevron_right_24.xml"
     },
     {
-        "merged": "com.example.opsc7311poe.app-debug-49:/drawable_piechart.png.flat",
-        "source": "com.example.opsc7311poe.app-main-51:/drawable/piechart.png"
+        "merged": "C:\\Users\\Sven\\.gradle\\daemon\\8.7\\com.example.opsc7311poe.app-debug-49:\\xml_backup_rules.xml.flat",
+        "source": "C:\\Users\\Sven\\.gradle\\daemon\\8.7\\com.example.opsc7311poe.app-main-51:\\xml\\backup_rules.xml"
     },
     {
-        "merged": "com.example.opsc7311poe.app-debug-49:/drawable_border.xml.flat",
-        "source": "com.example.opsc7311poe.app-main-51:/drawable/border.xml"
+        "merged": "C:\\Users\\Sven\\.gradle\\daemon\\8.7\\com.example.opsc7311poe.app-debug-49:\\layout_activity_create_category.xml.flat",
+        "source": "C:\\Users\\Sven\\.gradle\\daemon\\8.7\\com.example.opsc7311poe.app-main-51:\\layout\\activity_create_category.xml"
     },
     {
-        "merged": "com.example.opsc7311poe.app-debug-49:/mipmap-mdpi_ic_launcher_round.webp.flat",
-        "source": "com.example.opsc7311poe.app-main-51:/mipmap-mdpi/ic_launcher_round.webp"
+        "merged": "C:\\Users\\Sven\\.gradle\\daemon\\8.7\\com.example.opsc7311poe.app-debug-49:\\drawable_ic_dashboard_black_24dp.xml.flat",
+        "source": "C:\\Users\\Sven\\.gradle\\daemon\\8.7\\com.example.opsc7311poe.app-main-51:\\drawable\\ic_dashboard_black_24dp.xml"
     },
     {
-        "merged": "com.example.opsc7311poe.app-debug-49:/layout_item_select.xml.flat",
-        "source": "com.example.opsc7311poe.app-main-51:/layout/item_select.xml"
+        "merged": "C:\\Users\\Sven\\.gradle\\daemon\\8.7\\com.example.opsc7311poe.app-debug-49:\\drawable_baseline_add_24.xml.flat",
+        "source": "C:\\Users\\Sven\\.gradle\\daemon\\8.7\\com.example.opsc7311poe.app-main-51:\\drawable\\baseline_add_24.xml"
     },
     {
-        "merged": "com.example.opsc7311poe.app-debug-49:/drawable_roundstyle2.xml.flat",
-        "source": "com.example.opsc7311poe.app-main-51:/drawable/roundstyle2.xml"
+        "merged": "C:\\Users\\Sven\\.gradle\\daemon\\8.7\\com.example.opsc7311poe.app-debug-49:\\layout_icon_picker_dialog.xml.flat",
+        "source": "C:\\Users\\Sven\\.gradle\\daemon\\8.7\\com.example.opsc7311poe.app-main-51:\\layout\\icon_picker_dialog.xml"
     },
     {
-        "merged": "com.example.opsc7311poe.app-debug-49:/drawable_ic_launcher_foreground.xml.flat",
-        "source": "com.example.opsc7311poe.app-main-51:/drawable/ic_launcher_foreground.xml"
+        "merged": "C:\\Users\\Sven\\.gradle\\daemon\\8.7\\com.example.opsc7311poe.app-debug-49:\\layout_activity_login.xml.flat",
+        "source": "C:\\Users\\Sven\\.gradle\\daemon\\8.7\\com.example.opsc7311poe.app-main-51:\\layout\\activity_login.xml"
     },
     {
-        "merged": "com.example.opsc7311poe.app-debug-49:/drawable_calendar.png.flat",
-        "source": "com.example.opsc7311poe.app-main-51:/drawable/calendar.png"
+        "merged": "C:\\Users\\Sven\\.gradle\\daemon\\8.7\\com.example.opsc7311poe.app-debug-49:\\drawable_logo.png.flat",
+        "source": "C:\\Users\\Sven\\.gradle\\daemon\\8.7\\com.example.opsc7311poe.app-main-51:\\drawable\\logo.png"
     },
     {
-        "merged": "com.example.opsc7311poe.app-debug-49:/drawable_baseline_discount_24.xml.flat",
-        "source": "com.example.opsc7311poe.app-main-51:/drawable/baseline_discount_24.xml"
+        "merged": "C:\\Users\\Sven\\.gradle\\daemon\\8.7\\com.example.opsc7311poe.app-debug-49:\\drawable_baseline_ios_share_24.xml.flat",
+        "source": "C:\\Users\\Sven\\.gradle\\daemon\\8.7\\com.example.opsc7311poe.app-main-51:\\drawable\\baseline_ios_share_24.xml"
     },
     {
-        "merged": "com.example.opsc7311poe.app-debug-49:/mipmap-xxhdpi_ic_launcher.webp.flat",
-        "source": "com.example.opsc7311poe.app-main-51:/mipmap-xxhdpi/ic_launcher.webp"
+        "merged": "C:\\Users\\Sven\\.gradle\\daemon\\8.7\\com.example.opsc7311poe.app-debug-49:\\layout_icon_item.xml.flat",
+        "source": "C:\\Users\\Sven\\.gradle\\daemon\\8.7\\com.example.opsc7311poe.app-main-51:\\layout\\icon_item.xml"
     },
     {
-        "merged": "com.example.opsc7311poe.app-debug-49:/layout_activity_timer.xml.flat",
-        "source": "com.example.opsc7311poe.app-main-51:/layout/activity_timer.xml"
+        "merged": "C:\\Users\\Sven\\.gradle\\daemon\\8.7\\com.example.opsc7311poe.app-debug-49:\\drawable_ic_home_black_24dp.xml.flat",
+        "source": "C:\\Users\\Sven\\.gradle\\daemon\\8.7\\com.example.opsc7311poe.app-main-51:\\drawable\\ic_home_black_24dp.xml"
     },
     {
-        "merged": "com.example.opsc7311poe.app-debug-49:/xml_data_extraction_rules.xml.flat",
-        "source": "com.example.opsc7311poe.app-main-51:/xml/data_extraction_rules.xml"
+        "merged": "C:\\Users\\Sven\\.gradle\\daemon\\8.7\\com.example.opsc7311poe.app-debug-49:\\layout_activity_view_tasks.xml.flat",
+        "source": "C:\\Users\\Sven\\.gradle\\daemon\\8.7\\com.example.opsc7311poe.app-main-51:\\layout\\activity_view_tasks.xml"
     },
     {
-        "merged": "com.example.opsc7311poe.app-debug-49:/drawable_box_outline.xml.flat",
-        "source": "com.example.opsc7311poe.app-main-51:/drawable/box_outline.xml"
+        "merged": "C:\\Users\\Sven\\.gradle\\daemon\\8.7\\com.example.opsc7311poe.app-debug-49:\\layout_task_listing.xml.flat",
+        "source": "C:\\Users\\Sven\\.gradle\\daemon\\8.7\\com.example.opsc7311poe.app-main-51:\\layout\\task_listing.xml"
     },
     {
-        "merged": "com.example.opsc7311poe.app-debug-49:/drawable_baseline_arrow_back_ios_24.xml.flat",
-        "source": "com.example.opsc7311poe.app-main-51:/drawable/baseline_arrow_back_ios_24.xml"
+        "merged": "C:\\Users\\Sven\\.gradle\\daemon\\8.7\\com.example.opsc7311poe.app-debug-49:\\mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\Sven\\.gradle\\daemon\\8.7\\com.example.opsc7311poe.app-main-51:\\mipmap-xxhdpi\\ic_launcher.webp"
     },
     {
-        "merged": "com.example.opsc7311poe.app-debug-49:/layout_activity_profile.xml.flat",
-        "source": "com.example.opsc7311poe.app-main-51:/layout/activity_profile.xml"
+        "merged": "C:\\Users\\Sven\\.gradle\\daemon\\8.7\\com.example.opsc7311poe.app-debug-49:\\drawable_ic_notifications_black_24dp.xml.flat",
+        "source": "C:\\Users\\Sven\\.gradle\\daemon\\8.7\\com.example.opsc7311poe.app-main-51:\\drawable\\ic_notifications_black_24dp.xml"
     },
     {
-        "merged": "com.example.opsc7311poe.app-debug-49:/mipmap-hdpi_ic_launcher_round.webp.flat",
-        "source": "com.example.opsc7311poe.app-main-51:/mipmap-hdpi/ic_launcher_round.webp"
+        "merged": "C:\\Users\\Sven\\.gradle\\daemon\\8.7\\com.example.opsc7311poe.app-debug-49:\\mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\Sven\\.gradle\\daemon\\8.7\\com.example.opsc7311poe.app-main-51:\\mipmap-hdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "com.example.opsc7311poe.app-debug-49:/drawable_baseline_airplay_24.xml.flat",
-        "source": "com.example.opsc7311poe.app-main-51:/drawable/baseline_airplay_24.xml"
+        "merged": "C:\\Users\\Sven\\.gradle\\daemon\\8.7\\com.example.opsc7311poe.app-debug-49:\\mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\Sven\\.gradle\\daemon\\8.7\\com.example.opsc7311poe.app-main-51:\\mipmap-mdpi\\ic_launcher.webp"
     },
     {
-        "merged": "com.example.opsc7311poe.app-debug-49:/mipmap-mdpi_ic_launcher.webp.flat",
-        "source": "com.example.opsc7311poe.app-main-51:/mipmap-mdpi/ic_launcher.webp"
+        "merged": "C:\\Users\\Sven\\.gradle\\daemon\\8.7\\com.example.opsc7311poe.app-debug-49:\\drawable_baseline_discount_24.xml.flat",
+        "source": "C:\\Users\\Sven\\.gradle\\daemon\\8.7\\com.example.opsc7311poe.app-main-51:\\drawable\\baseline_discount_24.xml"
     },
     {
-        "merged": "com.example.opsc7311poe.app-debug-49:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
-        "source": "com.example.opsc7311poe.app-main-51:/mipmap-xxhdpi/ic_launcher_round.webp"
+        "merged": "C:\\Users\\Sven\\.gradle\\daemon\\8.7\\com.example.opsc7311poe.app-debug-49:\\drawable_roundstyle2.xml.flat",
+        "source": "C:\\Users\\Sven\\.gradle\\daemon\\8.7\\com.example.opsc7311poe.app-main-51:\\drawable\\roundstyle2.xml"
     },
     {
-        "merged": "com.example.opsc7311poe.app-debug-49:/drawable_whitescreen.jpg.flat",
-        "source": "com.example.opsc7311poe.app-main-51:/drawable/whitescreen.jpg"
+        "merged": "C:\\Users\\Sven\\.gradle\\daemon\\8.7\\com.example.opsc7311poe.app-debug-49:\\drawable_baseline_color_lens_24.xml.flat",
+        "source": "C:\\Users\\Sven\\.gradle\\daemon\\8.7\\com.example.opsc7311poe.app-main-51:\\drawable\\baseline_color_lens_24.xml"
     },
     {
-        "merged": "com.example.opsc7311poe.app-debug-49:/drawable_logo.png.flat",
-        "source": "com.example.opsc7311poe.app-main-51:/drawable/logo.png"
+        "merged": "C:\\Users\\Sven\\.gradle\\daemon\\8.7\\com.example.opsc7311poe.app-debug-49:\\xml_data_extraction_rules.xml.flat",
+        "source": "C:\\Users\\Sven\\.gradle\\daemon\\8.7\\com.example.opsc7311poe.app-main-51:\\xml\\data_extraction_rules.xml"
     },
     {
-        "merged": "com.example.opsc7311poe.app-debug-49:/layout_activity_login.xml.flat",
-        "source": "com.example.opsc7311poe.app-main-51:/layout/activity_login.xml"
+        "merged": "C:\\Users\\Sven\\.gradle\\daemon\\8.7\\com.example.opsc7311poe.app-debug-49:\\drawable_icon.png.flat",
+        "source": "C:\\Users\\Sven\\.gradle\\daemon\\8.7\\com.example.opsc7311poe.app-main-51:\\drawable\\icon.png"
+    },
+    {
+        "merged": "C:\\Users\\Sven\\.gradle\\daemon\\8.7\\com.example.opsc7311poe.app-debug-49:\\drawable_navprofile.png.flat",
+        "source": "C:\\Users\\Sven\\.gradle\\daemon\\8.7\\com.example.opsc7311poe.app-main-51:\\drawable\\navprofile.png"
     },
     {
         "merged": "com.example.opsc7311poe.app-debug-49:/layout_activity_view_time_sheet_entry.xml.flat",
         "source": "com.example.opsc7311poe.app-main-51:/layout/activity_view_time_sheet_entry.xml"
     },
     {
-        "merged": "com.example.opsc7311poe.app-debug-49:/drawable_bottom_btn1.png.flat",
-        "source": "com.example.opsc7311poe.app-main-51:/drawable/bottom_btn1.png"
+        "merged": "C:\\Users\\Sven\\.gradle\\daemon\\8.7\\com.example.opsc7311poe.app-debug-49:\\layout_activity_profile.xml.flat",
+        "source": "C:\\Users\\Sven\\.gradle\\daemon\\8.7\\com.example.opsc7311poe.app-main-51:\\layout\\activity_profile.xml"
     },
     {
-        "merged": "com.example.opsc7311poe.app-debug-49:/drawable_bar.png.flat",
-        "source": "com.example.opsc7311poe.app-main-51:/drawable/bar.png"
+        "merged": "C:\\Users\\Sven\\.gradle\\daemon\\8.7\\com.example.opsc7311poe.app-debug-49:\\drawable_baseline_cleaning_services_24.xml.flat",
+        "source": "C:\\Users\\Sven\\.gradle\\daemon\\8.7\\com.example.opsc7311poe.app-main-51:\\drawable\\baseline_cleaning_services_24.xml"
     },
     {
-        "merged": "com.example.opsc7311poe.app-debug-49:/layout_activity_main.xml.flat",
-        "source": "com.example.opsc7311poe.app-main-51:/layout/activity_main.xml"
+        "merged": "C:\\Users\\Sven\\.gradle\\daemon\\8.7\\com.example.opsc7311poe.app-debug-49:\\drawable_piechart.png.flat",
+        "source": "C:\\Users\\Sven\\.gradle\\daemon\\8.7\\com.example.opsc7311poe.app-main-51:\\drawable\\piechart.png"
     },
     {
-        "merged": "com.example.opsc7311poe.app-debug-49:/drawable_icon.png.flat",
-        "source": "com.example.opsc7311poe.app-main-51:/drawable/icon.png"
+        "merged": "C:\\Users\\Sven\\.gradle\\daemon\\8.7\\com.example.opsc7311poe.app-debug-49:\\mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\Sven\\.gradle\\daemon\\8.7\\com.example.opsc7311poe.app-main-51:\\mipmap-mdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "com.example.opsc7311poe.app-debug-49:/layout_activity_enter_time_sheet.xml.flat",
-        "source": "com.example.opsc7311poe.app-main-51:/layout/activity_enter_time_sheet.xml"
+        "merged": "C:\\Users\\Sven\\.gradle\\daemon\\8.7\\com.example.opsc7311poe.app-debug-49:\\drawable_box_outline.xml.flat",
+        "source": "C:\\Users\\Sven\\.gradle\\daemon\\8.7\\com.example.opsc7311poe.app-main-51:\\drawable\\box_outline.xml"
     },
     {
-        "merged": "com.example.opsc7311poe.app-debug-49:/drawable_ic_notifications_black_24dp.xml.flat",
-        "source": "com.example.opsc7311poe.app-main-51:/drawable/ic_notifications_black_24dp.xml"
+        "merged": "C:\\Users\\Sven\\.gradle\\daemon\\8.7\\com.example.opsc7311poe.app-debug-49:\\drawable_ic_launcher_background.xml.flat",
+        "source": "C:\\Users\\Sven\\.gradle\\daemon\\8.7\\com.example.opsc7311poe.app-main-51:\\drawable\\ic_launcher_background.xml"
     },
     {
-        "merged": "com.example.opsc7311poe.app-debug-49:/drawable_taskicon.png.flat",
-        "source": "com.example.opsc7311poe.app-main-51:/drawable/taskicon.png"
+        "merged": "C:\\Users\\Sven\\.gradle\\daemon\\8.7\\com.example.opsc7311poe.app-debug-49:\\layout_activity_task_calendar.xml.flat",
+        "source": "C:\\Users\\Sven\\.gradle\\daemon\\8.7\\com.example.opsc7311poe.app-main-51:\\layout\\activity_task_calendar.xml"
     },
     {
-        "merged": "com.example.opsc7311poe.app-debug-49:/drawable_navprofile.png.flat",
-        "source": "com.example.opsc7311poe.app-main-51:/drawable/navprofile.png"
+        "merged": "C:\\Users\\Sven\\.gradle\\daemon\\8.7\\com.example.opsc7311poe.app-debug-49:\\drawable_baseline_circle_notifications_24.xml.flat",
+        "source": "C:\\Users\\Sven\\.gradle\\daemon\\8.7\\com.example.opsc7311poe.app-main-51:\\drawable\\baseline_circle_notifications_24.xml"
     },
     {
-        "merged": "com.example.opsc7311poe.app-debug-49:/drawable_timer.png.flat",
-        "source": "com.example.opsc7311poe.app-main-51:/drawable/timer.png"
+        "merged": "C:\\Users\\Sven\\.gradle\\daemon\\8.7\\com.example.opsc7311poe.app-debug-49:\\mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\Sven\\.gradle\\daemon\\8.7\\com.example.opsc7311poe.app-main-51:\\mipmap-hdpi\\ic_launcher.webp"
     },
     {
-        "merged": "com.example.opsc7311poe.app-debug-49:/drawable_baseline_chevron_left_24.xml.flat",
-        "source": "com.example.opsc7311poe.app-main-51:/drawable/baseline_chevron_left_24.xml"
+        "merged": "C:\\Users\\Sven\\.gradle\\daemon\\8.7\\com.example.opsc7311poe.app-debug-49:\\mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\Sven\\.gradle\\daemon\\8.7\\com.example.opsc7311poe.app-main-51:\\mipmap-xhdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "com.example.opsc7311poe.app-debug-49:/drawable_uploadphoto.png.flat",
-        "source": "com.example.opsc7311poe.app-main-51:/drawable/uploadphoto.png"
+        "merged": "C:\\Users\\Sven\\.gradle\\daemon\\8.7\\com.example.opsc7311poe.app-debug-49:\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\Sven\\.gradle\\daemon\\8.7\\com.example.opsc7311poe.app-main-51:\\mipmap-xxxhdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "com.example.opsc7311poe.app-debug-49:/drawable_thumb.xml.flat",
-        "source": "com.example.opsc7311poe.app-main-51:/drawable/thumb.xml"
+        "merged": "C:\\Users\\Sven\\.gradle\\daemon\\8.7\\com.example.opsc7311poe.app-debug-49:\\drawable_blueskyback.jpg.flat",
+        "source": "C:\\Users\\Sven\\.gradle\\daemon\\8.7\\com.example.opsc7311poe.app-main-51:\\drawable\\blueskyback.jpg"
     },
     {
-        "merged": "com.example.opsc7311poe.app-debug-49:/layout_task_listing.xml.flat",
-        "source": "com.example.opsc7311poe.app-main-51:/layout/task_listing.xml"
+        "merged": "C:\\Users\\Sven\\.gradle\\daemon\\8.7\\com.example.opsc7311poe.app-debug-49:\\drawable_arc_1.png.flat",
+        "source": "C:\\Users\\Sven\\.gradle\\daemon\\8.7\\com.example.opsc7311poe.app-main-51:\\drawable\\arc_1.png"
     },
     {
-        "merged": "com.example.opsc7311poe.app-debug-49:/drawable_roundstyle.xml.flat",
-        "source": "com.example.opsc7311poe.app-main-51:/drawable/roundstyle.xml"
+        "merged": "C:\\Users\\Sven\\.gradle\\daemon\\8.7\\com.example.opsc7311poe.app-debug-49:\\drawable_ic_baseline_person_outline_24.xml.flat",
+        "source": "C:\\Users\\Sven\\.gradle\\daemon\\8.7\\com.example.opsc7311poe.app-main-51:\\drawable\\ic_baseline_person_outline_24.xml"
     },
     {
-        "merged": "com.example.opsc7311poe.app-debug-49:/drawable_bordertwo.xml.flat",
-        "source": "com.example.opsc7311poe.app-main-51:/drawable/bordertwo.xml"
+        "merged": "C:\\Users\\Sven\\.gradle\\daemon\\8.7\\com.example.opsc7311poe.app-debug-49:\\drawable_homebtn.png.flat",
+        "source": "C:\\Users\\Sven\\.gradle\\daemon\\8.7\\com.example.opsc7311poe.app-main-51:\\drawable\\homebtn.png"
     },
     {
-        "merged": "com.example.opsc7311poe.app-debug-49:/drawable_round_btn.xml.flat",
-        "source": "com.example.opsc7311poe.app-main-51:/drawable/round_btn.xml"
+        "merged": "C:\\Users\\Sven\\.gradle\\daemon\\8.7\\com.example.opsc7311poe.app-debug-49:\\drawable_baseline_chevron_left_24.xml.flat",
+        "source": "C:\\Users\\Sven\\.gradle\\daemon\\8.7\\com.example.opsc7311poe.app-main-51:\\drawable\\baseline_chevron_left_24.xml"
     },
     {
-        "merged": "com.example.opsc7311poe.app-debug-49:/layout_activity_view_tasks.xml.flat",
-        "source": "com.example.opsc7311poe.app-main-51:/layout/activity_view_tasks.xml"
+        "merged": "C:\\Users\\Sven\\.gradle\\daemon\\8.7\\com.example.opsc7311poe.app-debug-49:\\drawable_ic_baseline_info_24.xml.flat",
+        "source": "C:\\Users\\Sven\\.gradle\\daemon\\8.7\\com.example.opsc7311poe.app-main-51:\\drawable\\ic_baseline_info_24.xml"
     },
     {
-        "merged": "com.example.opsc7311poe.app-debug-49:/layout_activity_task_calendar.xml.flat",
-        "source": "com.example.opsc7311poe.app-main-51:/layout/activity_task_calendar.xml"
+        "merged": "C:\\Users\\Sven\\.gradle\\daemon\\8.7\\com.example.opsc7311poe.app-debug-49:\\drawable_bar.png.flat",
+        "source": "C:\\Users\\Sven\\.gradle\\daemon\\8.7\\com.example.opsc7311poe.app-main-51:\\drawable\\bar.png"
     },
     {
-        "merged": "com.example.opsc7311poe.app-debug-49:/layout_icon_picker_dialog.xml.flat",
-        "source": "com.example.opsc7311poe.app-main-51:/layout/icon_picker_dialog.xml"
+        "merged": "C:\\Users\\Sven\\.gradle\\daemon\\8.7\\com.example.opsc7311poe.app-debug-49:\\drawable_profilebtn.png.flat",
+        "source": "C:\\Users\\Sven\\.gradle\\daemon\\8.7\\com.example.opsc7311poe.app-main-51:\\drawable\\profilebtn.png"
     },
     {
-        "merged": "com.example.opsc7311poe.app-debug-49:/drawable_baseline_auto_graph_24.xml.flat",
-        "source": "com.example.opsc7311poe.app-main-51:/drawable/baseline_auto_graph_24.xml"
+        "merged": "C:\\Users\\Sven\\.gradle\\daemon\\8.7\\com.example.opsc7311poe.app-debug-49:\\layout_activity_main.xml.flat",
+        "source": "C:\\Users\\Sven\\.gradle\\daemon\\8.7\\com.example.opsc7311poe.app-main-51:\\layout\\activity_main.xml"
     },
     {
-        "merged": "com.example.opsc7311poe.app-debug-49:/drawable_baseline_color_lens_24.xml.flat",
-        "source": "com.example.opsc7311poe.app-main-51:/drawable/baseline_color_lens_24.xml"
+        "merged": "C:\\Users\\Sven\\.gradle\\daemon\\8.7\\com.example.opsc7311poe.app-debug-49:\\drawable_track.xml.flat",
+        "source": "C:\\Users\\Sven\\.gradle\\daemon\\8.7\\com.example.opsc7311poe.app-main-51:\\drawable\\track.xml"
     },
     {
-        "merged": "com.example.opsc7311poe.app-debug-49:/drawable_blueskyback.jpg.flat",
-        "source": "com.example.opsc7311poe.app-main-51:/drawable/blueskyback.jpg"
+        "merged": "C:\\Users\\Sven\\.gradle\\daemon\\8.7\\com.example.opsc7311poe.app-debug-49:\\layout_activity_enter_time_sheet.xml.flat",
+        "source": "C:\\Users\\Sven\\.gradle\\daemon\\8.7\\com.example.opsc7311poe.app-main-51:\\layout\\activity_enter_time_sheet.xml"
     },
     {
-        "merged": "com.example.opsc7311poe.app-debug-49:/drawable_baseline_fitness_center_24.xml.flat",
-        "source": "com.example.opsc7311poe.app-main-51:/drawable/baseline_fitness_center_24.xml"
+        "merged": "C:\\Users\\Sven\\.gradle\\daemon\\8.7\\com.example.opsc7311poe.app-debug-49:\\drawable_whitescreen.jpg.flat",
+        "source": "C:\\Users\\Sven\\.gradle\\daemon\\8.7\\com.example.opsc7311poe.app-main-51:\\drawable\\whitescreen.jpg"
     },
     {
-        "merged": "com.example.opsc7311poe.app-debug-49:/drawable_ic_launcher_background.xml.flat",
-        "source": "com.example.opsc7311poe.app-main-51:/drawable/ic_launcher_background.xml"
+        "merged": "C:\\Users\\Sven\\.gradle\\daemon\\8.7\\com.example.opsc7311poe.app-debug-49:\\layout_item_select.xml.flat",
+        "source": "C:\\Users\\Sven\\.gradle\\daemon\\8.7\\com.example.opsc7311poe.app-main-51:\\layout\\item_select.xml"
     },
     {
-        "merged": "com.example.opsc7311poe.app-debug-49:/drawable_pencilbtn.png.flat",
-        "source": "com.example.opsc7311poe.app-main-51:/drawable/pencilbtn.png"
+        "merged": "C:\\Users\\Sven\\.gradle\\daemon\\8.7\\com.example.opsc7311poe.app-debug-49:\\mipmap-anydpi_ic_launcher_round.xml.flat",
+        "source": "C:\\Users\\Sven\\.gradle\\daemon\\8.7\\com.example.opsc7311poe.app-main-51:\\mipmap-anydpi\\ic_launcher_round.xml"
     },
     {
-        "merged": "com.example.opsc7311poe.app-debug-49:/drawable_baseline_ios_share_24.xml.flat",
-        "source": "com.example.opsc7311poe.app-main-51:/drawable/baseline_ios_share_24.xml"
+        "merged": "C:\\Users\\Sven\\.gradle\\daemon\\8.7\\com.example.opsc7311poe.app-debug-49:\\drawable_baseline_fitness_center_24.xml.flat",
+        "source": "C:\\Users\\Sven\\.gradle\\daemon\\8.7\\com.example.opsc7311poe.app-main-51:\\drawable\\baseline_fitness_center_24.xml"
     },
     {
-        "merged": "com.example.opsc7311poe.app-debug-49:/mipmap-xhdpi_ic_launcher_round.webp.flat",
-        "source": "com.example.opsc7311poe.app-main-51:/mipmap-xhdpi/ic_launcher_round.webp"
+        "merged": "C:\\Users\\Sven\\.gradle\\daemon\\8.7\\com.example.opsc7311poe.app-debug-49:\\layout_activity_starting_page.xml.flat",
+        "source": "C:\\Users\\Sven\\.gradle\\daemon\\8.7\\com.example.opsc7311poe.app-main-51:\\layout\\activity_starting_page.xml"
     }
 ]
