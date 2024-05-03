@@ -1,20 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.opsc7311poe.app-mergeDebugResources-2:/values-v16/values-v16.xml",
+            "outputFile": "com.example.opsc7311poe.app-mergeDebugResources-47:/values-v16/values-v16.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\allan\\Downloads\\OPSC7311POE\\OPSC7311POE\\gradle\\wrapper\\dists\\gradle-8.7-all\\caches\\transforms-4\\1c812549d465c3bac8e33bc0834404b4\\transformed\\core-1.12.0\\res\\values-v16\\values-v16.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "65",
-                        "endOffsets": "116"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\allan\\Downloads\\OPSC7311POE\\OPSC7311POE\\gradle\\wrapper\\dists\\gradle-8.7-all\\caches\\transforms-4\\5f80dcf67fdf68abd61acac70ec73bea\\transformed\\appcompat-1.6.1\\res\\values-v16\\values-v16.xml",
+                    "source": "C:\\Users\\Sven\\.gradle\\caches\\transforms-4\\5f80dcf67fdf68abd61acac70ec73bea\\transformed\\appcompat-1.6.1\\res\\values-v16\\values-v16.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -30,6 +20,16 @@
                         "endLines": "6",
                         "endColumns": "12",
                         "endOffsets": "289"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\Sven\\.gradle\\caches\\transforms-4\\1c812549d465c3bac8e33bc0834404b4\\transformed\\core-1.12.0\\res\\values-v16\\values-v16.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "65",
+                        "endOffsets": "116"
                     }
                 }
             ]

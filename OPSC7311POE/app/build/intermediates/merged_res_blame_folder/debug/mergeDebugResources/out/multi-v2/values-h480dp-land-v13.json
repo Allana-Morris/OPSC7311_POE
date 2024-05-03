@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.opsc7311poe.app-mergeDebugResources-2:/values-h480dp-land-v13/values-h480dp-land-v13.xml",
+            "outputFile": "com.example.opsc7311poe.app-mergeDebugResources-47:/values-h480dp-land-v13/values-h480dp-land-v13.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\allan\\Downloads\\OPSC7311POE\\OPSC7311POE\\gradle\\wrapper\\dists\\gradle-8.7-all\\caches\\transforms-4\\46c98d85a1545a88722bdc1345384ed2\\transformed\\material-1.11.0\\res\\values-h480dp-land-v13\\values-h480dp-land-v13.xml",
+                    "source": "C:\\Users\\Sven\\.gradle\\caches\\transforms-4\\46c98d85a1545a88722bdc1345384ed2\\transformed\\material-1.11.0\\res\\values-h480dp-land-v13\\values-h480dp-land-v13.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10",
                         "startColumns": "4,4,4,4,4,4,4,4,4",
