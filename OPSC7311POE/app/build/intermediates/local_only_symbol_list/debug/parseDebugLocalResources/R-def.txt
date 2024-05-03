@@ -64,6 +64,7 @@ drawable track
 drawable uploadphoto
 drawable whitescreen
 drawable write
+id bottomNavigationView
 id btnCategory
 id btnLogin
 id btnReset
