@@ -45,7 +45,7 @@ class create_category : AppCompatActivity() {
         val catMinHours : TextView = findViewById(R.id.ett_Min_Goal)
         val catMaxHours : TextView = findViewById(R.id.ett_Max_Goal)
         val iconPicker : ImageButton = findViewById(R.id.ib_Icon)
-        AddCategory.setOnClickListener(){
+        AddCategory.setOnClickListener {
             val catName : TextView = findViewById(R.id.edtName)
             val catColor = mDefaultColour
 
@@ -58,12 +58,13 @@ class create_category : AppCompatActivity() {
             var catMax = vali.parseTimeToHours(LocalTime.parse(maxHours+ ":00"))
 
             //validate
-            if (validateCategory()) {
-                createCategory()
-            } else {
-                Toast.makeText(this, "Please fill out all fields", Toast.LENGTH_SHORT).show()
-            }
 
+
+            val cate = Category(cateName, catIcon, catColor, catMin, catMax)
+         //   val users = User()
+            SessionUser.currentUser?.categories?.set(cate.name, cate)
+            val intent = Intent(this, ViewData::class.java)
+            startActivity(intent)
         }
 
         //Icon Picker
@@ -154,33 +155,6 @@ class create_category : AppCompatActivity() {
 
     }
 
-    private fun validateCategory(): Boolean {
-        // Check if all necessary fields are filled out
-        val catName: TextView = findViewById(R.id.edtName)
-        val catMinHours: TextView = findViewById(R.id.ett_Min_Goal)
-        val catMaxHours: TextView = findViewById(R.id.ett_Max_Goal)
-        return catName.text.isNotEmpty() && catMinHours.text.isNotEmpty() && catMaxHours.text.isNotEmpty()
-    }
-
-    private fun createCategory() {
-        val catName: TextView = findViewById(R.id.edtName)
-        val catMinHours: TextView = findViewById(R.id.ett_Min_Goal)
-        val catMaxHours: TextView = findViewById(R.id.ett_Max_Goal)
-        val catColor = mDefaultColour
-
-        val cateName = catName.text.toString()
-        val minHours = catMinHours.text.toString()
-        val maxHours = catMaxHours.text.toString()
-        val catMin = vali.parseTimeToHours(LocalTime.parse("$minHours:00"))
-        val catMax = vali.parseTimeToHours(LocalTime.parse("$maxHours:00"))
-
-        val cate = Category(cateName, catIcon, catColor, catMin, catMax)
-        val users = User()
-        users.categories[cate.name] = cate
-        val intent = Intent(this, ViewData::class.java)
-        startActivity(intent)
-    }
-
     fun openColorPickerDialogue() {
         val colorPickerDialogue = AmbilWarnaDialog(this, mDefaultColour, object :
             OnAmbilWarnaListener {
@@ -215,5 +189,6 @@ class create_category : AppCompatActivity() {
             recyclerView.adapter = adapter
         }
     }
+
 
 }

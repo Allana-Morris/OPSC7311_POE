@@ -88,6 +88,18 @@
             android:text="@string/view_timesheet"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/btnTimesheet" />
+
+        <Button
+            android:id="@+id/btnCatHours"
+            android:layout_width="120dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="28dp"
+            android:text="@string/cat_view"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.555"
+            app:layout_constraintStart_toEndOf="@+id/btnViewEntries"
+            app:layout_constraintTop_toBottomOf="@+id/btnViewTasks" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout

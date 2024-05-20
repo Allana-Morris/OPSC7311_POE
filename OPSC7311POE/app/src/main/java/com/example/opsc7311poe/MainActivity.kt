@@ -56,6 +56,7 @@ class MainActivity : AppCompatActivity() {
         val activityCreateEntry = findViewById<Button>(R.id.btnTimesheet)
         val activityViewTask = findViewById<Button>(R.id.btnViewTasks)
         val activityViewEntries = findViewById<Button>(R.id.btnViewEntries)
+        val activityCatHours = findViewById<Button>(R.id.btnCatHours)
 
         //onClickListener to open InsertData page
         activityCreateTask.setOnClickListener{
@@ -83,6 +84,11 @@ class MainActivity : AppCompatActivity() {
         activityViewEntries.setOnClickListener {
             val ViewEntriesintent = Intent(this, ViewTimeSheetEntry::class.java)
             startActivity(ViewEntriesintent)
+        }
+
+        activityCatHours.setOnClickListener {
+            val CatViewintent = Intent(this, cat_total::class.java)
+            startActivity(CatViewintent)
         }
 
         //Code used to Welcome User once logged in

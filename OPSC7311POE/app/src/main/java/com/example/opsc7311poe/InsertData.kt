@@ -12,6 +12,7 @@ import android.widget.Switch
 import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import java.time.LocalTime
 
 class InsertData : AppCompatActivity() {
 
@@ -53,6 +54,9 @@ class InsertData : AppCompatActivity() {
         var catSpin: Spinner = findViewById(R.id.sp_Category)
         // Create a list to hold category names
         val categoryList = mutableListOf<String>()
+        SessionUser.currentUser?.categories?.forEach { (name, _) ->
+            categoryList.add(name)
+        }
 
         // If there are no categories, disable the task spinner and display "No categories"
         if (categoryList.isEmpty()) {
@@ -63,9 +67,7 @@ class InsertData : AppCompatActivity() {
             )
         } else {
             // Iterate through the user's categories and add their names to the list
-            SessionUser.currentUser?.categories?.forEach { (name, _) ->
-                categoryList.add(name)
-            }
+
 
             // Create an adapter for the category Spinner
             val categoryAdapter =
@@ -101,44 +103,72 @@ class InsertData : AppCompatActivity() {
         }
 
 
+        // Inside onCreate method
         val AddTaskButton: TextView = findViewById(R.id.tvAddTask)
 
-        //onClickListener when Add Button is clicked
-        AddTaskButton.setOnClickListener()
-        {
-            val catTask = findViewById<Spinner>(R.id.sp_Category).selectedItem.toString()
-            val taskName = findViewById<TextView?>(R.id.edtTaskName).text.toString()
+        AddTaskButton.setOnClickListener {
+            val catTaskSpinner: Spinner = findViewById(R.id.sp_Category)
+            val selectedCategory = catTaskSpinner.selectedItem?.toString() ?: ""
+            val taskName = findViewById<TextView?>(R.id.edtTaskName).text.toString().trim()
             val repeatSwitch: Switch = findViewById(R.id.repeatSwitch)
-            val startTime = findViewById<TextView?>(R.id.edtStart).text.toString()
-            val endTime = findViewById<TextView?>(R.id.edtEnd).text.toString()
-            val desc = findViewById<TextView?>(R.id.edtDescription).text.toString()
+            val startTime = findViewById<TextView?>(R.id.edtStart).text.toString().trim()
+            val endTime = findViewById<TextView?>(R.id.edtEnd).text.toString().trim()
+            val desc = findViewById<TextView?>(R.id.edtDescription).text.toString().trim()
 
-            //Validation
-            if (catTask.isEmpty() || taskName.isEmpty() || startTime.isEmpty() || endTime.isEmpty() || desc.isEmpty()) {
-                // Show a Toast message indicating that all fields are required
-                Toast.makeText(this@InsertData, "All fields are required", Toast.LENGTH_SHORT).show()
-                return@setOnClickListener
+            if ((selectedCategory == "No categories") || selectedCategory.isEmpty() || taskName.isEmpty() || startTime.isEmpty() || endTime.isEmpty()) {
+                Toast.makeText(this@InsertData, "Please fill in all required fields", Toast.LENGTH_SHORT).show()
+            } else if (!isValidTime(startTime) || !isValidTime(endTime)) {
+                Toast.makeText(this@InsertData, "Please enter valid time format (HH:mm)", Toast.LENGTH_SHORT).show()
+            } else if (!isEndTimeAfterStartTime(startTime, endTime)) {
+                Toast.makeText(this@InsertData, "End time must be after start time", Toast.LENGTH_SHORT).show()
+            } else {
+                // Convert start time and end time to decimal hours
+                val startHour = parseTimeToHours(LocalTime.parse(startTime))
+                val endHour = parseTimeToHours(LocalTime.parse(endTime))
+
+                // Input validation passed, proceed with task creation
+                // Create and add the task to the category for the user
+                val objCategory = Category()
+                val selectCat = SessionUser.currentUser?.categories?.get(selectedCategory)
+                val createdTask = Task(taskName, desc, repeatSwitch.isEnabled, startHour, endHour)
+                objCategory.tasks[createdTask.name] = createdTask
+
+                // Start the ViewData activity or perform any other necessary action
+                val intent = Intent(this, ViewData::class.java)
+                startActivity(intent)
             }
-
-
-            val objCategory = Category()
-            var selectCat = SessionUser.currentUser?.categories?.get(catTask)
-
-            //adding the task to the catagory for user
-            var CreatedTask = Task(
-                taskName,
-                desc,
-                repeatSwitch.isEnabled,
-                startTime.toDouble(),
-                endTime.toDouble()
-            )
-            objCategory.tasks[CreatedTask.name] = CreatedTask
-
-            val intent = Intent(this, ViewData::class.java)
-            startActivity(intent)
 
         }
 
 
+
+
+
+    }
+    private fun isValidTime(time: String): Boolean {
+        // Regular expression to validate time format (HH:mm)
+        val regex = Regex("^([01]\\d|2[0-3]):([0-5]\\d)$")
+        return regex.matches(time)
+    }
+
+    // Moved outside of onCreate method
+    private fun isEndTimeAfterStartTime(startTime: String, endTime: String): Boolean {
+        val startTimeParts = startTime.split(":")
+        val endTimeParts = endTime.split(":")
+        val startHour = startTimeParts[0].toInt()
+        val startMinute = startTimeParts[1].toInt()
+        val endHour = endTimeParts[0].toInt()
+        val endMinute = endTimeParts[1].toInt()
+        return if (endHour == startHour) {
+            endMinute > startMinute
+        } else {
+            endHour > startHour
+        }
+    }
+    fun parseTimeToHours(enteredTime: LocalTime): Double {
+        val hours = enteredTime.hour
+        val minutes = enteredTime.minute
+        require(hours >= 0 && minutes >= 0 && minutes < 60) { "Invalid time format" }
+        return hours + minutes / 60.0
     }
 }
