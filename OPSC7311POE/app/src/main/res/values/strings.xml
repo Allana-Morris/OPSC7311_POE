@@ -76,9 +76,4 @@
     <string name="time_dash">-</string>
     <string name="cat_select">Category select</string>
     <string name="task_select">Task select</string>
-    <string name="enter_time">Enter time</string>
-    <string name="select_date">Select date</string>
-    <string name="enter_hours_spent">Enter hours for task</string>
-
-
 </resources>
