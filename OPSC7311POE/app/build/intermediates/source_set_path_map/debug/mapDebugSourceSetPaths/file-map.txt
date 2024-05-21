@@ -61,10 +61,10 @@ com.example.opsc7311poe.app-runtime-release-59 C:\Users\Sven\.gradle\caches\tran
 com.example.opsc7311poe.app-navigation-fragment-2.7.7-60 C:\Users\Sven\.gradle\caches\transforms-4\fdd22d6d22c24869b020f33b95ccf2fc\transformed\navigation-fragment-2.7.7\res
 com.example.opsc7311poe.app-material-ripple-release-61 C:\Users\Sven\.gradle\caches\transforms-4\fe7e049dd8efbacef4ba1f1a2ee4e082\transformed\material-ripple-release\res
 com.example.opsc7311poe.app-appcompat-resources-1.6.1-62 C:\Users\Sven\.gradle\caches\transforms-4\ff3966e7c52b8aee49ae61d60c086349\transformed\appcompat-resources-1.6.1\res
-com.example.opsc7311poe.app-pngs-63 C:\Users\Sven\AndroidStudioProjects\bitch\OPSC7311POE\app\build\generated\res\pngs\debug
-com.example.opsc7311poe.app-resValues-64 C:\Users\Sven\AndroidStudioProjects\bitch\OPSC7311POE\app\build\generated\res\resValues\debug
-com.example.opsc7311poe.app-packageDebugResources-65 C:\Users\Sven\AndroidStudioProjects\bitch\OPSC7311POE\app\build\intermediates\incremental\debug\packageDebugResources\merged.dir
-com.example.opsc7311poe.app-packageDebugResources-66 C:\Users\Sven\AndroidStudioProjects\bitch\OPSC7311POE\app\build\intermediates\incremental\debug\packageDebugResources\stripped.dir
-com.example.opsc7311poe.app-debug-67 C:\Users\Sven\AndroidStudioProjects\bitch\OPSC7311POE\app\build\intermediates\merged_res\debug\mergeDebugResources
-com.example.opsc7311poe.app-debug-68 C:\Users\Sven\AndroidStudioProjects\bitch\OPSC7311POE\app\src\debug\res
-com.example.opsc7311poe.app-main-69 C:\Users\Sven\AndroidStudioProjects\bitch\OPSC7311POE\app\src\main\res
+com.example.opsc7311poe.app-pngs-63 C:\Users\Sven\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\build\generated\res\pngs\debug
+com.example.opsc7311poe.app-resValues-64 C:\Users\Sven\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\build\generated\res\resValues\debug
+com.example.opsc7311poe.app-packageDebugResources-65 C:\Users\Sven\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\build\intermediates\incremental\debug\packageDebugResources\merged.dir
+com.example.opsc7311poe.app-packageDebugResources-66 C:\Users\Sven\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\build\intermediates\incremental\debug\packageDebugResources\stripped.dir
+com.example.opsc7311poe.app-debug-67 C:\Users\Sven\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\build\intermediates\merged_res\debug\mergeDebugResources
+com.example.opsc7311poe.app-debug-68 C:\Users\Sven\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\debug\res
+com.example.opsc7311poe.app-main-69 C:\Users\Sven\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\res
