@@ -25,19 +25,18 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:testOnly="true"
         android:theme="@style/Theme.OPSC7311POE" >
         <activity
-            android:name="com.example.opsc7311poe.create_category"
+            android:name="com.example.opsc7311poe.Profile"
             android:exported="false" />
         <activity
-            android:name="com.example.opsc7311poe.ViewData"
+            android:name="com.example.opsc7311poe.WeeklySummary"
             android:exported="false" />
         <activity
-            android:name="com.example.opsc7311poe.view_graphs"
+            android:name="com.example.opsc7311poe.Timer"
             android:exported="false" />
         <activity
-            android:name="com.example.opsc7311poe.StartingPage"
+            android:name="com.example.opsc7311poe.MainActivity"
             android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -45,9 +44,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.example.opsc7311poe.Login" />
-        <activity android:name="com.example.opsc7311poe.Register" />
-        <activity android:name="com.example.opsc7311poe.MainActivity" />
 
         <provider
             android:name="androidx.startup.InitializationProvider"

@@ -11,15 +11,15 @@
 
 
     <TextView
-        android:id="@+id/textView5"
+        android:id="@+id/tvEnterHoursSpent"
         android:layout_width="360dp"
         android:layout_height="50dp"
         android:layout_gravity="center"
         android:layout_marginTop="16dp"
         android:background="@drawable/roundstyle"
-        android:fontFamily="sans-serif-medium"
         android:backgroundTint="@color/black"
         android:text="@string/enter_hours_spent"
+        android:fontFamily="sans-serif-medium"
         android:textAlignment="center"
         android:textColor="@color/white"
         android:textSize="32sp" />
@@ -105,10 +105,11 @@
             android:layout_gravity="center_horizontal"
             android:layout_marginHorizontal="10dp"
             android:layout_weight="1"
+
             android:background="@drawable/roundstyle"
             android:backgroundTint="@color/black"
             android:fontFamily="sans-serif-medium"
-            android:text="@string/enter_time"
+            android:text="@string/Enter_time_spent"
             android:textAlignment="center"
             android:textColor="@color/white"
             android:textSize="28sp" />
@@ -120,10 +121,11 @@
             android:layout_gravity="center_horizontal"
             android:layout_marginHorizontal="10dp"
             android:layout_weight="1"
+            android:text="@string/select_a_date"
             android:background="@drawable/roundstyle"
             android:backgroundTint="@color/black"
             android:fontFamily="sans-serif-medium"
-            android:text="@string/select_date"
+
             android:textAlignment="center"
             android:textColor="@color/white"
             android:textSize="28sp" />

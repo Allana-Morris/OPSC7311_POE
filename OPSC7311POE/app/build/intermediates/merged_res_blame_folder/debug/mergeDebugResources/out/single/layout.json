@@ -20,6 +20,10 @@
         "source": "com.example.opsc7311poe.app-main-37:/layout/activity_profile.xml"
     },
     {
+        "merged": "com.example.opsc7311poe.app-mergeDebugResources-34:/layout/activity_enter_time_sheet.xml",
+        "source": "com.example.opsc7311poe.app-main-37:/layout/activity_enter_time_sheet.xml"
+    },
+    {
         "merged": "com.example.opsc7311poe.app-mergeDebugResources-34:/layout/activity_login.xml",
         "source": "com.example.opsc7311poe.app-main-37:/layout/activity_login.xml"
     },

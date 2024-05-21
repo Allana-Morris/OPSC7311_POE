@@ -272,6 +272,10 @@
         "source": "com.example.opsc7311poe.app-main-37:/layout/activity_view_tasks.xml"
     },
     {
+        "merged": "com.example.opsc7311poe.app-debug-35:/layout_activity_enter_time_sheet.xml.flat",
+        "source": "com.example.opsc7311poe.app-main-37:/layout/activity_enter_time_sheet.xml"
+    },
+    {
         "merged": "com.example.opsc7311poe.app-debug-35:/drawable_baseline_chevron_right_24.xml.flat",
         "source": "com.example.opsc7311poe.app-main-37:/drawable/baseline_chevron_right_24.xml"
     }
