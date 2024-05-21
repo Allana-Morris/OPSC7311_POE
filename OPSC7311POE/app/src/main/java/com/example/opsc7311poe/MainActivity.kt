@@ -11,6 +11,8 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import com.google.firebase.Firebase
+import com.google.firebase.firestore.firestore
 
 class MainActivity : AppCompatActivity() {
     //Below is Firebase Variable
@@ -38,13 +40,13 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, Profile::class.java)
             startActivity(intent)
         }
-/*
+
         //Intent to open Calendar
         CalendarOpenActivity.setOnClickListener{
             val intent3 = Intent(this, TaskCalendar::class.java)
             startActivity(intent3)
         }
-*/
+
         //Intent to Open Timer
         TimerOpenActivity.setOnClickListener{
             val intent4 = Intent(this, Timer::class.java)
