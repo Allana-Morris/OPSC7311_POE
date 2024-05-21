@@ -43,7 +43,7 @@
             android:layout_height="80dp"
             android:layout_marginStart="16dp"
             android:layout_marginTop="28dp"
-            android:text="@string/create_task"
+            android:text="View Progress"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -53,7 +53,7 @@
             android:layout_height="80dp"
             android:layout_marginTop="28dp"
             android:layout_marginEnd="16dp"
-            android:text="@string/create_category"
+            android:text="Monthly Summary"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toEndOf="@+id/btnTask"
@@ -88,6 +88,18 @@
             android:text="@string/view_timesheet"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/btnTimesheet" />
+
+        <Button
+            android:id="@+id/btnCatHours"
+            android:layout_width="120dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="28dp"
+            android:text="@string/cat_view"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.555"
+            app:layout_constraintStart_toEndOf="@+id/btnViewEntries"
+            app:layout_constraintTop_toBottomOf="@+id/btnViewTasks" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -112,7 +124,7 @@
                 android:orientation="horizontal">
 
                 <androidx.constraintlayout.widget.ConstraintLayout
-                    android:id="@+id/linearLayout"
+                    android:id="@+id/llProfile"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="0.25">
@@ -145,7 +157,7 @@
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
                 <androidx.constraintlayout.widget.ConstraintLayout
-                    android:id="@+id/linearLayout2"
+                    android:id="@+id/llHome"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="0.25">
@@ -179,7 +191,7 @@
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
                 <androidx.constraintlayout.widget.ConstraintLayout
-                    android:id="@+id/linearLayout4"
+                    android:id="@+id/llCalendar"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="0.25">
@@ -213,7 +225,7 @@
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
                 <androidx.constraintlayout.widget.ConstraintLayout
-                    android:id="@+id/linearLayout5"
+                    android:id="@+id/llTimer"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="0.25">

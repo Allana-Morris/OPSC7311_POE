@@ -1,10 +1,37 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.opsc7311poe.app-mergeDebugResources-65:/values-land/values-land.xml",
+            "outputFile": "com.example.opsc7311poe.app-mergeDebugResources-2:/values-land/values-land.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Sven\\AndroidStudioProjects\\bitch\\OPSC7311POE\\app\\src\\main\\res\\values-land\\dimens.xml",
+                    "source": "C:\\Users\\allan\\Downloads\\OPSC7311POE\\OPSC7311POE\\gradle\\wrapper\\dists\\gradle-8.7-all\\caches\\transforms-4\\9c8e2fb1bed0f2c64fefe94dc55436fb\\transformed\\appcompat-1.6.1\\res\\values-land\\values-land.xml",
+                    "from": {
+                        "startLines": "2,3,4",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "55,125,196",
+                        "endColumns": "69,70,67",
+                        "endOffsets": "120,191,259"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\allan\\Downloads\\OPSC7311POE\\OPSC7311POE\\gradle\\wrapper\\dists\\gradle-8.7-all\\caches\\transforms-4\\14695fd2f97a13dadaf7ce8581e5ec09\\transformed\\ambilwarna-2.0.1\\res\\values-land\\values-land.xml",
+                    "from": {
+                        "startLines": "4,5",
+                        "startColumns": "4,4",
+                        "startOffsets": "166,219",
+                        "endColumns": "52,51",
+                        "endOffsets": "214,266"
+                    },
+                    "to": {
+                        "startLines": "6,7",
+                        "startColumns": "4,4",
+                        "startOffsets": "322,375",
+                        "endColumns": "52,51",
+                        "endOffsets": "370,422"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\allan\\AndroidStudioProjects\\OPSC7311_POE\\OPSC7311POE\\app\\src\\main\\res\\values-land\\dimens.xml",
                     "from": {
                         "startLines": "1",
                         "startColumns": "4",
@@ -21,7 +48,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Sven\\.gradle\\caches\\transforms-4\\322c8c226b20bcef54f23af2e70ae9fb\\transformed\\material-1.11.0\\res\\values-land\\values-land.xml",
+                    "source": "C:\\Users\\allan\\Downloads\\OPSC7311POE\\OPSC7311POE\\gradle\\wrapper\\dists\\gradle-8.7-all\\caches\\transforms-4\\39519064f55d721e9dfe60ec8a89f0ef\\transformed\\material-1.11.0\\res\\values-land\\values-land.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,26,35,40",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -37,33 +64,6 @@
                         "endLines": "8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,31,40,45,48",
                         "endColumns": "74,73,72,69,71,69,64,66,69,71,68,68,81,89,75,67,66,77,64,66,10,10,10,10",
                         "endOffsets": "497,571,644,714,786,856,921,988,1058,1130,1199,1268,1350,1440,1516,1584,1651,1729,1794,1861,2033,2602,2871,3099"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\Sven\\.gradle\\caches\\transforms-4\\5c28d2219c30f549b2ea6e2dc22e1150\\transformed\\appcompat-1.6.1\\res\\values-land\\values-land.xml",
-                    "from": {
-                        "startLines": "2,3,4",
-                        "startColumns": "4,4,4",
-                        "startOffsets": "55,125,196",
-                        "endColumns": "69,70,67",
-                        "endOffsets": "120,191,259"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\Sven\\.gradle\\caches\\transforms-4\\6d0141d8c96b752294a734563c1140f9\\transformed\\ambilwarna-2.0.1\\res\\values-land\\values-land.xml",
-                    "from": {
-                        "startLines": "4,5",
-                        "startColumns": "4,4",
-                        "startOffsets": "166,219",
-                        "endColumns": "52,51",
-                        "endOffsets": "214,266"
-                    },
-                    "to": {
-                        "startLines": "6,7",
-                        "startColumns": "4,4",
-                        "startOffsets": "322,375",
-                        "endColumns": "52,51",
-                        "endOffsets": "370,422"
                     }
                 }
             ]

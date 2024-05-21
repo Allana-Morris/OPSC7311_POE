@@ -27,18 +27,21 @@
 
     <LinearLayout
         android:id="@+id/vertLayout"
-        android:layout_width="413dp"
-        android:layout_height="419dp"
-        android:layout_marginTop="68dp"
-        android:orientation="vertical"
+        android:layout_width="364dp"
+        android:layout_height="401dp"
+        android:layout_marginTop="100dp"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout2"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/imageView">
 
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
     </LinearLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout2"
         android:layout_width="match_parent"
         android:layout_height="68dp"
         app:layout_constraintBottom_toTopOf="@+id/cl_NavBar"
@@ -103,7 +106,7 @@
                     app:layout_constraintStart_toStartOf="parent">
 
                     <androidx.constraintlayout.widget.ConstraintLayout
-                        android:id="@+id/linearLayout"
+                        android:id="@+id/llProfile"
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="0.25">
@@ -136,7 +139,7 @@
                     </androidx.constraintlayout.widget.ConstraintLayout>
 
                     <androidx.constraintlayout.widget.ConstraintLayout
-                        android:id="@+id/linearLayout2"
+                        android:id="@+id/llHome"
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="0.25">
@@ -170,7 +173,7 @@
                     </androidx.constraintlayout.widget.ConstraintLayout>
 
                     <androidx.constraintlayout.widget.ConstraintLayout
-                        android:id="@+id/linearLayout4"
+                        android:id="@+id/llCalendar"
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="0.25">
@@ -204,7 +207,7 @@
                     </androidx.constraintlayout.widget.ConstraintLayout>
 
                     <androidx.constraintlayout.widget.ConstraintLayout
-                        android:id="@+id/linearLayout5"
+                        android:id="@+id/llTimer"
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="0.25">

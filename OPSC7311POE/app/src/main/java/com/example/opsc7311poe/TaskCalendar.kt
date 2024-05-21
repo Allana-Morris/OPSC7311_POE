@@ -28,11 +28,7 @@ class TaskCalendar : AppCompatActivity() {
 
 
         // Initialize views
-        set_event = findViewById<TextView>(R.id.tv_add_event)
-        DateToday = findViewById<TextView>(R.id.dayOfWeekTV)
-        backButton = findViewById<TextView>(R.id.tv_Back)
-        forwardButton = findViewById<TextView>(R.id.tv_Forward)
-        var taskListing = findViewById<ListView>(R.id.listView)
+
         //Sets Textview to current Date
         DateToday.text = datenow.toString()
 

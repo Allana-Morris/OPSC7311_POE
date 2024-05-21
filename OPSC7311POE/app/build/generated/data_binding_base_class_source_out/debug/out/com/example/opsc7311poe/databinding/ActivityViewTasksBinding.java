@@ -26,6 +26,9 @@ public final class ActivityViewTasksBinding implements ViewBinding {
   public final ConstraintLayout clNavBar;
 
   @NonNull
+  public final ConstraintLayout constraintLayout2;
+
+  @NonNull
   public final ImageButton createCat;
 
   @NonNull
@@ -47,16 +50,16 @@ public final class ActivityViewTasksBinding implements ViewBinding {
   public final ImageView imageView;
 
   @NonNull
-  public final ConstraintLayout linearLayout;
+  public final ConstraintLayout llCalendar;
 
   @NonNull
-  public final ConstraintLayout linearLayout2;
+  public final ConstraintLayout llHome;
 
   @NonNull
-  public final ConstraintLayout linearLayout4;
+  public final ConstraintLayout llProfile;
 
   @NonNull
-  public final ConstraintLayout linearLayout5;
+  public final ConstraintLayout llTimer;
 
   @NonNull
   public final ConstraintLayout main;
@@ -77,15 +80,17 @@ public final class ActivityViewTasksBinding implements ViewBinding {
   public final LinearLayout vertLayout;
 
   private ActivityViewTasksBinding(@NonNull ConstraintLayout rootView,
-      @NonNull ConstraintLayout clNavBar, @NonNull ImageButton createCat,
-      @NonNull ImageButton createTask, @NonNull ImageButton ibCalendar, @NonNull ImageButton ibHome,
-      @NonNull ImageButton ibProfile, @NonNull ImageButton ibTimer, @NonNull ImageView imageView,
-      @NonNull ConstraintLayout linearLayout, @NonNull ConstraintLayout linearLayout2,
-      @NonNull ConstraintLayout linearLayout4, @NonNull ConstraintLayout linearLayout5,
+      @NonNull ConstraintLayout clNavBar, @NonNull ConstraintLayout constraintLayout2,
+      @NonNull ImageButton createCat, @NonNull ImageButton createTask,
+      @NonNull ImageButton ibCalendar, @NonNull ImageButton ibHome, @NonNull ImageButton ibProfile,
+      @NonNull ImageButton ibTimer, @NonNull ImageView imageView,
+      @NonNull ConstraintLayout llCalendar, @NonNull ConstraintLayout llHome,
+      @NonNull ConstraintLayout llProfile, @NonNull ConstraintLayout llTimer,
       @NonNull ConstraintLayout main, @NonNull TextView tvCalendar, @NonNull TextView tvHome,
       @NonNull TextView tvProfile, @NonNull TextView tvTimer, @NonNull LinearLayout vertLayout) {
     this.rootView = rootView;
     this.clNavBar = clNavBar;
+    this.constraintLayout2 = constraintLayout2;
     this.createCat = createCat;
     this.createTask = createTask;
     this.ibCalendar = ibCalendar;
@@ -93,10 +98,10 @@ public final class ActivityViewTasksBinding implements ViewBinding {
     this.ibProfile = ibProfile;
     this.ibTimer = ibTimer;
     this.imageView = imageView;
-    this.linearLayout = linearLayout;
-    this.linearLayout2 = linearLayout2;
-    this.linearLayout4 = linearLayout4;
-    this.linearLayout5 = linearLayout5;
+    this.llCalendar = llCalendar;
+    this.llHome = llHome;
+    this.llProfile = llProfile;
+    this.llTimer = llTimer;
     this.main = main;
     this.tvCalendar = tvCalendar;
     this.tvHome = tvHome;
@@ -135,6 +140,12 @@ public final class ActivityViewTasksBinding implements ViewBinding {
       id = R.id.cl_NavBar;
       ConstraintLayout clNavBar = ViewBindings.findChildViewById(rootView, id);
       if (clNavBar == null) {
+        break missingId;
+      }
+
+      id = R.id.constraintLayout2;
+      ConstraintLayout constraintLayout2 = ViewBindings.findChildViewById(rootView, id);
+      if (constraintLayout2 == null) {
         break missingId;
       }
 
@@ -180,27 +191,27 @@ public final class ActivityViewTasksBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.linearLayout;
-      ConstraintLayout linearLayout = ViewBindings.findChildViewById(rootView, id);
-      if (linearLayout == null) {
+      id = R.id.llCalendar;
+      ConstraintLayout llCalendar = ViewBindings.findChildViewById(rootView, id);
+      if (llCalendar == null) {
         break missingId;
       }
 
-      id = R.id.linearLayout2;
-      ConstraintLayout linearLayout2 = ViewBindings.findChildViewById(rootView, id);
-      if (linearLayout2 == null) {
+      id = R.id.llHome;
+      ConstraintLayout llHome = ViewBindings.findChildViewById(rootView, id);
+      if (llHome == null) {
         break missingId;
       }
 
-      id = R.id.linearLayout4;
-      ConstraintLayout linearLayout4 = ViewBindings.findChildViewById(rootView, id);
-      if (linearLayout4 == null) {
+      id = R.id.llProfile;
+      ConstraintLayout llProfile = ViewBindings.findChildViewById(rootView, id);
+      if (llProfile == null) {
         break missingId;
       }
 
-      id = R.id.linearLayout5;
-      ConstraintLayout linearLayout5 = ViewBindings.findChildViewById(rootView, id);
-      if (linearLayout5 == null) {
+      id = R.id.llTimer;
+      ConstraintLayout llTimer = ViewBindings.findChildViewById(rootView, id);
+      if (llTimer == null) {
         break missingId;
       }
 
@@ -236,10 +247,9 @@ public final class ActivityViewTasksBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityViewTasksBinding((ConstraintLayout) rootView, clNavBar, createCat,
-          createTask, ibCalendar, ibHome, ibProfile, ibTimer, imageView, linearLayout,
-          linearLayout2, linearLayout4, linearLayout5, main, tvCalendar, tvHome, tvProfile, tvTimer,
-          vertLayout);
+      return new ActivityViewTasksBinding((ConstraintLayout) rootView, clNavBar, constraintLayout2,
+          createCat, createTask, ibCalendar, ibHome, ibProfile, ibTimer, imageView, llCalendar,
+          llHome, llProfile, llTimer, main, tvCalendar, tvHome, tvProfile, tvTimer, vertLayout);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

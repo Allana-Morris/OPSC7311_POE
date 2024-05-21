@@ -224,7 +224,7 @@
                     app:layout_constraintStart_toStartOf="parent">
 
                     <androidx.constraintlayout.widget.ConstraintLayout
-                        android:id="@+id/linearLayout"
+                        android:id="@+id/llProfile"
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="0.25">
@@ -257,7 +257,7 @@
                     </androidx.constraintlayout.widget.ConstraintLayout>
 
                     <androidx.constraintlayout.widget.ConstraintLayout
-                        android:id="@+id/linearLayout2"
+                        android:id="@+id/llHome"
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="0.25">
@@ -291,7 +291,7 @@
                     </androidx.constraintlayout.widget.ConstraintLayout>
 
                     <androidx.constraintlayout.widget.ConstraintLayout
-                        android:id="@+id/linearLayout4"
+                        android:id="@+id/llCalendar"
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="0.25">
@@ -325,7 +325,7 @@
                     </androidx.constraintlayout.widget.ConstraintLayout>
 
                     <androidx.constraintlayout.widget.ConstraintLayout
-                        android:id="@+id/linearLayout5"
+                        android:id="@+id/llTimer"
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="0.25">
@@ -409,7 +409,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0"
+        app:layout_constraintVertical_bias="0.822"
         tools:ignore="MissingConstraints" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

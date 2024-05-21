@@ -41,16 +41,16 @@ public final class ActivityViewTimeSheetEntryBinding implements ViewBinding {
   public final LinearLayout linLayout;
 
   @NonNull
-  public final ConstraintLayout linearLayout;
+  public final ConstraintLayout llCalendar;
 
   @NonNull
-  public final ConstraintLayout linearLayout2;
+  public final ConstraintLayout llHome;
 
   @NonNull
-  public final ConstraintLayout linearLayout4;
+  public final ConstraintLayout llProfile;
 
   @NonNull
-  public final ConstraintLayout linearLayout5;
+  public final ConstraintLayout llTimer;
 
   @NonNull
   public final ConstraintLayout main;
@@ -79,12 +79,11 @@ public final class ActivityViewTimeSheetEntryBinding implements ViewBinding {
   private ActivityViewTimeSheetEntryBinding(@NonNull ConstraintLayout rootView,
       @NonNull ConstraintLayout clNavBar, @NonNull ImageButton ibCalendar,
       @NonNull ImageButton ibHome, @NonNull ImageButton ibProfile, @NonNull ImageButton ibTimer,
-      @NonNull LinearLayout linLayout, @NonNull ConstraintLayout linearLayout,
-      @NonNull ConstraintLayout linearLayout2, @NonNull ConstraintLayout linearLayout4,
-      @NonNull ConstraintLayout linearLayout5, @NonNull ConstraintLayout main,
-      @NonNull Button selectBtn, @NonNull TextView tvCalendar, @NonNull TextView tvEndDate,
-      @NonNull TextView tvHome, @NonNull TextView tvProfile, @NonNull TextView tvStartDate,
-      @NonNull TextView tvTimer) {
+      @NonNull LinearLayout linLayout, @NonNull ConstraintLayout llCalendar,
+      @NonNull ConstraintLayout llHome, @NonNull ConstraintLayout llProfile,
+      @NonNull ConstraintLayout llTimer, @NonNull ConstraintLayout main, @NonNull Button selectBtn,
+      @NonNull TextView tvCalendar, @NonNull TextView tvEndDate, @NonNull TextView tvHome,
+      @NonNull TextView tvProfile, @NonNull TextView tvStartDate, @NonNull TextView tvTimer) {
     this.rootView = rootView;
     this.clNavBar = clNavBar;
     this.ibCalendar = ibCalendar;
@@ -92,10 +91,10 @@ public final class ActivityViewTimeSheetEntryBinding implements ViewBinding {
     this.ibProfile = ibProfile;
     this.ibTimer = ibTimer;
     this.linLayout = linLayout;
-    this.linearLayout = linearLayout;
-    this.linearLayout2 = linearLayout2;
-    this.linearLayout4 = linearLayout4;
-    this.linearLayout5 = linearLayout5;
+    this.llCalendar = llCalendar;
+    this.llHome = llHome;
+    this.llProfile = llProfile;
+    this.llTimer = llTimer;
     this.main = main;
     this.selectBtn = selectBtn;
     this.tvCalendar = tvCalendar;
@@ -169,27 +168,27 @@ public final class ActivityViewTimeSheetEntryBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.linearLayout;
-      ConstraintLayout linearLayout = ViewBindings.findChildViewById(rootView, id);
-      if (linearLayout == null) {
+      id = R.id.llCalendar;
+      ConstraintLayout llCalendar = ViewBindings.findChildViewById(rootView, id);
+      if (llCalendar == null) {
         break missingId;
       }
 
-      id = R.id.linearLayout2;
-      ConstraintLayout linearLayout2 = ViewBindings.findChildViewById(rootView, id);
-      if (linearLayout2 == null) {
+      id = R.id.llHome;
+      ConstraintLayout llHome = ViewBindings.findChildViewById(rootView, id);
+      if (llHome == null) {
         break missingId;
       }
 
-      id = R.id.linearLayout4;
-      ConstraintLayout linearLayout4 = ViewBindings.findChildViewById(rootView, id);
-      if (linearLayout4 == null) {
+      id = R.id.llProfile;
+      ConstraintLayout llProfile = ViewBindings.findChildViewById(rootView, id);
+      if (llProfile == null) {
         break missingId;
       }
 
-      id = R.id.linearLayout5;
-      ConstraintLayout linearLayout5 = ViewBindings.findChildViewById(rootView, id);
-      if (linearLayout5 == null) {
+      id = R.id.llTimer;
+      ConstraintLayout llTimer = ViewBindings.findChildViewById(rootView, id);
+      if (llTimer == null) {
         break missingId;
       }
 
@@ -238,9 +237,8 @@ public final class ActivityViewTimeSheetEntryBinding implements ViewBinding {
       }
 
       return new ActivityViewTimeSheetEntryBinding((ConstraintLayout) rootView, clNavBar,
-          ibCalendar, ibHome, ibProfile, ibTimer, linLayout, linearLayout, linearLayout2,
-          linearLayout4, linearLayout5, main, selectBtn, tvCalendar, tvEndDate, tvHome, tvProfile,
-          tvStartDate, tvTimer);
+          ibCalendar, ibHome, ibProfile, ibTimer, linLayout, llCalendar, llHome, llProfile, llTimer,
+          main, selectBtn, tvCalendar, tvEndDate, tvHome, tvProfile, tvStartDate, tvTimer);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

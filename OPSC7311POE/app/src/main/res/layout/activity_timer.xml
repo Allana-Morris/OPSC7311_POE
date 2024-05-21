@@ -149,7 +149,7 @@
                 app:layout_constraintStart_toStartOf="parent">
 
                 <androidx.constraintlayout.widget.ConstraintLayout
-                    android:id="@+id/linearLayout"
+                    android:id="@+id/llProfile"
                     android:layout_width="95dp"
                     android:layout_height="125dp"
                     app:layout_constraintBottom_toBottomOf="parent"
@@ -181,13 +181,13 @@
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
                 <androidx.constraintlayout.widget.ConstraintLayout
-                    android:id="@+id/linearLayout2"
+                    android:id="@+id/llHome"
                     android:layout_width="105dp"
                     android:layout_height="125dp"
                     app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toStartOf="@+id/linearLayout4"
+                    app:layout_constraintEnd_toStartOf="@+id/llCalendar"
                     app:layout_constraintHorizontal_bias="0.0"
-                    app:layout_constraintStart_toEndOf="@+id/linearLayout">
+                    app:layout_constraintStart_toEndOf="@+id/llProfile">
 
                     <TextView
                         android:id="@+id/tv_Home"
@@ -216,12 +216,12 @@
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
                 <androidx.constraintlayout.widget.ConstraintLayout
-                    android:id="@+id/linearLayout4"
+                    android:id="@+id/llCalendar"
                     android:layout_width="107dp"
                     android:layout_height="125dp"
                     android:layout_marginEnd="4dp"
                     app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toStartOf="@+id/linearLayout5">
+                    app:layout_constraintEnd_toStartOf="@+id/llTimer">
 
                     <ImageButton
                         android:id="@+id/ib_Calendar"
@@ -249,7 +249,7 @@
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
                 <androidx.constraintlayout.widget.ConstraintLayout
-                    android:id="@+id/linearLayout5"
+                    android:id="@+id/llTimer"
                     android:layout_width="99dp"
                     android:layout_height="126dp"
                     app:layout_constraintBottom_toBottomOf="parent"

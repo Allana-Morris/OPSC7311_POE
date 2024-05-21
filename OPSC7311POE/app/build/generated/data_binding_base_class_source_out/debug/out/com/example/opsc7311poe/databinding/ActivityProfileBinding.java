@@ -66,16 +66,16 @@ public final class ActivityProfileBinding implements ViewBinding {
   public final ImageView ivGoogle;
 
   @NonNull
-  public final ConstraintLayout linearLayout;
+  public final ConstraintLayout llCalendar;
 
   @NonNull
-  public final ConstraintLayout linearLayout2;
+  public final ConstraintLayout llHome;
 
   @NonNull
-  public final ConstraintLayout linearLayout4;
+  public final ConstraintLayout llProfile;
 
   @NonNull
-  public final ConstraintLayout linearLayout5;
+  public final ConstraintLayout llTimer;
 
   @NonNull
   public final ConstraintLayout main;
@@ -122,9 +122,9 @@ public final class ActivityProfileBinding implements ViewBinding {
       @NonNull EditText edtUserNameEdit, @NonNull View empyViews, @NonNull ImageButton ibCalendar,
       @NonNull ImageButton ibHome, @NonNull ImageButton ibProfile, @NonNull ImageButton ibTimer,
       @NonNull ImageView imgPhotoUp, @NonNull ImageView imgWhiteBackground,
-      @NonNull ImageView ivGoogle, @NonNull ConstraintLayout linearLayout,
-      @NonNull ConstraintLayout linearLayout2, @NonNull ConstraintLayout linearLayout4,
-      @NonNull ConstraintLayout linearLayout5, @NonNull ConstraintLayout main,
+      @NonNull ImageView ivGoogle, @NonNull ConstraintLayout llCalendar,
+      @NonNull ConstraintLayout llHome, @NonNull ConstraintLayout llProfile,
+      @NonNull ConstraintLayout llTimer, @NonNull ConstraintLayout main,
       @NonNull TextView tvCalendar, @NonNull TextView tvCustomiseProfile,
       @NonNull TextView tvEditusername, @NonNull TextView tvEmail, @NonNull TextView tvFullName,
       @NonNull TextView tvHome, @NonNull TextView tvNewPhoto, @NonNull TextView tvProfile,
@@ -145,10 +145,10 @@ public final class ActivityProfileBinding implements ViewBinding {
     this.imgPhotoUp = imgPhotoUp;
     this.imgWhiteBackground = imgWhiteBackground;
     this.ivGoogle = ivGoogle;
-    this.linearLayout = linearLayout;
-    this.linearLayout2 = linearLayout2;
-    this.linearLayout4 = linearLayout4;
-    this.linearLayout5 = linearLayout5;
+    this.llCalendar = llCalendar;
+    this.llHome = llHome;
+    this.llProfile = llProfile;
+    this.llTimer = llTimer;
     this.main = main;
     this.tvCalendar = tvCalendar;
     this.tvCustomiseProfile = tvCustomiseProfile;
@@ -275,27 +275,27 @@ public final class ActivityProfileBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.linearLayout;
-      ConstraintLayout linearLayout = ViewBindings.findChildViewById(rootView, id);
-      if (linearLayout == null) {
+      id = R.id.llCalendar;
+      ConstraintLayout llCalendar = ViewBindings.findChildViewById(rootView, id);
+      if (llCalendar == null) {
         break missingId;
       }
 
-      id = R.id.linearLayout2;
-      ConstraintLayout linearLayout2 = ViewBindings.findChildViewById(rootView, id);
-      if (linearLayout2 == null) {
+      id = R.id.llHome;
+      ConstraintLayout llHome = ViewBindings.findChildViewById(rootView, id);
+      if (llHome == null) {
         break missingId;
       }
 
-      id = R.id.linearLayout4;
-      ConstraintLayout linearLayout4 = ViewBindings.findChildViewById(rootView, id);
-      if (linearLayout4 == null) {
+      id = R.id.llProfile;
+      ConstraintLayout llProfile = ViewBindings.findChildViewById(rootView, id);
+      if (llProfile == null) {
         break missingId;
       }
 
-      id = R.id.linearLayout5;
-      ConstraintLayout linearLayout5 = ViewBindings.findChildViewById(rootView, id);
-      if (linearLayout5 == null) {
+      id = R.id.llTimer;
+      ConstraintLayout llTimer = ViewBindings.findChildViewById(rootView, id);
+      if (llTimer == null) {
         break missingId;
       }
 
@@ -375,10 +375,10 @@ public final class ActivityProfileBinding implements ViewBinding {
 
       return new ActivityProfileBinding((ConstraintLayout) rootView, btnSaveProfile, clNavBar,
           edtEmailEdit, edtFullNameEdit, edtPasswordEdit, edtUserNameEdit, empyViews, ibCalendar,
-          ibHome, ibProfile, ibTimer, imgPhotoUp, imgWhiteBackground, ivGoogle, linearLayout,
-          linearLayout2, linearLayout4, linearLayout5, main, tvCalendar, tvCustomiseProfile,
-          tvEditusername, tvEmail, tvFullName, tvHome, tvNewPhoto, tvProfile, tvProfilePhoto,
-          tvSeePassword, tvTimer, tvuserProfile);
+          ibHome, ibProfile, ibTimer, imgPhotoUp, imgWhiteBackground, ivGoogle, llCalendar, llHome,
+          llProfile, llTimer, main, tvCalendar, tvCustomiseProfile, tvEditusername, tvEmail,
+          tvFullName, tvHome, tvNewPhoto, tvProfile, tvProfilePhoto, tvSeePassword, tvTimer,
+          tvuserProfile);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
