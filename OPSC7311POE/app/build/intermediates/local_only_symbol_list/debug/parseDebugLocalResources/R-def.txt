@@ -74,6 +74,7 @@ drawable whitescreen
 drawable work
 drawable write
 id bottomNavigationView
+id btnCatHours
 id btnCategory
 id btnLogin
 id btnReset
@@ -269,6 +270,7 @@ string bar
 string calendar
 string calendar_
 string cat_select
+string cat_view
 string category
 string choose
 string chooseW
@@ -292,7 +294,12 @@ string enter_hours_spent
 string enter_time
 string forward
 string fullName
+string gcm_defaultSenderId
 string generate
+string google_api_key
+string google_app_id
+string google_crash_reporting_api_key
+string google_storage_bucket
 string hello_blank_fragment
 string home
 string housecleaning
@@ -309,6 +316,7 @@ string pie
 string profile
 string profilePho
 string progress
+string project_id
 string prompt_email
 string prompt_password
 string reset
