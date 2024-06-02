@@ -1,9 +1,9 @@
 <component name="libraryTable">
   <library name="Gradle: androidx.lifecycle:lifecycle-livedata:2.7.0@aar" external-system-id="GRADLE">
     <CLASSES>
-      <root url="file://$USER_HOME$/Downloads/OPSC7311POE/OPSC7311POE/gradle/wrapper/dists/gradle-8.7-all/caches/transforms-4/d6e32ec6c5412ac844e4d4f99a0d8679/transformed/lifecycle-livedata-2.7.0/AndroidManifest.xml" />
-      <root url="file://$USER_HOME$/Downloads/OPSC7311POE/OPSC7311POE/gradle/wrapper/dists/gradle-8.7-all/caches/transforms-4/d6e32ec6c5412ac844e4d4f99a0d8679/transformed/lifecycle-livedata-2.7.0/res" />
-      <root url="jar://$USER_HOME$/Downloads/OPSC7311POE/OPSC7311POE/gradle/wrapper/dists/gradle-8.7-all/caches/transforms-4/d6e32ec6c5412ac844e4d4f99a0d8679/transformed/lifecycle-livedata-2.7.0/jars/classes.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/OPSC7311POE/OPSC7311POE/gradle/wrapper/dists/gradle-8.7-all/caches/transforms-4/52ecbff9106166a0fcc3127f8d947829/transformed/lifecycle-livedata-2.7.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/Downloads/OPSC7311POE/OPSC7311POE/gradle/wrapper/dists/gradle-8.7-all/caches/transforms-4/52ecbff9106166a0fcc3127f8d947829/transformed/lifecycle-livedata-2.7.0/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/Downloads/OPSC7311POE/OPSC7311POE/gradle/wrapper/dists/gradle-8.7-all/caches/transforms-4/52ecbff9106166a0fcc3127f8d947829/transformed/lifecycle-livedata-2.7.0/res" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
