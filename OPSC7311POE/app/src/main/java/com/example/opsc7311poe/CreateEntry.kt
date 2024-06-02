@@ -1,11 +1,11 @@
 package com.example.opsc7311poe
 
+
 import android.app.Activity
 import android.app.DatePickerDialog
 import android.app.TimePickerDialog
 import android.content.Intent
 import android.graphics.Bitmap
-import android.net.Uri
 import android.os.Bundle
 import android.provider.MediaStore
 import android.view.View
@@ -21,6 +21,8 @@ import androidx.activity.result.ActivityResultLauncher
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.AppCompatActivity
 import java.sql.Time
+import java.text.SimpleDateFormat
+import java.time.Duration
 import java.time.LocalDate
 import java.time.LocalTime
 import java.util.Calendar
@@ -56,10 +58,6 @@ class CreateEntry : AppCompatActivity() {
                 Toast.makeText(this@CreateEntry, "Failed to capture image", Toast.LENGTH_SHORT).show()
             }
         }
-
-
-
-
 
         // Retrieve user's categories and populate the category list
         SessionUser.currentUser?.categories?.forEach { (name, _) ->
@@ -223,39 +221,32 @@ class CreateEntry : AppCompatActivity() {
 
         }
 
-        btnSave.setOnClickListener()
-        {
-            // Get the selected task name
+        btnSave.setOnClickListener {
             val selectedTaskName = spinTask.selectedItem.toString()
-
-            // Get the selected category name
             val selectedCategoryName = spinCat.selectedItem.toString()
-
-            // Get the selected category from the user's hashmap
             val selectedCategory = SessionUser.currentUser?.categories?.get(selectedCategoryName)
 
-            // If selectedCategory is not null and it contains the selected task
             if (selectedCategory != null && selectedCategory.tasks.containsKey(selectedTaskName)) {
                 val selectedTask = selectedCategory.tasks[selectedTaskName]
 
-                // Your code to work with the selected task goes here
                 if (selectedTask != null) {
-                    // Parse the start and end times
-                    val startTime = LocalTime.parse(tvStart.text)
-                    val endTime = LocalTime.parse(tvEnd.text)
+                    val dateFormat: SimpleDateFormat = SimpleDateFormat("dd-MM-yyyy")
+                    val selectedDate = tvDate.text.toString() // Parse the date string
+                    val startTime = LocalTime.parse(tvStart.text) // Parse the start time string
+                    val endTime = LocalTime.parse(tvEnd.text) // Parse the end time string
 
-                    // Calculate the duration
-                    val duration = if (startTime.isBefore(endTime)) {
-                        val timed = endTime.minusHours(startTime.hour.toLong())
-                            .minusMinutes(startTime.minute.toLong())
-                            .minusSeconds(startTime.second.toLong())
-                        timed.toString()
-                    } else {
-                        "End time must be after start time"
-                    }
+                    val duration = Duration.between(startTime, endTime)
 
-                    // Display the duration or error message
-                    Toast.makeText(this, "Recording duration: $duration", Toast.LENGTH_SHORT).show()
+                    val recording = Recording(
+                        RecDate = dateFormat.parse(selectedDate),
+                        StartTime = Time.valueOf(startTime.toString()),
+                        EndTime = Time.valueOf(endTime.toString()),
+                        Duration = Time.valueOf(duration.toString()),
+                        image = null
+                    )
+
+                    selectedTask.taskRecords.add(recording)
+                    Toast.makeText(this, "Recording saved for task: ${selectedTask.name}", Toast.LENGTH_SHORT).show()
                 } else {
                     Toast.makeText(this, "Selected task is null", Toast.LENGTH_SHORT).show()
                 }
@@ -263,6 +254,7 @@ class CreateEntry : AppCompatActivity() {
                 Toast.makeText(this, "Selected task or category is null", Toast.LENGTH_SHORT).show()
             }
         }
+
 
 
     }

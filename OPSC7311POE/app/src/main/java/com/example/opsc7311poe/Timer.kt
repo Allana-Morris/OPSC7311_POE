@@ -26,13 +26,13 @@ class Timer : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_timer)
-        edtTime.setText("00:00:00")
-
 
         edtTime = findViewById(R.id.edtClock)
         btnStart = findViewById(R.id.btnStart)
         btnStop = findViewById(R.id.btnStop)
         btnReset = findViewById(R.id.btnReset)
+        edtTime.setText("00:00:00")
+
         val btnSave  : Button = findViewById(R.id.saveTimebtn)
         val spnCat : Spinner = findViewById(R.id.spinCat)
         val spnTask : Spinner = findViewById(R.id.spinTask)
@@ -82,6 +82,11 @@ class Timer : AppCompatActivity() {
         val categoryList = mutableListOf<String>()
         val taskList = mutableListOf<String>()
 
+        // Iterate through the user's categories and add their names to the list
+        SessionUser.currentUser?.categories?.forEach { (name, _) ->
+            categoryList.add(name)
+        }
+
         // If there are no categories, disable the task spinner and display "No categories"
         if (categoryList.isEmpty()) {
             spnCat.isEnabled = false
@@ -99,10 +104,7 @@ class Timer : AppCompatActivity() {
             spnCat.adapter = ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, emptyList())
         }
 
-        // Iterate through the user's categories and add their names to the list
-        SessionUser.currentUser?.categories?.forEach { (name, _) ->
-            categoryList.add(name)
-        }
+
 
         // Create an adapter for the category Spinner
         val categoryAdapter = ArrayAdapter(this, android.R.layout.simple_spinner_item, categoryList)
@@ -184,8 +186,13 @@ class Timer : AppCompatActivity() {
                             seconds
                         ) // Assuming Time is a custom class representing time
 
-                        val currentDate = Date()
-                        val rec = Recording(currentDate, 0.0, 0.0, time, null)
+                        val currentDate = Date() // Assuming you have already initialized currentDate
+                        val startTime = Time.valueOf("00:00:00") // Initialize the start time
+                        val endTime = Time.valueOf("00:00:00") // Initialize the end time
+                        val duration = Time.valueOf("00:00:00") // Initialize the duration
+
+                        val rec = Recording(currentDate, startTime, endTime, duration, null)
+
                         //adding a recording object to the list in the right task
                         selectedTask.taskRecords.add(rec)
 
