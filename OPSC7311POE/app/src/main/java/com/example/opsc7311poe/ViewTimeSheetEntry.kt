@@ -1,4 +1,5 @@
 package com.example.opsc7311poe
+
 import android.app.DatePickerDialog
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -10,6 +11,7 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import java.text.SimpleDateFormat
 import java.util.*
 
 class ViewTimeSheetEntry : AppCompatActivity() {
@@ -38,7 +40,6 @@ class ViewTimeSheetEntry : AppCompatActivity() {
             val datePickerDialog = DatePickerDialog(
                 this,
                 DatePickerDialog.OnDateSetListener { _, year, monthOfYear, dayOfMonth ->
-                    // Set selected date to startDate TextView
                     startDate.text = "$dayOfMonth/${monthOfYear + 1}/$year"
                 },
                 year,
@@ -52,7 +53,6 @@ class ViewTimeSheetEntry : AppCompatActivity() {
             val datePickerDialog = DatePickerDialog(
                 this,
                 DatePickerDialog.OnDateSetListener { _, year, monthOfYear, dayOfMonth ->
-                    // Set selected date to endDate TextView
                     endDate.text = "$dayOfMonth/${monthOfYear + 1}/$year"
                 },
                 year,
@@ -61,8 +61,33 @@ class ViewTimeSheetEntry : AppCompatActivity() {
             )
             datePickerDialog.show()
         }
+        val currentUser = SessionUser.currentUser
+        if (currentUser != null) {
+            val toastMessage = StringBuilder()
+
+            // Iterate through each category of the current user
+            currentUser.categories.values.forEach { category ->
+                // Iterate through each task in the category
+                category.tasks.values.forEach { task ->
+                    toastMessage.append("Task: ${task.name}\n")
+
+                    // Iterate through each recording in the task
+                    task.taskRecords.forEach { recording ->
+                        toastMessage.append("  Recording Date: ${recording.RecDate}\n")
+                        toastMessage.append("  Start Time: ${recording.StartTime}\n")
+                        toastMessage.append("  End Time: ${recording.EndTime}\n")
+                        toastMessage.append("  Duration: ${recording.Duration}\n")
+                    }
+                }
+            }
+
+            Toast.makeText(this, toastMessage.toString(), Toast.LENGTH_LONG).show()
+        } else {
+            Toast.makeText(this, "No current user found", Toast.LENGTH_SHORT).show()
+        }
 
         btnSelect.setOnClickListener {
+
             val currentUser = SessionUser.currentUser
             if (currentUser == null) {
                 // If current user is null, display an error message and return
@@ -78,21 +103,37 @@ class ViewTimeSheetEntry : AppCompatActivity() {
             }
             if (currentUser != null) {
                 layout.removeAllViews() // Clear existing views
+                val dateFormat = SimpleDateFormat("dd/MM/yyyy", Locale.getDefault())
+
                 // Iterate through each category of the current user
                 currentUser.categories.values.forEach { category ->
                     // Iterate through each task in the category
                     category.tasks.values.forEach { task ->
-                        // Inflate the layout task_listing.xml for each task and add it to the LinearLayout
-                        val inflatedView = LayoutInflater.from(this).inflate(R.layout.task_listing, layout, false)
-                        val taskNameTextView = inflatedView.findViewById<TextView>(R.id.tvTask_name)
-                        val taskStart = inflatedView.findViewById<TextView>(R.id.tvTask_start_time)
-                        val taskEnd = inflatedView.findViewById<TextView>(R.id.tvTask_end_time)
-                        val taskDesc = inflatedView.findViewById<TextView>(R.id.tvTask_description)
-                        taskNameTextView.text = task.name // Set the text to the task name dynamically
-                        taskDesc.text = task.description
-                        taskStart.text = task.startTime.toString()
-                        taskEnd.text = task.endTime.toString()
-                        layout.addView(inflatedView)
+                        // Iterate through each recording in the task
+                        task.taskRecords.forEach { recording ->
+                            // Inflate the layout task_listing.xml for each recording and add it to the LinearLayout
+                            val inflatedView = LayoutInflater.from(this).inflate(R.layout.task_listing, layout, false)
+                            val taskNameTextView = inflatedView.findViewById<TextView>(R.id.tvTask_name)
+                            val taskStart = inflatedView.findViewById<TextView>(R.id.tvTask_start_time)
+                            val taskEnd = inflatedView.findViewById<TextView>(R.id.tvTask_end_time)
+                            val taskDesc = inflatedView.findViewById<TextView>(R.id.tvTask_description)
+
+                            taskNameTextView.text = task.name
+                            taskDesc.text = task.description
+                            taskStart.text = recording.StartTime.toString()
+                            taskEnd.text = recording.EndTime.toString()
+
+                            val recordingDateTextView = TextView(this).apply {
+                                text = dateFormat.format(recording.RecDate)
+                                layoutParams = LinearLayout.LayoutParams(
+                                    LinearLayout.LayoutParams.WRAP_CONTENT,
+                                    LinearLayout.LayoutParams.WRAP_CONTENT
+                                )
+                            }
+
+                            layout.addView(inflatedView)
+                            layout.addView(recordingDateTextView)
+                        }
                     }
                 }
             }
