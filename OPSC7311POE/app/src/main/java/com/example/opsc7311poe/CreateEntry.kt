@@ -232,16 +232,27 @@ class CreateEntry : AppCompatActivity() {
                 if (selectedTask != null) {
                     val dateFormat: SimpleDateFormat = SimpleDateFormat("dd-MM-yyyy")
                     val selectedDate = tvDate.text.toString() // Parse the date string
-                    val startTime = LocalTime.parse(tvStart.text) // Parse the start time string
-                    val endTime = LocalTime.parse(tvEnd.text) // Parse the end time string
+                    val startTime = Time.valueOf(tvStart.text.toString()) // Parse the start time string
+                    val endTime = Time.valueOf(tvEnd.text.toString()) // Parse the end time string
 
-                    val duration = Duration.between(startTime, endTime)
+                    val durationInMillis = endTime.time - startTime.time
+
+// Convert duration in milliseconds to seconds
+                    val seconds = durationInMillis / 1000
+
+// Calculate hours, minutes, and seconds
+                    val hours = seconds / 3600
+                    val minutes = (seconds % 3600) / 60
+                    val remainingSeconds = seconds % 60
+
+// Format duration as "HH:MM:SS"
+                    val duration = String.format("%02d:%02d:%02d", hours, minutes, remainingSeconds)
 
                     val recording = Recording(
                         RecDate = dateFormat.parse(selectedDate),
-                        StartTime = Time.valueOf(startTime.toString()),
-                        EndTime = Time.valueOf(endTime.toString()),
-                        Duration = Time.valueOf(duration.toString()),
+                        StartTime = startTime,
+                        EndTime = endTime,
+                        Duration = Time.valueOf(duration.toString()).toString(),
                         image = null
                     )
 

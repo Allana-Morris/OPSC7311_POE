@@ -71,8 +71,9 @@ class cat_total : AppCompatActivity() {
                     // Check if recording date is within the selected range
                     val recordingDate = recording.RecDate.toString()
                     if (recordingDate >= startDate && recordingDate <= endDate) {
-                        // Calculate duration in hours and add to total hours
-                        val durationHours = recording.Duration.hours.toDouble()
+                        // Parse duration string and calculate total hours
+                        val duration = recording.Duration
+                        val durationHours = parseDurationToHours(duration)
                         totalHours += durationHours
                     }
                 }
@@ -81,6 +82,17 @@ class cat_total : AppCompatActivity() {
         }
         return totalHoursByCategory
     }
+
+    // Function to parse duration string to hours
+    private fun parseDurationToHours(duration: String): Double {
+        val parts = duration.split(":")
+        val hours = parts[0].toDouble()
+        val minutes = parts[1].toDouble()
+        val seconds = parts[2].toDouble()
+        // Convert hours, minutes, and seconds to total hours
+        return hours + (minutes / 60) + (seconds / 3600)
+    }
+
 
     private fun displayTotalHoursByCategory(totalHoursByCategory: Map<String, Double>) {
         val bigTextView: TextView = findViewById(R.id.tv_Total)

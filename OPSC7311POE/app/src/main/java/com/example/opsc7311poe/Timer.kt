@@ -33,49 +33,52 @@ class Timer : AppCompatActivity() {
         btnReset = findViewById(R.id.btnReset)
         edtTime.setText("00:00:00")
 
-        val btnSave  : Button = findViewById(R.id.saveTimebtn)
-        val spnCat : Spinner = findViewById(R.id.spinCat)
-        val spnTask : Spinner = findViewById(R.id.spinTask)
+        val btnSave: Button = findViewById(R.id.saveTimebtn)
+        val spnCat: Spinner = findViewById(R.id.spinCat)
+        val spnTask: Spinner = findViewById(R.id.spinTask)
+
+        var startTime = Time(0, 0, 0);
+        var endTime = Time(0, 0, 0);
 
         // Creating a fake category and task seeing as we have no way of inputting stuff n things
-       // val selectedCat = Category("Work", 1, 2, 4.0, 8.0)
+        // val selectedCat = Category("Work", 1, 2, 4.0, 8.0)
         // Adding the first category to the user category hashmap
-      //  SessionUser.currentUser?.categories?.put(selectedCat.name, selectedCat)
+        //  SessionUser.currentUser?.categories?.put(selectedCat.name, selectedCat)
 
         // Creating another fake category and task
-       // val fakeCat = Category("Work2", 1, 2, 4.0, 8.0)
+        // val fakeCat = Category("Work2", 1, 2, 4.0, 8.0)
         // Adding the second category to the user category hashmap with a different key
-      //  SessionUser.currentUser?.categories?.put(fakeCat.name, fakeCat)
+        //  SessionUser.currentUser?.categories?.put(fakeCat.name, fakeCat)
 
         // Adding the task to the first category for the user
-       // val selectedTask = Task("Sex ", "Great cardio", true, 36.0, 36.0)
+        // val selectedTask = Task("Sex ", "Great cardio", true, 36.0, 36.0)
         //selectedCat.tasks[selectedTask.name] = selectedTask
 
 
-          val HomeOpenActivity = findViewById<ImageButton>(R.id.ib_Home)
-          val ProfileOpenActivity = findViewById<ImageButton>(R.id.ib_Profile)
-          val CalendarOpenActivity = findViewById<ImageButton>(R.id.ib_Calendar)
-          val TimerOpenActivity = findViewById<ImageButton>(R.id.ib_Timer)
+        val HomeOpenActivity = findViewById<ImageButton>(R.id.ib_Home)
+        val ProfileOpenActivity = findViewById<ImageButton>(R.id.ib_Profile)
+        val CalendarOpenActivity = findViewById<ImageButton>(R.id.ib_Calendar)
+        val TimerOpenActivity = findViewById<ImageButton>(R.id.ib_Timer)
 
-          HomeOpenActivity.setOnClickListener{
-              val intent2 = Intent(this, MainActivity::class.java)
-              startActivity(intent2)
-          }
+        HomeOpenActivity.setOnClickListener {
+            val intent2 = Intent(this, MainActivity::class.java)
+            startActivity(intent2)
+        }
 
-          ProfileOpenActivity.setOnClickListener{
-              val intent = Intent(this, Profile::class.java)
-              startActivity(intent)
-          }
-/*
+        ProfileOpenActivity.setOnClickListener {
+            val intent = Intent(this, Profile::class.java)
+            startActivity(intent)
+        }
+        /*
           CalendarOpenActivity.setOnClickListener{
               val intent3 = Intent(this, TaskCalendar::class.java)
               startActivity(intent3)
           }
 */
-          TimerOpenActivity.setOnClickListener{
-              val intent4 = Intent(this, Timer::class.java)
-              startActivity(intent4)
-          }
+        TimerOpenActivity.setOnClickListener {
+            val intent4 = Intent(this, Timer::class.java)
+            startActivity(intent4)
+        }
 
 
         // Create a list to hold category names
@@ -90,20 +93,26 @@ class Timer : AppCompatActivity() {
         // If there are no categories, disable the task spinner and display "No categories"
         if (categoryList.isEmpty()) {
             spnCat.isEnabled = false
-            spnCat.adapter = ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, listOf("No categories"))
+            spnCat.adapter = ArrayAdapter<String>(
+                this,
+                android.R.layout.simple_spinner_item,
+                listOf("No categories")
+            )
 
             spnTask.isEnabled = false
-            spnTask.adapter = ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, listOf("No Tasks"))
+            spnTask.adapter =
+                ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, listOf("No Tasks"))
             btnSave.isEnabled = false;
         } else {
             // If there are categories, set the spinner to enabled and set its adapter to empty
             spnTask.isEnabled = true
             spnCat.isEnabled = true
             btnSave.isEnabled = true;
-            spnTask.adapter = ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, emptyList())
-            spnCat.adapter = ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, emptyList())
+            spnTask.adapter =
+                ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, emptyList())
+            spnCat.adapter =
+                ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, emptyList())
         }
-
 
 
         // Create an adapter for the category Spinner
@@ -113,11 +122,17 @@ class Timer : AppCompatActivity() {
 
         //set task spinner to disabled and empty
         spnTask.isEnabled = false
-        spnTask.adapter = ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, emptyList())
+        spnTask.adapter =
+            ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, emptyList())
 
         // Set a listener for category selection to update the task Spinner
         spnCat.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
-            override fun onItemSelected(parent: AdapterView<*>?, view: View?, position: Int, id: Long) {
+            override fun onItemSelected(
+                parent: AdapterView<*>?,
+                view: View?,
+                position: Int,
+                id: Long
+            ) {
                 // Get the selected category name
                 val selectedCategoryName = categoryList[position]
 
@@ -125,7 +140,8 @@ class Timer : AppCompatActivity() {
                 taskList.clear() // Clear the existing task list
 
                 // Get the selected category from the user's hashmap
-                val selectedCategory = SessionUser.currentUser?.categories?.get(selectedCategoryName)
+                val selectedCategory =
+                    SessionUser.currentUser?.categories?.get(selectedCategoryName)
 
                 // If selectedCategory is not null and it contains tasks, add their names to the list
                 if (selectedCategory != null && selectedCategory.tasks.isNotEmpty()) {
@@ -135,7 +151,8 @@ class Timer : AppCompatActivity() {
                 }
 
                 // Create an adapter for the task Spinner
-                val taskAdapter = ArrayAdapter(this@Timer, android.R.layout.simple_spinner_item, taskList)
+                val taskAdapter =
+                    ArrayAdapter(this@Timer, android.R.layout.simple_spinner_item, taskList)
                 taskAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
                 spnTask.adapter = taskAdapter
 
@@ -148,7 +165,11 @@ class Timer : AppCompatActivity() {
 
             override fun onNothingSelected(parent: AdapterView<*>?) {
                 spnTask.isEnabled = false
-                spnTask.adapter = ArrayAdapter<String>(this@Timer, android.R.layout.simple_spinner_item, emptyList())
+                spnTask.adapter = ArrayAdapter<String>(
+                    this@Timer,
+                    android.R.layout.simple_spinner_item,
+                    emptyList()
+                )
 
                 // If nothing is selected, disable btnSave
                 btnSave.isEnabled = false
@@ -163,15 +184,16 @@ class Timer : AppCompatActivity() {
                 val selectedCategoryName = spnCat.selectedItem.toString()
 
                 // Get the selected category from the user's hashmap
-                val selectedCategory = SessionUser.currentUser?.categories?.get(selectedCategoryName)
+                val selectedCategory =
+                    SessionUser.currentUser?.categories?.get(selectedCategoryName)
 
                 // If selectedCategory is not null and it contains the selected task
                 if (selectedCategory != null && selectedCategory.tasks.containsKey(selectedTaskName)) {
                     val selectedTask = selectedCategory.tasks[selectedTaskName]
 
                     // Your code to work with the selected task goes here
-                    if (selectedTask != null) {
-                        val timed = edtTime.text.toString()
+                        if (selectedTask != null) {
+                        /*val timed = edtTime.text.toString()
                         edtTime.setText("00:00:00")
                         secondsElapsed = 0
 
@@ -184,43 +206,59 @@ class Timer : AppCompatActivity() {
                             hours,
                             minutes,
                             seconds
-                        ) // Assuming Time is a custom class representing time
+                        ) // Assuming Time is a custom class representing time*/
 
-                        val currentDate = Date() // Assuming you have already initialized currentDate
-                        val startTime = Time.valueOf("00:00:00") // Initialize the start time
-                        val endTime = Time.valueOf("00:00:00") // Initialize the end time
-                        val duration = Time.valueOf("00:00:00") // Initialize the duration
+                    val currentDate = Date() // Assuming you have already initialized currentDate
 
-                        val rec = Recording(currentDate, startTime, endTime, duration, null)
 
-                        //adding a recording object to the list in the right task
-                        selectedTask.taskRecords.add(rec)
+                    // Calculate duration here if needed
+                            val durationInMillis = endTime.time - startTime.time
 
-                        for (recording in selectedTask.taskRecords) {
-                            if (recording.RecDate == currentDate) {
-                                Toast.makeText(
-                                    this,
-                                    "Recording duration: " + recording.Duration,
-                                    Toast.LENGTH_SHORT
-                                ).show()
-                            }
+// Convert duration in milliseconds to seconds
+                            val seconds = durationInMillis / 1000
+
+// Calculate hours, minutes, and seconds
+                            val hours = seconds / 3600
+                            val minutes = (seconds % 3600) / 60
+                            val remainingSeconds = seconds % 60
+
+// Format duration as "HH:MM:SS"
+                            val duration = String.format("%02d:%02d:%02d", hours, minutes, remainingSeconds)
+
+                    val rec = Recording(currentDate, startTime, endTime, duration, null)
+
+                    //adding a recording object to the list in the right task
+                    selectedTask.taskRecords.add(rec)
+
+                    for (recording in selectedTask.taskRecords) {
+                        if (recording.RecDate == currentDate) {
+                            Toast.makeText(
+                                this,
+                                "Recording duration: " + recording.Duration,
+                                Toast.LENGTH_SHORT
+                            ).show()
                         }
-                    } else {
-                        Toast.makeText(this, "Selected task is null", Toast.LENGTH_SHORT).show()
                     }
                 } else {
-                    Toast.makeText(this, "Selected task or category is null", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(this, "Selected task is null", Toast.LENGTH_SHORT).show()
                 }
+            } else {
+                Toast.makeText(this, "Selected task or category is null", Toast.LENGTH_SHORT).show()
             }
         }
+    }
 
 
 
         btnStart.setOnClickListener {
             if (!isTimerRunning) {
+                var currentTimeMillis = System.currentTimeMillis()
+                startTime = Time(currentTimeMillis)
                 startTimer()
             } else {
                 stopTimer()
+                var currentTimeMillis = System.currentTimeMillis()
+                endTime = Time(currentTimeMillis)
             }
         }
 
@@ -236,7 +274,8 @@ class Timer : AppCompatActivity() {
             if (secondsElapsed != 0)
             {
                 stopTimer()
-
+                var currentTimeMillis = System.currentTimeMillis()
+                endTime = Time(currentTimeMillis)
             }
         }
 

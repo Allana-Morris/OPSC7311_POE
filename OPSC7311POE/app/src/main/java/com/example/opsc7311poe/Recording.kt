@@ -9,6 +9,6 @@ class Recording(
     var RecDate : Date,
     var StartTime: Time,
     var EndTime: Time,
-    var Duration: Time,
+    var Duration: String,
     var image : Image?
 )
