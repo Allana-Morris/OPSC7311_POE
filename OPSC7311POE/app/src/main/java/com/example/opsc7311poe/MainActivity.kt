@@ -11,8 +11,12 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import com.google.firebase.Firebase
+import com.google.firebase.firestore.firestore
 
 class MainActivity : AppCompatActivity() {
+    //Below is Firebase Variable
+    val AppDataBase = Firebase.firestore
 
     @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -36,13 +40,13 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, Profile::class.java)
             startActivity(intent)
         }
-/*
+
         //Intent to open Calendar
         CalendarOpenActivity.setOnClickListener{
             val intent3 = Intent(this, TaskCalendar::class.java)
             startActivity(intent3)
         }
-*/
+
         //Intent to Open Timer
         TimerOpenActivity.setOnClickListener{
             val intent4 = Intent(this, Timer::class.java)
@@ -54,6 +58,7 @@ class MainActivity : AppCompatActivity() {
         val activityCreateEntry = findViewById<Button>(R.id.btnTimesheet)
         val activityViewTask = findViewById<Button>(R.id.btnViewTasks)
         val activityViewEntries = findViewById<Button>(R.id.btnViewEntries)
+        val activityCatHours = findViewById<Button>(R.id.btnCatHours)
 
         //onClickListener to open InsertData page
         activityCreateTask.setOnClickListener{
@@ -81,6 +86,11 @@ class MainActivity : AppCompatActivity() {
         activityViewEntries.setOnClickListener {
             val ViewEntriesintent = Intent(this, ViewTimeSheetEntry::class.java)
             startActivity(ViewEntriesintent)
+        }
+
+        activityCatHours.setOnClickListener {
+            val CatViewintent = Intent(this, cat_total::class.java)
+            startActivity(CatViewintent)
         }
 
         //Code used to Welcome User once logged in

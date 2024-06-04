@@ -71,23 +71,23 @@ class ViewData : AppCompatActivity() {
        //For Each loop for Categories
        SessionUser.currentUser?.categories?.forEach{(categoryName, category) ->
         //this is a for each loop to loop through all the retrieved tasks
-        category.tasks?.forEach { (taskName, task) ->
+           category.tasks.forEach { (taskName, task) ->
 
-            //Show Message - Toast Addition
-            Toast.makeText(this, "Task Name: $taskName", Toast.LENGTH_SHORT).show()
+               //Show Message - Toast Addition
+               Toast.makeText(this, "Task Name: $taskName", Toast.LENGTH_SHORT).show()
 
-            // Inflate the layout task_listing.xml for each task and add it to the LinearLayout
-            val inflatedView = LayoutInflater.from(this).inflate(R.layout.task_listing, layout, false)
-            val taskNameTextView = inflatedView.findViewById<TextView>(R.id.tvTask_name)
-            val taskStart = inflatedView.findViewById<TextView>(R.id.tvTask_start_time)
-            val taskEnd = inflatedView.findViewById<TextView>(R.id.tvTask_end_time)
-            val taskDesc = inflatedView.findViewById<TextView>(R.id.tvTask_description)
-            taskNameTextView.text = task.name // Set the text to the task name dynamically
-            taskDesc.text = task.description
-            taskStart.text = task.startTime.toString()
-            taskEnd.text = task.endTime.toString()
-            layout.addView(inflatedView)
-        }
+               // Inflate the layout task_listing.xml for each task and add it to the LinearLayout
+               val inflatedView = LayoutInflater.from(this).inflate(R.layout.task_listing, layout, false)
+               val taskNameTextView = inflatedView.findViewById<TextView>(R.id.tvTask_name)
+               val taskStart = inflatedView.findViewById<TextView>(R.id.tvTask_start_time)
+               val taskEnd = inflatedView.findViewById<TextView>(R.id.tvTask_end_time)
+               val taskDesc = inflatedView.findViewById<TextView>(R.id.tvTask_description)
+               taskNameTextView.text = task.name // Set the text to the task name dynamically
+               taskDesc.text = task.description
+               taskStart.text = task.startTime.toString()
+               taskEnd.text = task.endTime.toString()
+               layout.addView(inflatedView)
+           }
        }
     }
 }

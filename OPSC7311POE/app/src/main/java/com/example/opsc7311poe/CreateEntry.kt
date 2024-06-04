@@ -64,39 +64,18 @@ class CreateEntry : AppCompatActivity() {
             categoryList.add(name)
         }
 
-        // If there are no categories, disable the task spinner and display "No categories"
-        if (categoryList.isEmpty()) {
+        // Validate if categories exist for the current user
+        if (SessionUser.currentUser?.categories.isNullOrEmpty()) {
             spinCat.isEnabled = false
-            spinCat.adapter = ArrayAdapter<String>(
-                this,
-                android.R.layout.simple_spinner_item,
-                listOf("No categories")
-            )
-
+            spinCat.adapter = ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, listOf("No categories"))
             spinTask.isEnabled = false
-            spinTask.adapter =
-                ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, listOf("No Tasks"))
-            btnSave.isEnabled = false;
+            spinTask.adapter = ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, listOf("No Tasks"))
+            btnSave.isEnabled = false
         } else {
-            // If there are categories, set the spinner to enabled and set its adapter to empty
             spinTask.isEnabled = true
             spinCat.isEnabled = true
-            btnSave.isEnabled = true;
-            spinTask.adapter =
-                ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, emptyList())
-            spinCat.adapter =
-                ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, emptyList())
+            btnSave.isEnabled = true
         }
-
-        // Create an adapter for the category Spinner
-        val categoryAdapter = ArrayAdapter(this, android.R.layout.simple_spinner_item, categoryList)
-        categoryAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
-        spinCat.adapter = categoryAdapter
-
-        //set task spinner to disabled and empty
-        spinTask.isEnabled = false
-        spinTask.adapter =
-            ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, emptyList())
 
         // Set a listener for category selection to update the task Spinner
         spinCat.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
@@ -106,45 +85,19 @@ class CreateEntry : AppCompatActivity() {
                 position: Int,
                 id: Long
             ) {
-                // Get the selected category name
                 val selectedCategoryName = categoryList[position]
+                val taskList = SessionUser.currentUser?.categories?.get(selectedCategoryName)?.tasks?.keys?.toList() ?: emptyList()
 
-                // Create a list to hold task names for the selected category
-                taskList.clear() // Clear the existing task list
-
-                // Get the selected category from the user's hashmap
-                val selectedCategory =
-                    SessionUser.currentUser?.categories?.get(selectedCategoryName)
-
-                // If selectedCategory is not null and it contains tasks, add their names to the list
-                if (selectedCategory != null && selectedCategory.tasks.isNotEmpty()) {
-                    selectedCategory.tasks.forEach { (taskName, _) ->
-                        taskList.add(taskName)
-                    }
-                }
-
-                // Create an adapter for the task Spinner
-                val taskAdapter =
-                    ArrayAdapter(this@CreateEntry, android.R.layout.simple_spinner_item, taskList)
+                val taskAdapter = ArrayAdapter(this@CreateEntry, android.R.layout.simple_spinner_item, taskList)
                 taskAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
                 spinTask.adapter = taskAdapter
-
-                // Enable task spinner when a category is selected
-                spinTask.isEnabled = true
-
-                // Set the visibility of btnSave based on whether taskList is empty or not
+                spinTask.isEnabled = taskList.isNotEmpty()
                 btnSave.isEnabled = taskList.isNotEmpty()
             }
 
             override fun onNothingSelected(parent: AdapterView<*>?) {
                 spinTask.isEnabled = false
-                spinTask.adapter = ArrayAdapter<String>(
-                    this@CreateEntry,
-                    android.R.layout.simple_spinner_item,
-                    emptyList()
-                )
-
-                // If nothing is selected, disable btnSave
+                spinTask.adapter = ArrayAdapter<String>(this@CreateEntry, android.R.layout.simple_spinner_item, emptyList())
                 btnSave.isEnabled = false
             }
         }
@@ -178,9 +131,9 @@ class CreateEntry : AppCompatActivity() {
 
         tvStart.setOnClickListener()
         {
-            val calendar = java.util.Calendar.getInstance()
-            val hour = calendar.get(java.util.Calendar.HOUR_OF_DAY)
-            val minute = calendar.get(java.util.Calendar.MINUTE)
+            val calendar = Calendar.getInstance()
+            val hour = calendar.get(Calendar.HOUR_OF_DAY)
+            val minute = calendar.get(Calendar.MINUTE)
 
             val timePickerDialog = TimePickerDialog(
                 this,
@@ -203,9 +156,9 @@ class CreateEntry : AppCompatActivity() {
 
         tvEnd.setOnClickListener()
         {
-            val calendar = java.util.Calendar.getInstance()
-            val hour = calendar.get(java.util.Calendar.HOUR_OF_DAY)
-            val minute = calendar.get(java.util.Calendar.MINUTE)
+            val calendar = Calendar.getInstance()
+            val hour = calendar.get(Calendar.HOUR_OF_DAY)
+            val minute = calendar.get(Calendar.MINUTE)
 
             val timePickerDialog = TimePickerDialog(
                 this,

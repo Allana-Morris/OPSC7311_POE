@@ -45,7 +45,7 @@ class create_category : AppCompatActivity() {
         val catMinHours : TextView = findViewById(R.id.ett_Min_Goal)
         val catMaxHours : TextView = findViewById(R.id.ett_Max_Goal)
         val iconPicker : ImageButton = findViewById(R.id.ib_Icon)
-        AddCategory.setOnClickListener(){
+        AddCategory.setOnClickListener {
             val catName : TextView = findViewById(R.id.edtName)
             val catColor = mDefaultColour
 

@@ -33,15 +33,13 @@ class InsertData : AppCompatActivity() {
             startActivity(intent)
         }
 
-        /*
-        // Intent to open Calendar
-        CalendarOpenActivity.setOnClickListener{
-            val intent3 = Intent(this, TaskCalendar::class.java)
-            startActivity(intent3)
-        }
-        */
+                //Intent to open Calendar
+                CalendarOpenActivity.setOnClickListener{
+                    val intent3 = Intent(this, TaskCalendar::class.java)
+                    startActivity(intent3)
+                }
 
-        // Intent to Open Timer
+        //Intent to Open Timer
         TimerOpenActivity.setOnClickListener {
             val intent4 = Intent(this, Timer::class.java)
             startActivity(intent4)

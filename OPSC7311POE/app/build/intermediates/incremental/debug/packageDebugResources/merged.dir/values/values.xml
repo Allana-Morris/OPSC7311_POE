@@ -26,6 +26,7 @@
     <string name="calendar">Calendar</string>
     <string name="calendar_">Calendar</string>
     <string name="cat_select">Select Category</string>
+    <string name="cat_view">View Total Hours For your Categories</string>
     <string name="category">Category</string>
     <string name="choose">Choose your graph:</string>
     <string name="chooseW">Choose a Week:</string>
@@ -49,7 +50,12 @@
     <string name="enter_time">Enter time</string>
     <string name="forward">→</string>
     <string name="fullName">Full Name</string>
+    <string name="gcm_defaultSenderId" translatable="false">122069534716</string>
     <string name="generate">Generate Summary</string>
+    <string name="google_api_key" translatable="false">AIzaSyBZ3q8VGASgyDumUytDAEqV8pDcKpi2vD8</string>
+    <string name="google_app_id" translatable="false">1:122069534716:android:14504c22b7d3a442435479</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyBZ3q8VGASgyDumUytDAEqV8pDcKpi2vD8</string>
+    <string name="google_storage_bucket" translatable="false">atomic-affinity-421915.appspot.com</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="home">Home</string>
     <string name="housecleaning">housecleaning</string>
@@ -66,6 +72,7 @@
     <string name="profile">Profile</string>
     <string name="profilePho">Upload a Profile Photo</string>
     <string name="progress">View your progress</string>
+    <string name="project_id" translatable="false">atomic-affinity-421915</string>
     <string name="prompt_email">Email</string>
     <string name="prompt_password">Password</string>
     <string name="reset">Reset</string>
