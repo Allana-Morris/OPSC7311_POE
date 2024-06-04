@@ -34,8 +34,8 @@ class Timer : AppCompatActivity() {
         edtTime.setText("00:00:00")
 
         val btnSave: Button = findViewById(R.id.saveTimebtn)
-        val spnCat: Spinner = findViewById(R.id.spinCat)
-        val spnTask: Spinner = findViewById(R.id.spinTask)
+        val spinCat: Spinner = findViewById(R.id.spinCat)
+        val spinTask: Spinner = findViewById(R.id.spinTask)
 
         var startTime = Time(0, 0, 0);
         var endTime = Time(0, 0, 0);
@@ -85,103 +85,44 @@ class Timer : AppCompatActivity() {
         val categoryList = mutableListOf<String>()
         val taskList = mutableListOf<String>()
 
-        // Iterate through the user's categories and add their names to the list
+        // Retrieve user's categories and populate the category list
         SessionUser.currentUser?.categories?.forEach { (name, _) ->
             categoryList.add(name)
         }
 
-        // If there are no categories, disable the task spinner and display "No categories"
+        // Set up category spinner
         if (categoryList.isEmpty()) {
-            spnCat.isEnabled = false
-            spnCat.adapter = ArrayAdapter<String>(
-                this,
-                android.R.layout.simple_spinner_item,
-                listOf("No categories")
-            )
-
-            spnTask.isEnabled = false
-            spnTask.adapter =
-                ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, listOf("No Tasks"))
-            btnSave.isEnabled = false;
+            spinCat.isEnabled = false
+            spinCat.adapter = ArrayAdapter(this, android.R.layout.simple_spinner_item, listOf("No categories"))
+            spinTask.isEnabled = false
+            spinTask.adapter = ArrayAdapter(this, android.R.layout.simple_spinner_item, listOf("No tasks"))
+            btnSave.isEnabled = false
         } else {
-            // If there are categories, set the spinner to enabled and set its adapter to empty
-            spnTask.isEnabled = true
-            spnCat.isEnabled = true
-            btnSave.isEnabled = true;
-            spnTask.adapter =
-                ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, emptyList())
-            spnCat.adapter =
-                ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, emptyList())
-        }
+            spinCat.adapter = ArrayAdapter(this, android.R.layout.simple_spinner_item, categoryList)
+            spinCat.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
+                override fun onItemSelected(parent: AdapterView<*>?, view: View?, position: Int, id: Long) {
+                    val selectedCategoryName = categoryList[position]
+                    val tasks = SessionUser.currentUser?.categories?.get(selectedCategoryName)?.tasks?.keys?.toList() ?: emptyList()
 
-
-        // Create an adapter for the category Spinner
-        val categoryAdapter = ArrayAdapter(this, android.R.layout.simple_spinner_item, categoryList)
-        categoryAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
-        spnCat.adapter = categoryAdapter
-
-        //set task spinner to disabled and empty
-        spnTask.isEnabled = false
-        spnTask.adapter =
-            ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, emptyList())
-
-        // Set a listener for category selection to update the task Spinner
-        spnCat.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
-            override fun onItemSelected(
-                parent: AdapterView<*>?,
-                view: View?,
-                position: Int,
-                id: Long
-            ) {
-                // Get the selected category name
-                val selectedCategoryName = categoryList[position]
-
-                // Create a list to hold task names for the selected category
-                taskList.clear() // Clear the existing task list
-
-                // Get the selected category from the user's hashmap
-                val selectedCategory =
-                    SessionUser.currentUser?.categories?.get(selectedCategoryName)
-
-                // If selectedCategory is not null and it contains tasks, add their names to the list
-                if (selectedCategory != null && selectedCategory.tasks.isNotEmpty()) {
-                    selectedCategory.tasks.forEach { (taskName, _) ->
-                        taskList.add(taskName)
-                    }
+                    spinTask.adapter = ArrayAdapter(this@Timer, android.R.layout.simple_spinner_item, tasks)
+                    spinTask.isEnabled = tasks.isNotEmpty()
+                    btnSave.isEnabled = tasks.isNotEmpty()
                 }
 
-                // Create an adapter for the task Spinner
-                val taskAdapter =
-                    ArrayAdapter(this@Timer, android.R.layout.simple_spinner_item, taskList)
-                taskAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
-                spnTask.adapter = taskAdapter
-
-                // Enable task spinner when a category is selected
-                spnTask.isEnabled = true
-
-                // Set the visibility of btnSave based on whether taskList is empty or not
-                btnSave.isEnabled = taskList.isNotEmpty()
-            }
-
-            override fun onNothingSelected(parent: AdapterView<*>?) {
-                spnTask.isEnabled = false
-                spnTask.adapter = ArrayAdapter<String>(
-                    this@Timer,
-                    android.R.layout.simple_spinner_item,
-                    emptyList()
-                )
-
-                // If nothing is selected, disable btnSave
-                btnSave.isEnabled = false
+                override fun onNothingSelected(parent: AdapterView<*>?) {
+                    spinTask.isEnabled = false
+                    spinTask.adapter = ArrayAdapter<String>(this@Timer, android.R.layout.simple_spinner_item, emptyList())
+                    btnSave.isEnabled = false
+                }
             }
         }
 
         btnSave.setOnClickListener {
             if (!isTimerRunning) {
-                val selectedTaskName = spnTask.selectedItem.toString()
+                val selectedTaskName = spinTask.selectedItem.toString()
 
                 // Get the selected category name
-                val selectedCategoryName = spnCat.selectedItem.toString()
+                val selectedCategoryName = spinCat.selectedItem.toString()
 
                 // Get the selected category from the user's hashmap
                 val selectedCategory =
