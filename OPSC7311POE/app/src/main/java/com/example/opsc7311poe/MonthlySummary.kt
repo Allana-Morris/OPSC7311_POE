@@ -26,7 +26,7 @@ class MonthlySummary : AppCompatActivity() {
 
         lineGraphView = this.findViewById<GraphView>(R.id.idGraphView)
 
-        val series: LineGraphSeries<DataPoint> = LineGraphSeries(
+       val series: LineGraphSeries<DataPoint> = LineGraphSeries(
             arrayOf(
                 // on below line we are adding
                 // each point on our x and y axis.
