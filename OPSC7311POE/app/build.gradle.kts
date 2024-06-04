@@ -62,6 +62,8 @@ dependencies {
     androidTestImplementation(libs.androidx.espresso.core)
 
     implementation(libs.ambilwarna)
+    implementation("com.jjoe64:graphview:4.2.2")
+
 }
 
 
