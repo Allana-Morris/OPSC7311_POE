@@ -1,9 +1,9 @@
 <component name="libraryTable">
   <library name="Gradle: androidx.navigation:navigation-runtime:2.7.7@aar" external-system-id="GRADLE">
     <CLASSES>
-      <root url="file://$PROJECT_DIR$/OPSC7311POE/.gradle/8.7/caches/transforms-4/a8d6b876a2968a4182aa215393fc923e/transformed/navigation-runtime-2.7.7/AndroidManifest.xml" />
-      <root url="file://$PROJECT_DIR$/OPSC7311POE/.gradle/8.7/caches/transforms-4/a8d6b876a2968a4182aa215393fc923e/transformed/navigation-runtime-2.7.7/res" />
-      <root url="jar://$PROJECT_DIR$/OPSC7311POE/.gradle/8.7/caches/transforms-4/a8d6b876a2968a4182aa215393fc923e/transformed/navigation-runtime-2.7.7/jars/classes.jar!/" />
+      <root url="jar://$PROJECT_DIR$/OPSC7311POE/.gradle/8.7/caches/transforms-4/ddbdd487c671a5bc83855f43bef522fb/transformed/navigation-runtime-2.7.7/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/OPSC7311POE/.gradle/8.7/caches/transforms-4/ddbdd487c671a5bc83855f43bef522fb/transformed/navigation-runtime-2.7.7/AndroidManifest.xml" />
+      <root url="file://$PROJECT_DIR$/OPSC7311POE/.gradle/8.7/caches/transforms-4/ddbdd487c671a5bc83855f43bef522fb/transformed/navigation-runtime-2.7.7/res" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

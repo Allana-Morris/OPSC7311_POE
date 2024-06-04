@@ -1,9 +1,9 @@
 <component name="libraryTable">
   <library name="Gradle: com.github.yukuku:ambilwarna:2.0.1@aar" external-system-id="GRADLE">
     <CLASSES>
-      <root url="file://$PROJECT_DIR$/OPSC7311POE/.gradle/8.7/caches/transforms-4/6d0141d8c96b752294a734563c1140f9/transformed/ambilwarna-2.0.1/AndroidManifest.xml" />
-      <root url="jar://$PROJECT_DIR$/OPSC7311POE/.gradle/8.7/caches/transforms-4/6d0141d8c96b752294a734563c1140f9/transformed/ambilwarna-2.0.1/jars/classes.jar!/" />
-      <root url="file://$PROJECT_DIR$/OPSC7311POE/.gradle/8.7/caches/transforms-4/6d0141d8c96b752294a734563c1140f9/transformed/ambilwarna-2.0.1/res" />
+      <root url="file://$PROJECT_DIR$/OPSC7311POE/.gradle/8.7/caches/transforms-4/e07f7e7cc249ebb6062246488ea0e5dc/transformed/ambilwarna-2.0.1/res" />
+      <root url="jar://$PROJECT_DIR$/OPSC7311POE/.gradle/8.7/caches/transforms-4/e07f7e7cc249ebb6062246488ea0e5dc/transformed/ambilwarna-2.0.1/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/OPSC7311POE/.gradle/8.7/caches/transforms-4/e07f7e7cc249ebb6062246488ea0e5dc/transformed/ambilwarna-2.0.1/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://$PROJECT_DIR$/OPSC7311POE/.gradle/8.7/caches/modules-2/files-2.1/com.github.yukuku/ambilwarna/2.0.1/d3cbd0f9c7d3b249246c049829f39a3c703521ac/ambilwarna-2.0.1-javadoc.jar!/" />

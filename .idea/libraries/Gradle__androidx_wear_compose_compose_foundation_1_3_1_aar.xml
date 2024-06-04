@@ -1,9 +1,9 @@
 <component name="libraryTable">
   <library name="Gradle: androidx.wear.compose:compose-foundation:1.3.1@aar" external-system-id="GRADLE">
     <CLASSES>
-      <root url="file://$PROJECT_DIR$/OPSC7311POE/.gradle/8.7/caches/transforms-4/85ef12d050fb88d49729e3b72f542d6a/transformed/compose-foundation-1.3.1/res" />
-      <root url="jar://$PROJECT_DIR$/OPSC7311POE/.gradle/8.7/caches/transforms-4/85ef12d050fb88d49729e3b72f542d6a/transformed/compose-foundation-1.3.1/jars/classes.jar!/" />
-      <root url="file://$PROJECT_DIR$/OPSC7311POE/.gradle/8.7/caches/transforms-4/85ef12d050fb88d49729e3b72f542d6a/transformed/compose-foundation-1.3.1/AndroidManifest.xml" />
+      <root url="file://$PROJECT_DIR$/OPSC7311POE/.gradle/8.7/caches/transforms-4/4f5524261b0b5c1d605c973437cb9350/transformed/compose-foundation-1.3.1/res" />
+      <root url="jar://$PROJECT_DIR$/OPSC7311POE/.gradle/8.7/caches/transforms-4/4f5524261b0b5c1d605c973437cb9350/transformed/compose-foundation-1.3.1/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/OPSC7311POE/.gradle/8.7/caches/transforms-4/4f5524261b0b5c1d605c973437cb9350/transformed/compose-foundation-1.3.1/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
