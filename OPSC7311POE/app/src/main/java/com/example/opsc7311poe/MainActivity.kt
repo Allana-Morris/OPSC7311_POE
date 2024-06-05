@@ -30,25 +30,25 @@ class MainActivity : AppCompatActivity() {
         val TimerOpenActivity = findViewById<ImageButton>(R.id.ib_Timer)
 
         //Intent to open Home Page
-        HomeOpenActivity.setOnClickListener{
+        HomeOpenActivity.setOnClickListener {
             val intent2 = Intent(this, MainActivity::class.java)
             startActivity(intent2)
         }
 
         //Intent to open Profile
-        ProfileOpenActivity.setOnClickListener{
+        ProfileOpenActivity.setOnClickListener {
             val intent = Intent(this, Profile::class.java)
             startActivity(intent)
         }
 
         //Intent to open Calendar
-        CalendarOpenActivity.setOnClickListener{
+        CalendarOpenActivity.setOnClickListener {
             val intent3 = Intent(this, TaskCalendar::class.java)
             startActivity(intent3)
         }
 
         //Intent to Open Timer
-        TimerOpenActivity.setOnClickListener{
+        TimerOpenActivity.setOnClickListener {
             val intent4 = Intent(this, Timer::class.java)
             startActivity(intent4)
         }
@@ -61,13 +61,13 @@ class MainActivity : AppCompatActivity() {
         val activityCatHours = findViewById<Button>(R.id.btnCatHours)
 
         //onClickListener to open InsertData page
-        activityCreateTask.setOnClickListener{
+        activityCreateTask.setOnClickListener {
             val Taskintent = Intent(this, InsertData::class.java)
             startActivity(Taskintent)
         }
 
         //onClickListener to open Create Category page
-        activityCreateCategory.setOnClickListener{
+        activityCreateCategory.setOnClickListener {
             val Catintent = Intent(this, create_category::class.java)
             startActivity(Catintent)
         }
