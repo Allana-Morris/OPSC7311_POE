@@ -10,7 +10,7 @@ class WeeklySummary : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(layout.activity_weekly_summary)
+        setContentView(layout.activity_monthly_summary)
 
         //Variable for each Button on Navbar™
         val HomeOpenActivity = findViewById<ImageButton>(R.id.ib_Home)

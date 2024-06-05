@@ -12,7 +12,7 @@ class InsertData : AppCompatActivity() {
     @SuppressLint("UseSwitchCompatOrMaterialCode")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_insert_data)
+        setContentView(R.layout.activity_insert_task)
 
         // Variables for each button on Navbar
         val HomeOpenActivity = findViewById<ImageButton>(R.id.ib_Home)
