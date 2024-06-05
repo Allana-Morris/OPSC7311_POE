@@ -3353,6 +3353,7 @@ id auto
 id autoComplete
 id autoCompleteToEnd
 id autoCompleteToStart
+id barChart
 id barrier
 id baseline
 id beginOnFirstDraw
@@ -3381,6 +3382,7 @@ id btnViewEntries
 id btnViewTasks
 id btn_Google_signin
 id btn_Login
+id button
 id buttonPanel
 id cache_measures
 id callMeasure
@@ -3465,6 +3467,8 @@ id easeInOut
 id easeOut
 id east
 id edge
+id editTextDate
+id editTextDate2
 id edit_query
 id edit_text_id
 id edtClock
@@ -3541,7 +3545,6 @@ id ignore
 id ignoreRequest
 id image
 id imageView
-id imageView1
 id imageView22
 id imgTaskIcon
 id img_photoUp
@@ -3815,6 +3818,8 @@ id textSpacerNoTitle
 id textStart
 id textTop
 id textView
+id textView2
+id textView3
 id textView32
 id textView34
 id textView5
@@ -3901,7 +3906,6 @@ id tv_calendar1
 id tv_timer
 id tv_timer1
 id tvgenerate
-id tvgenerate1
 id tvuserProfile
 id txtEmail
 id txtFullName
@@ -4059,21 +4063,22 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
-layout activity_cat_hours
 layout activity_create_category
 layout activity_enter_time_sheet
-layout activity_insert_data
+layout activity_insert_task
 layout activity_login
 layout activity_main
+layout activity_monthly_summary
 layout activity_profile
 layout activity_register
 layout activity_starting_page
 layout activity_task_calendar
 layout activity_timer
+layout activity_total_cat_hours
+layout activity_view_graph_total_hours
 layout activity_view_graphs
 layout activity_view_tasks
 layout activity_view_time_sheet_entry
-layout activity_weekly_summary
 layout ambilwarna_dialog
 layout ambilwarna_pref_widget
 layout custom_dialog
@@ -4148,6 +4153,7 @@ layout mtrl_picker_text_input_date
 layout mtrl_picker_text_input_date_range
 layout mtrl_search_bar
 layout mtrl_search_view
+layout navbar
 layout notification_action
 layout notification_action_tombstone
 layout notification_template_custom_big
@@ -4266,6 +4272,7 @@ string dest_title
 string diagram
 string dropdown_menu
 string editUser
+string endDate
 string enter_hours_spent
 string enter_time
 string error_a11y_label
@@ -4436,6 +4443,7 @@ string side_sheet_behavior
 string sign_in_to_lifetime
 string signup
 string start
+string startDate
 string status_bar_notification_info_overflow
 string stop
 string switch_role

@@ -73,6 +73,7 @@ drawable uploadphoto
 drawable whitescreen
 drawable work
 drawable write
+id barChart
 id bottomNavigationView
 id btnCatHours
 id btnCategory
@@ -90,6 +91,7 @@ id btnViewEntries
 id btnViewTasks
 id btn_Google_signin
 id btn_Login
+id button
 id chooseWeek
 id chooseWeek1
 id cl_NavBar
@@ -98,6 +100,8 @@ id constraintLayout
 id createCat
 id createTask
 id dayOfWeekTV
+id editTextDate
+id editTextDate2
 id edtClock
 id edtDescription
 id edtEmailEdit
@@ -123,7 +127,6 @@ id ib_Timer1
 id iconImageView
 id iconRecyclerView
 id imageView
-id imageView1
 id imageView22
 id imgTaskIcon
 id img_photoUp
@@ -158,6 +161,8 @@ id spinEntryCat
 id spinEntryTask
 id spinTask
 id textView
+id textView2
+id textView3
 id textView32
 id textView34
 id textView5
@@ -219,7 +224,6 @@ id tv_calendar1
 id tv_timer
 id tv_timer1
 id tvgenerate
-id tvgenerate1
 id tvuserProfile
 id txtEmail
 id txtFullName
@@ -236,24 +240,26 @@ id view14
 id view5
 id view8
 id view9
-layout activity_cat_hours
 layout activity_create_category
 layout activity_enter_time_sheet
-layout activity_insert_data
+layout activity_insert_task
 layout activity_login
 layout activity_main
+layout activity_monthly_summary
 layout activity_profile
 layout activity_register
 layout activity_starting_page
 layout activity_task_calendar
 layout activity_timer
+layout activity_total_cat_hours
+layout activity_view_graph_total_hours
 layout activity_view_graphs
 layout activity_view_tasks
 layout activity_view_time_sheet_entry
-layout activity_weekly_summary
 layout icon_item
 layout icon_picker_dialog
 layout item_select
+layout navbar
 layout task_listing
 mipmap ic_launcher
 mipmap ic_launcher_round
@@ -290,6 +296,7 @@ string description
 string design
 string diagram
 string editUser
+string endDate
 string enter_hours_spent
 string enter_time
 string forward
@@ -330,6 +337,7 @@ string select_end_date
 string sign_in_to_lifetime
 string signup
 string start
+string startDate
 string stop
 string target_hours
 string task

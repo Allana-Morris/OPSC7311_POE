@@ -27,6 +27,9 @@ public final class ActivityTotalCatHoursBinding implements ViewBinding {
   public final Button btnSelectHours;
 
   @NonNull
+  public final View chooseWeek;
+
+  @NonNull
   public final ScrollView chooseWeek1;
 
   @NonNull
@@ -45,7 +48,7 @@ public final class ActivityTotalCatHoursBinding implements ViewBinding {
   public final ImageButton ibTimer1;
 
   @NonNull
-  public final ImageView imageView1;
+  public final ImageView imageView;
 
   @NonNull
   public final ConstraintLayout linearLayout1;
@@ -86,29 +89,26 @@ public final class ActivityTotalCatHoursBinding implements ViewBinding {
   @NonNull
   public final TextView tvTotal;
 
-  @NonNull
-  public final TextView tvgenerate1;
-
   private ActivityTotalCatHoursBinding(@NonNull ConstraintLayout rootView,
-      @NonNull Button btnSelectHours, @NonNull ScrollView chooseWeek1,
+      @NonNull Button btnSelectHours, @NonNull View chooseWeek, @NonNull ScrollView chooseWeek1,
       @NonNull ConstraintLayout clNavBar1, @NonNull ImageButton ibCalendar1,
       @NonNull ImageButton ibHome1, @NonNull ImageButton ibProfile1, @NonNull ImageButton ibTimer1,
-      @NonNull ImageView imageView1, @NonNull ConstraintLayout linearLayout1,
+      @NonNull ImageView imageView, @NonNull ConstraintLayout linearLayout1,
       @NonNull ConstraintLayout linearLayout21, @NonNull ConstraintLayout linearLayout41,
       @NonNull ConstraintLayout linearLayout51, @NonNull ConstraintLayout main1,
       @NonNull TextView tvCalendar1, @NonNull TextView tvEndDate1, @NonNull TextView tvHome1,
       @NonNull TextView tvProfile1, @NonNull TextView tvSelectPeriod1,
-      @NonNull TextView tvStartDate1, @NonNull TextView tvTimer1, @NonNull TextView tvTotal,
-      @NonNull TextView tvgenerate1) {
+      @NonNull TextView tvStartDate1, @NonNull TextView tvTimer1, @NonNull TextView tvTotal) {
     this.rootView = rootView;
     this.btnSelectHours = btnSelectHours;
+    this.chooseWeek = chooseWeek;
     this.chooseWeek1 = chooseWeek1;
     this.clNavBar1 = clNavBar1;
     this.ibCalendar1 = ibCalendar1;
     this.ibHome1 = ibHome1;
     this.ibProfile1 = ibProfile1;
     this.ibTimer1 = ibTimer1;
-    this.imageView1 = imageView1;
+    this.imageView = imageView;
     this.linearLayout1 = linearLayout1;
     this.linearLayout21 = linearLayout21;
     this.linearLayout41 = linearLayout41;
@@ -122,7 +122,6 @@ public final class ActivityTotalCatHoursBinding implements ViewBinding {
     this.tvStartDate1 = tvStartDate1;
     this.tvTimer1 = tvTimer1;
     this.tvTotal = tvTotal;
-    this.tvgenerate1 = tvgenerate1;
   }
 
   @Override
@@ -155,6 +154,12 @@ public final class ActivityTotalCatHoursBinding implements ViewBinding {
       id = R.id.btnSelectHours;
       Button btnSelectHours = ViewBindings.findChildViewById(rootView, id);
       if (btnSelectHours == null) {
+        break missingId;
+      }
+
+      id = R.id.chooseWeek;
+      View chooseWeek = ViewBindings.findChildViewById(rootView, id);
+      if (chooseWeek == null) {
         break missingId;
       }
 
@@ -194,9 +199,9 @@ public final class ActivityTotalCatHoursBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.imageView1;
-      ImageView imageView1 = ViewBindings.findChildViewById(rootView, id);
-      if (imageView1 == null) {
+      id = R.id.imageView;
+      ImageView imageView = ViewBindings.findChildViewById(rootView, id);
+      if (imageView == null) {
         break missingId;
       }
 
@@ -274,17 +279,10 @@ public final class ActivityTotalCatHoursBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.tvgenerate1;
-      TextView tvgenerate1 = ViewBindings.findChildViewById(rootView, id);
-      if (tvgenerate1 == null) {
-        break missingId;
-      }
-
       return new ActivityTotalCatHoursBinding((ConstraintLayout) rootView, btnSelectHours,
-          chooseWeek1, clNavBar1, ibCalendar1, ibHome1, ibProfile1, ibTimer1, imageView1,
+          chooseWeek, chooseWeek1, clNavBar1, ibCalendar1, ibHome1, ibProfile1, ibTimer1, imageView,
           linearLayout1, linearLayout21, linearLayout41, linearLayout51, main1, tvCalendar1,
-          tvEndDate1, tvHome1, tvProfile1, tvSelectPeriod1, tvStartDate1, tvTimer1, tvTotal,
-          tvgenerate1);
+          tvEndDate1, tvHome1, tvProfile1, tvSelectPeriod1, tvStartDate1, tvTimer1, tvTotal);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

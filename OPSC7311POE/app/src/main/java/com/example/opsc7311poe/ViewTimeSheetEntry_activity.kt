@@ -98,16 +98,15 @@ class ViewTimeSheetEntry : AppCompatActivity() {
             // Validate if both start date and end date are selected
             if (startDate.text.isBlank() || endDate.text.isBlank()) {
                 // If either start date or end date is not selected, display an error message and return
-                Toast.makeText(
-                    this,
-                    "Please select both start date and end date",
-                    Toast.LENGTH_SHORT
-                ).show()
+                Toast.makeText(this, "Please select both start date and end date", Toast.LENGTH_SHORT).show()
                 return@setOnClickListener
             }
             if (currentUser != null) {
                 layout.removeAllViews() // Clear existing views
                 val dateFormat = SimpleDateFormat("dd/MM/yyyy", Locale.getDefault())
+
+                val start: Date = dateFormat.parse(startDate.text.toString()) // Parse the date string
+                val end: Date = dateFormat.parse(endDate.text.toString()) // Parse the date string
 
                 // Iterate through each category of the current user
                 currentUser.categories.values.forEach { category ->
@@ -115,32 +114,38 @@ class ViewTimeSheetEntry : AppCompatActivity() {
                     category.tasks.values.forEach { task ->
                         // Iterate through each recording in the task
                         task.taskRecords.forEach { recording ->
-                            // Inflate the layout task_listing.xml for each recording and add it to the LinearLayout
-                            val inflatedView = LayoutInflater.from(this)
-                                .inflate(R.layout.task_listing, layout, false)
-                            val taskNameTextView =
-                                inflatedView.findViewById<TextView>(R.id.tvTask_name)
-                            val taskStart =
-                                inflatedView.findViewById<TextView>(R.id.tvTask_start_time)
-                            val taskEnd = inflatedView.findViewById<TextView>(R.id.tvTask_end_time)
-                            val taskDesc =
-                                inflatedView.findViewById<TextView>(R.id.tvTask_description)
 
-                            taskNameTextView.text = task.name
-                            taskDesc.text = task.description
-                            taskStart.text = recording.StartTime.toString()
-                            taskEnd.text = recording.EndTime.toString()
+                            // Corrected condition to check if the recording date is within the range
+                            if (recording.RecDate >= start && recording.RecDate <= end) {
 
-                            val recordingDateTextView = TextView(this).apply {
-                                text = dateFormat.format(recording.RecDate)
-                                layoutParams = LinearLayout.LayoutParams(
-                                    LinearLayout.LayoutParams.WRAP_CONTENT,
-                                    LinearLayout.LayoutParams.WRAP_CONTENT
-                                )
+                                // Inflate the layout task_listing.xml for each recording and add it to the LinearLayout
+                                val inflatedView = LayoutInflater.from(this)
+                                    .inflate(R.layout.task_listing, layout, false)
+                                val taskNameTextView =
+                                    inflatedView.findViewById<TextView>(R.id.tvTask_name)
+                                val taskStart =
+                                    inflatedView.findViewById<TextView>(R.id.tvTask_start_time)
+                                val taskEnd =
+                                    inflatedView.findViewById<TextView>(R.id.tvTask_end_time)
+                                val taskDesc =
+                                    inflatedView.findViewById<TextView>(R.id.tvTask_description)
+
+                                taskNameTextView.text = task.name
+                                taskDesc.text = task.description
+                                taskStart.text = recording.StartTime.toString()
+                                taskEnd.text = recording.EndTime.toString()
+
+                                val recordingDateTextView = TextView(this).apply {
+                                    text = dateFormat.format(recording.RecDate)
+                                    layoutParams = LinearLayout.LayoutParams(
+                                        LinearLayout.LayoutParams.WRAP_CONTENT,
+                                        LinearLayout.LayoutParams.WRAP_CONTENT
+                                    )
+                                }
+
+                                layout.addView(inflatedView)
+                                layout.addView(recordingDateTextView)
                             }
-
-                            layout.addView(inflatedView)
-                            layout.addView(recordingDateTextView)
                         }
                     }
                 }

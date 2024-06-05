@@ -11,19 +11,40 @@
     tools:context=".WeeklySummary">
 
     <!-- ImageView -->
+
     <ImageView
-        android:id="@+id/imageView1"
-        android:layout_width="418dp"
-        android:layout_height="60dp"
-        android:layout_marginTop="16dp"
+        android:id="@+id/imageView"
+        android:layout_width="412dp"
+        android:layout_height="155dp"
+        android:layout_marginTop="116dp"
+
         android:scaleType="centerCrop"
         android:src="@drawable/arc_1"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <View
+        android:id="@+id/chooseWeek"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.0" />
     <!-- Header -->
+
+    <!-- Start Date -->
+
+    <!-- End Date -->
+
+    <!-- Select Button -->
+
+
     <TextView
         android:id="@+id/tvSelectPeriod1"
         android:layout_width="wrap_content"
@@ -31,64 +52,57 @@
         android:text="Select a period"
         android:textSize="24sp"
         android:textStyle="bold"
-        app:layout_constraintTop_toBottomOf="@id/imageView1"
-        app:layout_constraintStart_toStartOf="@id/imageView1"
-        app:layout_constraintEnd_toEndOf="@id/imageView1"
-        android:layout_marginTop="16dp" />
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="121dp"
+        tools:layout_editor_absoluteY="143dp" />
 
-    <!-- Start Date -->
     <TextView
         android:id="@+id/tvStartDate1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="8dp"
+        android:layout_width="111dp"
+        android:layout_height="69dp"
         android:clickable="true"
-        android:text="Start Date"
+        android:text="@string/startDate"
+        android:textAlignment="center"
         android:textSize="18sp"
-        app:layout_constraintEnd_toStartOf="@id/tvEndDate1"
-        app:layout_constraintStart_toStartOf="@id/imageView1"
-        app:layout_constraintTop_toBottomOf="@id/tvSelectPeriod1" />
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="58dp"
+        tools:layout_editor_absoluteY="191dp" />
 
-    <!-- End Date -->
     <TextView
         android:id="@+id/tvEndDate1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="16dp"
+        android:layout_width="99dp"
+        android:layout_height="67dp"
         android:clickable="true"
-        android:text="End Date"
+        android:text="@string/endDate"
+        android:textAlignment="center"
         android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="@id/imageView1"
-        app:layout_constraintStart_toEndOf="@id/tvStartDate1"
-        app:layout_constraintTop_toBottomOf="@id/tvSelectPeriod1" />
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="224dp"
+        tools:layout_editor_absoluteY="190dp" />
 
-    <!-- Select Button -->
     <Button
         android:id="@+id/btnSelectHours"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
         android:text="Select"
         android:textSize="18sp"
-        app:layout_constraintTop_toBottomOf="@id/tvEndDate1"
-        app:layout_constraintStart_toStartOf="@id/imageView1"
-        app:layout_constraintEnd_toEndOf="@id/imageView1"
-        android:layout_marginTop="16dp" />
-
+        app:layout_constraintBottom_toTopOf="@+id/chooseWeek1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
 
     <ScrollView
         android:id="@+id/chooseWeek1"
-        android:layout_width="272dp"
-        android:layout_height="403dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginBottom="8dp"
+        android:layout_width="395dp"
+        android:layout_height="236dp"
+        android:layout_marginBottom="160dp"
         app:layout_constraintBottom_toTopOf="@id/cl_NavBar1"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView1"
-        app:layout_constraintVertical_bias="1.0">
+
+        >
 
         <TextView
             android:id="@+id/tv_Total"
@@ -102,19 +116,6 @@
             android:textSize="24sp"
             tools:text="Your huge text goes here..." />
     </ScrollView>
-
-    <TextView
-        android:id="@+id/tvgenerate1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="sans-serif-medium"
-        android:text="@string/generate"
-        android:textColor="@color/blue"
-        android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteY="668dp" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/cl_NavBar1"
