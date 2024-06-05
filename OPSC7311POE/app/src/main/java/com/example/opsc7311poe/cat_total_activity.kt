@@ -13,7 +13,7 @@ class cat_total : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        setContentView(R.layout.activity_cat_hours)
+        setContentView(R.layout.activity_total_cat_hours)
 
         val start: TextView = findViewById(R.id.tvStartDate1)
         val end: TextView = findViewById(R.id.tvEndDate1)
