@@ -13,12 +13,15 @@ pluginManagement {
 }
 dependencyResolutionManagement {
 
-repositories {
-        google()
-        mavenCentral()
-    }
-}
+
+        this.repositories {
+            maven { url = uri("https://jitpack.io") }
+            google()
+            mavenCentral()
+
+        }
+
 
 rootProject.name = "OPSC7311 POE"
-include(":app")
+include(":app")}
  
