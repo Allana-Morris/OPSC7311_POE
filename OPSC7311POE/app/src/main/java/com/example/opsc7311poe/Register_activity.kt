@@ -9,8 +9,7 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 
 class Register : AppCompatActivity() {
-    override fun onCreate(savedInstanceState: Bundle?)
-    {
+    override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_register)
 
@@ -29,44 +28,38 @@ class Register : AppCompatActivity() {
             var valid = true
 
             //Whole bunch of Validation if statements
-            if (Validate.checkStringNullOrEmpty(username.text.toString()))
-            {
+            if (Validate.checkStringNullOrEmpty(username.text.toString())) {
                 username.setText("Invalid input: Input can not be blank")
                 username.setTextColor(Color.RED)
                 valid = false
             }
 
-            if (Validate.checkStringNullOrEmpty(fullName.text.toString()))
-            {
+            if (Validate.checkStringNullOrEmpty(fullName.text.toString())) {
                 fullName.setText("Invalid input: Input can not be blank")
                 fullName.setTextColor(Color.RED)
                 valid = false
             }
 
-            if (Validate.checkStringNullOrEmpty(email.text.toString()))
-            {
+            if (Validate.checkStringNullOrEmpty(email.text.toString())) {
                 email.setText("Invalid input: Input can not be blank")
                 email.setTextColor(Color.RED)
                 valid = false
             }
 
-            if (Validate.checkStringNullOrEmpty(password.text.toString()))
-            {
+            if (Validate.checkStringNullOrEmpty(password.text.toString())) {
                 password.setText("Invalid input: Input can not be blank")
                 password.setTextColor(Color.RED)
                 valid = false
             }
 
-            if (Validate.checkExistingUserEmail(email.text.toString()))
-            {
+            if (Validate.checkExistingUserEmail(email.text.toString())) {
                 email.setText("Account already exists")
                 email.setTextColor(Color.RED)
                 valid = false
 
             }
 
-            if (Validate.checkExistingUserUserName(username.text.toString()))
-            {
+            if (Validate.checkExistingUserUserName(username.text.toString())) {
                 username.setText("Username is already in use, choose a different one")
                 username.setTextColor(Color.RED)
                 valid = false
@@ -74,10 +67,11 @@ class Register : AppCompatActivity() {
             }
 
             //Big boss validation if statement
-            if (valid)
-            {
-                val user = User(username.text.toString(), fullName.text.toString(),
-                    password.text.toString(), email.text.toString())
+            if (valid) {
+                val user = User(
+                    username.text.toString(), fullName.text.toString(),
+                    password.text.toString(), email.text.toString()
+                )
 
                 UserList.users.add(user)
 
@@ -90,7 +84,7 @@ class Register : AppCompatActivity() {
         //Button that logs user in
         loginButton.setOnClickListener {
             // Create an Intent to navigate to ActivityLogin
-            val intent = Intent(this, Login ::class.java)
+            val intent = Intent(this, Login::class.java)
             startActivity(intent)
         }
     }

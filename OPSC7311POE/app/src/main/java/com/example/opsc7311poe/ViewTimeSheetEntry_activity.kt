@@ -98,7 +98,11 @@ class ViewTimeSheetEntry : AppCompatActivity() {
             // Validate if both start date and end date are selected
             if (startDate.text.isBlank() || endDate.text.isBlank()) {
                 // If either start date or end date is not selected, display an error message and return
-                Toast.makeText(this, "Please select both start date and end date", Toast.LENGTH_SHORT).show()
+                Toast.makeText(
+                    this,
+                    "Please select both start date and end date",
+                    Toast.LENGTH_SHORT
+                ).show()
                 return@setOnClickListener
             }
             if (currentUser != null) {
@@ -112,11 +116,15 @@ class ViewTimeSheetEntry : AppCompatActivity() {
                         // Iterate through each recording in the task
                         task.taskRecords.forEach { recording ->
                             // Inflate the layout task_listing.xml for each recording and add it to the LinearLayout
-                            val inflatedView = LayoutInflater.from(this).inflate(R.layout.task_listing, layout, false)
-                            val taskNameTextView = inflatedView.findViewById<TextView>(R.id.tvTask_name)
-                            val taskStart = inflatedView.findViewById<TextView>(R.id.tvTask_start_time)
+                            val inflatedView = LayoutInflater.from(this)
+                                .inflate(R.layout.task_listing, layout, false)
+                            val taskNameTextView =
+                                inflatedView.findViewById<TextView>(R.id.tvTask_name)
+                            val taskStart =
+                                inflatedView.findViewById<TextView>(R.id.tvTask_start_time)
                             val taskEnd = inflatedView.findViewById<TextView>(R.id.tvTask_end_time)
-                            val taskDesc = inflatedView.findViewById<TextView>(R.id.tvTask_description)
+                            val taskDesc =
+                                inflatedView.findViewById<TextView>(R.id.tvTask_description)
 
                             taskNameTextView.text = task.name
                             taskDesc.text = task.description

@@ -93,25 +93,39 @@ class Timer : AppCompatActivity() {
         // Set up category spinner
         if (categoryList.isEmpty()) {
             spinCat.isEnabled = false
-            spinCat.adapter = ArrayAdapter(this, android.R.layout.simple_spinner_item, listOf("No categories"))
+            spinCat.adapter =
+                ArrayAdapter(this, android.R.layout.simple_spinner_item, listOf("No categories"))
             spinTask.isEnabled = false
-            spinTask.adapter = ArrayAdapter(this, android.R.layout.simple_spinner_item, listOf("No tasks"))
+            spinTask.adapter =
+                ArrayAdapter(this, android.R.layout.simple_spinner_item, listOf("No tasks"))
             btnSave.isEnabled = false
         } else {
             spinCat.adapter = ArrayAdapter(this, android.R.layout.simple_spinner_item, categoryList)
             spinCat.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
-                override fun onItemSelected(parent: AdapterView<*>?, view: View?, position: Int, id: Long) {
+                override fun onItemSelected(
+                    parent: AdapterView<*>?,
+                    view: View?,
+                    position: Int,
+                    id: Long,
+                ) {
                     val selectedCategoryName = categoryList[position]
-                    val tasks = SessionUser.currentUser?.categories?.get(selectedCategoryName)?.tasks?.keys?.toList() ?: emptyList()
+                    val tasks =
+                        SessionUser.currentUser?.categories?.get(selectedCategoryName)?.tasks?.keys?.toList()
+                            ?: emptyList()
 
-                    spinTask.adapter = ArrayAdapter(this@Timer, android.R.layout.simple_spinner_item, tasks)
+                    spinTask.adapter =
+                        ArrayAdapter(this@Timer, android.R.layout.simple_spinner_item, tasks)
                     spinTask.isEnabled = tasks.isNotEmpty()
                     btnSave.isEnabled = tasks.isNotEmpty()
                 }
 
                 override fun onNothingSelected(parent: AdapterView<*>?) {
                     spinTask.isEnabled = false
-                    spinTask.adapter = ArrayAdapter<String>(this@Timer, android.R.layout.simple_spinner_item, emptyList())
+                    spinTask.adapter = ArrayAdapter<String>(
+                        this@Timer,
+                        android.R.layout.simple_spinner_item,
+                        emptyList()
+                    )
                     btnSave.isEnabled = false
                 }
             }
@@ -133,7 +147,7 @@ class Timer : AppCompatActivity() {
                     val selectedTask = selectedCategory.tasks[selectedTaskName]
 
                     // Your code to work with the selected task goes here
-                        if (selectedTask != null) {
+                    if (selectedTask != null) {
                         /*val timed = edtTime.text.toString()
                         edtTime.setText("00:00:00")
                         secondsElapsed = 0
@@ -149,45 +163,48 @@ class Timer : AppCompatActivity() {
                             seconds
                         ) // Assuming Time is a custom class representing time*/
 
-                    val currentDate = Date() // Assuming you have already initialized currentDate
+                        val currentDate =
+                            Date() // Assuming you have already initialized currentDate
 
 
-                    // Calculate duration here if needed
-                            val durationInMillis = endTime.time - startTime.time
+                        // Calculate duration here if needed
+                        val durationInMillis = endTime.time - startTime.time
 
 // Convert duration in milliseconds to seconds
-                            val seconds = durationInMillis / 1000
+                        val seconds = durationInMillis / 1000
 
 // Calculate hours, minutes, and seconds
-                            val hours = seconds / 3600
-                            val minutes = (seconds % 3600) / 60
-                            val remainingSeconds = seconds % 60
+                        val hours = seconds / 3600
+                        val minutes = (seconds % 3600) / 60
+                        val remainingSeconds = seconds % 60
 
 // Format duration as "HH:MM:SS"
-                            val duration = String.format("%02d:%02d:%02d", hours, minutes, remainingSeconds)
+                        val duration =
+                            String.format("%02d:%02d:%02d", hours, minutes, remainingSeconds)
 
-                    val rec = Recording(currentDate, startTime, endTime, duration, null)
+                        val rec = Recording(currentDate, startTime, endTime, duration, null)
 
-                    //adding a recording object to the list in the right task
-                    selectedTask.taskRecords.add(rec)
+                        //adding a recording object to the list in the right task
+                        selectedTask.taskRecords.add(rec)
 
-                    for (recording in selectedTask.taskRecords) {
-                        if (recording.RecDate == currentDate) {
-                            Toast.makeText(
-                                this,
-                                "Recording duration: " + recording.Duration,
-                                Toast.LENGTH_SHORT
-                            ).show()
+                        for (recording in selectedTask.taskRecords) {
+                            if (recording.RecDate == currentDate) {
+                                Toast.makeText(
+                                    this,
+                                    "Recording duration: " + recording.Duration,
+                                    Toast.LENGTH_SHORT
+                                ).show()
+                            }
                         }
+                    } else {
+                        Toast.makeText(this, "Selected task is null", Toast.LENGTH_SHORT).show()
                     }
                 } else {
-                    Toast.makeText(this, "Selected task is null", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(this, "Selected task or category is null", Toast.LENGTH_SHORT)
+                        .show()
                 }
-            } else {
-                Toast.makeText(this, "Selected task or category is null", Toast.LENGTH_SHORT).show()
             }
         }
-    }
 
 
 
@@ -203,7 +220,7 @@ class Timer : AppCompatActivity() {
             }
         }
 
-        btnReset.setOnClickListener ()
+        btnReset.setOnClickListener()
         {
             secondsElapsed = 0;
             //for debug purposes display all the recordings for selected Task
@@ -212,8 +229,7 @@ class Timer : AppCompatActivity() {
         }
 
         btnStop.setOnClickListener {
-            if (secondsElapsed != 0)
-            {
+            if (secondsElapsed != 0) {
                 stopTimer()
                 var currentTimeMillis = System.currentTimeMillis()
                 endTime = Time(currentTimeMillis)

@@ -26,7 +26,6 @@ import java.time.Duration
 import java.time.LocalDate
 import java.time.LocalTime
 import java.util.Calendar
-import java.util.Date
 
 class CreateEntry : AppCompatActivity() {
 
@@ -48,15 +47,17 @@ class CreateEntry : AppCompatActivity() {
         val btnPhoto: TextView = findViewById(R.id.tvUpPhoto)
         val uploaded: ImageView = findViewById(R.id.img_photoUp)
 
-        resultLauncher = registerForActivityResult(ActivityResultContracts.StartActivityForResult()) { result ->
-            if (result.resultCode == Activity.RESULT_OK) {
-                val data: Intent? = result.data
-                val imageBitmap = data?.extras?.get("data") as Bitmap?
-                uploaded.setImageBitmap(imageBitmap)
-            } else {
-                Toast.makeText(this@CreateEntry, "Failed to capture image", Toast.LENGTH_SHORT).show()
+        resultLauncher =
+            registerForActivityResult(ActivityResultContracts.StartActivityForResult()) { result ->
+                if (result.resultCode == Activity.RESULT_OK) {
+                    val data: Intent? = result.data
+                    val imageBitmap = data?.extras?.get("data") as Bitmap?
+                    uploaded.setImageBitmap(imageBitmap)
+                } else {
+                    Toast.makeText(this@CreateEntry, "Failed to capture image", Toast.LENGTH_SHORT)
+                        .show()
+                }
             }
-        }
 
         // Retrieve user's categories and populate the category list
         SessionUser.currentUser?.categories?.forEach { (name, _) ->
@@ -66,25 +67,39 @@ class CreateEntry : AppCompatActivity() {
         // Set up category spinner
         if (categoryList.isEmpty()) {
             spinCat.isEnabled = false
-            spinCat.adapter = ArrayAdapter(this, android.R.layout.simple_spinner_item, listOf("No categories"))
+            spinCat.adapter =
+                ArrayAdapter(this, android.R.layout.simple_spinner_item, listOf("No categories"))
             spinTask.isEnabled = false
-            spinTask.adapter = ArrayAdapter(this, android.R.layout.simple_spinner_item, listOf("No tasks"))
+            spinTask.adapter =
+                ArrayAdapter(this, android.R.layout.simple_spinner_item, listOf("No tasks"))
             btnSave.isEnabled = false
         } else {
             spinCat.adapter = ArrayAdapter(this, android.R.layout.simple_spinner_item, categoryList)
             spinCat.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
-                override fun onItemSelected(parent: AdapterView<*>?, view: View?, position: Int, id: Long) {
+                override fun onItemSelected(
+                    parent: AdapterView<*>?,
+                    view: View?,
+                    position: Int,
+                    id: Long,
+                ) {
                     val selectedCategoryName = categoryList[position]
-                    val tasks = SessionUser.currentUser?.categories?.get(selectedCategoryName)?.tasks?.keys?.toList() ?: emptyList()
+                    val tasks =
+                        SessionUser.currentUser?.categories?.get(selectedCategoryName)?.tasks?.keys?.toList()
+                            ?: emptyList()
 
-                    spinTask.adapter = ArrayAdapter(this@CreateEntry, android.R.layout.simple_spinner_item, tasks)
+                    spinTask.adapter =
+                        ArrayAdapter(this@CreateEntry, android.R.layout.simple_spinner_item, tasks)
                     spinTask.isEnabled = tasks.isNotEmpty()
                     btnSave.isEnabled = tasks.isNotEmpty()
                 }
 
                 override fun onNothingSelected(parent: AdapterView<*>?) {
                     spinTask.isEnabled = false
-                    spinTask.adapter = ArrayAdapter<String>(this@CreateEntry, android.R.layout.simple_spinner_item, emptyList())
+                    spinTask.adapter = ArrayAdapter<String>(
+                        this@CreateEntry,
+                        android.R.layout.simple_spinner_item,
+                        emptyList()
+                    )
                     btnSave.isEnabled = false
                 }
             }
@@ -173,8 +188,10 @@ class CreateEntry : AppCompatActivity() {
                 if (selectedTask != null) {
                     val dateFormat: SimpleDateFormat = SimpleDateFormat("dd-MM-yyyy")
                     val selectedDate = tvDate.text.toString() // Parse the date string
-                    val startTime = Time.valueOf(tvStart.text.toString() + ":00") // Parse the start time string
-                    val endTime = Time.valueOf(tvEnd.text.toString()+ ":00") // Parse the end time string
+                    val startTime =
+                        Time.valueOf(tvStart.text.toString() + ":00") // Parse the start time string
+                    val endTime =
+                        Time.valueOf(tvEnd.text.toString() + ":00") // Parse the end time string
 
                     val durationInMillis = endTime.time - startTime.time
 
@@ -199,7 +216,11 @@ class CreateEntry : AppCompatActivity() {
 
                     selectedTask.taskRecords.add(recording)
 
-                    Toast.makeText(this, "Recording saved for task: ${selectedTask.name}", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(
+                        this,
+                        "Recording saved for task: ${selectedTask.name}",
+                        Toast.LENGTH_SHORT
+                    ).show()
                 } else {
                     Toast.makeText(this, "Selected task is null", Toast.LENGTH_SHORT).show()
                 }
@@ -209,12 +230,13 @@ class CreateEntry : AppCompatActivity() {
         }
 
 
-
     }
+
     private fun selectImage() {
         val intent = Intent(Intent.ACTION_PICK, MediaStore.Images.Media.EXTERNAL_CONTENT_URI)
         resultLauncher.launch(intent)
     }
+
     private fun selectImageFromCamera() {
         // Create an intent to capture an image
         val takePictureIntent = Intent(MediaStore.ACTION_IMAGE_CAPTURE)

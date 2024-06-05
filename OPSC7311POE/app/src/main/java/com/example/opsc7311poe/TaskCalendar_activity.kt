@@ -26,7 +26,6 @@ class TaskCalendar : AppCompatActivity() {
         setContentView(R.layout.activity_task_calendar)
 
 
-
         // Initialize views
         set_event = findViewById<TextView>(R.id.tv_add_event)
         DateToday = findViewById<TextView>(R.id.dayOfWeekTV)

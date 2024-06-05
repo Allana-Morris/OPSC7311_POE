@@ -3,7 +3,6 @@ package com.example.opsc7311poe
 import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
-import android.view.View
 import android.widget.*
 import androidx.appcompat.app.AppCompatActivity
 import java.time.LocalTime
@@ -33,11 +32,11 @@ class InsertData : AppCompatActivity() {
             startActivity(intent)
         }
 
-                //Intent to open Calendar
-                CalendarOpenActivity.setOnClickListener{
-                    val intent3 = Intent(this, TaskCalendar::class.java)
-                    startActivity(intent3)
-                }
+        //Intent to open Calendar
+        CalendarOpenActivity.setOnClickListener {
+            val intent3 = Intent(this, TaskCalendar::class.java)
+            startActivity(intent3)
+        }
 
         //Intent to Open Timer
         TimerOpenActivity.setOnClickListener {
@@ -79,11 +78,23 @@ class InsertData : AppCompatActivity() {
             val desc = findViewById<TextView>(R.id.edtDescription).text.toString().trim()
 
             if ((selectedCategory == "No categories") || selectedCategory.isEmpty() || taskName.isEmpty() || startTime.isEmpty() || endTime.isEmpty()) {
-                Toast.makeText(this@InsertData, "Please fill in all required fields", Toast.LENGTH_SHORT).show()
+                Toast.makeText(
+                    this@InsertData,
+                    "Please fill in all required fields",
+                    Toast.LENGTH_SHORT
+                ).show()
             } else if (!isValidTime(startTime) || !isValidTime(endTime)) {
-                Toast.makeText(this@InsertData, "Please enter valid time format (HH:mm)", Toast.LENGTH_SHORT).show()
+                Toast.makeText(
+                    this@InsertData,
+                    "Please enter valid time format (HH:mm)",
+                    Toast.LENGTH_SHORT
+                ).show()
             } else if (!isEndTimeAfterStartTime(startTime, endTime)) {
-                Toast.makeText(this@InsertData, "End time must be after start time", Toast.LENGTH_SHORT).show()
+                Toast.makeText(
+                    this@InsertData,
+                    "End time must be after start time",
+                    Toast.LENGTH_SHORT
+                ).show()
             } else {
                 // Convert start time and end time to decimal hours
                 val startHour = parseTimeToHours(LocalTime.parse(startTime))
@@ -93,11 +104,16 @@ class InsertData : AppCompatActivity() {
                 // Create and add the task to the selected category for the user
                 val selectedCategoryObj = SessionUser.currentUser?.categories?.get(selectedCategory)
                 if (selectedCategoryObj != null) {
-                    val createdTask = Task(taskName, desc, repeatSwitch.isChecked, startHour, endHour)
+                    val createdTask =
+                        Task(taskName, desc, repeatSwitch.isChecked, startHour, endHour)
                     selectedCategoryObj.tasks[createdTask.name] = createdTask
 
                     // Optional: Display a toast to confirm task creation
-                    Toast.makeText(this, "Task '$taskName' added to category '$selectedCategory'", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(
+                        this,
+                        "Task '$taskName' added to category '$selectedCategory'",
+                        Toast.LENGTH_SHORT
+                    ).show()
 
                     // Start the ViewData activity or perform any other necessary action
                     val intent = Intent(this, ViewData::class.java)

@@ -4,8 +4,7 @@ class CreateIconList {
 
     val icons = ArrayList<Int>()
 
-    fun LoadIcons()
-    {
+    fun LoadIcons() {
         icons.add(R.drawable.bag)
         icons.add(R.drawable.bed)
         icons.add(R.drawable.baseline_calendar_month_24)

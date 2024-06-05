@@ -32,14 +32,12 @@ class Login : AppCompatActivity() {
             val userName = usernameTextView.text.toString()
             val password = passwordTextView.text.toString()
             //Checks if Username and Password exist in Userlist and is a Valid input
-            if (authenticate(userName, password))
-            {
+            if (authenticate(userName, password)) {
                 var loggedUser = getUser(userName)
                 SessionUser.currentUser = loggedUser
                 val intent2 = Intent(this, MainActivity::class.java)
                 startActivity(intent2)
-            } else
-            {
+            } else {
                 Toast.makeText(this, "Invalid username or password", Toast.LENGTH_SHORT).show()
             }
         }
@@ -51,8 +49,7 @@ class Login : AppCompatActivity() {
     }
 
     //Gets User Details from User List
-    private fun getUser(uName: String): User?
-    {
+    private fun getUser(uName: String): User? {
         for (user in UserList.users) {
             if (user.username == uName) {
                 return user
