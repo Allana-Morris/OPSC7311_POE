@@ -12,11 +12,9 @@ import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
-import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
-import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import yuku.ambilwarna.AmbilWarnaDialog
 import yuku.ambilwarna.AmbilWarnaDialog.OnAmbilWarnaListener
@@ -42,37 +40,36 @@ class create_category : AppCompatActivity() {
         ivColourPreview = findViewById(R.id.iv_colourPreview)
 
         val AddCategory = findViewById<TextView>(R.id.tvAddTask)
-        val catMinHours : TextView = findViewById(R.id.ett_Min_Goal)
-        val catMaxHours : TextView = findViewById(R.id.ett_Max_Goal)
-        val iconPicker : ImageButton = findViewById(R.id.ib_Icon)
+        val catMinHours: TextView = findViewById(R.id.ett_Min_Goal)
+        val catMaxHours: TextView = findViewById(R.id.ett_Max_Goal)
+        val iconPicker: ImageButton = findViewById(R.id.ib_Icon)
         AddCategory.setOnClickListener {
-            val catName : TextView = findViewById(R.id.edtName)
+            val catName: TextView = findViewById(R.id.edtName)
             val catColor = mDefaultColour
-
 
 
             var cateName = catName.text.toString()
             var minHours = catMinHours.text.toString()
             var maxHours = catMaxHours.text.toString()
             var catMin = vali.parseTimeToHours(LocalTime.parse(minHours + ":00"))
-            var catMax = vali.parseTimeToHours(LocalTime.parse(maxHours+ ":00"))
+            var catMax = vali.parseTimeToHours(LocalTime.parse(maxHours + ":00"))
 
             //validate
 
 
             val cate = Category(cateName, catIcon, catColor, catMin, catMax)
-         //   val users = User()
+            //   val users = User()
             SessionUser.currentUser?.categories?.set(cate.name, cate)
             val intent = Intent(this, ViewData::class.java)
             startActivity(intent)
         }
 
         //Icon Picker
-        iconPicker.setOnClickListener{
+        iconPicker.setOnClickListener {
             val il = CreateIconList()
             il.LoadIcons()
-            showIconPickerDialog(il.icons) {
-                selectedIconId -> catIcon = selectedIconId
+            showIconPickerDialog(il.icons) { selectedIconId ->
+                catIcon = selectedIconId
 
             }
         }
@@ -122,22 +119,22 @@ class create_category : AppCompatActivity() {
         val CalendarOpenActivity = findViewById<ImageButton>(R.id.ib_Calendar)
         val TimerOpenActivity = findViewById<ImageButton>(R.id.ib_Timer)
 
-        HomeOpenActivity.setOnClickListener{
+        HomeOpenActivity.setOnClickListener {
             val intent2 = Intent(this, MainActivity::class.java)
             startActivity(intent2)
         }
 
-        ProfileOpenActivity.setOnClickListener{
+        ProfileOpenActivity.setOnClickListener {
             val intent = Intent(this, Profile::class.java)
             startActivity(intent)
         }
-/*
-        CalendarOpenActivity.setOnClickListener{
-            val intent3 = Intent(this, TaskCalendar::class.java)
-            startActivity(intent3)
-        }
-*/
-        TimerOpenActivity.setOnClickListener{
+        /*
+                CalendarOpenActivity.setOnClickListener{
+                    val intent3 = Intent(this, TaskCalendar::class.java)
+                    startActivity(intent3)
+                }
+        */
+        TimerOpenActivity.setOnClickListener {
             val intent4 = Intent(this, Timer::class.java)
             startActivity(intent4)
         }
@@ -175,7 +172,12 @@ class create_category : AppCompatActivity() {
         val dialog = IconPickerDialog(this, iconList, onIconSelected)
         dialog.show()
     }
-    private class IconPickerDialog(context: Context, private val iconList: ArrayList<Int>, private val onIconSelected: (Int) -> Unit) :
+
+    private class IconPickerDialog(
+        context: Context,
+        private val iconList: ArrayList<Int>,
+        private val onIconSelected: (Int) -> Unit,
+    ) :
         Dialog(context) {
 
         override fun onCreate(savedInstanceState: Bundle?) {

@@ -37,7 +37,8 @@ class cat_total : AppCompatActivity() {
 
             //validation
             if (startDate.isEmpty() || endDate.isEmpty()) {
-                Toast.makeText(this, "Please select both start and end dates", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, "Please select both start and end dates", Toast.LENGTH_SHORT)
+                    .show()
                 return@setOnClickListener
             }
 
@@ -67,7 +68,10 @@ class cat_total : AppCompatActivity() {
         datePickerDialog.show()
     }
 
-    private fun calculateTotalHoursByCategory(startDate: String, endDate: String): Map<String, Double> {
+    private fun calculateTotalHoursByCategory(
+        startDate: String,
+        endDate: String,
+    ): Map<String, Double> {
         val currentUser = SessionUser.currentUser
         val totalHoursByCategory = mutableMapOf<String, Double>()
 

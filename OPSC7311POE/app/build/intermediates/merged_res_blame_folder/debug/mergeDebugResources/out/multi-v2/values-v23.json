@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.opsc7311poe.app-mergeDebugResources-65:/values-v23/values-v23.xml",
+            "outputFile": "com.example.opsc7311poe.app-mergeDebugResources-72:/values-v23/values-v23.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Sven\\AndroidStudioProjects\\OPSC7311_POE\\OPSC7311POE\\.gradle\\8.7\\caches\\transforms-4\\5c28d2219c30f549b2ea6e2dc22e1150\\transformed\\appcompat-1.6.1\\res\\values-v23\\values-v23.xml",
+                    "source": "C:\\Users\\Sven\\AndroidStudioProjects\\OPSC7311_POE\\OPSC7311POE\\.gradle\\8.7\\caches\\transforms-4\\f958899bd8e9ed988a49e54307713ec9\\transformed\\appcompat-1.6.1\\res\\values-v23\\values-v23.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,20,34,35,36,39,43,44,45,46",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -15,26 +15,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Sven\\AndroidStudioProjects\\OPSC7311_POE\\OPSC7311POE\\.gradle\\8.7\\caches\\transforms-4\\1973deb99d3f91f5e296df3b05992379\\transformed\\cardview-1.0.0\\res\\values-v23\\values-v23.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endLines": "4",
-                        "endColumns": "12",
-                        "endOffsets": "200"
-                    },
-                    "to": {
-                        "startLines": "50",
-                        "startColumns": "4",
-                        "startOffsets": "3232",
-                        "endLines": "52",
-                        "endColumns": "12",
-                        "endOffsets": "3377"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\Sven\\AndroidStudioProjects\\OPSC7311_POE\\OPSC7311POE\\.gradle\\8.7\\caches\\transforms-4\\322c8c226b20bcef54f23af2e70ae9fb\\transformed\\material-1.11.0\\res\\values-v23\\values-v23.xml",
+                    "source": "C:\\Users\\Sven\\AndroidStudioProjects\\OPSC7311_POE\\OPSC7311POE\\.gradle\\8.7\\caches\\transforms-4\\f89b4bef4b8a6d3c6469543273a44678\\transformed\\material-1.11.0\\res\\values-v23\\values-v23.xml",
                     "from": {
                         "startLines": "2,5,9,13,16,19,22,25,28,32",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4",
@@ -50,6 +31,25 @@
                         "endLines": "55,59,63,66,69,72,75,78,82,86",
                         "endColumns": "10,10,10,10,10,10,10,10,10,10",
                         "endOffsets": "3593,3735,3896,4106,4313,4520,4723,4925,5190,5463"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\Sven\\AndroidStudioProjects\\OPSC7311_POE\\OPSC7311POE\\.gradle\\8.7\\caches\\transforms-4\\1fbca523aa9c7d81aedf9a303512d729\\transformed\\cardview-1.0.0\\res\\values-v23\\values-v23.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "4",
+                        "endColumns": "12",
+                        "endOffsets": "200"
+                    },
+                    "to": {
+                        "startLines": "50",
+                        "startColumns": "4",
+                        "startOffsets": "3232",
+                        "endLines": "52",
+                        "endColumns": "12",
+                        "endOffsets": "3377"
                     }
                 }
             ]

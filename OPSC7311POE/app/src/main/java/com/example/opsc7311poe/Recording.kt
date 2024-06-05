@@ -6,9 +6,9 @@ import java.util.Date
 
 //Object string date for Timer
 class Recording(
-    var RecDate : Date,
+    var RecDate: Date,
     var StartTime: Time,
     var EndTime: Time,
     var Duration: String,
-    var image : Image?
+    var image: Image?,
 )
