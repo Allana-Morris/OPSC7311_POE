@@ -87,6 +87,8 @@
     <string name="view_timesheet">View Timesheet Entries</string>
     <string name="password">Password</string>
     <string name="cat_view">View Total Hours For your Categories</string>
+    <string name="startDate">Start Date</string>
+    <string name="endDate">End Date</string>
 
 
 </resources>
