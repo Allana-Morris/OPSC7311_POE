@@ -105,34 +105,47 @@ class ViewTimeSheetEntry : AppCompatActivity() {
                 layout.removeAllViews() // Clear existing views
                 val dateFormat = SimpleDateFormat("dd/MM/yyyy", Locale.getDefault())
 
+                val start: Date = dateFormat.parse(startDate.text.toString()) // Parse the date string
+                val end: Date = dateFormat.parse(endDate.text.toString()) // Parse the date string
+
                 // Iterate through each category of the current user
                 currentUser.categories.values.forEach { category ->
                     // Iterate through each task in the category
                     category.tasks.values.forEach { task ->
                         // Iterate through each recording in the task
                         task.taskRecords.forEach { recording ->
-                            // Inflate the layout task_listing.xml for each recording and add it to the LinearLayout
-                            val inflatedView = LayoutInflater.from(this).inflate(R.layout.task_listing, layout, false)
-                            val taskNameTextView = inflatedView.findViewById<TextView>(R.id.tvTask_name)
-                            val taskStart = inflatedView.findViewById<TextView>(R.id.tvTask_start_time)
-                            val taskEnd = inflatedView.findViewById<TextView>(R.id.tvTask_end_time)
-                            val taskDesc = inflatedView.findViewById<TextView>(R.id.tvTask_description)
 
-                            taskNameTextView.text = task.name
-                            taskDesc.text = task.description
-                            taskStart.text = recording.StartTime.toString()
-                            taskEnd.text = recording.EndTime.toString()
+                            // Corrected condition to check if the recording date is within the range
+                            if (recording.RecDate >= start && recording.RecDate <= end) {
 
-                            val recordingDateTextView = TextView(this).apply {
-                                text = dateFormat.format(recording.RecDate)
-                                layoutParams = LinearLayout.LayoutParams(
-                                    LinearLayout.LayoutParams.WRAP_CONTENT,
-                                    LinearLayout.LayoutParams.WRAP_CONTENT
-                                )
+                                // Inflate the layout task_listing.xml for each recording and add it to the LinearLayout
+                                val inflatedView = LayoutInflater.from(this)
+                                    .inflate(R.layout.task_listing, layout, false)
+                                val taskNameTextView =
+                                    inflatedView.findViewById<TextView>(R.id.tvTask_name)
+                                val taskStart =
+                                    inflatedView.findViewById<TextView>(R.id.tvTask_start_time)
+                                val taskEnd =
+                                    inflatedView.findViewById<TextView>(R.id.tvTask_end_time)
+                                val taskDesc =
+                                    inflatedView.findViewById<TextView>(R.id.tvTask_description)
+
+                                taskNameTextView.text = task.name
+                                taskDesc.text = task.description
+                                taskStart.text = recording.StartTime.toString()
+                                taskEnd.text = recording.EndTime.toString()
+
+                                val recordingDateTextView = TextView(this).apply {
+                                    text = dateFormat.format(recording.RecDate)
+                                    layoutParams = LinearLayout.LayoutParams(
+                                        LinearLayout.LayoutParams.WRAP_CONTENT,
+                                        LinearLayout.LayoutParams.WRAP_CONTENT
+                                    )
+                                }
+
+                                layout.addView(inflatedView)
+                                layout.addView(recordingDateTextView)
                             }
-
-                            layout.addView(inflatedView)
-                            layout.addView(recordingDateTextView)
                         }
                     }
                 }

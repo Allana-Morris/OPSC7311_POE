@@ -25,8 +25,10 @@ import java.text.SimpleDateFormat
 import java.time.Duration
 import java.time.LocalDate
 import java.time.LocalTime
+import java.time.format.DateTimeFormatter
 import java.util.Calendar
 import java.util.Date
+import java.util.Locale
 
 class CreateEntry : AppCompatActivity() {
 
@@ -101,21 +103,21 @@ class CreateEntry : AppCompatActivity() {
                 this,
                 DatePickerDialog.OnDateSetListener { _, selectedYear, selectedMonth, selectedDay ->
                     // Update the date TextView with the selected date
-                    val selectedDate = LocalDate.of(
-                        selectedYear,
-                        selectedMonth + 1,
-                        selectedDay
-                    ) // Month is zero-based
-                    tvDate.text = selectedDate.toString()
+                    val calendar = Calendar.getInstance()
+                    calendar.set(selectedYear, selectedMonth, selectedDay)
+                    val selectedDate: Date = calendar.time
+                    val formatter = SimpleDateFormat("dd/MM/yyyy", Locale.getDefault())
+                    val formattedDate = formatter.format(selectedDate)
+                    tvDate.text = formattedDate
                 },
                 year,
                 month,
                 dayOfMonth
             )
-
-            // Show the date picker dialog
             datePickerDialog.show()
         }
+
+
 
         tvStart.setOnClickListener()
         {
@@ -171,8 +173,9 @@ class CreateEntry : AppCompatActivity() {
                 val selectedTask = selectedCategory.tasks[selectedTaskName]
 
                 if (selectedTask != null) {
-                    val dateFormat: SimpleDateFormat = SimpleDateFormat("dd-MM-yyyy")
-                    val selectedDate = tvDate.text.toString() // Parse the date string
+                    //val dateFormat: SimpleDateFormat = SimpleDateFormat("dd-MM-yyyy")
+                    val formatter = SimpleDateFormat("dd/MM/yyyy", Locale.getDefault())
+                    val selectedDate: Date = formatter.parse(tvDate.text.toString())// Parse the date string
                     val startTime = Time.valueOf(tvStart.text.toString() + ":00") // Parse the start time string
                     val endTime = Time.valueOf(tvEnd.text.toString()+ ":00") // Parse the end time string
 
@@ -190,7 +193,7 @@ class CreateEntry : AppCompatActivity() {
                     val duration = String.format("%02d:%02d:%02d", hours, minutes, remainingSeconds)
 
                     val recording = Recording(
-                        RecDate = dateFormat.parse(selectedDate),
+                        RecDate = selectedDate,
                         StartTime = startTime,
                         EndTime = endTime,
                         Duration = Time.valueOf(duration.toString()).toString(),
