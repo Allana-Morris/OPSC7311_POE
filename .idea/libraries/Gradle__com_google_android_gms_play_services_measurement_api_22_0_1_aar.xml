@@ -1,11 +1,13 @@
 <component name="libraryTable">
   <library name="Gradle: com.google.android.gms:play-services-measurement-api:22.0.1@aar" external-system-id="GRADLE">
     <CLASSES>
-      <root url="jar://$USER_HOME$/Downloads/OPSC7311POE/OPSC7311POE/gradle/wrapper/dists/gradle-8.7-all/caches/transforms-4/238fc31ade03e28da096174a75a66442/transformed/play-services-measurement-api-22.0.1/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/Downloads/OPSC7311POE/OPSC7311POE/gradle/wrapper/dists/gradle-8.7-all/caches/transforms-4/238fc31ade03e28da096174a75a66442/transformed/play-services-measurement-api-22.0.1/res" />
-      <root url="file://$USER_HOME$/Downloads/OPSC7311POE/OPSC7311POE/gradle/wrapper/dists/gradle-8.7-all/caches/transforms-4/238fc31ade03e28da096174a75a66442/transformed/play-services-measurement-api-22.0.1/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-4/238fc31ade03e28da096174a75a66442/transformed/play-services-measurement-api-22.0.1/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-4/238fc31ade03e28da096174a75a66442/transformed/play-services-measurement-api-22.0.1/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-4/238fc31ade03e28da096174a75a66442/transformed/play-services-measurement-api-22.0.1/AndroidManifest.xml" />
     </CLASSES>
-    <JAVADOC />
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.android.gms/play-services-measurement-api/22.0.1/275773f5707e7b3bb0b6d6ad05877197ee6b4006/play-services-measurement-api-22.0.1-javadoc.jar!/" />
+    </JAVADOC>
     <SOURCES />
   </library>
 </component>

@@ -9,19 +9,22 @@ pluginManagement {
         }
         mavenCentral()
         gradlePluginPortal()
+        maven ( url = "https://jitpack.io" )
     }
+
 }
+
+
 dependencyResolutionManagement {
 
+repositories {
+        google()
+        mavenCentral()
+    maven ( url = "https://jitpack.io" )
 
-        this.repositories {
-            maven { url = uri("https://jitpack.io") }
-            google()
-            mavenCentral()
-
-        }
-
+    }
+}
 
 rootProject.name = "OPSC7311 POE"
-include(":app")}
+include(":app")
  

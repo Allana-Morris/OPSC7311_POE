@@ -1,4 +1,5 @@
 package com.example.opsc7311poe
+
 //Object used to store details about each category
 class Category(
     var name: String,
