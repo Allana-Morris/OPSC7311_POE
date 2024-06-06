@@ -95,5 +95,24 @@ class MonthlySummary : AppCompatActivity() {
             startActivity(intent4)
         }
 
+
+        //Code for TextView Summaries
+
+        //Top Category
+
+
+
+
+        //Total Hours Recorded
+
+        //Ave Hours
+
+        //Most Productive Day
+
+        //Busiest Week
+
+        //Most Time consuming Task
+
+
     }
 }
