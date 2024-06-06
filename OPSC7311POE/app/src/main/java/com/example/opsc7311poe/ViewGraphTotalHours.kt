@@ -48,7 +48,7 @@ class ViewGraphTotalHours : AppCompatActivity() {
 
         buttonSelect.setOnClickListener {
             if (startDate != null && endDate != null) {
-                updateChart()
+                //updateChart()
             }
         }
     }
@@ -67,8 +67,8 @@ class ViewGraphTotalHours : AppCompatActivity() {
         ).show()
     }
 
-    private fun updateChart() {
-        val tasks = getTasksBetweenDates(startDate, endDate)
+ //   private fun updateChart() {
+/*       val tasks = getTasksBetweenDates(startDate, endDate)
         val entries = ArrayList<BarEntry>()
         var totalHours = 0.0
         for ((index, task) in tasks.withIndex()) {
@@ -90,7 +90,7 @@ class ViewGraphTotalHours : AppCompatActivity() {
                 !record.recDate.before(start) && !record.recDate.after(end)
             }
         }
-    }
+    }*/
 
     private fun parseDurationToHours(duration: String): Double {
         val parts = duration.split(":").map { it.toInt() }

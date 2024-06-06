@@ -1,12 +1,12 @@
 <component name="libraryTable">
   <library name="Gradle: androidx.compose.ui:ui-android:1.6.0@aar" external-system-id="GRADLE">
     <ANNOTATIONS>
-      <root url="jar://$PROJECT_DIR$/OPSC7311POE/.gradle/8.7/caches/transforms-4/de464e98bb5b45f5045297e87086b6f9/transformed/ui-release/annotations.zip!/" />
+      <root url="jar://$PROJECT_DIR$/OPSC7311POE/.gradle/8.7/caches/transforms-4/9066f118da30237aca7945c3d25c5e40/transformed/ui-release/annotations.zip!/" />
     </ANNOTATIONS>
     <CLASSES>
-      <root url="file://$PROJECT_DIR$/OPSC7311POE/.gradle/8.7/caches/transforms-4/de464e98bb5b45f5045297e87086b6f9/transformed/ui-release/AndroidManifest.xml" />
-      <root url="jar://$PROJECT_DIR$/OPSC7311POE/.gradle/8.7/caches/transforms-4/de464e98bb5b45f5045297e87086b6f9/transformed/ui-release/jars/classes.jar!/" />
-      <root url="file://$PROJECT_DIR$/OPSC7311POE/.gradle/8.7/caches/transforms-4/de464e98bb5b45f5045297e87086b6f9/transformed/ui-release/res" />
+      <root url="jar://$PROJECT_DIR$/OPSC7311POE/.gradle/8.7/caches/transforms-4/9066f118da30237aca7945c3d25c5e40/transformed/ui-release/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/OPSC7311POE/.gradle/8.7/caches/transforms-4/9066f118da30237aca7945c3d25c5e40/transformed/ui-release/AndroidManifest.xml" />
+      <root url="file://$PROJECT_DIR$/OPSC7311POE/.gradle/8.7/caches/transforms-4/9066f118da30237aca7945c3d25c5e40/transformed/ui-release/res" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

@@ -7,8 +7,18 @@ import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import com.google.firebase.database.DataSnapshot
+import com.google.firebase.database.DatabaseError
+import com.google.firebase.database.DatabaseException
+import com.google.firebase.database.FirebaseDatabase
+import com.google.firebase.database.ValueEventListener
+
 
 class Register : AppCompatActivity() {
+    val database: FirebaseDatabase =
+        FirebaseDatabase.getInstance("https://atomic-affinity-421915-default-rtdb.europe-west1.firebasedatabase.app/")
+
+    val DbRef = database.getReference("user")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_register)
@@ -52,33 +62,44 @@ class Register : AppCompatActivity() {
                 valid = false
             }
 
-            if (Validate.checkExistingUserEmail(email.text.toString())) {
+            /*  if (Validate.checkExistingUserEmail(email.text.toString())) {
                 email.setText("Account already exists")
                 email.setTextColor(Color.RED)
                 valid = false
 
-            }
+            }*/
 
-            if (Validate.checkExistingUserUserName(username.text.toString())) {
+
+            /*    if (Validate.checkExistingUserUserName(username.text.toString())) {
                 username.setText("Username is already in use, choose a different one")
                 username.setTextColor(Color.RED)
                 valid = false
 
-            }
+            }*/
+
+
 
             //Big boss validation if statement
             if (valid) {
-                val user = User(
-                    username.text.toString(), fullName.text.toString(),
-                    password.text.toString(), email.text.toString()
-                )
+                checkUserEmail(email.text.toString()) { emailExists ->
+                    if (emailExists) {
+                        Toast.makeText(this, emailExists.toString(), Toast.LENGTH_SHORT).show()
 
-                UserList.users.add(user)
-
-                val message = "User signed up: ${user.username}"
-                Toast.makeText(this, message, Toast.LENGTH_SHORT).show()
+                        email.setError("Account already exists")
+                    } else {
+                        checkUserName(username.text.toString()) { usernameExists ->
+                            if (usernameExists) {
+                                Toast.makeText(this, emailExists.toString(), Toast.LENGTH_SHORT).show()
+                                username.setError("Username is already in use, choose a different one")
+                            } else {
+                                val user = User(username.text.toString(), fullName.text.toString(), password.text.toString(), email.text.toString())
+                                DbRef.push().setValue(user)
+                                Toast.makeText(this, "User signed up: ${user.username}", Toast.LENGTH_SHORT).show()
+                            }
+                        }
+                    }
+                }
             }
-
         }
 
         //Button that logs user in
@@ -87,5 +108,31 @@ class Register : AppCompatActivity() {
             val intent = Intent(this, Login::class.java)
             startActivity(intent)
         }
+    }
+
+    private fun checkUserEmail(email: String, completion: (Boolean) -> Unit) {
+        val emailQuery = DbRef.orderByChild("email").equalTo(email)
+        emailQuery.addListenerForSingleValueEvent(object : ValueEventListener {
+            override fun onDataChange(dataSnapshot: DataSnapshot) {
+                completion(dataSnapshot.exists())
+            }
+
+            override fun onCancelled(databaseError: DatabaseError) {
+                completion(false)
+            }
+        })
+    }
+
+    private fun checkUserName(username: String, completion: (Boolean) -> Unit) {
+        val usernameQuery = DbRef.orderByChild("username").equalTo(username)
+        usernameQuery.addListenerForSingleValueEvent(object : ValueEventListener {
+            override fun onDataChange(dataSnapshot: DataSnapshot) {
+                completion(dataSnapshot.exists())
+            }
+
+            override fun onCancelled(databaseError: DatabaseError) {
+                completion(false)
+            }
+        })
     }
 }

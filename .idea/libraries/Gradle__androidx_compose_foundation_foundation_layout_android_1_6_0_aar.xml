@@ -1,9 +1,9 @@
 <component name="libraryTable">
   <library name="Gradle: androidx.compose.foundation:foundation-layout-android:1.6.0@aar" external-system-id="GRADLE">
     <CLASSES>
-      <root url="file://$PROJECT_DIR$/OPSC7311POE/.gradle/8.7/caches/transforms-4/38f8c0c1eb881c48552e97ca0851b25c/transformed/foundation-layout-release/AndroidManifest.xml" />
-      <root url="jar://$PROJECT_DIR$/OPSC7311POE/.gradle/8.7/caches/transforms-4/38f8c0c1eb881c48552e97ca0851b25c/transformed/foundation-layout-release/jars/classes.jar!/" />
-      <root url="file://$PROJECT_DIR$/OPSC7311POE/.gradle/8.7/caches/transforms-4/38f8c0c1eb881c48552e97ca0851b25c/transformed/foundation-layout-release/res" />
+      <root url="file://$PROJECT_DIR$/OPSC7311POE/.gradle/8.7/caches/transforms-4/562863ac74b21ba0752d5d0a1a97d01b/transformed/foundation-layout-release/AndroidManifest.xml" />
+      <root url="jar://$PROJECT_DIR$/OPSC7311POE/.gradle/8.7/caches/transforms-4/562863ac74b21ba0752d5d0a1a97d01b/transformed/foundation-layout-release/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/OPSC7311POE/.gradle/8.7/caches/transforms-4/562863ac74b21ba0752d5d0a1a97d01b/transformed/foundation-layout-release/res" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
