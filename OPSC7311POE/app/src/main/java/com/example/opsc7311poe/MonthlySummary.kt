@@ -100,9 +100,6 @@ class MonthlySummary : AppCompatActivity() {
 
         //Top Category
 
-
-
-
         //Total Hours Recorded
 
         //Ave Hours

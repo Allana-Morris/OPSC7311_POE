@@ -1064,6 +1064,10 @@ attr selectableItemBackground
 attr selectableItemBackgroundBorderless
 attr selectionRequired
 attr selectorSize
+attr seriesColor
+attr seriesData
+attr seriesTitle
+attr seriesType
 attr setsTag
 attr shapeAppearance
 attr shapeAppearanceCornerExtraLarge
@@ -2136,6 +2140,7 @@ color mtrl_textinput_focused_box_stroke_color
 color mtrl_textinput_hovered_box_stroke_color
 color notification_action_color_filter
 color notification_icon_bg_color
+color notification_material_background_media_default_color
 color primary_dark_material_dark
 color primary_dark_material_light
 color primary_material_dark
@@ -3297,6 +3302,7 @@ id accessibility_custom_action_6
 id accessibility_custom_action_7
 id accessibility_custom_action_8
 id accessibility_custom_action_9
+id action0
 id actionDown
 id actionDownUp
 id actionUp
@@ -3353,7 +3359,6 @@ id auto
 id autoComplete
 id autoCompleteToEnd
 id autoCompleteToStart
-id barChart
 id barrier
 id baseline
 id beginOnFirstDraw
@@ -3382,10 +3387,10 @@ id btnViewEntries
 id btnViewTasks
 id btn_Google_signin
 id btn_Login
-id button
 id buttonPanel
 id cache_measures
 id callMeasure
+id cancel_action
 id cancel_button
 id carryVelocity
 id center
@@ -3398,7 +3403,6 @@ id chain2
 id chains
 id checkbox
 id checked
-id chooseWeek
 id chooseWeek1
 id chronometer
 id circle_center
@@ -3467,8 +3471,6 @@ id easeInOut
 id easeOut
 id east
 id edge
-id editTextDate
-id editTextDate2
 id edit_query
 id edit_text_id
 id edtClock
@@ -3486,6 +3488,7 @@ id embed
 id empyViews
 id end
 id endToStart
+id end_padder
 id enterAlways
 id enterAlwaysCollapsed
 id ett_Max_Goal
@@ -3540,11 +3543,13 @@ id iconImageView
 id iconRecyclerView
 id icon_group
 id icon_only
+id idGraphView
 id ifRoom
 id ignore
 id ignoreRequest
 id image
 id imageView
+id imageView1
 id imageView22
 id imgTaskIcon
 id img_photoUp
@@ -3620,6 +3625,7 @@ id material_timepicker_ok_button
 id material_timepicker_view
 id material_value_index
 id matrix
+id media_actions
 id message
 id middle
 id mini
@@ -3791,6 +3797,7 @@ id startToEnd
 id startVertical
 id staticLayout
 id staticPostLayout
+id status_bar_latest_event_content
 id stop
 id stretch
 id submenuarrow
@@ -3818,8 +3825,6 @@ id textSpacerNoTitle
 id textStart
 id textTop
 id textView
-id textView2
-id textView3
 id textView32
 id textView34
 id textView5
@@ -3838,10 +3843,23 @@ id time
 id title
 id titleDividerNoCustom
 id title_template
+id tlGraphData
 id toggle
 id top
 id topPanel
 id touch_outside
+id trAveHours
+id trBlank
+id trBusiestWeek
+id trMostProdDay
+id trSmallBlank
+id trSmallBlank2
+id trSmallBlank3
+id trSmallBlank4
+id trSmallBlank5
+id trTimeTask
+id trTopCat
+id trTotalHours
 id transitionToEnd
 id transitionToStart
 id transition_current_scene
@@ -3851,8 +3869,11 @@ id transition_scene_layoutid_cache
 id transition_transform
 id triangle
 id tvAddTask
-id tvBar
+id tvAveHoursAns
+id tvAveHoursPD
 id tvBlackBox
+id tvBusiestWeek
+id tvBusyWeekAns
 id tvCategorySpinner
 id tvCustomiseProfile
 id tvEditusername
@@ -3863,21 +3884,27 @@ id tvEndTime
 id tvEntryDate
 id tvEntryTime
 id tvFullName
+id tvMostProdDay
+id tvMostProdDayAns
+id tvMostTimeTask
+id tvMostTimeTaskAns
 id tvNewPhoto
-id tvPie
 id tvProfilePhoto
 id tvSeePassword
 id tvSelectPeriod1
 id tvStartDate
 id tvStartDate1
 id tvStartTime
-id tvSummary
 id tvTaskSpinner
 id tvTask_description
 id tvTask_end_time
 id tvTask_name
 id tvTask_start_time
 id tvTimer
+id tvTopCatAns
+id tvTopCategory
+id tvTotHoursAns
+id tvTotalHours
 id tvUpPhoto
 id tv_Back
 id tv_Category
@@ -3905,7 +3932,7 @@ id tv_calendar
 id tv_calendar1
 id tv_timer
 id tv_timer1
-id tvgenerate
+id tvgenerate1
 id tvuserProfile
 id txtEmail
 id txtFullName
@@ -3916,6 +3943,7 @@ id uniform
 id unlabeled
 id up
 id useLogo
+id vMonthlySummary
 id v_Event
 id vertLayout
 id vertical_only
@@ -4063,9 +4091,10 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
+layout activity_cat_hours
 layout activity_create_category
 layout activity_enter_time_sheet
-layout activity_insert_task
+layout activity_insert_data
 layout activity_login
 layout activity_main
 layout activity_monthly_summary
@@ -4074,8 +4103,6 @@ layout activity_register
 layout activity_starting_page
 layout activity_task_calendar
 layout activity_timer
-layout activity_total_cat_hours
-layout activity_view_graph_total_hours
 layout activity_view_graphs
 layout activity_view_tasks
 layout activity_view_time_sheet_entry
@@ -4153,11 +4180,19 @@ layout mtrl_picker_text_input_date
 layout mtrl_picker_text_input_date_range
 layout mtrl_search_bar
 layout mtrl_search_view
-layout navbar
 layout notification_action
 layout notification_action_tombstone
+layout notification_media_action
+layout notification_media_cancel_action
+layout notification_template_big_media
+layout notification_template_big_media_custom
+layout notification_template_big_media_narrow
+layout notification_template_big_media_narrow_custom
 layout notification_template_custom_big
 layout notification_template_icon_group
+layout notification_template_lines_media
+layout notification_template_media
+layout notification_template_media_custom
 layout notification_template_part_chronometer
 layout notification_template_part_time
 layout select_dialog_item_material
@@ -4206,6 +4241,7 @@ string all_taps
 string androidx_startup
 string app_name
 string appbar_scrolling_view_behavior
+string ave_hours_per_day
 string back
 string bar
 string bottom_sheet_behavior
@@ -4214,6 +4250,7 @@ string bottomsheet_action_expand
 string bottomsheet_action_expand_halfway
 string bottomsheet_drag_handle_clicked
 string bottomsheet_drag_handle_content_description
+string busiest_week
 string calendar
 string calendar_
 string call_notification_answer_action
@@ -4272,7 +4309,6 @@ string dest_title
 string diagram
 string dropdown_menu
 string editUser
-string endDate
 string enter_hours_spent
 string enter_time
 string error_a11y_label
@@ -4338,6 +4374,8 @@ string material_timepicker_minute
 string material_timepicker_pm
 string material_timepicker_select_time
 string material_timepicker_text_input_mode_description
+string most_productive_day
+string most_time_consuming_task
 string mtrl_badge_numberless_content_description
 string mtrl_checkbox_button_icon_path_checked
 string mtrl_checkbox_button_icon_path_group_name
@@ -4443,7 +4481,6 @@ string side_sheet_behavior
 string sign_in_to_lifetime
 string signup
 string start
-string startDate
 string status_bar_notification_info_overflow
 string stop
 string switch_role
@@ -4464,6 +4501,8 @@ string title_home
 string title_notifications
 string tooltip_description
 string tooltip_label
+string top_category
+string total_hours_recorded
 string uploadpic
 string username
 string view_tasks
@@ -4927,9 +4966,14 @@ style TextAppearance_AppCompat_Widget_Switch
 style TextAppearance_AppCompat_Widget_TextView_SpinnerItem
 style TextAppearance_Compat_Notification
 style TextAppearance_Compat_Notification_Info
+style TextAppearance_Compat_Notification_Info_Media
 style TextAppearance_Compat_Notification_Line2
+style TextAppearance_Compat_Notification_Line2_Media
+style TextAppearance_Compat_Notification_Media
 style TextAppearance_Compat_Notification_Time
+style TextAppearance_Compat_Notification_Time_Media
 style TextAppearance_Compat_Notification_Title
+style TextAppearance_Compat_Notification_Title_Media
 style TextAppearance_Design_CollapsingToolbar_Expanded
 style TextAppearance_Design_Counter
 style TextAppearance_Design_Counter_Overflow
@@ -5658,6 +5702,7 @@ styleable FragmentContainerView android_name android_tag
 styleable FragmentNavigator android_name
 styleable GradientColor android_startColor android_endColor android_type android_centerX android_centerY android_gradientRadius android_tileMode android_centerColor android_startX android_startY android_endX android_endY
 styleable GradientColorItem android_color android_offset
+styleable GraphViewXML android_title seriesColor seriesData seriesTitle seriesType
 styleable ImageFilterView altSrc blendSrc brightness contrast crossfade imagePanX imagePanY imageRotate imageZoom overlay round roundPercent saturation warmth
 styleable Insets marginLeftSystemWindowInsets marginRightSystemWindowInsets marginTopSystemWindowInsets paddingBottomSystemWindowInsets paddingLeftSystemWindowInsets paddingRightSystemWindowInsets paddingStartSystemWindowInsets paddingTopSystemWindowInsets
 styleable KeyAttribute android_alpha android_transformPivotX android_transformPivotY android_translationX android_translationY android_scaleX android_scaleY android_rotation android_rotationX android_rotationY android_translationZ android_elevation curveFit framePosition motionProgress motionTarget transformPivotTarget transitionEasing transitionPathRotate

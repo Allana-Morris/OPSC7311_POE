@@ -21,8 +21,10 @@
     <string name="add_event">Add Event</string>
     <string name="all_taps">All Taps</string>
     <string name="app_name">OPSC7311 POE</string>
+    <string name="ave_hours_per_day">Average Hours Recorded Per Day: </string>
     <string name="back">←</string>
     <string name="bar">Bar Graph</string>
+    <string name="busiest_week">Busiest Week: </string>
     <string name="calendar">Calendar</string>
     <string name="calendar_">Calendar</string>
     <string name="cat_select">Select Category</string>
@@ -64,6 +66,8 @@
     <string name="invalid_password">Password must be >5 characters</string>
     <string name="invalid_username">Not a valid username</string>
     <string name="login_failed">"Login failed"</string>
+    <string name="most_productive_day">Most Productive Day: </string>
+    <string name="most_time_consuming_task">Most Time Consuming Task: </string>
     <string name="name">Name</string>
     <string name="name_">Name</string>
     <string name="no_account">No account</string>
@@ -102,6 +106,8 @@
     <string name="title_dashboard">Dashboard</string>
     <string name="title_home">Home</string>
     <string name="title_notifications">Notifications</string>
+    <string name="top_category">Top Category: </string>
+    <string name="total_hours_recorded">Total Hours Recorded: </string>
     <string name="uploadpic">Upload New</string>
     <string name="username">Username</string>
     <string name="view_tasks">View Tasks</string>

@@ -129,22 +129,10 @@
                     android:layout_height="match_parent"
                     android:layout_weight="0.25">
 
-                    <TextView
-                        android:id="@+id/tv_Profile"
-                        android:layout_width="83dp"
-                        android:layout_height="21dp"
-                        android:layout_marginBottom="16dp"
-                        android:gravity="center"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintHorizontal_bias="0.523"
-                        app:layout_constraintStart_toStartOf="parent"
-                        tools:text="@string/profile" />
-
                     <ImageButton
                         android:id="@+id/ib_Profile"
-                        android:layout_width="65dp"
-                        android:layout_height="70dp"
+                        android:layout_width="75dp"
+                        android:layout_height="100dp"
                         android:layout_marginTop="4dp"
                         android:background="@color/white"
                         android:scaleType="centerInside"
@@ -162,25 +150,13 @@
                     android:layout_height="match_parent"
                     android:layout_weight="0.25">
 
-                    <TextView
-                        android:id="@+id/tv_Home"
-                        android:layout_width="83dp"
-                        android:layout_height="21dp"
-                        android:layout_marginBottom="16dp"
-                        android:gravity="center"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintHorizontal_bias="0.523"
-                        app:layout_constraintStart_toStartOf="parent"
-                        tools:text="@string/home" />
-
                     <ImageButton
                         android:id="@+id/ib_Home"
-                        android:layout_width="65dp"
-                        android:layout_height="70dp"
+                        android:layout_width="75dp"
+                        android:layout_height="100dp"
                         android:layout_marginTop="4dp"
                         android:background="@color/white"
-                        android:scaleType="centerInside"
+                        android:scaleType="centerCrop"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintHorizontal_bias="0.589"
                         app:layout_constraintStart_toStartOf="parent"
@@ -196,22 +172,10 @@
                     android:layout_height="match_parent"
                     android:layout_weight="0.25">
 
-                    <TextView
-                        android:id="@+id/tv_calendar"
-                        android:layout_width="83dp"
-                        android:layout_height="21dp"
-                        android:layout_marginBottom="16dp"
-                        android:gravity="center"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintHorizontal_bias="0.523"
-                        app:layout_constraintStart_toStartOf="parent"
-                        tools:text="@string/calendar" />
-
                     <ImageButton
                         android:id="@+id/ib_Calendar"
-                        android:layout_width="65dp"
-                        android:layout_height="70dp"
+                        android:layout_width="75dp"
+                        android:layout_height="100dp"
                         android:layout_marginTop="4dp"
                         android:background="@color/white"
                         android:scaleType="centerInside"
@@ -230,22 +194,10 @@
                     android:layout_height="match_parent"
                     android:layout_weight="0.25">
 
-                    <TextView
-                        android:id="@+id/tv_timer"
-                        android:layout_width="83dp"
-                        android:layout_height="21dp"
-                        android:layout_marginBottom="16dp"
-                        android:gravity="center"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintHorizontal_bias="0.523"
-                        app:layout_constraintStart_toStartOf="parent"
-                        tools:text="@string/timer" />
-
                     <ImageButton
                         android:id="@+id/ib_Timer"
-                        android:layout_width="65dp"
-                        android:layout_height="70dp"
+                        android:layout_width="75dp"
+                        android:layout_height="100dp"
                         android:layout_marginTop="4dp"
                         android:background="@color/white"
                         android:scaleType="centerInside"
