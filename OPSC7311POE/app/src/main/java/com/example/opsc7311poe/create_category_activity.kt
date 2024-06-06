@@ -6,11 +6,9 @@ import android.app.TimePickerDialog
 import android.content.Context
 import android.content.Intent
 import android.os.Bundle
+import android.text.Editable
 import android.view.View
-import android.widget.ImageButton
-import android.widget.ImageView
-import android.widget.TextView
-import android.widget.Toast
+import android.widget.*
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -20,7 +18,6 @@ import yuku.ambilwarna.AmbilWarnaDialog
 import yuku.ambilwarna.AmbilWarnaDialog.OnAmbilWarnaListener
 import java.time.LocalTime
 
-
 class create_category : AppCompatActivity() {
     private val vali = validation()
 
@@ -29,6 +26,8 @@ class create_category : AppCompatActivity() {
     private lateinit var ivColourPicker: ImageView
     private lateinit var ivColourPreview: View
     private var catIcon = 0
+    private lateinit var catMinHours: EditText
+    private lateinit var catMaxHours: EditText
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -38,82 +37,55 @@ class create_category : AppCompatActivity() {
         // Initialize views after setContentView()
         ivColourPicker = findViewById(R.id.iv_Pick_Colour)
         ivColourPreview = findViewById(R.id.iv_colourPreview)
+        catMinHours = findViewById(R.id.ett_Min_Goal)
+        catMaxHours = findViewById(R.id.ett_Max_Goal)
 
         val AddCategory = findViewById<TextView>(R.id.tvAddTask)
-        val catMinHours: TextView = findViewById(R.id.ett_Min_Goal)
-        val catMaxHours: TextView = findViewById(R.id.ett_Max_Goal)
         val iconPicker: ImageButton = findViewById(R.id.ib_Icon)
         AddCategory.setOnClickListener {
             val catName: TextView = findViewById(R.id.edtName)
             val catColor = mDefaultColour
 
+            val cateName = catName.text.toString()
+            val minHours = catMinHours.text.toString()
+            val maxHours = catMaxHours.text.toString()
 
-            var cateName = catName.text.toString()
-            var minHours = catMinHours.text.toString()
-            var maxHours = catMaxHours.text.toString()
-            var catMin = vali.parseTimeToHours(LocalTime.parse(minHours + ":00"))
-            var catMax = vali.parseTimeToHours(LocalTime.parse(maxHours + ":00"))
+            if (validateGoals(minHours, maxHours)) {
+                val catMin = vali.parseTimeToHours(LocalTime.parse(minHours + ":00"))
+                val catMax = vali.parseTimeToHours(LocalTime.parse(maxHours + ":00"))
 
-            //validate
+                val cate = Category(cateName, catIcon, catColor, catMin, catMax)
+                SessionUser.currentUser?.categories?.set(cate.name, cate)
 
-
-            val cate = Category(cateName, catIcon, catColor, catMin, catMax)
-            //   val users = User()
-            SessionUser.currentUser?.categories?.set(cate.name, cate)
-            val intent = Intent(this, ViewData::class.java)
-            startActivity(intent)
+                val intent = Intent(this, ViewData::class.java)
+                startActivity(intent)
+            } else {
+                Toast.makeText(this, "Invalid goals. Please ensure the max goal is greater than the min goal.", Toast.LENGTH_SHORT).show()
+            }
         }
 
-        //Icon Picker
+        // Icon Picker
         iconPicker.setOnClickListener {
             val il = CreateIconList()
             il.LoadIcons()
             showIconPickerDialog(il.icons) { selectedIconId ->
                 catIcon = selectedIconId
-
             }
         }
 
         catMinHours.setOnClickListener {
-
-
-            Toast.makeText(this, "it clicked", Toast.LENGTH_SHORT).show()
-            val calendar = java.util.Calendar.getInstance()
-            val hour = calendar.get(java.util.Calendar.HOUR_OF_DAY)
-            val minute = calendar.get(java.util.Calendar.MINUTE)
-
-            val timePickerDialog = TimePickerDialog(
-                this,
-                TimePickerDialog.OnTimeSetListener { _, selectedHour, selectedMinute ->
-                    val selectedTime = LocalTime.of(selectedHour, selectedMinute)
-                    catMinHours.text = selectedTime.toString()
-                },
-                hour,
-                minute,
-                true
-            )
-            timePickerDialog.show()
+            showTimePicker(catMinHours)
         }
+
         catMaxHours.setOnClickListener {
-
-            Toast.makeText(this, "it clicked", Toast.LENGTH_SHORT).show()
-            val calendar = java.util.Calendar.getInstance()
-            val hour = calendar.get(java.util.Calendar.HOUR_OF_DAY)
-            val minute = calendar.get(java.util.Calendar.MINUTE)
-
-            val timePickerDialog = TimePickerDialog(
-                this,
-                TimePickerDialog.OnTimeSetListener { _, selectedHour, selectedMinute ->
-                    val selectedTime = LocalTime.of(selectedHour, selectedMinute)
-                    catMaxHours.text = selectedTime.toString()
-                },
-                hour,
-                minute,
-                true
-            )
-            timePickerDialog.show()
+            showTimePicker(catMaxHours)
         }
 
+        setupNavigationBar()
+        setupColorPicker()
+    }
+
+    private fun setupNavigationBar() {
         val HomeOpenActivity = findViewById<ImageButton>(R.id.ib_Home)
         val ProfileOpenActivity = findViewById<ImageButton>(R.id.ib_Profile)
         val CalendarOpenActivity = findViewById<ImageButton>(R.id.ib_Calendar)
@@ -128,12 +100,7 @@ class create_category : AppCompatActivity() {
             val intent = Intent(this, Profile::class.java)
             startActivity(intent)
         }
-        /*
-                CalendarOpenActivity.setOnClickListener{
-                    val intent3 = Intent(this, TaskCalendar::class.java)
-                    startActivity(intent3)
-                }
-        */
+
         TimerOpenActivity.setOnClickListener {
             val intent4 = Intent(this, Timer::class.java)
             startActivity(intent4)
@@ -144,28 +111,52 @@ class create_category : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-        mDefaultColour = 0
+    }
 
+    private fun setupColorPicker() {
         ivColourPicker.setOnClickListener {
             openColorPickerDialogue()
         }
+    }
 
+    private fun showTimePicker(editText: EditText) {
+        val calendar = java.util.Calendar.getInstance()
+        val hour = calendar.get(java.util.Calendar.HOUR_OF_DAY)
+        val minute = calendar.get(java.util.Calendar.MINUTE)
+
+        val timePickerDialog = TimePickerDialog(
+            this,
+            TimePickerDialog.OnTimeSetListener { _, selectedHour, selectedMinute ->
+                val selectedTime = LocalTime.of(selectedHour, selectedMinute)
+                editText.text = Editable.Factory.getInstance().newEditable(selectedTime.toString())
+            },
+            hour,
+            minute,
+            true
+        )
+        timePickerDialog.show()
+    }
+
+    private fun validateGoals(minHours: String, maxHours: String): Boolean {
+        return try {
+            val minTime = LocalTime.parse(minHours + ":00")
+            val maxTime = LocalTime.parse(maxHours + ":00")
+            minTime.isBefore(maxTime)
+        } catch (e: Exception) {
+            false
+        }
     }
 
     fun openColorPickerDialogue() {
         val colorPickerDialogue = AmbilWarnaDialog(this, mDefaultColour, object :
-            OnAmbilWarnaListener {
-            override fun onCancel(dialog: AmbilWarnaDialog?) {
-            }
-
+            AmbilWarnaDialog.OnAmbilWarnaListener {
+            override fun onCancel(dialog: AmbilWarnaDialog?) {}
             override fun onOk(dialog: AmbilWarnaDialog?, colour: Int) {
                 mDefaultColour = colour
                 ivColourPreview.setBackgroundColor((mDefaultColour))
             }
         })
         colorPickerDialogue.show()
-        Toast.makeText(this, "it clicked", Toast.LENGTH_SHORT).show()
-
     }
 
     fun showIconPickerDialog(iconList: ArrayList<Int>, onIconSelected: (Int) -> Unit) {
@@ -177,9 +168,7 @@ class create_category : AppCompatActivity() {
         context: Context,
         private val iconList: ArrayList<Int>,
         private val onIconSelected: (Int) -> Unit,
-    ) :
-        Dialog(context) {
-
+    ) : Dialog(context) {
         override fun onCreate(savedInstanceState: Bundle?) {
             super.onCreate(savedInstanceState)
             setContentView(R.layout.icon_picker_dialog)
@@ -191,6 +180,4 @@ class create_category : AppCompatActivity() {
             recyclerView.adapter = adapter
         }
     }
-
-
 }

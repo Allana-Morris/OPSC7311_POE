@@ -87,7 +87,7 @@ class ViewGraphTotalHours : AppCompatActivity() {
 
         return TaskRepository.tasks.filter { task ->
             task.taskRecords.any { record ->
-                !record.recDate.before(start) && !record.recDate.after(end)
+                !record.RecDate.before(start) && !record.RecDate.after(end)
             }
         }
     }
