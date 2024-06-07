@@ -68,9 +68,13 @@ class MonthlySummary : AppCompatActivity() {
 
         //Variable for each Button on Navbar™
         bottomNav = findViewById(R.id.bottomNav) as BottomNavigationView
-        for (i in 0 until bottomNav.menu.size()) {
-            bottomNav.menu.getItem(i).isChecked = false
-        }
+        // Clear selection by setting invalid item ID
+        bottomNav.menu.setGroupCheckable(0, true, false) // Enable manual selection
+        bottomNav.menu.findItem(R.id.home).isChecked = false
+        bottomNav.menu.findItem(R.id.profile).isChecked = false
+        bottomNav.menu.findItem(R.id.calendar).isChecked = false
+        bottomNav.menu.findItem(R.id.timer).isChecked = false
+        bottomNav.menu.setGroupCheckable(0, true, true) // Re-enable auto selection
         bottomNav.setOnItemSelectedListener {
             when (it.itemId) {
                 R.id.home -> {
