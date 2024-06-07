@@ -19,7 +19,7 @@ import yuku.ambilwarna.AmbilWarnaDialog
 import yuku.ambilwarna.AmbilWarnaDialog.OnAmbilWarnaListener
 import java.time.LocalTime
 
-class create_category_activity : AppCompatActivity() {
+class create_category_activity : AppCompatActivity(), IconPickerDialogFragment.OnIconSelectedListener {
     private val vali = validation()
 
     @SuppressLint("MissingInflatedId")
@@ -50,25 +50,19 @@ class create_category_activity : AppCompatActivity() {
                     startActivity(Intent(this, MainActivity::class.java))
                     true
                 }
-
                 R.id.profile -> {
                     startActivity(Intent(this, Profile_activity::class.java))
                     true
                 }
-
                 R.id.calendar -> {
                     startActivity(Intent(this, TaskCalendar_activity::class.java))
                     true
                 }
-
                 R.id.timer -> {
                     startActivity(Intent(this, Timer_activity::class.java))
                     true
                 }
-
-                else -> {
-                    false
-                }
+                else -> false
             }
         }
 
@@ -102,7 +96,6 @@ class create_category_activity : AppCompatActivity() {
             }
         }
 
-
         catMinHours.setOnClickListener {
             showTimePicker(catMinHours)
         }
@@ -118,10 +111,32 @@ class create_category_activity : AppCompatActivity() {
         }
 
         setupColorPicker()
+
+        iconPicker.setOnClickListener {
+            val icons = listOf(
+                R.drawable.bag,
+                R.drawable.bed,
+                R.drawable.work,
+                R.drawable.laptop,
+                R.drawable.shopping,
+                R.drawable.leaf,
+                R.drawable.sport,
+                R.drawable.tools
+
+                // Add your icon resource IDs here
+            )
+            val dialog = IconPickerDialogFragment.newInstance(icons, this)
+            dialog.show(supportFragmentManager, "IconPickerDialogFragment")
+        }
+    }
+
+    override fun onIconSelected(iconResId: Int) {
+        catIcon = iconResId
+        val iconPicker: ImageButton = findViewById(R.id.ib_Icon)
+        iconPicker.setImageResource(catIcon)
     }
 
     private fun setupColorPicker() {
-
         ivColourPicker.setOnClickListener {
             openColorPickerDialogue()
         }
@@ -134,7 +149,7 @@ class create_category_activity : AppCompatActivity() {
 
         val timePickerDialog = TimePickerDialog(
             this,
-            TimePickerDialog.OnTimeSetListener { _, selectedHour, selectedMinute ->
+            { _, selectedHour, selectedMinute ->
                 val selectedTime = LocalTime.of(selectedHour, selectedMinute)
                 editText.text = Editable.Factory.getInstance().newEditable(selectedTime.toString())
             },
@@ -161,10 +176,9 @@ class create_category_activity : AppCompatActivity() {
             override fun onCancel(dialog: AmbilWarnaDialog?) {}
             override fun onOk(dialog: AmbilWarnaDialog?, colour: Int) {
                 mDefaultColour = colour
-                ivColourPreview.setBackgroundColor((mDefaultColour))
+                ivColourPreview.setBackgroundColor(mDefaultColour)
             }
         })
         colorPickerDialogue.show()
     }
-
 }

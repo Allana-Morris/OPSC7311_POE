@@ -102,5 +102,6 @@
     <string name="profile_fragment">Profile Fragment</string>
     <string name="calendar_fragment">Calendar Fragment</string>
     <string name="home_fragment">Home fragment</string>
+    <string name="choose_an_icon">Choose an Icon</string>
 
 </resources>

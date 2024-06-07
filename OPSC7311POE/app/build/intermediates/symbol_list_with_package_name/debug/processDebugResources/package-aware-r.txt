@@ -3091,7 +3091,6 @@ drawable bed
 drawable blueskyback
 drawable border
 drawable bordertwo
-drawable bottom_btn1
 drawable bottom_btn3
 drawable box_outline
 drawable btn_checkbox_checked_mtrl
@@ -3102,7 +3101,6 @@ drawable btn_radio_off_mtrl
 drawable btn_radio_off_to_on_mtrl_animation
 drawable btn_radio_on_mtrl
 drawable btn_radio_on_to_off_mtrl_animation
-drawable calendar
 drawable categoryicon
 drawable circular_vignette_bottom
 drawable circular_vignette_top
@@ -3134,8 +3132,6 @@ drawable file
 drawable google
 drawable googleg_disabled_color_18
 drawable googleg_standard_color_18
-drawable homebtn
-drawable house
 drawable ic_arrow_back_black_24
 drawable ic_baseline_info_24
 drawable ic_baseline_person_outline_24
@@ -3224,7 +3220,6 @@ drawable mtrl_switch_track
 drawable mtrl_switch_track_decoration
 drawable mtrl_tabs_default_indicator
 drawable navigation_empty_icon
-drawable navprofile
 drawable notification_action_background
 drawable notification_bg
 drawable notification_bg_low
@@ -3544,6 +3539,8 @@ id honorRequest
 id horizontal_only
 id ib_Icon
 id icon
+id iconImageView
+id iconRecyclerView
 id icon_group
 id icon_only
 id idGraphView
@@ -4114,8 +4111,11 @@ layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
+layout dialog_icon_picker
+layout fragment_icon_picker
 layout ime_base_split_test_activity
 layout ime_secondary_split_test_activity
+layout item_icon
 layout item_select
 layout m3_alert_dialog
 layout m3_alert_dialog_actions
@@ -4258,6 +4258,7 @@ string character_counter_overflowed_content_description
 string character_counter_pattern
 string choose
 string chooseW
+string choose_an_icon
 string clear_text_end_icon_content_description
 string close_drawer
 string close_sheet

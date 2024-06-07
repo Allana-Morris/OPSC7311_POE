@@ -37,15 +37,11 @@ drawable bed
 drawable blueskyback
 drawable border
 drawable bordertwo
-drawable bottom_btn1
 drawable bottom_btn3
 drawable box_outline
-drawable calendar
 drawable categoryicon
 drawable file
 drawable google
-drawable homebtn
-drawable house
 drawable ic_baseline_info_24
 drawable ic_baseline_person_outline_24
 drawable ic_dashboard_black_24dp
@@ -57,7 +53,6 @@ drawable icon
 drawable laptop
 drawable leaf
 drawable logo
-drawable navprofile
 drawable pencilbtn
 drawable piechart
 drawable profilebtn
@@ -121,6 +116,8 @@ id ett_Max_Goal
 id ett_Min_Goal
 id home
 id ib_Icon
+id iconImageView
+id iconRecyclerView
 id idGraphView
 id imageView
 id imageView22
@@ -158,6 +155,7 @@ id textView5
 id textView99
 id textview1
 id timer
+id title
 id tlGraphData
 id trAveHours
 id trBlank
@@ -260,6 +258,9 @@ layout activity_view_graph_total_hours
 layout activity_view_graphs
 layout activity_view_tasks
 layout activity_view_time_sheet_entry
+layout dialog_icon_picker
+layout fragment_icon_picker
+layout item_icon
 layout item_select
 layout task_listing
 menu nav_menu
@@ -285,6 +286,7 @@ string cat_view
 string category
 string choose
 string chooseW
+string choose_an_icon
 string color
 string colourpreview
 string continue_with_google

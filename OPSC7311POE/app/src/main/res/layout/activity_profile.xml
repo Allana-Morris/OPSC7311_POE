@@ -22,8 +22,8 @@
 
     <View
         android:id="@+id/empyViews"
-        android:layout_width="422dp"
-        android:layout_height="579dp"
+        android:layout_width="415dp"
+        android:layout_height="601dp"
         android:background="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -245,8 +245,9 @@
         android:layout_height="90dp"
         android:layout_alignParentBottom="true"
         android:background="@color/white"
-        app:itemIconTint="@color/nav_item_color_state"
         android:scrollIndicators="left"
+        app:itemIconTint="@color/nav_item_color_state"
+        app:itemTextColor="#000000"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
