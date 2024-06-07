@@ -1,12 +1,12 @@
 <component name="libraryTable">
   <library name="Gradle: androidx.customview:customview:1.1.0@aar" external-system-id="GRADLE">
     <CLASSES>
-      <root url="file://$USER_HOME$/Downloads/OPSC7311POE/OPSC7311POE/gradle/wrapper/dists/gradle-8.7-all/caches/transforms-4/0349be6178eee9c20e20510875601411/transformed/customview-1.1.0/AndroidManifest.xml" />
-      <root url="jar://$USER_HOME$/Downloads/OPSC7311POE/OPSC7311POE/gradle/wrapper/dists/gradle-8.7-all/caches/transforms-4/0349be6178eee9c20e20510875601411/transformed/customview-1.1.0/jars/classes.jar!/" />
+      <root url="jar://$PROJECT_DIR$/OPSC7311POE/.gradle/8.7/caches/transforms-4/fef4dea0900e5255b78f44e2d2dd3c30/transformed/customview-1.1.0/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/OPSC7311POE/.gradle/8.7/caches/transforms-4/fef4dea0900e5255b78f44e2d2dd3c30/transformed/customview-1.1.0/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
-      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/androidx.customview/customview/1.1.0/be631aafb1eb3f64c9cc57083a21a3321cf2e2e1/customview-1.1.0-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/OPSC7311POE/.gradle/8.7/caches/modules-2/files-2.1/androidx.customview/customview/1.1.0/be631aafb1eb3f64c9cc57083a21a3321cf2e2e1/customview-1.1.0-sources.jar!/" />
     </SOURCES>
   </library>
 </component>

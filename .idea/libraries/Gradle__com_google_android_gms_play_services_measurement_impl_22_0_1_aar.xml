@@ -1,11 +1,11 @@
 <component name="libraryTable">
   <library name="Gradle: com.google.android.gms:play-services-measurement-impl:22.0.1@aar" external-system-id="GRADLE">
     <CLASSES>
-      <root url="file://$USER_HOME$/Downloads/OPSC7311POE/OPSC7311POE/gradle/wrapper/dists/gradle-8.7-all/caches/transforms-4/5b636ee1b8529b27a2a07252f9b56268/transformed/jetified-play-services-measurement-impl-22.0.1/AndroidManifest.xml" />
-      <root url="jar://$USER_HOME$/Downloads/OPSC7311POE/OPSC7311POE/gradle/wrapper/dists/gradle-8.7-all/caches/transforms-4/5b636ee1b8529b27a2a07252f9b56268/transformed/jetified-play-services-measurement-impl-22.0.1/jars/classes.jar!/" />
+      <root url="jar://$PROJECT_DIR$/OPSC7311POE/.gradle/8.7/caches/transforms-4/12c6139a5259492e68594a2d74c688b1/transformed/jetified-play-services-measurement-impl-22.0.1/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/OPSC7311POE/.gradle/8.7/caches/transforms-4/12c6139a5259492e68594a2d74c688b1/transformed/jetified-play-services-measurement-impl-22.0.1/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC>
-      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.android.gms/play-services-measurement-impl/22.0.1/6634a8023b8e844446da647fa1072f30b16aa4e4/play-services-measurement-impl-22.0.1-javadoc.jar!/" />
+      <root url="jar://$PROJECT_DIR$/OPSC7311POE/.gradle/8.7/caches/modules-2/files-2.1/com.google.android.gms/play-services-measurement-impl/22.0.1/6634a8023b8e844446da647fa1072f30b16aa4e4/play-services-measurement-impl-22.0.1-javadoc.jar!/" />
     </JAVADOC>
     <SOURCES />
   </library>

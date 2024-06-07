@@ -41,9 +41,14 @@
     <output-test url="file://$MODULE_DIR$/../../../OPSC7311POE/app/build/intermediates/javac/debugUnitTest/compileDebugUnitTestJavaWithJavac/classes" />
     <exclude-output />
     <content url="file://$MODULE_DIR$/../../../OPSC7311POE/app/build/generated/ap_generated_sources/debugUnitTest/out" />
+    <content url="file://$MODULE_DIR$/../../../OPSC7311POE/app/build/generated/ap_generated_sources/debugUnitTest/out" />
     <content url="file://$MODULE_DIR$/../../../OPSC7311POE/app/src/test">
       <sourceFolder url="file://$MODULE_DIR$/../../../OPSC7311POE/app/src/test/java" isTestSource="true" />
     </content>
+    <content url="file://$MODULE_DIR$/../../../OPSC7311POE/app/src/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../../OPSC7311POE/app/src/test/java" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../../OPSC7311POE/app/src/testDebug" />
     <content url="file://$MODULE_DIR$/../../../OPSC7311POE/app/src/testDebug" />
     <orderEntry type="jdk" jdkName="Android API 34, extension level 7 Platform" jdkType="Android SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
@@ -144,6 +149,12 @@
     <orderEntry type="library" scope="TEST" name="Gradle: com.google.firebase:firebase-database-ktx:21.0.0@aar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: com.google.firebase:firebase-database:21.0.0@aar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: com.github.yukuku:ambilwarna:2.0.1@aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.jjoe64:graphview:4.2.2@aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: androidx.legacy:legacy-support-v4:1.0.0@aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: androidx.media:media:1.0.0@aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: androidx.legacy:legacy-support-core-ui:1.0.0@aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: androidx.swiperefreshlayout:swiperefreshlayout:1.0.0@aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: androidx.asynclayoutinflater:asynclayoutinflater:1.0.0@aar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: androidx.annotation:annotation-jvm:1.7.1" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib:1.9.0" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib-common:1.9.0" level="project" />

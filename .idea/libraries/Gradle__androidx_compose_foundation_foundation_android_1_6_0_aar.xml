@@ -1,13 +1,13 @@
 <component name="libraryTable">
   <library name="Gradle: androidx.compose.foundation:foundation-android:1.6.0@aar" external-system-id="GRADLE">
     <CLASSES>
-      <root url="file://$USER_HOME$/Downloads/OPSC7311POE/OPSC7311POE/gradle/wrapper/dists/gradle-8.7-all/caches/transforms-4/c45a69120c4cc6bd39b2da83f96f77dc/transformed/jetified-foundation-release/res" />
-      <root url="jar://$USER_HOME$/Downloads/OPSC7311POE/OPSC7311POE/gradle/wrapper/dists/gradle-8.7-all/caches/transforms-4/c45a69120c4cc6bd39b2da83f96f77dc/transformed/jetified-foundation-release/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/Downloads/OPSC7311POE/OPSC7311POE/gradle/wrapper/dists/gradle-8.7-all/caches/transforms-4/c45a69120c4cc6bd39b2da83f96f77dc/transformed/jetified-foundation-release/AndroidManifest.xml" />
+      <root url="jar://$PROJECT_DIR$/OPSC7311POE/.gradle/8.7/caches/transforms-4/cac7a057c5fd1210732f1ce91747dfce/transformed/jetified-foundation-release/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/OPSC7311POE/.gradle/8.7/caches/transforms-4/cac7a057c5fd1210732f1ce91747dfce/transformed/jetified-foundation-release/res" />
+      <root url="file://$PROJECT_DIR$/OPSC7311POE/.gradle/8.7/caches/transforms-4/cac7a057c5fd1210732f1ce91747dfce/transformed/jetified-foundation-release/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
-      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/androidx.compose.foundation/foundation-android/1.6.0/c8706c9d00a21244d09330c5a71c291bd7decf9/foundation-android-1.6.0-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/OPSC7311POE/.gradle/8.7/caches/modules-2/files-2.1/androidx.compose.foundation/foundation-android/1.6.0/c8706c9d00a21244d09330c5a71c291bd7decf9/foundation-android-1.6.0-sources.jar!/" />
     </SOURCES>
   </library>
 </component>

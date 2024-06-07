@@ -1,13 +1,13 @@
 <component name="libraryTable">
   <library name="Gradle: androidx.lifecycle:lifecycle-runtime-ktx:2.7.0@aar" external-system-id="GRADLE">
     <CLASSES>
-      <root url="file://$USER_HOME$/Downloads/OPSC7311POE/OPSC7311POE/gradle/wrapper/dists/gradle-8.7-all/caches/transforms-4/5f933dae36f4b435bfab24faf25dbf2f/transformed/jetified-lifecycle-runtime-ktx-2.7.0/res" />
-      <root url="file://$USER_HOME$/Downloads/OPSC7311POE/OPSC7311POE/gradle/wrapper/dists/gradle-8.7-all/caches/transforms-4/5f933dae36f4b435bfab24faf25dbf2f/transformed/jetified-lifecycle-runtime-ktx-2.7.0/AndroidManifest.xml" />
-      <root url="jar://$USER_HOME$/Downloads/OPSC7311POE/OPSC7311POE/gradle/wrapper/dists/gradle-8.7-all/caches/transforms-4/5f933dae36f4b435bfab24faf25dbf2f/transformed/jetified-lifecycle-runtime-ktx-2.7.0/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/OPSC7311POE/.gradle/8.7/caches/transforms-4/0b023c5d360db9326fe401fb52c586d1/transformed/jetified-lifecycle-runtime-ktx-2.7.0/AndroidManifest.xml" />
+      <root url="jar://$PROJECT_DIR$/OPSC7311POE/.gradle/8.7/caches/transforms-4/0b023c5d360db9326fe401fb52c586d1/transformed/jetified-lifecycle-runtime-ktx-2.7.0/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/OPSC7311POE/.gradle/8.7/caches/transforms-4/0b023c5d360db9326fe401fb52c586d1/transformed/jetified-lifecycle-runtime-ktx-2.7.0/res" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
-      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/androidx.lifecycle/lifecycle-runtime-ktx/2.7.0/7b0a2de553c0359c8890577f015303a04219b6c5/lifecycle-runtime-ktx-2.7.0-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/OPSC7311POE/.gradle/8.7/caches/modules-2/files-2.1/androidx.lifecycle/lifecycle-runtime-ktx/2.7.0/7b0a2de553c0359c8890577f015303a04219b6c5/lifecycle-runtime-ktx-2.7.0-sources.jar!/" />
     </SOURCES>
   </library>
 </component>

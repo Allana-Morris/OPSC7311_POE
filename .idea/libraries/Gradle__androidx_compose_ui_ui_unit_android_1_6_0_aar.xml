@@ -1,13 +1,13 @@
 <component name="libraryTable">
   <library name="Gradle: androidx.compose.ui:ui-unit-android:1.6.0@aar" external-system-id="GRADLE">
     <CLASSES>
-      <root url="file://$USER_HOME$/Downloads/OPSC7311POE/OPSC7311POE/gradle/wrapper/dists/gradle-8.7-all/caches/transforms-4/159d132dda221ba397b3c5c1b740b1ac/transformed/jetified-ui-unit-release/res" />
-      <root url="file://$USER_HOME$/Downloads/OPSC7311POE/OPSC7311POE/gradle/wrapper/dists/gradle-8.7-all/caches/transforms-4/159d132dda221ba397b3c5c1b740b1ac/transformed/jetified-ui-unit-release/AndroidManifest.xml" />
-      <root url="jar://$USER_HOME$/Downloads/OPSC7311POE/OPSC7311POE/gradle/wrapper/dists/gradle-8.7-all/caches/transforms-4/159d132dda221ba397b3c5c1b740b1ac/transformed/jetified-ui-unit-release/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/OPSC7311POE/.gradle/8.7/caches/transforms-4/bd6aeabf422ce2abdc7da7334b154518/transformed/jetified-ui-unit-release/res" />
+      <root url="file://$PROJECT_DIR$/OPSC7311POE/.gradle/8.7/caches/transforms-4/bd6aeabf422ce2abdc7da7334b154518/transformed/jetified-ui-unit-release/AndroidManifest.xml" />
+      <root url="jar://$PROJECT_DIR$/OPSC7311POE/.gradle/8.7/caches/transforms-4/bd6aeabf422ce2abdc7da7334b154518/transformed/jetified-ui-unit-release/jars/classes.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
-      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/androidx.compose.ui/ui-unit-android/1.6.0/b9b3e53b3ee319c34765d6cf8cebbaed01e25af0/ui-unit-android-1.6.0-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/OPSC7311POE/.gradle/8.7/caches/modules-2/files-2.1/androidx.compose.ui/ui-unit-android/1.6.0/b9b3e53b3ee319c34765d6cf8cebbaed01e25af0/ui-unit-android-1.6.0-sources.jar!/" />
     </SOURCES>
   </library>
 </component>

@@ -1,13 +1,13 @@
 <component name="libraryTable">
   <library name="Gradle: androidx.navigation:navigation-common:2.7.7@aar" external-system-id="GRADLE">
     <CLASSES>
-      <root url="jar://$USER_HOME$/Downloads/OPSC7311POE/OPSC7311POE/gradle/wrapper/dists/gradle-8.7-all/caches/transforms-4/58944d51d7a28e8a9f0065c05f425842/transformed/navigation-common-2.7.7/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/Downloads/OPSC7311POE/OPSC7311POE/gradle/wrapper/dists/gradle-8.7-all/caches/transforms-4/58944d51d7a28e8a9f0065c05f425842/transformed/navigation-common-2.7.7/res" />
-      <root url="file://$USER_HOME$/Downloads/OPSC7311POE/OPSC7311POE/gradle/wrapper/dists/gradle-8.7-all/caches/transforms-4/58944d51d7a28e8a9f0065c05f425842/transformed/navigation-common-2.7.7/AndroidManifest.xml" />
+      <root url="file://$PROJECT_DIR$/OPSC7311POE/.gradle/8.7/caches/transforms-4/0b02ab3178053ecf4a36efdd765dd190/transformed/navigation-common-2.7.7/AndroidManifest.xml" />
+      <root url="jar://$PROJECT_DIR$/OPSC7311POE/.gradle/8.7/caches/transforms-4/0b02ab3178053ecf4a36efdd765dd190/transformed/navigation-common-2.7.7/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/OPSC7311POE/.gradle/8.7/caches/transforms-4/0b02ab3178053ecf4a36efdd765dd190/transformed/navigation-common-2.7.7/res" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
-      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/androidx.navigation/navigation-common/2.7.7/1d8bd650624447bc2b94e9d73d4b2aa584745fa7/navigation-common-2.7.7-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/OPSC7311POE/.gradle/8.7/caches/modules-2/files-2.1/androidx.navigation/navigation-common/2.7.7/1d8bd650624447bc2b94e9d73d4b2aa584745fa7/navigation-common-2.7.7-sources.jar!/" />
     </SOURCES>
   </library>
 </component>

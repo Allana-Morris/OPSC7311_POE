@@ -1,13 +1,13 @@
 <component name="libraryTable">
   <library name="Gradle: androidx.compose.animation:animation-android:1.6.0@aar" external-system-id="GRADLE">
     <CLASSES>
-      <root url="file://$USER_HOME$/Downloads/OPSC7311POE/OPSC7311POE/gradle/wrapper/dists/gradle-8.7-all/caches/transforms-4/dfe0e37e50b5e66579c342c3aee0b681/transformed/jetified-animation-release/res" />
-      <root url="file://$USER_HOME$/Downloads/OPSC7311POE/OPSC7311POE/gradle/wrapper/dists/gradle-8.7-all/caches/transforms-4/dfe0e37e50b5e66579c342c3aee0b681/transformed/jetified-animation-release/AndroidManifest.xml" />
-      <root url="jar://$USER_HOME$/Downloads/OPSC7311POE/OPSC7311POE/gradle/wrapper/dists/gradle-8.7-all/caches/transforms-4/dfe0e37e50b5e66579c342c3aee0b681/transformed/jetified-animation-release/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/OPSC7311POE/.gradle/8.7/caches/transforms-4/e06b53f818202ef624b43be2ba2a076b/transformed/jetified-animation-release/res" />
+      <root url="jar://$PROJECT_DIR$/OPSC7311POE/.gradle/8.7/caches/transforms-4/e06b53f818202ef624b43be2ba2a076b/transformed/jetified-animation-release/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/OPSC7311POE/.gradle/8.7/caches/transforms-4/e06b53f818202ef624b43be2ba2a076b/transformed/jetified-animation-release/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
-      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/androidx.compose.animation/animation-android/1.6.0/58504392487cb6c8f669e1ac71d949b36ef084d1/animation-android-1.6.0-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/OPSC7311POE/.gradle/8.7/caches/modules-2/files-2.1/androidx.compose.animation/animation-android/1.6.0/58504392487cb6c8f669e1ac71d949b36ef084d1/animation-android-1.6.0-sources.jar!/" />
     </SOURCES>
   </library>
 </component>
