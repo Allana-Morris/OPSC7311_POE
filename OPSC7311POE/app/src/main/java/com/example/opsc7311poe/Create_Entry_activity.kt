@@ -30,7 +30,7 @@ import java.util.Calendar
 import java.util.Date
 import java.util.Locale
 
-class CreateEntry : AppCompatActivity() {
+class Create_Entry_activity : AppCompatActivity() {
 
     val categoryList = mutableListOf<String>()
     val taskList = mutableListOf<String>()
@@ -56,7 +56,7 @@ class CreateEntry : AppCompatActivity() {
                 val imageBitmap = data?.extras?.get("data") as Bitmap?
                 uploaded.setImageBitmap(imageBitmap)
             } else {
-                Toast.makeText(this@CreateEntry, "Failed to capture image", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this@Create_Entry_activity, "Failed to capture image", Toast.LENGTH_SHORT).show()
             }
         }
 
@@ -79,14 +79,14 @@ class CreateEntry : AppCompatActivity() {
                     val selectedCategoryName = categoryList[position]
                     val tasks = SessionUser.currentUser?.categories?.get(selectedCategoryName)?.tasks?.keys?.toList() ?: emptyList()
 
-                    spinTask.adapter = ArrayAdapter(this@CreateEntry, android.R.layout.simple_spinner_item, tasks)
+                    spinTask.adapter = ArrayAdapter(this@Create_Entry_activity, android.R.layout.simple_spinner_item, tasks)
                     spinTask.isEnabled = tasks.isNotEmpty()
                     btnSave.isEnabled = tasks.isNotEmpty()
                 }
 
                 override fun onNothingSelected(parent: AdapterView<*>?) {
                     spinTask.isEnabled = false
-                    spinTask.adapter = ArrayAdapter<String>(this@CreateEntry, android.R.layout.simple_spinner_item, emptyList())
+                    spinTask.adapter = ArrayAdapter<String>(this@Create_Entry_activity, android.R.layout.simple_spinner_item, emptyList())
                     btnSave.isEnabled = false
                 }
             }

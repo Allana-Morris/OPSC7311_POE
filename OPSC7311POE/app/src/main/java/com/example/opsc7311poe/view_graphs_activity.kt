@@ -12,8 +12,9 @@ import com.github.mikephil.charting.charts.BarChart
 import com.github.mikephil.charting.data.BarData
 import com.github.mikephil.charting.data.BarDataSet
 import com.github.mikephil.charting.data.BarEntry
+import com.google.android.material.bottomnavigation.BottomNavigationView
 
-class view_graphs : AppCompatActivity() {
+class view_graphs_activity : AppCompatActivity() {
 
     // on below line we are creating
     // variables for our bar chart
@@ -30,39 +31,41 @@ class view_graphs : AppCompatActivity() {
     // on below line we are creating array list for bar data
     lateinit var barEntriesList: ArrayList<BarEntry>
 
+    lateinit var bottomNav: BottomNavigationView
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_view_graphs)
 
         //Variables for each button on Navbar™
-        val HomeOpenActivity = findViewById<ImageButton>(R.id.ib_Home)
-        val ProfileOpenActivity = findViewById<ImageButton>(R.id.ib_Profile)
-        val CalendarOpenActivity = findViewById<ImageButton>(R.id.ib_Calendar)
-        val TimerOpenActivity = findViewById<ImageButton>(R.id.ib_Timer)
+        bottomNav = findViewById(R.id.bottomNav) as BottomNavigationView
+        bottomNav.setOnItemSelectedListener {
+            when (it.itemId) {
+                R.id.home -> {
+                    startActivity(Intent(this, MainActivity::class.java))
+                    true
+                }
 
-        //Intent to open Home Page
-        HomeOpenActivity.setOnClickListener {
-            val intent2 = Intent(this, MainActivity::class.java)
-            startActivity(intent2)
-        }
+                R.id.profile -> {
+                    startActivity(Intent(this, Profile_activity::class.java))
+                    true
+                }
 
-        //Intent to open Profile
-        ProfileOpenActivity.setOnClickListener {
-            val intent = Intent(this, Profile::class.java)
-            startActivity(intent)
-        }
+                R.id.calendar -> {
+                    startActivity(Intent(this, TaskCalendar_activity::class.java))
+                    true
+                }
 
-        //Intent to open Calendar
-        CalendarOpenActivity.setOnClickListener {
-            val intent3 = Intent(this, TaskCalendar::class.java)
-            startActivity(intent3)
-        }
+                R.id.timer -> {
+                    startActivity(Intent(this, Timer_activity::class.java))
+                    true
+                }
 
-        //Intent to Open Timer
-        TimerOpenActivity.setOnClickListener {
-            val intent4 = Intent(this, Timer::class.java)
-            startActivity(intent4)
+                else -> {
+                    false
+                }
+            }
         }
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->

@@ -23,7 +23,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\allan\\Downloads\\OPSC7311POE\\OPSC7311POE\\gradle\\wrapper\\dists\\gradle-8.7-all\\caches\\transforms-4\\f6cb003041f37da0d1b633ce687d4dcd\\transformed\\play-services-base-18.0.1\\res\\values-bg\\values.xml",
+                    "source": "C:\\Users\\allan\\Downloads\\OPSC7311POE\\OPSC7311POE\\gradle\\wrapper\\dists\\gradle-8.7-all\\caches\\transforms-4\\4c1548ffc3912a0147e7119375f57204\\transformed\\jetified-play-services-base-18.0.1\\res\\values-bg\\values.xml",
                     "from": {
                         "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20",
                         "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
@@ -37,23 +37,6 @@
                         "startOffsets": "4791,4900,5065,5200,5311,5478,5613,5732,5979,6148,6260,6435,6573,6730,6896,6966,7025",
                         "endColumns": "108,164,134,110,166,134,118,108,168,111,174,137,156,165,69,58,72",
                         "endOffsets": "4895,5060,5195,5306,5473,5608,5727,5836,6143,6255,6430,6568,6725,6891,6961,7020,7093"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\allan\\Downloads\\OPSC7311POE\\OPSC7311POE\\gradle\\wrapper\\dists\\gradle-8.7-all\\caches\\transforms-4\\86779013e4f3d24105ae0b599ca14c36\\transformed\\foundation-release\\res\\values-bg\\values-bg.xml",
-                    "from": {
-                        "startLines": "2,3",
-                        "startColumns": "4,4",
-                        "startOffsets": "55,143",
-                        "endColumns": "87,94",
-                        "endOffsets": "138,233"
-                    },
-                    "to": {
-                        "startLines": "147,148",
-                        "startColumns": "4,4",
-                        "startOffsets": "13654,13742",
-                        "endColumns": "87,94",
-                        "endOffsets": "13737,13832"
                     }
                 },
                 {
@@ -71,6 +54,23 @@
                         "startOffsets": "12321,12434",
                         "endColumns": "112,123",
                         "endOffsets": "12429,12553"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\allan\\Downloads\\OPSC7311POE\\OPSC7311POE\\gradle\\wrapper\\dists\\gradle-8.7-all\\caches\\transforms-4\\843ecd755bb69a94f90f233f799b7396\\transformed\\jetified-play-services-basement-18.3.0\\res\\values-bg\\values.xml",
+                    "from": {
+                        "startLines": "4",
+                        "startColumns": "0",
+                        "startOffsets": "195",
+                        "endColumns": "133",
+                        "endOffsets": "328"
+                    },
+                    "to": {
+                        "startLines": "58",
+                        "startColumns": "4",
+                        "startOffsets": "5841",
+                        "endColumns": "137",
+                        "endOffsets": "5974"
                     }
                 },
                 {
@@ -108,7 +108,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\allan\\Downloads\\OPSC7311POE\\OPSC7311POE\\gradle\\wrapper\\dists\\gradle-8.7-all\\caches\\transforms-4\\de464e98bb5b45f5045297e87086b6f9\\transformed\\ui-release\\res\\values-bg\\values-bg.xml",
+                    "source": "C:\\Users\\allan\\Downloads\\OPSC7311POE\\OPSC7311POE\\gradle\\wrapper\\dists\\gradle-8.7-all\\caches\\transforms-4\\920ba2bb5018d78f5b115ac041f74cfc\\transformed\\jetified-ui-release\\res\\values-bg\\values-bg.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -125,20 +125,20 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\allan\\Downloads\\OPSC7311POE\\OPSC7311POE\\gradle\\wrapper\\dists\\gradle-8.7-all\\caches\\transforms-4\\5b2d3f0aa8018664e5acc30fb5e69d69\\transformed\\play-services-basement-18.3.0\\res\\values-bg\\values.xml",
+                    "source": "C:\\Users\\allan\\Downloads\\OPSC7311POE\\OPSC7311POE\\gradle\\wrapper\\dists\\gradle-8.7-all\\caches\\transforms-4\\c45a69120c4cc6bd39b2da83f96f77dc\\transformed\\jetified-foundation-release\\res\\values-bg\\values-bg.xml",
                     "from": {
-                        "startLines": "4",
-                        "startColumns": "0",
-                        "startOffsets": "195",
-                        "endColumns": "133",
-                        "endOffsets": "328"
+                        "startLines": "2,3",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,143",
+                        "endColumns": "87,94",
+                        "endOffsets": "138,233"
                     },
                     "to": {
-                        "startLines": "58",
-                        "startColumns": "4",
-                        "startOffsets": "5841",
-                        "endColumns": "137",
-                        "endOffsets": "5974"
+                        "startLines": "147,148",
+                        "startColumns": "4,4",
+                        "startOffsets": "13654,13742",
+                        "endColumns": "87,94",
+                        "endOffsets": "13737,13832"
                     }
                 }
             ]

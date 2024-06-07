@@ -9,40 +9,44 @@ import android.widget.LinearLayout
 import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import com.google.android.material.bottomnavigation.BottomNavigationView
 
-class ViewData : AppCompatActivity() {
+class ViewTasks_activity : AppCompatActivity() {
+
+    lateinit var bottomNav: BottomNavigationView
+
     @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_view_tasks)
-        //Variables for each button on Navbar™
-        val HomeOpenActivity = findViewById<ImageButton>(R.id.ib_Home)
-        val ProfileOpenActivity = findViewById<ImageButton>(R.id.ib_Profile)
-        val CalendarOpenActivity = findViewById<ImageButton>(R.id.ib_Calendar)
-        val TimerOpenActivity = findViewById<ImageButton>(R.id.ib_Timer)
 
-        //Intent to open Home Page
-        HomeOpenActivity.setOnClickListener {
-            val intent2 = Intent(this, MainActivity::class.java)
-            startActivity(intent2)
-        }
+        bottomNav = findViewById(R.id.bottomNav) as BottomNavigationView
+        bottomNav.setOnItemSelectedListener {
+            when (it.itemId) {
+                R.id.home -> {
+                    startActivity(Intent(this, MainActivity::class.java))
+                    true
+                }
 
-        //Intent to open Profile
-        ProfileOpenActivity.setOnClickListener {
-            val intent = Intent(this, Profile::class.java)
-            startActivity(intent)
-        }
-        /*
-                //Intent to open Calendar
-               CalendarOpenActivity.setOnClickListener{
-                   val intent3 = Intent(this, TaskCalendar::class.java)
-                   startActivity(intent3)
-               }
-        */
-        //Intent to Open Timer
-        TimerOpenActivity.setOnClickListener {
-            val intent4 = Intent(this, Timer::class.java)
-            startActivity(intent4)
+                R.id.profile -> {
+                    startActivity(Intent(this, Profile_activity::class.java))
+                    true
+                }
+
+                R.id.calendar -> {
+                    startActivity(Intent(this, TaskCalendar_activity::class.java))
+                    true
+                }
+
+                R.id.timer -> {
+                    startActivity(Intent(this, Timer_activity::class.java))
+                    true
+                }
+
+                else -> {
+                    false
+                }
+            }
         }
 
         //Declaration of Create Task Button
@@ -50,7 +54,7 @@ class ViewData : AppCompatActivity() {
 
         //  Set OnClickListener for the Task Create button
         btnCreate.setOnClickListener {
-            val intent = Intent(this, InsertData::class.java)
+            val intent = Intent(this, InsertData_activity::class.java)
             startActivity(intent)
         }
 
@@ -59,7 +63,7 @@ class ViewData : AppCompatActivity() {
 
         // Set onClickListener for the Category Create button
         btnCat.setOnClickListener {
-            val intent2 = Intent(this, create_category::class.java)
+            val intent2 = Intent(this, create_category_activity::class.java)
             startActivity(intent2)
         }
 

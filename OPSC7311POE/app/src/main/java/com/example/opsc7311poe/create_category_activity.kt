@@ -18,7 +18,7 @@ import yuku.ambilwarna.AmbilWarnaDialog
 import yuku.ambilwarna.AmbilWarnaDialog.OnAmbilWarnaListener
 import java.time.LocalTime
 
-class create_category : AppCompatActivity() {
+class create_category_activity : AppCompatActivity() {
     private val vali = validation()
 
     @SuppressLint("MissingInflatedId")
@@ -57,7 +57,7 @@ class create_category : AppCompatActivity() {
                 val cate = Category(cateName, catIcon, catColor, catMin, catMax)
                 SessionUser.currentUser?.categories?.set(cate.name, cate)
 
-                val intent = Intent(this, ViewData::class.java)
+                val intent = Intent(this, ViewTasks_activity::class.java)
                 startActivity(intent)
             } else {
                 Toast.makeText(this, "Invalid goals. Please ensure the max goal is greater than the min goal.", Toast.LENGTH_SHORT).show()
@@ -73,39 +73,17 @@ class create_category : AppCompatActivity() {
             showTimePicker(catMaxHours)
         }
 
-        setupNavigationBar()
-        setupColorPicker()
-    }
-
-    private fun setupNavigationBar() {
-        val HomeOpenActivity = findViewById<ImageButton>(R.id.ib_Home)
-        val ProfileOpenActivity = findViewById<ImageButton>(R.id.ib_Profile)
-        val CalendarOpenActivity = findViewById<ImageButton>(R.id.ib_Calendar)
-        val TimerOpenActivity = findViewById<ImageButton>(R.id.ib_Timer)
-
-        HomeOpenActivity.setOnClickListener {
-            val intent2 = Intent(this, MainActivity::class.java)
-            startActivity(intent2)
-        }
-
-        ProfileOpenActivity.setOnClickListener {
-            val intent = Intent(this, Profile::class.java)
-            startActivity(intent)
-        }
-
-        TimerOpenActivity.setOnClickListener {
-            val intent4 = Intent(this, Timer::class.java)
-            startActivity(intent4)
-        }
-
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+
+        setupColorPicker()
     }
 
     private fun setupColorPicker() {
+
         ivColourPicker.setOnClickListener {
             openColorPickerDialogue()
         }

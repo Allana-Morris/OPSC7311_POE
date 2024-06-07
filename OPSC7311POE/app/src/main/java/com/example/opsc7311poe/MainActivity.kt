@@ -27,27 +27,26 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         //Variables for each button on Navbar™
 
-        loadFragment(HomeFragment())
         bottomNav = findViewById(R.id.bottomNav) as BottomNavigationView
         bottomNav.setOnItemSelectedListener {
             when (it.itemId) {
                 R.id.home -> {
-                    loadFragment(HomeFragment())
+                    startActivity(Intent(this, MainActivity::class.java))
                     true
                 }
 
                 R.id.profile -> {
-                    loadFragment(ProfileFragment())
+                    startActivity(Intent(this, Profile_activity::class.java))
                     true
                 }
 
                 R.id.calendar -> {
-                    loadFragment(CalendarFragment())
+                    startActivity(Intent(this, TaskCalendar_activity::class.java))
                     true
                 }
 
                 R.id.timer -> {
-                    loadFragment(TimerFragment())
+                    startActivity(Intent(this, Timer_activity::class.java))
                     true
                 }
 
@@ -68,39 +67,39 @@ class MainActivity : AppCompatActivity() {
         //onClickListener to open InsertData page
         activityCreateTask.setOnClickListener {
 
-            val Taskintent = Intent(this, InsertData::class.java)
+            val Taskintent = Intent(this, InsertData_activity::class.java)
             startActivity(Taskintent)
         }
 
         //onClickListener to open Create Category page
         activityCreateCategory.setOnClickListener{
 
-            val Catintent = Intent(this, create_category::class.java)
+            val Catintent = Intent(this, create_category_activity::class.java)
             startActivity(Catintent)
         }
 
         //onClickListener to open Enter Timesheet page
         activityCreateEntry.setOnClickListener{
 
-            val Entryintent = Intent(this, CreateEntry::class.java)
+            val Entryintent = Intent(this, Create_Entry_activity::class.java)
             startActivity(Entryintent)
         }
 
         activityViewTask.setOnClickListener{
 
-            val ViewTaskintent = Intent(this, ViewData::class.java)
+            val ViewTaskintent = Intent(this, ViewTasks_activity::class.java)
             startActivity(ViewTaskintent)
         }
 
         activityViewEntries.setOnClickListener{
 
-            val ViewEntriesintent = Intent(this, ViewTimeSheetEntry::class.java)
+            val ViewEntriesintent = Intent(this, ViewTimeSheetEntry_activity::class.java)
             startActivity(ViewEntriesintent)
         }
 
         activityCatHours.setOnClickListener{
 
-            val CatViewintent = Intent(this, cat_total::class.java)
+            val CatViewintent = Intent(this, cat_total_activity::class.java)
             startActivity(CatViewintent)
         }
 
@@ -116,9 +115,4 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-        private fun loadFragment(fragment: Fragment) {
-            val transaction = supportFragmentManager.beginTransaction()
-            transaction.replace(R.id.container, fragment)
-            transaction.commit()
-        }
     }

@@ -8,7 +8,7 @@ import android.widget.EditText
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 
-class Register : AppCompatActivity() {
+class Register_activity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_register)
@@ -84,7 +84,7 @@ class Register : AppCompatActivity() {
         //Button that logs user in
         loginButton.setOnClickListener {
             // Create an Intent to navigate to ActivityLogin
-            val intent = Intent(this, Login::class.java)
+            val intent = Intent(this, Login_activity::class.java)
             startActivity(intent)
         }
     }

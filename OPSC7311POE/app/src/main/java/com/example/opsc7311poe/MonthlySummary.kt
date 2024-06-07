@@ -7,6 +7,7 @@ import android.widget.ImageButton
 import androidx.appcompat.app.AppCompatActivity
 import com.example.opsc7311poe.R.layout
 import com.example.opsc7311poe.databinding.ActivityMonthlySummaryBinding
+import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.jjoe64.graphview.GraphView
 import com.jjoe64.graphview.series.DataPoint
 import com.jjoe64.graphview.series.LineGraphSeries
@@ -16,12 +17,12 @@ class MonthlySummary : AppCompatActivity() {
     lateinit var lineGraphView: GraphView
     private var _binding : ActivityMonthlySummaryBinding?=null
     private val binding get() = _binding!!
+    lateinit var bottomNav: BottomNavigationView
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(layout.activity_monthly_summary)
         _binding = ActivityMonthlySummaryBinding.inflate(layoutInflater)
         binding.apply {
-
         }
 
         lineGraphView = this.findViewById<GraphView>(R.id.idGraphView)
@@ -66,33 +67,33 @@ class MonthlySummary : AppCompatActivity() {
         lineGraphView.addSeries(series)
 
         //Variable for each Button on Navbar™
-        val HomeOpenActivity = findViewById<ImageButton>(R.id.ib_Home)
-        val ProfileOpenActivity = findViewById<ImageButton>(R.id.ib_Profile)
-        val CalendarOpenActivity = findViewById<ImageButton>(R.id.ib_Calendar)
-        val TimerOpenActivity = findViewById<ImageButton>(R.id.ib_Timer)
+        bottomNav = findViewById(R.id.bottomNav) as BottomNavigationView
+        bottomNav.setOnItemSelectedListener {
+            when (it.itemId) {
+                R.id.home -> {
+                    startActivity(Intent(this, MainActivity::class.java))
+                    true
+                }
 
-        //Intent for Home Button to open Activity Main
-        HomeOpenActivity.setOnClickListener{
-            val intent2 = Intent(this, MainActivity::class.java)
-            startActivity(intent2)
-        }
+                R.id.profile -> {
+                    startActivity(Intent(this, Profile_activity::class.java))
+                    true
+                }
 
-        //Intent for Home Button to open Profile
-        ProfileOpenActivity.setOnClickListener{
-            val intent = Intent(this, Profile::class.java)
-            startActivity(intent)
-        }
-        /*
-        //Intent for Home Button to open Calendar
-        CalendarOpenActivity.setOnClickListener{
-            val intent3 = Intent(this, TaskCalendar::class.java)
-            startActivity(intent3)
-        }
-        */
-        //Intent for Home Button to open Timer
-        TimerOpenActivity.setOnClickListener{
-            val intent4 = Intent(this, Timer::class.java)
-            startActivity(intent4)
+                R.id.calendar -> {
+                    startActivity(Intent(this, TaskCalendar_activity::class.java))
+                    true
+                }
+
+                R.id.timer -> {
+                    startActivity(Intent(this, Timer_activity::class.java))
+                    true
+                }
+
+                else -> {
+                    false
+                }
+            }
         }
 
 

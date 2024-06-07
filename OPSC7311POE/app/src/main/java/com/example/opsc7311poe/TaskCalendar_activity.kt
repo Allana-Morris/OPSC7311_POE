@@ -9,15 +9,17 @@ import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import com.google.android.material.bottomnavigation.BottomNavigationView
 import java.time.LocalDate
 
-class TaskCalendar : AppCompatActivity() {
+class TaskCalendar_activity : AppCompatActivity() {
     lateinit var set_event: TextView
     lateinit var DateToday: TextView
     lateinit var backButton: TextView
     lateinit var forwardButton: TextView
     var datenow = LocalDate.now()
     var onScreenDate = datenow
+    lateinit var bottomNav: BottomNavigationView
 
 
     @SuppressLint("MissingInflatedId")
@@ -37,7 +39,7 @@ class TaskCalendar : AppCompatActivity() {
 
         //Opens Create Task page when clicked
         set_event.setOnClickListener {
-            val intent = Intent(this, InsertData::class.java)
+            val intent = Intent(this, InsertData_activity::class.java)
             startActivity(intent)
         }
 
@@ -55,34 +57,33 @@ class TaskCalendar : AppCompatActivity() {
             datenow = onScreenDate
         }
 
-        //Variables for each button on Navbar™
-        val HomeOpenActivity = findViewById<ImageButton>(R.id.ib_Home)
-        val ProfileOpenActivity = findViewById<ImageButton>(R.id.ib_Profile)
-        val CalendarOpenActivity = findViewById<ImageButton>(R.id.ib_Calendar)
-        val TimerOpenActivity = findViewById<ImageButton>(R.id.ib_Timer)
+        bottomNav = findViewById(R.id.bottomNav) as BottomNavigationView
+        bottomNav.setOnItemSelectedListener {
+            when (it.itemId) {
+                R.id.home -> {
+                    startActivity(Intent(this, MainActivity::class.java))
+                    true
+                }
 
-        //Intent to open Home Page
-        HomeOpenActivity.setOnClickListener {
-            val intent2 = Intent(this, MainActivity::class.java)
-            startActivity(intent2)
-        }
+                R.id.profile -> {
+                    startActivity(Intent(this, Profile_activity::class.java))
+                    true
+                }
 
-        //Intent to open Profile
-        ProfileOpenActivity.setOnClickListener {
-            val intent1 = Intent(this, Profile::class.java)
-            startActivity(intent1)
-        }
+                R.id.calendar -> {
+                    startActivity(Intent(this, TaskCalendar_activity::class.java))
+                    true
+                }
 
-        //Intent to open Calendar
-        CalendarOpenActivity.setOnClickListener {
-            val intent3 = Intent(this, TaskCalendar::class.java)
-            startActivity(intent3)
-        }
+                R.id.timer -> {
+                    startActivity(Intent(this, Timer_activity::class.java))
+                    true
+                }
 
-        //Intent to Open Timer
-        TimerOpenActivity.setOnClickListener {
-            val intent4 = Intent(this, Timer::class.java)
-            startActivity(intent4)
+                else -> {
+                    false
+                }
+            }
         }
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
