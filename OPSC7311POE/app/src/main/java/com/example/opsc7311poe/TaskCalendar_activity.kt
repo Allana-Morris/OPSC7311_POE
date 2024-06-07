@@ -58,6 +58,7 @@ class TaskCalendar_activity : AppCompatActivity() {
         }
 
         bottomNav = findViewById(R.id.bottomNav) as BottomNavigationView
+        bottomNav.selectedItemId = R.id.calendar
         bottomNav.setOnItemSelectedListener {
             when (it.itemId) {
                 R.id.home -> {

@@ -58,6 +58,7 @@ class Timer_activity : AppCompatActivity() {
 
 
         bottomNav = findViewById(R.id.bottomNav) as BottomNavigationView
+        bottomNav.selectedItemId = R.id.timer
         bottomNav.setOnItemSelectedListener {
             when (it.itemId) {
                 R.id.home -> {

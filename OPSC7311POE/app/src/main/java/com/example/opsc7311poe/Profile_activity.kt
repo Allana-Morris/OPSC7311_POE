@@ -16,6 +16,7 @@ class Profile_activity : AppCompatActivity() {
         setContentView(R.layout.activity_profile)
 
         bottomNav = findViewById(R.id.bottomNav) as BottomNavigationView
+        bottomNav.selectedItemId = R.id.profile
         bottomNav.setOnItemSelectedListener {
             when (it.itemId) {
                 R.id.home -> {

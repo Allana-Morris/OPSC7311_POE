@@ -68,6 +68,9 @@ class MonthlySummary : AppCompatActivity() {
 
         //Variable for each Button on Navbar™
         bottomNav = findViewById(R.id.bottomNav) as BottomNavigationView
+        for (i in 0 until bottomNav.menu.size()) {
+            bottomNav.menu.getItem(i).isChecked = false
+        }
         bottomNav.setOnItemSelectedListener {
             when (it.itemId) {
                 R.id.home -> {

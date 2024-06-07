@@ -40,6 +40,9 @@ class view_graphs_activity : AppCompatActivity() {
 
         //Variables for each button on Navbar™
         bottomNav = findViewById(R.id.bottomNav) as BottomNavigationView
+        for (i in 0 until bottomNav.menu.size()) {
+            bottomNav.menu.getItem(i).isChecked = false
+        }
         bottomNav.setOnItemSelectedListener {
             when (it.itemId) {
                 R.id.home -> {

@@ -20,6 +20,7 @@ import androidx.activity.enableEdgeToEdge
 import androidx.activity.result.ActivityResultLauncher
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.AppCompatActivity
+import com.google.android.material.bottomnavigation.BottomNavigationView
 import java.sql.Time
 import java.text.SimpleDateFormat
 import java.time.Duration
@@ -35,11 +36,44 @@ class Create_Entry_activity : AppCompatActivity() {
     val categoryList = mutableListOf<String>()
     val taskList = mutableListOf<String>()
     private lateinit var resultLauncher: ActivityResultLauncher<Intent>
+    lateinit var bottomNav: BottomNavigationView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_enter_time_sheet)
+
+        bottomNav = findViewById(R.id.bottomNav) as BottomNavigationView
+        for (i in 0 until bottomNav.menu.size()) {
+            bottomNav.menu.getItem(i).isChecked = false
+        }
+        bottomNav.setOnItemSelectedListener {
+            when (it.itemId) {
+                R.id.home -> {
+                    startActivity(Intent(this, MainActivity::class.java))
+                    true
+                }
+
+                R.id.profile -> {
+                    startActivity(Intent(this, Profile_activity::class.java))
+                    true
+                }
+
+                R.id.calendar -> {
+                    startActivity(Intent(this, TaskCalendar_activity::class.java))
+                    true
+                }
+
+                R.id.timer -> {
+                    startActivity(Intent(this, Timer_activity::class.java))
+                    true
+                }
+
+                else -> {
+                    false
+                }
+            }
+        }
 
         val spinCat: Spinner = findViewById(R.id.spinEntryCat)
         val spinTask: Spinner = findViewById(R.id.spinEntryTask)

@@ -28,6 +28,7 @@ class MainActivity : AppCompatActivity() {
         //Variables for each button on Navbar™
 
         bottomNav = findViewById(R.id.bottomNav) as BottomNavigationView
+        bottomNav.selectedItemId = R.id.home
         bottomNav.setOnItemSelectedListener {
             when (it.itemId) {
                 R.id.home -> {

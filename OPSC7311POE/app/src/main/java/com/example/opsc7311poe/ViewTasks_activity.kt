@@ -21,6 +21,9 @@ class ViewTasks_activity : AppCompatActivity() {
         setContentView(R.layout.activity_view_tasks)
 
         bottomNav = findViewById(R.id.bottomNav) as BottomNavigationView
+        for (i in 0 until bottomNav.menu.size()) {
+            bottomNav.menu.getItem(i).isChecked = false
+        }
         bottomNav.setOnItemSelectedListener {
             when (it.itemId) {
                 R.id.home -> {
