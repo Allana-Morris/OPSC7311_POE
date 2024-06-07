@@ -27,6 +27,7 @@
     <string name="busiest_week">Busiest Week: </string>
     <string name="calendar">Calendar</string>
     <string name="calendar_">Calendar</string>
+    <string name="calendar_fragment">Calendar Fragment</string>
     <string name="cat_select">Select Category</string>
     <string name="cat_view">View Total Hours For your Categories</string>
     <string name="category">Category</string>
@@ -61,6 +62,7 @@
     <string name="google_storage_bucket" translatable="false">atomic-affinity-421915.appspot.com</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="home">Home</string>
+    <string name="home_fragment">Home fragment</string>
     <string name="housecleaning">housecleaning</string>
     <string name="icon">Icon</string>
     <string name="invalid_password">Password must be >5 characters</string>
@@ -76,6 +78,7 @@
     <string name="pie">Pie Chart</string>
     <string name="profile">Profile</string>
     <string name="profilePho">Upload a Profile Photo</string>
+    <string name="profile_fragment">Profile Fragment</string>
     <string name="progress">View your progress</string>
     <string name="project_id" translatable="false">atomic-affinity-421915</string>
     <string name="prompt_email">Email</string>
@@ -101,6 +104,7 @@
     <string name="tasks">Tasks</string>
     <string name="time_dash">-</string>
     <string name="timer">Timer</string>
+    <string name="timer_fragment">Timer Fragment</string>
     <string name="title_activity_calendar2">Calendar2</string>
     <string name="title_activity_login">LoginActivity</string>
     <string name="title_dashboard">Dashboard</string>

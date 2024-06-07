@@ -5,18 +5,20 @@ import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
-import android.widget.ImageButton
 import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import androidx.fragment.app.Fragment
+import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.google.firebase.Firebase
 import com.google.firebase.firestore.firestore
 
 class MainActivity : AppCompatActivity() {
     //Below is Firebase Variable
     val AppDataBase = Firebase.firestore
+    lateinit var bottomNav: BottomNavigationView
 
     @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -24,34 +26,37 @@ class MainActivity : AppCompatActivity() {
         enableEdgeToEdge()
         setContentView(R.layout.activity_main)
         //Variables for each button on Navbar™
-        val HomeOpenActivity = findViewById<ImageButton>(R.id.ib_Home)
-        val ProfileOpenActivity = findViewById<ImageButton>(R.id.ib_Profile)
-        val CalendarOpenActivity = findViewById<ImageButton>(R.id.ib_Calendar)
-        val TimerOpenActivity = findViewById<ImageButton>(R.id.ib_Timer)
 
-        //Intent to open Home Page
-        HomeOpenActivity.setOnClickListener {
-            val intent2 = Intent(this, MainActivity::class.java)
-            startActivity(intent2)
+        loadFragment(HomeFragment())
+        bottomNav = findViewById(R.id.bottomNav) as BottomNavigationView
+        bottomNav.setOnItemSelectedListener {
+            when (it.itemId) {
+                R.id.home -> {
+                    loadFragment(HomeFragment())
+                    true
+                }
+
+                R.id.profile -> {
+                    loadFragment(ProfileFragment())
+                    true
+                }
+
+                R.id.calendar -> {
+                    loadFragment(CalendarFragment())
+                    true
+                }
+
+                R.id.timer -> {
+                    loadFragment(TimerFragment())
+                    true
+                }
+
+                else -> {
+                    false
+                }
+            }
         }
 
-        //Intent to open Profile
-        ProfileOpenActivity.setOnClickListener {
-            val intent = Intent(this, Profile::class.java)
-            startActivity(intent)
-        }
-
-        //Intent to open Calendar
-        CalendarOpenActivity.setOnClickListener {
-            val intent3 = Intent(this, TaskCalendar::class.java)
-            startActivity(intent3)
-        }
-
-        //Intent to Open Timer
-        TimerOpenActivity.setOnClickListener {
-            val intent4 = Intent(this, Timer::class.java)
-            startActivity(intent4)
-        }
 
         val activityCreateTask = findViewById<Button>(R.id.btnTask)
         val activityCreateCategory = findViewById<Button>(R.id.btnCategory)
@@ -62,39 +67,46 @@ class MainActivity : AppCompatActivity() {
 
         //onClickListener to open InsertData page
         activityCreateTask.setOnClickListener {
+
             val Taskintent = Intent(this, InsertData::class.java)
             startActivity(Taskintent)
         }
 
         //onClickListener to open Create Category page
-        activityCreateCategory.setOnClickListener {
+        activityCreateCategory.setOnClickListener{
+
             val Catintent = Intent(this, create_category::class.java)
             startActivity(Catintent)
         }
 
         //onClickListener to open Enter Timesheet page
-        activityCreateEntry.setOnClickListener {
+        activityCreateEntry.setOnClickListener{
+
             val Entryintent = Intent(this, CreateEntry::class.java)
             startActivity(Entryintent)
         }
 
-        activityViewTask.setOnClickListener {
+        activityViewTask.setOnClickListener{
+
             val ViewTaskintent = Intent(this, ViewData::class.java)
             startActivity(ViewTaskintent)
         }
 
-        activityViewEntries.setOnClickListener {
+        activityViewEntries.setOnClickListener{
+
             val ViewEntriesintent = Intent(this, ViewTimeSheetEntry::class.java)
             startActivity(ViewEntriesintent)
         }
 
-        activityCatHours.setOnClickListener {
+        activityCatHours.setOnClickListener{
+
             val CatViewintent = Intent(this, cat_total::class.java)
             startActivity(CatViewintent)
         }
 
         //Code used to Welcome User once logged in
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
+        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main))
+        { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             val headerText: TextView = findViewById(R.id.tvBlackBox)
@@ -104,4 +116,9 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-}
+        private fun loadFragment(fragment: Fragment) {
+            val transaction = supportFragmentManager.beginTransaction()
+            transaction.replace(R.id.container, fragment)
+            transaction.commit()
+        }
+    }

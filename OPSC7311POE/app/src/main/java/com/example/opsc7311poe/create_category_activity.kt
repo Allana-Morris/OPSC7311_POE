@@ -64,14 +64,6 @@ class create_category : AppCompatActivity() {
             }
         }
 
-        // Icon Picker
-        iconPicker.setOnClickListener {
-            val il = CreateIconList()
-            il.LoadIcons()
-            showIconPickerDialog(il.icons) { selectedIconId ->
-                catIcon = selectedIconId
-            }
-        }
 
         catMinHours.setOnClickListener {
             showTimePicker(catMinHours)
@@ -159,25 +151,4 @@ class create_category : AppCompatActivity() {
         colorPickerDialogue.show()
     }
 
-    fun showIconPickerDialog(iconList: ArrayList<Int>, onIconSelected: (Int) -> Unit) {
-        val dialog = IconPickerDialog(this, iconList, onIconSelected)
-        dialog.show()
-    }
-
-    private class IconPickerDialog(
-        context: Context,
-        private val iconList: ArrayList<Int>,
-        private val onIconSelected: (Int) -> Unit,
-    ) : Dialog(context) {
-        override fun onCreate(savedInstanceState: Bundle?) {
-            super.onCreate(savedInstanceState)
-            setContentView(R.layout.icon_picker_dialog)
-            val recyclerView: RecyclerView = findViewById(R.id.iconRecyclerView)
-            val adapter = IconAdapter(iconList) { iconId ->
-                onIconSelected(iconId)
-                dismiss()
-            }
-            recyclerView.adapter = adapter
-        }
-    }
 }

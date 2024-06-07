@@ -3078,7 +3078,10 @@ drawable baseline_cleaning_services_24
 drawable baseline_color_lens_24
 drawable baseline_discount_24
 drawable baseline_fitness_center_24
+drawable baseline_home_24
 drawable baseline_ios_share_24
+drawable baseline_person_24
+drawable baseline_timer_24
 drawable bed
 drawable blueskyback
 drawable border
@@ -3359,6 +3362,7 @@ id auto
 id autoComplete
 id autoCompleteToEnd
 id autoCompleteToStart
+id barChart
 id barrier
 id baseline
 id beginOnFirstDraw
@@ -3366,6 +3370,7 @@ id beginning
 id bestChoice
 id blocking
 id bottom
+id bottomNav
 id bottomNavigationView
 id bounce
 id bounceBoth
@@ -3387,8 +3392,10 @@ id btnViewEntries
 id btnViewTasks
 id btn_Google_signin
 id btn_Login
+id button
 id buttonPanel
 id cache_measures
+id calendar
 id callMeasure
 id cancel_action
 id cancel_button
@@ -3403,6 +3410,7 @@ id chain2
 id chains
 id checkbox
 id checked
+id chooseWeek
 id chooseWeek1
 id chronometer
 id circle_center
@@ -3419,6 +3427,7 @@ id compress
 id confirm_button
 id constraint
 id constraintLayout
+id constraintLayout2
 id consume_window_insets_tag
 id container
 id content
@@ -3471,6 +3480,8 @@ id easeInOut
 id easeOut
 id east
 id edge
+id editTextDate
+id editTextDate2
 id edit_query
 id edit_text_id
 id edtClock
@@ -3539,8 +3550,6 @@ id ib_Profile1
 id ib_Timer
 id ib_Timer1
 id icon
-id iconImageView
-id iconRecyclerView
 id icon_group
 id icon_only
 id idGraphView
@@ -3549,7 +3558,6 @@ id ignore
 id ignoreRequest
 id image
 id imageView
-id imageView1
 id imageView22
 id imgTaskIcon
 id img_photoUp
@@ -3716,6 +3724,7 @@ id pooling_container_listener_holder_tag
 id position
 id postLayout
 id pressed
+id profile
 id progress_circular
 id progress_horizontal
 id radio
@@ -3825,6 +3834,8 @@ id textSpacerNoTitle
 id textStart
 id textTop
 id textView
+id textView2
+id textView3
 id textView32
 id textView34
 id textView5
@@ -3840,6 +3851,7 @@ id textinput_prefix_text
 id textinput_suffix_text
 id textview1
 id time
+id timer
 id title
 id titleDividerNoCustom
 id title_template
@@ -3932,7 +3944,6 @@ id tv_calendar
 id tv_calendar1
 id tv_timer
 id tv_timer1
-id tvgenerate1
 id tvuserProfile
 id txtEmail
 id txtFullName
@@ -4091,10 +4102,9 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
-layout activity_cat_hours
 layout activity_create_category
 layout activity_enter_time_sheet
-layout activity_insert_data
+layout activity_insert_task
 layout activity_login
 layout activity_main
 layout activity_monthly_summary
@@ -4103,6 +4113,8 @@ layout activity_register
 layout activity_starting_page
 layout activity_task_calendar
 layout activity_timer
+layout activity_total_cat_hours
+layout activity_view_graph_total_hours
 layout activity_view_graphs
 layout activity_view_tasks
 layout activity_view_time_sheet_entry
@@ -4124,8 +4136,10 @@ layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
-layout icon_item
-layout icon_picker_dialog
+layout fragment_calendar
+layout fragment_home
+layout fragment_profile
+layout fragment_timer
 layout ime_base_split_test_activity
 layout ime_secondary_split_test_activity
 layout item_select
@@ -4200,6 +4214,7 @@ layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material
 layout support_simple_spinner_dropdown_item
 layout task_listing
+menu nav_menu
 mipmap ic_launcher
 mipmap ic_launcher_round
 plurals mtrl_badge_content_description
@@ -4253,6 +4268,7 @@ string bottomsheet_drag_handle_content_description
 string busiest_week
 string calendar
 string calendar_
+string calendar_fragment
 string call_notification_answer_action
 string call_notification_answer_video_action
 string call_notification_decline_action
@@ -4309,6 +4325,7 @@ string dest_title
 string diagram
 string dropdown_menu
 string editUser
+string endDate
 string enter_hours_spent
 string enter_time
 string error_a11y_label
@@ -4327,6 +4344,7 @@ string google_storage_bucket
 string hello_blank_fragment
 string hide_bottom_view_on_scroll_behavior
 string home
+string home_fragment
 string housecleaning
 string icon
 string icon_content_description
@@ -4457,6 +4475,7 @@ string path_password_strike_through
 string pie
 string profile
 string profilePho
+string profile_fragment
 string progress
 string project_id
 string prompt_email
@@ -4481,6 +4500,7 @@ string side_sheet_behavior
 string sign_in_to_lifetime
 string signup
 string start
+string startDate
 string status_bar_notification_info_overflow
 string stop
 string switch_role
@@ -4494,6 +4514,7 @@ string tasks
 string template_percent
 string time_dash
 string timer
+string timer_fragment
 string title_activity_calendar2
 string title_activity_login
 string title_dashboard

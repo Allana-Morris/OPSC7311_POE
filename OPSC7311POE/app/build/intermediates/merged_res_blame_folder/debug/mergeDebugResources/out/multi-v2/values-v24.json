@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.opsc7311poe.app-mergeDebugResources-72:/values-v24/values-v24.xml",
+            "outputFile": "com.example.opsc7311poe.app-mergeDebugResources-3:/values-v24/values-v24.xml",
             "map": [
                 {
                     "source": "C:\\Users\\allan\\Downloads\\OPSC7311POE\\OPSC7311POE\\gradle\\wrapper\\dists\\gradle-8.7-all\\caches\\transforms-4\\f89b4bef4b8a6d3c6469543273a44678\\transformed\\material-1.11.0\\res\\values-v24\\values-v24.xml",

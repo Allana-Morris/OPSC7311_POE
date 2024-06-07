@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\allan\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:2:1-54:12
-INJECTED from C:\Users\allan\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:2:1-54:12
-INJECTED from C:\Users\allan\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:2:1-54:12
-INJECTED from C:\Users\allan\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:2:1-54:12
+ADDED from C:\Users\allan\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:2:1-56:12
+INJECTED from C:\Users\allan\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:2:1-56:12
+INJECTED from C:\Users\allan\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:2:1-56:12
+INJECTED from C:\Users\allan\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:2:1-56:12
 MERGED from [androidx.databinding:viewbinding:8.4.0] C:\Users\allan\Downloads\OPSC7311POE\OPSC7311POE\gradle\wrapper\dists\gradle-8.7-all\caches\transforms-4\a8a25f4b176b33f3ee5f09d8cf766d5a\transformed\viewbinding-8.4.0\AndroidManifest.xml:2:1-7:12
 MERGED from [com.google.firebase:firebase-firestore-ktx:25.0.0] C:\Users\allan\Downloads\OPSC7311POE\OPSC7311POE\gradle\wrapper\dists\gradle-8.7-all\caches\transforms-4\2be505309abc887d4e54a0bc360a5e50\transformed\firebase-firestore-ktx-25.0.0\AndroidManifest.xml:2:1-18:12
 MERGED from [androidx.navigation:navigation-common:2.7.7] C:\Users\allan\Downloads\OPSC7311POE\OPSC7311POE\gradle\wrapper\dists\gradle-8.7-all\caches\transforms-4\58944d51d7a28e8a9f0065c05f425842\transformed\navigation-common-2.7.7\AndroidManifest.xml:17:1-22:12
@@ -133,8 +133,8 @@ MERGED from [android.arch.core:runtime:1.1.0] C:\Users\allan\Downloads\OPSC7311P
 	xmlns:android
 		ADDED from C:\Users\allan\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:2:11-69
 application
-ADDED from C:\Users\allan\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:5:5-52:19
-INJECTED from C:\Users\allan\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:5:5-52:19
+ADDED from C:\Users\allan\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:5:5-54:19
+INJECTED from C:\Users\allan\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:5:5-54:19
 MERGED from [com.google.firebase:firebase-firestore-ktx:25.0.0] C:\Users\allan\Downloads\OPSC7311POE\OPSC7311POE\gradle\wrapper\dists\gradle-8.7-all\caches\transforms-4\2be505309abc887d4e54a0bc360a5e50\transformed\firebase-firestore-ktx-25.0.0\AndroidManifest.xml:8:5-16:19
 MERGED from [com.google.firebase:firebase-firestore-ktx:25.0.0] C:\Users\allan\Downloads\OPSC7311POE\OPSC7311POE\gradle\wrapper\dists\gradle-8.7-all\caches\transforms-4\2be505309abc887d4e54a0bc360a5e50\transformed\firebase-firestore-ktx-25.0.0\AndroidManifest.xml:8:5-16:19
 MERGED from [com.google.android.material:material:1.11.0] C:\Users\allan\Downloads\OPSC7311POE\OPSC7311POE\gradle\wrapper\dists\gradle-8.7-all\caches\transforms-4\f89b4bef4b8a6d3c6469543273a44678\transformed\material-1.11.0\AndroidManifest.xml:22:5-20
@@ -217,88 +217,94 @@ MERGED from [com.jjoe64:graphview:4.2.2] C:\Users\allan\Downloads\OPSC7311POE\OP
 		ADDED from C:\Users\allan\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:13:9-49
 	android:dataExtractionRules
 		ADDED from C:\Users\allan\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:7:9-65
-activity#com.example.opsc7311poe.TaskCalendar
+activity#com.example.opsc7311poe.ViewGraphTotalHours
 ADDED from C:\Users\allan\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:15:9-17:40
 	android:exported
 		ADDED from C:\Users\allan\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:17:13-37
 	android:name
-		ADDED from C:\Users\allan\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:16:13-41
-activity#com.example.opsc7311poe.CreateEntry
+		ADDED from C:\Users\allan\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:16:13-48
+activity#com.example.opsc7311poe.TaskCalendar
 ADDED from C:\Users\allan\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:18:9-20:40
 	android:exported
 		ADDED from C:\Users\allan\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:20:13-37
 	android:name
-		ADDED from C:\Users\allan\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:19:13-40
-activity#com.example.opsc7311poe.create_category
+		ADDED from C:\Users\allan\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:19:13-41
+activity#com.example.opsc7311poe.CreateEntry
 ADDED from C:\Users\allan\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:21:9-23:40
 	android:exported
 		ADDED from C:\Users\allan\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:23:13-37
 	android:name
-		ADDED from C:\Users\allan\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:22:13-44
-activity#com.example.opsc7311poe.ViewData
+		ADDED from C:\Users\allan\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:22:13-40
+activity#com.example.opsc7311poe.create_category
 ADDED from C:\Users\allan\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:24:9-26:40
 	android:exported
 		ADDED from C:\Users\allan\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:26:13-37
 	android:name
-		ADDED from C:\Users\allan\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:25:13-37
-activity#com.example.opsc7311poe.cat_total
+		ADDED from C:\Users\allan\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:25:13-44
+activity#com.example.opsc7311poe.ViewData
 ADDED from C:\Users\allan\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:27:9-29:40
 	android:exported
 		ADDED from C:\Users\allan\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:29:13-37
 	android:name
-		ADDED from C:\Users\allan\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:28:13-38
-activity#com.example.opsc7311poe.view_graphs
+		ADDED from C:\Users\allan\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:28:13-37
+activity#com.example.opsc7311poe.cat_total
 ADDED from C:\Users\allan\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:30:9-32:40
 	android:exported
 		ADDED from C:\Users\allan\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:32:13-37
 	android:name
-		ADDED from C:\Users\allan\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:31:13-40
-activity#com.example.opsc7311poe.Timer
+		ADDED from C:\Users\allan\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:31:13-38
+activity#com.example.opsc7311poe.view_graphs
 ADDED from C:\Users\allan\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:33:9-35:40
 	android:exported
 		ADDED from C:\Users\allan\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:35:13-37
 	android:name
-		ADDED from C:\Users\allan\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:34:13-34
-activity#com.example.opsc7311poe.StartingPage
-ADDED from C:\Users\allan\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:36:9-44:20
+		ADDED from C:\Users\allan\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:34:13-40
+activity#com.example.opsc7311poe.Timer
+ADDED from C:\Users\allan\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:36:9-38:40
 	android:exported
-		ADDED from C:\Users\allan\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:38:13-36
+		ADDED from C:\Users\allan\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:38:13-37
 	android:name
-		ADDED from C:\Users\allan\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:37:13-41
+		ADDED from C:\Users\allan\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:37:13-34
+activity#com.example.opsc7311poe.StartingPage
+ADDED from C:\Users\allan\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:39:9-47:20
+	android:exported
+		ADDED from C:\Users\allan\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:41:13-36
+	android:name
+		ADDED from C:\Users\allan\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:40:13-41
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Users\allan\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:39:13-43:29
+ADDED from C:\Users\allan\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:42:13-46:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\allan\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:40:17-69
+ADDED from C:\Users\allan\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:43:17-69
 	android:name
-		ADDED from C:\Users\allan\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:40:25-66
+		ADDED from C:\Users\allan\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:43:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\allan\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:42:17-77
+ADDED from C:\Users\allan\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:45:17-77
 	android:name
-		ADDED from C:\Users\allan\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:42:27-74
+		ADDED from C:\Users\allan\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:45:27-74
 activity#com.example.opsc7311poe.Login
-ADDED from C:\Users\allan\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:45:9-43
+ADDED from C:\Users\allan\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:48:9-43
 	android:name
-		ADDED from C:\Users\allan\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:45:19-40
+		ADDED from C:\Users\allan\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:48:19-40
 activity#com.example.opsc7311poe.Register
-ADDED from C:\Users\allan\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:46:9-46
+ADDED from C:\Users\allan\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:49:9-46
 	android:name
-		ADDED from C:\Users\allan\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:46:19-43
+		ADDED from C:\Users\allan\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:49:19-43
 activity#com.example.opsc7311poe.MainActivity
-ADDED from C:\Users\allan\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:47:9-50
+ADDED from C:\Users\allan\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:50:9-50
 	android:name
-		ADDED from C:\Users\allan\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:47:19-47
+		ADDED from C:\Users\allan\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:50:19-47
 activity#com.example.opsc7311poe.Profile
-ADDED from C:\Users\allan\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:48:9-45
+ADDED from C:\Users\allan\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:51:9-45
 	android:name
-		ADDED from C:\Users\allan\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:48:19-42
+		ADDED from C:\Users\allan\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:51:19-42
 activity#com.example.opsc7311poe.ViewTimeSheetEntry
-ADDED from C:\Users\allan\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:49:9-55
+ADDED from C:\Users\allan\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:52:9-56
 	android:name
-		ADDED from C:\Users\allan\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:49:19-53
+		ADDED from C:\Users\allan\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:52:19-53
 activity#com.example.opsc7311poe.InsertData
-ADDED from C:\Users\allan\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:50:9-47
+ADDED from C:\Users\allan\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:53:9-48
 	android:name
-		ADDED from C:\Users\allan\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:50:19-45
+		ADDED from C:\Users\allan\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:53:19-45
 uses-sdk
 INJECTED from C:\Users\allan\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\allan\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml

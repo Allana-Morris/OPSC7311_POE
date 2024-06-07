@@ -26,6 +26,9 @@ public final class ActivityViewTasksBinding implements ViewBinding {
   public final ConstraintLayout clNavBar;
 
   @NonNull
+  public final ConstraintLayout constraintLayout2;
+
+  @NonNull
   public final ImageButton createCat;
 
   @NonNull
@@ -77,15 +80,17 @@ public final class ActivityViewTasksBinding implements ViewBinding {
   public final LinearLayout vertLayout;
 
   private ActivityViewTasksBinding(@NonNull ConstraintLayout rootView,
-      @NonNull ConstraintLayout clNavBar, @NonNull ImageButton createCat,
-      @NonNull ImageButton createTask, @NonNull ImageButton ibCalendar, @NonNull ImageButton ibHome,
-      @NonNull ImageButton ibProfile, @NonNull ImageButton ibTimer, @NonNull ImageView imageView,
+      @NonNull ConstraintLayout clNavBar, @NonNull ConstraintLayout constraintLayout2,
+      @NonNull ImageButton createCat, @NonNull ImageButton createTask,
+      @NonNull ImageButton ibCalendar, @NonNull ImageButton ibHome, @NonNull ImageButton ibProfile,
+      @NonNull ImageButton ibTimer, @NonNull ImageView imageView,
       @NonNull ConstraintLayout linearLayout, @NonNull ConstraintLayout linearLayout2,
       @NonNull ConstraintLayout linearLayout4, @NonNull ConstraintLayout linearLayout5,
       @NonNull ConstraintLayout main, @NonNull TextView tvCalendar, @NonNull TextView tvHome,
       @NonNull TextView tvProfile, @NonNull TextView tvTimer, @NonNull LinearLayout vertLayout) {
     this.rootView = rootView;
     this.clNavBar = clNavBar;
+    this.constraintLayout2 = constraintLayout2;
     this.createCat = createCat;
     this.createTask = createTask;
     this.ibCalendar = ibCalendar;
@@ -135,6 +140,12 @@ public final class ActivityViewTasksBinding implements ViewBinding {
       id = R.id.cl_NavBar;
       ConstraintLayout clNavBar = ViewBindings.findChildViewById(rootView, id);
       if (clNavBar == null) {
+        break missingId;
+      }
+
+      id = R.id.constraintLayout2;
+      ConstraintLayout constraintLayout2 = ViewBindings.findChildViewById(rootView, id);
+      if (constraintLayout2 == null) {
         break missingId;
       }
 
@@ -236,8 +247,8 @@ public final class ActivityViewTasksBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityViewTasksBinding((ConstraintLayout) rootView, clNavBar, createCat,
-          createTask, ibCalendar, ibHome, ibProfile, ibTimer, imageView, linearLayout,
+      return new ActivityViewTasksBinding((ConstraintLayout) rootView, clNavBar, constraintLayout2,
+          createCat, createTask, ibCalendar, ibHome, ibProfile, ibTimer, imageView, linearLayout,
           linearLayout2, linearLayout4, linearLayout5, main, tvCalendar, tvHome, tvProfile, tvTimer,
           vertLayout);
     }
