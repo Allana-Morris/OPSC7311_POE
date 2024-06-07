@@ -1,6 +1,7 @@
 package com.example.opsc7311poe
 
 import android.app.DatePickerDialog
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.widget.Button
@@ -11,10 +12,13 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import com.google.android.material.bottomnavigation.BottomNavigationView
 import java.text.SimpleDateFormat
 import java.util.*
 
-class ViewTimeSheetEntry : AppCompatActivity() {
+class ViewTimeSheetEntry_activity : AppCompatActivity() {
+
+    lateinit var bottomNav: BottomNavigationView
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
@@ -24,6 +28,43 @@ class ViewTimeSheetEntry : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+
+        bottomNav = findViewById(R.id.bottomNav) as BottomNavigationView
+        // Clear selection by setting invalid item ID
+        bottomNav.menu.setGroupCheckable(0, true, false) // Enable manual selection
+        bottomNav.menu.findItem(R.id.home).isChecked = false
+        bottomNav.menu.findItem(R.id.profile).isChecked = false
+        bottomNav.menu.findItem(R.id.calendar).isChecked = false
+        bottomNav.menu.findItem(R.id.timer).isChecked = false
+        bottomNav.menu.setGroupCheckable(0, true, true) // Re-enable auto selection
+        bottomNav.setOnItemSelectedListener {
+            when (it.itemId) {
+                R.id.home -> {
+                    startActivity(Intent(this, MainActivity::class.java))
+                    true
+                }
+
+                R.id.profile -> {
+                    startActivity(Intent(this, Profile_activity::class.java))
+                    true
+                }
+
+                R.id.calendar -> {
+                    startActivity(Intent(this, TaskCalendar_activity::class.java))
+                    true
+                }
+
+                R.id.timer -> {
+                    startActivity(Intent(this, Timer_activity::class.java))
+                    true
+                }
+
+                else -> {
+                    false
+                }
+            }
+        }
+
 
         val layout: LinearLayout = findViewById(R.id.linLayout)
 

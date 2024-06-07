@@ -20,6 +20,7 @@ import androidx.activity.enableEdgeToEdge
 import androidx.activity.result.ActivityResultLauncher
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.AppCompatActivity
+import com.google.android.material.bottomnavigation.BottomNavigationView
 import java.sql.Time
 import java.text.SimpleDateFormat
 import java.time.Duration
@@ -30,16 +31,53 @@ import java.util.Calendar
 import java.util.Date
 import java.util.Locale
 
-class CreateEntry : AppCompatActivity() {
+class Create_Entry_activity : AppCompatActivity() {
 
     val categoryList = mutableListOf<String>()
     val taskList = mutableListOf<String>()
     private lateinit var resultLauncher: ActivityResultLauncher<Intent>
+    lateinit var bottomNav: BottomNavigationView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_enter_time_sheet)
+
+        bottomNav = findViewById(R.id.bottomNav) as BottomNavigationView
+        // Clear selection by setting invalid item ID
+        bottomNav.menu.setGroupCheckable(0, true, false) // Enable manual selection
+        bottomNav.menu.findItem(R.id.home).isChecked = false
+        bottomNav.menu.findItem(R.id.profile).isChecked = false
+        bottomNav.menu.findItem(R.id.calendar).isChecked = false
+        bottomNav.menu.findItem(R.id.timer).isChecked = false
+        bottomNav.menu.setGroupCheckable(0, true, true) // Re-enable auto selection
+        bottomNav.setOnItemSelectedListener {
+            when (it.itemId) {
+                R.id.home -> {
+                    startActivity(Intent(this, MainActivity::class.java))
+                    true
+                }
+
+                R.id.profile -> {
+                    startActivity(Intent(this, Profile_activity::class.java))
+                    true
+                }
+
+                R.id.calendar -> {
+                    startActivity(Intent(this, TaskCalendar_activity::class.java))
+                    true
+                }
+
+                R.id.timer -> {
+                    startActivity(Intent(this, Timer_activity::class.java))
+                    true
+                }
+
+                else -> {
+                    false
+                }
+            }
+        }
 
         val spinCat: Spinner = findViewById(R.id.spinEntryCat)
         val spinTask: Spinner = findViewById(R.id.spinEntryTask)
@@ -56,7 +94,7 @@ class CreateEntry : AppCompatActivity() {
                 val imageBitmap = data?.extras?.get("data") as Bitmap?
                 uploaded.setImageBitmap(imageBitmap)
             } else {
-                Toast.makeText(this@CreateEntry, "Failed to capture image", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this@Create_Entry_activity, "Failed to capture image", Toast.LENGTH_SHORT).show()
             }
         }
 
@@ -79,14 +117,14 @@ class CreateEntry : AppCompatActivity() {
                     val selectedCategoryName = categoryList[position]
                     val tasks = SessionUser.currentUser?.categories?.get(selectedCategoryName)?.tasks?.keys?.toList() ?: emptyList()
 
-                    spinTask.adapter = ArrayAdapter(this@CreateEntry, android.R.layout.simple_spinner_item, tasks)
+                    spinTask.adapter = ArrayAdapter(this@Create_Entry_activity, android.R.layout.simple_spinner_item, tasks)
                     spinTask.isEnabled = tasks.isNotEmpty()
                     btnSave.isEnabled = tasks.isNotEmpty()
                 }
 
                 override fun onNothingSelected(parent: AdapterView<*>?) {
                     spinTask.isEnabled = false
-                    spinTask.adapter = ArrayAdapter<String>(this@CreateEntry, android.R.layout.simple_spinner_item, emptyList())
+                    spinTask.adapter = ArrayAdapter<String>(this@Create_Entry_activity, android.R.layout.simple_spinner_item, emptyList())
                     btnSave.isEnabled = false
                 }
             }

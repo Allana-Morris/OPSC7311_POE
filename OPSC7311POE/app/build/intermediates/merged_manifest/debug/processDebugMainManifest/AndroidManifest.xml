@@ -41,28 +41,28 @@
             android:name="com.example.opsc7311poe.ViewGraphTotalHours"
             android:exported="false" />
         <activity
-            android:name="com.example.opsc7311poe.TaskCalendar"
+            android:name="com.example.opsc7311poe.TaskCalendar_activity"
             android:exported="false" />
         <activity
-            android:name="com.example.opsc7311poe.CreateEntry"
+            android:name="com.example.opsc7311poe.Create_Entry_activity"
             android:exported="false" />
         <activity
-            android:name="com.example.opsc7311poe.create_category"
+            android:name="com.example.opsc7311poe.create_category_activity"
             android:exported="false" />
         <activity
             android:name="com.example.opsc7311poe.ViewData"
             android:exported="false" />
         <activity
-            android:name="com.example.opsc7311poe.cat_total"
+            android:name="com.example.opsc7311poe.cat_total_activity"
             android:exported="false" />
         <activity
-            android:name="com.example.opsc7311poe.view_graphs"
+            android:name="com.example.opsc7311poe.view_graphs_activity"
             android:exported="false" />
         <activity
-            android:name="com.example.opsc7311poe.Timer"
+            android:name="com.example.opsc7311poe.Timer_activity"
             android:exported="false" />
         <activity
-            android:name="com.example.opsc7311poe.StartingPage"
+            android:name="com.example.opsc7311poe.StartingPage_activity"
             android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -70,12 +70,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.example.opsc7311poe.Login" />
-        <activity android:name="com.example.opsc7311poe.Register" />
+        <activity android:name="com.example.opsc7311poe.Login_activity" />
+        <activity android:name="com.example.opsc7311poe.Register_activity" />
         <activity android:name="com.example.opsc7311poe.MainActivity" />
-        <activity android:name="com.example.opsc7311poe.Profile" />
-        <activity android:name="com.example.opsc7311poe.ViewTimeSheetEntry" />
-        <activity android:name="com.example.opsc7311poe.InsertData" />
+        <activity android:name="com.example.opsc7311poe.Profile_activity" />
+        <activity android:name="com.example.opsc7311poe.ViewTimeSheetEntry_activity" />
+        <activity android:name="com.example.opsc7311poe.InsertData_activity" />
 
         <service
             android:name="com.google.firebase.components.ComponentDiscoveryService"

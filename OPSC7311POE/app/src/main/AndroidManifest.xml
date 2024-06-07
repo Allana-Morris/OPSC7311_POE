@@ -16,28 +16,28 @@
             android:name=".ViewGraphTotalHours"
             android:exported="false" />
         <activity
-            android:name=".TaskCalendar"
+            android:name=".TaskCalendar_activity"
             android:exported="false" />
         <activity
-            android:name=".CreateEntry"
+            android:name=".Create_Entry_activity"
             android:exported="false" />
         <activity
-            android:name=".create_category"
+            android:name=".create_category_activity"
             android:exported="false" />
         <activity
             android:name=".ViewData"
             android:exported="false" />
         <activity
-            android:name=".cat_total"
+            android:name=".cat_total_activity"
             android:exported="false" />
         <activity
-            android:name=".view_graphs"
+            android:name=".view_graphs_activity"
             android:exported="false" />
         <activity
-            android:name=".Timer"
+            android:name=".Timer_activity"
             android:exported="false" />
         <activity
-            android:name=".StartingPage"
+            android:name=".StartingPage_activity"
             android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -45,12 +45,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Login" />
-        <activity android:name=".Register" />
+        <activity android:name=".Login_activity" />
+        <activity android:name=".Register_activity" />
         <activity android:name=".MainActivity" />
-        <activity android:name=".Profile" />
-        <activity android:name=".ViewTimeSheetEntry" />
-        <activity android:name=".InsertData" />
+        <activity android:name=".Profile_activity" />
+        <activity android:name=".ViewTimeSheetEntry_activity" />
+        <activity android:name=".InsertData_activity" />
     </application>
 
 </manifest>

@@ -1,6 +1,7 @@
 package com.example.opsc7311poe
 
 import android.app.DatePickerDialog
+import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
@@ -9,6 +10,7 @@ import com.github.mikephil.charting.charts.BarChart
 import com.github.mikephil.charting.data.BarData
 import com.github.mikephil.charting.data.BarDataSet
 import com.github.mikephil.charting.data.BarEntry
+import com.google.android.material.bottomnavigation.BottomNavigationView
 import java.text.SimpleDateFormat
 import java.util.*
 import kotlin.collections.ArrayList
@@ -22,10 +24,49 @@ class ViewGraphTotalHours : AppCompatActivity() {
     private var startDate: Date? = null
     private var endDate: Date? = null
     private val dateFormat = SimpleDateFormat("yyyy-MM-dd", Locale.US)
+    lateinit var bottomNav: BottomNavigationView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_view_graph_total_hours) // Make sure this matches your layout file
+
+        bottomNav = findViewById(R.id.bottomNav) as BottomNavigationView
+        // Clear selection by setting invalid item ID
+        bottomNav.menu.setGroupCheckable(0, true, false) // Enable manual selection
+        bottomNav.menu.findItem(R.id.home).isChecked = false
+        bottomNav.menu.findItem(R.id.profile).isChecked = false
+        bottomNav.menu.findItem(R.id.calendar).isChecked = false
+        bottomNav.menu.findItem(R.id.timer).isChecked = false
+        bottomNav.menu.setGroupCheckable(0, true, true) // Re-enable auto selection
+        bottomNav.setOnItemSelectedListener {
+            when (it.itemId) {
+                R.id.home -> {
+                    startActivity(Intent(this, MainActivity::class.java))
+                    true
+                }
+
+                R.id.profile -> {
+                    startActivity(Intent(this, Profile_activity::class.java))
+                    true
+                }
+
+                R.id.calendar -> {
+                    startActivity(Intent(this, TaskCalendar_activity::class.java))
+                    true
+                }
+
+                R.id.timer -> {
+                    startActivity(Intent(this, Timer_activity::class.java))
+                    true
+                }
+
+                else -> {
+                    false
+                }
+            }
+        }
+
+
 
         editTextStartDate = findViewById(R.id.editTextDate)
         editTextEndDate = findViewById(R.id.editTextDate2)
@@ -87,7 +128,7 @@ class ViewGraphTotalHours : AppCompatActivity() {
 
         return TaskRepository.tasks.filter { task ->
             task.taskRecords.any { record ->
-                !record.recDate.before(start) && !record.recDate.after(end)
+                !record.RecDate.before(start) && !record.RecDate.after(end)
             }
         }
     }*/

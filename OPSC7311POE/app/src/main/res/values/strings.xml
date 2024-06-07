@@ -89,7 +89,19 @@
     <string name="cat_view">View Total Hours For your Categories</string>
     <string name="startDate">Start Date</string>
     <string name="endDate">End Date</string>
-    
 
+
+    <!-- Monthly Summary Page Strings-->
+    <string name="top_category">Top Category: </string>
+    <string name="total_hours_recorded">Total Hours Recorded: </string>
+    <string name="ave_hours_per_day">Average Hours Recorded Per Day: </string>
+    <string name="most_productive_day">Most Productive Day: </string>
+    <string name="busiest_week">Busiest Week: </string>
+    <string name="most_time_consuming_task">Most Time Consuming Task: </string>
+    <string name="timer_fragment">Timer Fragment</string>
+    <string name="profile_fragment">Profile Fragment</string>
+    <string name="calendar_fragment">Calendar Fragment</string>
+    <string name="home_fragment">Home fragment</string>
+    <string name="choose_an_icon">Choose an Icon</string>
 
 </resources>
