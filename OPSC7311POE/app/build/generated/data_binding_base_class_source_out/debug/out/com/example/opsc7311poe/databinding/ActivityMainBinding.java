@@ -5,7 +5,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
-import android.widget.FrameLayout;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -47,9 +46,6 @@ public final class ActivityMainBinding implements ViewBinding {
   public final ConstraintLayout constraintLayout;
 
   @NonNull
-  public final FrameLayout container;
-
-  @NonNull
   public final ConstraintLayout main;
 
   @NonNull
@@ -59,8 +55,8 @@ public final class ActivityMainBinding implements ViewBinding {
       @NonNull BottomNavigationView bottomNav, @NonNull Button btnCatHours,
       @NonNull Button btnCategory, @NonNull Button btnTask, @NonNull Button btnTimesheet,
       @NonNull Button btnViewEntries, @NonNull Button btnViewTasks,
-      @NonNull ConstraintLayout constraintLayout, @NonNull FrameLayout container,
-      @NonNull ConstraintLayout main, @NonNull TextView tvBlackBox) {
+      @NonNull ConstraintLayout constraintLayout, @NonNull ConstraintLayout main,
+      @NonNull TextView tvBlackBox) {
     this.rootView = rootView;
     this.bottomNav = bottomNav;
     this.btnCatHours = btnCatHours;
@@ -70,7 +66,6 @@ public final class ActivityMainBinding implements ViewBinding {
     this.btnViewEntries = btnViewEntries;
     this.btnViewTasks = btnViewTasks;
     this.constraintLayout = constraintLayout;
-    this.container = container;
     this.main = main;
     this.tvBlackBox = tvBlackBox;
   }
@@ -150,12 +145,6 @@ public final class ActivityMainBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.container;
-      FrameLayout container = ViewBindings.findChildViewById(rootView, id);
-      if (container == null) {
-        break missingId;
-      }
-
       ConstraintLayout main = (ConstraintLayout) rootView;
 
       id = R.id.tvBlackBox;
@@ -165,8 +154,8 @@ public final class ActivityMainBinding implements ViewBinding {
       }
 
       return new ActivityMainBinding((ConstraintLayout) rootView, bottomNav, btnCatHours,
-          btnCategory, btnTask, btnTimesheet, btnViewEntries, btnViewTasks, constraintLayout,
-          container, main, tvBlackBox);
+          btnCategory, btnTask, btnTimesheet, btnViewEntries, btnViewTasks, constraintLayout, main,
+          tvBlackBox);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

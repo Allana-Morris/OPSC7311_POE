@@ -4,7 +4,6 @@ package com.example.opsc7311poe.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.ScrollView;
@@ -15,6 +14,7 @@ import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.example.opsc7311poe.R;
+import com.google.android.material.bottomnavigation.BottomNavigationView;
 import java.lang.NullPointerException;
 import java.lang.Override;
 import java.lang.String;
@@ -24,40 +24,16 @@ public final class ActivityTaskCalendarBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
-  public final ConstraintLayout clNavBar;
+  public final BottomNavigationView bottomNav;
 
   @NonNull
   public final TextView dayOfWeekTV;
 
   @NonNull
-  public final ImageButton ibCalendar;
-
-  @NonNull
-  public final ImageButton ibHome;
-
-  @NonNull
-  public final ImageButton ibProfile;
-
-  @NonNull
-  public final ImageButton ibTimer;
-
-  @NonNull
   public final ImageView imageView;
 
   @NonNull
-  public final ConstraintLayout linearLayout;
-
-  @NonNull
-  public final ConstraintLayout linearLayout2;
-
-  @NonNull
   public final ConstraintLayout linearLayout3;
-
-  @NonNull
-  public final ConstraintLayout linearLayout4;
-
-  @NonNull
-  public final ConstraintLayout linearLayout5;
 
   @NonNull
   public final ConstraintLayout linearLayout6;
@@ -78,19 +54,7 @@ public final class ActivityTaskCalendarBinding implements ViewBinding {
   public final TextView tvBack;
 
   @NonNull
-  public final TextView tvCalendar;
-
-  @NonNull
   public final TextView tvForward;
-
-  @NonNull
-  public final TextView tvHome;
-
-  @NonNull
-  public final TextView tvProfile;
-
-  @NonNull
-  public final TextView tvTimer;
 
   @NonNull
   public final View vEvent;
@@ -99,40 +63,24 @@ public final class ActivityTaskCalendarBinding implements ViewBinding {
   public final View view;
 
   private ActivityTaskCalendarBinding(@NonNull ConstraintLayout rootView,
-      @NonNull ConstraintLayout clNavBar, @NonNull TextView dayOfWeekTV,
-      @NonNull ImageButton ibCalendar, @NonNull ImageButton ibHome, @NonNull ImageButton ibProfile,
-      @NonNull ImageButton ibTimer, @NonNull ImageView imageView,
-      @NonNull ConstraintLayout linearLayout, @NonNull ConstraintLayout linearLayout2,
-      @NonNull ConstraintLayout linearLayout3, @NonNull ConstraintLayout linearLayout4,
-      @NonNull ConstraintLayout linearLayout5, @NonNull ConstraintLayout linearLayout6,
-      @NonNull ListView listView, @NonNull ConstraintLayout main, @NonNull ScrollView scrollView2,
-      @NonNull TextView tvAddEvent, @NonNull TextView tvBack, @NonNull TextView tvCalendar,
-      @NonNull TextView tvForward, @NonNull TextView tvHome, @NonNull TextView tvProfile,
-      @NonNull TextView tvTimer, @NonNull View vEvent, @NonNull View view) {
+      @NonNull BottomNavigationView bottomNav, @NonNull TextView dayOfWeekTV,
+      @NonNull ImageView imageView, @NonNull ConstraintLayout linearLayout3,
+      @NonNull ConstraintLayout linearLayout6, @NonNull ListView listView,
+      @NonNull ConstraintLayout main, @NonNull ScrollView scrollView2, @NonNull TextView tvAddEvent,
+      @NonNull TextView tvBack, @NonNull TextView tvForward, @NonNull View vEvent,
+      @NonNull View view) {
     this.rootView = rootView;
-    this.clNavBar = clNavBar;
+    this.bottomNav = bottomNav;
     this.dayOfWeekTV = dayOfWeekTV;
-    this.ibCalendar = ibCalendar;
-    this.ibHome = ibHome;
-    this.ibProfile = ibProfile;
-    this.ibTimer = ibTimer;
     this.imageView = imageView;
-    this.linearLayout = linearLayout;
-    this.linearLayout2 = linearLayout2;
     this.linearLayout3 = linearLayout3;
-    this.linearLayout4 = linearLayout4;
-    this.linearLayout5 = linearLayout5;
     this.linearLayout6 = linearLayout6;
     this.listView = listView;
     this.main = main;
     this.scrollView2 = scrollView2;
     this.tvAddEvent = tvAddEvent;
     this.tvBack = tvBack;
-    this.tvCalendar = tvCalendar;
     this.tvForward = tvForward;
-    this.tvHome = tvHome;
-    this.tvProfile = tvProfile;
-    this.tvTimer = tvTimer;
     this.vEvent = vEvent;
     this.view = view;
   }
@@ -164,9 +112,9 @@ public final class ActivityTaskCalendarBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.cl_NavBar;
-      ConstraintLayout clNavBar = ViewBindings.findChildViewById(rootView, id);
-      if (clNavBar == null) {
+      id = R.id.bottomNav;
+      BottomNavigationView bottomNav = ViewBindings.findChildViewById(rootView, id);
+      if (bottomNav == null) {
         break missingId;
       }
 
@@ -176,63 +124,15 @@ public final class ActivityTaskCalendarBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.ib_Calendar;
-      ImageButton ibCalendar = ViewBindings.findChildViewById(rootView, id);
-      if (ibCalendar == null) {
-        break missingId;
-      }
-
-      id = R.id.ib_Home;
-      ImageButton ibHome = ViewBindings.findChildViewById(rootView, id);
-      if (ibHome == null) {
-        break missingId;
-      }
-
-      id = R.id.ib_Profile;
-      ImageButton ibProfile = ViewBindings.findChildViewById(rootView, id);
-      if (ibProfile == null) {
-        break missingId;
-      }
-
-      id = R.id.ib_Timer;
-      ImageButton ibTimer = ViewBindings.findChildViewById(rootView, id);
-      if (ibTimer == null) {
-        break missingId;
-      }
-
       id = R.id.imageView;
       ImageView imageView = ViewBindings.findChildViewById(rootView, id);
       if (imageView == null) {
         break missingId;
       }
 
-      id = R.id.linearLayout;
-      ConstraintLayout linearLayout = ViewBindings.findChildViewById(rootView, id);
-      if (linearLayout == null) {
-        break missingId;
-      }
-
-      id = R.id.linearLayout2;
-      ConstraintLayout linearLayout2 = ViewBindings.findChildViewById(rootView, id);
-      if (linearLayout2 == null) {
-        break missingId;
-      }
-
       id = R.id.linearLayout3;
       ConstraintLayout linearLayout3 = ViewBindings.findChildViewById(rootView, id);
       if (linearLayout3 == null) {
-        break missingId;
-      }
-
-      id = R.id.linearLayout4;
-      ConstraintLayout linearLayout4 = ViewBindings.findChildViewById(rootView, id);
-      if (linearLayout4 == null) {
-        break missingId;
-      }
-
-      id = R.id.linearLayout5;
-      ConstraintLayout linearLayout5 = ViewBindings.findChildViewById(rootView, id);
-      if (linearLayout5 == null) {
         break missingId;
       }
 
@@ -268,33 +168,9 @@ public final class ActivityTaskCalendarBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.tv_calendar;
-      TextView tvCalendar = ViewBindings.findChildViewById(rootView, id);
-      if (tvCalendar == null) {
-        break missingId;
-      }
-
       id = R.id.tv_Forward;
       TextView tvForward = ViewBindings.findChildViewById(rootView, id);
       if (tvForward == null) {
-        break missingId;
-      }
-
-      id = R.id.tv_Home;
-      TextView tvHome = ViewBindings.findChildViewById(rootView, id);
-      if (tvHome == null) {
-        break missingId;
-      }
-
-      id = R.id.tv_Profile;
-      TextView tvProfile = ViewBindings.findChildViewById(rootView, id);
-      if (tvProfile == null) {
-        break missingId;
-      }
-
-      id = R.id.tv_timer;
-      TextView tvTimer = ViewBindings.findChildViewById(rootView, id);
-      if (tvTimer == null) {
         break missingId;
       }
 
@@ -310,10 +186,9 @@ public final class ActivityTaskCalendarBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityTaskCalendarBinding((ConstraintLayout) rootView, clNavBar, dayOfWeekTV,
-          ibCalendar, ibHome, ibProfile, ibTimer, imageView, linearLayout, linearLayout2,
-          linearLayout3, linearLayout4, linearLayout5, linearLayout6, listView, main, scrollView2,
-          tvAddEvent, tvBack, tvCalendar, tvForward, tvHome, tvProfile, tvTimer, vEvent, view);
+      return new ActivityTaskCalendarBinding((ConstraintLayout) rootView, bottomNav, dayOfWeekTV,
+          imageView, linearLayout3, linearLayout6, listView, main, scrollView2, tvAddEvent, tvBack,
+          tvForward, vEvent, view);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

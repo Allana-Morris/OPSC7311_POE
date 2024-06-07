@@ -290,14 +290,6 @@
         app:layout_constraintTop_toTopOf="@+id/view8"
         tools:ignore="TouchTargetSizeCheck" />
 
-    <FrameLayout
-        android:id="@+id/container"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_above="@+id/bottomNav"
-        tools:layout_editor_absoluteX="54dp"
-        tools:layout_editor_absoluteY="179dp" />
-
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottomNav"
         android:layout_width="415dp"
