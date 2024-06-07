@@ -5,7 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ViewData"
+    tools:context=".ViewTasks_activity"
     android:background="@drawable/skyblue">
 
 
@@ -90,6 +90,7 @@
         android:layout_height="90dp"
         android:layout_alignParentBottom="true"
         android:background="@color/white"
+        app:itemIconTint="@color/nav_item_color_state"
         android:scrollIndicators="left"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
