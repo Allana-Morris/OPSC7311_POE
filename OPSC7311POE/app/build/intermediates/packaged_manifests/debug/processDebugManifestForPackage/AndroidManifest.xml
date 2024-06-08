@@ -56,9 +56,6 @@
             android:name="com.example.opsc7311poe.cat_total_activity"
             android:exported="false" />
         <activity
-            android:name="com.example.opsc7311poe.view_graphs_activity"
-            android:exported="false" />
-        <activity
             android:name="com.example.opsc7311poe.Timer_activity"
             android:exported="false" />
         <activity

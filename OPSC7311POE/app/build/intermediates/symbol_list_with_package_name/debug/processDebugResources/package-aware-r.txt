@@ -3068,7 +3068,6 @@ drawable ambilwarna_target
 drawable arc_1
 drawable avd_hide_password
 drawable avd_show_password
-drawable bag
 drawable bar
 drawable baseline_add_24
 drawable baseline_airplay_24
@@ -3088,6 +3087,7 @@ drawable baseline_ios_share_24
 drawable baseline_person_24
 drawable baseline_timer_24
 drawable bed
+drawable biphobia
 drawable blueskyback
 drawable border
 drawable bordertwo
@@ -3128,10 +3128,13 @@ drawable design_ic_visibility
 drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
+drawable drink
 drawable file
+drawable gaming
 drawable google
 drawable googleg_disabled_color_18
 drawable googleg_standard_color_18
+drawable gym
 drawable ic_arrow_back_black_24
 drawable ic_baseline_info_24
 drawable ic_baseline_person_outline_24
@@ -3159,7 +3162,6 @@ drawable ic_notifications_black_24dp
 drawable ic_search_black_24
 drawable icon
 drawable laptop
-drawable leaf
 drawable logo
 drawable m3_avd_hide_password
 drawable m3_avd_show_password
@@ -3233,6 +3235,7 @@ drawable notification_template_icon_bg
 drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
+drawable outdoors
 drawable pencilbtn
 drawable piechart
 drawable profilebtn
@@ -3241,21 +3244,20 @@ drawable rectangular_vignette_top
 drawable round_btn
 drawable roundstyle
 drawable roundstyle2
+drawable school
 drawable search
-drawable shopping
+drawable shoppingcart
 drawable skyblue
-drawable sport
 drawable taskicon
 drawable test_level_drawable
 drawable thumb
 drawable timer
-drawable tools
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
 drawable track
 drawable uploadphoto
+drawable virtualdating
 drawable whitescreen
-drawable work
 drawable write
 id ALT
 id BOTTOM_END
@@ -3378,6 +3380,8 @@ id bounceStart
 id btnCatHours
 id btnCategory
 id btnLogin
+id btnMonthlySummary
+id btnNewEvent
 id btnReset
 id btnSaveEntry
 id btnSaveProfile
@@ -3388,6 +3392,7 @@ id btnStop
 id btnTask
 id btnTimesheet
 id btnViewEntries
+id btnViewGraph
 id btnViewTasks
 id btn_Google_signin
 id btn_Login
@@ -3584,7 +3589,6 @@ id linear
 id linearLayout3
 id linearLayout6
 id listMode
-id listView
 id list_item
 id locale
 id ltr
@@ -3723,6 +3727,7 @@ id right_side
 id rounded
 id row_index_key
 id rtl
+id rvCalendar
 id saveTimebtn
 id save_non_transition_alpha
 id save_overlay_view
@@ -3890,7 +3895,10 @@ id tvSelectPeriod1
 id tvStartDate
 id tvStartDate1
 id tvStartTime
+id tvTaskDescription
+id tvTaskName
 id tvTaskSpinner
+id tvTaskTime
 id tvTask_description
 id tvTask_end_time
 id tvTask_name
@@ -3917,7 +3925,6 @@ id tv_Time_Dash
 id tv_Title
 id tv_Total
 id tv_Username
-id tv_add_event
 id tv_add_eventevent
 id tvuserProfile
 id txtEmail
@@ -3930,7 +3937,6 @@ id unlabeled
 id up
 id useLogo
 id vMonthlySummary
-id v_Event
 id vertLayout
 id vertical_only
 id view
@@ -4090,7 +4096,6 @@ layout activity_task_calendar
 layout activity_timer
 layout activity_total_cat_hours
 layout activity_view_graph_total_hours
-layout activity_view_graphs
 layout activity_view_tasks
 layout activity_view_time_sheet_entry
 layout ambilwarna_dialog
@@ -4117,6 +4122,7 @@ layout ime_base_split_test_activity
 layout ime_secondary_split_test_activity
 layout item_icon
 layout item_select
+layout item_task
 layout m3_alert_dialog
 layout m3_alert_dialog_actions
 layout m3_alert_dialog_title
@@ -4436,6 +4442,7 @@ string name_
 string nav_app_bar_navigate_up_description
 string nav_app_bar_open_drawer_description
 string navigation_menu
+string new_event
 string no_account
 string not_selected
 string note

@@ -3067,7 +3067,6 @@ int drawable ambilwarna_target 0x7f07007e
 int drawable arc_1 0x7f07007f
 int drawable avd_hide_password 0x7f070080
 int drawable avd_show_password 0x7f070081
-int drawable bag 0x7f070082
 int drawable bar 0x7f070083
 int drawable baseline_add_24 0x7f070084
 int drawable baseline_airplay_24 0x7f070085
@@ -3087,6 +3086,7 @@ int drawable baseline_ios_share_24 0x7f070092
 int drawable baseline_person_24 0x7f070093
 int drawable baseline_timer_24 0x7f070094
 int drawable bed 0x7f070095
+int drawable biphobia 0x7f07013f
 int drawable blueskyback 0x7f070096
 int drawable border 0x7f070097
 int drawable bordertwo 0x7f070098
@@ -3127,10 +3127,13 @@ int drawable design_ic_visibility 0x7f0700ba
 int drawable design_ic_visibility_off 0x7f0700bb
 int drawable design_password_eye 0x7f0700bc
 int drawable design_snackbar_background 0x7f0700bd
+int drawable drink 0x7f070140
 int drawable file 0x7f0700be
+int drawable gaming 0x7f070141
 int drawable google 0x7f0700bf
 int drawable googleg_disabled_color_18 0x7f0700c0
 int drawable googleg_standard_color_18 0x7f0700c1
+int drawable gym 0x7f070142
 int drawable ic_arrow_back_black_24 0x7f0700c2
 int drawable ic_baseline_info_24 0x7f0700c3
 int drawable ic_baseline_person_outline_24 0x7f0700c4
@@ -3158,7 +3161,6 @@ int drawable ic_notifications_black_24dp 0x7f0700d9
 int drawable ic_search_black_24 0x7f0700da
 int drawable icon 0x7f0700db
 int drawable laptop 0x7f0700dc
-int drawable leaf 0x7f0700dd
 int drawable logo 0x7f0700de
 int drawable m3_avd_hide_password 0x7f0700df
 int drawable m3_avd_show_password 0x7f0700e0
@@ -3232,6 +3234,7 @@ int drawable notification_template_icon_bg 0x7f070123
 int drawable notification_template_icon_low_bg 0x7f070124
 int drawable notification_tile_bg 0x7f070125
 int drawable notify_panel_notification_icon_bg 0x7f070126
+int drawable outdoors 0x7f070143
 int drawable pencilbtn 0x7f070127
 int drawable piechart 0x7f070128
 int drawable profilebtn 0x7f070129
@@ -3240,21 +3243,20 @@ int drawable rectangular_vignette_top 0x7f07012b
 int drawable round_btn 0x7f07012c
 int drawable roundstyle 0x7f07012d
 int drawable roundstyle2 0x7f07012e
+int drawable school 0x7f070144
 int drawable search 0x7f07012f
-int drawable shopping 0x7f070130
+int drawable shoppingcart 0x7f070145
 int drawable skyblue 0x7f070131
-int drawable sport 0x7f070132
 int drawable taskicon 0x7f070133
 int drawable test_level_drawable 0x7f070134
 int drawable thumb 0x7f070135
 int drawable timer 0x7f070136
-int drawable tools 0x7f070137
 int drawable tooltip_frame_dark 0x7f070138
 int drawable tooltip_frame_light 0x7f070139
 int drawable track 0x7f07013a
 int drawable uploadphoto 0x7f07013b
+int drawable virtualdating 0x7f070146
 int drawable whitescreen 0x7f07013c
-int drawable work 0x7f07013d
 int drawable write 0x7f07013e
 int id ALT 0x7f080000
 int id BOTTOM_END 0x7f080001
@@ -3377,6 +3379,8 @@ int id bounceStart 0x7f080075
 int id btnCatHours 0x7f080076
 int id btnCategory 0x7f080077
 int id btnLogin 0x7f080078
+int id btnMonthlySummary 0x7f0802c0
+int id btnNewEvent 0x7f0802c2
 int id btnReset 0x7f080079
 int id btnSaveEntry 0x7f08007a
 int id btnSaveProfile 0x7f08007b
@@ -3387,6 +3391,7 @@ int id btnStop 0x7f08007f
 int id btnTask 0x7f080080
 int id btnTimesheet 0x7f080081
 int id btnViewEntries 0x7f080082
+int id btnViewGraph 0x7f0802c1
 int id btnViewTasks 0x7f080083
 int id btn_Google_signin 0x7f080084
 int id btn_Login 0x7f080085
@@ -3583,7 +3588,6 @@ int id linear 0x7f080143
 int id linearLayout3 0x7f080144
 int id linearLayout6 0x7f080145
 int id listMode 0x7f080146
-int id listView 0x7f080147
 int id list_item 0x7f080148
 int id locale 0x7f080149
 int id ltr 0x7f08014a
@@ -3722,6 +3726,7 @@ int id right_side 0x7f0801ce
 int id rounded 0x7f0801cf
 int id row_index_key 0x7f0801d0
 int id rtl 0x7f0801d1
+int id rvCalendar 0x7f0802c4
 int id saveTimebtn 0x7f0801d2
 int id save_non_transition_alpha 0x7f0801d3
 int id save_overlay_view 0x7f0801d4
@@ -3889,7 +3894,10 @@ int id tvSelectPeriod1 0x7f080275
 int id tvStartDate 0x7f080276
 int id tvStartDate1 0x7f080277
 int id tvStartTime 0x7f080278
+int id tvTaskDescription 0x7f0802c5
+int id tvTaskName 0x7f0802c6
 int id tvTaskSpinner 0x7f080279
+int id tvTaskTime 0x7f0802c7
 int id tvTask_description 0x7f08027a
 int id tvTask_end_time 0x7f08027b
 int id tvTask_name 0x7f08027c
@@ -3916,7 +3924,6 @@ int id tv_Time_Dash 0x7f080290
 int id tv_Title 0x7f080291
 int id tv_Total 0x7f080292
 int id tv_Username 0x7f080293
-int id tv_add_event 0x7f080294
 int id tv_add_eventevent 0x7f080295
 int id tvuserProfile 0x7f080296
 int id txtEmail 0x7f080297
@@ -3929,7 +3936,6 @@ int id unlabeled 0x7f08029d
 int id up 0x7f08029e
 int id useLogo 0x7f08029f
 int id vMonthlySummary 0x7f0802a0
-int id v_Event 0x7f0802a1
 int id vertLayout 0x7f0802a2
 int id vertical_only 0x7f0802a3
 int id view 0x7f0802a4
@@ -4089,7 +4095,6 @@ int layout activity_task_calendar 0x7f0b0025
 int layout activity_timer 0x7f0b0026
 int layout activity_total_cat_hours 0x7f0b0027
 int layout activity_view_graph_total_hours 0x7f0b0028
-int layout activity_view_graphs 0x7f0b0029
 int layout activity_view_tasks 0x7f0b002a
 int layout activity_view_time_sheet_entry 0x7f0b002b
 int layout ambilwarna_dialog 0x7f0b002c
@@ -4116,6 +4121,7 @@ int layout ime_base_split_test_activity 0x7f0b0040
 int layout ime_secondary_split_test_activity 0x7f0b0041
 int layout item_icon 0x7f0b0042
 int layout item_select 0x7f0b0043
+int layout item_task 0x7f0b008b
 int layout m3_alert_dialog 0x7f0b0044
 int layout m3_alert_dialog_actions 0x7f0b0045
 int layout m3_alert_dialog_title 0x7f0b0046
@@ -4435,6 +4441,7 @@ int string name_ 0x7f1100ef
 int string nav_app_bar_navigate_up_description 0x7f1100f0
 int string nav_app_bar_open_drawer_description 0x7f1100f1
 int string navigation_menu 0x7f1100f2
+int string new_event 0x7f110138
 int string no_account 0x7f1100f3
 int string not_selected 0x7f1100f4
 int string note 0x7f1100f5
