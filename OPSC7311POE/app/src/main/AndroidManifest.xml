@@ -31,9 +31,6 @@
             android:name=".cat_total_activity"
             android:exported="false" />
         <activity
-            android:name=".view_graphs_activity"
-            android:exported="false" />
-        <activity
             android:name=".Timer_activity"
             android:exported="false" />
         <activity
