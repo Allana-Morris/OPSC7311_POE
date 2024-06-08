@@ -5,45 +5,51 @@ import android.content.Intent
 import android.os.Bundle
 import android.widget.*
 import androidx.appcompat.app.AppCompatActivity
+import com.google.android.material.bottomnavigation.BottomNavigationView
 import java.time.LocalTime
 
-class InsertData : AppCompatActivity() {
-
+class InsertData_activity : AppCompatActivity() {
+    lateinit var bottomNav: BottomNavigationView
     @SuppressLint("UseSwitchCompatOrMaterialCode")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_insert_task)
 
-        // Variables for each button on Navbar
-        val HomeOpenActivity = findViewById<ImageButton>(R.id.ib_Home)
-        val ProfileOpenActivity = findViewById<ImageButton>(R.id.ib_Profile)
-        val CalendarOpenActivity = findViewById<ImageButton>(R.id.ib_Calendar)
-        val TimerOpenActivity = findViewById<ImageButton>(R.id.ib_Timer)
+        bottomNav = findViewById(R.id.bottomNav) as BottomNavigationView
+        // Clear selection by setting invalid item ID
+        bottomNav.menu.setGroupCheckable(0, true, false) // Enable manual selection
+        bottomNav.menu.findItem(R.id.home).isChecked = false
+        bottomNav.menu.findItem(R.id.profile).isChecked = false
+        bottomNav.menu.findItem(R.id.calendar).isChecked = false
+        bottomNav.menu.findItem(R.id.timer).isChecked = false
+        bottomNav.menu.setGroupCheckable(0, true, true) // Re-enable auto selection
+        bottomNav.setOnItemSelectedListener {
+            when (it.itemId) {
+                R.id.home -> {
+                    startActivity(Intent(this, MainActivity::class.java))
+                    true
+                }
 
-        // Intent to open Home Page
-        HomeOpenActivity.setOnClickListener {
-            val intent2 = Intent(this, MainActivity::class.java)
-            startActivity(intent2)
+                R.id.profile -> {
+                    startActivity(Intent(this, Profile_activity::class.java))
+                    true
+                }
+
+                R.id.calendar -> {
+                    startActivity(Intent(this, TaskCalendar_activity::class.java))
+                    true
+                }
+
+                R.id.timer -> {
+                    startActivity(Intent(this, Timer_activity::class.java))
+                    true
+                }
+
+                else -> {
+                    false
+                }
+            }
         }
-
-        // Intent to open Profile
-        ProfileOpenActivity.setOnClickListener {
-            val intent = Intent(this, Profile::class.java)
-            startActivity(intent)
-        }
-
-        //Intent to open Calendar
-        CalendarOpenActivity.setOnClickListener {
-            val intent3 = Intent(this, TaskCalendar::class.java)
-            startActivity(intent3)
-        }
-
-        //Intent to Open Timer
-        TimerOpenActivity.setOnClickListener {
-            val intent4 = Intent(this, Timer::class.java)
-            startActivity(intent4)
-        }
-
         // Spinner for Categories
         val catSpin: Spinner = findViewById(R.id.sp_Category)
         val categoryList = mutableListOf<String>()
@@ -79,19 +85,19 @@ class InsertData : AppCompatActivity() {
 
             if ((selectedCategory == "No categories") || selectedCategory.isEmpty() || taskName.isEmpty() || startTime.isEmpty() || endTime.isEmpty()) {
                 Toast.makeText(
-                    this@InsertData,
+                    this@InsertData_activity,
                     "Please fill in all required fields",
                     Toast.LENGTH_SHORT
                 ).show()
             } else if (!isValidTime(startTime) || !isValidTime(endTime)) {
                 Toast.makeText(
-                    this@InsertData,
+                    this@InsertData_activity,
                     "Please enter valid time format (HH:mm)",
                     Toast.LENGTH_SHORT
                 ).show()
             } else if (!isEndTimeAfterStartTime(startTime, endTime)) {
                 Toast.makeText(
-                    this@InsertData,
+                    this@InsertData_activity,
                     "End time must be after start time",
                     Toast.LENGTH_SHORT
                 ).show()
@@ -116,7 +122,7 @@ class InsertData : AppCompatActivity() {
                     ).show()
 
                     // Start the ViewData activity or perform any other necessary action
-                    val intent = Intent(this, ViewData::class.java)
+                    val intent = Intent(this, ViewTasks_activity::class.java)
                     startActivity(intent)
                 } else {
                     Toast.makeText(this, "Selected category not found", Toast.LENGTH_SHORT).show()

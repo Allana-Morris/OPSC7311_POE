@@ -56,13 +56,18 @@ dependencies {
     implementation(libs.androidx.compose.material)
     implementation(platform("com.google.firebase:firebase-bom:33.1.0"))
     implementation("com.google.firebase:firebase-analytics")
+    implementation("com.github.PhilJay:MPAndroidChart:v3.1.0")
     implementation(libs.firebase.firestore.ktx)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
-    implementation ("com.github.PhilJay:MPAndroidChart:v3.1.0")
+
     implementation ("com.google.android.material:material:1.5.0")
+
     implementation(libs.ambilwarna)
+    implementation("com.jjoe64:graphview:4.2.2")
+    implementation("com.github.PhilJay:MPAndroidChart:v3.1.0")
+
 }
 
 

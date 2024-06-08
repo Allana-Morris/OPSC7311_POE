@@ -8,7 +8,7 @@ import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 
-class Login : AppCompatActivity() {
+class Login_activity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -22,7 +22,7 @@ class Login : AppCompatActivity() {
 
         //onClickListener used to open Register Page
         buttonOpenActivity.setOnClickListener {
-            val intent = Intent(this, Register::class.java)
+            val intent = Intent(this, Register_activity::class.java)
             startActivity(intent)
         }
 

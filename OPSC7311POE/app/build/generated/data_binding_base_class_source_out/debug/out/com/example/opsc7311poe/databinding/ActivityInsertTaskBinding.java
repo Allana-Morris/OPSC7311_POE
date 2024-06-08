@@ -5,7 +5,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.EditText;
-import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.Spinner;
 import android.widget.Switch;
@@ -16,6 +15,7 @@ import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.example.opsc7311poe.R;
+import com.google.android.material.bottomnavigation.BottomNavigationView;
 import java.lang.NullPointerException;
 import java.lang.Override;
 import java.lang.String;
@@ -25,7 +25,7 @@ public final class ActivityInsertTaskBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
-  public final ConstraintLayout clNavBar;
+  public final BottomNavigationView bottomNav;
 
   @NonNull
   public final EditText edtDescription;
@@ -40,34 +40,10 @@ public final class ActivityInsertTaskBinding implements ViewBinding {
   public final EditText edtTaskName;
 
   @NonNull
-  public final ImageButton ibCalendar;
-
-  @NonNull
-  public final ImageButton ibHome;
-
-  @NonNull
-  public final ImageButton ibProfile;
-
-  @NonNull
-  public final ImageButton ibTimer;
-
-  @NonNull
   public final ImageView imageView;
 
   @NonNull
   public final ImageView ivBack;
-
-  @NonNull
-  public final ConstraintLayout linearLayout;
-
-  @NonNull
-  public final ConstraintLayout linearLayout2;
-
-  @NonNull
-  public final ConstraintLayout linearLayout4;
-
-  @NonNull
-  public final ConstraintLayout linearLayout5;
 
   @NonNull
   public final ConstraintLayout main;
@@ -94,25 +70,13 @@ public final class ActivityInsertTaskBinding implements ViewBinding {
   public final TextView tvAddTask;
 
   @NonNull
-  public final TextView tvCalendar;
-
-  @NonNull
   public final TextView tvCategory;
 
   @NonNull
   public final TextView tvColour;
 
   @NonNull
-  public final TextView tvHome;
-
-  @NonNull
   public final TextView tvName;
-
-  @NonNull
-  public final TextView tvProfile;
-
-  @NonNull
-  public final TextView tvTimer;
 
   @NonNull
   public final View view;
@@ -139,35 +103,23 @@ public final class ActivityInsertTaskBinding implements ViewBinding {
   public final View view9;
 
   private ActivityInsertTaskBinding(@NonNull ConstraintLayout rootView,
-      @NonNull ConstraintLayout clNavBar, @NonNull EditText edtDescription,
+      @NonNull BottomNavigationView bottomNav, @NonNull EditText edtDescription,
       @NonNull EditText edtEnd, @NonNull EditText edtStart, @NonNull EditText edtTaskName,
-      @NonNull ImageButton ibCalendar, @NonNull ImageButton ibHome, @NonNull ImageButton ibProfile,
-      @NonNull ImageButton ibTimer, @NonNull ImageView imageView, @NonNull ImageView ivBack,
-      @NonNull ConstraintLayout linearLayout, @NonNull ConstraintLayout linearLayout2,
-      @NonNull ConstraintLayout linearLayout4, @NonNull ConstraintLayout linearLayout5,
-      @NonNull ConstraintLayout main, @NonNull Switch repeatSwitch, @NonNull Spinner spCategory,
-      @NonNull TextView textView, @NonNull TextView textView32, @NonNull TextView textView34,
-      @NonNull TextView textView99, @NonNull TextView tvAddTask, @NonNull TextView tvCalendar,
-      @NonNull TextView tvCategory, @NonNull TextView tvColour, @NonNull TextView tvHome,
-      @NonNull TextView tvName, @NonNull TextView tvProfile, @NonNull TextView tvTimer,
-      @NonNull View view, @NonNull View view10, @NonNull View view11, @NonNull View view12,
-      @NonNull View view13, @NonNull View view14, @NonNull View view8, @NonNull View view9) {
+      @NonNull ImageView imageView, @NonNull ImageView ivBack, @NonNull ConstraintLayout main,
+      @NonNull Switch repeatSwitch, @NonNull Spinner spCategory, @NonNull TextView textView,
+      @NonNull TextView textView32, @NonNull TextView textView34, @NonNull TextView textView99,
+      @NonNull TextView tvAddTask, @NonNull TextView tvCategory, @NonNull TextView tvColour,
+      @NonNull TextView tvName, @NonNull View view, @NonNull View view10, @NonNull View view11,
+      @NonNull View view12, @NonNull View view13, @NonNull View view14, @NonNull View view8,
+      @NonNull View view9) {
     this.rootView = rootView;
-    this.clNavBar = clNavBar;
+    this.bottomNav = bottomNav;
     this.edtDescription = edtDescription;
     this.edtEnd = edtEnd;
     this.edtStart = edtStart;
     this.edtTaskName = edtTaskName;
-    this.ibCalendar = ibCalendar;
-    this.ibHome = ibHome;
-    this.ibProfile = ibProfile;
-    this.ibTimer = ibTimer;
     this.imageView = imageView;
     this.ivBack = ivBack;
-    this.linearLayout = linearLayout;
-    this.linearLayout2 = linearLayout2;
-    this.linearLayout4 = linearLayout4;
-    this.linearLayout5 = linearLayout5;
     this.main = main;
     this.repeatSwitch = repeatSwitch;
     this.spCategory = spCategory;
@@ -176,13 +128,9 @@ public final class ActivityInsertTaskBinding implements ViewBinding {
     this.textView34 = textView34;
     this.textView99 = textView99;
     this.tvAddTask = tvAddTask;
-    this.tvCalendar = tvCalendar;
     this.tvCategory = tvCategory;
     this.tvColour = tvColour;
-    this.tvHome = tvHome;
     this.tvName = tvName;
-    this.tvProfile = tvProfile;
-    this.tvTimer = tvTimer;
     this.view = view;
     this.view10 = view10;
     this.view11 = view11;
@@ -220,9 +168,9 @@ public final class ActivityInsertTaskBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.cl_NavBar;
-      ConstraintLayout clNavBar = ViewBindings.findChildViewById(rootView, id);
-      if (clNavBar == null) {
+      id = R.id.bottomNav;
+      BottomNavigationView bottomNav = ViewBindings.findChildViewById(rootView, id);
+      if (bottomNav == null) {
         break missingId;
       }
 
@@ -250,30 +198,6 @@ public final class ActivityInsertTaskBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.ib_Calendar;
-      ImageButton ibCalendar = ViewBindings.findChildViewById(rootView, id);
-      if (ibCalendar == null) {
-        break missingId;
-      }
-
-      id = R.id.ib_Home;
-      ImageButton ibHome = ViewBindings.findChildViewById(rootView, id);
-      if (ibHome == null) {
-        break missingId;
-      }
-
-      id = R.id.ib_Profile;
-      ImageButton ibProfile = ViewBindings.findChildViewById(rootView, id);
-      if (ibProfile == null) {
-        break missingId;
-      }
-
-      id = R.id.ib_Timer;
-      ImageButton ibTimer = ViewBindings.findChildViewById(rootView, id);
-      if (ibTimer == null) {
-        break missingId;
-      }
-
       id = R.id.imageView;
       ImageView imageView = ViewBindings.findChildViewById(rootView, id);
       if (imageView == null) {
@@ -283,30 +207,6 @@ public final class ActivityInsertTaskBinding implements ViewBinding {
       id = R.id.iv_Back;
       ImageView ivBack = ViewBindings.findChildViewById(rootView, id);
       if (ivBack == null) {
-        break missingId;
-      }
-
-      id = R.id.linearLayout;
-      ConstraintLayout linearLayout = ViewBindings.findChildViewById(rootView, id);
-      if (linearLayout == null) {
-        break missingId;
-      }
-
-      id = R.id.linearLayout2;
-      ConstraintLayout linearLayout2 = ViewBindings.findChildViewById(rootView, id);
-      if (linearLayout2 == null) {
-        break missingId;
-      }
-
-      id = R.id.linearLayout4;
-      ConstraintLayout linearLayout4 = ViewBindings.findChildViewById(rootView, id);
-      if (linearLayout4 == null) {
-        break missingId;
-      }
-
-      id = R.id.linearLayout5;
-      ConstraintLayout linearLayout5 = ViewBindings.findChildViewById(rootView, id);
-      if (linearLayout5 == null) {
         break missingId;
       }
 
@@ -354,12 +254,6 @@ public final class ActivityInsertTaskBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.tv_calendar;
-      TextView tvCalendar = ViewBindings.findChildViewById(rootView, id);
-      if (tvCalendar == null) {
-        break missingId;
-      }
-
       id = R.id.tv_Category;
       TextView tvCategory = ViewBindings.findChildViewById(rootView, id);
       if (tvCategory == null) {
@@ -372,27 +266,9 @@ public final class ActivityInsertTaskBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.tv_Home;
-      TextView tvHome = ViewBindings.findChildViewById(rootView, id);
-      if (tvHome == null) {
-        break missingId;
-      }
-
       id = R.id.tv_Name;
       TextView tvName = ViewBindings.findChildViewById(rootView, id);
       if (tvName == null) {
-        break missingId;
-      }
-
-      id = R.id.tv_Profile;
-      TextView tvProfile = ViewBindings.findChildViewById(rootView, id);
-      if (tvProfile == null) {
-        break missingId;
-      }
-
-      id = R.id.tv_timer;
-      TextView tvTimer = ViewBindings.findChildViewById(rootView, id);
-      if (tvTimer == null) {
         break missingId;
       }
 
@@ -444,12 +320,10 @@ public final class ActivityInsertTaskBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityInsertTaskBinding((ConstraintLayout) rootView, clNavBar, edtDescription,
-          edtEnd, edtStart, edtTaskName, ibCalendar, ibHome, ibProfile, ibTimer, imageView, ivBack,
-          linearLayout, linearLayout2, linearLayout4, linearLayout5, main, repeatSwitch, spCategory,
-          textView, textView32, textView34, textView99, tvAddTask, tvCalendar, tvCategory, tvColour,
-          tvHome, tvName, tvProfile, tvTimer, view, view10, view11, view12, view13, view14, view8,
-          view9);
+      return new ActivityInsertTaskBinding((ConstraintLayout) rootView, bottomNav, edtDescription,
+          edtEnd, edtStart, edtTaskName, imageView, ivBack, main, repeatSwitch, spCategory,
+          textView, textView32, textView34, textView99, tvAddTask, tvCategory, tvColour, tvName,
+          view, view10, view11, view12, view13, view14, view8, view9);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

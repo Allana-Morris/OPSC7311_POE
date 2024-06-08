@@ -6,7 +6,7 @@ import android.os.Handler
 import androidx.appcompat.app.AppCompatActivity
 
 @Suppress("DEPRECATION")
-class StartingPage : AppCompatActivity() {
+class StartingPage_activity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -15,7 +15,7 @@ class StartingPage : AppCompatActivity() {
         // Handler to delay opening another activity
         Handler().postDelayed({
             // Start the new activity after 7 seconds
-            val intent = Intent(this, Login::class.java)
+            val intent = Intent(this, Login_activity::class.java)
             startActivity(intent)
             // Finish the current activity
             finish()
