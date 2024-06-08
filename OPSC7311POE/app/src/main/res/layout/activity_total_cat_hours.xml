@@ -84,20 +84,22 @@
         android:id="@+id/btnSelectHours"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
         android:text="Select"
         android:textSize="18sp"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="154dp"
-        tools:layout_editor_absoluteY="313dp" />
+        app:layout_constraintBottom_toTopOf="@+id/chooseWeek1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
 
     <ScrollView
         android:id="@+id/chooseWeek1"
         android:layout_width="395dp"
         android:layout_height="236dp"
-        android:layout_marginBottom="8dp"
+        android:layout_marginBottom="160dp"
         app:layout_constraintBottom_toTopOf="@id/cl_NavBar1"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
 
         >
@@ -114,19 +116,6 @@
             android:textSize="24sp"
             tools:text="Your huge text goes here..." />
     </ScrollView>
-
-    <TextView
-        android:id="@+id/tvgenerate1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="sans-serif-medium"
-        android:text="@string/generate"
-        android:textColor="@color/blue"
-        android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteY="668dp" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/cl_NavBar1"
