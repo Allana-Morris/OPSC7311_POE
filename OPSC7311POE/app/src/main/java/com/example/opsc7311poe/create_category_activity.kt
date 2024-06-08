@@ -114,14 +114,15 @@ class create_category_activity : AppCompatActivity(), IconPickerDialogFragment.O
 
         iconPicker.setOnClickListener {
             val icons = listOf(
-                R.drawable.bag,
                 R.drawable.bed,
-                R.drawable.work,
                 R.drawable.laptop,
-                R.drawable.shopping,
-                R.drawable.leaf,
-                R.drawable.sport,
-                R.drawable.tools
+                R.drawable.biphobia,
+                R.drawable.gym,
+                R.drawable.gaming,
+                R.drawable.drink,
+                R.drawable.outdoors,
+                R.drawable.virtualdating,
+                R.drawable.shoppingcart
 
                 // Add your icon resource IDs here
             )
