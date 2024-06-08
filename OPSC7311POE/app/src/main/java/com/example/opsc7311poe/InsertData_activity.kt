@@ -6,9 +6,17 @@ import android.os.Bundle
 import android.widget.*
 import androidx.appcompat.app.AppCompatActivity
 import com.google.android.material.bottomnavigation.BottomNavigationView
+import com.google.firebase.database.DataSnapshot
+import com.google.firebase.database.DatabaseError
+import com.google.firebase.database.FirebaseDatabase
+import com.google.firebase.database.ValueEventListener
 import java.time.LocalTime
 
 class InsertData_activity : AppCompatActivity() {
+    val database: FirebaseDatabase =
+        FirebaseDatabase.getInstance("https://atomic-affinity-421915-default-rtdb.europe-west1.firebasedatabase.app/")
+
+    val DbRef = database.getReference("user")
     lateinit var bottomNav: BottomNavigationView
     @SuppressLint("UseSwitchCompatOrMaterialCode")
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -51,26 +59,71 @@ class InsertData_activity : AppCompatActivity() {
             }
         }
         // Spinner for Categories
+        // Spinner for Categories
         val catSpin: Spinner = findViewById(R.id.sp_Category)
-        val categoryList = mutableListOf<String>()
-        SessionUser.currentUser?.categories?.forEach { (name, _) ->
-            categoryList.add(name)
+
+// Retrieve categories from the database for the current user
+        val currentUser = SessionUser.currentUser
+        if (currentUser != null) {
+            val currentUsername = currentUser.username
+            if (currentUsername != null) {
+                val userCategoriesRef = DbRef.child(currentUsername).child("categories")
+
+                // Add a ValueEventListener to fetch categories from the database
+                userCategoriesRef.addListenerForSingleValueEvent(object : ValueEventListener {
+                    override fun onDataChange(dataSnapshot: DataSnapshot) {
+                        val categoryList = mutableListOf<String>()
+
+                        for (categorySnapshot in dataSnapshot.children) {
+                            val categoryName = categorySnapshot.key
+                            if (categoryName != null) {
+                                categoryList.add(categoryName)
+                            }
+                        }
+
+                        // If there are no categories, disable the task spinner and display "No categories"
+                        if (categoryList.isEmpty()) {
+                            catSpin.adapter = ArrayAdapter<String>(
+                                this@InsertData_activity,
+                                android.R.layout.simple_spinner_item,
+                                listOf("No categories")
+                            )
+                        } else {
+                            // Create an adapter for the category Spinner
+                            val categoryAdapter = ArrayAdapter(
+                                this@InsertData_activity,
+                                android.R.layout.simple_spinner_item,
+                                categoryList
+                            )
+                            categoryAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
+                            catSpin.adapter = categoryAdapter
+                        }
+                    }
+
+                    override fun onCancelled(databaseError: DatabaseError) {
+                        // Handle errors here
+                        Toast.makeText(
+                            applicationContext,
+                            "Failed to retrieve categories: ${databaseError.message}",
+                            Toast.LENGTH_SHORT
+                        ).show()
+                    }
+                })
+            } else {
+                Toast.makeText(
+                    applicationContext,
+                    "Invalid username. Cannot retrieve categories.",
+                    Toast.LENGTH_SHORT
+                ).show()
+            }
+        } else {
+            Toast.makeText(
+                applicationContext,
+                "No user logged in. Cannot retrieve categories.",
+                Toast.LENGTH_SHORT
+            ).show()
         }
 
-        // If there are no categories, disable the task spinner and display "No categories"
-        if (categoryList.isEmpty()) {
-            catSpin.adapter = ArrayAdapter<String>(
-                this,
-                android.R.layout.simple_spinner_item,
-                listOf("No categories")
-            )
-        } else {
-            // Create an adapter for the category Spinner
-            val categoryAdapter =
-                ArrayAdapter(this, android.R.layout.simple_spinner_item, categoryList)
-            categoryAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
-            catSpin.adapter = categoryAdapter
-        }
 
         // Add Task Button
         val AddTaskButton: TextView = findViewById(R.id.tvAddTask)
@@ -108,25 +161,43 @@ class InsertData_activity : AppCompatActivity() {
 
                 // Input validation passed, proceed with task creation
                 // Create and add the task to the selected category for the user
-                val selectedCategoryObj = SessionUser.currentUser?.categories?.get(selectedCategory)
-                if (selectedCategoryObj != null) {
-                    val createdTask =
-                        Task(taskName, desc, repeatSwitch.isChecked, startHour, endHour)
-                    selectedCategoryObj.tasks[createdTask.name] = createdTask
+                //val selectedCategoryObj = SessionUser.currentUser?.categories?.get(selectedCategory)
+                //if (selectedCategoryObj != null) {
+                val currentUsername = SessionUser.currentUser!!.username
+                if (currentUsername != null && currentUsername.isNotEmpty()) {
+                    val userCategoryTasksRef = DbRef.child(currentUsername)
+                        .child("categories")
+                        .child(selectedCategory)
+                        .child("tasks")
 
-                    // Optional: Display a toast to confirm task creation
-                    Toast.makeText(
-                        this,
-                        "Task '$taskName' added to category '$selectedCategory'",
-                        Toast.LENGTH_SHORT
-                    ).show()
+                    // Create a unique task ID using the task name
+                    val taskId = taskName // You can customize this if needed
 
-                    // Start the ViewData activity or perform any other necessary action
-                    val intent = Intent(this, ViewTasks_activity::class.java)
-                    startActivity(intent)
+                    // Create the Task object
+                    val createdTask = Task(taskId, desc, repeatSwitch.isChecked, startHour, endHour)
+
+                    // Save the task under the category's tasks node with the task name as the ID
+                    userCategoryTasksRef.child(taskId).setValue(createdTask).addOnSuccessListener {
+                        // Optional: Display a toast to confirm task creation
+                        Toast.makeText(
+                            this,
+                            "Task '$taskName' added to category '$selectedCategory'",
+                            Toast.LENGTH_SHORT
+                        ).show()
+
+                        // Add an empty node for recordings under the task node
+                        userCategoryTasksRef.child(taskId).child("recordings").setValue("")
+
+                        // Start the ViewData activity or perform any other necessary action
+                        val intent = Intent(this, ViewTasks_activity::class.java)
+                        startActivity(intent)
+                    }.addOnFailureListener {
+                        Toast.makeText(this, "Failed to add task", Toast.LENGTH_SHORT).show()
+                    }
                 } else {
-                    Toast.makeText(this, "Selected category not found", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(this, "Invalid username. Cannot add task.", Toast.LENGTH_SHORT).show()
                 }
+
             }
         }
     }

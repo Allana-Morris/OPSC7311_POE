@@ -50,7 +50,7 @@
             android:name="com.example.opsc7311poe.create_category_activity"
             android:exported="false" />
         <activity
-            android:name="com.example.opsc7311poe.ViewData"
+            android:name="com.example.opsc7311poe.ViewTasks_activity"
             android:exported="false" />
         <activity
             android:name="com.example.opsc7311poe.cat_total_activity"

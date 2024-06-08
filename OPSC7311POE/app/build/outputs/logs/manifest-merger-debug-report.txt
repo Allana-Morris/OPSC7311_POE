@@ -242,12 +242,12 @@ ADDED from C:\Users\Sven\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\
 		ADDED from C:\Users\Sven\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:26:13-37
 	android:name
 		ADDED from C:\Users\Sven\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:25:13-53
-activity#com.example.opsc7311poe.ViewData
+activity#com.example.opsc7311poe.ViewTasks_activity
 ADDED from C:\Users\Sven\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:27:9-29:40
 	android:exported
 		ADDED from C:\Users\Sven\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:29:13-37
 	android:name
-		ADDED from C:\Users\Sven\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:28:13-37
+		ADDED from C:\Users\Sven\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:28:13-47
 activity#com.example.opsc7311poe.cat_total_activity
 ADDED from C:\Users\Sven\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:30:9-32:40
 	android:exported

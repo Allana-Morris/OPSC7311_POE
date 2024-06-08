@@ -45,15 +45,20 @@ class Login_activity : AppCompatActivity() {
 
             if (valid) {
 
-
+                Toast.makeText(this, "check", Toast.LENGTH_SHORT)
+                    .show()
                 // Firebase authentication logic
                 authenticate(username, password) { authenticated ->
 
                     if (authenticated) {
                         val intent = Intent(this, MainActivity::class.java)
                         startActivity(intent)
+                        Toast.makeText(this, "check2", Toast.LENGTH_SHORT)
+                            .show()
                     } else {
                         Toast.makeText(this, "Invalid username or password", Toast.LENGTH_SHORT)
+                            .show()
+                        Toast.makeText(this, "check3", Toast.LENGTH_SHORT)
                             .show()
                     }
                     Toast.makeText(this, authenticated.toString(), Toast.LENGTH_SHORT).show()
@@ -69,22 +74,29 @@ class Login_activity : AppCompatActivity() {
         val usernameQuery = DbRef.orderByChild("username").equalTo(username)
         usernameQuery.addListenerForSingleValueEvent(object : ValueEventListener {
             override fun onDataChange(dataSnapshot: DataSnapshot) {
-
                 if (dataSnapshot.exists()) {
                     for (userSnapshot in dataSnapshot.children) {
-                        val user = userSnapshot.getValue(User::class.java)
-                        if (user != null && user.password == password) {
-                            SessionUser.currentUser = user // Set the current user session
-                            completion(true)
-                            return
-                        }
+                        val username = userSnapshot.child("username").getValue(String::class.java)!!
+                        val password = userSnapshot.child("password").getValue(String::class.java)!!
+                        val fullName = userSnapshot.child("fullName").getValue(String::class.java)!!
+                        val email = userSnapshot.child("email").getValue(String::class.java)!!
+
+                        SessionUser.currentUser = User(username, password, fullName, email)
+
+                        // Implement your authentication logic using these retrieved values
+                        // (compare password with stored hash, etc.)
+                        completion (true)
                     }
+                } else {
+                    // Handle case where username not found
+                    completion (false)
                 }
-                completion(dataSnapshot.exists())
             }
 
             override fun onCancelled(databaseError: DatabaseError) {
-                completion(false)
+                // Handle Database errors
+                completion (false)
+
             }
         })
     }
