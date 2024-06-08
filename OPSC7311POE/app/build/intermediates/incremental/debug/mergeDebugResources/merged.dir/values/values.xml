@@ -2088,6 +2088,7 @@
     <string name="diagram">Diagram</string>
     <string name="dropdown_menu">"Dropdown menu"</string>
     <string name="editUser">Edit Username:</string>
+    <string name="endDate">End Date</string>
     <string name="enter_hours_spent">Enter hours for task</string>
     <string name="enter_time">Enter time</string>
     <string description="Screen reader announcement for when a checkbox is on error. [CHAR LIMIT=NONE]" name="error_a11y_label">
@@ -2268,6 +2269,7 @@
     <string name="sign_in_to_lifetime">Sign in to LifeTime</string>
     <string name="signup">Sign Up</string>
     <string name="start">Start</string>
+    <string name="startDate">Start Date</string>
     <string name="status_bar_notification_info_overflow">999+</string>
     <string name="stop">Stop</string>
     <string name="switch_role">Switch</string>

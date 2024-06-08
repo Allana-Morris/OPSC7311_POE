@@ -11,345 +11,345 @@
 11    <!-- Although the *SdkVersion is captured in gradle build files, this is required for non gradle builds -->
 12    <!-- <uses-sdk android:minSdkVersion="21" /> -->
 13    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-13-->[com.google.firebase:firebase-firestore:25.0.0] C:\Users\Sven\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\.gradle\8.7\caches\transforms-4\c6b8674036e853b89c9a5f2ee8aaca73\transformed\firebase-firestore-25.0.0\AndroidManifest.xml:10:5-79
-13-->[com.google.firebase:firebase-firestore:25.0.0] C:\Users\Sven\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\.gradle\8.7\caches\transforms-4\c6b8674036e853b89c9a5f2ee8aaca73\transformed\firebase-firestore-25.0.0\AndroidManifest.xml:10:22-76
+13-->[com.google.firebase:firebase-firestore:25.0.0] C:\Users\reill\.gradle\caches\transforms-4\c6b8674036e853b89c9a5f2ee8aaca73\transformed\firebase-firestore-25.0.0\AndroidManifest.xml:10:5-79
+13-->[com.google.firebase:firebase-firestore:25.0.0] C:\Users\reill\.gradle\caches\transforms-4\c6b8674036e853b89c9a5f2ee8aaca73\transformed\firebase-firestore-25.0.0\AndroidManifest.xml:10:22-76
 14    <uses-permission android:name="android.permission.INTERNET" />
-14-->[com.google.firebase:firebase-firestore:25.0.0] C:\Users\Sven\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\.gradle\8.7\caches\transforms-4\c6b8674036e853b89c9a5f2ee8aaca73\transformed\firebase-firestore-25.0.0\AndroidManifest.xml:11:5-67
-14-->[com.google.firebase:firebase-firestore:25.0.0] C:\Users\Sven\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\.gradle\8.7\caches\transforms-4\c6b8674036e853b89c9a5f2ee8aaca73\transformed\firebase-firestore-25.0.0\AndroidManifest.xml:11:22-64
+14-->[com.google.firebase:firebase-firestore:25.0.0] C:\Users\reill\.gradle\caches\transforms-4\c6b8674036e853b89c9a5f2ee8aaca73\transformed\firebase-firestore-25.0.0\AndroidManifest.xml:11:5-67
+14-->[com.google.firebase:firebase-firestore:25.0.0] C:\Users\reill\.gradle\caches\transforms-4\c6b8674036e853b89c9a5f2ee8aaca73\transformed\firebase-firestore-25.0.0\AndroidManifest.xml:11:22-64
 15    <uses-permission android:name="android.permission.WAKE_LOCK" />
-15-->[com.google.android.gms:play-services-measurement-api:22.0.1] C:\Users\Sven\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\.gradle\8.7\caches\transforms-4\238fc31ade03e28da096174a75a66442\transformed\play-services-measurement-api-22.0.1\AndroidManifest.xml:24:5-68
-15-->[com.google.android.gms:play-services-measurement-api:22.0.1] C:\Users\Sven\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\.gradle\8.7\caches\transforms-4\238fc31ade03e28da096174a75a66442\transformed\play-services-measurement-api-22.0.1\AndroidManifest.xml:24:22-65
+15-->[com.google.android.gms:play-services-measurement-api:22.0.1] C:\Users\reill\.gradle\caches\transforms-4\238fc31ade03e28da096174a75a66442\transformed\play-services-measurement-api-22.0.1\AndroidManifest.xml:24:5-68
+15-->[com.google.android.gms:play-services-measurement-api:22.0.1] C:\Users\reill\.gradle\caches\transforms-4\238fc31ade03e28da096174a75a66442\transformed\play-services-measurement-api-22.0.1\AndroidManifest.xml:24:22-65
 16    <uses-permission android:name="com.google.android.gms.permission.AD_ID" />
-16-->[com.google.android.gms:play-services-measurement-api:22.0.1] C:\Users\Sven\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\.gradle\8.7\caches\transforms-4\238fc31ade03e28da096174a75a66442\transformed\play-services-measurement-api-22.0.1\AndroidManifest.xml:25:5-79
-16-->[com.google.android.gms:play-services-measurement-api:22.0.1] C:\Users\Sven\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\.gradle\8.7\caches\transforms-4\238fc31ade03e28da096174a75a66442\transformed\play-services-measurement-api-22.0.1\AndroidManifest.xml:25:22-76
+16-->[com.google.android.gms:play-services-measurement-api:22.0.1] C:\Users\reill\.gradle\caches\transforms-4\238fc31ade03e28da096174a75a66442\transformed\play-services-measurement-api-22.0.1\AndroidManifest.xml:25:5-79
+16-->[com.google.android.gms:play-services-measurement-api:22.0.1] C:\Users\reill\.gradle\caches\transforms-4\238fc31ade03e28da096174a75a66442\transformed\play-services-measurement-api-22.0.1\AndroidManifest.xml:25:22-76
 17    <uses-permission android:name="android.permission.ACCESS_ADSERVICES_ATTRIBUTION" />
-17-->[com.google.android.gms:play-services-measurement-api:22.0.1] C:\Users\Sven\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\.gradle\8.7\caches\transforms-4\238fc31ade03e28da096174a75a66442\transformed\play-services-measurement-api-22.0.1\AndroidManifest.xml:26:5-88
-17-->[com.google.android.gms:play-services-measurement-api:22.0.1] C:\Users\Sven\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\.gradle\8.7\caches\transforms-4\238fc31ade03e28da096174a75a66442\transformed\play-services-measurement-api-22.0.1\AndroidManifest.xml:26:22-85
+17-->[com.google.android.gms:play-services-measurement-api:22.0.1] C:\Users\reill\.gradle\caches\transforms-4\238fc31ade03e28da096174a75a66442\transformed\play-services-measurement-api-22.0.1\AndroidManifest.xml:26:5-88
+17-->[com.google.android.gms:play-services-measurement-api:22.0.1] C:\Users\reill\.gradle\caches\transforms-4\238fc31ade03e28da096174a75a66442\transformed\play-services-measurement-api-22.0.1\AndroidManifest.xml:26:22-85
 18    <uses-permission android:name="android.permission.ACCESS_ADSERVICES_AD_ID" />
-18-->[com.google.android.gms:play-services-measurement-api:22.0.1] C:\Users\Sven\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\.gradle\8.7\caches\transforms-4\238fc31ade03e28da096174a75a66442\transformed\play-services-measurement-api-22.0.1\AndroidManifest.xml:27:5-82
-18-->[com.google.android.gms:play-services-measurement-api:22.0.1] C:\Users\Sven\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\.gradle\8.7\caches\transforms-4\238fc31ade03e28da096174a75a66442\transformed\play-services-measurement-api-22.0.1\AndroidManifest.xml:27:22-79
+18-->[com.google.android.gms:play-services-measurement-api:22.0.1] C:\Users\reill\.gradle\caches\transforms-4\238fc31ade03e28da096174a75a66442\transformed\play-services-measurement-api-22.0.1\AndroidManifest.xml:27:5-82
+18-->[com.google.android.gms:play-services-measurement-api:22.0.1] C:\Users\reill\.gradle\caches\transforms-4\238fc31ade03e28da096174a75a66442\transformed\play-services-measurement-api-22.0.1\AndroidManifest.xml:27:22-79
 19    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
-19-->[com.google.android.gms:play-services-measurement:22.0.1] C:\Users\Sven\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\.gradle\8.7\caches\transforms-4\4fefdd3b771170c57e6cc4ae21d72ccd\transformed\play-services-measurement-22.0.1\AndroidManifest.xml:26:5-110
-19-->[com.google.android.gms:play-services-measurement:22.0.1] C:\Users\Sven\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\.gradle\8.7\caches\transforms-4\4fefdd3b771170c57e6cc4ae21d72ccd\transformed\play-services-measurement-22.0.1\AndroidManifest.xml:26:22-107
+19-->[com.google.android.gms:play-services-measurement:22.0.1] C:\Users\reill\.gradle\caches\transforms-4\4fefdd3b771170c57e6cc4ae21d72ccd\transformed\play-services-measurement-22.0.1\AndroidManifest.xml:26:5-110
+19-->[com.google.android.gms:play-services-measurement:22.0.1] C:\Users\reill\.gradle\caches\transforms-4\4fefdd3b771170c57e6cc4ae21d72ccd\transformed\play-services-measurement-22.0.1\AndroidManifest.xml:26:22-107
 20
 21    <permission
-21-->[androidx.core:core:1.12.0] C:\Users\Sven\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\.gradle\8.7\caches\transforms-4\503508ac2322618bd3037242835f3f5f\transformed\core-1.12.0\AndroidManifest.xml:22:5-24:47
+21-->[androidx.core:core:1.12.0] C:\Users\reill\.gradle\caches\transforms-4\503508ac2322618bd3037242835f3f5f\transformed\core-1.12.0\AndroidManifest.xml:22:5-24:47
 22        android:name="com.example.opsc7311poe.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
-22-->[androidx.core:core:1.12.0] C:\Users\Sven\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\.gradle\8.7\caches\transforms-4\503508ac2322618bd3037242835f3f5f\transformed\core-1.12.0\AndroidManifest.xml:23:9-81
+22-->[androidx.core:core:1.12.0] C:\Users\reill\.gradle\caches\transforms-4\503508ac2322618bd3037242835f3f5f\transformed\core-1.12.0\AndroidManifest.xml:23:9-81
 23        android:protectionLevel="signature" />
-23-->[androidx.core:core:1.12.0] C:\Users\Sven\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\.gradle\8.7\caches\transforms-4\503508ac2322618bd3037242835f3f5f\transformed\core-1.12.0\AndroidManifest.xml:24:9-44
+23-->[androidx.core:core:1.12.0] C:\Users\reill\.gradle\caches\transforms-4\503508ac2322618bd3037242835f3f5f\transformed\core-1.12.0\AndroidManifest.xml:24:9-44
 24
 25    <uses-permission android:name="com.example.opsc7311poe.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
-25-->[androidx.core:core:1.12.0] C:\Users\Sven\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\.gradle\8.7\caches\transforms-4\503508ac2322618bd3037242835f3f5f\transformed\core-1.12.0\AndroidManifest.xml:26:5-97
-25-->[androidx.core:core:1.12.0] C:\Users\Sven\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\.gradle\8.7\caches\transforms-4\503508ac2322618bd3037242835f3f5f\transformed\core-1.12.0\AndroidManifest.xml:26:22-94
+25-->[androidx.core:core:1.12.0] C:\Users\reill\.gradle\caches\transforms-4\503508ac2322618bd3037242835f3f5f\transformed\core-1.12.0\AndroidManifest.xml:26:5-97
+25-->[androidx.core:core:1.12.0] C:\Users\reill\.gradle\caches\transforms-4\503508ac2322618bd3037242835f3f5f\transformed\core-1.12.0\AndroidManifest.xml:26:22-94
 26
 27    <application
-27-->C:\Users\Sven\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:5:5-52:19
+27-->C:\Users\reill\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:5:5-52:19
 28        android:allowBackup="true"
-28-->C:\Users\Sven\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:6:9-35
+28-->C:\Users\reill\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:6:9-35
 29        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-29-->[androidx.core:core:1.12.0] C:\Users\Sven\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\.gradle\8.7\caches\transforms-4\503508ac2322618bd3037242835f3f5f\transformed\core-1.12.0\AndroidManifest.xml:28:18-86
+29-->[androidx.core:core:1.12.0] C:\Users\reill\.gradle\caches\transforms-4\503508ac2322618bd3037242835f3f5f\transformed\core-1.12.0\AndroidManifest.xml:28:18-86
 30        android:dataExtractionRules="@xml/data_extraction_rules"
-30-->C:\Users\Sven\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:7:9-65
+30-->C:\Users\reill\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:7:9-65
 31        android:debuggable="true"
 32        android:extractNativeLibs="false"
 33        android:fullBackupContent="@xml/backup_rules"
-33-->C:\Users\Sven\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:8:9-54
+33-->C:\Users\reill\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:8:9-54
 34        android:icon="@drawable/logo"
-34-->C:\Users\Sven\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:9:9-38
+34-->C:\Users\reill\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:9:9-38
 35        android:label="@string/app_name"
-35-->C:\Users\Sven\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:10:9-41
+35-->C:\Users\reill\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:10:9-41
 36        android:roundIcon="@drawable/logo"
-36-->C:\Users\Sven\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:11:9-43
+36-->C:\Users\reill\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:11:9-43
 37        android:supportsRtl="true"
-37-->C:\Users\Sven\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:12:9-35
+37-->C:\Users\reill\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:12:9-35
 38        android:testOnly="true"
 39        android:theme="@style/Theme.OPSC7311POE" >
-39-->C:\Users\Sven\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:13:9-49
+39-->C:\Users\reill\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:13:9-49
 40        <activity
-40-->C:\Users\Sven\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:15:9-17:40
+40-->C:\Users\reill\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:15:9-17:40
 41            android:name="com.example.opsc7311poe.TaskCalendar"
-41-->C:\Users\Sven\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:16:13-41
+41-->C:\Users\reill\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:16:13-41
 42            android:exported="false" />
-42-->C:\Users\Sven\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:17:13-37
+42-->C:\Users\reill\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:17:13-37
 43        <activity
-43-->C:\Users\Sven\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:18:9-20:40
+43-->C:\Users\reill\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:18:9-20:40
 44            android:name="com.example.opsc7311poe.CreateEntry"
-44-->C:\Users\Sven\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:19:13-40
+44-->C:\Users\reill\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:19:13-40
 45            android:exported="false" />
-45-->C:\Users\Sven\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:20:13-37
+45-->C:\Users\reill\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:20:13-37
 46        <activity
-46-->C:\Users\Sven\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:21:9-23:40
+46-->C:\Users\reill\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:21:9-23:40
 47            android:name="com.example.opsc7311poe.create_category"
-47-->C:\Users\Sven\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:22:13-44
+47-->C:\Users\reill\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:22:13-44
 48            android:exported="false" />
-48-->C:\Users\Sven\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:23:13-37
+48-->C:\Users\reill\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:23:13-37
 49        <activity
-49-->C:\Users\Sven\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:24:9-26:40
+49-->C:\Users\reill\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:24:9-26:40
 50            android:name="com.example.opsc7311poe.ViewData"
-50-->C:\Users\Sven\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:25:13-37
+50-->C:\Users\reill\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:25:13-37
 51            android:exported="false" />
-51-->C:\Users\Sven\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:26:13-37
+51-->C:\Users\reill\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:26:13-37
 52        <activity
-52-->C:\Users\Sven\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:27:9-29:40
+52-->C:\Users\reill\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:27:9-29:40
 53            android:name="com.example.opsc7311poe.cat_total"
-53-->C:\Users\Sven\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:28:13-38
+53-->C:\Users\reill\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:28:13-38
 54            android:exported="false" />
-54-->C:\Users\Sven\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:29:13-37
+54-->C:\Users\reill\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:29:13-37
 55        <activity
-55-->C:\Users\Sven\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:30:9-32:40
+55-->C:\Users\reill\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:30:9-32:40
 56            android:name="com.example.opsc7311poe.view_graphs"
-56-->C:\Users\Sven\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:31:13-40
+56-->C:\Users\reill\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:31:13-40
 57            android:exported="false" />
-57-->C:\Users\Sven\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:32:13-37
+57-->C:\Users\reill\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:32:13-37
 58        <activity
-58-->C:\Users\Sven\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:33:9-35:40
+58-->C:\Users\reill\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:33:9-35:40
 59            android:name="com.example.opsc7311poe.Timer"
-59-->C:\Users\Sven\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:34:13-34
+59-->C:\Users\reill\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:34:13-34
 60            android:exported="false" />
-60-->C:\Users\Sven\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:35:13-37
+60-->C:\Users\reill\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:35:13-37
 61        <activity
-61-->C:\Users\Sven\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:36:9-44:20
+61-->C:\Users\reill\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:36:9-44:20
 62            android:name="com.example.opsc7311poe.StartingPage"
-62-->C:\Users\Sven\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:37:13-41
+62-->C:\Users\reill\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:37:13-41
 63            android:exported="true" >
-63-->C:\Users\Sven\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:38:13-36
+63-->C:\Users\reill\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:38:13-36
 64            <intent-filter>
-64-->C:\Users\Sven\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:39:13-43:29
+64-->C:\Users\reill\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:39:13-43:29
 65                <action android:name="android.intent.action.MAIN" />
-65-->C:\Users\Sven\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:40:17-69
-65-->C:\Users\Sven\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:40:25-66
+65-->C:\Users\reill\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:40:17-69
+65-->C:\Users\reill\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:40:25-66
 66
 67                <category android:name="android.intent.category.LAUNCHER" />
-67-->C:\Users\Sven\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:42:17-77
-67-->C:\Users\Sven\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:42:27-74
+67-->C:\Users\reill\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:42:17-77
+67-->C:\Users\reill\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:42:27-74
 68            </intent-filter>
 69        </activity>
 70        <activity android:name="com.example.opsc7311poe.Login" />
-70-->C:\Users\Sven\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:45:9-43
-70-->C:\Users\Sven\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:45:19-40
+70-->C:\Users\reill\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:45:9-43
+70-->C:\Users\reill\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:45:19-40
 71        <activity android:name="com.example.opsc7311poe.Register" />
-71-->C:\Users\Sven\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:46:9-46
-71-->C:\Users\Sven\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:46:19-43
+71-->C:\Users\reill\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:46:9-46
+71-->C:\Users\reill\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:46:19-43
 72        <activity android:name="com.example.opsc7311poe.MainActivity" />
-72-->C:\Users\Sven\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:47:9-50
-72-->C:\Users\Sven\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:47:19-47
+72-->C:\Users\reill\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:47:9-50
+72-->C:\Users\reill\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:47:19-47
 73        <activity android:name="com.example.opsc7311poe.Profile" />
-73-->C:\Users\Sven\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:48:9-45
-73-->C:\Users\Sven\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:48:19-42
+73-->C:\Users\reill\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:48:9-45
+73-->C:\Users\reill\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:48:19-42
 74        <activity android:name="com.example.opsc7311poe.ViewTimeSheetEntry" />
-74-->C:\Users\Sven\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:49:9-55
-74-->C:\Users\Sven\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:49:19-53
+74-->C:\Users\reill\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:49:9-55
+74-->C:\Users\reill\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:49:19-53
 75        <activity android:name="com.example.opsc7311poe.InsertData" />
-75-->C:\Users\Sven\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:50:9-47
-75-->C:\Users\Sven\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:50:19-45
+75-->C:\Users\reill\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:50:9-47
+75-->C:\Users\reill\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:50:19-45
 76
 77        <service
-77-->[com.google.firebase:firebase-firestore-ktx:25.0.0] C:\Users\Sven\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\.gradle\8.7\caches\transforms-4\2be505309abc887d4e54a0bc360a5e50\transformed\firebase-firestore-ktx-25.0.0\AndroidManifest.xml:9:9-15:19
+77-->[com.google.firebase:firebase-firestore-ktx:25.0.0] C:\Users\reill\.gradle\caches\transforms-4\2be505309abc887d4e54a0bc360a5e50\transformed\firebase-firestore-ktx-25.0.0\AndroidManifest.xml:9:9-15:19
 78            android:name="com.google.firebase.components.ComponentDiscoveryService"
-78-->[com.google.firebase:firebase-firestore-ktx:25.0.0] C:\Users\Sven\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\.gradle\8.7\caches\transforms-4\2be505309abc887d4e54a0bc360a5e50\transformed\firebase-firestore-ktx-25.0.0\AndroidManifest.xml:10:13-84
+78-->[com.google.firebase:firebase-firestore-ktx:25.0.0] C:\Users\reill\.gradle\caches\transforms-4\2be505309abc887d4e54a0bc360a5e50\transformed\firebase-firestore-ktx-25.0.0\AndroidManifest.xml:10:13-84
 79            android:directBootAware="true"
-79-->[com.google.firebase:firebase-common:21.0.0] C:\Users\Sven\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\.gradle\8.7\caches\transforms-4\3229ba00c5879186239fd7e52cb481b5\transformed\firebase-common-21.0.0\AndroidManifest.xml:32:13-43
+79-->[com.google.firebase:firebase-common:21.0.0] C:\Users\reill\.gradle\caches\transforms-4\3229ba00c5879186239fd7e52cb481b5\transformed\firebase-common-21.0.0\AndroidManifest.xml:32:13-43
 80            android:exported="false" >
-80-->[com.google.firebase:firebase-firestore-ktx:25.0.0] C:\Users\Sven\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\.gradle\8.7\caches\transforms-4\2be505309abc887d4e54a0bc360a5e50\transformed\firebase-firestore-ktx-25.0.0\AndroidManifest.xml:11:13-37
+80-->[com.google.firebase:firebase-firestore-ktx:25.0.0] C:\Users\reill\.gradle\caches\transforms-4\2be505309abc887d4e54a0bc360a5e50\transformed\firebase-firestore-ktx-25.0.0\AndroidManifest.xml:11:13-37
 81            <meta-data
-81-->[com.google.firebase:firebase-firestore-ktx:25.0.0] C:\Users\Sven\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\.gradle\8.7\caches\transforms-4\2be505309abc887d4e54a0bc360a5e50\transformed\firebase-firestore-ktx-25.0.0\AndroidManifest.xml:12:13-14:85
+81-->[com.google.firebase:firebase-firestore-ktx:25.0.0] C:\Users\reill\.gradle\caches\transforms-4\2be505309abc887d4e54a0bc360a5e50\transformed\firebase-firestore-ktx-25.0.0\AndroidManifest.xml:12:13-14:85
 82                android:name="com.google.firebase.components:com.google.firebase.firestore.ktx.FirebaseFirestoreLegacyRegistrar"
-82-->[com.google.firebase:firebase-firestore-ktx:25.0.0] C:\Users\Sven\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\.gradle\8.7\caches\transforms-4\2be505309abc887d4e54a0bc360a5e50\transformed\firebase-firestore-ktx-25.0.0\AndroidManifest.xml:13:17-129
+82-->[com.google.firebase:firebase-firestore-ktx:25.0.0] C:\Users\reill\.gradle\caches\transforms-4\2be505309abc887d4e54a0bc360a5e50\transformed\firebase-firestore-ktx-25.0.0\AndroidManifest.xml:13:17-129
 83                android:value="com.google.firebase.components.ComponentRegistrar" />
-83-->[com.google.firebase:firebase-firestore-ktx:25.0.0] C:\Users\Sven\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\.gradle\8.7\caches\transforms-4\2be505309abc887d4e54a0bc360a5e50\transformed\firebase-firestore-ktx-25.0.0\AndroidManifest.xml:14:17-82
+83-->[com.google.firebase:firebase-firestore-ktx:25.0.0] C:\Users\reill\.gradle\caches\transforms-4\2be505309abc887d4e54a0bc360a5e50\transformed\firebase-firestore-ktx-25.0.0\AndroidManifest.xml:14:17-82
 84            <meta-data
-84-->[com.google.firebase:firebase-firestore:25.0.0] C:\Users\Sven\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\.gradle\8.7\caches\transforms-4\c6b8674036e853b89c9a5f2ee8aaca73\transformed\firebase-firestore-25.0.0\AndroidManifest.xml:17:13-19:85
+84-->[com.google.firebase:firebase-firestore:25.0.0] C:\Users\reill\.gradle\caches\transforms-4\c6b8674036e853b89c9a5f2ee8aaca73\transformed\firebase-firestore-25.0.0\AndroidManifest.xml:17:13-19:85
 85                android:name="com.google.firebase.components:com.google.firebase.firestore.FirebaseFirestoreKtxRegistrar"
-85-->[com.google.firebase:firebase-firestore:25.0.0] C:\Users\Sven\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\.gradle\8.7\caches\transforms-4\c6b8674036e853b89c9a5f2ee8aaca73\transformed\firebase-firestore-25.0.0\AndroidManifest.xml:18:17-122
+85-->[com.google.firebase:firebase-firestore:25.0.0] C:\Users\reill\.gradle\caches\transforms-4\c6b8674036e853b89c9a5f2ee8aaca73\transformed\firebase-firestore-25.0.0\AndroidManifest.xml:18:17-122
 86                android:value="com.google.firebase.components.ComponentRegistrar" />
-86-->[com.google.firebase:firebase-firestore:25.0.0] C:\Users\Sven\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\.gradle\8.7\caches\transforms-4\c6b8674036e853b89c9a5f2ee8aaca73\transformed\firebase-firestore-25.0.0\AndroidManifest.xml:19:17-82
+86-->[com.google.firebase:firebase-firestore:25.0.0] C:\Users\reill\.gradle\caches\transforms-4\c6b8674036e853b89c9a5f2ee8aaca73\transformed\firebase-firestore-25.0.0\AndroidManifest.xml:19:17-82
 87            <meta-data
-87-->[com.google.firebase:firebase-firestore:25.0.0] C:\Users\Sven\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\.gradle\8.7\caches\transforms-4\c6b8674036e853b89c9a5f2ee8aaca73\transformed\firebase-firestore-25.0.0\AndroidManifest.xml:20:13-22:85
+87-->[com.google.firebase:firebase-firestore:25.0.0] C:\Users\reill\.gradle\caches\transforms-4\c6b8674036e853b89c9a5f2ee8aaca73\transformed\firebase-firestore-25.0.0\AndroidManifest.xml:20:13-22:85
 88                android:name="com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar"
-88-->[com.google.firebase:firebase-firestore:25.0.0] C:\Users\Sven\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\.gradle\8.7\caches\transforms-4\c6b8674036e853b89c9a5f2ee8aaca73\transformed\firebase-firestore-25.0.0\AndroidManifest.xml:21:17-111
+88-->[com.google.firebase:firebase-firestore:25.0.0] C:\Users\reill\.gradle\caches\transforms-4\c6b8674036e853b89c9a5f2ee8aaca73\transformed\firebase-firestore-25.0.0\AndroidManifest.xml:21:17-111
 89                android:value="com.google.firebase.components.ComponentRegistrar" />
-89-->[com.google.firebase:firebase-firestore:25.0.0] C:\Users\Sven\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\.gradle\8.7\caches\transforms-4\c6b8674036e853b89c9a5f2ee8aaca73\transformed\firebase-firestore-25.0.0\AndroidManifest.xml:22:17-82
+89-->[com.google.firebase:firebase-firestore:25.0.0] C:\Users\reill\.gradle\caches\transforms-4\c6b8674036e853b89c9a5f2ee8aaca73\transformed\firebase-firestore-25.0.0\AndroidManifest.xml:22:17-82
 90            <meta-data
-90-->[com.google.android.gms:play-services-measurement-api:22.0.1] C:\Users\Sven\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\.gradle\8.7\caches\transforms-4\238fc31ade03e28da096174a75a66442\transformed\play-services-measurement-api-22.0.1\AndroidManifest.xml:37:13-39:85
+90-->[com.google.android.gms:play-services-measurement-api:22.0.1] C:\Users\reill\.gradle\caches\transforms-4\238fc31ade03e28da096174a75a66442\transformed\play-services-measurement-api-22.0.1\AndroidManifest.xml:37:13-39:85
 91                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
-91-->[com.google.android.gms:play-services-measurement-api:22.0.1] C:\Users\Sven\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\.gradle\8.7\caches\transforms-4\238fc31ade03e28da096174a75a66442\transformed\play-services-measurement-api-22.0.1\AndroidManifest.xml:38:17-139
+91-->[com.google.android.gms:play-services-measurement-api:22.0.1] C:\Users\reill\.gradle\caches\transforms-4\238fc31ade03e28da096174a75a66442\transformed\play-services-measurement-api-22.0.1\AndroidManifest.xml:38:17-139
 92                android:value="com.google.firebase.components.ComponentRegistrar" />
-92-->[com.google.android.gms:play-services-measurement-api:22.0.1] C:\Users\Sven\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\.gradle\8.7\caches\transforms-4\238fc31ade03e28da096174a75a66442\transformed\play-services-measurement-api-22.0.1\AndroidManifest.xml:39:17-82
+92-->[com.google.android.gms:play-services-measurement-api:22.0.1] C:\Users\reill\.gradle\caches\transforms-4\238fc31ade03e28da096174a75a66442\transformed\play-services-measurement-api-22.0.1\AndroidManifest.xml:39:17-82
 93            <meta-data
-93-->[com.google.firebase:firebase-installations:18.0.0] C:\Users\Sven\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\.gradle\8.7\caches\transforms-4\b483dad48cbe2148fe331d83b47a16c6\transformed\firebase-installations-18.0.0\AndroidManifest.xml:15:13-17:85
+93-->[com.google.firebase:firebase-installations:18.0.0] C:\Users\reill\.gradle\caches\transforms-4\b483dad48cbe2148fe331d83b47a16c6\transformed\firebase-installations-18.0.0\AndroidManifest.xml:15:13-17:85
 94                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsKtxRegistrar"
-94-->[com.google.firebase:firebase-installations:18.0.0] C:\Users\Sven\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\.gradle\8.7\caches\transforms-4\b483dad48cbe2148fe331d83b47a16c6\transformed\firebase-installations-18.0.0\AndroidManifest.xml:16:17-130
+94-->[com.google.firebase:firebase-installations:18.0.0] C:\Users\reill\.gradle\caches\transforms-4\b483dad48cbe2148fe331d83b47a16c6\transformed\firebase-installations-18.0.0\AndroidManifest.xml:16:17-130
 95                android:value="com.google.firebase.components.ComponentRegistrar" />
-95-->[com.google.firebase:firebase-installations:18.0.0] C:\Users\Sven\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\.gradle\8.7\caches\transforms-4\b483dad48cbe2148fe331d83b47a16c6\transformed\firebase-installations-18.0.0\AndroidManifest.xml:17:17-82
+95-->[com.google.firebase:firebase-installations:18.0.0] C:\Users\reill\.gradle\caches\transforms-4\b483dad48cbe2148fe331d83b47a16c6\transformed\firebase-installations-18.0.0\AndroidManifest.xml:17:17-82
 96            <meta-data
-96-->[com.google.firebase:firebase-installations:18.0.0] C:\Users\Sven\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\.gradle\8.7\caches\transforms-4\b483dad48cbe2148fe331d83b47a16c6\transformed\firebase-installations-18.0.0\AndroidManifest.xml:18:13-20:85
+96-->[com.google.firebase:firebase-installations:18.0.0] C:\Users\reill\.gradle\caches\transforms-4\b483dad48cbe2148fe331d83b47a16c6\transformed\firebase-installations-18.0.0\AndroidManifest.xml:18:13-20:85
 97                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
-97-->[com.google.firebase:firebase-installations:18.0.0] C:\Users\Sven\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\.gradle\8.7\caches\transforms-4\b483dad48cbe2148fe331d83b47a16c6\transformed\firebase-installations-18.0.0\AndroidManifest.xml:19:17-127
+97-->[com.google.firebase:firebase-installations:18.0.0] C:\Users\reill\.gradle\caches\transforms-4\b483dad48cbe2148fe331d83b47a16c6\transformed\firebase-installations-18.0.0\AndroidManifest.xml:19:17-127
 98                android:value="com.google.firebase.components.ComponentRegistrar" />
-98-->[com.google.firebase:firebase-installations:18.0.0] C:\Users\Sven\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\.gradle\8.7\caches\transforms-4\b483dad48cbe2148fe331d83b47a16c6\transformed\firebase-installations-18.0.0\AndroidManifest.xml:20:17-82
+98-->[com.google.firebase:firebase-installations:18.0.0] C:\Users\reill\.gradle\caches\transforms-4\b483dad48cbe2148fe331d83b47a16c6\transformed\firebase-installations-18.0.0\AndroidManifest.xml:20:17-82
 99            <meta-data
-99-->[com.google.firebase:firebase-common-ktx:21.0.0] C:\Users\Sven\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\.gradle\8.7\caches\transforms-4\133ad5a1b8069f0ddedff89779d6cbb9\transformed\firebase-common-ktx-21.0.0\AndroidManifest.xml:12:13-14:85
+99-->[com.google.firebase:firebase-common-ktx:21.0.0] C:\Users\reill\.gradle\caches\transforms-4\133ad5a1b8069f0ddedff89779d6cbb9\transformed\firebase-common-ktx-21.0.0\AndroidManifest.xml:12:13-14:85
 100                android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonLegacyRegistrar"
-100-->[com.google.firebase:firebase-common-ktx:21.0.0] C:\Users\Sven\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\.gradle\8.7\caches\transforms-4\133ad5a1b8069f0ddedff89779d6cbb9\transformed\firebase-common-ktx-21.0.0\AndroidManifest.xml:13:17-116
+100-->[com.google.firebase:firebase-common-ktx:21.0.0] C:\Users\reill\.gradle\caches\transforms-4\133ad5a1b8069f0ddedff89779d6cbb9\transformed\firebase-common-ktx-21.0.0\AndroidManifest.xml:13:17-116
 101                android:value="com.google.firebase.components.ComponentRegistrar" />
-101-->[com.google.firebase:firebase-common-ktx:21.0.0] C:\Users\Sven\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\.gradle\8.7\caches\transforms-4\133ad5a1b8069f0ddedff89779d6cbb9\transformed\firebase-common-ktx-21.0.0\AndroidManifest.xml:14:17-82
+101-->[com.google.firebase:firebase-common-ktx:21.0.0] C:\Users\reill\.gradle\caches\transforms-4\133ad5a1b8069f0ddedff89779d6cbb9\transformed\firebase-common-ktx-21.0.0\AndroidManifest.xml:14:17-82
 102            <meta-data
-102-->[com.google.firebase:firebase-common:21.0.0] C:\Users\Sven\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\.gradle\8.7\caches\transforms-4\3229ba00c5879186239fd7e52cb481b5\transformed\firebase-common-21.0.0\AndroidManifest.xml:35:13-37:85
+102-->[com.google.firebase:firebase-common:21.0.0] C:\Users\reill\.gradle\caches\transforms-4\3229ba00c5879186239fd7e52cb481b5\transformed\firebase-common-21.0.0\AndroidManifest.xml:35:13-37:85
 103                android:name="com.google.firebase.components:com.google.firebase.FirebaseCommonKtxRegistrar"
-103-->[com.google.firebase:firebase-common:21.0.0] C:\Users\Sven\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\.gradle\8.7\caches\transforms-4\3229ba00c5879186239fd7e52cb481b5\transformed\firebase-common-21.0.0\AndroidManifest.xml:36:17-109
+103-->[com.google.firebase:firebase-common:21.0.0] C:\Users\reill\.gradle\caches\transforms-4\3229ba00c5879186239fd7e52cb481b5\transformed\firebase-common-21.0.0\AndroidManifest.xml:36:17-109
 104                android:value="com.google.firebase.components.ComponentRegistrar" />
-104-->[com.google.firebase:firebase-common:21.0.0] C:\Users\Sven\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\.gradle\8.7\caches\transforms-4\3229ba00c5879186239fd7e52cb481b5\transformed\firebase-common-21.0.0\AndroidManifest.xml:37:17-82
+104-->[com.google.firebase:firebase-common:21.0.0] C:\Users\reill\.gradle\caches\transforms-4\3229ba00c5879186239fd7e52cb481b5\transformed\firebase-common-21.0.0\AndroidManifest.xml:37:17-82
 105        </service>
 106
 107        <activity
-107-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\Sven\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\.gradle\8.7\caches\transforms-4\f6cb003041f37da0d1b633ce687d4dcd\transformed\play-services-base-18.0.1\AndroidManifest.xml:20:9-22:45
+107-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\reill\.gradle\caches\transforms-4\f6cb003041f37da0d1b633ce687d4dcd\transformed\play-services-base-18.0.1\AndroidManifest.xml:20:9-22:45
 108            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-108-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\Sven\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\.gradle\8.7\caches\transforms-4\f6cb003041f37da0d1b633ce687d4dcd\transformed\play-services-base-18.0.1\AndroidManifest.xml:20:19-85
+108-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\reill\.gradle\caches\transforms-4\f6cb003041f37da0d1b633ce687d4dcd\transformed\play-services-base-18.0.1\AndroidManifest.xml:20:19-85
 109            android:exported="false"
-109-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\Sven\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\.gradle\8.7\caches\transforms-4\f6cb003041f37da0d1b633ce687d4dcd\transformed\play-services-base-18.0.1\AndroidManifest.xml:22:19-43
+109-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\reill\.gradle\caches\transforms-4\f6cb003041f37da0d1b633ce687d4dcd\transformed\play-services-base-18.0.1\AndroidManifest.xml:22:19-43
 110            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-110-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\Sven\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\.gradle\8.7\caches\transforms-4\f6cb003041f37da0d1b633ce687d4dcd\transformed\play-services-base-18.0.1\AndroidManifest.xml:21:19-78
+110-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\reill\.gradle\caches\transforms-4\f6cb003041f37da0d1b633ce687d4dcd\transformed\play-services-base-18.0.1\AndroidManifest.xml:21:19-78
 111
 112        <property
-112-->[com.google.android.gms:play-services-measurement-api:22.0.1] C:\Users\Sven\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\.gradle\8.7\caches\transforms-4\238fc31ade03e28da096174a75a66442\transformed\play-services-measurement-api-22.0.1\AndroidManifest.xml:30:9-32:61
+112-->[com.google.android.gms:play-services-measurement-api:22.0.1] C:\Users\reill\.gradle\caches\transforms-4\238fc31ade03e28da096174a75a66442\transformed\play-services-measurement-api-22.0.1\AndroidManifest.xml:30:9-32:61
 113            android:name="android.adservices.AD_SERVICES_CONFIG"
-113-->[com.google.android.gms:play-services-measurement-api:22.0.1] C:\Users\Sven\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\.gradle\8.7\caches\transforms-4\238fc31ade03e28da096174a75a66442\transformed\play-services-measurement-api-22.0.1\AndroidManifest.xml:31:13-65
+113-->[com.google.android.gms:play-services-measurement-api:22.0.1] C:\Users\reill\.gradle\caches\transforms-4\238fc31ade03e28da096174a75a66442\transformed\play-services-measurement-api-22.0.1\AndroidManifest.xml:31:13-65
 114            android:resource="@xml/ga_ad_services_config" />
-114-->[com.google.android.gms:play-services-measurement-api:22.0.1] C:\Users\Sven\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\.gradle\8.7\caches\transforms-4\238fc31ade03e28da096174a75a66442\transformed\play-services-measurement-api-22.0.1\AndroidManifest.xml:32:13-58
+114-->[com.google.android.gms:play-services-measurement-api:22.0.1] C:\Users\reill\.gradle\caches\transforms-4\238fc31ade03e28da096174a75a66442\transformed\play-services-measurement-api-22.0.1\AndroidManifest.xml:32:13-58
 115
 116        <provider
-116-->[com.google.firebase:firebase-common:21.0.0] C:\Users\Sven\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\.gradle\8.7\caches\transforms-4\3229ba00c5879186239fd7e52cb481b5\transformed\firebase-common-21.0.0\AndroidManifest.xml:23:9-28:39
+116-->[com.google.firebase:firebase-common:21.0.0] C:\Users\reill\.gradle\caches\transforms-4\3229ba00c5879186239fd7e52cb481b5\transformed\firebase-common-21.0.0\AndroidManifest.xml:23:9-28:39
 117            android:name="com.google.firebase.provider.FirebaseInitProvider"
-117-->[com.google.firebase:firebase-common:21.0.0] C:\Users\Sven\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\.gradle\8.7\caches\transforms-4\3229ba00c5879186239fd7e52cb481b5\transformed\firebase-common-21.0.0\AndroidManifest.xml:24:13-77
+117-->[com.google.firebase:firebase-common:21.0.0] C:\Users\reill\.gradle\caches\transforms-4\3229ba00c5879186239fd7e52cb481b5\transformed\firebase-common-21.0.0\AndroidManifest.xml:24:13-77
 118            android:authorities="com.example.opsc7311poe.firebaseinitprovider"
-118-->[com.google.firebase:firebase-common:21.0.0] C:\Users\Sven\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\.gradle\8.7\caches\transforms-4\3229ba00c5879186239fd7e52cb481b5\transformed\firebase-common-21.0.0\AndroidManifest.xml:25:13-72
+118-->[com.google.firebase:firebase-common:21.0.0] C:\Users\reill\.gradle\caches\transforms-4\3229ba00c5879186239fd7e52cb481b5\transformed\firebase-common-21.0.0\AndroidManifest.xml:25:13-72
 119            android:directBootAware="true"
-119-->[com.google.firebase:firebase-common:21.0.0] C:\Users\Sven\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\.gradle\8.7\caches\transforms-4\3229ba00c5879186239fd7e52cb481b5\transformed\firebase-common-21.0.0\AndroidManifest.xml:26:13-43
+119-->[com.google.firebase:firebase-common:21.0.0] C:\Users\reill\.gradle\caches\transforms-4\3229ba00c5879186239fd7e52cb481b5\transformed\firebase-common-21.0.0\AndroidManifest.xml:26:13-43
 120            android:exported="false"
-120-->[com.google.firebase:firebase-common:21.0.0] C:\Users\Sven\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\.gradle\8.7\caches\transforms-4\3229ba00c5879186239fd7e52cb481b5\transformed\firebase-common-21.0.0\AndroidManifest.xml:27:13-37
+120-->[com.google.firebase:firebase-common:21.0.0] C:\Users\reill\.gradle\caches\transforms-4\3229ba00c5879186239fd7e52cb481b5\transformed\firebase-common-21.0.0\AndroidManifest.xml:27:13-37
 121            android:initOrder="100" />
-121-->[com.google.firebase:firebase-common:21.0.0] C:\Users\Sven\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\.gradle\8.7\caches\transforms-4\3229ba00c5879186239fd7e52cb481b5\transformed\firebase-common-21.0.0\AndroidManifest.xml:28:13-36
+121-->[com.google.firebase:firebase-common:21.0.0] C:\Users\reill\.gradle\caches\transforms-4\3229ba00c5879186239fd7e52cb481b5\transformed\firebase-common-21.0.0\AndroidManifest.xml:28:13-36
 122
 123        <receiver
-123-->[com.google.android.gms:play-services-measurement:22.0.1] C:\Users\Sven\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\.gradle\8.7\caches\transforms-4\4fefdd3b771170c57e6cc4ae21d72ccd\transformed\play-services-measurement-22.0.1\AndroidManifest.xml:29:9-33:20
+123-->[com.google.android.gms:play-services-measurement:22.0.1] C:\Users\reill\.gradle\caches\transforms-4\4fefdd3b771170c57e6cc4ae21d72ccd\transformed\play-services-measurement-22.0.1\AndroidManifest.xml:29:9-33:20
 124            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
-124-->[com.google.android.gms:play-services-measurement:22.0.1] C:\Users\Sven\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\.gradle\8.7\caches\transforms-4\4fefdd3b771170c57e6cc4ae21d72ccd\transformed\play-services-measurement-22.0.1\AndroidManifest.xml:30:13-85
+124-->[com.google.android.gms:play-services-measurement:22.0.1] C:\Users\reill\.gradle\caches\transforms-4\4fefdd3b771170c57e6cc4ae21d72ccd\transformed\play-services-measurement-22.0.1\AndroidManifest.xml:30:13-85
 125            android:enabled="true"
-125-->[com.google.android.gms:play-services-measurement:22.0.1] C:\Users\Sven\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\.gradle\8.7\caches\transforms-4\4fefdd3b771170c57e6cc4ae21d72ccd\transformed\play-services-measurement-22.0.1\AndroidManifest.xml:31:13-35
+125-->[com.google.android.gms:play-services-measurement:22.0.1] C:\Users\reill\.gradle\caches\transforms-4\4fefdd3b771170c57e6cc4ae21d72ccd\transformed\play-services-measurement-22.0.1\AndroidManifest.xml:31:13-35
 126            android:exported="false" >
-126-->[com.google.android.gms:play-services-measurement:22.0.1] C:\Users\Sven\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\.gradle\8.7\caches\transforms-4\4fefdd3b771170c57e6cc4ae21d72ccd\transformed\play-services-measurement-22.0.1\AndroidManifest.xml:32:13-37
+126-->[com.google.android.gms:play-services-measurement:22.0.1] C:\Users\reill\.gradle\caches\transforms-4\4fefdd3b771170c57e6cc4ae21d72ccd\transformed\play-services-measurement-22.0.1\AndroidManifest.xml:32:13-37
 127        </receiver>
 128
 129        <service
-129-->[com.google.android.gms:play-services-measurement:22.0.1] C:\Users\Sven\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\.gradle\8.7\caches\transforms-4\4fefdd3b771170c57e6cc4ae21d72ccd\transformed\play-services-measurement-22.0.1\AndroidManifest.xml:35:9-38:40
+129-->[com.google.android.gms:play-services-measurement:22.0.1] C:\Users\reill\.gradle\caches\transforms-4\4fefdd3b771170c57e6cc4ae21d72ccd\transformed\play-services-measurement-22.0.1\AndroidManifest.xml:35:9-38:40
 130            android:name="com.google.android.gms.measurement.AppMeasurementService"
-130-->[com.google.android.gms:play-services-measurement:22.0.1] C:\Users\Sven\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\.gradle\8.7\caches\transforms-4\4fefdd3b771170c57e6cc4ae21d72ccd\transformed\play-services-measurement-22.0.1\AndroidManifest.xml:36:13-84
+130-->[com.google.android.gms:play-services-measurement:22.0.1] C:\Users\reill\.gradle\caches\transforms-4\4fefdd3b771170c57e6cc4ae21d72ccd\transformed\play-services-measurement-22.0.1\AndroidManifest.xml:36:13-84
 131            android:enabled="true"
-131-->[com.google.android.gms:play-services-measurement:22.0.1] C:\Users\Sven\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\.gradle\8.7\caches\transforms-4\4fefdd3b771170c57e6cc4ae21d72ccd\transformed\play-services-measurement-22.0.1\AndroidManifest.xml:37:13-35
+131-->[com.google.android.gms:play-services-measurement:22.0.1] C:\Users\reill\.gradle\caches\transforms-4\4fefdd3b771170c57e6cc4ae21d72ccd\transformed\play-services-measurement-22.0.1\AndroidManifest.xml:37:13-35
 132            android:exported="false" />
-132-->[com.google.android.gms:play-services-measurement:22.0.1] C:\Users\Sven\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\.gradle\8.7\caches\transforms-4\4fefdd3b771170c57e6cc4ae21d72ccd\transformed\play-services-measurement-22.0.1\AndroidManifest.xml:38:13-37
+132-->[com.google.android.gms:play-services-measurement:22.0.1] C:\Users\reill\.gradle\caches\transforms-4\4fefdd3b771170c57e6cc4ae21d72ccd\transformed\play-services-measurement-22.0.1\AndroidManifest.xml:38:13-37
 133        <service
-133-->[com.google.android.gms:play-services-measurement:22.0.1] C:\Users\Sven\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\.gradle\8.7\caches\transforms-4\4fefdd3b771170c57e6cc4ae21d72ccd\transformed\play-services-measurement-22.0.1\AndroidManifest.xml:39:9-43:72
+133-->[com.google.android.gms:play-services-measurement:22.0.1] C:\Users\reill\.gradle\caches\transforms-4\4fefdd3b771170c57e6cc4ae21d72ccd\transformed\play-services-measurement-22.0.1\AndroidManifest.xml:39:9-43:72
 134            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
-134-->[com.google.android.gms:play-services-measurement:22.0.1] C:\Users\Sven\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\.gradle\8.7\caches\transforms-4\4fefdd3b771170c57e6cc4ae21d72ccd\transformed\play-services-measurement-22.0.1\AndroidManifest.xml:40:13-87
+134-->[com.google.android.gms:play-services-measurement:22.0.1] C:\Users\reill\.gradle\caches\transforms-4\4fefdd3b771170c57e6cc4ae21d72ccd\transformed\play-services-measurement-22.0.1\AndroidManifest.xml:40:13-87
 135            android:enabled="true"
-135-->[com.google.android.gms:play-services-measurement:22.0.1] C:\Users\Sven\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\.gradle\8.7\caches\transforms-4\4fefdd3b771170c57e6cc4ae21d72ccd\transformed\play-services-measurement-22.0.1\AndroidManifest.xml:41:13-35
+135-->[com.google.android.gms:play-services-measurement:22.0.1] C:\Users\reill\.gradle\caches\transforms-4\4fefdd3b771170c57e6cc4ae21d72ccd\transformed\play-services-measurement-22.0.1\AndroidManifest.xml:41:13-35
 136            android:exported="false"
-136-->[com.google.android.gms:play-services-measurement:22.0.1] C:\Users\Sven\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\.gradle\8.7\caches\transforms-4\4fefdd3b771170c57e6cc4ae21d72ccd\transformed\play-services-measurement-22.0.1\AndroidManifest.xml:42:13-37
+136-->[com.google.android.gms:play-services-measurement:22.0.1] C:\Users\reill\.gradle\caches\transforms-4\4fefdd3b771170c57e6cc4ae21d72ccd\transformed\play-services-measurement-22.0.1\AndroidManifest.xml:42:13-37
 137            android:permission="android.permission.BIND_JOB_SERVICE" />
-137-->[com.google.android.gms:play-services-measurement:22.0.1] C:\Users\Sven\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\.gradle\8.7\caches\transforms-4\4fefdd3b771170c57e6cc4ae21d72ccd\transformed\play-services-measurement-22.0.1\AndroidManifest.xml:43:13-69
+137-->[com.google.android.gms:play-services-measurement:22.0.1] C:\Users\reill\.gradle\caches\transforms-4\4fefdd3b771170c57e6cc4ae21d72ccd\transformed\play-services-measurement-22.0.1\AndroidManifest.xml:43:13-69
 138
 139        <provider
-139-->[androidx.emoji2:emoji2:1.3.0] C:\Users\Sven\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\.gradle\8.7\caches\transforms-4\82cc09eae61325a1c0b7b9803dd7efd2\transformed\emoji2-1.3.0\AndroidManifest.xml:24:9-32:20
+139-->[androidx.emoji2:emoji2:1.3.0] C:\Users\reill\.gradle\caches\transforms-4\82cc09eae61325a1c0b7b9803dd7efd2\transformed\emoji2-1.3.0\AndroidManifest.xml:24:9-32:20
 140            android:name="androidx.startup.InitializationProvider"
-140-->[androidx.emoji2:emoji2:1.3.0] C:\Users\Sven\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\.gradle\8.7\caches\transforms-4\82cc09eae61325a1c0b7b9803dd7efd2\transformed\emoji2-1.3.0\AndroidManifest.xml:25:13-67
+140-->[androidx.emoji2:emoji2:1.3.0] C:\Users\reill\.gradle\caches\transforms-4\82cc09eae61325a1c0b7b9803dd7efd2\transformed\emoji2-1.3.0\AndroidManifest.xml:25:13-67
 141            android:authorities="com.example.opsc7311poe.androidx-startup"
-141-->[androidx.emoji2:emoji2:1.3.0] C:\Users\Sven\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\.gradle\8.7\caches\transforms-4\82cc09eae61325a1c0b7b9803dd7efd2\transformed\emoji2-1.3.0\AndroidManifest.xml:26:13-68
+141-->[androidx.emoji2:emoji2:1.3.0] C:\Users\reill\.gradle\caches\transforms-4\82cc09eae61325a1c0b7b9803dd7efd2\transformed\emoji2-1.3.0\AndroidManifest.xml:26:13-68
 142            android:exported="false" >
-142-->[androidx.emoji2:emoji2:1.3.0] C:\Users\Sven\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\.gradle\8.7\caches\transforms-4\82cc09eae61325a1c0b7b9803dd7efd2\transformed\emoji2-1.3.0\AndroidManifest.xml:27:13-37
+142-->[androidx.emoji2:emoji2:1.3.0] C:\Users\reill\.gradle\caches\transforms-4\82cc09eae61325a1c0b7b9803dd7efd2\transformed\emoji2-1.3.0\AndroidManifest.xml:27:13-37
 143            <meta-data
-143-->[androidx.emoji2:emoji2:1.3.0] C:\Users\Sven\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\.gradle\8.7\caches\transforms-4\82cc09eae61325a1c0b7b9803dd7efd2\transformed\emoji2-1.3.0\AndroidManifest.xml:29:13-31:52
+143-->[androidx.emoji2:emoji2:1.3.0] C:\Users\reill\.gradle\caches\transforms-4\82cc09eae61325a1c0b7b9803dd7efd2\transformed\emoji2-1.3.0\AndroidManifest.xml:29:13-31:52
 144                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-144-->[androidx.emoji2:emoji2:1.3.0] C:\Users\Sven\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\.gradle\8.7\caches\transforms-4\82cc09eae61325a1c0b7b9803dd7efd2\transformed\emoji2-1.3.0\AndroidManifest.xml:30:17-75
+144-->[androidx.emoji2:emoji2:1.3.0] C:\Users\reill\.gradle\caches\transforms-4\82cc09eae61325a1c0b7b9803dd7efd2\transformed\emoji2-1.3.0\AndroidManifest.xml:30:17-75
 145                android:value="androidx.startup" />
-145-->[androidx.emoji2:emoji2:1.3.0] C:\Users\Sven\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\.gradle\8.7\caches\transforms-4\82cc09eae61325a1c0b7b9803dd7efd2\transformed\emoji2-1.3.0\AndroidManifest.xml:31:17-49
+145-->[androidx.emoji2:emoji2:1.3.0] C:\Users\reill\.gradle\caches\transforms-4\82cc09eae61325a1c0b7b9803dd7efd2\transformed\emoji2-1.3.0\AndroidManifest.xml:31:17-49
 146            <meta-data
-146-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\Sven\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\.gradle\8.7\caches\transforms-4\2b987ef84a6832a037e2c2a025a6f509\transformed\lifecycle-process-2.7.0\AndroidManifest.xml:29:13-31:52
+146-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\reill\.gradle\caches\transforms-4\2b987ef84a6832a037e2c2a025a6f509\transformed\lifecycle-process-2.7.0\AndroidManifest.xml:29:13-31:52
 147                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-147-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\Sven\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\.gradle\8.7\caches\transforms-4\2b987ef84a6832a037e2c2a025a6f509\transformed\lifecycle-process-2.7.0\AndroidManifest.xml:30:17-78
+147-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\reill\.gradle\caches\transforms-4\2b987ef84a6832a037e2c2a025a6f509\transformed\lifecycle-process-2.7.0\AndroidManifest.xml:30:17-78
 148                android:value="androidx.startup" />
-148-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\Sven\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\.gradle\8.7\caches\transforms-4\2b987ef84a6832a037e2c2a025a6f509\transformed\lifecycle-process-2.7.0\AndroidManifest.xml:31:17-49
+148-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\reill\.gradle\caches\transforms-4\2b987ef84a6832a037e2c2a025a6f509\transformed\lifecycle-process-2.7.0\AndroidManifest.xml:31:17-49
 149            <meta-data
-149-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Sven\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\.gradle\8.7\caches\transforms-4\dda12aa615e8cfa8ac12f2483c0e50ba\transformed\profileinstaller-1.3.0\AndroidManifest.xml:29:13-31:52
+149-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\reill\.gradle\caches\transforms-4\dda12aa615e8cfa8ac12f2483c0e50ba\transformed\profileinstaller-1.3.0\AndroidManifest.xml:29:13-31:52
 150                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
-150-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Sven\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\.gradle\8.7\caches\transforms-4\dda12aa615e8cfa8ac12f2483c0e50ba\transformed\profileinstaller-1.3.0\AndroidManifest.xml:30:17-85
+150-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\reill\.gradle\caches\transforms-4\dda12aa615e8cfa8ac12f2483c0e50ba\transformed\profileinstaller-1.3.0\AndroidManifest.xml:30:17-85
 151                android:value="androidx.startup" />
-151-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Sven\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\.gradle\8.7\caches\transforms-4\dda12aa615e8cfa8ac12f2483c0e50ba\transformed\profileinstaller-1.3.0\AndroidManifest.xml:31:17-49
+151-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\reill\.gradle\caches\transforms-4\dda12aa615e8cfa8ac12f2483c0e50ba\transformed\profileinstaller-1.3.0\AndroidManifest.xml:31:17-49
 152        </provider>
 153
 154        <uses-library
-154-->[androidx.privacysandbox.ads:ads-adservices:1.0.0-beta05] C:\Users\Sven\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\.gradle\8.7\caches\transforms-4\cf71737d7a6bbf0d9f2031192a65a0ce\transformed\ads-adservices-1.0.0-beta05\AndroidManifest.xml:23:9-25:40
+154-->[androidx.privacysandbox.ads:ads-adservices:1.0.0-beta05] C:\Users\reill\.gradle\caches\transforms-4\cf71737d7a6bbf0d9f2031192a65a0ce\transformed\ads-adservices-1.0.0-beta05\AndroidManifest.xml:23:9-25:40
 155            android:name="android.ext.adservices"
-155-->[androidx.privacysandbox.ads:ads-adservices:1.0.0-beta05] C:\Users\Sven\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\.gradle\8.7\caches\transforms-4\cf71737d7a6bbf0d9f2031192a65a0ce\transformed\ads-adservices-1.0.0-beta05\AndroidManifest.xml:24:13-50
+155-->[androidx.privacysandbox.ads:ads-adservices:1.0.0-beta05] C:\Users\reill\.gradle\caches\transforms-4\cf71737d7a6bbf0d9f2031192a65a0ce\transformed\ads-adservices-1.0.0-beta05\AndroidManifest.xml:24:13-50
 156            android:required="false" />
-156-->[androidx.privacysandbox.ads:ads-adservices:1.0.0-beta05] C:\Users\Sven\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\.gradle\8.7\caches\transforms-4\cf71737d7a6bbf0d9f2031192a65a0ce\transformed\ads-adservices-1.0.0-beta05\AndroidManifest.xml:25:13-37
+156-->[androidx.privacysandbox.ads:ads-adservices:1.0.0-beta05] C:\Users\reill\.gradle\caches\transforms-4\cf71737d7a6bbf0d9f2031192a65a0ce\transformed\ads-adservices-1.0.0-beta05\AndroidManifest.xml:25:13-37
 157
 158        <meta-data
-158-->[com.google.android.gms:play-services-basement:18.3.0] C:\Users\Sven\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\.gradle\8.7\caches\transforms-4\5b2d3f0aa8018664e5acc30fb5e69d69\transformed\play-services-basement-18.3.0\AndroidManifest.xml:21:9-23:69
+158-->[com.google.android.gms:play-services-basement:18.3.0] C:\Users\reill\.gradle\caches\transforms-4\5b2d3f0aa8018664e5acc30fb5e69d69\transformed\play-services-basement-18.3.0\AndroidManifest.xml:21:9-23:69
 159            android:name="com.google.android.gms.version"
-159-->[com.google.android.gms:play-services-basement:18.3.0] C:\Users\Sven\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\.gradle\8.7\caches\transforms-4\5b2d3f0aa8018664e5acc30fb5e69d69\transformed\play-services-basement-18.3.0\AndroidManifest.xml:22:13-58
+159-->[com.google.android.gms:play-services-basement:18.3.0] C:\Users\reill\.gradle\caches\transforms-4\5b2d3f0aa8018664e5acc30fb5e69d69\transformed\play-services-basement-18.3.0\AndroidManifest.xml:22:13-58
 160            android:value="@integer/google_play_services_version" />
-160-->[com.google.android.gms:play-services-basement:18.3.0] C:\Users\Sven\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\.gradle\8.7\caches\transforms-4\5b2d3f0aa8018664e5acc30fb5e69d69\transformed\play-services-basement-18.3.0\AndroidManifest.xml:23:13-66
+160-->[com.google.android.gms:play-services-basement:18.3.0] C:\Users\reill\.gradle\caches\transforms-4\5b2d3f0aa8018664e5acc30fb5e69d69\transformed\play-services-basement-18.3.0\AndroidManifest.xml:23:13-66
 161
 162        <uses-library
-162-->[androidx.window:window:1.0.0] C:\Users\Sven\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\.gradle\8.7\caches\transforms-4\143771ba3ab0ca77d440aec4998c453c\transformed\window-1.0.0\AndroidManifest.xml:25:9-27:40
+162-->[androidx.window:window:1.0.0] C:\Users\reill\.gradle\caches\transforms-4\143771ba3ab0ca77d440aec4998c453c\transformed\window-1.0.0\AndroidManifest.xml:25:9-27:40
 163            android:name="androidx.window.extensions"
-163-->[androidx.window:window:1.0.0] C:\Users\Sven\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\.gradle\8.7\caches\transforms-4\143771ba3ab0ca77d440aec4998c453c\transformed\window-1.0.0\AndroidManifest.xml:26:13-54
+163-->[androidx.window:window:1.0.0] C:\Users\reill\.gradle\caches\transforms-4\143771ba3ab0ca77d440aec4998c453c\transformed\window-1.0.0\AndroidManifest.xml:26:13-54
 164            android:required="false" />
-164-->[androidx.window:window:1.0.0] C:\Users\Sven\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\.gradle\8.7\caches\transforms-4\143771ba3ab0ca77d440aec4998c453c\transformed\window-1.0.0\AndroidManifest.xml:27:13-37
+164-->[androidx.window:window:1.0.0] C:\Users\reill\.gradle\caches\transforms-4\143771ba3ab0ca77d440aec4998c453c\transformed\window-1.0.0\AndroidManifest.xml:27:13-37
 165        <uses-library
-165-->[androidx.window:window:1.0.0] C:\Users\Sven\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\.gradle\8.7\caches\transforms-4\143771ba3ab0ca77d440aec4998c453c\transformed\window-1.0.0\AndroidManifest.xml:28:9-30:40
+165-->[androidx.window:window:1.0.0] C:\Users\reill\.gradle\caches\transforms-4\143771ba3ab0ca77d440aec4998c453c\transformed\window-1.0.0\AndroidManifest.xml:28:9-30:40
 166            android:name="androidx.window.sidecar"
-166-->[androidx.window:window:1.0.0] C:\Users\Sven\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\.gradle\8.7\caches\transforms-4\143771ba3ab0ca77d440aec4998c453c\transformed\window-1.0.0\AndroidManifest.xml:29:13-51
+166-->[androidx.window:window:1.0.0] C:\Users\reill\.gradle\caches\transforms-4\143771ba3ab0ca77d440aec4998c453c\transformed\window-1.0.0\AndroidManifest.xml:29:13-51
 167            android:required="false" />
-167-->[androidx.window:window:1.0.0] C:\Users\Sven\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\.gradle\8.7\caches\transforms-4\143771ba3ab0ca77d440aec4998c453c\transformed\window-1.0.0\AndroidManifest.xml:30:13-37
+167-->[androidx.window:window:1.0.0] C:\Users\reill\.gradle\caches\transforms-4\143771ba3ab0ca77d440aec4998c453c\transformed\window-1.0.0\AndroidManifest.xml:30:13-37
 168
 169        <receiver
-169-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Sven\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\.gradle\8.7\caches\transforms-4\dda12aa615e8cfa8ac12f2483c0e50ba\transformed\profileinstaller-1.3.0\AndroidManifest.xml:34:9-52:20
+169-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\reill\.gradle\caches\transforms-4\dda12aa615e8cfa8ac12f2483c0e50ba\transformed\profileinstaller-1.3.0\AndroidManifest.xml:34:9-52:20
 170            android:name="androidx.profileinstaller.ProfileInstallReceiver"
-170-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Sven\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\.gradle\8.7\caches\transforms-4\dda12aa615e8cfa8ac12f2483c0e50ba\transformed\profileinstaller-1.3.0\AndroidManifest.xml:35:13-76
+170-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\reill\.gradle\caches\transforms-4\dda12aa615e8cfa8ac12f2483c0e50ba\transformed\profileinstaller-1.3.0\AndroidManifest.xml:35:13-76
 171            android:directBootAware="false"
-171-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Sven\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\.gradle\8.7\caches\transforms-4\dda12aa615e8cfa8ac12f2483c0e50ba\transformed\profileinstaller-1.3.0\AndroidManifest.xml:36:13-44
+171-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\reill\.gradle\caches\transforms-4\dda12aa615e8cfa8ac12f2483c0e50ba\transformed\profileinstaller-1.3.0\AndroidManifest.xml:36:13-44
 172            android:enabled="true"
-172-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Sven\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\.gradle\8.7\caches\transforms-4\dda12aa615e8cfa8ac12f2483c0e50ba\transformed\profileinstaller-1.3.0\AndroidManifest.xml:37:13-35
+172-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\reill\.gradle\caches\transforms-4\dda12aa615e8cfa8ac12f2483c0e50ba\transformed\profileinstaller-1.3.0\AndroidManifest.xml:37:13-35
 173            android:exported="true"
-173-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Sven\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\.gradle\8.7\caches\transforms-4\dda12aa615e8cfa8ac12f2483c0e50ba\transformed\profileinstaller-1.3.0\AndroidManifest.xml:38:13-36
+173-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\reill\.gradle\caches\transforms-4\dda12aa615e8cfa8ac12f2483c0e50ba\transformed\profileinstaller-1.3.0\AndroidManifest.xml:38:13-36
 174            android:permission="android.permission.DUMP" >
-174-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Sven\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\.gradle\8.7\caches\transforms-4\dda12aa615e8cfa8ac12f2483c0e50ba\transformed\profileinstaller-1.3.0\AndroidManifest.xml:39:13-57
+174-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\reill\.gradle\caches\transforms-4\dda12aa615e8cfa8ac12f2483c0e50ba\transformed\profileinstaller-1.3.0\AndroidManifest.xml:39:13-57
 175            <intent-filter>
-175-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Sven\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\.gradle\8.7\caches\transforms-4\dda12aa615e8cfa8ac12f2483c0e50ba\transformed\profileinstaller-1.3.0\AndroidManifest.xml:40:13-42:29
+175-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\reill\.gradle\caches\transforms-4\dda12aa615e8cfa8ac12f2483c0e50ba\transformed\profileinstaller-1.3.0\AndroidManifest.xml:40:13-42:29
 176                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
-176-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Sven\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\.gradle\8.7\caches\transforms-4\dda12aa615e8cfa8ac12f2483c0e50ba\transformed\profileinstaller-1.3.0\AndroidManifest.xml:41:17-91
-176-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Sven\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\.gradle\8.7\caches\transforms-4\dda12aa615e8cfa8ac12f2483c0e50ba\transformed\profileinstaller-1.3.0\AndroidManifest.xml:41:25-88
+176-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\reill\.gradle\caches\transforms-4\dda12aa615e8cfa8ac12f2483c0e50ba\transformed\profileinstaller-1.3.0\AndroidManifest.xml:41:17-91
+176-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\reill\.gradle\caches\transforms-4\dda12aa615e8cfa8ac12f2483c0e50ba\transformed\profileinstaller-1.3.0\AndroidManifest.xml:41:25-88
 177            </intent-filter>
 178            <intent-filter>
-178-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Sven\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\.gradle\8.7\caches\transforms-4\dda12aa615e8cfa8ac12f2483c0e50ba\transformed\profileinstaller-1.3.0\AndroidManifest.xml:43:13-45:29
+178-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\reill\.gradle\caches\transforms-4\dda12aa615e8cfa8ac12f2483c0e50ba\transformed\profileinstaller-1.3.0\AndroidManifest.xml:43:13-45:29
 179                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
-179-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Sven\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\.gradle\8.7\caches\transforms-4\dda12aa615e8cfa8ac12f2483c0e50ba\transformed\profileinstaller-1.3.0\AndroidManifest.xml:44:17-85
-179-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Sven\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\.gradle\8.7\caches\transforms-4\dda12aa615e8cfa8ac12f2483c0e50ba\transformed\profileinstaller-1.3.0\AndroidManifest.xml:44:25-82
+179-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\reill\.gradle\caches\transforms-4\dda12aa615e8cfa8ac12f2483c0e50ba\transformed\profileinstaller-1.3.0\AndroidManifest.xml:44:17-85
+179-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\reill\.gradle\caches\transforms-4\dda12aa615e8cfa8ac12f2483c0e50ba\transformed\profileinstaller-1.3.0\AndroidManifest.xml:44:25-82
 180            </intent-filter>
 181            <intent-filter>
-181-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Sven\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\.gradle\8.7\caches\transforms-4\dda12aa615e8cfa8ac12f2483c0e50ba\transformed\profileinstaller-1.3.0\AndroidManifest.xml:46:13-48:29
+181-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\reill\.gradle\caches\transforms-4\dda12aa615e8cfa8ac12f2483c0e50ba\transformed\profileinstaller-1.3.0\AndroidManifest.xml:46:13-48:29
 182                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
-182-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Sven\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\.gradle\8.7\caches\transforms-4\dda12aa615e8cfa8ac12f2483c0e50ba\transformed\profileinstaller-1.3.0\AndroidManifest.xml:47:17-88
-182-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Sven\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\.gradle\8.7\caches\transforms-4\dda12aa615e8cfa8ac12f2483c0e50ba\transformed\profileinstaller-1.3.0\AndroidManifest.xml:47:25-85
+182-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\reill\.gradle\caches\transforms-4\dda12aa615e8cfa8ac12f2483c0e50ba\transformed\profileinstaller-1.3.0\AndroidManifest.xml:47:17-88
+182-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\reill\.gradle\caches\transforms-4\dda12aa615e8cfa8ac12f2483c0e50ba\transformed\profileinstaller-1.3.0\AndroidManifest.xml:47:25-85
 183            </intent-filter>
 184            <intent-filter>
-184-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Sven\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\.gradle\8.7\caches\transforms-4\dda12aa615e8cfa8ac12f2483c0e50ba\transformed\profileinstaller-1.3.0\AndroidManifest.xml:49:13-51:29
+184-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\reill\.gradle\caches\transforms-4\dda12aa615e8cfa8ac12f2483c0e50ba\transformed\profileinstaller-1.3.0\AndroidManifest.xml:49:13-51:29
 185                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
-185-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Sven\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\.gradle\8.7\caches\transforms-4\dda12aa615e8cfa8ac12f2483c0e50ba\transformed\profileinstaller-1.3.0\AndroidManifest.xml:50:17-95
-185-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Sven\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\.gradle\8.7\caches\transforms-4\dda12aa615e8cfa8ac12f2483c0e50ba\transformed\profileinstaller-1.3.0\AndroidManifest.xml:50:25-92
+185-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\reill\.gradle\caches\transforms-4\dda12aa615e8cfa8ac12f2483c0e50ba\transformed\profileinstaller-1.3.0\AndroidManifest.xml:50:17-95
+185-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\reill\.gradle\caches\transforms-4\dda12aa615e8cfa8ac12f2483c0e50ba\transformed\profileinstaller-1.3.0\AndroidManifest.xml:50:25-92
 186            </intent-filter>
 187        </receiver>
 188    </application>

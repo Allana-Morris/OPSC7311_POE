@@ -20,6 +20,10 @@
         "source": "com.example.opsc7311poe.app-main-76:/drawable/arc_1.png"
     },
     {
+        "merged": "com.example.opsc7311poe.app-debug-74:/layout_navbar.xml.flat",
+        "source": "com.example.opsc7311poe.app-main-76:/layout/navbar.xml"
+    },
+    {
         "merged": "com.example.opsc7311poe.app-debug-74:/layout_activity_login.xml.flat",
         "source": "com.example.opsc7311poe.app-main-76:/layout/activity_login.xml"
     },
@@ -92,8 +96,8 @@
         "source": "com.example.opsc7311poe.app-main-76:/drawable/piechart.png"
     },
     {
-        "merged": "com.example.opsc7311poe.app-debug-74:/layout_activity_cat_hours.xml.flat",
-        "source": "com.example.opsc7311poe.app-main-76:/layout/activity_cat_hours.xml"
+        "merged": "com.example.opsc7311poe.app-debug-74:/layout_activity_total_cat_hours.xml.flat",
+        "source": "com.example.opsc7311poe.app-main-76:/layout/activity_total_cat_hours.xml"
     },
     {
         "merged": "com.example.opsc7311poe.app-debug-74:/drawable_timer.png.flat",
@@ -114,10 +118,6 @@
     {
         "merged": "com.example.opsc7311poe.app-debug-74:/drawable_thumb.xml.flat",
         "source": "com.example.opsc7311poe.app-main-76:/drawable/thumb.xml"
-    },
-    {
-        "merged": "com.example.opsc7311poe.app-debug-74:/layout_activity_weekly_summary.xml.flat",
-        "source": "com.example.opsc7311poe.app-main-76:/layout/activity_weekly_summary.xml"
     },
     {
         "merged": "com.example.opsc7311poe.app-debug-74:/mipmap-hdpi_ic_launcher_round.webp.flat",
@@ -186,6 +186,10 @@
     {
         "merged": "com.example.opsc7311poe.app-debug-74:/drawable_sport.png.flat",
         "source": "com.example.opsc7311poe.app-main-76:/drawable/sport.png"
+    },
+    {
+        "merged": "com.example.opsc7311poe.app-debug-74:/layout_activity_insert_task.xml.flat",
+        "source": "com.example.opsc7311poe.app-main-76:/layout/activity_insert_task.xml"
     },
     {
         "merged": "com.example.opsc7311poe.app-debug-74:/layout_activity_view_graphs.xml.flat",
@@ -264,6 +268,10 @@
         "source": "com.example.opsc7311poe.app-main-76:/drawable/baseline_circle_notifications_24.xml"
     },
     {
+        "merged": "com.example.opsc7311poe.app-debug-74:/layout_activity_monthly_summary.xml.flat",
+        "source": "com.example.opsc7311poe.app-main-76:/layout/activity_monthly_summary.xml"
+    },
+    {
         "merged": "com.example.opsc7311poe.app-debug-74:/layout_activity_starting_page.xml.flat",
         "source": "com.example.opsc7311poe.app-main-76:/layout/activity_starting_page.xml"
     },
@@ -318,10 +326,6 @@
     {
         "merged": "com.example.opsc7311poe.app-debug-74:/drawable_uploadphoto.png.flat",
         "source": "com.example.opsc7311poe.app-main-76:/drawable/uploadphoto.png"
-    },
-    {
-        "merged": "com.example.opsc7311poe.app-debug-74:/layout_activity_insert_data.xml.flat",
-        "source": "com.example.opsc7311poe.app-main-76:/layout/activity_insert_data.xml"
     },
     {
         "merged": "com.example.opsc7311poe.app-debug-74:/mipmap-xxhdpi_ic_launcher.webp.flat",

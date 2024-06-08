@@ -46,6 +46,7 @@
     <string name="design">Redesign Home Page</string>
     <string name="diagram">Diagram</string>
     <string name="editUser">Edit Username:</string>
+    <string name="endDate">End Date</string>
     <string name="enter_hours_spent">Enter hours for task</string>
     <string name="enter_time">Enter time</string>
     <string name="forward">→</string>
@@ -86,6 +87,7 @@
     <string name="sign_in_to_lifetime">Sign in to LifeTime</string>
     <string name="signup">Sign Up</string>
     <string name="start">Start</string>
+    <string name="startDate">Start Date</string>
     <string name="stop">Stop</string>
     <string name="target_hours">Target Hours</string>
     <string name="task">Task</string>
