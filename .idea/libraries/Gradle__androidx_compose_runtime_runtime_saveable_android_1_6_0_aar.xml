@@ -1,9 +1,9 @@
 <component name="libraryTable">
   <library name="Gradle: androidx.compose.runtime:runtime-saveable-android:1.6.0@aar" external-system-id="GRADLE">
     <CLASSES>
-      <root url="file://$USER_HOME$/Downloads/OPSC7311POE/OPSC7311POE/gradle/wrapper/dists/gradle-8.7-all/caches/transforms-4/7bd7b4cfc75679a7f64c16115d243f79/transformed/jetified-runtime-saveable-release/res" />
-      <root url="file://$USER_HOME$/Downloads/OPSC7311POE/OPSC7311POE/gradle/wrapper/dists/gradle-8.7-all/caches/transforms-4/7bd7b4cfc75679a7f64c16115d243f79/transformed/jetified-runtime-saveable-release/AndroidManifest.xml" />
-      <root url="jar://$USER_HOME$/Downloads/OPSC7311POE/OPSC7311POE/gradle/wrapper/dists/gradle-8.7-all/caches/transforms-4/7bd7b4cfc75679a7f64c16115d243f79/transformed/jetified-runtime-saveable-release/jars/classes.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-4/7bd7b4cfc75679a7f64c16115d243f79/transformed/jetified-runtime-saveable-release/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-4/7bd7b4cfc75679a7f64c16115d243f79/transformed/jetified-runtime-saveable-release/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-4/7bd7b4cfc75679a7f64c16115d243f79/transformed/jetified-runtime-saveable-release/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

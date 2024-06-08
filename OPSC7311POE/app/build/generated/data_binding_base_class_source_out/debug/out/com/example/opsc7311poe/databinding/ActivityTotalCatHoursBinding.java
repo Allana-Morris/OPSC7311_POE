@@ -36,7 +36,7 @@ public final class ActivityTotalCatHoursBinding implements ViewBinding {
   public final ScrollView chooseWeek1;
 
   @NonNull
-  public final ImageView imageView;
+  public final ImageView imgWhiteArc;
 
   @NonNull
   public final ConstraintLayout main1;
@@ -55,7 +55,7 @@ public final class ActivityTotalCatHoursBinding implements ViewBinding {
 
   private ActivityTotalCatHoursBinding(@NonNull ConstraintLayout rootView,
       @NonNull BottomNavigationView bottomNav, @NonNull Button btnSelectHours,
-      @NonNull View chooseWeek, @NonNull ScrollView chooseWeek1, @NonNull ImageView imageView,
+      @NonNull View chooseWeek, @NonNull ScrollView chooseWeek1, @NonNull ImageView imgWhiteArc,
       @NonNull ConstraintLayout main1, @NonNull TextView tvEndDate1,
       @NonNull TextView tvSelectPeriod1, @NonNull TextView tvStartDate1,
       @NonNull TextView tvTotal) {
@@ -64,7 +64,7 @@ public final class ActivityTotalCatHoursBinding implements ViewBinding {
     this.btnSelectHours = btnSelectHours;
     this.chooseWeek = chooseWeek;
     this.chooseWeek1 = chooseWeek1;
-    this.imageView = imageView;
+    this.imgWhiteArc = imgWhiteArc;
     this.main1 = main1;
     this.tvEndDate1 = tvEndDate1;
     this.tvSelectPeriod1 = tvSelectPeriod1;
@@ -123,9 +123,9 @@ public final class ActivityTotalCatHoursBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.imageView;
-      ImageView imageView = ViewBindings.findChildViewById(rootView, id);
-      if (imageView == null) {
+      id = R.id.img_whiteArc;
+      ImageView imgWhiteArc = ViewBindings.findChildViewById(rootView, id);
+      if (imgWhiteArc == null) {
         break missingId;
       }
 
@@ -156,7 +156,7 @@ public final class ActivityTotalCatHoursBinding implements ViewBinding {
       }
 
       return new ActivityTotalCatHoursBinding((ConstraintLayout) rootView, bottomNav,
-          btnSelectHours, chooseWeek, chooseWeek1, imageView, main1, tvEndDate1, tvSelectPeriod1,
+          btnSelectHours, chooseWeek, chooseWeek1, imgWhiteArc, main1, tvEndDate1, tvSelectPeriod1,
           tvStartDate1, tvTotal);
     }
     String missingId = rootView.getResources().getResourceName(id);

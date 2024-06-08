@@ -89,6 +89,9 @@
     <string name="cat_view">View Total Hours For your Categories</string>
     <string name="startDate">Start Date</string>
     <string name="endDate">End Date</string>
+    <string name="Select">Select</string>
+    <string name="SelectPeriod">Select a time period</string>
+    <string name="yourHugeText">Output Will be displayed here:</string>
 
 
     <!-- Monthly Summary Page Strings-->

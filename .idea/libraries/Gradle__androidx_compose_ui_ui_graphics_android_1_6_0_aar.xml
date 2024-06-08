@@ -1,9 +1,9 @@
 <component name="libraryTable">
   <library name="Gradle: androidx.compose.ui:ui-graphics-android:1.6.0@aar" external-system-id="GRADLE">
     <CLASSES>
-      <root url="jar://$USER_HOME$/Downloads/OPSC7311POE/OPSC7311POE/gradle/wrapper/dists/gradle-8.7-all/caches/transforms-4/0d877219ffd342be44e073b297a2e836/transformed/jetified-ui-graphics-release/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/Downloads/OPSC7311POE/OPSC7311POE/gradle/wrapper/dists/gradle-8.7-all/caches/transforms-4/0d877219ffd342be44e073b297a2e836/transformed/jetified-ui-graphics-release/res" />
-      <root url="file://$USER_HOME$/Downloads/OPSC7311POE/OPSC7311POE/gradle/wrapper/dists/gradle-8.7-all/caches/transforms-4/0d877219ffd342be44e073b297a2e836/transformed/jetified-ui-graphics-release/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-4/0d877219ffd342be44e073b297a2e836/transformed/jetified-ui-graphics-release/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-4/0d877219ffd342be44e073b297a2e836/transformed/jetified-ui-graphics-release/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-4/0d877219ffd342be44e073b297a2e836/transformed/jetified-ui-graphics-release/res" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

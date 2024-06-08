@@ -1,9 +1,9 @@
 <component name="libraryTable">
   <library name="Gradle: androidx.core:core-ktx:1.12.0@aar" external-system-id="GRADLE">
     <CLASSES>
-      <root url="jar://$USER_HOME$/Downloads/OPSC7311POE/OPSC7311POE/gradle/wrapper/dists/gradle-8.7-all/caches/transforms-4/414a623a612b085ba6fc647413b07b92/transformed/jetified-core-ktx-1.12.0/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/Downloads/OPSC7311POE/OPSC7311POE/gradle/wrapper/dists/gradle-8.7-all/caches/transforms-4/414a623a612b085ba6fc647413b07b92/transformed/jetified-core-ktx-1.12.0/res" />
-      <root url="file://$USER_HOME$/Downloads/OPSC7311POE/OPSC7311POE/gradle/wrapper/dists/gradle-8.7-all/caches/transforms-4/414a623a612b085ba6fc647413b07b92/transformed/jetified-core-ktx-1.12.0/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-4/414a623a612b085ba6fc647413b07b92/transformed/jetified-core-ktx-1.12.0/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-4/414a623a612b085ba6fc647413b07b92/transformed/jetified-core-ktx-1.12.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-4/414a623a612b085ba6fc647413b07b92/transformed/jetified-core-ktx-1.12.0/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

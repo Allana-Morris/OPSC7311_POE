@@ -3551,6 +3551,7 @@ int id imageView 0x7f080123
 int id imageView22 0x7f080124
 int id imgTaskIcon 0x7f080125
 int id img_photoUp 0x7f080126
+int id img_whiteArc 0x7f0802c0
 int id img_whiteBackground 0x7f080127
 int id immediateStop 0x7f080128
 int id included 0x7f080129
@@ -4194,6 +4195,8 @@ int plurals mtrl_badge_content_description 0x7f0f0000
 int raw firebase_common_keep 0x7f100000
 int string CurrentTask 0x7f110000
 int string Email 0x7f110001
+int string Select 0x7f110138
+int string SelectPeriod 0x7f110139
 int string abc_action_bar_home_description 0x7f110002
 int string abc_action_bar_up_description 0x7f110003
 int string abc_action_menu_overflow_description 0x7f110004
@@ -4504,6 +4507,7 @@ int string view_tasks 0x7f110134
 int string view_timesheet 0x7f110135
 int string weeklyS 0x7f110136
 int string welcome 0x7f110137
+int string yourHugeText 0x7f11013a
 int style AlertDialog_AppCompat 0x7f120000
 int style AlertDialog_AppCompat_Light 0x7f120001
 int style Animation_AppCompat_Dialog 0x7f120002

@@ -3552,6 +3552,7 @@ id imageView
 id imageView22
 id imgTaskIcon
 id img_photoUp
+id img_whiteArc
 id img_whiteBackground
 id immediateStop
 id included
@@ -4195,6 +4196,8 @@ plurals mtrl_badge_content_description
 raw firebase_common_keep
 string CurrentTask
 string Email
+string Select
+string SelectPeriod
 string abc_action_bar_home_description
 string abc_action_bar_up_description
 string abc_action_menu_overflow_description
@@ -4505,6 +4508,7 @@ string view_tasks
 string view_timesheet
 string weeklyS
 string welcome
+string yourHugeText
 style AlertDialog_AppCompat
 style AlertDialog_AppCompat_Light
 style Animation_AppCompat_Dialog
