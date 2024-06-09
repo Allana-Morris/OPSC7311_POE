@@ -97,9 +97,9 @@ class Profile_activity : AppCompatActivity() {
         val userNameEdit: TextView = findViewById(R.id.edtUserNameEdit)
         val PassEdit: TextView = findViewById(R.id.edtPasswordEdit)
 
-        nameEdit.text = SessionUser.currentUser?.fullName
-        emailEdit.text = SessionUser.currentUser?.email
-        userNameEdit.text = SessionUser.currentUser?.username
-        PassEdit.text = SessionUser.currentUser?.password
+        nameEdit.hint = SessionUser.currentUser?.fullName
+        emailEdit.hint = SessionUser.currentUser?.email
+        userNameEdit.hint = SessionUser.currentUser?.username
+        PassEdit.hint = SessionUser.currentUser?.password
     }
 }
