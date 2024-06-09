@@ -90,6 +90,7 @@
     <string name="startDate">Start Date</string>
     <string name="endDate">End Date</string>
     <string name="Select">Select</string>
+    <string name="viewTimeEntries">View your entries over time</string>
     <string name="SelectPeriod">Select a time period</string>
     <string name="yourHugeText">Output Will be displayed here:</string>
 

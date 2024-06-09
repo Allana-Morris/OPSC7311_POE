@@ -137,11 +137,12 @@ id linearLayout6
 id listView
 id main
 id main1
+id mainTimeSheetUI
 id profile
 id repeatSwitch
 id saveTimebtn
+id scrllView
 id scrollView2
-id selectBtn
 id sp_Category
 id spinCat
 id spinEntryCat
@@ -180,7 +181,6 @@ id tvCategorySpinner
 id tvCustomiseProfile
 id tvEditusername
 id tvEmail
-id tvEndDate
 id tvEndDate1
 id tvEndTime
 id tvEntryDate
@@ -194,7 +194,6 @@ id tvNewPhoto
 id tvProfilePhoto
 id tvSeePassword
 id tvSelectPeriod1
-id tvStartDate
 id tvStartDate1
 id tvStartTime
 id tvTaskSpinner
@@ -202,6 +201,8 @@ id tvTask_description
 id tvTask_end_time
 id tvTask_name
 id tvTask_start_time
+id tvTimeHeading
+id tvTimeSheetEntrieOutputbox
 id tvTimer
 id tvTopCatAns
 id tvTopCategory
@@ -371,6 +372,7 @@ string top_category
 string total_hours_recorded
 string uploadpic
 string username
+string viewTimeEntries
 string view_tasks
 string view_timesheet
 string weeklyS

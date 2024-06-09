@@ -36,12 +36,12 @@
         "source": "C:\\Users\\reill\\.gradle\\daemon\\8.7\\com.example.opsc7311poe.app-main-78:\\layout\\activity_timer.xml"
     },
     {
-        "merged": "C:\\Users\\reill\\.gradle\\daemon\\8.7\\com.example.opsc7311poe.app-mergeDebugResources-75:\\layout\\activity_view_graph_total_hours.xml",
-        "source": "C:\\Users\\reill\\.gradle\\daemon\\8.7\\com.example.opsc7311poe.app-main-78:\\layout\\activity_view_graph_total_hours.xml"
+        "merged": "com.example.opsc7311poe.app-mergeDebugResources-75:/layout/activity_view_time_sheet_entry.xml",
+        "source": "com.example.opsc7311poe.app-main-78:/layout/activity_view_time_sheet_entry.xml"
     },
     {
-        "merged": "com.example.opsc7311poe.app-mergeDebugResources-75:/layout/activity_total_cat_hours.xml",
-        "source": "com.example.opsc7311poe.app-main-78:/layout/activity_total_cat_hours.xml"
+        "merged": "C:\\Users\\reill\\.gradle\\daemon\\8.7\\com.example.opsc7311poe.app-mergeDebugResources-75:\\layout\\activity_view_graph_total_hours.xml",
+        "source": "C:\\Users\\reill\\.gradle\\daemon\\8.7\\com.example.opsc7311poe.app-main-78:\\layout\\activity_view_graph_total_hours.xml"
     },
     {
         "merged": "C:\\Users\\reill\\.gradle\\daemon\\8.7\\com.example.opsc7311poe.app-mergeDebugResources-75:\\layout\\fragment_icon_picker.xml",

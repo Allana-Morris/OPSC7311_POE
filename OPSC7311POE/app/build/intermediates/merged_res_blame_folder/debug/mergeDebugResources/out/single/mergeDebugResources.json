@@ -32,10 +32,6 @@
         "source": "C:\\Users\\reill\\.gradle\\daemon\\8.7\\com.example.opsc7311poe.app-main-78:\\drawable\\baseline_fitness_center_24.xml"
     },
     {
-        "merged": "com.example.opsc7311poe.app-debug-76:/layout_activity_total_cat_hours.xml.flat",
-        "source": "com.example.opsc7311poe.app-main-78:/layout/activity_total_cat_hours.xml"
-    },
-    {
         "merged": "C:\\Users\\reill\\.gradle\\daemon\\8.7\\com.example.opsc7311poe.app-debug-76:\\layout_activity_profile.xml.flat",
         "source": "C:\\Users\\reill\\.gradle\\daemon\\8.7\\com.example.opsc7311poe.app-main-78:\\layout\\activity_profile.xml"
     },
@@ -146,6 +142,10 @@
     {
         "merged": "C:\\Users\\reill\\.gradle\\daemon\\8.7\\com.example.opsc7311poe.app-debug-76:\\drawable_box_outline.xml.flat",
         "source": "C:\\Users\\reill\\.gradle\\daemon\\8.7\\com.example.opsc7311poe.app-main-78:\\drawable\\box_outline.xml"
+    },
+    {
+        "merged": "com.example.opsc7311poe.app-debug-76:/layout_activity_view_time_sheet_entry.xml.flat",
+        "source": "com.example.opsc7311poe.app-main-78:/layout/activity_view_time_sheet_entry.xml"
     },
     {
         "merged": "C:\\Users\\reill\\.gradle\\daemon\\8.7\\com.example.opsc7311poe.app-debug-76:\\drawable_pencilbtn.png.flat",

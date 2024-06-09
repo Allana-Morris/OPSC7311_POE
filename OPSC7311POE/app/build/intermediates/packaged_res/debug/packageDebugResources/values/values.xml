@@ -117,6 +117,7 @@
     <string name="total_hours_recorded">Total Hours Recorded: </string>
     <string name="uploadpic">Upload New</string>
     <string name="username">Username</string>
+    <string name="viewTimeEntries">View your entries over time</string>
     <string name="view_tasks">View Tasks</string>
     <string name="view_timesheet">View Timesheet Entries</string>
     <string name="weeklyS">Weekly summary</string>

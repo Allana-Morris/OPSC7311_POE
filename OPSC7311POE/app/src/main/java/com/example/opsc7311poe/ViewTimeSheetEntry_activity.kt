@@ -12,6 +12,7 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import com.example.opsc7311poe.R.id.main
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import java.text.SimpleDateFormat
 import java.util.*
@@ -23,7 +24,7 @@ class ViewTimeSheetEntry_activity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_view_time_sheet_entry)
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
+        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.mainTimeSheetUI)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
@@ -68,9 +69,9 @@ class ViewTimeSheetEntry_activity : AppCompatActivity() {
 
         val layout: LinearLayout = findViewById(R.id.linLayout)
 
-        val startDate: TextView = findViewById(R.id.tvStartDate)
-        val endDate: TextView = findViewById(R.id.tvEndDate)
-        val btnSelect: Button = findViewById(R.id.selectBtn)
+        val startDate: TextView = findViewById(R.id.tvStartDate1)
+        val endDate: TextView = findViewById(R.id.tvEndDate1)
+        val btnSelect: Button = findViewById(R.id.btnSelectHours)
 
         val calendar = Calendar.getInstance()
         val year = calendar.get(Calendar.YEAR)

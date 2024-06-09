@@ -5,7 +5,9 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.ScrollView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -26,31 +28,58 @@ public final class ActivityViewTimeSheetEntryBinding implements ViewBinding {
   public final BottomNavigationView bottomNav;
 
   @NonNull
+  public final Button btnSelectHours;
+
+  @NonNull
+  public final View chooseWeek;
+
+  @NonNull
+  public final ImageView imgWhiteArc;
+
+  @NonNull
   public final LinearLayout linLayout;
 
   @NonNull
-  public final ConstraintLayout main;
+  public final ConstraintLayout mainTimeSheetUI;
 
   @NonNull
-  public final Button selectBtn;
+  public final ScrollView scrllView;
 
   @NonNull
-  public final TextView tvEndDate;
+  public final TextView tvEndDate1;
 
   @NonNull
-  public final TextView tvStartDate;
+  public final TextView tvSelectPeriod1;
+
+  @NonNull
+  public final TextView tvStartDate1;
+
+  @NonNull
+  public final TextView tvTimeHeading;
+
+  @NonNull
+  public final TextView tvTimeSheetEntrieOutputbox;
 
   private ActivityViewTimeSheetEntryBinding(@NonNull ConstraintLayout rootView,
-      @NonNull BottomNavigationView bottomNav, @NonNull LinearLayout linLayout,
-      @NonNull ConstraintLayout main, @NonNull Button selectBtn, @NonNull TextView tvEndDate,
-      @NonNull TextView tvStartDate) {
+      @NonNull BottomNavigationView bottomNav, @NonNull Button btnSelectHours,
+      @NonNull View chooseWeek, @NonNull ImageView imgWhiteArc, @NonNull LinearLayout linLayout,
+      @NonNull ConstraintLayout mainTimeSheetUI, @NonNull ScrollView scrllView,
+      @NonNull TextView tvEndDate1, @NonNull TextView tvSelectPeriod1,
+      @NonNull TextView tvStartDate1, @NonNull TextView tvTimeHeading,
+      @NonNull TextView tvTimeSheetEntrieOutputbox) {
     this.rootView = rootView;
     this.bottomNav = bottomNav;
+    this.btnSelectHours = btnSelectHours;
+    this.chooseWeek = chooseWeek;
+    this.imgWhiteArc = imgWhiteArc;
     this.linLayout = linLayout;
-    this.main = main;
-    this.selectBtn = selectBtn;
-    this.tvEndDate = tvEndDate;
-    this.tvStartDate = tvStartDate;
+    this.mainTimeSheetUI = mainTimeSheetUI;
+    this.scrllView = scrllView;
+    this.tvEndDate1 = tvEndDate1;
+    this.tvSelectPeriod1 = tvSelectPeriod1;
+    this.tvStartDate1 = tvStartDate1;
+    this.tvTimeHeading = tvTimeHeading;
+    this.tvTimeSheetEntrieOutputbox = tvTimeSheetEntrieOutputbox;
   }
 
   @Override
@@ -86,34 +115,71 @@ public final class ActivityViewTimeSheetEntryBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.btnSelectHours;
+      Button btnSelectHours = ViewBindings.findChildViewById(rootView, id);
+      if (btnSelectHours == null) {
+        break missingId;
+      }
+
+      id = R.id.chooseWeek;
+      View chooseWeek = ViewBindings.findChildViewById(rootView, id);
+      if (chooseWeek == null) {
+        break missingId;
+      }
+
+      id = R.id.img_whiteArc;
+      ImageView imgWhiteArc = ViewBindings.findChildViewById(rootView, id);
+      if (imgWhiteArc == null) {
+        break missingId;
+      }
+
       id = R.id.linLayout;
       LinearLayout linLayout = ViewBindings.findChildViewById(rootView, id);
       if (linLayout == null) {
         break missingId;
       }
 
-      ConstraintLayout main = (ConstraintLayout) rootView;
+      ConstraintLayout mainTimeSheetUI = (ConstraintLayout) rootView;
 
-      id = R.id.selectBtn;
-      Button selectBtn = ViewBindings.findChildViewById(rootView, id);
-      if (selectBtn == null) {
+      id = R.id.scrllView;
+      ScrollView scrllView = ViewBindings.findChildViewById(rootView, id);
+      if (scrllView == null) {
         break missingId;
       }
 
-      id = R.id.tvEndDate;
-      TextView tvEndDate = ViewBindings.findChildViewById(rootView, id);
-      if (tvEndDate == null) {
+      id = R.id.tvEndDate1;
+      TextView tvEndDate1 = ViewBindings.findChildViewById(rootView, id);
+      if (tvEndDate1 == null) {
         break missingId;
       }
 
-      id = R.id.tvStartDate;
-      TextView tvStartDate = ViewBindings.findChildViewById(rootView, id);
-      if (tvStartDate == null) {
+      id = R.id.tvSelectPeriod1;
+      TextView tvSelectPeriod1 = ViewBindings.findChildViewById(rootView, id);
+      if (tvSelectPeriod1 == null) {
+        break missingId;
+      }
+
+      id = R.id.tvStartDate1;
+      TextView tvStartDate1 = ViewBindings.findChildViewById(rootView, id);
+      if (tvStartDate1 == null) {
+        break missingId;
+      }
+
+      id = R.id.tvTimeHeading;
+      TextView tvTimeHeading = ViewBindings.findChildViewById(rootView, id);
+      if (tvTimeHeading == null) {
+        break missingId;
+      }
+
+      id = R.id.tvTimeSheetEntrieOutputbox;
+      TextView tvTimeSheetEntrieOutputbox = ViewBindings.findChildViewById(rootView, id);
+      if (tvTimeSheetEntrieOutputbox == null) {
         break missingId;
       }
 
       return new ActivityViewTimeSheetEntryBinding((ConstraintLayout) rootView, bottomNav,
-          linLayout, main, selectBtn, tvEndDate, tvStartDate);
+          btnSelectHours, chooseWeek, imgWhiteArc, linLayout, mainTimeSheetUI, scrllView,
+          tvEndDate1, tvSelectPeriod1, tvStartDate1, tvTimeHeading, tvTimeSheetEntrieOutputbox);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
