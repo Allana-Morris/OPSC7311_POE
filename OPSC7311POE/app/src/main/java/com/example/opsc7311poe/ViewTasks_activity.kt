@@ -5,6 +5,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.widget.ImageButton
+import android.widget.ImageView
 import android.widget.LinearLayout
 import android.widget.TextView
 import android.widget.Toast
@@ -115,10 +116,14 @@ class ViewTasks_activity : AppCompatActivity() {
                             val taskStart = inflatedView.findViewById<TextView>(R.id.tvTask_start_time)
                             val taskEnd = inflatedView.findViewById<TextView>(R.id.tvTask_end_time)
                             val taskDesc = inflatedView.findViewById<TextView>(R.id.tvTask_description)
+                            val imgSheet = inflatedView.findViewById<ImageView>(R.id.imgSheet)
+
                             taskNameTextView.text = it.name // Set the text to the task name dynamically
                             taskDesc.text = it.description
                             taskStart.text = it.startTime.toString()
                             taskEnd.text = it.endTime.toString()
+                            imgSheet.visibility = ImageView.GONE
+
                             layout.addView(inflatedView)
                         }
                     }

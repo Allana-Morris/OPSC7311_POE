@@ -3,9 +3,12 @@ package com.example.opsc7311poe
 import Recording
 import android.app.DatePickerDialog
 import android.content.Intent
+import android.graphics.BitmapFactory
 import android.os.Bundle
+import android.util.Base64
 import android.view.LayoutInflater
 import android.widget.Button
+import android.widget.ImageView
 import android.widget.LinearLayout
 import android.widget.TextView
 import android.widget.Toast
@@ -88,7 +91,8 @@ class ViewTimeSheetEntry_activity : AppCompatActivity() {
             val datePickerDialog = DatePickerDialog(
                 this,
                 DatePickerDialog.OnDateSetListener { _, year, monthOfYear, dayOfMonth ->
-                    startDate.text = String.format("%02d/%02d/%d", dayOfMonth, monthOfYear + 1, year)
+                    startDate.text =
+                        String.format("%02d/%02d/%d", dayOfMonth, monthOfYear + 1, year)
                 },
                 year,
                 month,
@@ -136,56 +140,92 @@ class ViewTimeSheetEntry_activity : AppCompatActivity() {
 
                 // Database query to fetch tasks within the selected date range
                 val currentUserRef = DbRef.child(currentUser.username)
-                currentUserRef.child("categories").addListenerForSingleValueEvent(object : ValueEventListener {
-                    override fun onDataChange(snapshot: DataSnapshot) {
-                        // Iterate through categories
-                        for (categorySnapshot in snapshot.children) {
-                            // Iterate through tasks
-                            for (taskSnapshot in categorySnapshot.child("tasks").children) {
-                                val task = taskSnapshot.key
-                                if (task != null) {
-                                    taskSnapshot.child("recordings").children.forEach { recordingSnapshot ->
-                                        val recording = recordingSnapshot.getValue(Recording::class.java)
-                                        if (recording != null) {
-                                            // Parse the recording date string back into a Date object
-                                            val recordingDate = parseDate(recording.RecDate)
+                currentUserRef.child("categories")
+                    .addListenerForSingleValueEvent(object : ValueEventListener {
+                        override fun onDataChange(snapshot: DataSnapshot) {
+                            // Iterate through categories
+                            for (categorySnapshot in snapshot.children) {
+                                // Iterate through tasks
+                                for (taskSnapshot in categorySnapshot.child("tasks").children) {
+                                    val task = taskSnapshot.key
+                                    if (task != null) {
+                                        taskSnapshot.child("recordings").children.forEach { recordingSnapshot ->
+                                            val recording =
+                                                recordingSnapshot.getValue(Recording::class.java)
+                                            if (recording != null) {
+                                                // Parse the recording date string back into a Date object
+                                                val recordingDate = parseDate(recording.RecDate)
 
-                                            // Check if the recording date is within the selected date range
-                                            if (recordingDate != null && recordingDate >= start && recordingDate <= end) {
-                                                // Inflate the layout task_listing.xml for each recording
-                                                val inflatedView = LayoutInflater.from(this@ViewTimeSheetEntry_activity).inflate(R.layout.task_listing, layout, false)
-                                                val taskNameTextView = inflatedView.findViewById<TextView>(R.id.tvTask_name)
-                                                val taskStart = inflatedView.findViewById<TextView>(R.id.tvTask_start_time)
-                                                val taskEnd = inflatedView.findViewById<TextView>(R.id.tvTask_end_time)
-                                                val taskDesc = inflatedView.findViewById<TextView>(R.id.tvTask_description)
+                                                // Check if the recording date is within the selected date range
+                                                if (recordingDate != null && recordingDate >= start && recordingDate <= end) {
+                                                    // Inflate the layout task_listing.xml for each recording
+                                                    val inflatedView =
+                                                        LayoutInflater.from(this@ViewTimeSheetEntry_activity)
+                                                            .inflate(
+                                                                R.layout.task_listing,
+                                                                layout,
+                                                                false
+                                                            )
+                                                    val taskNameTextView =
+                                                        inflatedView.findViewById<TextView>(R.id.tvTask_name)
+                                                    val taskStart =
+                                                        inflatedView.findViewById<TextView>(R.id.tvTask_start_time)
+                                                    val taskEnd =
+                                                        inflatedView.findViewById<TextView>(R.id.tvTask_end_time)
+                                                    val taskDesc =
+                                                        inflatedView.findViewById<TextView>(R.id.tvTask_description)
+                                                    val imgCheet =
+                                                        inflatedView.findViewById<ImageView>(R.id.imgSheet)
 
-                                                taskNameTextView.text = task
-                                                taskDesc.text = "" // Assuming description is not available
-                                                taskStart.text = recording.StartTime
-                                                taskEnd.text = recording.EndTime
+                                                    taskNameTextView.text = task
+                                                    taskDesc.text =
+                                                        "" // Assuming description is not available
+                                                    taskStart.text = recording.StartTime
+                                                    taskEnd.text = recording.EndTime
 
-                                                val recordingDateTextView = TextView(this@ViewTimeSheetEntry_activity).apply {
-                                                    text = recording.RecDate // Use the original date string
-                                                    layoutParams = LinearLayout.LayoutParams(
-                                                        LinearLayout.LayoutParams.WRAP_CONTENT,
-                                                        LinearLayout.LayoutParams.WRAP_CONTENT
-                                                    )
+                                                    val recordingDateTextView =
+                                                        TextView(this@ViewTimeSheetEntry_activity).apply {
+                                                            text =
+                                                                recording.RecDate // Use the original date string
+                                                            layoutParams =
+                                                                LinearLayout.LayoutParams(
+                                                                    LinearLayout.LayoutParams.WRAP_CONTENT,
+                                                                    LinearLayout.LayoutParams.WRAP_CONTENT
+                                                                )
+                                                        }
+
+                                                    // Display image if available
+                                                    if (!recording.image.isNullOrBlank()) {
+                                                        val imageBytes = Base64.decode(
+                                                            recording.image,
+                                                            Base64.DEFAULT
+                                                        )
+                                                        val decodedImage =
+                                                            BitmapFactory.decodeByteArray(
+                                                                imageBytes,
+                                                                0,
+                                                                imageBytes.size
+                                                            )
+                                                        imgCheet.setImageBitmap(decodedImage)
+                                                        imgCheet.visibility = ImageView.VISIBLE
+                                                    } else {
+                                                        imgCheet.visibility = ImageView.GONE
+                                                    }
+
+                                                    layout.addView(inflatedView)
+                                                    layout.addView(recordingDateTextView)
                                                 }
-
-                                                layout.addView(inflatedView)
-                                                layout.addView(recordingDateTextView)
                                             }
                                         }
                                     }
                                 }
                             }
                         }
-                    }
 
-                    override fun onCancelled(error: DatabaseError) {
-                        // Handle error
-                    }
-                })
+                        override fun onCancelled(error: DatabaseError) {
+                            // Handle error
+                        }
+                    })
             }
         }
     }
@@ -193,7 +233,10 @@ class ViewTimeSheetEntry_activity : AppCompatActivity() {
     private fun parseDate(dateString: String?): Date? {
         val dateFormats = arrayOf(
             SimpleDateFormat("dd/MM/yyyy", Locale.getDefault()),
-            SimpleDateFormat("EEE MMM dd HH:mm:ss z yyyy", Locale.ENGLISH) // Format for "Sun Jun 09 19:59:44 GMT+02:00 2024"
+            SimpleDateFormat(
+                "EEE MMM dd HH:mm:ss z yyyy",
+                Locale.ENGLISH
+            ) // Format for "Sun Jun 09 19:59:44 GMT+02:00 2024"
         )
 
         for (format in dateFormats) {
@@ -206,3 +249,6 @@ class ViewTimeSheetEntry_activity : AppCompatActivity() {
         return null
     }
 }
+
+
+
