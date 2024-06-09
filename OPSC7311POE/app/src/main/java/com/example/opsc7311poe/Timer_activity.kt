@@ -26,7 +26,7 @@ class Timer_activity : AppCompatActivity() {
     lateinit var bottomNav: BottomNavigationView
 
     override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
+     /*   super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_timer)
 
         edtTime = findViewById(R.id.edtClock)
@@ -267,7 +267,7 @@ class Timer_activity : AppCompatActivity() {
     private fun stopTimer() {
         isTimerRunning = false
         btnStart.text = "Start"
-        handler.removeCallbacks(runnable)
+        handler.removeCallbacks(runnable)*/
     }
 
 
