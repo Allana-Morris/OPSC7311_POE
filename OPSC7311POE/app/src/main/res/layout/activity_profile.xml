@@ -203,7 +203,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.802"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton"
+        app:layout_constraintTop_toBottomOf="@+id/ibtnPhoto"
         app:layout_constraintVertical_bias="0.0"
         tools:ignore="MissingConstraints" />
 
@@ -242,7 +242,7 @@
         app:menu="@menu/nav_menu" />
 
     <ImageButton
-        android:id="@+id/imageButton"
+        android:id="@+id/ibtnPhoto"
         android:layout_width="76dp"
         android:layout_height="62dp"
         android:layout_marginTop="12dp"

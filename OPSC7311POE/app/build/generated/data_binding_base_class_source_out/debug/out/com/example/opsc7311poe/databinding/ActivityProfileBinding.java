@@ -6,6 +6,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
@@ -45,7 +46,7 @@ public final class ActivityProfileBinding implements ViewBinding {
   public final View empyViews;
 
   @NonNull
-  public final ImageView imgPhotoUp;
+  public final ImageButton ibtnPhoto;
 
   @NonNull
   public final ImageView imgWhiteBackground;
@@ -84,7 +85,7 @@ public final class ActivityProfileBinding implements ViewBinding {
       @NonNull BottomNavigationView bottomNav, @NonNull Button btnSaveProfile,
       @NonNull EditText edtEmailEdit, @NonNull EditText edtFullNameEdit,
       @NonNull EditText edtPasswordEdit, @NonNull EditText edtUserNameEdit, @NonNull View empyViews,
-      @NonNull ImageView imgPhotoUp, @NonNull ImageView imgWhiteBackground,
+      @NonNull ImageButton ibtnPhoto, @NonNull ImageView imgWhiteBackground,
       @NonNull ImageView ivGoogle, @NonNull ConstraintLayout main,
       @NonNull TextView tvCustomiseProfile, @NonNull TextView tvEditusername,
       @NonNull TextView tvEmail, @NonNull TextView tvFullName, @NonNull TextView tvNewPhoto,
@@ -98,7 +99,7 @@ public final class ActivityProfileBinding implements ViewBinding {
     this.edtPasswordEdit = edtPasswordEdit;
     this.edtUserNameEdit = edtUserNameEdit;
     this.empyViews = empyViews;
-    this.imgPhotoUp = imgPhotoUp;
+    this.ibtnPhoto = ibtnPhoto;
     this.imgWhiteBackground = imgWhiteBackground;
     this.ivGoogle = ivGoogle;
     this.main = main;
@@ -181,9 +182,9 @@ public final class ActivityProfileBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.img_photoUp;
-      ImageView imgPhotoUp = ViewBindings.findChildViewById(rootView, id);
-      if (imgPhotoUp == null) {
+      id = R.id.ibtnPhoto;
+      ImageButton ibtnPhoto = ViewBindings.findChildViewById(rootView, id);
+      if (ibtnPhoto == null) {
         break missingId;
       }
 
@@ -250,7 +251,7 @@ public final class ActivityProfileBinding implements ViewBinding {
       }
 
       return new ActivityProfileBinding((ConstraintLayout) rootView, bottomNav, btnSaveProfile,
-          edtEmailEdit, edtFullNameEdit, edtPasswordEdit, edtUserNameEdit, empyViews, imgPhotoUp,
+          edtEmailEdit, edtFullNameEdit, edtPasswordEdit, edtUserNameEdit, empyViews, ibtnPhoto,
           imgWhiteBackground, ivGoogle, main, tvCustomiseProfile, tvEditusername, tvEmail,
           tvFullName, tvNewPhoto, tvProfilePhoto, tvSeePassword, tvuserProfile);
     }
