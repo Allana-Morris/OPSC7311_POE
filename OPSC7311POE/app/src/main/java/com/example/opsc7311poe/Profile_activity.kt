@@ -1,42 +1,28 @@
 package com.example.opsc7311poe
 
-import android.Manifest
+import android.R.attr
 import android.annotation.SuppressLint
-import android.app.Activity
 import android.content.Intent
-import android.content.pm.PackageManager
-import android.net.Uri
+import android.graphics.Bitmap
 import android.os.Bundle
-import android.os.Environment
 import android.provider.MediaStore
 import android.widget.Button
 import android.widget.ImageButton
 import android.widget.TextView
 import android.widget.Toast
+import androidx.activity.result.ActivityResultLauncher
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.app.ActivityCompat
-import androidx.core.content.ContextCompat
-import androidx.core.content.FileProvider
 import com.google.android.material.bottomnavigation.BottomNavigationView
-import java.io.File
-import java.io.IOException
-import java.text.SimpleDateFormat
-import java.util.Date
-import java.util.Locale
+
 
 @Suppress("DEPRECATION")
 class Profile_activity : AppCompatActivity() {
     lateinit var bottomNav: BottomNavigationView
 
     //photo stuffs
-    private val REQUEST_IMAGE_CAPTURE = 1
-    private val REQUEST_IMAGE_PICK = 2
-    private val PERMISSION_REQUEST_CODE = 100
-
-    private var photoURI: Uri? = null
     private lateinit var ibtnPhotoChoose: ImageButton
-    private var currentPhotoPath: String? = null
+    private lateinit var resultLauncher: ActivityResultLauncher<Intent>
 
     @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -85,7 +71,7 @@ class Profile_activity : AppCompatActivity() {
         setContent()
 
         ibtnPhotoChoose.setOnClickListener {
-            showPhotoDialog()
+            showImageSourceDialog()
         }
 
 
@@ -140,135 +126,35 @@ class Profile_activity : AppCompatActivity() {
 
     //Photo taking/upload bs
 
-    private fun showPhotoDialog() {
-        val options = arrayOf("Take Photo", "Upload from Device")
-        val builder = AlertDialog.Builder(this)
-        builder.setTitle("Choose an option")
-        builder.setItems(options) { dialog, which ->
-            when (which) {
-                0 -> {
-                    if (checkPermissions()) {
-                        takePhoto()
-                    } else {
-                        checkPermissions()
-                    }
-                }
-
-                1 -> {
-                    if (checkPermissions()) {
-                        pickImageFromGallery()
-                    } else {
-                        checkPermissions()
-                    }
+    private fun showImageSourceDialog() {
+        val options = arrayOf("Upload Photo", "Take Photo")
+        AlertDialog.Builder(this)
+            .setTitle("Select Image")
+            .setItems(options) { _, which ->
+                when (which) {
+                    0 -> selectImage()
+                    1 -> selectImageFromCamera()
                 }
             }
-            builder.show()
-        }
+            .show()
     }
 
-    private fun checkPermissions(): Boolean {
-        val cameraPermission = ContextCompat.checkSelfPermission(this, Manifest.permission.CAMERA)
-        val readStoragePermission =
-            ContextCompat.checkSelfPermission(this, Manifest.permission.READ_EXTERNAL_STORAGE)
-        val writeStoragePermission =
-            ContextCompat.checkSelfPermission(this, Manifest.permission.WRITE_EXTERNAL_STORAGE)
-
-        val listPermissionsNeeded = mutableListOf<String>()
-
-        if (cameraPermission != PackageManager.PERMISSION_GRANTED) {
-            listPermissionsNeeded.add(Manifest.permission.CAMERA)
-        }
-        if (readStoragePermission != PackageManager.PERMISSION_GRANTED) {
-            listPermissionsNeeded.add(Manifest.permission.READ_EXTERNAL_STORAGE)
-        }
-        if (writeStoragePermission != PackageManager.PERMISSION_GRANTED) {
-            listPermissionsNeeded.add(Manifest.permission.WRITE_EXTERNAL_STORAGE)
-        }
-
-        if (listPermissionsNeeded.isNotEmpty()) {
-            ActivityCompat.requestPermissions(
-                this,
-                listPermissionsNeeded.toTypedArray(),
-                PERMISSION_REQUEST_CODE
-            )
-            return false
-        }
-        return true
-    }
-
-
-    @SuppressLint("QueryPermissionsNeeded")
-    private fun takePhoto() {
-        Intent(MediaStore.ACTION_IMAGE_CAPTURE).also { takePictureIntent ->
-            takePictureIntent.resolveActivity(packageManager)?.also {
-                val photoFile: File? = try {
-                    createImageFile()
-                } catch (ex: IOException) {
-                    null
-                }
-                photoFile?.also {
-                    photoURI = FileProvider.getUriForFile(
-                        this,
-                        "${applicationContext.packageName}.provider",
-                        it
-                    )
-                    takePictureIntent.putExtra(MediaStore.EXTRA_OUTPUT, photoURI)
-                    startActivityForResult(takePictureIntent, REQUEST_IMAGE_CAPTURE)
-                }
-            }
-        }
-    }
-
-    private fun pickImageFromGallery() {
+    private fun selectImage() {
         val intent = Intent(Intent.ACTION_PICK, MediaStore.Images.Media.EXTERNAL_CONTENT_URI)
-        startActivityForResult(intent, REQUEST_IMAGE_PICK)
+        resultLauncher.launch(intent)
     }
 
-    @Throws(IOException::class)
-    private fun createImageFile(): File {
-        val timeStamp: String = SimpleDateFormat("yyyy/MM/dd HH:mm:ss", Locale.UK).format(Date())
-        val storageDir: File? = getExternalFilesDir(Environment.DIRECTORY_PICTURES)
-        return File.createTempFile(
-            "JPEG_${timeStamp}_",
-            ".jpg",
-            storageDir
-        ).apply {
-            // Save a file: path for use with ACTION_VIEW intents
-            currentPhotoPath = absolutePath
-        }
-    }
+    private fun selectImageFromCamera() {
+        // Create an intent to capture an image
+        val takePictureIntent = Intent(MediaStore.ACTION_IMAGE_CAPTURE)
 
-    @Deprecated("Deprecated in Java")
-    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
-        super.onActivityResult(requestCode, resultCode, data)
-        if (resultCode == Activity.RESULT_OK) {
-            when (requestCode) {
-                REQUEST_IMAGE_CAPTURE -> {
-                    ibtnPhotoChoose.setImageURI(photoURI)
-                }
-
-                REQUEST_IMAGE_PICK -> {
-                    photoURI = data?.data
-                    ibtnPhotoChoose.setImageURI(photoURI)
-                }
-            }
-        }
-    }
-
-    override fun onRequestPermissionsResult(
-        requestCode: Int,
-        permissions: Array<out String>,
-        grantResults: IntArray,
-    ) {
-        super.onRequestPermissionsResult(requestCode, permissions, grantResults)
-        when (requestCode) {
-            PERMISSION_REQUEST_CODE -> {
-                if (grantResults.isNotEmpty() && grantResults.all { it == PackageManager.PERMISSION_GRANTED }) {
-                    // Permissions granted, proceed with the action
-                } else {
-                    Toast.makeText(this, "Permissions required", Toast.LENGTH_SHORT).show()
-                }
-            }
+        // Check if there's a camera app to handle the intent
+        if (takePictureIntent.resolveActivity(packageManager) != null) {
+            // Launch the camera app
+            resultLauncher.launch(takePictureIntent)
+        } else {
+            // If no camera app is available, display a toast or handle it in another way
+            Toast.makeText(this, "No camera app available", Toast.LENGTH_SHORT).show()
         }
     }
 }

@@ -121,6 +121,7 @@ id ett_Max_Goal
 id ett_Min_Goal
 id home
 id ib_Icon
+id ibtnPhoto
 id iconImageView
 id iconRecyclerView
 id idGraphView
@@ -383,3 +384,4 @@ style Base.Theme.OPSC7311POE
 style Theme.OPSC7311POE
 xml backup_rules
 xml data_extraction_rules
+xml file_paths

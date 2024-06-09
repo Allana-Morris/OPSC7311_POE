@@ -191,33 +191,20 @@
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingConstraints" />
 
-    <ImageView
-        android:id="@+id/img_photoUp"
-        android:layout_width="72dp"
-        android:layout_height="55dp"
-        android:layout_marginTop="469dp"
-        android:layout_marginEnd="143dp"
-        android:layout_marginBottom="210dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/uploadphoto"
-        tools:ignore="MissingConstraints" />
-
     <TextView
         android:id="@+id/tvNewPhoto"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="533dp"
-        android:layout_marginEnd="119dp"
-        android:layout_marginBottom="180dp"
         android:fontFamily="sans-serif-medium"
         android:text="@string/uploadpic"
         android:textColor="@color/black"
         android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/btnSaveProfile"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintHorizontal_bias="0.802"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ibtnPhoto"
+        app:layout_constraintVertical_bias="0.0"
         tools:ignore="MissingConstraints" />
 
     <Button
@@ -225,7 +212,7 @@
         android:layout_width="151dp"
         android:layout_height="55dp"
         android:layout_marginTop="574dp"
-        android:layout_marginEnd="128dp"
+        android:layout_marginEnd="116dp"
         android:layout_marginBottom="110dp"
         android:background="@drawable/roundstyle"
         android:backgroundTint="@color/black"
@@ -236,7 +223,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.822"
+        app:layout_constraintVertical_bias="0.0"
         tools:ignore="MissingConstraints" />
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
@@ -253,5 +240,17 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:menu="@menu/nav_menu" />
+
+    <ImageButton
+        android:id="@+id/ibtnPhoto"
+        android:layout_width="76dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="12dp"
+        android:background="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.579"
+        app:layout_constraintStart_toEndOf="@+id/tvProfilePhoto"
+        app:layout_constraintTop_toBottomOf="@+id/edtPasswordEdit"
+        app:srcCompat="@drawable/uploadphoto" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

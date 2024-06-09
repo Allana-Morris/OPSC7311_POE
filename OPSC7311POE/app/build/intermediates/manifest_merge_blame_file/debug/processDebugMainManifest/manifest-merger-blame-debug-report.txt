@@ -8,350 +8,389 @@
 8        android:minSdkVersion="26"
 9        android:targetSdkVersion="34" />
 10
-11    <!-- Although the *SdkVersion is captured in gradle build files, this is required for non gradle builds -->
-12    <!-- <uses-sdk android:minSdkVersion="21" /> -->
-13    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-13-->[com.google.firebase:firebase-firestore:25.0.0] C:\Users\allan\Downloads\OPSC7311POE\OPSC7311POE\gradle\wrapper\dists\gradle-8.7-all\caches\transforms-4\86fef38e6c6b17dea2ae3d9bdb8b205d\transformed\jetified-firebase-firestore-25.0.0\AndroidManifest.xml:10:5-79
-13-->[com.google.firebase:firebase-firestore:25.0.0] C:\Users\allan\Downloads\OPSC7311POE\OPSC7311POE\gradle\wrapper\dists\gradle-8.7-all\caches\transforms-4\86fef38e6c6b17dea2ae3d9bdb8b205d\transformed\jetified-firebase-firestore-25.0.0\AndroidManifest.xml:10:22-76
-14    <uses-permission android:name="android.permission.INTERNET" />
-14-->[com.google.firebase:firebase-firestore:25.0.0] C:\Users\allan\Downloads\OPSC7311POE\OPSC7311POE\gradle\wrapper\dists\gradle-8.7-all\caches\transforms-4\86fef38e6c6b17dea2ae3d9bdb8b205d\transformed\jetified-firebase-firestore-25.0.0\AndroidManifest.xml:11:5-67
-14-->[com.google.firebase:firebase-firestore:25.0.0] C:\Users\allan\Downloads\OPSC7311POE\OPSC7311POE\gradle\wrapper\dists\gradle-8.7-all\caches\transforms-4\86fef38e6c6b17dea2ae3d9bdb8b205d\transformed\jetified-firebase-firestore-25.0.0\AndroidManifest.xml:11:22-64
-15    <uses-permission android:name="android.permission.WAKE_LOCK" />
-15-->[com.google.android.gms:play-services-measurement-api:22.0.1] C:\Users\allan\Downloads\OPSC7311POE\OPSC7311POE\gradle\wrapper\dists\gradle-8.7-all\caches\transforms-4\ac2355051ad654dddf6271aa9441e207\transformed\jetified-play-services-measurement-api-22.0.1\AndroidManifest.xml:24:5-68
-15-->[com.google.android.gms:play-services-measurement-api:22.0.1] C:\Users\allan\Downloads\OPSC7311POE\OPSC7311POE\gradle\wrapper\dists\gradle-8.7-all\caches\transforms-4\ac2355051ad654dddf6271aa9441e207\transformed\jetified-play-services-measurement-api-22.0.1\AndroidManifest.xml:24:22-65
-16    <uses-permission android:name="com.google.android.gms.permission.AD_ID" />
-16-->[com.google.android.gms:play-services-measurement-api:22.0.1] C:\Users\allan\Downloads\OPSC7311POE\OPSC7311POE\gradle\wrapper\dists\gradle-8.7-all\caches\transforms-4\ac2355051ad654dddf6271aa9441e207\transformed\jetified-play-services-measurement-api-22.0.1\AndroidManifest.xml:25:5-79
-16-->[com.google.android.gms:play-services-measurement-api:22.0.1] C:\Users\allan\Downloads\OPSC7311POE\OPSC7311POE\gradle\wrapper\dists\gradle-8.7-all\caches\transforms-4\ac2355051ad654dddf6271aa9441e207\transformed\jetified-play-services-measurement-api-22.0.1\AndroidManifest.xml:25:22-76
-17    <uses-permission android:name="android.permission.ACCESS_ADSERVICES_ATTRIBUTION" />
-17-->[com.google.android.gms:play-services-measurement-api:22.0.1] C:\Users\allan\Downloads\OPSC7311POE\OPSC7311POE\gradle\wrapper\dists\gradle-8.7-all\caches\transforms-4\ac2355051ad654dddf6271aa9441e207\transformed\jetified-play-services-measurement-api-22.0.1\AndroidManifest.xml:26:5-88
-17-->[com.google.android.gms:play-services-measurement-api:22.0.1] C:\Users\allan\Downloads\OPSC7311POE\OPSC7311POE\gradle\wrapper\dists\gradle-8.7-all\caches\transforms-4\ac2355051ad654dddf6271aa9441e207\transformed\jetified-play-services-measurement-api-22.0.1\AndroidManifest.xml:26:22-85
-18    <uses-permission android:name="android.permission.ACCESS_ADSERVICES_AD_ID" />
-18-->[com.google.android.gms:play-services-measurement-api:22.0.1] C:\Users\allan\Downloads\OPSC7311POE\OPSC7311POE\gradle\wrapper\dists\gradle-8.7-all\caches\transforms-4\ac2355051ad654dddf6271aa9441e207\transformed\jetified-play-services-measurement-api-22.0.1\AndroidManifest.xml:27:5-82
-18-->[com.google.android.gms:play-services-measurement-api:22.0.1] C:\Users\allan\Downloads\OPSC7311POE\OPSC7311POE\gradle\wrapper\dists\gradle-8.7-all\caches\transforms-4\ac2355051ad654dddf6271aa9441e207\transformed\jetified-play-services-measurement-api-22.0.1\AndroidManifest.xml:27:22-79
-19    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
-19-->[com.google.android.gms:play-services-measurement:22.0.1] C:\Users\allan\Downloads\OPSC7311POE\OPSC7311POE\gradle\wrapper\dists\gradle-8.7-all\caches\transforms-4\7e95a4a1ad2557e88997f4f86b50e10a\transformed\jetified-play-services-measurement-22.0.1\AndroidManifest.xml:26:5-110
-19-->[com.google.android.gms:play-services-measurement:22.0.1] C:\Users\allan\Downloads\OPSC7311POE\OPSC7311POE\gradle\wrapper\dists\gradle-8.7-all\caches\transforms-4\7e95a4a1ad2557e88997f4f86b50e10a\transformed\jetified-play-services-measurement-22.0.1\AndroidManifest.xml:26:22-107
-20
-21    <permission
-21-->[androidx.core:core:1.12.0] C:\Users\allan\Downloads\OPSC7311POE\OPSC7311POE\gradle\wrapper\dists\gradle-8.7-all\caches\transforms-4\503508ac2322618bd3037242835f3f5f\transformed\core-1.12.0\AndroidManifest.xml:22:5-24:47
-22        android:name="com.example.opsc7311poe.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
-22-->[androidx.core:core:1.12.0] C:\Users\allan\Downloads\OPSC7311POE\OPSC7311POE\gradle\wrapper\dists\gradle-8.7-all\caches\transforms-4\503508ac2322618bd3037242835f3f5f\transformed\core-1.12.0\AndroidManifest.xml:23:9-81
-23        android:protectionLevel="signature" />
-23-->[androidx.core:core:1.12.0] C:\Users\allan\Downloads\OPSC7311POE\OPSC7311POE\gradle\wrapper\dists\gradle-8.7-all\caches\transforms-4\503508ac2322618bd3037242835f3f5f\transformed\core-1.12.0\AndroidManifest.xml:24:9-44
-24
-25    <uses-permission android:name="com.example.opsc7311poe.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
-25-->[androidx.core:core:1.12.0] C:\Users\allan\Downloads\OPSC7311POE\OPSC7311POE\gradle\wrapper\dists\gradle-8.7-all\caches\transforms-4\503508ac2322618bd3037242835f3f5f\transformed\core-1.12.0\AndroidManifest.xml:26:5-97
-25-->[androidx.core:core:1.12.0] C:\Users\allan\Downloads\OPSC7311POE\OPSC7311POE\gradle\wrapper\dists\gradle-8.7-all\caches\transforms-4\503508ac2322618bd3037242835f3f5f\transformed\core-1.12.0\AndroidManifest.xml:26:22-94
-26
-27    <application
-27-->C:\Users\allan\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:5:5-51:19
-28        android:allowBackup="true"
-28-->C:\Users\allan\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:6:9-35
-29        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-29-->[androidx.core:core:1.12.0] C:\Users\allan\Downloads\OPSC7311POE\OPSC7311POE\gradle\wrapper\dists\gradle-8.7-all\caches\transforms-4\503508ac2322618bd3037242835f3f5f\transformed\core-1.12.0\AndroidManifest.xml:28:18-86
-30        android:dataExtractionRules="@xml/data_extraction_rules"
-30-->C:\Users\allan\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:7:9-65
-31        android:debuggable="true"
-32        android:extractNativeLibs="false"
-33        android:fullBackupContent="@xml/backup_rules"
-33-->C:\Users\allan\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:8:9-54
-34        android:icon="@drawable/logo"
-34-->C:\Users\allan\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:9:9-38
-35        android:label="@string/app_name"
-35-->C:\Users\allan\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:10:9-41
-36        android:roundIcon="@drawable/logo"
-36-->C:\Users\allan\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:11:9-43
-37        android:supportsRtl="true"
-37-->C:\Users\allan\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:12:9-35
-38        android:testOnly="true"
-39        android:theme="@style/Theme.OPSC7311POE" >
-39-->C:\Users\allan\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:13:9-49
-40        <activity
-40-->C:\Users\allan\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:15:9-17:40
-41            android:name="com.example.opsc7311poe.ViewGraphTotalHours"
-41-->C:\Users\allan\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:16:13-48
-42            android:exported="false" />
-42-->C:\Users\allan\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:17:13-37
-43        <activity
-43-->C:\Users\allan\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:18:9-20:40
-44            android:name="com.example.opsc7311poe.TaskCalendar_activity"
-44-->C:\Users\allan\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:19:13-50
-45            android:exported="false" />
-45-->C:\Users\allan\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:20:13-37
-46        <activity
-46-->C:\Users\allan\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:21:9-23:40
-47            android:name="com.example.opsc7311poe.Create_Entry_activity"
-47-->C:\Users\allan\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:22:13-50
-48            android:exported="false" />
-48-->C:\Users\allan\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:23:13-37
-49        <activity
-49-->C:\Users\allan\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:24:9-26:40
-50            android:name="com.example.opsc7311poe.create_category_activity"
-50-->C:\Users\allan\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:25:13-53
-51            android:exported="false" />
-51-->C:\Users\allan\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:26:13-37
-52        <activity
-52-->C:\Users\allan\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:27:9-29:40
-53            android:name="com.example.opsc7311poe.ViewData"
-53-->C:\Users\allan\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:28:13-37
-54            android:exported="false" />
-54-->C:\Users\allan\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:29:13-37
-55        <activity
-55-->C:\Users\allan\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:30:9-32:40
-56            android:name="com.example.opsc7311poe.cat_total_activity"
-56-->C:\Users\allan\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:31:13-47
-57            android:exported="false" />
-57-->C:\Users\allan\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:32:13-37
-58        <activity
-58-->C:\Users\allan\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:33:9-35:40
-59            android:name="com.example.opsc7311poe.Timer_activity"
-59-->C:\Users\allan\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:34:13-43
-60            android:exported="false" />
-60-->C:\Users\allan\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:35:13-37
-61        <activity
-61-->C:\Users\allan\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:36:9-44:20
-62            android:name="com.example.opsc7311poe.StartingPage_activity"
-62-->C:\Users\allan\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:37:13-50
-63            android:exported="true" >
-63-->C:\Users\allan\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:38:13-36
-64            <intent-filter>
-64-->C:\Users\allan\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:39:13-43:29
-65                <action android:name="android.intent.action.MAIN" />
-65-->C:\Users\allan\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:40:17-69
-65-->C:\Users\allan\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:40:25-66
-66
-67                <category android:name="android.intent.category.LAUNCHER" />
-67-->C:\Users\allan\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:42:17-77
-67-->C:\Users\allan\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:42:27-74
-68            </intent-filter>
-69        </activity>
-70        <activity android:name="com.example.opsc7311poe.Login_activity" />
-70-->C:\Users\allan\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:45:9-52
-70-->C:\Users\allan\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:45:19-49
-71        <activity android:name="com.example.opsc7311poe.Register_activity" />
-71-->C:\Users\allan\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:46:9-55
-71-->C:\Users\allan\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:46:19-52
-72        <activity android:name="com.example.opsc7311poe.MainActivity" />
-72-->C:\Users\allan\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:47:9-50
-72-->C:\Users\allan\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:47:19-47
-73        <activity android:name="com.example.opsc7311poe.Profile_activity" />
-73-->C:\Users\allan\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:48:9-54
-73-->C:\Users\allan\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:48:19-51
-74        <activity android:name="com.example.opsc7311poe.ViewTimeSheetEntry_activity" />
-74-->C:\Users\allan\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:49:9-65
-74-->C:\Users\allan\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:49:19-62
-75        <activity android:name="com.example.opsc7311poe.InsertData_activity" />
-75-->C:\Users\allan\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:50:9-57
-75-->C:\Users\allan\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:50:19-54
-76
-77        <service
-77-->[com.google.firebase:firebase-firestore-ktx:25.0.0] C:\Users\allan\Downloads\OPSC7311POE\OPSC7311POE\gradle\wrapper\dists\gradle-8.7-all\caches\transforms-4\e9f0942f3ab46587f938f5f1cccbbc16\transformed\jetified-firebase-firestore-ktx-25.0.0\AndroidManifest.xml:9:9-15:19
-78            android:name="com.google.firebase.components.ComponentDiscoveryService"
-78-->[com.google.firebase:firebase-firestore-ktx:25.0.0] C:\Users\allan\Downloads\OPSC7311POE\OPSC7311POE\gradle\wrapper\dists\gradle-8.7-all\caches\transforms-4\e9f0942f3ab46587f938f5f1cccbbc16\transformed\jetified-firebase-firestore-ktx-25.0.0\AndroidManifest.xml:10:13-84
-79            android:directBootAware="true"
-79-->[com.google.firebase:firebase-common:21.0.0] C:\Users\allan\Downloads\OPSC7311POE\OPSC7311POE\gradle\wrapper\dists\gradle-8.7-all\caches\transforms-4\9d72f17436f9c5cb0c7af9d0a8fa8748\transformed\jetified-firebase-common-21.0.0\AndroidManifest.xml:32:13-43
-80            android:exported="false" >
-80-->[com.google.firebase:firebase-firestore-ktx:25.0.0] C:\Users\allan\Downloads\OPSC7311POE\OPSC7311POE\gradle\wrapper\dists\gradle-8.7-all\caches\transforms-4\e9f0942f3ab46587f938f5f1cccbbc16\transformed\jetified-firebase-firestore-ktx-25.0.0\AndroidManifest.xml:11:13-37
-81            <meta-data
-81-->[com.google.firebase:firebase-firestore-ktx:25.0.0] C:\Users\allan\Downloads\OPSC7311POE\OPSC7311POE\gradle\wrapper\dists\gradle-8.7-all\caches\transforms-4\e9f0942f3ab46587f938f5f1cccbbc16\transformed\jetified-firebase-firestore-ktx-25.0.0\AndroidManifest.xml:12:13-14:85
-82                android:name="com.google.firebase.components:com.google.firebase.firestore.ktx.FirebaseFirestoreLegacyRegistrar"
-82-->[com.google.firebase:firebase-firestore-ktx:25.0.0] C:\Users\allan\Downloads\OPSC7311POE\OPSC7311POE\gradle\wrapper\dists\gradle-8.7-all\caches\transforms-4\e9f0942f3ab46587f938f5f1cccbbc16\transformed\jetified-firebase-firestore-ktx-25.0.0\AndroidManifest.xml:13:17-129
-83                android:value="com.google.firebase.components.ComponentRegistrar" />
-83-->[com.google.firebase:firebase-firestore-ktx:25.0.0] C:\Users\allan\Downloads\OPSC7311POE\OPSC7311POE\gradle\wrapper\dists\gradle-8.7-all\caches\transforms-4\e9f0942f3ab46587f938f5f1cccbbc16\transformed\jetified-firebase-firestore-ktx-25.0.0\AndroidManifest.xml:14:17-82
-84            <meta-data
-84-->[com.google.firebase:firebase-firestore:25.0.0] C:\Users\allan\Downloads\OPSC7311POE\OPSC7311POE\gradle\wrapper\dists\gradle-8.7-all\caches\transforms-4\86fef38e6c6b17dea2ae3d9bdb8b205d\transformed\jetified-firebase-firestore-25.0.0\AndroidManifest.xml:17:13-19:85
-85                android:name="com.google.firebase.components:com.google.firebase.firestore.FirebaseFirestoreKtxRegistrar"
-85-->[com.google.firebase:firebase-firestore:25.0.0] C:\Users\allan\Downloads\OPSC7311POE\OPSC7311POE\gradle\wrapper\dists\gradle-8.7-all\caches\transforms-4\86fef38e6c6b17dea2ae3d9bdb8b205d\transformed\jetified-firebase-firestore-25.0.0\AndroidManifest.xml:18:17-122
-86                android:value="com.google.firebase.components.ComponentRegistrar" />
-86-->[com.google.firebase:firebase-firestore:25.0.0] C:\Users\allan\Downloads\OPSC7311POE\OPSC7311POE\gradle\wrapper\dists\gradle-8.7-all\caches\transforms-4\86fef38e6c6b17dea2ae3d9bdb8b205d\transformed\jetified-firebase-firestore-25.0.0\AndroidManifest.xml:19:17-82
-87            <meta-data
-87-->[com.google.firebase:firebase-firestore:25.0.0] C:\Users\allan\Downloads\OPSC7311POE\OPSC7311POE\gradle\wrapper\dists\gradle-8.7-all\caches\transforms-4\86fef38e6c6b17dea2ae3d9bdb8b205d\transformed\jetified-firebase-firestore-25.0.0\AndroidManifest.xml:20:13-22:85
-88                android:name="com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar"
-88-->[com.google.firebase:firebase-firestore:25.0.0] C:\Users\allan\Downloads\OPSC7311POE\OPSC7311POE\gradle\wrapper\dists\gradle-8.7-all\caches\transforms-4\86fef38e6c6b17dea2ae3d9bdb8b205d\transformed\jetified-firebase-firestore-25.0.0\AndroidManifest.xml:21:17-111
-89                android:value="com.google.firebase.components.ComponentRegistrar" />
-89-->[com.google.firebase:firebase-firestore:25.0.0] C:\Users\allan\Downloads\OPSC7311POE\OPSC7311POE\gradle\wrapper\dists\gradle-8.7-all\caches\transforms-4\86fef38e6c6b17dea2ae3d9bdb8b205d\transformed\jetified-firebase-firestore-25.0.0\AndroidManifest.xml:22:17-82
+11    <uses-permission android:name="android.permission.CAMERA" />
+11-->C:\Users\allan\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:5:5-65
+11-->C:\Users\allan\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:5:22-62
+12    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+12-->C:\Users\allan\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:6:5-81
+12-->C:\Users\allan\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:6:22-78
+13
+14    <uses-feature android:name="android.hardware.camera2.full" />
+14-->C:\Users\allan\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:7:5-66
+14-->C:\Users\allan\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:7:19-63
+15    <uses-feature
+15-->C:\Users\allan\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:8:5-10:36
+16        android:name="android.hardware.camera"
+16-->C:\Users\allan\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:9:9-47
+17        android:required="false" />
+17-->C:\Users\allan\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:10:9-33
+18
+19    <!-- Although the *SdkVersion is captured in gradle build files, this is required for non gradle builds -->
+20    <!-- <uses-sdk android:minSdkVersion="21" /> -->
+21    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+21-->[com.google.firebase:firebase-firestore:25.0.0] C:\Users\allan\Downloads\OPSC7311POE\OPSC7311POE\gradle\wrapper\dists\gradle-8.7-all\caches\transforms-4\86fef38e6c6b17dea2ae3d9bdb8b205d\transformed\jetified-firebase-firestore-25.0.0\AndroidManifest.xml:10:5-79
+21-->[com.google.firebase:firebase-firestore:25.0.0] C:\Users\allan\Downloads\OPSC7311POE\OPSC7311POE\gradle\wrapper\dists\gradle-8.7-all\caches\transforms-4\86fef38e6c6b17dea2ae3d9bdb8b205d\transformed\jetified-firebase-firestore-25.0.0\AndroidManifest.xml:10:22-76
+22    <uses-permission android:name="android.permission.INTERNET" />
+22-->[com.google.firebase:firebase-firestore:25.0.0] C:\Users\allan\Downloads\OPSC7311POE\OPSC7311POE\gradle\wrapper\dists\gradle-8.7-all\caches\transforms-4\86fef38e6c6b17dea2ae3d9bdb8b205d\transformed\jetified-firebase-firestore-25.0.0\AndroidManifest.xml:11:5-67
+22-->[com.google.firebase:firebase-firestore:25.0.0] C:\Users\allan\Downloads\OPSC7311POE\OPSC7311POE\gradle\wrapper\dists\gradle-8.7-all\caches\transforms-4\86fef38e6c6b17dea2ae3d9bdb8b205d\transformed\jetified-firebase-firestore-25.0.0\AndroidManifest.xml:11:22-64
+23    <uses-permission android:name="android.permission.WAKE_LOCK" />
+23-->[com.google.android.gms:play-services-measurement-api:22.0.1] C:\Users\allan\Downloads\OPSC7311POE\OPSC7311POE\gradle\wrapper\dists\gradle-8.7-all\caches\transforms-4\ac2355051ad654dddf6271aa9441e207\transformed\jetified-play-services-measurement-api-22.0.1\AndroidManifest.xml:24:5-68
+23-->[com.google.android.gms:play-services-measurement-api:22.0.1] C:\Users\allan\Downloads\OPSC7311POE\OPSC7311POE\gradle\wrapper\dists\gradle-8.7-all\caches\transforms-4\ac2355051ad654dddf6271aa9441e207\transformed\jetified-play-services-measurement-api-22.0.1\AndroidManifest.xml:24:22-65
+24    <uses-permission android:name="com.google.android.gms.permission.AD_ID" />
+24-->[com.google.android.gms:play-services-measurement-api:22.0.1] C:\Users\allan\Downloads\OPSC7311POE\OPSC7311POE\gradle\wrapper\dists\gradle-8.7-all\caches\transforms-4\ac2355051ad654dddf6271aa9441e207\transformed\jetified-play-services-measurement-api-22.0.1\AndroidManifest.xml:25:5-79
+24-->[com.google.android.gms:play-services-measurement-api:22.0.1] C:\Users\allan\Downloads\OPSC7311POE\OPSC7311POE\gradle\wrapper\dists\gradle-8.7-all\caches\transforms-4\ac2355051ad654dddf6271aa9441e207\transformed\jetified-play-services-measurement-api-22.0.1\AndroidManifest.xml:25:22-76
+25    <uses-permission android:name="android.permission.ACCESS_ADSERVICES_ATTRIBUTION" />
+25-->[com.google.android.gms:play-services-measurement-api:22.0.1] C:\Users\allan\Downloads\OPSC7311POE\OPSC7311POE\gradle\wrapper\dists\gradle-8.7-all\caches\transforms-4\ac2355051ad654dddf6271aa9441e207\transformed\jetified-play-services-measurement-api-22.0.1\AndroidManifest.xml:26:5-88
+25-->[com.google.android.gms:play-services-measurement-api:22.0.1] C:\Users\allan\Downloads\OPSC7311POE\OPSC7311POE\gradle\wrapper\dists\gradle-8.7-all\caches\transforms-4\ac2355051ad654dddf6271aa9441e207\transformed\jetified-play-services-measurement-api-22.0.1\AndroidManifest.xml:26:22-85
+26    <uses-permission android:name="android.permission.ACCESS_ADSERVICES_AD_ID" />
+26-->[com.google.android.gms:play-services-measurement-api:22.0.1] C:\Users\allan\Downloads\OPSC7311POE\OPSC7311POE\gradle\wrapper\dists\gradle-8.7-all\caches\transforms-4\ac2355051ad654dddf6271aa9441e207\transformed\jetified-play-services-measurement-api-22.0.1\AndroidManifest.xml:27:5-82
+26-->[com.google.android.gms:play-services-measurement-api:22.0.1] C:\Users\allan\Downloads\OPSC7311POE\OPSC7311POE\gradle\wrapper\dists\gradle-8.7-all\caches\transforms-4\ac2355051ad654dddf6271aa9441e207\transformed\jetified-play-services-measurement-api-22.0.1\AndroidManifest.xml:27:22-79
+27    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+27-->[com.google.android.gms:play-services-measurement:22.0.1] C:\Users\allan\Downloads\OPSC7311POE\OPSC7311POE\gradle\wrapper\dists\gradle-8.7-all\caches\transforms-4\7e95a4a1ad2557e88997f4f86b50e10a\transformed\jetified-play-services-measurement-22.0.1\AndroidManifest.xml:26:5-110
+27-->[com.google.android.gms:play-services-measurement:22.0.1] C:\Users\allan\Downloads\OPSC7311POE\OPSC7311POE\gradle\wrapper\dists\gradle-8.7-all\caches\transforms-4\7e95a4a1ad2557e88997f4f86b50e10a\transformed\jetified-play-services-measurement-22.0.1\AndroidManifest.xml:26:22-107
+28
+29    <permission
+29-->[androidx.core:core:1.12.0] C:\Users\allan\Downloads\OPSC7311POE\OPSC7311POE\gradle\wrapper\dists\gradle-8.7-all\caches\transforms-4\503508ac2322618bd3037242835f3f5f\transformed\core-1.12.0\AndroidManifest.xml:22:5-24:47
+30        android:name="com.example.opsc7311poe.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+30-->[androidx.core:core:1.12.0] C:\Users\allan\Downloads\OPSC7311POE\OPSC7311POE\gradle\wrapper\dists\gradle-8.7-all\caches\transforms-4\503508ac2322618bd3037242835f3f5f\transformed\core-1.12.0\AndroidManifest.xml:23:9-81
+31        android:protectionLevel="signature" />
+31-->[androidx.core:core:1.12.0] C:\Users\allan\Downloads\OPSC7311POE\OPSC7311POE\gradle\wrapper\dists\gradle-8.7-all\caches\transforms-4\503508ac2322618bd3037242835f3f5f\transformed\core-1.12.0\AndroidManifest.xml:24:9-44
+32
+33    <uses-permission android:name="com.example.opsc7311poe.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+33-->[androidx.core:core:1.12.0] C:\Users\allan\Downloads\OPSC7311POE\OPSC7311POE\gradle\wrapper\dists\gradle-8.7-all\caches\transforms-4\503508ac2322618bd3037242835f3f5f\transformed\core-1.12.0\AndroidManifest.xml:26:5-97
+33-->[androidx.core:core:1.12.0] C:\Users\allan\Downloads\OPSC7311POE\OPSC7311POE\gradle\wrapper\dists\gradle-8.7-all\caches\transforms-4\503508ac2322618bd3037242835f3f5f\transformed\core-1.12.0\AndroidManifest.xml:26:22-94
+34
+35    <application
+35-->C:\Users\allan\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:12:5-58:19
+36        android:allowBackup="true"
+36-->C:\Users\allan\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:13:9-35
+37        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+37-->[androidx.core:core:1.12.0] C:\Users\allan\Downloads\OPSC7311POE\OPSC7311POE\gradle\wrapper\dists\gradle-8.7-all\caches\transforms-4\503508ac2322618bd3037242835f3f5f\transformed\core-1.12.0\AndroidManifest.xml:28:18-86
+38        android:dataExtractionRules="@xml/data_extraction_rules"
+38-->C:\Users\allan\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:14:9-65
+39        android:debuggable="true"
+40        android:extractNativeLibs="false"
+41        android:fullBackupContent="@xml/backup_rules"
+41-->C:\Users\allan\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:15:9-54
+42        android:icon="@drawable/logo"
+42-->C:\Users\allan\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:16:9-38
+43        android:label="@string/app_name"
+43-->C:\Users\allan\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:17:9-41
+44        android:roundIcon="@drawable/logo"
+44-->C:\Users\allan\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:18:9-43
+45        android:supportsRtl="true"
+45-->C:\Users\allan\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:19:9-35
+46        android:testOnly="true"
+47        android:theme="@style/Theme.OPSC7311POE" >
+47-->C:\Users\allan\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:20:9-49
+48        <activity
+48-->C:\Users\allan\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:22:9-24:40
+49            android:name="com.example.opsc7311poe.ViewGraphTotalHours"
+49-->C:\Users\allan\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:23:13-48
+50            android:exported="false" />
+50-->C:\Users\allan\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:24:13-37
+51        <activity
+51-->C:\Users\allan\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:25:9-27:40
+52            android:name="com.example.opsc7311poe.TaskCalendar_activity"
+52-->C:\Users\allan\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:26:13-50
+53            android:exported="false" />
+53-->C:\Users\allan\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:27:13-37
+54        <activity
+54-->C:\Users\allan\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:28:9-30:40
+55            android:name="com.example.opsc7311poe.Create_Entry_activity"
+55-->C:\Users\allan\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:29:13-50
+56            android:exported="false" />
+56-->C:\Users\allan\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:30:13-37
+57        <activity
+57-->C:\Users\allan\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:31:9-33:40
+58            android:name="com.example.opsc7311poe.create_category_activity"
+58-->C:\Users\allan\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:32:13-53
+59            android:exported="false" />
+59-->C:\Users\allan\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:33:13-37
+60        <activity
+60-->C:\Users\allan\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:34:9-36:40
+61            android:name="com.example.opsc7311poe.ViewData"
+61-->C:\Users\allan\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:35:13-37
+62            android:exported="false" />
+62-->C:\Users\allan\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:36:13-37
+63        <activity
+63-->C:\Users\allan\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:37:9-39:40
+64            android:name="com.example.opsc7311poe.cat_total_activity"
+64-->C:\Users\allan\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:38:13-47
+65            android:exported="false" />
+65-->C:\Users\allan\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:39:13-37
+66        <activity
+66-->C:\Users\allan\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:40:9-42:40
+67            android:name="com.example.opsc7311poe.Timer_activity"
+67-->C:\Users\allan\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:41:13-43
+68            android:exported="false" />
+68-->C:\Users\allan\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:42:13-37
+69        <activity
+69-->C:\Users\allan\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:43:9-50:20
+70            android:name="com.example.opsc7311poe.StartingPage_activity"
+70-->C:\Users\allan\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:44:13-50
+71            android:exported="true" >
+71-->C:\Users\allan\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:45:13-36
+72            <intent-filter>
+72-->C:\Users\allan\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:46:13-49:29
+73                <action android:name="android.intent.action.MAIN" />
+73-->C:\Users\allan\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:47:17-69
+73-->C:\Users\allan\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:47:25-66
+74
+75                <category android:name="android.intent.category.LAUNCHER" />
+75-->C:\Users\allan\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:48:17-77
+75-->C:\Users\allan\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:48:27-74
+76            </intent-filter>
+77        </activity>
+78        <activity android:name="com.example.opsc7311poe.Login_activity" />
+78-->C:\Users\allan\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:51:9-52
+78-->C:\Users\allan\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:51:19-49
+79        <activity android:name="com.example.opsc7311poe.Register_activity" />
+79-->C:\Users\allan\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:52:9-55
+79-->C:\Users\allan\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:52:19-52
+80        <activity android:name="com.example.opsc7311poe.MainActivity" />
+80-->C:\Users\allan\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:53:9-50
+80-->C:\Users\allan\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:53:19-47
+81        <activity android:name="com.example.opsc7311poe.Profile_activity" />
+81-->C:\Users\allan\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:54:9-54
+81-->C:\Users\allan\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:54:19-51
+82        <activity android:name="com.example.opsc7311poe.ViewTimeSheetEntry_activity" />
+82-->C:\Users\allan\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:55:9-65
+82-->C:\Users\allan\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:55:19-62
+83        <activity android:name="com.example.opsc7311poe.InsertData_activity" />
+83-->C:\Users\allan\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:56:9-57
+83-->C:\Users\allan\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:56:19-54
+84        <activity android:name="com.example.opsc7311poe.ViewTasks_activity" />
+84-->C:\Users\allan\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:57:9-56
+84-->C:\Users\allan\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:57:19-53
+85
+86        <service
+86-->[com.google.firebase:firebase-firestore-ktx:25.0.0] C:\Users\allan\Downloads\OPSC7311POE\OPSC7311POE\gradle\wrapper\dists\gradle-8.7-all\caches\transforms-4\e9f0942f3ab46587f938f5f1cccbbc16\transformed\jetified-firebase-firestore-ktx-25.0.0\AndroidManifest.xml:9:9-15:19
+87            android:name="com.google.firebase.components.ComponentDiscoveryService"
+87-->[com.google.firebase:firebase-firestore-ktx:25.0.0] C:\Users\allan\Downloads\OPSC7311POE\OPSC7311POE\gradle\wrapper\dists\gradle-8.7-all\caches\transforms-4\e9f0942f3ab46587f938f5f1cccbbc16\transformed\jetified-firebase-firestore-ktx-25.0.0\AndroidManifest.xml:10:13-84
+88            android:directBootAware="true"
+88-->[com.google.firebase:firebase-common:21.0.0] C:\Users\allan\Downloads\OPSC7311POE\OPSC7311POE\gradle\wrapper\dists\gradle-8.7-all\caches\transforms-4\9d72f17436f9c5cb0c7af9d0a8fa8748\transformed\jetified-firebase-common-21.0.0\AndroidManifest.xml:32:13-43
+89            android:exported="false" >
+89-->[com.google.firebase:firebase-firestore-ktx:25.0.0] C:\Users\allan\Downloads\OPSC7311POE\OPSC7311POE\gradle\wrapper\dists\gradle-8.7-all\caches\transforms-4\e9f0942f3ab46587f938f5f1cccbbc16\transformed\jetified-firebase-firestore-ktx-25.0.0\AndroidManifest.xml:11:13-37
 90            <meta-data
-90-->[com.google.android.gms:play-services-measurement-api:22.0.1] C:\Users\allan\Downloads\OPSC7311POE\OPSC7311POE\gradle\wrapper\dists\gradle-8.7-all\caches\transforms-4\ac2355051ad654dddf6271aa9441e207\transformed\jetified-play-services-measurement-api-22.0.1\AndroidManifest.xml:37:13-39:85
-91                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
-91-->[com.google.android.gms:play-services-measurement-api:22.0.1] C:\Users\allan\Downloads\OPSC7311POE\OPSC7311POE\gradle\wrapper\dists\gradle-8.7-all\caches\transforms-4\ac2355051ad654dddf6271aa9441e207\transformed\jetified-play-services-measurement-api-22.0.1\AndroidManifest.xml:38:17-139
+90-->[com.google.firebase:firebase-firestore-ktx:25.0.0] C:\Users\allan\Downloads\OPSC7311POE\OPSC7311POE\gradle\wrapper\dists\gradle-8.7-all\caches\transforms-4\e9f0942f3ab46587f938f5f1cccbbc16\transformed\jetified-firebase-firestore-ktx-25.0.0\AndroidManifest.xml:12:13-14:85
+91                android:name="com.google.firebase.components:com.google.firebase.firestore.ktx.FirebaseFirestoreLegacyRegistrar"
+91-->[com.google.firebase:firebase-firestore-ktx:25.0.0] C:\Users\allan\Downloads\OPSC7311POE\OPSC7311POE\gradle\wrapper\dists\gradle-8.7-all\caches\transforms-4\e9f0942f3ab46587f938f5f1cccbbc16\transformed\jetified-firebase-firestore-ktx-25.0.0\AndroidManifest.xml:13:17-129
 92                android:value="com.google.firebase.components.ComponentRegistrar" />
-92-->[com.google.android.gms:play-services-measurement-api:22.0.1] C:\Users\allan\Downloads\OPSC7311POE\OPSC7311POE\gradle\wrapper\dists\gradle-8.7-all\caches\transforms-4\ac2355051ad654dddf6271aa9441e207\transformed\jetified-play-services-measurement-api-22.0.1\AndroidManifest.xml:39:17-82
+92-->[com.google.firebase:firebase-firestore-ktx:25.0.0] C:\Users\allan\Downloads\OPSC7311POE\OPSC7311POE\gradle\wrapper\dists\gradle-8.7-all\caches\transforms-4\e9f0942f3ab46587f938f5f1cccbbc16\transformed\jetified-firebase-firestore-ktx-25.0.0\AndroidManifest.xml:14:17-82
 93            <meta-data
-93-->[com.google.firebase:firebase-installations:18.0.0] C:\Users\allan\Downloads\OPSC7311POE\OPSC7311POE\gradle\wrapper\dists\gradle-8.7-all\caches\transforms-4\9411576bb970d5300f5a1bf47ddff62f\transformed\jetified-firebase-installations-18.0.0\AndroidManifest.xml:15:13-17:85
-94                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsKtxRegistrar"
-94-->[com.google.firebase:firebase-installations:18.0.0] C:\Users\allan\Downloads\OPSC7311POE\OPSC7311POE\gradle\wrapper\dists\gradle-8.7-all\caches\transforms-4\9411576bb970d5300f5a1bf47ddff62f\transformed\jetified-firebase-installations-18.0.0\AndroidManifest.xml:16:17-130
+93-->[com.google.firebase:firebase-firestore:25.0.0] C:\Users\allan\Downloads\OPSC7311POE\OPSC7311POE\gradle\wrapper\dists\gradle-8.7-all\caches\transforms-4\86fef38e6c6b17dea2ae3d9bdb8b205d\transformed\jetified-firebase-firestore-25.0.0\AndroidManifest.xml:17:13-19:85
+94                android:name="com.google.firebase.components:com.google.firebase.firestore.FirebaseFirestoreKtxRegistrar"
+94-->[com.google.firebase:firebase-firestore:25.0.0] C:\Users\allan\Downloads\OPSC7311POE\OPSC7311POE\gradle\wrapper\dists\gradle-8.7-all\caches\transforms-4\86fef38e6c6b17dea2ae3d9bdb8b205d\transformed\jetified-firebase-firestore-25.0.0\AndroidManifest.xml:18:17-122
 95                android:value="com.google.firebase.components.ComponentRegistrar" />
-95-->[com.google.firebase:firebase-installations:18.0.0] C:\Users\allan\Downloads\OPSC7311POE\OPSC7311POE\gradle\wrapper\dists\gradle-8.7-all\caches\transforms-4\9411576bb970d5300f5a1bf47ddff62f\transformed\jetified-firebase-installations-18.0.0\AndroidManifest.xml:17:17-82
+95-->[com.google.firebase:firebase-firestore:25.0.0] C:\Users\allan\Downloads\OPSC7311POE\OPSC7311POE\gradle\wrapper\dists\gradle-8.7-all\caches\transforms-4\86fef38e6c6b17dea2ae3d9bdb8b205d\transformed\jetified-firebase-firestore-25.0.0\AndroidManifest.xml:19:17-82
 96            <meta-data
-96-->[com.google.firebase:firebase-installations:18.0.0] C:\Users\allan\Downloads\OPSC7311POE\OPSC7311POE\gradle\wrapper\dists\gradle-8.7-all\caches\transforms-4\9411576bb970d5300f5a1bf47ddff62f\transformed\jetified-firebase-installations-18.0.0\AndroidManifest.xml:18:13-20:85
-97                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
-97-->[com.google.firebase:firebase-installations:18.0.0] C:\Users\allan\Downloads\OPSC7311POE\OPSC7311POE\gradle\wrapper\dists\gradle-8.7-all\caches\transforms-4\9411576bb970d5300f5a1bf47ddff62f\transformed\jetified-firebase-installations-18.0.0\AndroidManifest.xml:19:17-127
+96-->[com.google.firebase:firebase-firestore:25.0.0] C:\Users\allan\Downloads\OPSC7311POE\OPSC7311POE\gradle\wrapper\dists\gradle-8.7-all\caches\transforms-4\86fef38e6c6b17dea2ae3d9bdb8b205d\transformed\jetified-firebase-firestore-25.0.0\AndroidManifest.xml:20:13-22:85
+97                android:name="com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar"
+97-->[com.google.firebase:firebase-firestore:25.0.0] C:\Users\allan\Downloads\OPSC7311POE\OPSC7311POE\gradle\wrapper\dists\gradle-8.7-all\caches\transforms-4\86fef38e6c6b17dea2ae3d9bdb8b205d\transformed\jetified-firebase-firestore-25.0.0\AndroidManifest.xml:21:17-111
 98                android:value="com.google.firebase.components.ComponentRegistrar" />
-98-->[com.google.firebase:firebase-installations:18.0.0] C:\Users\allan\Downloads\OPSC7311POE\OPSC7311POE\gradle\wrapper\dists\gradle-8.7-all\caches\transforms-4\9411576bb970d5300f5a1bf47ddff62f\transformed\jetified-firebase-installations-18.0.0\AndroidManifest.xml:20:17-82
+98-->[com.google.firebase:firebase-firestore:25.0.0] C:\Users\allan\Downloads\OPSC7311POE\OPSC7311POE\gradle\wrapper\dists\gradle-8.7-all\caches\transforms-4\86fef38e6c6b17dea2ae3d9bdb8b205d\transformed\jetified-firebase-firestore-25.0.0\AndroidManifest.xml:22:17-82
 99            <meta-data
-99-->[com.google.firebase:firebase-common-ktx:21.0.0] C:\Users\allan\Downloads\OPSC7311POE\OPSC7311POE\gradle\wrapper\dists\gradle-8.7-all\caches\transforms-4\c444a0d4f698da1596125a99b8bd5ebc\transformed\jetified-firebase-common-ktx-21.0.0\AndroidManifest.xml:12:13-14:85
-100                android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonLegacyRegistrar"
-100-->[com.google.firebase:firebase-common-ktx:21.0.0] C:\Users\allan\Downloads\OPSC7311POE\OPSC7311POE\gradle\wrapper\dists\gradle-8.7-all\caches\transforms-4\c444a0d4f698da1596125a99b8bd5ebc\transformed\jetified-firebase-common-ktx-21.0.0\AndroidManifest.xml:13:17-116
+99-->[com.google.android.gms:play-services-measurement-api:22.0.1] C:\Users\allan\Downloads\OPSC7311POE\OPSC7311POE\gradle\wrapper\dists\gradle-8.7-all\caches\transforms-4\ac2355051ad654dddf6271aa9441e207\transformed\jetified-play-services-measurement-api-22.0.1\AndroidManifest.xml:37:13-39:85
+100                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+100-->[com.google.android.gms:play-services-measurement-api:22.0.1] C:\Users\allan\Downloads\OPSC7311POE\OPSC7311POE\gradle\wrapper\dists\gradle-8.7-all\caches\transforms-4\ac2355051ad654dddf6271aa9441e207\transformed\jetified-play-services-measurement-api-22.0.1\AndroidManifest.xml:38:17-139
 101                android:value="com.google.firebase.components.ComponentRegistrar" />
-101-->[com.google.firebase:firebase-common-ktx:21.0.0] C:\Users\allan\Downloads\OPSC7311POE\OPSC7311POE\gradle\wrapper\dists\gradle-8.7-all\caches\transforms-4\c444a0d4f698da1596125a99b8bd5ebc\transformed\jetified-firebase-common-ktx-21.0.0\AndroidManifest.xml:14:17-82
+101-->[com.google.android.gms:play-services-measurement-api:22.0.1] C:\Users\allan\Downloads\OPSC7311POE\OPSC7311POE\gradle\wrapper\dists\gradle-8.7-all\caches\transforms-4\ac2355051ad654dddf6271aa9441e207\transformed\jetified-play-services-measurement-api-22.0.1\AndroidManifest.xml:39:17-82
 102            <meta-data
-102-->[com.google.firebase:firebase-common:21.0.0] C:\Users\allan\Downloads\OPSC7311POE\OPSC7311POE\gradle\wrapper\dists\gradle-8.7-all\caches\transforms-4\9d72f17436f9c5cb0c7af9d0a8fa8748\transformed\jetified-firebase-common-21.0.0\AndroidManifest.xml:35:13-37:85
-103                android:name="com.google.firebase.components:com.google.firebase.FirebaseCommonKtxRegistrar"
-103-->[com.google.firebase:firebase-common:21.0.0] C:\Users\allan\Downloads\OPSC7311POE\OPSC7311POE\gradle\wrapper\dists\gradle-8.7-all\caches\transforms-4\9d72f17436f9c5cb0c7af9d0a8fa8748\transformed\jetified-firebase-common-21.0.0\AndroidManifest.xml:36:17-109
+102-->[com.google.firebase:firebase-installations:18.0.0] C:\Users\allan\Downloads\OPSC7311POE\OPSC7311POE\gradle\wrapper\dists\gradle-8.7-all\caches\transforms-4\9411576bb970d5300f5a1bf47ddff62f\transformed\jetified-firebase-installations-18.0.0\AndroidManifest.xml:15:13-17:85
+103                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsKtxRegistrar"
+103-->[com.google.firebase:firebase-installations:18.0.0] C:\Users\allan\Downloads\OPSC7311POE\OPSC7311POE\gradle\wrapper\dists\gradle-8.7-all\caches\transforms-4\9411576bb970d5300f5a1bf47ddff62f\transformed\jetified-firebase-installations-18.0.0\AndroidManifest.xml:16:17-130
 104                android:value="com.google.firebase.components.ComponentRegistrar" />
-104-->[com.google.firebase:firebase-common:21.0.0] C:\Users\allan\Downloads\OPSC7311POE\OPSC7311POE\gradle\wrapper\dists\gradle-8.7-all\caches\transforms-4\9d72f17436f9c5cb0c7af9d0a8fa8748\transformed\jetified-firebase-common-21.0.0\AndroidManifest.xml:37:17-82
-105        </service>
-106
-107        <activity
-107-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\allan\Downloads\OPSC7311POE\OPSC7311POE\gradle\wrapper\dists\gradle-8.7-all\caches\transforms-4\4c1548ffc3912a0147e7119375f57204\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:20:9-22:45
-108            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-108-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\allan\Downloads\OPSC7311POE\OPSC7311POE\gradle\wrapper\dists\gradle-8.7-all\caches\transforms-4\4c1548ffc3912a0147e7119375f57204\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:20:19-85
-109            android:exported="false"
-109-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\allan\Downloads\OPSC7311POE\OPSC7311POE\gradle\wrapper\dists\gradle-8.7-all\caches\transforms-4\4c1548ffc3912a0147e7119375f57204\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:22:19-43
-110            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-110-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\allan\Downloads\OPSC7311POE\OPSC7311POE\gradle\wrapper\dists\gradle-8.7-all\caches\transforms-4\4c1548ffc3912a0147e7119375f57204\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:21:19-78
-111
-112        <property
-112-->[com.google.android.gms:play-services-measurement-api:22.0.1] C:\Users\allan\Downloads\OPSC7311POE\OPSC7311POE\gradle\wrapper\dists\gradle-8.7-all\caches\transforms-4\ac2355051ad654dddf6271aa9441e207\transformed\jetified-play-services-measurement-api-22.0.1\AndroidManifest.xml:30:9-32:61
-113            android:name="android.adservices.AD_SERVICES_CONFIG"
-113-->[com.google.android.gms:play-services-measurement-api:22.0.1] C:\Users\allan\Downloads\OPSC7311POE\OPSC7311POE\gradle\wrapper\dists\gradle-8.7-all\caches\transforms-4\ac2355051ad654dddf6271aa9441e207\transformed\jetified-play-services-measurement-api-22.0.1\AndroidManifest.xml:31:13-65
-114            android:resource="@xml/ga_ad_services_config" />
-114-->[com.google.android.gms:play-services-measurement-api:22.0.1] C:\Users\allan\Downloads\OPSC7311POE\OPSC7311POE\gradle\wrapper\dists\gradle-8.7-all\caches\transforms-4\ac2355051ad654dddf6271aa9441e207\transformed\jetified-play-services-measurement-api-22.0.1\AndroidManifest.xml:32:13-58
-115
-116        <provider
-116-->[com.google.firebase:firebase-common:21.0.0] C:\Users\allan\Downloads\OPSC7311POE\OPSC7311POE\gradle\wrapper\dists\gradle-8.7-all\caches\transforms-4\9d72f17436f9c5cb0c7af9d0a8fa8748\transformed\jetified-firebase-common-21.0.0\AndroidManifest.xml:23:9-28:39
-117            android:name="com.google.firebase.provider.FirebaseInitProvider"
-117-->[com.google.firebase:firebase-common:21.0.0] C:\Users\allan\Downloads\OPSC7311POE\OPSC7311POE\gradle\wrapper\dists\gradle-8.7-all\caches\transforms-4\9d72f17436f9c5cb0c7af9d0a8fa8748\transformed\jetified-firebase-common-21.0.0\AndroidManifest.xml:24:13-77
-118            android:authorities="com.example.opsc7311poe.firebaseinitprovider"
-118-->[com.google.firebase:firebase-common:21.0.0] C:\Users\allan\Downloads\OPSC7311POE\OPSC7311POE\gradle\wrapper\dists\gradle-8.7-all\caches\transforms-4\9d72f17436f9c5cb0c7af9d0a8fa8748\transformed\jetified-firebase-common-21.0.0\AndroidManifest.xml:25:13-72
-119            android:directBootAware="true"
-119-->[com.google.firebase:firebase-common:21.0.0] C:\Users\allan\Downloads\OPSC7311POE\OPSC7311POE\gradle\wrapper\dists\gradle-8.7-all\caches\transforms-4\9d72f17436f9c5cb0c7af9d0a8fa8748\transformed\jetified-firebase-common-21.0.0\AndroidManifest.xml:26:13-43
-120            android:exported="false"
-120-->[com.google.firebase:firebase-common:21.0.0] C:\Users\allan\Downloads\OPSC7311POE\OPSC7311POE\gradle\wrapper\dists\gradle-8.7-all\caches\transforms-4\9d72f17436f9c5cb0c7af9d0a8fa8748\transformed\jetified-firebase-common-21.0.0\AndroidManifest.xml:27:13-37
-121            android:initOrder="100" />
-121-->[com.google.firebase:firebase-common:21.0.0] C:\Users\allan\Downloads\OPSC7311POE\OPSC7311POE\gradle\wrapper\dists\gradle-8.7-all\caches\transforms-4\9d72f17436f9c5cb0c7af9d0a8fa8748\transformed\jetified-firebase-common-21.0.0\AndroidManifest.xml:28:13-36
-122
-123        <receiver
-123-->[com.google.android.gms:play-services-measurement:22.0.1] C:\Users\allan\Downloads\OPSC7311POE\OPSC7311POE\gradle\wrapper\dists\gradle-8.7-all\caches\transforms-4\7e95a4a1ad2557e88997f4f86b50e10a\transformed\jetified-play-services-measurement-22.0.1\AndroidManifest.xml:29:9-33:20
-124            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
-124-->[com.google.android.gms:play-services-measurement:22.0.1] C:\Users\allan\Downloads\OPSC7311POE\OPSC7311POE\gradle\wrapper\dists\gradle-8.7-all\caches\transforms-4\7e95a4a1ad2557e88997f4f86b50e10a\transformed\jetified-play-services-measurement-22.0.1\AndroidManifest.xml:30:13-85
-125            android:enabled="true"
-125-->[com.google.android.gms:play-services-measurement:22.0.1] C:\Users\allan\Downloads\OPSC7311POE\OPSC7311POE\gradle\wrapper\dists\gradle-8.7-all\caches\transforms-4\7e95a4a1ad2557e88997f4f86b50e10a\transformed\jetified-play-services-measurement-22.0.1\AndroidManifest.xml:31:13-35
-126            android:exported="false" >
-126-->[com.google.android.gms:play-services-measurement:22.0.1] C:\Users\allan\Downloads\OPSC7311POE\OPSC7311POE\gradle\wrapper\dists\gradle-8.7-all\caches\transforms-4\7e95a4a1ad2557e88997f4f86b50e10a\transformed\jetified-play-services-measurement-22.0.1\AndroidManifest.xml:32:13-37
-127        </receiver>
-128
-129        <service
-129-->[com.google.android.gms:play-services-measurement:22.0.1] C:\Users\allan\Downloads\OPSC7311POE\OPSC7311POE\gradle\wrapper\dists\gradle-8.7-all\caches\transforms-4\7e95a4a1ad2557e88997f4f86b50e10a\transformed\jetified-play-services-measurement-22.0.1\AndroidManifest.xml:35:9-38:40
-130            android:name="com.google.android.gms.measurement.AppMeasurementService"
-130-->[com.google.android.gms:play-services-measurement:22.0.1] C:\Users\allan\Downloads\OPSC7311POE\OPSC7311POE\gradle\wrapper\dists\gradle-8.7-all\caches\transforms-4\7e95a4a1ad2557e88997f4f86b50e10a\transformed\jetified-play-services-measurement-22.0.1\AndroidManifest.xml:36:13-84
-131            android:enabled="true"
-131-->[com.google.android.gms:play-services-measurement:22.0.1] C:\Users\allan\Downloads\OPSC7311POE\OPSC7311POE\gradle\wrapper\dists\gradle-8.7-all\caches\transforms-4\7e95a4a1ad2557e88997f4f86b50e10a\transformed\jetified-play-services-measurement-22.0.1\AndroidManifest.xml:37:13-35
-132            android:exported="false" />
-132-->[com.google.android.gms:play-services-measurement:22.0.1] C:\Users\allan\Downloads\OPSC7311POE\OPSC7311POE\gradle\wrapper\dists\gradle-8.7-all\caches\transforms-4\7e95a4a1ad2557e88997f4f86b50e10a\transformed\jetified-play-services-measurement-22.0.1\AndroidManifest.xml:38:13-37
-133        <service
-133-->[com.google.android.gms:play-services-measurement:22.0.1] C:\Users\allan\Downloads\OPSC7311POE\OPSC7311POE\gradle\wrapper\dists\gradle-8.7-all\caches\transforms-4\7e95a4a1ad2557e88997f4f86b50e10a\transformed\jetified-play-services-measurement-22.0.1\AndroidManifest.xml:39:9-43:72
-134            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
-134-->[com.google.android.gms:play-services-measurement:22.0.1] C:\Users\allan\Downloads\OPSC7311POE\OPSC7311POE\gradle\wrapper\dists\gradle-8.7-all\caches\transforms-4\7e95a4a1ad2557e88997f4f86b50e10a\transformed\jetified-play-services-measurement-22.0.1\AndroidManifest.xml:40:13-87
-135            android:enabled="true"
-135-->[com.google.android.gms:play-services-measurement:22.0.1] C:\Users\allan\Downloads\OPSC7311POE\OPSC7311POE\gradle\wrapper\dists\gradle-8.7-all\caches\transforms-4\7e95a4a1ad2557e88997f4f86b50e10a\transformed\jetified-play-services-measurement-22.0.1\AndroidManifest.xml:41:13-35
-136            android:exported="false"
-136-->[com.google.android.gms:play-services-measurement:22.0.1] C:\Users\allan\Downloads\OPSC7311POE\OPSC7311POE\gradle\wrapper\dists\gradle-8.7-all\caches\transforms-4\7e95a4a1ad2557e88997f4f86b50e10a\transformed\jetified-play-services-measurement-22.0.1\AndroidManifest.xml:42:13-37
-137            android:permission="android.permission.BIND_JOB_SERVICE" />
-137-->[com.google.android.gms:play-services-measurement:22.0.1] C:\Users\allan\Downloads\OPSC7311POE\OPSC7311POE\gradle\wrapper\dists\gradle-8.7-all\caches\transforms-4\7e95a4a1ad2557e88997f4f86b50e10a\transformed\jetified-play-services-measurement-22.0.1\AndroidManifest.xml:43:13-69
-138
-139        <provider
-139-->[androidx.emoji2:emoji2:1.3.0] C:\Users\allan\Downloads\OPSC7311POE\OPSC7311POE\gradle\wrapper\dists\gradle-8.7-all\caches\transforms-4\a958fa830d8574e28d2dace8209493e6\transformed\jetified-emoji2-1.3.0\AndroidManifest.xml:24:9-32:20
-140            android:name="androidx.startup.InitializationProvider"
-140-->[androidx.emoji2:emoji2:1.3.0] C:\Users\allan\Downloads\OPSC7311POE\OPSC7311POE\gradle\wrapper\dists\gradle-8.7-all\caches\transforms-4\a958fa830d8574e28d2dace8209493e6\transformed\jetified-emoji2-1.3.0\AndroidManifest.xml:25:13-67
-141            android:authorities="com.example.opsc7311poe.androidx-startup"
-141-->[androidx.emoji2:emoji2:1.3.0] C:\Users\allan\Downloads\OPSC7311POE\OPSC7311POE\gradle\wrapper\dists\gradle-8.7-all\caches\transforms-4\a958fa830d8574e28d2dace8209493e6\transformed\jetified-emoji2-1.3.0\AndroidManifest.xml:26:13-68
-142            android:exported="false" >
-142-->[androidx.emoji2:emoji2:1.3.0] C:\Users\allan\Downloads\OPSC7311POE\OPSC7311POE\gradle\wrapper\dists\gradle-8.7-all\caches\transforms-4\a958fa830d8574e28d2dace8209493e6\transformed\jetified-emoji2-1.3.0\AndroidManifest.xml:27:13-37
-143            <meta-data
-143-->[androidx.emoji2:emoji2:1.3.0] C:\Users\allan\Downloads\OPSC7311POE\OPSC7311POE\gradle\wrapper\dists\gradle-8.7-all\caches\transforms-4\a958fa830d8574e28d2dace8209493e6\transformed\jetified-emoji2-1.3.0\AndroidManifest.xml:29:13-31:52
-144                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-144-->[androidx.emoji2:emoji2:1.3.0] C:\Users\allan\Downloads\OPSC7311POE\OPSC7311POE\gradle\wrapper\dists\gradle-8.7-all\caches\transforms-4\a958fa830d8574e28d2dace8209493e6\transformed\jetified-emoji2-1.3.0\AndroidManifest.xml:30:17-75
-145                android:value="androidx.startup" />
-145-->[androidx.emoji2:emoji2:1.3.0] C:\Users\allan\Downloads\OPSC7311POE\OPSC7311POE\gradle\wrapper\dists\gradle-8.7-all\caches\transforms-4\a958fa830d8574e28d2dace8209493e6\transformed\jetified-emoji2-1.3.0\AndroidManifest.xml:31:17-49
-146            <meta-data
-146-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\allan\Downloads\OPSC7311POE\OPSC7311POE\gradle\wrapper\dists\gradle-8.7-all\caches\transforms-4\b203dfda145d7885861542c05abb3660\transformed\jetified-lifecycle-process-2.7.0\AndroidManifest.xml:29:13-31:52
-147                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-147-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\allan\Downloads\OPSC7311POE\OPSC7311POE\gradle\wrapper\dists\gradle-8.7-all\caches\transforms-4\b203dfda145d7885861542c05abb3660\transformed\jetified-lifecycle-process-2.7.0\AndroidManifest.xml:30:17-78
-148                android:value="androidx.startup" />
-148-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\allan\Downloads\OPSC7311POE\OPSC7311POE\gradle\wrapper\dists\gradle-8.7-all\caches\transforms-4\b203dfda145d7885861542c05abb3660\transformed\jetified-lifecycle-process-2.7.0\AndroidManifest.xml:31:17-49
-149            <meta-data
-149-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\allan\Downloads\OPSC7311POE\OPSC7311POE\gradle\wrapper\dists\gradle-8.7-all\caches\transforms-4\1f09e2f78b5790f35c9e6782d8f3af36\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:29:13-31:52
-150                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
-150-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\allan\Downloads\OPSC7311POE\OPSC7311POE\gradle\wrapper\dists\gradle-8.7-all\caches\transforms-4\1f09e2f78b5790f35c9e6782d8f3af36\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:30:17-85
-151                android:value="androidx.startup" />
-151-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\allan\Downloads\OPSC7311POE\OPSC7311POE\gradle\wrapper\dists\gradle-8.7-all\caches\transforms-4\1f09e2f78b5790f35c9e6782d8f3af36\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:31:17-49
-152        </provider>
-153
-154        <uses-library
-154-->[androidx.privacysandbox.ads:ads-adservices:1.0.0-beta05] C:\Users\allan\Downloads\OPSC7311POE\OPSC7311POE\gradle\wrapper\dists\gradle-8.7-all\caches\transforms-4\c8865ff1c96fa63c773fb80c2cecd741\transformed\jetified-ads-adservices-1.0.0-beta05\AndroidManifest.xml:23:9-25:40
-155            android:name="android.ext.adservices"
-155-->[androidx.privacysandbox.ads:ads-adservices:1.0.0-beta05] C:\Users\allan\Downloads\OPSC7311POE\OPSC7311POE\gradle\wrapper\dists\gradle-8.7-all\caches\transforms-4\c8865ff1c96fa63c773fb80c2cecd741\transformed\jetified-ads-adservices-1.0.0-beta05\AndroidManifest.xml:24:13-50
-156            android:required="false" />
-156-->[androidx.privacysandbox.ads:ads-adservices:1.0.0-beta05] C:\Users\allan\Downloads\OPSC7311POE\OPSC7311POE\gradle\wrapper\dists\gradle-8.7-all\caches\transforms-4\c8865ff1c96fa63c773fb80c2cecd741\transformed\jetified-ads-adservices-1.0.0-beta05\AndroidManifest.xml:25:13-37
-157
-158        <meta-data
-158-->[com.google.android.gms:play-services-basement:18.3.0] C:\Users\allan\Downloads\OPSC7311POE\OPSC7311POE\gradle\wrapper\dists\gradle-8.7-all\caches\transforms-4\843ecd755bb69a94f90f233f799b7396\transformed\jetified-play-services-basement-18.3.0\AndroidManifest.xml:21:9-23:69
-159            android:name="com.google.android.gms.version"
-159-->[com.google.android.gms:play-services-basement:18.3.0] C:\Users\allan\Downloads\OPSC7311POE\OPSC7311POE\gradle\wrapper\dists\gradle-8.7-all\caches\transforms-4\843ecd755bb69a94f90f233f799b7396\transformed\jetified-play-services-basement-18.3.0\AndroidManifest.xml:22:13-58
-160            android:value="@integer/google_play_services_version" />
-160-->[com.google.android.gms:play-services-basement:18.3.0] C:\Users\allan\Downloads\OPSC7311POE\OPSC7311POE\gradle\wrapper\dists\gradle-8.7-all\caches\transforms-4\843ecd755bb69a94f90f233f799b7396\transformed\jetified-play-services-basement-18.3.0\AndroidManifest.xml:23:13-66
-161
-162        <uses-library
-162-->[androidx.window:window:1.0.0] C:\Users\allan\Downloads\OPSC7311POE\OPSC7311POE\gradle\wrapper\dists\gradle-8.7-all\caches\transforms-4\36a7eef88c99b743869e73ecd9e7ed18\transformed\jetified-window-1.0.0\AndroidManifest.xml:25:9-27:40
-163            android:name="androidx.window.extensions"
-163-->[androidx.window:window:1.0.0] C:\Users\allan\Downloads\OPSC7311POE\OPSC7311POE\gradle\wrapper\dists\gradle-8.7-all\caches\transforms-4\36a7eef88c99b743869e73ecd9e7ed18\transformed\jetified-window-1.0.0\AndroidManifest.xml:26:13-54
-164            android:required="false" />
-164-->[androidx.window:window:1.0.0] C:\Users\allan\Downloads\OPSC7311POE\OPSC7311POE\gradle\wrapper\dists\gradle-8.7-all\caches\transforms-4\36a7eef88c99b743869e73ecd9e7ed18\transformed\jetified-window-1.0.0\AndroidManifest.xml:27:13-37
-165        <uses-library
-165-->[androidx.window:window:1.0.0] C:\Users\allan\Downloads\OPSC7311POE\OPSC7311POE\gradle\wrapper\dists\gradle-8.7-all\caches\transforms-4\36a7eef88c99b743869e73ecd9e7ed18\transformed\jetified-window-1.0.0\AndroidManifest.xml:28:9-30:40
-166            android:name="androidx.window.sidecar"
-166-->[androidx.window:window:1.0.0] C:\Users\allan\Downloads\OPSC7311POE\OPSC7311POE\gradle\wrapper\dists\gradle-8.7-all\caches\transforms-4\36a7eef88c99b743869e73ecd9e7ed18\transformed\jetified-window-1.0.0\AndroidManifest.xml:29:13-51
-167            android:required="false" />
-167-->[androidx.window:window:1.0.0] C:\Users\allan\Downloads\OPSC7311POE\OPSC7311POE\gradle\wrapper\dists\gradle-8.7-all\caches\transforms-4\36a7eef88c99b743869e73ecd9e7ed18\transformed\jetified-window-1.0.0\AndroidManifest.xml:30:13-37
-168
-169        <receiver
-169-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\allan\Downloads\OPSC7311POE\OPSC7311POE\gradle\wrapper\dists\gradle-8.7-all\caches\transforms-4\1f09e2f78b5790f35c9e6782d8f3af36\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:34:9-52:20
-170            android:name="androidx.profileinstaller.ProfileInstallReceiver"
-170-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\allan\Downloads\OPSC7311POE\OPSC7311POE\gradle\wrapper\dists\gradle-8.7-all\caches\transforms-4\1f09e2f78b5790f35c9e6782d8f3af36\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:35:13-76
-171            android:directBootAware="false"
-171-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\allan\Downloads\OPSC7311POE\OPSC7311POE\gradle\wrapper\dists\gradle-8.7-all\caches\transforms-4\1f09e2f78b5790f35c9e6782d8f3af36\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:36:13-44
-172            android:enabled="true"
-172-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\allan\Downloads\OPSC7311POE\OPSC7311POE\gradle\wrapper\dists\gradle-8.7-all\caches\transforms-4\1f09e2f78b5790f35c9e6782d8f3af36\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:37:13-35
-173            android:exported="true"
-173-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\allan\Downloads\OPSC7311POE\OPSC7311POE\gradle\wrapper\dists\gradle-8.7-all\caches\transforms-4\1f09e2f78b5790f35c9e6782d8f3af36\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:38:13-36
-174            android:permission="android.permission.DUMP" >
-174-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\allan\Downloads\OPSC7311POE\OPSC7311POE\gradle\wrapper\dists\gradle-8.7-all\caches\transforms-4\1f09e2f78b5790f35c9e6782d8f3af36\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:39:13-57
-175            <intent-filter>
-175-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\allan\Downloads\OPSC7311POE\OPSC7311POE\gradle\wrapper\dists\gradle-8.7-all\caches\transforms-4\1f09e2f78b5790f35c9e6782d8f3af36\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:40:13-42:29
-176                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
-176-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\allan\Downloads\OPSC7311POE\OPSC7311POE\gradle\wrapper\dists\gradle-8.7-all\caches\transforms-4\1f09e2f78b5790f35c9e6782d8f3af36\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:41:17-91
-176-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\allan\Downloads\OPSC7311POE\OPSC7311POE\gradle\wrapper\dists\gradle-8.7-all\caches\transforms-4\1f09e2f78b5790f35c9e6782d8f3af36\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:41:25-88
-177            </intent-filter>
-178            <intent-filter>
-178-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\allan\Downloads\OPSC7311POE\OPSC7311POE\gradle\wrapper\dists\gradle-8.7-all\caches\transforms-4\1f09e2f78b5790f35c9e6782d8f3af36\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:43:13-45:29
-179                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
-179-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\allan\Downloads\OPSC7311POE\OPSC7311POE\gradle\wrapper\dists\gradle-8.7-all\caches\transforms-4\1f09e2f78b5790f35c9e6782d8f3af36\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:44:17-85
-179-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\allan\Downloads\OPSC7311POE\OPSC7311POE\gradle\wrapper\dists\gradle-8.7-all\caches\transforms-4\1f09e2f78b5790f35c9e6782d8f3af36\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:44:25-82
-180            </intent-filter>
-181            <intent-filter>
-181-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\allan\Downloads\OPSC7311POE\OPSC7311POE\gradle\wrapper\dists\gradle-8.7-all\caches\transforms-4\1f09e2f78b5790f35c9e6782d8f3af36\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:46:13-48:29
-182                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
-182-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\allan\Downloads\OPSC7311POE\OPSC7311POE\gradle\wrapper\dists\gradle-8.7-all\caches\transforms-4\1f09e2f78b5790f35c9e6782d8f3af36\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:47:17-88
-182-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\allan\Downloads\OPSC7311POE\OPSC7311POE\gradle\wrapper\dists\gradle-8.7-all\caches\transforms-4\1f09e2f78b5790f35c9e6782d8f3af36\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:47:25-85
-183            </intent-filter>
-184            <intent-filter>
-184-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\allan\Downloads\OPSC7311POE\OPSC7311POE\gradle\wrapper\dists\gradle-8.7-all\caches\transforms-4\1f09e2f78b5790f35c9e6782d8f3af36\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:49:13-51:29
-185                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
-185-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\allan\Downloads\OPSC7311POE\OPSC7311POE\gradle\wrapper\dists\gradle-8.7-all\caches\transforms-4\1f09e2f78b5790f35c9e6782d8f3af36\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:50:17-95
-185-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\allan\Downloads\OPSC7311POE\OPSC7311POE\gradle\wrapper\dists\gradle-8.7-all\caches\transforms-4\1f09e2f78b5790f35c9e6782d8f3af36\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:50:25-92
-186            </intent-filter>
-187        </receiver>
-188    </application>
+104-->[com.google.firebase:firebase-installations:18.0.0] C:\Users\allan\Downloads\OPSC7311POE\OPSC7311POE\gradle\wrapper\dists\gradle-8.7-all\caches\transforms-4\9411576bb970d5300f5a1bf47ddff62f\transformed\jetified-firebase-installations-18.0.0\AndroidManifest.xml:17:17-82
+105            <meta-data
+105-->[com.google.firebase:firebase-installations:18.0.0] C:\Users\allan\Downloads\OPSC7311POE\OPSC7311POE\gradle\wrapper\dists\gradle-8.7-all\caches\transforms-4\9411576bb970d5300f5a1bf47ddff62f\transformed\jetified-firebase-installations-18.0.0\AndroidManifest.xml:18:13-20:85
+106                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+106-->[com.google.firebase:firebase-installations:18.0.0] C:\Users\allan\Downloads\OPSC7311POE\OPSC7311POE\gradle\wrapper\dists\gradle-8.7-all\caches\transforms-4\9411576bb970d5300f5a1bf47ddff62f\transformed\jetified-firebase-installations-18.0.0\AndroidManifest.xml:19:17-127
+107                android:value="com.google.firebase.components.ComponentRegistrar" />
+107-->[com.google.firebase:firebase-installations:18.0.0] C:\Users\allan\Downloads\OPSC7311POE\OPSC7311POE\gradle\wrapper\dists\gradle-8.7-all\caches\transforms-4\9411576bb970d5300f5a1bf47ddff62f\transformed\jetified-firebase-installations-18.0.0\AndroidManifest.xml:20:17-82
+108            <meta-data
+108-->[com.google.firebase:firebase-common-ktx:21.0.0] C:\Users\allan\Downloads\OPSC7311POE\OPSC7311POE\gradle\wrapper\dists\gradle-8.7-all\caches\transforms-4\c444a0d4f698da1596125a99b8bd5ebc\transformed\jetified-firebase-common-ktx-21.0.0\AndroidManifest.xml:12:13-14:85
+109                android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonLegacyRegistrar"
+109-->[com.google.firebase:firebase-common-ktx:21.0.0] C:\Users\allan\Downloads\OPSC7311POE\OPSC7311POE\gradle\wrapper\dists\gradle-8.7-all\caches\transforms-4\c444a0d4f698da1596125a99b8bd5ebc\transformed\jetified-firebase-common-ktx-21.0.0\AndroidManifest.xml:13:17-116
+110                android:value="com.google.firebase.components.ComponentRegistrar" />
+110-->[com.google.firebase:firebase-common-ktx:21.0.0] C:\Users\allan\Downloads\OPSC7311POE\OPSC7311POE\gradle\wrapper\dists\gradle-8.7-all\caches\transforms-4\c444a0d4f698da1596125a99b8bd5ebc\transformed\jetified-firebase-common-ktx-21.0.0\AndroidManifest.xml:14:17-82
+111            <meta-data
+111-->[com.google.firebase:firebase-common:21.0.0] C:\Users\allan\Downloads\OPSC7311POE\OPSC7311POE\gradle\wrapper\dists\gradle-8.7-all\caches\transforms-4\9d72f17436f9c5cb0c7af9d0a8fa8748\transformed\jetified-firebase-common-21.0.0\AndroidManifest.xml:35:13-37:85
+112                android:name="com.google.firebase.components:com.google.firebase.FirebaseCommonKtxRegistrar"
+112-->[com.google.firebase:firebase-common:21.0.0] C:\Users\allan\Downloads\OPSC7311POE\OPSC7311POE\gradle\wrapper\dists\gradle-8.7-all\caches\transforms-4\9d72f17436f9c5cb0c7af9d0a8fa8748\transformed\jetified-firebase-common-21.0.0\AndroidManifest.xml:36:17-109
+113                android:value="com.google.firebase.components.ComponentRegistrar" />
+113-->[com.google.firebase:firebase-common:21.0.0] C:\Users\allan\Downloads\OPSC7311POE\OPSC7311POE\gradle\wrapper\dists\gradle-8.7-all\caches\transforms-4\9d72f17436f9c5cb0c7af9d0a8fa8748\transformed\jetified-firebase-common-21.0.0\AndroidManifest.xml:37:17-82
+114        </service>
+115        <!--
+116        Service for holding metadata. Cannot be instantiated.
+117        Metadata will be merged from other manifests.
+118        -->
+119        <service
+119-->[androidx.camera:camera-core:1.3.3] C:\Users\allan\Downloads\OPSC7311POE\OPSC7311POE\gradle\wrapper\dists\gradle-8.7-all\caches\transforms-4\c7ed24c52a6981c8ca2ac08880837dc2\transformed\jetified-camera-core-1.3.3\AndroidManifest.xml:29:9-33:78
+120            android:name="androidx.camera.core.impl.MetadataHolderService"
+120-->[androidx.camera:camera-core:1.3.3] C:\Users\allan\Downloads\OPSC7311POE\OPSC7311POE\gradle\wrapper\dists\gradle-8.7-all\caches\transforms-4\c7ed24c52a6981c8ca2ac08880837dc2\transformed\jetified-camera-core-1.3.3\AndroidManifest.xml:30:13-75
+121            android:enabled="false"
+121-->[androidx.camera:camera-core:1.3.3] C:\Users\allan\Downloads\OPSC7311POE\OPSC7311POE\gradle\wrapper\dists\gradle-8.7-all\caches\transforms-4\c7ed24c52a6981c8ca2ac08880837dc2\transformed\jetified-camera-core-1.3.3\AndroidManifest.xml:31:13-36
+122            android:exported="false" >
+122-->[androidx.camera:camera-core:1.3.3] C:\Users\allan\Downloads\OPSC7311POE\OPSC7311POE\gradle\wrapper\dists\gradle-8.7-all\caches\transforms-4\c7ed24c52a6981c8ca2ac08880837dc2\transformed\jetified-camera-core-1.3.3\AndroidManifest.xml:32:13-37
+123            <meta-data
+123-->[androidx.camera:camera-camera2:1.3.3] C:\Users\allan\Downloads\OPSC7311POE\OPSC7311POE\gradle\wrapper\dists\gradle-8.7-all\caches\transforms-4\bdb1d4dece5cd257d7a25e5d3a53fcfd\transformed\jetified-camera-camera2-1.3.3\AndroidManifest.xml:30:13-32:89
+124                android:name="androidx.camera.core.impl.MetadataHolderService.DEFAULT_CONFIG_PROVIDER"
+124-->[androidx.camera:camera-camera2:1.3.3] C:\Users\allan\Downloads\OPSC7311POE\OPSC7311POE\gradle\wrapper\dists\gradle-8.7-all\caches\transforms-4\bdb1d4dece5cd257d7a25e5d3a53fcfd\transformed\jetified-camera-camera2-1.3.3\AndroidManifest.xml:31:17-103
+125                android:value="androidx.camera.camera2.Camera2Config$DefaultProvider" />
+125-->[androidx.camera:camera-camera2:1.3.3] C:\Users\allan\Downloads\OPSC7311POE\OPSC7311POE\gradle\wrapper\dists\gradle-8.7-all\caches\transforms-4\bdb1d4dece5cd257d7a25e5d3a53fcfd\transformed\jetified-camera-camera2-1.3.3\AndroidManifest.xml:32:17-86
+126        </service>
+127
+128        <activity
+128-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\allan\Downloads\OPSC7311POE\OPSC7311POE\gradle\wrapper\dists\gradle-8.7-all\caches\transforms-4\4c1548ffc3912a0147e7119375f57204\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:20:9-22:45
+129            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+129-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\allan\Downloads\OPSC7311POE\OPSC7311POE\gradle\wrapper\dists\gradle-8.7-all\caches\transforms-4\4c1548ffc3912a0147e7119375f57204\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:20:19-85
+130            android:exported="false"
+130-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\allan\Downloads\OPSC7311POE\OPSC7311POE\gradle\wrapper\dists\gradle-8.7-all\caches\transforms-4\4c1548ffc3912a0147e7119375f57204\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:22:19-43
+131            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+131-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\allan\Downloads\OPSC7311POE\OPSC7311POE\gradle\wrapper\dists\gradle-8.7-all\caches\transforms-4\4c1548ffc3912a0147e7119375f57204\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:21:19-78
+132
+133        <property
+133-->[com.google.android.gms:play-services-measurement-api:22.0.1] C:\Users\allan\Downloads\OPSC7311POE\OPSC7311POE\gradle\wrapper\dists\gradle-8.7-all\caches\transforms-4\ac2355051ad654dddf6271aa9441e207\transformed\jetified-play-services-measurement-api-22.0.1\AndroidManifest.xml:30:9-32:61
+134            android:name="android.adservices.AD_SERVICES_CONFIG"
+134-->[com.google.android.gms:play-services-measurement-api:22.0.1] C:\Users\allan\Downloads\OPSC7311POE\OPSC7311POE\gradle\wrapper\dists\gradle-8.7-all\caches\transforms-4\ac2355051ad654dddf6271aa9441e207\transformed\jetified-play-services-measurement-api-22.0.1\AndroidManifest.xml:31:13-65
+135            android:resource="@xml/ga_ad_services_config" />
+135-->[com.google.android.gms:play-services-measurement-api:22.0.1] C:\Users\allan\Downloads\OPSC7311POE\OPSC7311POE\gradle\wrapper\dists\gradle-8.7-all\caches\transforms-4\ac2355051ad654dddf6271aa9441e207\transformed\jetified-play-services-measurement-api-22.0.1\AndroidManifest.xml:32:13-58
+136
+137        <provider
+137-->[com.google.firebase:firebase-common:21.0.0] C:\Users\allan\Downloads\OPSC7311POE\OPSC7311POE\gradle\wrapper\dists\gradle-8.7-all\caches\transforms-4\9d72f17436f9c5cb0c7af9d0a8fa8748\transformed\jetified-firebase-common-21.0.0\AndroidManifest.xml:23:9-28:39
+138            android:name="com.google.firebase.provider.FirebaseInitProvider"
+138-->[com.google.firebase:firebase-common:21.0.0] C:\Users\allan\Downloads\OPSC7311POE\OPSC7311POE\gradle\wrapper\dists\gradle-8.7-all\caches\transforms-4\9d72f17436f9c5cb0c7af9d0a8fa8748\transformed\jetified-firebase-common-21.0.0\AndroidManifest.xml:24:13-77
+139            android:authorities="com.example.opsc7311poe.firebaseinitprovider"
+139-->[com.google.firebase:firebase-common:21.0.0] C:\Users\allan\Downloads\OPSC7311POE\OPSC7311POE\gradle\wrapper\dists\gradle-8.7-all\caches\transforms-4\9d72f17436f9c5cb0c7af9d0a8fa8748\transformed\jetified-firebase-common-21.0.0\AndroidManifest.xml:25:13-72
+140            android:directBootAware="true"
+140-->[com.google.firebase:firebase-common:21.0.0] C:\Users\allan\Downloads\OPSC7311POE\OPSC7311POE\gradle\wrapper\dists\gradle-8.7-all\caches\transforms-4\9d72f17436f9c5cb0c7af9d0a8fa8748\transformed\jetified-firebase-common-21.0.0\AndroidManifest.xml:26:13-43
+141            android:exported="false"
+141-->[com.google.firebase:firebase-common:21.0.0] C:\Users\allan\Downloads\OPSC7311POE\OPSC7311POE\gradle\wrapper\dists\gradle-8.7-all\caches\transforms-4\9d72f17436f9c5cb0c7af9d0a8fa8748\transformed\jetified-firebase-common-21.0.0\AndroidManifest.xml:27:13-37
+142            android:initOrder="100" />
+142-->[com.google.firebase:firebase-common:21.0.0] C:\Users\allan\Downloads\OPSC7311POE\OPSC7311POE\gradle\wrapper\dists\gradle-8.7-all\caches\transforms-4\9d72f17436f9c5cb0c7af9d0a8fa8748\transformed\jetified-firebase-common-21.0.0\AndroidManifest.xml:28:13-36
+143
+144        <receiver
+144-->[com.google.android.gms:play-services-measurement:22.0.1] C:\Users\allan\Downloads\OPSC7311POE\OPSC7311POE\gradle\wrapper\dists\gradle-8.7-all\caches\transforms-4\7e95a4a1ad2557e88997f4f86b50e10a\transformed\jetified-play-services-measurement-22.0.1\AndroidManifest.xml:29:9-33:20
+145            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+145-->[com.google.android.gms:play-services-measurement:22.0.1] C:\Users\allan\Downloads\OPSC7311POE\OPSC7311POE\gradle\wrapper\dists\gradle-8.7-all\caches\transforms-4\7e95a4a1ad2557e88997f4f86b50e10a\transformed\jetified-play-services-measurement-22.0.1\AndroidManifest.xml:30:13-85
+146            android:enabled="true"
+146-->[com.google.android.gms:play-services-measurement:22.0.1] C:\Users\allan\Downloads\OPSC7311POE\OPSC7311POE\gradle\wrapper\dists\gradle-8.7-all\caches\transforms-4\7e95a4a1ad2557e88997f4f86b50e10a\transformed\jetified-play-services-measurement-22.0.1\AndroidManifest.xml:31:13-35
+147            android:exported="false" >
+147-->[com.google.android.gms:play-services-measurement:22.0.1] C:\Users\allan\Downloads\OPSC7311POE\OPSC7311POE\gradle\wrapper\dists\gradle-8.7-all\caches\transforms-4\7e95a4a1ad2557e88997f4f86b50e10a\transformed\jetified-play-services-measurement-22.0.1\AndroidManifest.xml:32:13-37
+148        </receiver>
+149
+150        <service
+150-->[com.google.android.gms:play-services-measurement:22.0.1] C:\Users\allan\Downloads\OPSC7311POE\OPSC7311POE\gradle\wrapper\dists\gradle-8.7-all\caches\transforms-4\7e95a4a1ad2557e88997f4f86b50e10a\transformed\jetified-play-services-measurement-22.0.1\AndroidManifest.xml:35:9-38:40
+151            android:name="com.google.android.gms.measurement.AppMeasurementService"
+151-->[com.google.android.gms:play-services-measurement:22.0.1] C:\Users\allan\Downloads\OPSC7311POE\OPSC7311POE\gradle\wrapper\dists\gradle-8.7-all\caches\transforms-4\7e95a4a1ad2557e88997f4f86b50e10a\transformed\jetified-play-services-measurement-22.0.1\AndroidManifest.xml:36:13-84
+152            android:enabled="true"
+152-->[com.google.android.gms:play-services-measurement:22.0.1] C:\Users\allan\Downloads\OPSC7311POE\OPSC7311POE\gradle\wrapper\dists\gradle-8.7-all\caches\transforms-4\7e95a4a1ad2557e88997f4f86b50e10a\transformed\jetified-play-services-measurement-22.0.1\AndroidManifest.xml:37:13-35
+153            android:exported="false" />
+153-->[com.google.android.gms:play-services-measurement:22.0.1] C:\Users\allan\Downloads\OPSC7311POE\OPSC7311POE\gradle\wrapper\dists\gradle-8.7-all\caches\transforms-4\7e95a4a1ad2557e88997f4f86b50e10a\transformed\jetified-play-services-measurement-22.0.1\AndroidManifest.xml:38:13-37
+154        <service
+154-->[com.google.android.gms:play-services-measurement:22.0.1] C:\Users\allan\Downloads\OPSC7311POE\OPSC7311POE\gradle\wrapper\dists\gradle-8.7-all\caches\transforms-4\7e95a4a1ad2557e88997f4f86b50e10a\transformed\jetified-play-services-measurement-22.0.1\AndroidManifest.xml:39:9-43:72
+155            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+155-->[com.google.android.gms:play-services-measurement:22.0.1] C:\Users\allan\Downloads\OPSC7311POE\OPSC7311POE\gradle\wrapper\dists\gradle-8.7-all\caches\transforms-4\7e95a4a1ad2557e88997f4f86b50e10a\transformed\jetified-play-services-measurement-22.0.1\AndroidManifest.xml:40:13-87
+156            android:enabled="true"
+156-->[com.google.android.gms:play-services-measurement:22.0.1] C:\Users\allan\Downloads\OPSC7311POE\OPSC7311POE\gradle\wrapper\dists\gradle-8.7-all\caches\transforms-4\7e95a4a1ad2557e88997f4f86b50e10a\transformed\jetified-play-services-measurement-22.0.1\AndroidManifest.xml:41:13-35
+157            android:exported="false"
+157-->[com.google.android.gms:play-services-measurement:22.0.1] C:\Users\allan\Downloads\OPSC7311POE\OPSC7311POE\gradle\wrapper\dists\gradle-8.7-all\caches\transforms-4\7e95a4a1ad2557e88997f4f86b50e10a\transformed\jetified-play-services-measurement-22.0.1\AndroidManifest.xml:42:13-37
+158            android:permission="android.permission.BIND_JOB_SERVICE" />
+158-->[com.google.android.gms:play-services-measurement:22.0.1] C:\Users\allan\Downloads\OPSC7311POE\OPSC7311POE\gradle\wrapper\dists\gradle-8.7-all\caches\transforms-4\7e95a4a1ad2557e88997f4f86b50e10a\transformed\jetified-play-services-measurement-22.0.1\AndroidManifest.xml:43:13-69
+159
+160        <provider
+160-->[androidx.emoji2:emoji2:1.3.0] C:\Users\allan\Downloads\OPSC7311POE\OPSC7311POE\gradle\wrapper\dists\gradle-8.7-all\caches\transforms-4\a958fa830d8574e28d2dace8209493e6\transformed\jetified-emoji2-1.3.0\AndroidManifest.xml:24:9-32:20
+161            android:name="androidx.startup.InitializationProvider"
+161-->[androidx.emoji2:emoji2:1.3.0] C:\Users\allan\Downloads\OPSC7311POE\OPSC7311POE\gradle\wrapper\dists\gradle-8.7-all\caches\transforms-4\a958fa830d8574e28d2dace8209493e6\transformed\jetified-emoji2-1.3.0\AndroidManifest.xml:25:13-67
+162            android:authorities="com.example.opsc7311poe.androidx-startup"
+162-->[androidx.emoji2:emoji2:1.3.0] C:\Users\allan\Downloads\OPSC7311POE\OPSC7311POE\gradle\wrapper\dists\gradle-8.7-all\caches\transforms-4\a958fa830d8574e28d2dace8209493e6\transformed\jetified-emoji2-1.3.0\AndroidManifest.xml:26:13-68
+163            android:exported="false" >
+163-->[androidx.emoji2:emoji2:1.3.0] C:\Users\allan\Downloads\OPSC7311POE\OPSC7311POE\gradle\wrapper\dists\gradle-8.7-all\caches\transforms-4\a958fa830d8574e28d2dace8209493e6\transformed\jetified-emoji2-1.3.0\AndroidManifest.xml:27:13-37
+164            <meta-data
+164-->[androidx.emoji2:emoji2:1.3.0] C:\Users\allan\Downloads\OPSC7311POE\OPSC7311POE\gradle\wrapper\dists\gradle-8.7-all\caches\transforms-4\a958fa830d8574e28d2dace8209493e6\transformed\jetified-emoji2-1.3.0\AndroidManifest.xml:29:13-31:52
+165                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+165-->[androidx.emoji2:emoji2:1.3.0] C:\Users\allan\Downloads\OPSC7311POE\OPSC7311POE\gradle\wrapper\dists\gradle-8.7-all\caches\transforms-4\a958fa830d8574e28d2dace8209493e6\transformed\jetified-emoji2-1.3.0\AndroidManifest.xml:30:17-75
+166                android:value="androidx.startup" />
+166-->[androidx.emoji2:emoji2:1.3.0] C:\Users\allan\Downloads\OPSC7311POE\OPSC7311POE\gradle\wrapper\dists\gradle-8.7-all\caches\transforms-4\a958fa830d8574e28d2dace8209493e6\transformed\jetified-emoji2-1.3.0\AndroidManifest.xml:31:17-49
+167            <meta-data
+167-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\allan\Downloads\OPSC7311POE\OPSC7311POE\gradle\wrapper\dists\gradle-8.7-all\caches\transforms-4\b203dfda145d7885861542c05abb3660\transformed\jetified-lifecycle-process-2.7.0\AndroidManifest.xml:29:13-31:52
+168                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+168-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\allan\Downloads\OPSC7311POE\OPSC7311POE\gradle\wrapper\dists\gradle-8.7-all\caches\transforms-4\b203dfda145d7885861542c05abb3660\transformed\jetified-lifecycle-process-2.7.0\AndroidManifest.xml:30:17-78
+169                android:value="androidx.startup" />
+169-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\allan\Downloads\OPSC7311POE\OPSC7311POE\gradle\wrapper\dists\gradle-8.7-all\caches\transforms-4\b203dfda145d7885861542c05abb3660\transformed\jetified-lifecycle-process-2.7.0\AndroidManifest.xml:31:17-49
+170            <meta-data
+170-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\allan\Downloads\OPSC7311POE\OPSC7311POE\gradle\wrapper\dists\gradle-8.7-all\caches\transforms-4\1f09e2f78b5790f35c9e6782d8f3af36\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:29:13-31:52
+171                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+171-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\allan\Downloads\OPSC7311POE\OPSC7311POE\gradle\wrapper\dists\gradle-8.7-all\caches\transforms-4\1f09e2f78b5790f35c9e6782d8f3af36\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:30:17-85
+172                android:value="androidx.startup" />
+172-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\allan\Downloads\OPSC7311POE\OPSC7311POE\gradle\wrapper\dists\gradle-8.7-all\caches\transforms-4\1f09e2f78b5790f35c9e6782d8f3af36\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:31:17-49
+173        </provider>
+174
+175        <uses-library
+175-->[androidx.privacysandbox.ads:ads-adservices:1.0.0-beta05] C:\Users\allan\Downloads\OPSC7311POE\OPSC7311POE\gradle\wrapper\dists\gradle-8.7-all\caches\transforms-4\c8865ff1c96fa63c773fb80c2cecd741\transformed\jetified-ads-adservices-1.0.0-beta05\AndroidManifest.xml:23:9-25:40
+176            android:name="android.ext.adservices"
+176-->[androidx.privacysandbox.ads:ads-adservices:1.0.0-beta05] C:\Users\allan\Downloads\OPSC7311POE\OPSC7311POE\gradle\wrapper\dists\gradle-8.7-all\caches\transforms-4\c8865ff1c96fa63c773fb80c2cecd741\transformed\jetified-ads-adservices-1.0.0-beta05\AndroidManifest.xml:24:13-50
+177            android:required="false" />
+177-->[androidx.privacysandbox.ads:ads-adservices:1.0.0-beta05] C:\Users\allan\Downloads\OPSC7311POE\OPSC7311POE\gradle\wrapper\dists\gradle-8.7-all\caches\transforms-4\c8865ff1c96fa63c773fb80c2cecd741\transformed\jetified-ads-adservices-1.0.0-beta05\AndroidManifest.xml:25:13-37
+178
+179        <meta-data
+179-->[com.google.android.gms:play-services-basement:18.3.0] C:\Users\allan\Downloads\OPSC7311POE\OPSC7311POE\gradle\wrapper\dists\gradle-8.7-all\caches\transforms-4\843ecd755bb69a94f90f233f799b7396\transformed\jetified-play-services-basement-18.3.0\AndroidManifest.xml:21:9-23:69
+180            android:name="com.google.android.gms.version"
+180-->[com.google.android.gms:play-services-basement:18.3.0] C:\Users\allan\Downloads\OPSC7311POE\OPSC7311POE\gradle\wrapper\dists\gradle-8.7-all\caches\transforms-4\843ecd755bb69a94f90f233f799b7396\transformed\jetified-play-services-basement-18.3.0\AndroidManifest.xml:22:13-58
+181            android:value="@integer/google_play_services_version" />
+181-->[com.google.android.gms:play-services-basement:18.3.0] C:\Users\allan\Downloads\OPSC7311POE\OPSC7311POE\gradle\wrapper\dists\gradle-8.7-all\caches\transforms-4\843ecd755bb69a94f90f233f799b7396\transformed\jetified-play-services-basement-18.3.0\AndroidManifest.xml:23:13-66
+182
+183        <uses-library
+183-->[androidx.window:window:1.0.0] C:\Users\allan\Downloads\OPSC7311POE\OPSC7311POE\gradle\wrapper\dists\gradle-8.7-all\caches\transforms-4\36a7eef88c99b743869e73ecd9e7ed18\transformed\jetified-window-1.0.0\AndroidManifest.xml:25:9-27:40
+184            android:name="androidx.window.extensions"
+184-->[androidx.window:window:1.0.0] C:\Users\allan\Downloads\OPSC7311POE\OPSC7311POE\gradle\wrapper\dists\gradle-8.7-all\caches\transforms-4\36a7eef88c99b743869e73ecd9e7ed18\transformed\jetified-window-1.0.0\AndroidManifest.xml:26:13-54
+185            android:required="false" />
+185-->[androidx.window:window:1.0.0] C:\Users\allan\Downloads\OPSC7311POE\OPSC7311POE\gradle\wrapper\dists\gradle-8.7-all\caches\transforms-4\36a7eef88c99b743869e73ecd9e7ed18\transformed\jetified-window-1.0.0\AndroidManifest.xml:27:13-37
+186        <uses-library
+186-->[androidx.window:window:1.0.0] C:\Users\allan\Downloads\OPSC7311POE\OPSC7311POE\gradle\wrapper\dists\gradle-8.7-all\caches\transforms-4\36a7eef88c99b743869e73ecd9e7ed18\transformed\jetified-window-1.0.0\AndroidManifest.xml:28:9-30:40
+187            android:name="androidx.window.sidecar"
+187-->[androidx.window:window:1.0.0] C:\Users\allan\Downloads\OPSC7311POE\OPSC7311POE\gradle\wrapper\dists\gradle-8.7-all\caches\transforms-4\36a7eef88c99b743869e73ecd9e7ed18\transformed\jetified-window-1.0.0\AndroidManifest.xml:29:13-51
+188            android:required="false" />
+188-->[androidx.window:window:1.0.0] C:\Users\allan\Downloads\OPSC7311POE\OPSC7311POE\gradle\wrapper\dists\gradle-8.7-all\caches\transforms-4\36a7eef88c99b743869e73ecd9e7ed18\transformed\jetified-window-1.0.0\AndroidManifest.xml:30:13-37
 189
-190</manifest>
+190        <receiver
+190-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\allan\Downloads\OPSC7311POE\OPSC7311POE\gradle\wrapper\dists\gradle-8.7-all\caches\transforms-4\1f09e2f78b5790f35c9e6782d8f3af36\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:34:9-52:20
+191            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+191-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\allan\Downloads\OPSC7311POE\OPSC7311POE\gradle\wrapper\dists\gradle-8.7-all\caches\transforms-4\1f09e2f78b5790f35c9e6782d8f3af36\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:35:13-76
+192            android:directBootAware="false"
+192-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\allan\Downloads\OPSC7311POE\OPSC7311POE\gradle\wrapper\dists\gradle-8.7-all\caches\transforms-4\1f09e2f78b5790f35c9e6782d8f3af36\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:36:13-44
+193            android:enabled="true"
+193-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\allan\Downloads\OPSC7311POE\OPSC7311POE\gradle\wrapper\dists\gradle-8.7-all\caches\transforms-4\1f09e2f78b5790f35c9e6782d8f3af36\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:37:13-35
+194            android:exported="true"
+194-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\allan\Downloads\OPSC7311POE\OPSC7311POE\gradle\wrapper\dists\gradle-8.7-all\caches\transforms-4\1f09e2f78b5790f35c9e6782d8f3af36\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:38:13-36
+195            android:permission="android.permission.DUMP" >
+195-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\allan\Downloads\OPSC7311POE\OPSC7311POE\gradle\wrapper\dists\gradle-8.7-all\caches\transforms-4\1f09e2f78b5790f35c9e6782d8f3af36\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:39:13-57
+196            <intent-filter>
+196-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\allan\Downloads\OPSC7311POE\OPSC7311POE\gradle\wrapper\dists\gradle-8.7-all\caches\transforms-4\1f09e2f78b5790f35c9e6782d8f3af36\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:40:13-42:29
+197                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+197-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\allan\Downloads\OPSC7311POE\OPSC7311POE\gradle\wrapper\dists\gradle-8.7-all\caches\transforms-4\1f09e2f78b5790f35c9e6782d8f3af36\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:41:17-91
+197-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\allan\Downloads\OPSC7311POE\OPSC7311POE\gradle\wrapper\dists\gradle-8.7-all\caches\transforms-4\1f09e2f78b5790f35c9e6782d8f3af36\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:41:25-88
+198            </intent-filter>
+199            <intent-filter>
+199-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\allan\Downloads\OPSC7311POE\OPSC7311POE\gradle\wrapper\dists\gradle-8.7-all\caches\transforms-4\1f09e2f78b5790f35c9e6782d8f3af36\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:43:13-45:29
+200                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+200-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\allan\Downloads\OPSC7311POE\OPSC7311POE\gradle\wrapper\dists\gradle-8.7-all\caches\transforms-4\1f09e2f78b5790f35c9e6782d8f3af36\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:44:17-85
+200-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\allan\Downloads\OPSC7311POE\OPSC7311POE\gradle\wrapper\dists\gradle-8.7-all\caches\transforms-4\1f09e2f78b5790f35c9e6782d8f3af36\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:44:25-82
+201            </intent-filter>
+202            <intent-filter>
+202-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\allan\Downloads\OPSC7311POE\OPSC7311POE\gradle\wrapper\dists\gradle-8.7-all\caches\transforms-4\1f09e2f78b5790f35c9e6782d8f3af36\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:46:13-48:29
+203                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+203-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\allan\Downloads\OPSC7311POE\OPSC7311POE\gradle\wrapper\dists\gradle-8.7-all\caches\transforms-4\1f09e2f78b5790f35c9e6782d8f3af36\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:47:17-88
+203-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\allan\Downloads\OPSC7311POE\OPSC7311POE\gradle\wrapper\dists\gradle-8.7-all\caches\transforms-4\1f09e2f78b5790f35c9e6782d8f3af36\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:47:25-85
+204            </intent-filter>
+205            <intent-filter>
+205-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\allan\Downloads\OPSC7311POE\OPSC7311POE\gradle\wrapper\dists\gradle-8.7-all\caches\transforms-4\1f09e2f78b5790f35c9e6782d8f3af36\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:49:13-51:29
+206                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+206-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\allan\Downloads\OPSC7311POE\OPSC7311POE\gradle\wrapper\dists\gradle-8.7-all\caches\transforms-4\1f09e2f78b5790f35c9e6782d8f3af36\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:50:17-95
+206-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\allan\Downloads\OPSC7311POE\OPSC7311POE\gradle\wrapper\dists\gradle-8.7-all\caches\transforms-4\1f09e2f78b5790f35c9e6782d8f3af36\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:50:25-92
+207            </intent-filter>
+208        </receiver>
+209    </application>
+210
+211</manifest>
