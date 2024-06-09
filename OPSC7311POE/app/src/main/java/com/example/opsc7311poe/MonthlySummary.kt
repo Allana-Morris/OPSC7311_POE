@@ -27,19 +27,15 @@ class MonthlySummary : AppCompatActivity() {
 
         lineGraphView = this.findViewById<GraphView>(R.id.idGraphView)
 
+        //Read from DB to get values to plot on graph
+
+
+        //Plot on DB
        val series: LineGraphSeries<DataPoint> = LineGraphSeries(
             arrayOf(
                 // on below line we are adding
                 // each point on our x and y axis.
                 DataPoint(0.0, 1.0),
-                DataPoint(1.0, 3.0),
-                DataPoint(2.0, 4.0),
-                DataPoint(3.0, 9.0),
-                DataPoint(4.0, 6.0),
-                DataPoint(5.0, 3.0),
-                DataPoint(6.0, 6.0),
-                DataPoint(7.0, 1.0),
-                DataPoint(8.0, 2.0)
             )
         )
 
@@ -67,7 +63,7 @@ class MonthlySummary : AppCompatActivity() {
         lineGraphView.addSeries(series)
 
         //Variable for each Button on Navbar™
-        bottomNav = findViewById(R.id.bottomNav) as BottomNavigationView
+        bottomNav = findViewById(R.id.bottomNav)!!
         // Clear selection by setting invalid item ID
         bottomNav.menu.setGroupCheckable(0, true, false) // Enable manual selection
         bottomNav.menu.findItem(R.id.home).isChecked = false
@@ -104,7 +100,7 @@ class MonthlySummary : AppCompatActivity() {
         }
 
 
-        //Code for TextView Summaries
+        ///Code for TextView Summaries
 
         //Top Category
 
@@ -117,7 +113,6 @@ class MonthlySummary : AppCompatActivity() {
         //Busiest Week
 
         //Most Time consuming Task
-
 
     }
 }

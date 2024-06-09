@@ -16,7 +16,7 @@ import androidx.appcompat.app.AppCompatActivity
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
 
-@Suppress("DEPRECATION")
+
 class Profile_activity : AppCompatActivity() {
     lateinit var bottomNav: BottomNavigationView
 
