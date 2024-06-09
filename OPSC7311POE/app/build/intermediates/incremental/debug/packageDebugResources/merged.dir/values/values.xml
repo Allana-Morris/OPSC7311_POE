@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="com_google_android_gms_fonts_certs">
+        <item>@array/com_google_android_gms_fonts_certs_dev</item>
+        <item>@array/com_google_android_gms_fonts_certs_prod</item>
+    </array>
+    <string-array name="com_google_android_gms_fonts_certs_dev">
+        <item>
+            MIIEqDCCA5CgAwIBAgIJANWFuGx90071MA0GCSqGSIb3DQEBBAUAMIGUMQswCQYDVQQGEwJVUzETMBEGA1UECBMKQ2FsaWZvcm5pYTEWMBQGA1UEBxMNTW91bnRhaW4gVmlldzEQMA4GA1UEChMHQW5kcm9pZDEQMA4GA1UECxMHQW5kcm9pZDEQMA4GA1UEAxMHQW5kcm9pZDEiMCAGCSqGSIb3DQEJARYTYW5kcm9pZEBhbmRyb2lkLmNvbTAeFw0wODA0MTUyMzM2NTZaFw0zNTA5MDEyMzM2NTZaMIGUMQswCQYDVQQGEwJVUzETMBEGA1UECBMKQ2FsaWZvcm5pYTEWMBQGA1UEBxMNTW91bnRhaW4gVmlldzEQMA4GA1UEChMHQW5kcm9pZDEQMA4GA1UECxMHQW5kcm9pZDEQMA4GA1UEAxMHQW5kcm9pZDEiMCAGCSqGSIb3DQEJARYTYW5kcm9pZEBhbmRyb2lkLmNvbTCCASAwDQYJKoZIhvcNAQEBBQADggENADCCAQgCggEBANbOLggKv+IxTdGNs8/TGFy0PTP6DHThvbbR24kT9ixcOd9W+EaBPWW+wPPKQmsHxajtWjmQwWfna8mZuSeJS48LIgAZlKkpFeVyxW0qMBujb8X8ETrWy550NaFtI6t9+u7hZeTfHwqNvacKhp1RbE6dBRGWynwMVX8XW8N1+UjFaq6GCJukT4qmpN2afb8sCjUigq0GuMwYXrFVee74bQgLHWGJwPmvmLHC69EH6kWr22ijx4OKXlSIx2xT1AsSHee70w5iDBiK4aph27yH3TxkXy9V89TDdexAcKk/cVHYNnDBapcavl7y0RiQ4biu8ymM8Ga/nmzhRKya6G0cGw8CAQOjgfwwgfkwHQYDVR0OBBYEFI0cxb6VTEM8YYY6FbBMvAPyT+CyMIHJBgNVHSMEgcEwgb6AFI0cxb6VTEM8YYY6FbBMvAPyT+CyoYGapIGXMIGUMQswCQYDVQQGEwJVUzETMBEGA1UECBMKQ2FsaWZvcm5pYTEWMBQGA1UEBxMNTW91bnRhaW4gVmlldzEQMA4GA1UEChMHQW5kcm9pZDEQMA4GA1UECxMHQW5kcm9pZDEQMA4GA1UEAxMHQW5kcm9pZDEiMCAGCSqGSIb3DQEJARYTYW5kcm9pZEBhbmRyb2lkLmNvbYIJANWFuGx90071MAwGA1UdEwQFMAMBAf8wDQYJKoZIhvcNAQEEBQADggEBABnTDPEF+3iSP0wNfdIjIz1AlnrPzgAIHVvXxunW7SBrDhEglQZBbKJEk5kT0mtKoOD1JMrSu1xuTKEBahWRbqHsXclaXjoBADb0kkjVEJu/Lh5hgYZnOjvlba8Ld7HCKePCVePoTJBdI4fvugnL8TsgK05aIskyY0hKI9L8KfqfGTl1lzOv2KoWD0KWwtAWPoGChZxmQ+nBli+gwYMzM1vAkP+aayLe0a1EQimlOalO762r0GXO0ks+UeXde2Z4e+8S/pf7pITEI/tP+MxJTALw9QUWEv9lKTk+jkbqxbsh8nfBUapfKqYn0eidpwq2AzVp3juYl7//fKnaPhJD9gs=
+        </item>
+    </string-array>
+    <string-array name="com_google_android_gms_fonts_certs_prod">
+        <item>
+            MIIEQzCCAyugAwIBAgIJAMLgh0ZkSjCNMA0GCSqGSIb3DQEBBAUAMHQxCzAJBgNVBAYTAlVTMRMwEQYDVQQIEwpDYWxpZm9ybmlhMRYwFAYDVQQHEw1Nb3VudGFpbiBWaWV3MRQwEgYDVQQKEwtHb29nbGUgSW5jLjEQMA4GA1UECxMHQW5kcm9pZDEQMA4GA1UEAxMHQW5kcm9pZDAeFw0wODA4MjEyMzEzMzRaFw0zNjAxMDcyMzEzMzRaMHQxCzAJBgNVBAYTAlVTMRMwEQYDVQQIEwpDYWxpZm9ybmlhMRYwFAYDVQQHEw1Nb3VudGFpbiBWaWV3MRQwEgYDVQQKEwtHb29nbGUgSW5jLjEQMA4GA1UECxMHQW5kcm9pZDEQMA4GA1UEAxMHQW5kcm9pZDCCASAwDQYJKoZIhvcNAQEBBQADggENADCCAQgCggEBAKtWLgDYO6IIrgqWbxJOKdoR8qtW0I9Y4sypEwPpt1TTcvZApxsdyxMJZ2JORland2qSGT2y5b+3JKkedxiLDmpHpDsz2WCbdxgxRczfey5YZnTJ4VZbH0xqWVW/8lGmPav5xVwnIiJS6HXk+BVKZF+JcWjAsb/GEuq/eFdpuzSqeYTcfi6idkyugwfYwXFU1+5fZKUaRKYCwkkFQVfcAs1fXA5V+++FGfvjJ/CxURaSxaBvGdGDhfXE28LWuT9ozCl5xw4Yq5OGazvV24mZVSoOO0yZ31j7kYvtwYK6NeADwbSxDdJEqO4k//0zOHKrUiGYXtqw/A0LFFtqoZKFjnkCAQOjgdkwgdYwHQYDVR0OBBYEFMd9jMIhF1Ylmn/Tgt9r45jk14alMIGmBgNVHSMEgZ4wgZuAFMd9jMIhF1Ylmn/Tgt9r45jk14aloXikdjB0MQswCQYDVQQGEwJVUzETMBEGA1UECBMKQ2FsaWZvcm5pYTEWMBQGA1UEBxMNTW91bnRhaW4gVmlldzEUMBIGA1UEChMLR29vZ2xlIEluYy4xEDAOBgNVBAsTB0FuZHJvaWQxEDAOBgNVBAMTB0FuZHJvaWSCCQDC4IdGZEowjTAMBgNVHRMEBTADAQH/MA0GCSqGSIb3DQEBBAUAA4IBAQBt0lLO74UwLDYKqs6Tm8/yzKkEu116FmH4rkaymUIE0P9KaMftGlMexFlaYjzmB2OxZyl6euNXEsQH8gjwyxCUKRJNexBiGcCEyj6z+a1fuHHvkiaai+KL8W1EyNmgjmyy8AW7P+LLlkR+ho5zEHatRbM/YAnqGcFh5iZBqpknHf1SKMXFh4dd239FJ1jWYfbMDMy3NS5CTMQ2XFI1MvcyUTdZPErjQfTbQe3aDQsQcafEQPD+nqActifKZ0Np0IS9L9kR/wbNvyz6ENwPiTrjV2KRkEjH78ZMcUQXg0L3BYHJ3lc69Vs5Ddf9uUGGMYldX3WfMBEmh/9iFBDAaTCK
+        </item>
+    </string-array>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/butcherman</item>
+        <item>@font/metal_mania</item>
+    </array>
+    <color name="Red">#ff0000</color>
+    <color name="black">#FF000000</color>
+    <color name="blue">#0000FF</color>
+    <color name="green">#A4C639</color>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="white">#FFFFFFFF</color>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <item name="tv_add_eventevent" type="id"/>
+    <string name="CurrentTask">Current Tasks:</string>
+    <string name="Email">Email</string>
+    <string name="Select">Select</string>
+    <string name="SelectPeriod">Select a time period</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="add">Add</string>
+    <string name="add_event">Add Event</string>
+    <string name="all_taps">All Taps</string>
+    <string name="app_name">OPSC7311 POE</string>
+    <string name="ave_hours_per_day">Average Hours Recorded Per Day: </string>
+    <string name="back">←</string>
+    <string name="bar">Bar Graph</string>
+    <string name="busiest_week">Busiest Week: </string>
+    <string name="calendar">Calendar</string>
+    <string name="calendar_">Calendar</string>
+    <string name="calendar_fragment">Calendar Fragment</string>
+    <string name="cat_select">Select Category</string>
+    <string name="cat_view">View Total Hours For your Categories</string>
+    <string name="category">Category</string>
+    <string name="choose">Choose your graph:</string>
+    <string name="chooseW">Choose a Week:</string>
+    <string name="choose_an_icon">Choose an Icon</string>
+    <string name="color">Colour</string>
+    <string name="colourpreview">See Preview of selected Colour</string>
+    <string name="continue_with_google">Continue with Google</string>
+    <string name="count_down">Countdown</string>
+    <string name="createD">Create a Diagram</string>
+    <string name="create_category">Create Category</string>
+    <string name="create_entry">Create Timesheet Entry</string>
+    <string name="create_one">Create one</string>
+    <string name="create_task">Create Task</string>
+    <string name="curent_day">%1$s</string>
+    <string name="current_task">Current Task</string>
+    <string name="customP">Customize and Personalize</string>
+    <string name="description">Description</string>
+    <string name="design">Redesign Home Page</string>
+    <string name="diagram">Diagram</string>
+    <string name="editUser">Edit Username:</string>
+    <string name="endDate">End Date</string>
+    <string name="enter_hours_spent">Enter hours for task</string>
+    <string name="enter_time">Enter time</string>
+    <string name="forward">→</string>
+    <string name="fullName">Full Name</string>
+    <string name="gcm_defaultSenderId" translatable="false">122069534716</string>
+    <string name="generate">Generate Summary</string>
+    <string name="google_api_key" translatable="false">AIzaSyBZ3q8VGASgyDumUytDAEqV8pDcKpi2vD8</string>
+    <string name="google_app_id" translatable="false">1:122069534716:android:14504c22b7d3a442435479</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyBZ3q8VGASgyDumUytDAEqV8pDcKpi2vD8</string>
+    <string name="google_storage_bucket" translatable="false">atomic-affinity-421915.appspot.com</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="home">Home</string>
+    <string name="home_fragment">Home fragment</string>
+    <string name="housecleaning">housecleaning</string>
+    <string name="icon">Icon</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="most_productive_day">Most Productive Day: </string>
+    <string name="most_time_consuming_task">Most Time Consuming Task: </string>
+    <string name="name">Name</string>
+    <string name="name_">Name</string>
+    <string name="new_event">New Event</string>
+    <string name="no_account">No account</string>
+    <string name="note">Note</string>
+    <string name="password">Password</string>
+    <string name="pie">Pie Chart</string>
+    <string name="profile">Profile</string>
+    <string name="profilePho">Upload a Profile Photo</string>
+    <string name="profile_fragment">Profile Fragment</string>
+    <string name="progress">View your progress</string>
+    <string name="project_id" translatable="false">atomic-affinity-421915</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="reset">Reset</string>
+    <string name="reset_password">Reset password</string>
+    <string name="save2">Save</string>
+    <string name="seeAll">See All></string>
+    <string name="seePass">See Password</string>
+    <string name="select">Select</string>
+    <string name="select_date">Select date</string>
+    <string name="select_end_date">Select End Date</string>
+    <string name="sign_in_to_lifetime">Sign in to LifeTime</string>
+    <string name="signup">Sign Up</string>
+    <string name="start">Start</string>
+    <string name="startDate">Start Date</string>
+    <string name="stop">Stop</string>
+    <string name="target_hours">Target Hours</string>
+    <string name="task">Task</string>
+    <string name="task_description">Task Description</string>
+    <string name="task_duration">Task Duration</string>
+    <string name="task_select">Select Task</string>
+    <string name="tasks">Tasks</string>
+    <string name="time_dash">-</string>
+    <string name="timer">Timer</string>
+    <string name="timer_fragment">Timer Fragment</string>
+    <string name="title_activity_calendar2">Calendar2</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_home">Home</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="top_category">Top Category: </string>
+    <string name="total_hours_recorded">Total Hours Recorded: </string>
+    <string name="uploadpic">Upload New</string>
+    <string name="username">Username</string>
+    <string name="view_tasks">View Tasks</string>
+    <string name="view_timesheet">View Timesheet Entries</string>
+    <string name="weeklyS">Weekly summary</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="yourHugeText">Output Will be displayed here:</string>
+    <style name="Base.Theme.OPSC7311POE" parent="Theme.AppCompat.Light.NoActionBar">
+        
+        
+    </style>
+    <style name="Theme.OPSC7311POE" parent="Base.Theme.OPSC7311POE"/>
+</resources>
