@@ -14,11 +14,11 @@ import java.util.Calendar
 class cat_total_activity : AppCompatActivity() {
 
     lateinit var bottomNav: BottomNavigationView
-    override fun onCreate(savedInstanceState: Bundle?) {/*
+    override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_total_cat_hours)
-
+/*
         val start: TextView = findViewById(R.id.tvStartDate1)
         val end: TextView = findViewById(R.id.tvEndDate1)
         val select: Button = findViewById(R.id.btnSelectHours)

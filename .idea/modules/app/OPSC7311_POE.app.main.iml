@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <module external.linked.project.id=":app:main" external.linked.project.path="$MODULE_DIR$/../../../OPSC7311POE/app" external.root.project.path="$MODULE_DIR$/../../../OPSC7311POE" external.system.id="GRADLE" external.system.module.type="sourceSet" type="JAVA_MODULE" version="4">
   <component name="FacetManager">
+    <facet external-system-id="GRADLE" type="android" name="Android">
+      <configuration>
+        <option name="SELECTED_BUILD_VARIANT" value="debug" />
+        <option name="ALLOW_USER_CONFIGURATION" value="false" />
+        <option name="MANIFEST_FILE_RELATIVE_PATH" value="/src/main/AndroidManifest.xml" />
+        <option name="RES_FOLDER_RELATIVE_PATH" value="/src/main/res" />
+        <option name="RES_FOLDERS_RELATIVE_PATH" value="file://$MODULE_DIR$/../../../OPSC7311POE/app/src/main/res;file://$MODULE_DIR$/../../../OPSC7311POE/app/src/debug/res;file://$MODULE_DIR$/../../../OPSC7311POE/app/build/generated/res/resValues/debug" />
+        <option name="TEST_RES_FOLDERS_RELATIVE_PATH" value="" />
+        <option name="ASSETS_FOLDER_RELATIVE_PATH" value="/src/main/assets" />
+      </configuration>
+    </facet>
     <facet external-system-id="GRADLE" type="kotlin-language" name="Kotlin">
       <configuration version="5" platform="JVM 1.8" allPlatforms="JVM [1.8]" useProjectSettings="false">
         <compilerSettings />
@@ -22,17 +33,6 @@
             <arrayArg name="pluginOptions" />
           </arrayArguments>
         </compilerArguments>
-      </configuration>
-    </facet>
-    <facet external-system-id="GRADLE" type="android" name="Android">
-      <configuration>
-        <option name="SELECTED_BUILD_VARIANT" value="debug" />
-        <option name="ALLOW_USER_CONFIGURATION" value="false" />
-        <option name="MANIFEST_FILE_RELATIVE_PATH" value="/src/main/AndroidManifest.xml" />
-        <option name="RES_FOLDER_RELATIVE_PATH" value="/src/main/res" />
-        <option name="RES_FOLDERS_RELATIVE_PATH" value="file://$MODULE_DIR$/../../../OPSC7311POE/app/src/main/res;file://$MODULE_DIR$/../../../OPSC7311POE/app/src/debug/res;file://$MODULE_DIR$/../../../OPSC7311POE/app/build/generated/res/resValues/debug" />
-        <option name="TEST_RES_FOLDERS_RELATIVE_PATH" value="" />
-        <option name="ASSETS_FOLDER_RELATIVE_PATH" value="/src/main/assets" />
       </configuration>
     </facet>
   </component>
@@ -141,10 +141,12 @@
     <orderEntry type="library" name="Gradle: com.google.firebase:firebase-firestore-ktx:25.0.0@aar" level="project" />
     <orderEntry type="library" name="Gradle: com.google.firebase:firebase-firestore:25.0.0@aar" level="project" />
     <orderEntry type="library" name="Gradle: com.google.firebase:protolite-well-known-types:18.0.0@aar" level="project" />
-    <orderEntry type="library" name="Gradle: com.google.firebase:firebase-appcheck-interop:17.0.0@aar" level="project" />
-    <orderEntry type="library" name="Gradle: com.google.android.gms:play-services-base:18.0.1@aar" level="project" />
-    <orderEntry type="library" name="Gradle: com.google.firebase:firebase-auth-interop:19.0.2@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.google.firebase:firebase-appcheck-interop:17.1.0@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.google.android.gms:play-services-base:18.1.0@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.google.firebase:firebase-auth-interop:20.0.0@aar" level="project" />
     <orderEntry type="library" name="Gradle: com.google.firebase:firebase-database-collection:18.0.1@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.google.firebase:firebase-database-ktx:21.0.0@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.google.firebase:firebase-database:21.0.0@aar" level="project" />
     <orderEntry type="library" name="Gradle: com.github.yukuku:ambilwarna:2.0.1@aar" level="project" />
     <orderEntry type="library" name="Gradle: com.jjoe64:graphview:4.2.2@aar" level="project" />
     <orderEntry type="library" name="Gradle: androidx.legacy:legacy-support-v4:1.0.0@aar" level="project" />

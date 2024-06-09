@@ -1,8 +1,8 @@
 <component name="libraryTable">
   <library name="Gradle: com.google.firebase:firebase-common-ktx:21.0.0@aar" external-system-id="GRADLE">
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-4/c444a0d4f698da1596125a99b8bd5ebc/transformed/jetified-firebase-common-ktx-21.0.0/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-4/c444a0d4f698da1596125a99b8bd5ebc/transformed/jetified-firebase-common-ktx-21.0.0/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/Downloads/OPSC7311POE/OPSC7311POE/gradle/wrapper/dists/gradle-8.7-all/caches/transforms-4/3d27ae79163cb7315a6aa3ee12c27bbe/transformed/jetified-firebase-common-ktx-21.0.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/Downloads/OPSC7311POE/OPSC7311POE/gradle/wrapper/dists/gradle-8.7-all/caches/transforms-4/3d27ae79163cb7315a6aa3ee12c27bbe/transformed/jetified-firebase-common-ktx-21.0.0/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

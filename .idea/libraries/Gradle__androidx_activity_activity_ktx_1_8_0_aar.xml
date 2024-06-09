@@ -1,9 +1,9 @@
 <component name="libraryTable">
   <library name="Gradle: androidx.activity:activity-ktx:1.8.0@aar" external-system-id="GRADLE">
     <CLASSES>
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-4/2443790bc81f939d7ddbd9364e31b605/transformed/jetified-activity-ktx-1.8.0/AndroidManifest.xml" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-4/2443790bc81f939d7ddbd9364e31b605/transformed/jetified-activity-ktx-1.8.0/res" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-4/2443790bc81f939d7ddbd9364e31b605/transformed/jetified-activity-ktx-1.8.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/Downloads/OPSC7311POE/OPSC7311POE/gradle/wrapper/dists/gradle-8.7-all/caches/transforms-4/aa6e4263d87861ad7d8e8090e70a7064/transformed/jetified-activity-ktx-1.8.0/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/Downloads/OPSC7311POE/OPSC7311POE/gradle/wrapper/dists/gradle-8.7-all/caches/transforms-4/aa6e4263d87861ad7d8e8090e70a7064/transformed/jetified-activity-ktx-1.8.0/res" />
+      <root url="jar://$USER_HOME$/Downloads/OPSC7311POE/OPSC7311POE/gradle/wrapper/dists/gradle-8.7-all/caches/transforms-4/aa6e4263d87861ad7d8e8090e70a7064/transformed/jetified-activity-ktx-1.8.0/jars/classes.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

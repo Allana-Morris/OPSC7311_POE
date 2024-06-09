@@ -1,12 +1,12 @@
 <component name="libraryTable">
   <library name="Gradle: androidx.drawerlayout:drawerlayout:1.1.1@aar" external-system-id="GRADLE">
     <ANNOTATIONS>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-4/46f18284a8d34825d52d14cc98825a81/transformed/drawerlayout-1.1.1/annotations.zip!/" />
+      <root url="jar://$USER_HOME$/Downloads/OPSC7311POE/OPSC7311POE/gradle/wrapper/dists/gradle-8.7-all/caches/transforms-4/b1f5627cbc7aae4f49de798dc0c15eb7/transformed/drawerlayout-1.1.1/annotations.zip!/" />
     </ANNOTATIONS>
     <CLASSES>
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-4/46f18284a8d34825d52d14cc98825a81/transformed/drawerlayout-1.1.1/res" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-4/46f18284a8d34825d52d14cc98825a81/transformed/drawerlayout-1.1.1/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-4/46f18284a8d34825d52d14cc98825a81/transformed/drawerlayout-1.1.1/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/Downloads/OPSC7311POE/OPSC7311POE/gradle/wrapper/dists/gradle-8.7-all/caches/transforms-4/b1f5627cbc7aae4f49de798dc0c15eb7/transformed/drawerlayout-1.1.1/res" />
+      <root url="file://$USER_HOME$/Downloads/OPSC7311POE/OPSC7311POE/gradle/wrapper/dists/gradle-8.7-all/caches/transforms-4/b1f5627cbc7aae4f49de798dc0c15eb7/transformed/drawerlayout-1.1.1/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/Downloads/OPSC7311POE/OPSC7311POE/gradle/wrapper/dists/gradle-8.7-all/caches/transforms-4/b1f5627cbc7aae4f49de798dc0c15eb7/transformed/drawerlayout-1.1.1/jars/classes.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

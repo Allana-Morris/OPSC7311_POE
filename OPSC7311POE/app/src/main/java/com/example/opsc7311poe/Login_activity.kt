@@ -14,10 +14,10 @@ import com.google.firebase.database.FirebaseDatabase
 import com.google.firebase.database.ValueEventListener
 
 class Login_activity : AppCompatActivity() {
-    val database: FirebaseDatabase =
+    private val database: FirebaseDatabase =
         FirebaseDatabase.getInstance("https://atomic-affinity-421915-default-rtdb.europe-west1.firebasedatabase.app/")
 
-    val DbRef = database.getReference("user")
+    private val DbRef = database.getReference("user")
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

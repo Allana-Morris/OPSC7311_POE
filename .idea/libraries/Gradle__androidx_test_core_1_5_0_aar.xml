@@ -1,9 +1,9 @@
 <component name="libraryTable">
   <library name="Gradle: androidx.test:core:1.5.0@aar" external-system-id="GRADLE">
     <CLASSES>
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-4/32cee3e30c6055add70d7e4463c9145f/transformed/jetified-core-1.5.0/AndroidManifest.xml" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-4/32cee3e30c6055add70d7e4463c9145f/transformed/jetified-core-1.5.0/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-4/32cee3e30c6055add70d7e4463c9145f/transformed/jetified-core-1.5.0/res" />
+      <root url="file://$USER_HOME$/Downloads/OPSC7311POE/OPSC7311POE/gradle/wrapper/dists/gradle-8.7-all/caches/transforms-4/b4495d97ad8f832834dd562d840157bb/transformed/jetified-core-1.5.0/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/Downloads/OPSC7311POE/OPSC7311POE/gradle/wrapper/dists/gradle-8.7-all/caches/transforms-4/b4495d97ad8f832834dd562d840157bb/transformed/jetified-core-1.5.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/Downloads/OPSC7311POE/OPSC7311POE/gradle/wrapper/dists/gradle-8.7-all/caches/transforms-4/b4495d97ad8f832834dd562d840157bb/transformed/jetified-core-1.5.0/res" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/androidx.test/core/1.5.0/50a7c88bc23efab4bed11093b47197d11ab3d5a0/core-1.5.0-javadoc.jar!/" />
