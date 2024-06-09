@@ -1,12 +1,12 @@
 <component name="libraryTable">
   <library name="Gradle: androidx.camera:camera-camera2:1.3.3@aar" external-system-id="GRADLE">
     <ANNOTATIONS>
-      <root url="jar://$USER_HOME$/Downloads/OPSC7311POE/OPSC7311POE/gradle/wrapper/dists/gradle-8.7-all/caches/transforms-4/bdb1d4dece5cd257d7a25e5d3a53fcfd/transformed/jetified-camera-camera2-1.3.3/annotations.zip!/" />
+      <root url="jar://$USER_HOME$/Downloads/OPSC7311POE/OPSC7311POE/gradle/wrapper/dists/gradle-8.7-all/caches/transforms-4/22556b3e918b30acc3226fe9bfb7d590/transformed/jetified-camera-camera2-1.3.3/annotations.zip!/" />
     </ANNOTATIONS>
     <CLASSES>
-      <root url="jar://$USER_HOME$/Downloads/OPSC7311POE/OPSC7311POE/gradle/wrapper/dists/gradle-8.7-all/caches/transforms-4/bdb1d4dece5cd257d7a25e5d3a53fcfd/transformed/jetified-camera-camera2-1.3.3/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/Downloads/OPSC7311POE/OPSC7311POE/gradle/wrapper/dists/gradle-8.7-all/caches/transforms-4/bdb1d4dece5cd257d7a25e5d3a53fcfd/transformed/jetified-camera-camera2-1.3.3/res" />
-      <root url="file://$USER_HOME$/Downloads/OPSC7311POE/OPSC7311POE/gradle/wrapper/dists/gradle-8.7-all/caches/transforms-4/bdb1d4dece5cd257d7a25e5d3a53fcfd/transformed/jetified-camera-camera2-1.3.3/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/Downloads/OPSC7311POE/OPSC7311POE/gradle/wrapper/dists/gradle-8.7-all/caches/transforms-4/22556b3e918b30acc3226fe9bfb7d590/transformed/jetified-camera-camera2-1.3.3/res" />
+      <root url="file://$USER_HOME$/Downloads/OPSC7311POE/OPSC7311POE/gradle/wrapper/dists/gradle-8.7-all/caches/transforms-4/22556b3e918b30acc3226fe9bfb7d590/transformed/jetified-camera-camera2-1.3.3/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/Downloads/OPSC7311POE/OPSC7311POE/gradle/wrapper/dists/gradle-8.7-all/caches/transforms-4/22556b3e918b30acc3226fe9bfb7d590/transformed/jetified-camera-camera2-1.3.3/jars/classes.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />
