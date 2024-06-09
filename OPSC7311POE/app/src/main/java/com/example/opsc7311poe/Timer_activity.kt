@@ -13,6 +13,10 @@ import android.widget.TextClock
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.google.android.material.bottomnavigation.BottomNavigationView
+import com.google.firebase.database.DataSnapshot
+import com.google.firebase.database.DatabaseError
+import com.google.firebase.database.FirebaseDatabase
+import com.google.firebase.database.ValueEventListener
 import java.sql.Time
 import java.util.*
 
@@ -28,7 +32,7 @@ class Timer_activity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_timer)
-/*
+
         edtTime = findViewById(R.id.edtClock)
         btnStart = findViewById(R.id.btnStart)
         btnStop = findViewById(R.id.btnStop)
@@ -39,23 +43,8 @@ class Timer_activity : AppCompatActivity() {
         val spinCat: Spinner = findViewById(R.id.spinCat)
         val spinTask: Spinner = findViewById(R.id.spinTask)
 
-        var startTime = Time(0, 0, 0);
-        var endTime = Time(0, 0, 0);
-
-        // Creating a fake category and task seeing as we have no way of inputting stuff n things
-        // val selectedCat = Category("Work", 1, 2, 4.0, 8.0)
-        // Adding the first category to the user category hashmap
-        //  SessionUser.currentUser?.categories?.put(selectedCat.name, selectedCat)
-
-        // Creating another fake category and task
-        // val fakeCat = Category("Work2", 1, 2, 4.0, 8.0)
-        // Adding the second category to the user category hashmap with a different key
-        //  SessionUser.currentUser?.categories?.put(fakeCat.name, fakeCat)
-
-        // Adding the task to the first category for the user
-        // val selectedTask = Task("Sex ", "Great cardio", true, 36.0, 36.0)
-        //selectedCat.tasks[selectedTask.name] = selectedTask
-
+        var startTime = Time(0, 0, 0)
+        var endTime = Time(0, 0, 0)
 
         bottomNav = findViewById(R.id.bottomNav) as BottomNavigationView
         bottomNav.selectedItemId = R.id.timer
@@ -87,162 +76,122 @@ class Timer_activity : AppCompatActivity() {
             }
         }
 
-
-        // Create a list to hold category names
-        val categoryList = mutableListOf<String>()
-        val taskList = mutableListOf<String>()
-
-        // Retrieve user's categories and populate the category list
-        SessionUser.currentUser?.categories?.forEach { (name, _) ->
-            categoryList.add(name)
-        }
+        // Initialize Firebase database reference
+        val database = FirebaseDatabase.getInstance("https://atomic-affinity-421915-default-rtdb.europe-west1.firebasedatabase.app/")
+        val currentUserRef = database.getReference("user").child(SessionUser.currentUser?.username ?: "")
 
         // Set up category spinner
-        if (categoryList.isEmpty()) {
-            spinCat.isEnabled = false
-            spinCat.adapter =
-                ArrayAdapter(this, android.R.layout.simple_spinner_item, listOf("No categories"))
-            spinTask.isEnabled = false
-            spinTask.adapter =
-                ArrayAdapter(this, android.R.layout.simple_spinner_item, listOf("No tasks"))
-            btnSave.isEnabled = false
-        } else {
-            spinCat.adapter = ArrayAdapter(this, android.R.layout.simple_spinner_item, categoryList)
-            spinCat.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
-                override fun onItemSelected(
-                    parent: AdapterView<*>?,
-                    view: View?,
-                    position: Int,
-                    id: Long,
-                ) {
-                    val selectedCategoryName = categoryList[position]
-                    val tasks =
-                        SessionUser.currentUser?.categories?.get(selectedCategoryName)?.tasks?.keys?.toList()
-                            ?: emptyList()
-
-                    spinTask.adapter =
-                        ArrayAdapter(this@Timer_activity, android.R.layout.simple_spinner_item, tasks)
-                    spinTask.isEnabled = tasks.isNotEmpty()
-                    btnSave.isEnabled = tasks.isNotEmpty()
+        currentUserRef.child("categories").addListenerForSingleValueEvent(object :
+            ValueEventListener {
+            override fun onDataChange(dataSnapshot: DataSnapshot) {
+                val categoryList = mutableListOf<String>()
+                for (categorySnapshot in dataSnapshot.children) {
+                    val categoryName = categorySnapshot.key
+                    categoryName?.let { categoryList.add(it) }
                 }
 
-                override fun onNothingSelected(parent: AdapterView<*>?) {
+                if (categoryList.isEmpty()) {
+                    spinCat.isEnabled = false
+                    spinCat.adapter = ArrayAdapter(this@Timer_activity, android.R.layout.simple_spinner_item, listOf("No categories"))
                     spinTask.isEnabled = false
-                    spinTask.adapter = ArrayAdapter<String>(
-                        this@Timer_activity,
-                        android.R.layout.simple_spinner_item,
-                        emptyList()
-                    )
+                    spinTask.adapter = ArrayAdapter(this@Timer_activity, android.R.layout.simple_spinner_item, listOf("No tasks"))
                     btnSave.isEnabled = false
+                } else {
+                    spinCat.adapter = ArrayAdapter(this@Timer_activity, android.R.layout.simple_spinner_item, categoryList)
+                    spinCat.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
+                        override fun onItemSelected(parent: AdapterView<*>?, view: View?, position: Int, id: Long) {
+                            val selectedCategoryName = categoryList[position]
+                            currentUserRef.child("categories").child(selectedCategoryName).child("tasks").addListenerForSingleValueEvent(object : ValueEventListener {
+                                override fun onDataChange(tasksSnapshot: DataSnapshot) {
+                                    val taskList = mutableListOf<String>()
+                                    for (taskSnapshot in tasksSnapshot.children) {
+                                        val taskName = taskSnapshot.key
+                                        taskName?.let { taskList.add(it) }
+                                    }
+
+                                    spinTask.adapter = ArrayAdapter(this@Timer_activity, android.R.layout.simple_spinner_item, taskList)
+                                    spinTask.isEnabled = taskList.isNotEmpty()
+                                    btnSave.isEnabled = taskList.isNotEmpty()
+                                }
+
+                                override fun onCancelled(databaseError: DatabaseError) {
+                                    // Handle error
+                                }
+                            })
+                        }
+
+                        override fun onNothingSelected(parent: AdapterView<*>?) {
+                            spinTask.isEnabled = false
+                            spinTask.adapter = ArrayAdapter<String>(this@Timer_activity, android.R.layout.simple_spinner_item, emptyList())
+                            btnSave.isEnabled = false
+                        }
+                    }
                 }
             }
-        }
+
+            override fun onCancelled(databaseError: DatabaseError) {
+                // Handle error
+            }
+        })
 
         btnSave.setOnClickListener {
             if (!isTimerRunning) {
                 val selectedTaskName = spinTask.selectedItem.toString()
-
-                // Get the selected category name
                 val selectedCategoryName = spinCat.selectedItem.toString()
+11
+                currentUserRef.child("categories").child(selectedCategoryName).child("tasks").child(selectedTaskName).child("recordings").addListenerForSingleValueEvent(object : ValueEventListener {
+                    override fun onDataChange(dataSnapshot: DataSnapshot) {
+                        // Your code to work with the selected task goes here
+                        val currentTimeMillis = System.currentTimeMillis()
+                        endTime = Time(currentTimeMillis)
+                        val currentDate = Date()
 
-                // Get the selected category from the user's hashmap
-                val selectedCategory =
-                    SessionUser.currentUser?.categories?.get(selectedCategoryName)
-
-                // If selectedCategory is not null and it contains the selected task
-                if (selectedCategory != null && selectedCategory.tasks.containsKey(selectedTaskName)) {
-                    val selectedTask = selectedCategory.tasks[selectedTaskName]
-
-                    // Your code to work with the selected task goes here
-                    if (selectedTask != null) {
-                        /*val timed = edtTime.text.toString()
-                        edtTime.setText("00:00:00")
-                        secondsElapsed = 0
-
-                        val parts = timed.split(":")
-                        val hours = parts[0].toInt()
-                        val minutes = parts[1].toInt()
-                        val seconds = parts[2].toInt()
-
-                        val time = Time(
-                            hours,
-                            minutes,
-                            seconds
-                        ) // Assuming Time is a custom class representing time*/
-
-                        val currentDate =
-                            Date() // Assuming you have already initialized currentDate
-
-
-                        // Calculate duration here if needed
                         val durationInMillis = endTime.time - startTime.time
-
-// Convert duration in milliseconds to seconds
                         val seconds = durationInMillis / 1000
-
-// Calculate hours, minutes, and seconds
                         val hours = seconds / 3600
                         val minutes = (seconds % 3600) / 60
                         val remainingSeconds = seconds % 60
+                        val duration = String.format("%02d:%02d:%02d", hours, minutes, remainingSeconds)
 
-// Format duration as "HH:MM:SS"
-                        val duration =
-                            String.format("%02d:%02d:%02d", hours, minutes, remainingSeconds)
-
-                        val rec = Recording(currentDate, startTime, endTime, duration, null)
-
-                        //adding a recording object to the list in the right task
-                        selectedTask.taskRecords.add(rec)
-
-                        for (recording in selectedTask.taskRecords) {
-                            if (recording.RecDate == currentDate) {
-                                Toast.makeText(
-                                    this,
-                                    "Recording duration: " + recording.Duration,
-                                    Toast.LENGTH_SHORT
-                                ).show()
-                            }
+                        val rec = Recording(currentDate.toString(), startTime.toString(), endTime.toString(), duration, null)
+                        val newRecordingRef = dataSnapshot.ref.child(currentDate.toString())
+                        newRecordingRef.setValue(rec).addOnSuccessListener {
+                            Toast.makeText(this@Timer_activity, "Recording saved successfully", Toast.LENGTH_SHORT).show()
+                        }.addOnFailureListener {
+                            Toast.makeText(this@Timer_activity, "Failed to save recording", Toast.LENGTH_SHORT).show()
                         }
-                    } else {
-                        Toast.makeText(this, "Selected task is null", Toast.LENGTH_SHORT).show()
                     }
-                } else {
-                    Toast.makeText(this, "Selected task or category is null", Toast.LENGTH_SHORT)
-                        .show()
-                }
+
+                    override fun onCancelled(databaseError: DatabaseError) {
+                        // Handle error
+                    }
+                })
             }
         }
 
-
-
         btnStart.setOnClickListener {
             if (!isTimerRunning) {
-                var currentTimeMillis = System.currentTimeMillis()
+                val currentTimeMillis = System.currentTimeMillis()
                 startTime = Time(currentTimeMillis)
                 startTimer()
             } else {
                 stopTimer()
-                var currentTimeMillis = System.currentTimeMillis()
+                val currentTimeMillis = System.currentTimeMillis()
                 endTime = Time(currentTimeMillis)
             }
         }
 
-        btnReset.setOnClickListener()
-        {
-            secondsElapsed = 0;
-            //for debug purposes display all the recordings for selected Task
-
-
+        btnReset.setOnClickListener {
+            secondsElapsed = 0
         }
 
         btnStop.setOnClickListener {
             if (secondsElapsed != 0) {
                 stopTimer()
-                var currentTimeMillis = System.currentTimeMillis()
+                val currentTimeMillis = System.currentTimeMillis()
                 endTime = Time(currentTimeMillis)
             }
         }
-
     }
 
     private val handler = Handler()
@@ -267,35 +216,6 @@ class Timer_activity : AppCompatActivity() {
     private fun stopTimer() {
         isTimerRunning = false
         btnStart.text = "Start"
-        handler.removeCallbacks(runnable)*/
+        handler.removeCallbacks(runnable)
     }
-
-
 }
-/* ya im killing my self
-⠀⣠⣅⡧⠤⠴⠶⠾⢿⣟⠃⠀⢉⣽⠛⠻⣯⡉⠀⢠⣿⣤⣤⣤⣿⣿⣷⣶⣶⣾⣿⣿⣧⣶⣾⣿⣿⣿⣿⣯⣴⣷⣾⣷⣬⣿⣷⡞⠉⠰⣿⠇
-⠀⠹⣿⣷⠖⢲⣶⣶⢿⣿⢃⣤⣌⣿⣦⡀⢼⣧⣾⣷⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⢟⣉⣹⣏⡉⠻⣿⣿⡆⠂⠐⠀
-⠀⠀⣾⣿⢿⡿⢠⡥⠀⠻⠋⠀⠙⢿⠂⢹⣾⠟⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⢏⡴⠋⠩⠘⠉⠙⠳⣄⠈⣿⡄⠀⢀
-⢠⣿⣿⠁⢸⣿⡟⠀⠀⠀⠀⠀⠀⢸⡇⣾⣧⣼⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠈⠀⠀⠀⠀⠀⠀⠀⠹⣆⢹⣷⠀⠾
-⠀⠀⠀⠀⠀⢻⡻⣄⠀⠀⠀⠀⢠⡟⣰⣿⣿⣿⠏⠙⠻⠿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠿⠿⣿⣛⢿⣟⣦⠀⠀⠀⠀⠀⠀⠀⠀⡿⢠⡿⠀⠀
-⠀⠁⠀⠀⠀⠀⢳⣍⠳⣤⣞⣰⠏⣿⣿⡟⠋⠀⠀⠀⠀⠀⠀⠈⠛⠉⠁⠀⠀⠀⠀⠀⠀⠀⠉⠻⣶⣿⣿⣯⡳⣄⣤⠀⠀⢀⡼⠁⣿⣧⡄⢀
-⠀⠀⠲⠀⠀⠀⠀⠙⠿⠿⣽⣥⣾⣿⠛⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡈⢻⣿⣿⣿⣮⡉⠳⣶⣋⣠⣾⣿⣿⡄⣸
-⠀⠀⠈⠁⠀⠀⠰⣶⣶⡾⠋⢡⣿⠟⠀⠠⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠑⠀⠹⠋⠻⢷⣿⣿⠟⣋⠙⣿⣯⣤⠋⣿
-⠈⠀⠊⠀⠀⠀⠀⠹⠋⠀⠀⣸⡏⣐⣤⣤⣤⣄⣀⠀⠀⠀⠀⠀⠀⠀⢀⣀⣀⣄⣀⣀⠀⠀⠀⠀⠀⠀⠀⠰⢖⡀⢹⣿⣷⡀⢼⣿⠟⣿⠀⠘
-⢀⣀⡀⠀⠀⠀⠀⠀⣰⡆⡀⣿⠙⠛⠋⠉⠙⠻⣿⠇⠀⠀⠀⠀⠀⢾⣿⠿⠛⠛⠛⠻⢿⡶⠀⠀⠀⠀⠀⠀⠀⠀⢸⣿⣿⣿⠺⡏⠀⣉⢠⣀
-⠘⣿⣿⡷⠂⠀⠀⠀⠈⠠⠀⣿⣦⠀⢀⣴⣿⣷⣮⣁⠀⠀⠀⠀⠀⠀⣠⣴⠶⢦⠶⡷⠀⠀⠀⠀⠀⠠⡄⠀⠀⡄⢸⣿⣿⣿⣾⣧⡀⣽⣾⣽
-⠀⠋⠁⠀⠀⢰⣷⣦⡀⠀⠀⣼⣿⢀⣼⣿⣿⠛⢻⣟⢻⡍⠉⢀⣴⣿⣿⣷⠞⢿⣟⢲⣿⣆⠀⠀⠀⠙⠻⣤⣼⣶⣻⣿⣿⣿⢿⣿⣿⠈⢻⣿
-⠀⠀⠀⠀⠀⠀⣿⣿⣿⠗⠀⢹⣧⠚⣿⣿⠻⣆⠈⠛⠿⡇⠀⢸⣿⣿⣿⣿⡄⠈⠛⠟⢋⣿⠀⠀⠀⠀⠀⢿⣿⣟⠻⣿⣿⣿⣾⣟⣿⣷⡄⢿
-⠀⠀⠀⠈⠀⠀⠛⠋⠁⠀⠀⢸⣿⣷⡜⣿⣶⣿⣷⣶⣾⠃⠀⠀⢿⣿⣿⣿⣿⣷⣶⣶⣿⡏⠀⠀⠀⠀⠀⢸⣿⣿⣆⣸⣿⣿⣷⡛⢻⣿⡇⠸
-⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⣿⣿⣷⠿⠿⣿⣿⣿⣿⣷⣶⣶⡄⠻⢿⣿⣿⡿⣿⣟⠋⠀⠀⠀⠀⢀⣤⠘⣿⣿⣿⣿⡟⣿⣿⣿⡇⣀⣴⡆
-⠀⠀⠀⠀⠀⠀⠀⠀⠈⠂⠀⢸⡿⠉⠀⠀⠀⡿⠿⣿⣿⣿⡿⠟⠃⠀⠀⠀⠀⠀⠀⠈⠳⡄⠀⠀⠠⡼⠃⠀⣿⣿⣿⢿⢤⠸⣿⣛⣇⣿⣿⠃
-⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡾⠁⠀⠀⠀⠀⠀⠀⠀⡏⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢹⡆⢀⠀⠀⠀⠀⣿⣿⣿⡏⣼⣦⢿⠉⣵⣿⣽⣆
-⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡇⠀⠀⠀⠀⠀⠀⠀⢈⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⠀⢸⡷⠀⠀⠀⢀⣴⢿⣿⣿⣷⣿⡟⢸⡟⠻⠟⠸⠟
-⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣷⠀⠀⠀⠀⠀⠀⠀⠀⢷⡀⢄⠀⠀⠀⠀⠀⠀⠀⢠⠏⠀⣸⣿⣠⣤⠶⠛⣻⡟⠀⠀⣿⣿⠀⣤⣗⠀⣤⢌⠀
-⠀⠀⠀⠀⠀⡀⠀⢀⡀⠀⠀⠈⠳⣄⡀⠀⠀⠀⠀⠀⠘⣯⡀⠀⣀⠀⠀⠀⠀⢀⣯⡴⢿⣿⣾⠿⢿⣤⢼⡿⠁⠀⠀⣼⣷⣦⠉⣿⠀⢛⡈⠀
-⠀⠀⠀⠀⠀⠛⠛⡂⠀⠁⠀⠀⠀⣈⣿⡟⠲⣖⠚⠉⣿⣽⣟⡓⠒⠶⣶⡶⠚⣻⣯⣤⣾⣿⡀⣠⡼⠟⠈⠀⠀⠀⣼⣏⣿⡟⠀⣿⠀⣼⡅⠠
-⠀⠀⠀⠀⡄⠀⠀⠈⠀⢠⣠⣶⣿⡟⣿⣷⠒⢹⣿⣿⣿⣿⣿⣿⣷⣾⣿⣿⣿⣿⢿⡏⢀⡨⠟⠉⠀⠀⡄⠀⢠⣴⣿⣿⣭⣇⠀⣿⣶⡿⢿⠿
-⠀⠀⠀⠀⠀⠀⠀⠆⠀⣾⣿⠿⣿⠿⣿⣟⣷⣴⡋⠉⠙⣿⣿⡿⠋⠉⢻⣿⣅⣠⣤⠟⠋⠁⠀⠀⠀⢰⡇⣠⣾⠋⠛⢿⣿⣿⣿⠟⠞⠁⠀⠀
-⡀⠀⠀⠀⠀⠀⠀⠀⢰⣿⡿⠀⠒⠀⣿⠿⠻⠈⠙⠛⢛⡛⠻⠿⠶⠶⠛⠛⠉⠉⠀⠀⠀⠀⠀⢲⡀⢈⣿⠋⠉⠀⣦⣦⢻⣿⡇⠀⠀⠀⠀⠀
-⢴⠃⠀⠀⠀⠀⠀⠀⣾⡃⠀⠀⠀⣴⣿⣷⣧⡐⠎⠛⠋⠉⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣤⣸⡷⠿⡿⠀⠀⠀⣿⣇⠘⢿⡇⠀⠀⠀⠀⠀
-⠀⠀⠀⠀⠀⢀⣴⣿⡿⠃⣄⣀⣼⣿⣿⣽⠟⠿⢶⣶⣶⣤⣤⣤⠤⣤⣦⣤⣤⣄⣀⣴⣶⣾⣿⣿⡇⠀⠀⠀⠀⠀⠉⠉⠀⣀⣗⠀⠀⠀⠀⢀*/
