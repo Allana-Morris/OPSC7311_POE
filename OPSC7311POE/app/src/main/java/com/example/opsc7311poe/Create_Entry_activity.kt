@@ -1,6 +1,6 @@
 package com.example.opsc7311poe
 
-
+import Recording
 import android.app.Activity
 import android.app.DatePickerDialog
 import android.app.TimePickerDialog
@@ -20,6 +20,7 @@ import androidx.activity.enableEdgeToEdge
 import androidx.activity.result.ActivityResultLauncher
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.AppCompatActivity
+import bitmapToBase64
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.google.firebase.database.DataSnapshot
 import com.google.firebase.database.DatabaseError
@@ -27,10 +28,7 @@ import com.google.firebase.database.FirebaseDatabase
 import com.google.firebase.database.ValueEventListener
 import java.sql.Time
 import java.text.SimpleDateFormat
-import java.time.Duration
-import java.time.LocalDate
 import java.time.LocalTime
-import java.time.format.DateTimeFormatter
 import java.util.Calendar
 import java.util.Date
 import java.util.Locale
@@ -40,6 +38,7 @@ class Create_Entry_activity : AppCompatActivity() {
     val categoryList = mutableListOf<String>()
     val taskList = mutableListOf<String>()
     private lateinit var resultLauncher: ActivityResultLauncher<Intent>
+    private var capturedImageBitmap: Bitmap? = null
     lateinit var bottomNav: BottomNavigationView
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -96,6 +95,7 @@ class Create_Entry_activity : AppCompatActivity() {
             if (result.resultCode == Activity.RESULT_OK) {
                 val data: Intent? = result.data
                 val imageBitmap = data?.extras?.get("data") as Bitmap?
+                capturedImageBitmap = imageBitmap
                 uploaded.setImageBitmap(imageBitmap)
             } else {
                 Toast.makeText(this@Create_Entry_activity, "Failed to capture image", Toast.LENGTH_SHORT).show()
@@ -237,55 +237,51 @@ class Create_Entry_activity : AppCompatActivity() {
             val selectedTaskName = spinTask.selectedItem.toString()
             val selectedCategoryName = spinCat.selectedItem.toString()
 
-            // Check if the selected category and task exist
             val currentUser = SessionUser.currentUser
             if (currentUser != null) {
-               // val selectedCategory = currentUser.categories[selectedCategoryName]
-                //if (selectedCategory != null && selectedCategory.tasks.containsKey(selectedTaskName)) {
-                 //   val selectedTask = selectedCategory.tasks[selectedTaskName]
+                val formatter = SimpleDateFormat("dd/MM/yyyy", Locale.getDefault())
+                val selectedDate: Date = formatter.parse(tvDate.text.toString())
+                val startTime = Time.valueOf(tvStart.text.toString() + ":00")
+                val endTime = Time.valueOf(tvEnd.text.toString() + ":00")
+                val selectedDateString = formatter.format(selectedDate)
 
-                  // if (selectedTask != null) {
-                        val formatter = SimpleDateFormat("dd/MM/yyyy", Locale.getDefault())
-                        val selectedDate: Date = formatter.parse(tvDate.text.toString())
-                        val startTime = Time.valueOf(tvStart.text.toString() + ":00")
-                        val endTime = Time.valueOf(tvEnd.text.toString() + ":00")
-                        val selectedDateString = formatter.format(selectedDate)
+                // Calculate duration
+                val durationInMillis = endTime.time - startTime.time
+                val seconds = durationInMillis / 1000
+                val hours = seconds / 3600
+                val minutes = (seconds % 3600) / 60
+                val remainingSeconds = seconds % 60
+                val duration = String.format("%02d:%02d:%02d", hours, minutes, remainingSeconds)
 
-                        // Calculate duration
-                        val durationInMillis = endTime.time - startTime.time
-                        val seconds = durationInMillis / 1000
-                        val hours = seconds / 3600
-                        val minutes = (seconds % 3600) / 60
-                        val remainingSeconds = seconds % 60
-                        val duration = String.format("%02d:%02d:%02d", hours, minutes, remainingSeconds)
+                // Convert Bitmap to Base64 string
+                val imageBase64 = capturedImageBitmap?.let { bitmapToBase64(it) }
 
-                        // Create recording object
-                        val recording = Recording(
-                            RecDate = selectedDateString,
-                            StartTime = startTime.toString(),
-                            EndTime = endTime.toString(),
-                            Duration = duration,
-                            image = null
-                        )
+                // Create recording object
+                val recording = Recording(
+                    RecDate = selectedDateString,
+                    StartTime = startTime.toString(),
+                    EndTime = endTime.toString(),
+                    Duration = duration,
+                    image = imageBase64.toString()
+                )
 
-                        // Generate a unique ID for the recording
-                        val recordingId = selectedDate.toString()
+                // Generate a unique ID for the recording
+                val recordingId = selectedDate.toString()
 
-                        // Save recording to database under the task node
-                        val recordingRef = currentUserRef
-                            .child("categories")
-                            .child(selectedCategoryName)
-                            .child("tasks")
-                            .child(selectedTaskName)
-                            .child("recordings")
-                            .child(recordingId)
+                // Save recording to database under the task node
+                val recordingRef = currentUserRef
+                    .child("categories")
+                    .child(selectedCategoryName)
+                    .child("tasks")
+                    .child(selectedTaskName)
+                    .child("recordings")
+                    .child(recordingId)
 
-                        recordingRef.setValue(recording).addOnSuccessListener {
-                            Toast.makeText(this, "Recording saved for task: $selectedTaskName", Toast.LENGTH_SHORT).show()
-                        }.addOnFailureListener {
-                            Toast.makeText(this, "Failed to save recording", Toast.LENGTH_SHORT).show()
-                        }
-
+                recordingRef.setValue(recording).addOnSuccessListener {
+                    Toast.makeText(this, "Recording saved for task: $selectedTaskName", Toast.LENGTH_SHORT).show()
+                }.addOnFailureListener {
+                    Toast.makeText(this, "Failed to save recording", Toast.LENGTH_SHORT).show()
+                }
             } else {
                 Toast.makeText(this, "Current user is null", Toast.LENGTH_SHORT).show()
             }

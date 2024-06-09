@@ -1,5 +1,7 @@
 package com.example.opsc7311poe
 
+import Recording
+
 //Object storing details about each task created by User
 class Task @JvmOverloads constructor(
     var name: String = "",
