@@ -49,9 +49,6 @@ public final class ActivityViewTimeSheetEntryBinding implements ViewBinding {
   public final TextView tvEndDate1;
 
   @NonNull
-  public final TextView tvSelectPeriod1;
-
-  @NonNull
   public final TextView tvStartDate1;
 
   @NonNull
@@ -64,8 +61,7 @@ public final class ActivityViewTimeSheetEntryBinding implements ViewBinding {
       @NonNull BottomNavigationView bottomNav, @NonNull Button btnSelectHours,
       @NonNull View chooseWeek, @NonNull ImageView imgWhiteArc, @NonNull LinearLayout linLayout,
       @NonNull ConstraintLayout mainTimeSheetUI, @NonNull ScrollView scrllView,
-      @NonNull TextView tvEndDate1, @NonNull TextView tvSelectPeriod1,
-      @NonNull TextView tvStartDate1, @NonNull TextView tvTimeHeading,
+      @NonNull TextView tvEndDate1, @NonNull TextView tvStartDate1, @NonNull TextView tvTimeHeading,
       @NonNull TextView tvTimeSheetEntrieOutputbox) {
     this.rootView = rootView;
     this.bottomNav = bottomNav;
@@ -76,7 +72,6 @@ public final class ActivityViewTimeSheetEntryBinding implements ViewBinding {
     this.mainTimeSheetUI = mainTimeSheetUI;
     this.scrllView = scrllView;
     this.tvEndDate1 = tvEndDate1;
-    this.tvSelectPeriod1 = tvSelectPeriod1;
     this.tvStartDate1 = tvStartDate1;
     this.tvTimeHeading = tvTimeHeading;
     this.tvTimeSheetEntrieOutputbox = tvTimeSheetEntrieOutputbox;
@@ -153,12 +148,6 @@ public final class ActivityViewTimeSheetEntryBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.tvSelectPeriod1;
-      TextView tvSelectPeriod1 = ViewBindings.findChildViewById(rootView, id);
-      if (tvSelectPeriod1 == null) {
-        break missingId;
-      }
-
       id = R.id.tvStartDate1;
       TextView tvStartDate1 = ViewBindings.findChildViewById(rootView, id);
       if (tvStartDate1 == null) {
@@ -179,7 +168,7 @@ public final class ActivityViewTimeSheetEntryBinding implements ViewBinding {
 
       return new ActivityViewTimeSheetEntryBinding((ConstraintLayout) rootView, bottomNav,
           btnSelectHours, chooseWeek, imgWhiteArc, linLayout, mainTimeSheetUI, scrllView,
-          tvEndDate1, tvSelectPeriod1, tvStartDate1, tvTimeHeading, tvTimeSheetEntrieOutputbox);
+          tvEndDate1, tvStartDate1, tvTimeHeading, tvTimeSheetEntrieOutputbox);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
