@@ -55,6 +55,10 @@
         <activity android:name=".ViewTimeSheetEntry_activity" />
         <activity android:name=".InsertData_activity" />
         <activity android:name=".ViewTasks_activity" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
     </application>
 
 </manifest>

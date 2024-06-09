@@ -52,7 +52,7 @@ public final class ActivityProfileBinding implements ViewBinding {
   public final ImageView imgWhiteBackground;
 
   @NonNull
-  public final ImageView ivGoogle;
+  public final ImageView ivProfPhoto;
 
   @NonNull
   public final ConstraintLayout main;
@@ -86,7 +86,7 @@ public final class ActivityProfileBinding implements ViewBinding {
       @NonNull EditText edtEmailEdit, @NonNull EditText edtFullNameEdit,
       @NonNull EditText edtPasswordEdit, @NonNull EditText edtUserNameEdit, @NonNull View empyViews,
       @NonNull ImageButton ibtnPhoto, @NonNull ImageView imgWhiteBackground,
-      @NonNull ImageView ivGoogle, @NonNull ConstraintLayout main,
+      @NonNull ImageView ivProfPhoto, @NonNull ConstraintLayout main,
       @NonNull TextView tvCustomiseProfile, @NonNull TextView tvEditusername,
       @NonNull TextView tvEmail, @NonNull TextView tvFullName, @NonNull TextView tvNewPhoto,
       @NonNull TextView tvProfilePhoto, @NonNull TextView tvSeePassword,
@@ -101,7 +101,7 @@ public final class ActivityProfileBinding implements ViewBinding {
     this.empyViews = empyViews;
     this.ibtnPhoto = ibtnPhoto;
     this.imgWhiteBackground = imgWhiteBackground;
-    this.ivGoogle = ivGoogle;
+    this.ivProfPhoto = ivProfPhoto;
     this.main = main;
     this.tvCustomiseProfile = tvCustomiseProfile;
     this.tvEditusername = tvEditusername;
@@ -194,9 +194,9 @@ public final class ActivityProfileBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.iv_Google;
-      ImageView ivGoogle = ViewBindings.findChildViewById(rootView, id);
-      if (ivGoogle == null) {
+      id = R.id.iv_ProfPhoto;
+      ImageView ivProfPhoto = ViewBindings.findChildViewById(rootView, id);
+      if (ivProfPhoto == null) {
         break missingId;
       }
 
@@ -252,7 +252,7 @@ public final class ActivityProfileBinding implements ViewBinding {
 
       return new ActivityProfileBinding((ConstraintLayout) rootView, bottomNav, btnSaveProfile,
           edtEmailEdit, edtFullNameEdit, edtPasswordEdit, edtUserNameEdit, empyViews, ibtnPhoto,
-          imgWhiteBackground, ivGoogle, main, tvCustomiseProfile, tvEditusername, tvEmail,
+          imgWhiteBackground, ivProfPhoto, main, tvCustomiseProfile, tvEditusername, tvEmail,
           tvFullName, tvNewPhoto, tvProfilePhoto, tvSeePassword, tvuserProfile);
     }
     String missingId = rootView.getResources().getResourceName(id);

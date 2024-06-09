@@ -1,5 +1,9 @@
 R_DEF: Internal format may change without notice
 local
+array com_google_android_gms_fonts_certs
+array com_google_android_gms_fonts_certs_dev
+array com_google_android_gms_fonts_certs_prod
+array preloaded_fonts
 color Red
 color black
 color blue
@@ -74,6 +78,8 @@ drawable uploadphoto
 drawable virtualdating
 drawable whitescreen
 drawable write
+font butcherman
+font metal_mania
 id barChart
 id bottomNav
 id btnCatHours
@@ -131,9 +137,9 @@ id imgTaskIcon
 id img_photoUp
 id img_whiteBackground
 id iv_Back
-id iv_Google
 id iv_Password
 id iv_Pick_Colour
+id iv_ProfPhoto
 id iv_Username
 id iv_colourPreview
 id linLayout
@@ -265,7 +271,6 @@ layout activity_view_graph_total_hours
 layout activity_view_tasks
 layout activity_view_time_sheet_entry
 layout dialog_icon_picker
-layout fragment_icon_picker
 layout item_icon
 layout item_select
 layout item_task

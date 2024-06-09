@@ -4,7 +4,17 @@
             "outputFile": "com.example.opsc7311poe.app-mergeDebugResources-3:/values-v24/values-v24.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\allan\\Downloads\\OPSC7311POE\\OPSC7311POE\\gradle\\wrapper\\dists\\gradle-8.7-all\\caches\\transforms-4\\f89b4bef4b8a6d3c6469543273a44678\\transformed\\material-1.11.0\\res\\values-v24\\values-v24.xml",
+                    "source": "C:\\Users\\allan\\Downloads\\OPSC7311POE\\OPSC7311POE\\gradle\\wrapper\\dists\\gradle-8.7-all\\caches\\transforms-4\\bf8ebeba7b923004cacde3acd120a501\\transformed\\appcompat-1.6.1\\res\\values-v24\\values-v24.xml",
+                    "from": {
+                        "startLines": "2,3",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,212",
+                        "endColumns": "156,134",
+                        "endOffsets": "207,342"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\allan\\Downloads\\OPSC7311POE\\OPSC7311POE\\gradle\\wrapper\\dists\\gradle-8.7-all\\caches\\transforms-4\\af472a6f9f670f197bcea431264ed633\\transformed\\material-1.11.0\\res\\values-v24\\values-v24.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,9,12,15",
                         "startColumns": "4,4,4,4,4,4,4,4",
@@ -23,7 +33,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\allan\\Downloads\\OPSC7311POE\\OPSC7311POE\\gradle\\wrapper\\dists\\gradle-8.7-all\\caches\\transforms-4\\aee05dbd04966ea0379bcea66d942911\\transformed\\media-1.0.0\\res\\values-v24\\values-v24.xml",
+                    "source": "C:\\Users\\allan\\Downloads\\OPSC7311POE\\OPSC7311POE\\gradle\\wrapper\\dists\\gradle-8.7-all\\caches\\transforms-4\\d93cf3f8044453d02957bc22bcab0438\\transformed\\media-1.0.0\\res\\values-v24\\values-v24.xml",
                     "from": {
                         "startLines": "2,3,4,5",
                         "startColumns": "4,4,4,4",
@@ -37,16 +47,6 @@
                         "startOffsets": "1547,1613,1674,1740",
                         "endColumns": "65,60,65,66",
                         "endOffsets": "1608,1669,1735,1802"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\allan\\Downloads\\OPSC7311POE\\OPSC7311POE\\gradle\\wrapper\\dists\\gradle-8.7-all\\caches\\transforms-4\\f958899bd8e9ed988a49e54307713ec9\\transformed\\appcompat-1.6.1\\res\\values-v24\\values-v24.xml",
-                    "from": {
-                        "startLines": "2,3",
-                        "startColumns": "4,4",
-                        "startOffsets": "55,212",
-                        "endColumns": "156,134",
-                        "endOffsets": "207,342"
                     }
                 }
             ]

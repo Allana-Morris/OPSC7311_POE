@@ -85,6 +85,10 @@ animator nav_default_enter_anim
 animator nav_default_exit_anim
 animator nav_default_pop_enter_anim
 animator nav_default_pop_exit_anim
+array com_google_android_gms_fonts_certs
+array com_google_android_gms_fonts_certs_dev
+array com_google_android_gms_fonts_certs_prod
+array preloaded_fonts
 attr SharedValue
 attr SharedValueId
 attr action
@@ -3261,6 +3265,8 @@ drawable uploadphoto
 drawable virtualdating
 drawable whitescreen
 drawable write
+font butcherman
+font metal_mania
 id ALT
 id BOTTOM_END
 id BOTTOM_START
@@ -3576,9 +3582,9 @@ id is_pooling_container_tag
 id italic
 id item_touch_helper_previous_elevation
 id iv_Back
-id iv_Google
 id iv_Password
 id iv_Pick_Colour
+id iv_ProfPhoto
 id iv_Username
 id iv_colourPreview
 id jumpToEnd
@@ -4125,7 +4131,6 @@ layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
 layout dialog_icon_picker
-layout fragment_icon_picker
 layout ime_base_split_test_activity
 layout ime_secondary_split_test_activity
 layout item_icon

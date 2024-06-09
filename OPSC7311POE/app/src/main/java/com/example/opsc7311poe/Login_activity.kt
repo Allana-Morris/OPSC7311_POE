@@ -52,13 +52,11 @@ class Login_activity : AppCompatActivity() {
                     if (authenticated) {
                         val intent = Intent(this, MainActivity::class.java)
                         startActivity(intent)
-                        Toast.makeText(this, "check2", Toast.LENGTH_SHORT)
-                            .show()
+
                     } else {
                         Toast.makeText(this, "Invalid username or password", Toast.LENGTH_SHORT)
                             .show()
-                        Toast.makeText(this, "check3", Toast.LENGTH_SHORT)
-                            .show()
+
                     }
                     Toast.makeText(this, authenticated.toString(), Toast.LENGTH_SHORT).show()
 
