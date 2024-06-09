@@ -31,8 +31,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/tvTask_name"
-            app:srcCompat="@drawable/baseline_cleaning_services_24" />
+            app:layout_constraintTop_toBottomOf="@id/tvTask_name" />
 
         <TextView
             android:id="@+id/tvTask_start_time"

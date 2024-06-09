@@ -137,7 +137,7 @@ class ViewTimeSheetEntry_activity : AppCompatActivity() {
             }
 
             // Validate if both start date and end date are selected
-            if (startDate.text.isBlank() || endDate.text.isBlank()) {
+            if (startDate.text.isBlank() || endDate.text.isBlank() ) {
                 // If either start date or end date is not selected, display an error message and return
                 Toast.makeText(this, "Please select both start date and end date", Toast.LENGTH_SHORT).show()
                 return@setOnClickListener
