@@ -21,6 +21,9 @@ public final class TaskListingBinding implements ViewBinding {
   private final CardView rootView;
 
   @NonNull
+  public final ImageView imgSheet;
+
+  @NonNull
   public final ImageView imgTaskIcon;
 
   @NonNull
@@ -38,10 +41,12 @@ public final class TaskListingBinding implements ViewBinding {
   @NonNull
   public final View view5;
 
-  private TaskListingBinding(@NonNull CardView rootView, @NonNull ImageView imgTaskIcon,
-      @NonNull TextView tvTaskDescription, @NonNull TextView tvTaskEndTime,
-      @NonNull TextView tvTaskName, @NonNull TextView tvTaskStartTime, @NonNull View view5) {
+  private TaskListingBinding(@NonNull CardView rootView, @NonNull ImageView imgSheet,
+      @NonNull ImageView imgTaskIcon, @NonNull TextView tvTaskDescription,
+      @NonNull TextView tvTaskEndTime, @NonNull TextView tvTaskName,
+      @NonNull TextView tvTaskStartTime, @NonNull View view5) {
     this.rootView = rootView;
+    this.imgSheet = imgSheet;
     this.imgTaskIcon = imgTaskIcon;
     this.tvTaskDescription = tvTaskDescription;
     this.tvTaskEndTime = tvTaskEndTime;
@@ -77,6 +82,12 @@ public final class TaskListingBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.imgSheet;
+      ImageView imgSheet = ViewBindings.findChildViewById(rootView, id);
+      if (imgSheet == null) {
+        break missingId;
+      }
+
       id = R.id.imgTaskIcon;
       ImageView imgTaskIcon = ViewBindings.findChildViewById(rootView, id);
       if (imgTaskIcon == null) {
@@ -113,7 +124,7 @@ public final class TaskListingBinding implements ViewBinding {
         break missingId;
       }
 
-      return new TaskListingBinding((CardView) rootView, imgTaskIcon, tvTaskDescription,
+      return new TaskListingBinding((CardView) rootView, imgSheet, imgTaskIcon, tvTaskDescription,
           tvTaskEndTime, tvTaskName, tvTaskStartTime, view5);
     }
     String missingId = rootView.getResources().getResourceName(id);

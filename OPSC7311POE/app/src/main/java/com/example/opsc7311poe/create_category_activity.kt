@@ -15,11 +15,17 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import androidx.recyclerview.widget.RecyclerView
 import com.google.android.material.bottomnavigation.BottomNavigationView
+import com.google.firebase.database.FirebaseDatabase
 import yuku.ambilwarna.AmbilWarnaDialog
 import yuku.ambilwarna.AmbilWarnaDialog.OnAmbilWarnaListener
 import java.time.LocalTime
 
 class create_category_activity : AppCompatActivity(), IconPickerDialogFragment.OnIconSelectedListener {
+    val database: FirebaseDatabase =
+        FirebaseDatabase.getInstance("https://atomic-affinity-421915-default-rtdb.europe-west1.firebasedatabase.app/")
+
+    val DbRef = database.getReference("user")
+
     private val vali = validation()
 
     @SuppressLint("MissingInflatedId")
@@ -81,20 +87,40 @@ class create_category_activity : AppCompatActivity(), IconPickerDialogFragment.O
             val cateName = catName.text.toString()
             val minHours = catMinHours.text.toString()
             val maxHours = catMaxHours.text.toString()
-
             if (validateGoals(minHours, maxHours)) {
                 val catMin = vali.parseTimeToHours(LocalTime.parse(minHours + ":00"))
                 val catMax = vali.parseTimeToHours(LocalTime.parse(maxHours + ":00"))
 
                 val cate = Category(cateName, catIcon, catColor, catMin, catMax)
-                SessionUser.currentUser?.categories?.set(cate.name, cate)
 
-                val intent = Intent(this, ViewTasks_activity::class.java)
-                startActivity(intent)
+                // Check the current user's username
+                val currentUsername = SessionUser.currentUser!!.username
+                // Make sure the username is correctly retrieved
+                if (currentUsername != null && currentUsername.isNotEmpty()) {
+                    // Access user's categories reference using username
+                    val userRef = DbRef.child(currentUsername).child("categories")
+
+                    // Add category data under categories node with category name as key
+                    userRef.child(cateName).setValue(cate).addOnSuccessListener {
+                        // Add an empty tasks node under the category
+                        userRef.child(cateName).child("tasks").setValue("").addOnSuccessListener {
+                            Toast.makeText(this, "Category and tasks node added successfully!", Toast.LENGTH_SHORT).show()
+                            val intent = Intent(this, ViewTasks_activity::class.java)
+                            startActivity(intent)
+                        }.addOnFailureListener {
+                            Toast.makeText(this, "Failed to add tasks node!", Toast.LENGTH_SHORT).show()
+                        }
+                    }.addOnFailureListener {
+                        Toast.makeText(this, "Failed to add category!", Toast.LENGTH_SHORT).show()
+                    }
+                } else {
+                    Toast.makeText(this, "Invalid username. Cannot add category.", Toast.LENGTH_SHORT).show()
+                }
             } else {
                 Toast.makeText(this, "Invalid goals. Please ensure the max goal is greater than the min goal.", Toast.LENGTH_SHORT).show()
             }
         }
+
 
         catMinHours.setOnClickListener {
             showTimePicker(catMinHours)

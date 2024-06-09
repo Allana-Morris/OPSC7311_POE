@@ -33,6 +33,8 @@
     <item name="tv_add_eventevent" type="id"/>
     <string name="CurrentTask">Current Tasks:</string>
     <string name="Email">Email</string>
+    <string name="Select">Select</string>
+    <string name="SelectPeriod">Select a time period</string>
     <string name="action_sign_in">Sign in or register</string>
     <string name="action_sign_in_short">Sign in</string>
     <string name="add">Add</string>
@@ -138,6 +140,7 @@
     <string name="view_timesheet">View Timesheet Entries</string>
     <string name="weeklyS">Weekly summary</string>
     <string name="welcome">"Welcome !"</string>
+    <string name="yourHugeText">Output Will be displayed here:</string>
     <style name="Base.Theme.OPSC7311POE" parent="Theme.AppCompat.Light.NoActionBar">
         
         

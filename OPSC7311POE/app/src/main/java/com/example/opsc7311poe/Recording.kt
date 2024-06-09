@@ -1,14 +1,18 @@
-package com.example.opsc7311poe
+import android.graphics.Bitmap
+import android.util.Base64
+import java.io.ByteArrayOutputStream
 
-import android.media.Image
-import java.sql.Time
-import java.util.Date
+fun bitmapToBase64(bitmap: Bitmap): String {
+    val byteArrayOutputStream = ByteArrayOutputStream()
+    bitmap.compress(Bitmap.CompressFormat.PNG, 100, byteArrayOutputStream)
+    val byteArray = byteArrayOutputStream.toByteArray()
+    return Base64.encodeToString(byteArray, Base64.DEFAULT)
+}
 
-//Object string date for Timer
-class Recording(
-    var RecDate: Date,
-    var StartTime: Time,
-    var EndTime: Time,
-    var Duration: String,
-    var image: Image?,
+data class Recording(
+    var RecDate: String? = null,
+    var StartTime: String? = null,
+    var EndTime: String? = null,
+    var Duration: String? = null,
+    var image: String? = null // Base64 encoded string
 )

@@ -32,7 +32,7 @@
             android:name=".create_category_activity"
             android:exported="false" />
         <activity
-            android:name=".ViewData"
+            android:name=".ViewTasks_activity"
             android:exported="false" />
         <activity
             android:name=".cat_total_activity"

@@ -23,9 +23,10 @@ class Login_activity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_login)
-        //Initialization of sign in components
-        var usernameTextView: TextView = findViewById(R.id.tv_Username)
-        var passwordTextView: TextView = findViewById(R.id.tv_Password)
+
+        //Initialization of sign-in components
+        val usernameTextView: TextView = findViewById(R.id.tv_Username)
+        val passwordTextView: TextView = findViewById(R.id.tv_Password)
         val buttonOpenActivity = findViewById<TextView>(R.id.tv_Open_Register)
         val buttonLogin = findViewById<Button>(R.id.btn_Login)
 
@@ -52,11 +53,13 @@ class Login_activity : AppCompatActivity() {
                     if (authenticated) {
                         val intent = Intent(this, MainActivity::class.java)
                         startActivity(intent)
-
+                        Toast.makeText(this, "check2", Toast.LENGTH_SHORT)
+                            .show()
                     } else {
                         Toast.makeText(this, "Invalid username or password", Toast.LENGTH_SHORT)
                             .show()
-
+                        Toast.makeText(this, "check3", Toast.LENGTH_SHORT)
+                            .show()
                     }
                     Toast.makeText(this, authenticated.toString(), Toast.LENGTH_SHORT).show()
 

@@ -133,8 +133,10 @@ id iconRecyclerView
 id idGraphView
 id imageView
 id imageView22
+id imgSheet
 id imgTaskIcon
 id img_photoUp
+id img_whiteArc
 id img_whiteBackground
 id iv_Back
 id iv_Password
@@ -280,6 +282,8 @@ mipmap ic_launcher
 mipmap ic_launcher_round
 string CurrentTask
 string Email
+string Select
+string SelectPeriod
 string action_sign_in
 string action_sign_in_short
 string add
@@ -385,6 +389,7 @@ string view_tasks
 string view_timesheet
 string weeklyS
 string welcome
+string yourHugeText
 style Base.Theme.OPSC7311POE
 style Theme.OPSC7311POE
 xml backup_rules
