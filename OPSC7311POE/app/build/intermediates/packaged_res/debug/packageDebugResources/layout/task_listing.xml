@@ -9,7 +9,7 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="111dp">
+        android:layout_height="115dp">
 
         <TextView
             android:id="@+id/tvTask_name"
@@ -54,7 +54,8 @@
             android:id="@+id/tvTask_description"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="4dp"
             android:text="desc"
             android:textColor="@color/black"
             app:layout_constraintStart_toStartOf="parent"
@@ -78,8 +79,8 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="4dp"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:srcCompat="@drawable/baseline_cleaning_services_24"
-            tools:layout_editor_absoluteX="0dp" />
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/baseline_cleaning_services_24" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
