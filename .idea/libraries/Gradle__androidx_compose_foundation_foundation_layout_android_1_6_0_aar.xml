@@ -1,13 +1,13 @@
 <component name="libraryTable">
   <library name="Gradle: androidx.compose.foundation:foundation-layout-android:1.6.0@aar" external-system-id="GRADLE">
     <CLASSES>
-      <root url="file://$USER_HOME$/Downloads/OPSC7311POE/OPSC7311POE/gradle/wrapper/dists/gradle-8.7-all/caches/transforms-4/828d22603281fc612af5d30a3bcf24b9/transformed/jetified-foundation-layout-release/res" />
-      <root url="jar://$USER_HOME$/Downloads/OPSC7311POE/OPSC7311POE/gradle/wrapper/dists/gradle-8.7-all/caches/transforms-4/828d22603281fc612af5d30a3bcf24b9/transformed/jetified-foundation-layout-release/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/Downloads/OPSC7311POE/OPSC7311POE/gradle/wrapper/dists/gradle-8.7-all/caches/transforms-4/828d22603281fc612af5d30a3bcf24b9/transformed/jetified-foundation-layout-release/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-4/828d22603281fc612af5d30a3bcf24b9/transformed/jetified-foundation-layout-release/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-4/828d22603281fc612af5d30a3bcf24b9/transformed/jetified-foundation-layout-release/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-4/828d22603281fc612af5d30a3bcf24b9/transformed/jetified-foundation-layout-release/jars/classes.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
-      <root url="jar://$PROJECT_DIR$/OPSC7311POE/.gradle/8.7/caches/modules-2/files-2.1/androidx.compose.foundation/foundation-layout-android/1.6.0/d7c6460aadb876c0399f1892d695617e731f1e47/foundation-layout-android-1.6.0-sources.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/androidx.compose.foundation/foundation-layout-android/1.6.0/d7c6460aadb876c0399f1892d695617e731f1e47/foundation-layout-android-1.6.0-sources.jar!/" />
     </SOURCES>
   </library>
 </component>
