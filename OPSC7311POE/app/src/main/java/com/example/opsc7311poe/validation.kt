@@ -1,9 +1,12 @@
 package com.example.opsc7311poe
 
 import java.time.LocalTime
+import com.google.firebase.database.DataSnapshot
+import com.google.firebase.database.DatabaseError
+import com.google.firebase.database.FirebaseDatabase
+import com.google.firebase.database.ValueEventListener
 
 class validation {
-
 
     //Checks in Input is equal to null or is empty
     fun checkStringNullOrEmpty(input: String?): Boolean {
@@ -15,16 +18,6 @@ class validation {
         return bFlag
     }
 
-    //Checks if User Email exists inside the List of already Registered User Details
-    fun checkExistingUserEmail(input: String?): Boolean {
-        return UserList.users.any { it.email == input }
-    }
-
-    //Checks if Username User has entered as already been selected by another User
-    fun checkExistingUserUserName(input: String?): Boolean {
-        return UserList.users.any { it.username == input }
-    }
-
     //Changes the Time input into a Double Format
     // eg. 3:30 becomes 3.5
     fun parseTimeToHours(enteredTime: LocalTime): Double {
@@ -34,5 +27,44 @@ class validation {
         return hours + minutes / 60.0
     }
 
+    fun isCategoryNameExists(categoryName: String, callback: (Boolean) -> Unit) {
+        val database = FirebaseDatabase.getInstance().reference.child("Categories")
+        database.orderByChild("name").equalTo(categoryName)
+            .addListenerForSingleValueEvent(object : ValueEventListener {
+                override fun onDataChange(snapshot: DataSnapshot) {
+                    callback(snapshot.exists())
+                }
+
+                override fun onCancelled(error: DatabaseError) {
+                    // Handle database error
+                    callback(false)
+                }
+            })
+    }
+
+    fun isTaskNameExists(categoryId: String, taskName: String, callback: (Boolean) -> Unit) {
+        val database = FirebaseDatabase.getInstance().reference.child("Categories").child(categoryId).child("tasks")
+        database.orderByChild("name").equalTo(taskName)
+            .addListenerForSingleValueEvent(object : ValueEventListener {
+                override fun onDataChange(snapshot: DataSnapshot) {
+                    callback(snapshot.exists())
+                }
+
+                override fun onCancelled(error: DatabaseError) {
+                    // Handle database error
+                    callback(false)
+                }
+            })
+    }
+
+     fun validateGoals(minHours: String, maxHours: String): Boolean {
+        return try {
+            val minTime = LocalTime.parse("$minHours:00")
+            val maxTime = LocalTime.parse("$maxHours:00")
+            minTime.isBefore(maxTime)
+        } catch (e: Exception) {
+            false
+        }
+    }
 
 }

@@ -1,49 +1,37 @@
 package com.example.opsc7311poe
-
 import android.annotation.SuppressLint
-import android.app.Dialog
-import android.app.TimePickerDialog
-import android.content.Context
 import android.content.Intent
 import android.os.Bundle
-import android.text.Editable
 import android.view.View
 import android.widget.*
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
-import androidx.recyclerview.widget.RecyclerView
-import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.google.firebase.database.FirebaseDatabase
+import com.google.android.material.bottomnavigation.BottomNavigationView
 import yuku.ambilwarna.AmbilWarnaDialog
-import yuku.ambilwarna.AmbilWarnaDialog.OnAmbilWarnaListener
 import java.time.LocalTime
 
 class create_category_activity : AppCompatActivity(), IconPickerDialogFragment.OnIconSelectedListener {
-    val database: FirebaseDatabase =
-        FirebaseDatabase.getInstance("https://atomic-affinity-421915-default-rtdb.europe-west1.firebasedatabase.app/")
-
-    val DbRef = database.getReference("user")
-
+    private val database: FirebaseDatabase = FirebaseDatabase.getInstance("https://atomic-affinity-421915-default-rtdb.europe-west1.firebasedatabase.app/")
+    private val DbRef = database.getReference("user")
     private val vali = validation()
-
-    @SuppressLint("MissingInflatedId")
     private var mDefaultColour = 0
+    private var catIcon = 0
     private lateinit var ivColourPicker: ImageView
     private lateinit var ivColourPreview: View
     private lateinit var backbutton: ImageView
-    private var catIcon = 0
     private lateinit var catMinHours: EditText
     private lateinit var catMaxHours: EditText
-    lateinit var bottomNav: BottomNavigationView
+    private lateinit var bottomNav: BottomNavigationView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_create_category)
 
-        bottomNav = findViewById(R.id.bottomNav) as BottomNavigationView
+        bottomNav = findViewById(R.id.bottomNav)
         // Clear selection by setting invalid item ID
         bottomNav.menu.setGroupCheckable(0, true, false) // Enable manual selection
         bottomNav.menu.findItem(R.id.home).isChecked = false
@@ -73,13 +61,11 @@ class create_category_activity : AppCompatActivity(), IconPickerDialogFragment.O
             }
         }
 
-        //back button
+        // Back button
         backbutton = findViewById(R.id.iv_Back)
         backbutton.setOnClickListener {
             startActivity(Intent(this, MainActivity::class.java))
-            true
         }
-
 
         // Initialize views after setContentView()
         ivColourPicker = findViewById(R.id.iv_Pick_Colour)
@@ -89,49 +75,59 @@ class create_category_activity : AppCompatActivity(), IconPickerDialogFragment.O
 
         val AddCategory = findViewById<TextView>(R.id.tvAddTask)
         val iconPicker: ImageButton = findViewById(R.id.ib_Icon)
+
         AddCategory.setOnClickListener {
             val catName: TextView = findViewById(R.id.edtName)
-            val catColor = mDefaultColour
-
             val cateName = catName.text.toString()
+            val catColor = mDefaultColour
             val minHours = catMinHours.text.toString()
             val maxHours = catMaxHours.text.toString()
-            if (validateGoals(minHours, maxHours)) {
-                val catMin = vali.parseTimeToHours(LocalTime.parse(minHours + ":00"))
-                val catMax = vali.parseTimeToHours(LocalTime.parse(maxHours + ":00"))
 
-                val cate = Category(cateName, catIcon, catColor, catMin, catMax)
+            if (vali.validateGoals(minHours, maxHours)) {
+                val catMin = vali.parseTimeToHours(LocalTime.parse("$minHours:00"))
+                val catMax = vali.parseTimeToHours(LocalTime.parse("$maxHours:00"))
 
-                // Check the current user's username
-                val currentUsername = SessionUser.currentUser!!.username
-                // Make sure the username is correctly retrieved
-                if (currentUsername != null && currentUsername.isNotEmpty()) {
-                    // Access user's categories reference using username
-                    val userRef = DbRef.child(currentUsername).child("categories")
+                vali.isCategoryNameExists(cateName) { exists ->
+                    if (exists) {
+                        Toast.makeText(this, "Category Already Exists", Toast.LENGTH_SHORT).show()
+                    } else {
+                        val cate = Category(cateName, catIcon, catColor, catMin, catMax)
 
-                    // Add category data under categories node with category name as key
-                    userRef.child(cateName).setValue(cate).addOnSuccessListener {
-                        // Add an empty tasks node under the category
-                        userRef.child(cateName).child("tasks").setValue("").addOnSuccessListener {
-                            Toast.makeText(this, "Category and tasks node added successfully!", Toast.LENGTH_SHORT).show()
-                            val intent = Intent(this, ViewTasks_activity::class.java)
-                            startActivity(intent)
-                        }.addOnFailureListener {
-                            Toast.makeText(this, "Failed to add tasks node!", Toast.LENGTH_SHORT).show()
+                        // Check the current user's username
+                        val currentUsername = SessionUser.currentUser?.username
+
+                        // Make sure the username is correctly retrieved
+                        if (!vali.checkStringNullOrEmpty(currentUsername)) {
+                            // Access user's categories reference using username
+                            val userRef = DbRef.child(currentUsername!!).child("categories")
+
+                            // Add category data under categories node with category name as key
+                            userRef.child(cateName).setValue(cate).addOnSuccessListener {
+                                // Add an empty tasks node under the category
+                                userRef.child(cateName).child("tasks").setValue("").addOnSuccessListener {
+                                    Toast.makeText(
+                                        this,
+                                        "Category and tasks node added successfully!",
+                                        Toast.LENGTH_SHORT
+                                    ).show()
+                                    val intent = Intent(this, ViewTasks_activity::class.java)
+                                    startActivity(intent)
+                                }.addOnFailureListener {
+                                    Toast.makeText(this, "Failed to add tasks node!", Toast.LENGTH_SHORT)
+                                        .show()
+                                }
+                            }.addOnFailureListener {
+                                Toast.makeText(this, "Failed to add category!", Toast.LENGTH_SHORT).show()
+                            }
+                        } else {
+                            Toast.makeText(this, "Invalid username. Cannot add category.", Toast.LENGTH_SHORT).show()
                         }
-                    }.addOnFailureListener {
-                        Toast.makeText(this, "Failed to add category!", Toast.LENGTH_SHORT).show()
                     }
-                } else {
-                    Toast.makeText(this, "Invalid username. Cannot add category.", Toast.LENGTH_SHORT).show()
                 }
             } else {
                 Toast.makeText(this, "Invalid goals. Please ensure the max goal is greater than the min goal.", Toast.LENGTH_SHORT).show()
             }
         }
-
-
-
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
@@ -155,7 +151,6 @@ class create_category_activity : AppCompatActivity(), IconPickerDialogFragment.O
                 R.drawable.virtualdating,
                 R.drawable.work,
                 R.drawable.food
-
                 // Add your icon resource IDs here
             )
             val dialog = IconPickerDialogFragment.newInstance(icons, this)
@@ -175,17 +170,9 @@ class create_category_activity : AppCompatActivity(), IconPickerDialogFragment.O
         }
     }
 
-    private fun validateGoals(minHours: String, maxHours: String): Boolean {
-        return try {
-            val minTime = LocalTime.parse(minHours + ":00")
-            val maxTime = LocalTime.parse(maxHours + ":00")
-            minTime.isBefore(maxTime)
-        } catch (e: Exception) {
-            false
-        }
-    }
 
-    fun openColorPickerDialogue() {
+
+    private fun openColorPickerDialogue() {
         val colorPickerDialogue = AmbilWarnaDialog(this, mDefaultColour, object :
             AmbilWarnaDialog.OnAmbilWarnaListener {
             override fun onCancel(dialog: AmbilWarnaDialog?) {}
