@@ -3068,7 +3068,6 @@ drawable ambilwarna_target
 drawable arc_1
 drawable avd_hide_password
 drawable avd_show_password
-drawable bag
 drawable bar
 drawable baseline_add_24
 drawable baseline_airplay_24
@@ -3088,6 +3087,7 @@ drawable baseline_ios_share_24
 drawable baseline_person_24
 drawable baseline_timer_24
 drawable bed
+drawable biphobia
 drawable blueskyback
 drawable border
 drawable bordertwo
@@ -3128,10 +3128,14 @@ drawable design_ic_visibility
 drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
+drawable drink
 drawable file
+drawable food
+drawable gaming
 drawable google
 drawable googleg_disabled_color_18
 drawable googleg_standard_color_18
+drawable gym
 drawable ic_arrow_back_black_24
 drawable ic_baseline_info_24
 drawable ic_baseline_person_outline_24
@@ -3159,7 +3163,6 @@ drawable ic_notifications_black_24dp
 drawable ic_search_black_24
 drawable icon
 drawable laptop
-drawable leaf
 drawable logo
 drawable m3_avd_hide_password
 drawable m3_avd_show_password
@@ -3233,6 +3236,7 @@ drawable notification_template_icon_bg
 drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
+drawable outdoors
 drawable pencilbtn
 drawable piechart
 drawable profilebtn
@@ -3241,19 +3245,19 @@ drawable rectangular_vignette_top
 drawable round_btn
 drawable roundstyle
 drawable roundstyle2
+drawable school
 drawable search
-drawable shopping
+drawable shoppingcart
 drawable skyblue
-drawable sport
 drawable taskicon
 drawable test_level_drawable
 drawable thumb
 drawable timer
-drawable tools
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
 drawable track
 drawable uploadphoto
+drawable virtualdating
 drawable whitescreen
 drawable work
 drawable write
@@ -4325,6 +4329,7 @@ string google_storage_bucket
 string hello_blank_fragment
 string hide_bottom_view_on_scroll_behavior
 string home
+string homeWelcomeBack
 string home_fragment
 string housecleaning
 string icon
@@ -4456,6 +4461,7 @@ string path_password_strike_through
 string pie
 string profile
 string profilePho
+string profilePrompt
 string profile_fragment
 string progress
 string project_id
@@ -4507,6 +4513,7 @@ string top_category
 string total_hours_recorded
 string uploadpic
 string username
+string viewGraphs
 string view_tasks
 string view_timesheet
 string weeklyS

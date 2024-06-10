@@ -7,6 +7,8 @@ import android.widget.ImageButton
 import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.view.ViewCompat
+import androidx.core.view.WindowInsetsCompat
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class Profile_activity : AppCompatActivity() {
@@ -14,6 +16,17 @@ class Profile_activity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_profile)
+
+        val greetingText: TextView = findViewById(R.id.tvuserProfile)
+        greetingText.setTextColor(resources.getColor(android.R.color.black))
+
+        val username2 = SessionUser.currentUser?.username
+        val helloMessage = getString(R.string.profilePrompt)
+        greetingText.text = if (username2 != null) {
+            "$helloMessage $username2"
+        } else {
+            "$helloMessage, guest"
+        }
 
         bottomNav = findViewById(R.id.bottomNav) as BottomNavigationView
         bottomNav.selectedItemId = R.id.profile
@@ -88,7 +101,10 @@ class Profile_activity : AppCompatActivity() {
         }
 
 
+
+
     }
+
 
     //Method to update Users data using captured inputs
     fun setContent() {
@@ -101,5 +117,7 @@ class Profile_activity : AppCompatActivity() {
         emailEdit.text = SessionUser.currentUser?.email
         userNameEdit.text = SessionUser.currentUser?.username
         PassEdit.text = SessionUser.currentUser?.password
+
+
     }
 }

@@ -65,6 +65,7 @@
     <string name="google_storage_bucket" translatable="false">atomic-affinity-421915.appspot.com</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="home">Home</string>
+    <string name="homeWelcomeBack">welcome back</string>
     <string name="home_fragment">Home fragment</string>
     <string name="housecleaning">housecleaning</string>
     <string name="icon">Icon</string>
@@ -81,6 +82,7 @@
     <string name="pie">Pie Chart</string>
     <string name="profile">Profile</string>
     <string name="profilePho">Upload a Profile Photo</string>
+    <string name="profilePrompt">Hello, </string>
     <string name="profile_fragment">Profile Fragment</string>
     <string name="progress">View your progress</string>
     <string name="project_id" translatable="false">atomic-affinity-421915</string>
@@ -117,6 +119,7 @@
     <string name="total_hours_recorded">Total Hours Recorded: </string>
     <string name="uploadpic">Upload New</string>
     <string name="username">Username</string>
+    <string name="viewGraphs">View graphs</string>
     <string name="view_tasks">View Tasks</string>
     <string name="view_timesheet">View Timesheet Entries</string>
     <string name="weeklyS">Weekly summary</string>

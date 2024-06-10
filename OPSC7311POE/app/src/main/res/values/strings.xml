@@ -92,6 +92,9 @@
     <string name="Select">Select</string>
     <string name="SelectPeriod">Select a time period</string>
     <string name="yourHugeText">Output Will be displayed here:</string>
+    <string name="homeWelcomeBack">welcome back</string>
+    <string name="profilePrompt">Hello, </string>
+    <string name="viewGraphs">View graphs</string>
 
 
     <!-- Monthly Summary Page Strings-->
@@ -106,5 +109,6 @@
     <string name="calendar_fragment">Calendar Fragment</string>
     <string name="home_fragment">Home fragment</string>
     <string name="choose_an_icon">Choose an Icon</string>
+
 
 </resources>

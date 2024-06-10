@@ -40,7 +40,9 @@
         android:layout_marginTop="25dp"
         android:background="@drawable/roundstyle"
         android:backgroundTint="@color/white"
-        android:text=""
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/profilePrompt"
+        android:textAlignment="center"
         android:textColor="@color/black"
         android:textSize="18sp"
         app:layout_constraintStart_toStartOf="parent"
@@ -252,6 +254,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_wrapBehaviorInParent="horizontal_only"
         app:menu="@menu/nav_menu" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
