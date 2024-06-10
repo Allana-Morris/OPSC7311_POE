@@ -60,6 +60,10 @@
         "source": "C:\\Users\\reill\\.gradle\\daemon\\8.7\\com.example.opsc7311poe.app-main-78:\\layout\\dialog_icon_picker.xml"
     },
     {
+        "merged": "com.example.opsc7311poe.app-mergeDebugResources-75:/layout/activity_main.xml",
+        "source": "com.example.opsc7311poe.app-main-78:/layout/activity_main.xml"
+    },
+    {
         "merged": "C:\\Users\\reill\\.gradle\\daemon\\8.7\\com.example.opsc7311poe.app-mergeDebugResources-75:\\layout\\activity_insert_task.xml",
         "source": "C:\\Users\\reill\\.gradle\\daemon\\8.7\\com.example.opsc7311poe.app-main-78:\\layout\\activity_insert_task.xml"
     },

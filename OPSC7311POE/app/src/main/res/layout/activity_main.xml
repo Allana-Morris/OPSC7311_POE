@@ -15,12 +15,14 @@
         android:layout_width="296dp"
         android:layout_height="87dp"
         android:layout_marginTop="32dp"
-        android:textColor="@android:color/white"
-
         android:background="@drawable/roundstyle"
+
         android:backgroundTint="@color/black"
+        android:fontFamily="@font/alegreya_sc_bold"
         android:gravity="center"
         android:text="@string/homeWelcomeBack"
+        android:textColor="@android:color/white"
+        android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.513"
         app:layout_constraintStart_toStartOf="parent"

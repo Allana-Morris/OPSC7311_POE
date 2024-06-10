@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\reill\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:2:1-56:12
-INJECTED from C:\Users\reill\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:2:1-56:12
-INJECTED from C:\Users\reill\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:2:1-56:12
-INJECTED from C:\Users\reill\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:2:1-56:12
+ADDED from C:\Users\reill\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:2:1-60:12
+INJECTED from C:\Users\reill\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:2:1-60:12
+INJECTED from C:\Users\reill\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:2:1-60:12
+INJECTED from C:\Users\reill\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:2:1-60:12
 MERGED from [androidx.databinding:viewbinding:8.4.0] C:\Users\reill\.gradle\caches\transforms-4\187c119412e972c066520eb8fd3d2bfe\transformed\jetified-viewbinding-8.4.0\AndroidManifest.xml:2:1-7:12
 MERGED from [com.google.firebase:firebase-firestore-ktx:25.0.0] C:\Users\reill\.gradle\caches\transforms-4\24dc0e318ccfe646dcf10dd96383587c\transformed\jetified-firebase-firestore-ktx-25.0.0\AndroidManifest.xml:2:1-18:12
 MERGED from [com.google.firebase:firebase-database-ktx:21.0.0] C:\Users\reill\.gradle\caches\transforms-4\ea67ed179e206a601c63d0a0c4a505bb\transformed\jetified-firebase-database-ktx-21.0.0\AndroidManifest.xml:2:1-18:12
@@ -130,8 +130,8 @@ MERGED from [com.google.firebase:protolite-well-known-types:18.0.0] C:\Users\rei
 	xmlns:android
 		ADDED from C:\Users\reill\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:2:11-69
 application
-ADDED from C:\Users\reill\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:5:5-54:19
-INJECTED from C:\Users\reill\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:5:5-54:19
+ADDED from C:\Users\reill\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:5:5-58:19
+INJECTED from C:\Users\reill\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:5:5-58:19
 MERGED from [com.google.firebase:firebase-firestore-ktx:25.0.0] C:\Users\reill\.gradle\caches\transforms-4\24dc0e318ccfe646dcf10dd96383587c\transformed\jetified-firebase-firestore-ktx-25.0.0\AndroidManifest.xml:8:5-16:19
 MERGED from [com.google.firebase:firebase-firestore-ktx:25.0.0] C:\Users\reill\.gradle\caches\transforms-4\24dc0e318ccfe646dcf10dd96383587c\transformed\jetified-firebase-firestore-ktx-25.0.0\AndroidManifest.xml:8:5-16:19
 MERGED from [com.google.firebase:firebase-database-ktx:21.0.0] C:\Users\reill\.gradle\caches\transforms-4\ea67ed179e206a601c63d0a0c4a505bb\transformed\jetified-firebase-database-ktx-21.0.0\AndroidManifest.xml:8:5-16:19
@@ -306,6 +306,12 @@ activity#com.example.opsc7311poe.InsertData_activity
 ADDED from C:\Users\reill\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:53:9-57
 	android:name
 		ADDED from C:\Users\reill\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:53:19-54
+meta-data#preloaded_fonts
+ADDED from C:\Users\reill\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:55:9-57:57
+	android:resource
+		ADDED from C:\Users\reill\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:57:13-54
+	android:name
+		ADDED from C:\Users\reill\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml:56:13-43
 uses-sdk
 INJECTED from C:\Users\reill\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\reill\AndroidStudioProjects\OPSC7311_POE\OPSC7311POE\app\src\main\AndroidManifest.xml
