@@ -3362,7 +3362,6 @@ id auto
 id autoComplete
 id autoCompleteToEnd
 id autoCompleteToStart
-id barChart
 id barrier
 id baseline
 id beginOnFirstDraw
@@ -3526,6 +3525,7 @@ id fullscreen_header
 id ghost_view
 id ghost_view_holder
 id gone
+id graf
 id graph
 id graph_wrap
 id group_divider

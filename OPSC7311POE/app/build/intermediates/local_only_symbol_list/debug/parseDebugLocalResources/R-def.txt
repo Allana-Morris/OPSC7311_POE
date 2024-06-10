@@ -72,7 +72,6 @@ drawable uploadphoto
 drawable whitescreen
 drawable work
 drawable write
-id barChart
 id bottomNav
 id btnCatHours
 id btnCategory
@@ -116,6 +115,7 @@ id edtUserNameEdit
 id empyViews
 id ett_Max_Goal
 id ett_Min_Goal
+id graf
 id home
 id ib_Icon
 id iconImageView

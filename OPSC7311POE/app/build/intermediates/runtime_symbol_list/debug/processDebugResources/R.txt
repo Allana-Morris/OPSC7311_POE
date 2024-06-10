@@ -3361,7 +3361,6 @@ int id auto 0x7f080065
 int id autoComplete 0x7f080066
 int id autoCompleteToEnd 0x7f080067
 int id autoCompleteToStart 0x7f080068
-int id barChart 0x7f080069
 int id barrier 0x7f08006a
 int id baseline 0x7f08006b
 int id beginOnFirstDraw 0x7f08006c
@@ -3525,6 +3524,7 @@ int id fullscreen_header 0x7f080109
 int id ghost_view 0x7f08010a
 int id ghost_view_holder 0x7f08010b
 int id gone 0x7f08010c
+int id graf 0x7f0802c5
 int id graph 0x7f08010d
 int id graph_wrap 0x7f08010e
 int id group_divider 0x7f08010f

@@ -96,16 +96,15 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.496" />
 
-    <com.github.mikephil.charting.charts.BarChart
-        android:id="@+id/barChart"
-        android:layout_width="415dp"
-        android:layout_height="392dp"
-        app:layout_constraintBottom_toBottomOf="@+id/chooseWeek"
+
+    <com.jjoe64.graphview.GraphView
+        android:id="@+id/graf"
+        android:layout_width="379dp"
+        android:layout_height="278dp"
+        android:layout_marginTop="8dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button"
-        app:layout_constraintVertical_bias="0.22"
-        tools:ignore="MissingClass" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottomNav"
