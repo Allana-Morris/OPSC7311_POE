@@ -4,13 +4,14 @@ package com.example.opsc7311poe.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ImageView;
-import android.widget.ListView;
 import android.widget.ScrollView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.constraintlayout.widget.ConstraintLayout;
+import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.example.opsc7311poe.R;
@@ -27,6 +28,9 @@ public final class ActivityTaskCalendarBinding implements ViewBinding {
   public final BottomNavigationView bottomNav;
 
   @NonNull
+  public final Button btnNewEvent;
+
+  @NonNull
   public final TextView dayOfWeekTV;
 
   @NonNull
@@ -39,16 +43,13 @@ public final class ActivityTaskCalendarBinding implements ViewBinding {
   public final ConstraintLayout linearLayout6;
 
   @NonNull
-  public final ListView listView;
-
-  @NonNull
   public final ConstraintLayout main;
 
   @NonNull
-  public final ScrollView scrollView2;
+  public final RecyclerView rvCalendar;
 
   @NonNull
-  public final TextView tvAddEvent;
+  public final ScrollView scrollView2;
 
   @NonNull
   public final TextView tvBack;
@@ -56,33 +57,24 @@ public final class ActivityTaskCalendarBinding implements ViewBinding {
   @NonNull
   public final TextView tvForward;
 
-  @NonNull
-  public final View vEvent;
-
-  @NonNull
-  public final View view;
-
   private ActivityTaskCalendarBinding(@NonNull ConstraintLayout rootView,
-      @NonNull BottomNavigationView bottomNav, @NonNull TextView dayOfWeekTV,
-      @NonNull ImageView imageView, @NonNull ConstraintLayout linearLayout3,
-      @NonNull ConstraintLayout linearLayout6, @NonNull ListView listView,
-      @NonNull ConstraintLayout main, @NonNull ScrollView scrollView2, @NonNull TextView tvAddEvent,
-      @NonNull TextView tvBack, @NonNull TextView tvForward, @NonNull View vEvent,
-      @NonNull View view) {
+      @NonNull BottomNavigationView bottomNav, @NonNull Button btnNewEvent,
+      @NonNull TextView dayOfWeekTV, @NonNull ImageView imageView,
+      @NonNull ConstraintLayout linearLayout3, @NonNull ConstraintLayout linearLayout6,
+      @NonNull ConstraintLayout main, @NonNull RecyclerView rvCalendar,
+      @NonNull ScrollView scrollView2, @NonNull TextView tvBack, @NonNull TextView tvForward) {
     this.rootView = rootView;
     this.bottomNav = bottomNav;
+    this.btnNewEvent = btnNewEvent;
     this.dayOfWeekTV = dayOfWeekTV;
     this.imageView = imageView;
     this.linearLayout3 = linearLayout3;
     this.linearLayout6 = linearLayout6;
-    this.listView = listView;
     this.main = main;
+    this.rvCalendar = rvCalendar;
     this.scrollView2 = scrollView2;
-    this.tvAddEvent = tvAddEvent;
     this.tvBack = tvBack;
     this.tvForward = tvForward;
-    this.vEvent = vEvent;
-    this.view = view;
   }
 
   @Override
@@ -118,6 +110,12 @@ public final class ActivityTaskCalendarBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.btnNewEvent;
+      Button btnNewEvent = ViewBindings.findChildViewById(rootView, id);
+      if (btnNewEvent == null) {
+        break missingId;
+      }
+
       id = R.id.dayOfWeekTV;
       TextView dayOfWeekTV = ViewBindings.findChildViewById(rootView, id);
       if (dayOfWeekTV == null) {
@@ -142,23 +140,17 @@ public final class ActivityTaskCalendarBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.listView;
-      ListView listView = ViewBindings.findChildViewById(rootView, id);
-      if (listView == null) {
+      ConstraintLayout main = (ConstraintLayout) rootView;
+
+      id = R.id.rvCalendar;
+      RecyclerView rvCalendar = ViewBindings.findChildViewById(rootView, id);
+      if (rvCalendar == null) {
         break missingId;
       }
-
-      ConstraintLayout main = (ConstraintLayout) rootView;
 
       id = R.id.scrollView2;
       ScrollView scrollView2 = ViewBindings.findChildViewById(rootView, id);
       if (scrollView2 == null) {
-        break missingId;
-      }
-
-      id = R.id.tv_add_event;
-      TextView tvAddEvent = ViewBindings.findChildViewById(rootView, id);
-      if (tvAddEvent == null) {
         break missingId;
       }
 
@@ -174,21 +166,9 @@ public final class ActivityTaskCalendarBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.v_Event;
-      View vEvent = ViewBindings.findChildViewById(rootView, id);
-      if (vEvent == null) {
-        break missingId;
-      }
-
-      id = R.id.view;
-      View view = ViewBindings.findChildViewById(rootView, id);
-      if (view == null) {
-        break missingId;
-      }
-
-      return new ActivityTaskCalendarBinding((ConstraintLayout) rootView, bottomNav, dayOfWeekTV,
-          imageView, linearLayout3, linearLayout6, listView, main, scrollView2, tvAddEvent, tvBack,
-          tvForward, vEvent, view);
+      return new ActivityTaskCalendarBinding((ConstraintLayout) rootView, bottomNav, btnNewEvent,
+          dayOfWeekTV, imageView, linearLayout3, linearLayout6, main, rvCalendar, scrollView2,
+          tvBack, tvForward);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

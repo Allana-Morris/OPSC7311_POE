@@ -1,21 +1,39 @@
 package com.example.opsc7311poe
 
+import android.R.attr
+import android.annotation.SuppressLint
 import android.content.Intent
+import android.graphics.Bitmap
 import android.os.Bundle
+import android.provider.MediaStore
 import android.widget.Button
 import android.widget.ImageButton
 import android.widget.TextView
 import android.widget.Toast
+import androidx.activity.result.ActivityResultLauncher
+import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.content.ContextCompat
+import androidx.core.view.ViewCompat
+import androidx.core.view.WindowInsetsCompat
 import com.google.android.material.bottomnavigation.BottomNavigationView
+
+
 
 class Profile_activity : AppCompatActivity() {
     lateinit var bottomNav: BottomNavigationView
+
+    //photo stuffs
+    private lateinit var ibtnPhotoChoose: ImageButton
+    private lateinit var resultLauncher: ActivityResultLauncher<Intent>
+
+    @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_profile)
 
-        bottomNav = findViewById(R.id.bottomNav) as BottomNavigationView
+
+        bottomNav = findViewById(R.id.bottomNav)!!
         bottomNav.selectedItemId = R.id.profile
         bottomNav.setOnItemSelectedListener {
             when (it.itemId) {
@@ -50,10 +68,16 @@ class Profile_activity : AppCompatActivity() {
         val emailEdit: TextView = findViewById(R.id.edtEmailEdit)
         val userNameEdit: TextView = findViewById(R.id.edtUserNameEdit)
         val PassEdit: TextView = findViewById(R.id.edtPasswordEdit)
+        ibtnPhotoChoose = findViewById(R.id.ibtnPhoto)
 
         val saveBut: Button = findViewById(R.id.btnSaveProfile)
 
         setContent()
+
+        ibtnPhotoChoose.setOnClickListener {
+            showImageSourceDialog()
+        }
+
 
         //onClickListener for Save Button
         saveBut.setOnClickListener {
@@ -86,20 +110,68 @@ class Profile_activity : AppCompatActivity() {
             }
             setContent()
         }
+        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main))
+        { v, insets ->
+            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
+            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
+            val headerText: TextView = findViewById(R.id.tvuserProfile)
+
+            headerText.setTextColor(ContextCompat.getColor(this, R.color.black))
+            headerText.text = SessionUser.currentUser?.fullName
+            insets
+        }
 
 
     }
 
     //Method to update Users data using captured inputs
-    fun setContent() {
+    private fun setContent() {
         val nameEdit: TextView = findViewById(R.id.edtFullNameEdit)
         val emailEdit: TextView = findViewById(R.id.edtEmailEdit)
         val userNameEdit: TextView = findViewById(R.id.edtUserNameEdit)
         val PassEdit: TextView = findViewById(R.id.edtPasswordEdit)
 
-        nameEdit.text = SessionUser.currentUser?.fullName
-        emailEdit.text = SessionUser.currentUser?.email
-        userNameEdit.text = SessionUser.currentUser?.username
-        PassEdit.text = SessionUser.currentUser?.password
+        nameEdit.hint = SessionUser.currentUser?.fullName
+        emailEdit.hint = SessionUser.currentUser?.email
+        userNameEdit.hint = SessionUser.currentUser?.username
+        PassEdit.hint = SessionUser.currentUser?.password
+    }
+
+
+    //Photo taking/upload bs
+
+    private fun showImageSourceDialog() {
+        val options = arrayOf("Upload Photo", "Take Photo")
+        AlertDialog.Builder(this)
+            .setTitle("Select Image")
+            .setItems(options) { _, which ->
+                when (which) {
+                    0 -> selectImage()
+                    1 -> selectImageFromCamera()
+                }
+            }
+            .show()
+    }
+
+    private fun selectImage() {
+        val intent = Intent(Intent.ACTION_PICK, MediaStore.Images.Media.EXTERNAL_CONTENT_URI)
+        resultLauncher.launch(intent)
+    }
+
+    private fun selectImageFromCamera() {
+        // Create an intent to capture an image
+        val takePictureIntent = Intent(MediaStore.ACTION_IMAGE_CAPTURE)
+
+        // Check if there's a camera app to handle the intent
+        if (takePictureIntent.resolveActivity(packageManager) != null) {
+            // Launch the camera app
+            resultLauncher.launch(takePictureIntent)
+        } else {
+            // If no camera app is available, display a toast or handle it in another way
+            Toast.makeText(this, "No camera app available", Toast.LENGTH_SHORT).show()
+        }
     }
 }
+
+
+

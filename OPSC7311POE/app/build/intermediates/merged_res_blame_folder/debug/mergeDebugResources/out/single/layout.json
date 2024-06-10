@@ -28,8 +28,8 @@
         "source": "com.example.opsc7311poe.app-main-7:/layout/task_listing.xml"
     },
     {
-        "merged": "com.example.opsc7311poe.app-mergeDebugResources-4:/layout/fragment_icon_picker.xml",
-        "source": "com.example.opsc7311poe.app-main-7:/layout/fragment_icon_picker.xml"
+        "merged": "com.example.opsc7311poe.app-mergeDebugResources-4:/layout/item_task.xml",
+        "source": "com.example.opsc7311poe.app-main-7:/layout/item_task.xml"
     },
     {
         "merged": "com.example.opsc7311poe.app-mergeDebugResources-4:/layout/activity_view_graph_total_hours.xml",
@@ -38,10 +38,6 @@
     {
         "merged": "com.example.opsc7311poe.app-mergeDebugResources-4:/layout/item_select.xml",
         "source": "com.example.opsc7311poe.app-main-7:/layout/item_select.xml"
-    },
-    {
-        "merged": "com.example.opsc7311poe.app-mergeDebugResources-4:/layout/activity_view_graphs.xml",
-        "source": "com.example.opsc7311poe.app-main-7:/layout/activity_view_graphs.xml"
     },
     {
         "merged": "com.example.opsc7311poe.app-mergeDebugResources-4:/layout/activity_monthly_summary.xml",

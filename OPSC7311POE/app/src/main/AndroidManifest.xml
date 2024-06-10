@@ -34,6 +34,9 @@
             android:name=".view_graphs_activity"
             android:exported="false" />
         <activity
+            android:name=".MonthlySummary"
+            android:exported="false" />
+        <activity
             android:name=".Timer_activity"
             android:exported="false" />
         <activity

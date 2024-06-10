@@ -18,8 +18,11 @@
 
         android:background="@drawable/roundstyle"
         android:backgroundTint="@color/black"
+        android:fontFamily="@font/metal_mania"
         android:gravity="center"
-        android:text=""
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.513"
         app:layout_constraintStart_toStartOf="parent"
