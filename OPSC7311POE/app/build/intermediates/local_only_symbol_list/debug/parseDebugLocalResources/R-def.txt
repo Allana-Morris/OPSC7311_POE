@@ -80,6 +80,7 @@ drawable virtualdating
 drawable whitescreen
 drawable work
 drawable write
+font alegreya_sc_bold
 font butcherman
 font metal_mania
 id bottomNav
@@ -311,6 +312,7 @@ string google_crash_reporting_api_key
 string google_storage_bucket
 string hello_blank_fragment
 string home
+string homeWelcomeBack
 string home_fragment
 string housecleaning
 string icon
@@ -328,6 +330,7 @@ string password
 string pie
 string profile
 string profilePho
+string profilePrompt
 string profile_fragment
 string progress
 string project_id

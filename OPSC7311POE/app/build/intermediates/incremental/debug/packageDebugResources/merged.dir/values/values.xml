@@ -15,6 +15,7 @@
         </item>
     </string-array>
     <array name="preloaded_fonts" translatable="false">
+        <item>@font/alegreya_sc_bold</item>
         <item>@font/butcherman</item>
         <item>@font/metal_mania</item>
     </array>
@@ -83,6 +84,7 @@
     <string name="google_storage_bucket" translatable="false">atomic-affinity-421915.appspot.com</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="home">Home</string>
+    <string name="homeWelcomeBack">Welcome back </string>
     <string name="home_fragment">Home fragment</string>
     <string name="housecleaning">housecleaning</string>
     <string name="icon">Icon</string>
@@ -100,6 +102,7 @@
     <string name="pie">Pie Chart</string>
     <string name="profile">Profile</string>
     <string name="profilePho">Upload a Profile Photo</string>
+    <string name="profilePrompt">\'s Profile</string>
     <string name="profile_fragment">Profile Fragment</string>
     <string name="progress">View your progress</string>
     <string name="project_id" translatable="false">atomic-affinity-421915</string>

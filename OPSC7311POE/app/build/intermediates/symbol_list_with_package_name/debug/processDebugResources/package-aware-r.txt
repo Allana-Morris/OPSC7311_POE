@@ -3267,6 +3267,7 @@ drawable virtualdating
 drawable whitescreen
 drawable work
 drawable write
+font alegreya_sc_bold
 font butcherman
 font metal_mania
 id ALT
@@ -4321,6 +4322,7 @@ string google_storage_bucket
 string hello_blank_fragment
 string hide_bottom_view_on_scroll_behavior
 string home
+string homeWelcomeBack
 string home_fragment
 string housecleaning
 string icon
@@ -4453,6 +4455,7 @@ string path_password_strike_through
 string pie
 string profile
 string profilePho
+string profilePrompt
 string profile_fragment
 string progress
 string project_id
