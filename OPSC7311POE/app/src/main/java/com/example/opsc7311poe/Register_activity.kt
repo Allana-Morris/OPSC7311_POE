@@ -37,26 +37,22 @@ class Register_activity : AppCompatActivity() {
 
             // Whole bunch of validation if statements
             if (Validate.checkStringNullOrEmpty(username.text.toString())) {
-                username.setText("Invalid input: Input cannot be blank")
-                username.setTextColor(Color.RED)
+                username.setHint("Invalid input: Input cannot be blank")
                 valid = false
             }
 
             if (Validate.checkStringNullOrEmpty(fullName.text.toString())) {
-                fullName.setText("Invalid input: Input cannot be blank")
-                fullName.setTextColor(Color.RED)
+                fullName.setHint("Invalid input: Input cannot be blank")
                 valid = false
             }
 
             if (Validate.checkStringNullOrEmpty(email.text.toString())) {
-                email.setText("Invalid input: Input cannot be blank")
-                email.setTextColor(Color.RED)
+                email.setHint("Invalid input: Input cannot be blank")
                 valid = false
             }
 
             if (Validate.checkStringNullOrEmpty(password.text.toString())) {
-                password.setText("Invalid input: Input cannot be blank")
-                password.setTextColor(Color.RED)
+                password.setHint("Invalid input: Input cannot be blank")
                 valid = false
             }
 
@@ -64,16 +60,14 @@ class Register_activity : AppCompatActivity() {
             if (valid) {
                 checkUserEmail(email.text.toString()) { emailExists ->
                     if (emailExists) {
-                        email.setText("Account already exists")
-                        email.setTextColor(Color.RED)
+                        email.setHint("Account already exists")
                         valid = false
                     }
 
                     if (valid) {
                         checkUserName(username.text.toString()) { usernameExists ->
                             if (usernameExists) {
-                                username.setText("Username is already in use, choose a different one")
-                                username.setTextColor(Color.RED)
+                                username.setHint("Username is already in use, choose a different one")
                                 valid = false
                             }
 

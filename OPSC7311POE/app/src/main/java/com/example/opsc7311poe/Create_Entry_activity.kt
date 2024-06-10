@@ -186,8 +186,6 @@ class Create_Entry_activity : AppCompatActivity() {
             datePickerDialog.show()
         }
 
-
-
         tvStart.setOnClickListener()
         {
             val calendar = Calendar.getInstance()
@@ -230,7 +228,6 @@ class Create_Entry_activity : AppCompatActivity() {
                 true
             )
             timePickerDialog.show()
-
         }
 
         btnSave.setOnClickListener {
@@ -286,9 +283,6 @@ class Create_Entry_activity : AppCompatActivity() {
                 Toast.makeText(this, "Current user is null", Toast.LENGTH_SHORT).show()
             }
         }
-
-
-
 
     }
     private fun selectImage() {

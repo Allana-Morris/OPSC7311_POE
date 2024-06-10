@@ -1,9 +1,9 @@
 <component name="libraryTable">
   <library name="Gradle: androidx.constraintlayout:constraintlayout:2.1.4@aar" external-system-id="GRADLE">
     <CLASSES>
-      <root url="file://$PROJECT_DIR$/OPSC7311POE/.gradle/8.7/caches/transforms-4/320ea4fdf9a213c531ffa8f2648173d6/transformed/constraintlayout-2.1.4/res" />
-      <root url="jar://$PROJECT_DIR$/OPSC7311POE/.gradle/8.7/caches/transforms-4/320ea4fdf9a213c531ffa8f2648173d6/transformed/constraintlayout-2.1.4/jars/classes.jar!/" />
-      <root url="file://$PROJECT_DIR$/OPSC7311POE/.gradle/8.7/caches/transforms-4/320ea4fdf9a213c531ffa8f2648173d6/transformed/constraintlayout-2.1.4/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/Downloads/OPSC7311POE/OPSC7311POE/gradle/wrapper/dists/gradle-8.7-all/caches/transforms-4/320ea4fdf9a213c531ffa8f2648173d6/transformed/constraintlayout-2.1.4/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/Downloads/OPSC7311POE/OPSC7311POE/gradle/wrapper/dists/gradle-8.7-all/caches/transforms-4/320ea4fdf9a213c531ffa8f2648173d6/transformed/constraintlayout-2.1.4/res" />
+      <root url="jar://$USER_HOME$/Downloads/OPSC7311POE/OPSC7311POE/gradle/wrapper/dists/gradle-8.7-all/caches/transforms-4/320ea4fdf9a213c531ffa8f2648173d6/transformed/constraintlayout-2.1.4/jars/classes.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
