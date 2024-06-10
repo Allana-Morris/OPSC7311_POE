@@ -2310,6 +2310,7 @@
     <string name="seeAll">See All></string>
     <string name="seePass">See Password</string>
     <string name="select">Select</string>
+    <string name="select_a_category">Select a Category:</string>
     <string name="select_date">Select date</string>
     <string name="select_end_date">Select End Date</string>
     <string name="selected">Selected</string>
