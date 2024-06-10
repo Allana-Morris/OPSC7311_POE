@@ -35,24 +35,30 @@ class Register_activity : AppCompatActivity() {
             val Validate = validation()
             var valid = true
 
+
+
             // Whole bunch of validation if statements
-            if (Validate.checkStringNullOrEmpty(username.text.toString())) {
-                username.setHint("Invalid input: Input cannot be blank")
+
+            // Username validation
+            if (Validate.checkStringNullOrEmpty(username.text.toString()) || !Validate.isValidUsername(username.text.toString())) {
+                username.error = "Username must be at least 5 characters"
                 valid = false
             }
-
+            //Full name doesn't need validation except for that it can't be null
             if (Validate.checkStringNullOrEmpty(fullName.text.toString())) {
-                fullName.setHint("Invalid input: Input cannot be blank")
+                fullName.setHint("Full Name field is required")
+                valid = false
+            }
+            //Email Validation. It must have a @ in the email
+            // Email validation
+            if (Validate.checkStringNullOrEmpty(email.text.toString()) || !Validate.isValidEmail(email.text.toString())) {
+                email.error = "Invalid email address, email must contain an (@) sign"
                 valid = false
             }
 
-            if (Validate.checkStringNullOrEmpty(email.text.toString())) {
-                email.setHint("Invalid input: Input cannot be blank")
-                valid = false
-            }
-
-            if (Validate.checkStringNullOrEmpty(password.text.toString())) {
-                password.setHint("Invalid input: Input cannot be blank")
+            // Password validation
+            if (Validate.checkStringNullOrEmpty(password.text.toString()) || !Validate.isValidPassword(password.text.toString())) {
+                password.error = "Password must be characters 8 minimum, include a number and a special character. eg.(#$%)"
                 valid = false
             }
 

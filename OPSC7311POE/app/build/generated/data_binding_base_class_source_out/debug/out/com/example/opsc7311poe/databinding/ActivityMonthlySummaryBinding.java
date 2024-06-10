@@ -7,7 +7,6 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.Spinner;
-import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.constraintlayout.widget.ConstraintLayout;
@@ -43,15 +42,12 @@ public final class ActivityMonthlySummaryBinding implements ViewBinding {
   public final ConstraintLayout main;
 
   @NonNull
-  public final TextView textView4;
-
-  @NonNull
   public final View vMonthlySummary;
 
   private ActivityMonthlySummaryBinding(@NonNull ConstraintLayout rootView,
       @NonNull BottomNavigationView bottomNav, @NonNull Button btnSummary,
       @NonNull Spinner catSpinSum, @NonNull GraphView idGraphView, @NonNull ImageView imageView,
-      @NonNull ConstraintLayout main, @NonNull TextView textView4, @NonNull View vMonthlySummary) {
+      @NonNull ConstraintLayout main, @NonNull View vMonthlySummary) {
     this.rootView = rootView;
     this.bottomNav = bottomNav;
     this.btnSummary = btnSummary;
@@ -59,7 +55,6 @@ public final class ActivityMonthlySummaryBinding implements ViewBinding {
     this.idGraphView = idGraphView;
     this.imageView = imageView;
     this.main = main;
-    this.textView4 = textView4;
     this.vMonthlySummary = vMonthlySummary;
   }
 
@@ -122,12 +117,6 @@ public final class ActivityMonthlySummaryBinding implements ViewBinding {
 
       ConstraintLayout main = (ConstraintLayout) rootView;
 
-      id = R.id.textView4;
-      TextView textView4 = ViewBindings.findChildViewById(rootView, id);
-      if (textView4 == null) {
-        break missingId;
-      }
-
       id = R.id.vMonthlySummary;
       View vMonthlySummary = ViewBindings.findChildViewById(rootView, id);
       if (vMonthlySummary == null) {
@@ -135,7 +124,7 @@ public final class ActivityMonthlySummaryBinding implements ViewBinding {
       }
 
       return new ActivityMonthlySummaryBinding((ConstraintLayout) rootView, bottomNav, btnSummary,
-          catSpinSum, idGraphView, imageView, main, textView4, vMonthlySummary);
+          catSpinSum, idGraphView, imageView, main, vMonthlySummary);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

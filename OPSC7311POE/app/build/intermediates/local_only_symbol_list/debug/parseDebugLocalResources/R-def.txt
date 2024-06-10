@@ -170,7 +170,6 @@ id textView2
 id textView3
 id textView32
 id textView34
-id textView4
 id textView5
 id textView99
 id textview1
@@ -343,7 +342,6 @@ string save2
 string seeAll
 string seePass
 string select
-string select_a_category
 string select_date
 string select_end_date
 string sign_in_to_lifetime

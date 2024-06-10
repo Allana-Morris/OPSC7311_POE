@@ -18,6 +18,26 @@ class validation {
         return bFlag
     }
 
+    //Method to valid a username. Username must be min 5 char
+    fun isValidUsername(username: String): Boolean {
+        return username.length >= 5
+    }
+    //Method to validate a password
+    fun isValidPassword(password: String): Boolean {
+        val passwordPattern = "^(?=.*[0-9])(?=.*[!@#\$%^&*()_+=<>?{}~-]).{8,}$"
+        return password.matches(passwordPattern.toRegex())
+    }
+    fun isValidEmail(email: String): Boolean {
+        if(email.contains("@"))
+        {
+            return true
+        }else
+        {
+            return false
+        }
+
+    }
+
     //Changes the Time input into a Double Format
     // eg. 3:30 becomes 3.5
     fun parseTimeToHours(enteredTime: LocalTime): Double {
