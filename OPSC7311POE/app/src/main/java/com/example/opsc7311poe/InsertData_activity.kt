@@ -152,10 +152,7 @@ class InsertData_activity : AppCompatActivity() {
             val endTime = findViewById<TextView>(R.id.edtEnd).text.toString().trim()
             val desc = findViewById<TextView>(R.id.edtDescription).text.toString().trim()
 
-            Vali.isTaskNameExists(selectedCategory, taskName) { exists ->
-                if (exists) {
-                    Toast.makeText(this, "Task Already Exists", Toast.LENGTH_SHORT).show()
-                } else {
+
                     if (selectedCategory == "No categories" || selectedCategory.isEmpty() || taskName.isEmpty() || startTime.isEmpty() || endTime.isEmpty()) {
                         Toast.makeText(
                             this@InsertData_activity,
@@ -228,8 +225,8 @@ class InsertData_activity : AppCompatActivity() {
             }
 
 
-        }
-    }
+
+
         private fun isValidTime(time: String): Boolean {
             // Regular expression to validate time format (HH:mm)
             val regex = Regex("^([01]\\d|2[0-3]):([0-5]\\d)$")
