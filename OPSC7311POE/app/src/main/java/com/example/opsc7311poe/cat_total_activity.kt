@@ -182,11 +182,7 @@ class cat_total_activity : AppCompatActivity() {
                             val duration =
                                 recordingSnapshot.child("duration").getValue()
 
-                           // val formattedRecordingDate = convertDateFormat(recordingDate.toString())
 
-                           //  recordingDateTime = SimpleDateFormat("dd/MM/yyyy", Locale.ENGLISH).parse(formattedRecordingDate)
-                         //   val startDateTime = SimpleDateFormat("dd/MM/yyyy", Locale.ENGLISH).parse(formattedStartDate)
-                        //    val endDateTime = SimpleDateFormat("dd/MM/yyyy", Locale.ENGLISH).parse(formattedEndDate)
                             Toast.makeText(this@cat_total_activity,
                                 "rec date" + parseDate(recordingDate), Toast.LENGTH_SHORT).show()
 
