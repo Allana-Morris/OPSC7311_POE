@@ -84,6 +84,7 @@ id btnSelectHours
 id btnSignUp
 id btnStart
 id btnStop
+id btnSummary
 id btnTask
 id btnTimesheet
 id btnViewEntries
@@ -93,6 +94,7 @@ id btn_Google_signin
 id btn_Login
 id button
 id calendar
+id catSpinSum
 id chooseWeek
 id chooseWeek1
 id constraintLayout

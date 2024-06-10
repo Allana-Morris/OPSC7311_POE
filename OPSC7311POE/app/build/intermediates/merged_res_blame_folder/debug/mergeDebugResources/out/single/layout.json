@@ -44,8 +44,8 @@
         "source": "C:\\Users\\Sven\\AndroidStudioProjects\\OPSC7311_POE\\OPSC7311POE\\.gradle\\8.7\\daemon\\8.7\\com.example.opsc7311poe.app-main-78:\\layout\\activity_create_category.xml"
     },
     {
-        "merged": "com.example.opsc7311poe.app-mergeDebugResources-75:/layout/activity_view_graph_total_hours.xml",
-        "source": "com.example.opsc7311poe.app-main-78:/layout/activity_view_graph_total_hours.xml"
+        "merged": "com.example.opsc7311poe.app-mergeDebugResources-75:/layout/activity_monthly_summary.xml",
+        "source": "com.example.opsc7311poe.app-main-78:/layout/activity_monthly_summary.xml"
     },
     {
         "merged": "C:\\Users\\Sven\\AndroidStudioProjects\\OPSC7311_POE\\OPSC7311POE\\.gradle\\8.7\\daemon\\8.7\\com.example.opsc7311poe.app-mergeDebugResources-75:\\layout\\activity_starting_page.xml",

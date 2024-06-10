@@ -3385,6 +3385,7 @@ id btnSelectHours
 id btnSignUp
 id btnStart
 id btnStop
+id btnSummary
 id btnTask
 id btnTimesheet
 id btnViewEntries
@@ -3400,6 +3401,7 @@ id callMeasure
 id cancel_action
 id cancel_button
 id carryVelocity
+id catSpinSum
 id center
 id centerCrop
 id centerInside

@@ -92,6 +92,10 @@
         "source": "C:\\Users\\Sven\\AndroidStudioProjects\\OPSC7311_POE\\OPSC7311POE\\.gradle\\8.7\\daemon\\8.7\\com.example.opsc7311poe.app-main-78:\\drawable\\leaf.png"
     },
     {
+        "merged": "com.example.opsc7311poe.app-debug-76:/layout_activity_monthly_summary.xml.flat",
+        "source": "com.example.opsc7311poe.app-main-78:/layout/activity_monthly_summary.xml"
+    },
+    {
         "merged": "C:\\Users\\Sven\\AndroidStudioProjects\\OPSC7311_POE\\OPSC7311POE\\.gradle\\8.7\\daemon\\8.7\\com.example.opsc7311poe.app-debug-76:\\drawable_baseline_auto_graph_24.xml.flat",
         "source": "C:\\Users\\Sven\\AndroidStudioProjects\\OPSC7311_POE\\OPSC7311POE\\.gradle\\8.7\\daemon\\8.7\\com.example.opsc7311poe.app-main-78:\\drawable\\baseline_auto_graph_24.xml"
     },
@@ -186,10 +190,6 @@
     {
         "merged": "C:\\Users\\Sven\\AndroidStudioProjects\\OPSC7311_POE\\OPSC7311POE\\.gradle\\8.7\\daemon\\8.7\\com.example.opsc7311poe.app-debug-76:\\drawable_ic_baseline_person_outline_24.xml.flat",
         "source": "C:\\Users\\Sven\\AndroidStudioProjects\\OPSC7311_POE\\OPSC7311POE\\.gradle\\8.7\\daemon\\8.7\\com.example.opsc7311poe.app-main-78:\\drawable\\ic_baseline_person_outline_24.xml"
-    },
-    {
-        "merged": "com.example.opsc7311poe.app-debug-76:/layout_activity_view_graph_total_hours.xml.flat",
-        "source": "com.example.opsc7311poe.app-main-78:/layout/activity_view_graph_total_hours.xml"
     },
     {
         "merged": "C:\\Users\\Sven\\AndroidStudioProjects\\OPSC7311_POE\\OPSC7311POE\\.gradle\\8.7\\daemon\\8.7\\com.example.opsc7311poe.app-debug-76:\\drawable_skyblue.jpg.flat",
