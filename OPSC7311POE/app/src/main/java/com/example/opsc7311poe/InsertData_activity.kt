@@ -224,6 +224,9 @@ class InsertData_activity : AppCompatActivity() {
                 }
 
     }
+
+
+
         private fun isValidTime(time: String): Boolean {
             // Regular expression to validate time format (HH:mm)
             val regex = Regex("^([01]\\d|2[0-3]):([0-5]\\d)$")
