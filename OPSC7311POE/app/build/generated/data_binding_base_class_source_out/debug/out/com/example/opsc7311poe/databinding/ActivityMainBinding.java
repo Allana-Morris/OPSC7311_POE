@@ -31,6 +31,9 @@ public final class ActivityMainBinding implements ViewBinding {
   public final Button btnCategory;
 
   @NonNull
+  public final Button btnMonthlySummary;
+
+  @NonNull
   public final Button btnTask;
 
   @NonNull
@@ -38,6 +41,9 @@ public final class ActivityMainBinding implements ViewBinding {
 
   @NonNull
   public final Button btnViewEntries;
+
+  @NonNull
+  public final Button btnViewGraph;
 
   @NonNull
   public final Button btnViewTasks;
@@ -53,17 +59,19 @@ public final class ActivityMainBinding implements ViewBinding {
 
   private ActivityMainBinding(@NonNull ConstraintLayout rootView,
       @NonNull BottomNavigationView bottomNav, @NonNull Button btnCatHours,
-      @NonNull Button btnCategory, @NonNull Button btnTask, @NonNull Button btnTimesheet,
-      @NonNull Button btnViewEntries, @NonNull Button btnViewTasks,
-      @NonNull ConstraintLayout constraintLayout, @NonNull ConstraintLayout main,
-      @NonNull TextView tvBlackBox) {
+      @NonNull Button btnCategory, @NonNull Button btnMonthlySummary, @NonNull Button btnTask,
+      @NonNull Button btnTimesheet, @NonNull Button btnViewEntries, @NonNull Button btnViewGraph,
+      @NonNull Button btnViewTasks, @NonNull ConstraintLayout constraintLayout,
+      @NonNull ConstraintLayout main, @NonNull TextView tvBlackBox) {
     this.rootView = rootView;
     this.bottomNav = bottomNav;
     this.btnCatHours = btnCatHours;
     this.btnCategory = btnCategory;
+    this.btnMonthlySummary = btnMonthlySummary;
     this.btnTask = btnTask;
     this.btnTimesheet = btnTimesheet;
     this.btnViewEntries = btnViewEntries;
+    this.btnViewGraph = btnViewGraph;
     this.btnViewTasks = btnViewTasks;
     this.constraintLayout = constraintLayout;
     this.main = main;
@@ -115,6 +123,12 @@ public final class ActivityMainBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.btnMonthlySummary;
+      Button btnMonthlySummary = ViewBindings.findChildViewById(rootView, id);
+      if (btnMonthlySummary == null) {
+        break missingId;
+      }
+
       id = R.id.btnTask;
       Button btnTask = ViewBindings.findChildViewById(rootView, id);
       if (btnTask == null) {
@@ -130,6 +144,12 @@ public final class ActivityMainBinding implements ViewBinding {
       id = R.id.btnViewEntries;
       Button btnViewEntries = ViewBindings.findChildViewById(rootView, id);
       if (btnViewEntries == null) {
+        break missingId;
+      }
+
+      id = R.id.btnViewGraph;
+      Button btnViewGraph = ViewBindings.findChildViewById(rootView, id);
+      if (btnViewGraph == null) {
         break missingId;
       }
 
@@ -154,8 +174,8 @@ public final class ActivityMainBinding implements ViewBinding {
       }
 
       return new ActivityMainBinding((ConstraintLayout) rootView, bottomNav, btnCatHours,
-          btnCategory, btnTask, btnTimesheet, btnViewEntries, btnViewTasks, constraintLayout, main,
-          tvBlackBox);
+          btnCategory, btnMonthlySummary, btnTask, btnTimesheet, btnViewEntries, btnViewGraph,
+          btnViewTasks, constraintLayout, main, tvBlackBox);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

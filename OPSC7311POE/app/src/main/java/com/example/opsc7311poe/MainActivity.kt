@@ -64,6 +64,8 @@ class MainActivity : AppCompatActivity() {
         val activityViewTask = findViewById<Button>(R.id.btnViewTasks)
         val activityViewEntries = findViewById<Button>(R.id.btnViewEntries)
         val activityCatHours = findViewById<Button>(R.id.btnCatHours)
+        val activityViewGraph = findViewById<Button>(R.id.btnViewGraph)
+        val activityMonthlySummary = findViewById<Button>(R.id.btnMonthlySummary)
 
         //onClickListener to open InsertData page
         activityCreateTask.setOnClickListener {
@@ -104,6 +106,24 @@ class MainActivity : AppCompatActivity() {
             startActivity(CatViewintent)
         }
 
+        activityCatHours.setOnClickListener{
+
+            val CatViewintent = Intent(this, cat_total_activity::class.java)
+            startActivity(CatViewintent)
+        }
+
+        activityViewGraph.setOnClickListener{
+
+            val ViewGraphintent = Intent(this, ViewGraphTotalHours::class.java)
+            startActivity(ViewGraphintent)
+        }
+
+        activityMonthlySummary.setOnClickListener{
+
+            val MonthlySummaryintent = Intent(this, MonthlySummary::class.java)
+            startActivity(MonthlySummaryintent)
+        }
+
         //Code used to Welcome User once logged in
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main))
         { v, insets ->
@@ -116,4 +136,4 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-    }
+}

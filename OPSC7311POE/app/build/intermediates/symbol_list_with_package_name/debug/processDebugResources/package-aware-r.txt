@@ -3378,6 +3378,7 @@ id bounceStart
 id btnCatHours
 id btnCategory
 id btnLogin
+id btnMonthlySummary
 id btnReset
 id btnSaveEntry
 id btnSaveProfile
@@ -3388,6 +3389,7 @@ id btnStop
 id btnTask
 id btnTimesheet
 id btnViewEntries
+id btnViewGraph
 id btnViewTasks
 id btn_Google_signin
 id btn_Login
