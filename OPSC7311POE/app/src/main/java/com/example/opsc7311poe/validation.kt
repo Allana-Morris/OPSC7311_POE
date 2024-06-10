@@ -27,8 +27,8 @@ class validation {
         return hours + minutes / 60.0
     }
 
-    fun isCategoryNameExists(categoryName: String, callback: (Boolean) -> Unit) {
-        val database = FirebaseDatabase.getInstance().reference.child("Categories")
+    fun isCategoryNameExists(userId: String, categoryName: String, callback: (Boolean) -> Unit) {
+        val database = FirebaseDatabase.getInstance().reference.child("user").child(userId).child("categories")
         database.orderByChild("name").equalTo(categoryName)
             .addListenerForSingleValueEvent(object : ValueEventListener {
                 override fun onDataChange(snapshot: DataSnapshot) {
@@ -42,8 +42,9 @@ class validation {
             })
     }
 
+
     fun isTaskNameExists(categoryId: String, taskName: String, callback: (Boolean) -> Unit) {
-        val database = FirebaseDatabase.getInstance().reference.child("Categories").child(categoryId).child("tasks")
+        val database = FirebaseDatabase.getInstance().reference.child("categories").child(categoryId).child("tasks")
         database.orderByChild("name").equalTo(taskName)
             .addListenerForSingleValueEvent(object : ValueEventListener {
                 override fun onDataChange(snapshot: DataSnapshot) {

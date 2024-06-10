@@ -87,10 +87,13 @@ class create_category_activity : AppCompatActivity(), IconPickerDialogFragment.O
                 val catMin = vali.parseTimeToHours(LocalTime.parse("$minHours:00"))
                 val catMax = vali.parseTimeToHours(LocalTime.parse("$maxHours:00"))
 
-                vali.isCategoryNameExists(cateName) { exists ->
+
+                vali.isCategoryNameExists(SessionUser.currentUser!!.username, cateName) { exists ->
                     if (exists) {
                         Toast.makeText(this, "Category Already Exists", Toast.LENGTH_SHORT).show()
                     } else {
+                        Toast.makeText(this, "check", Toast.LENGTH_SHORT).show()
+
                         val cate = Category(cateName, catIcon, catColor, catMin, catMax)
 
                         // Check the current user's username
