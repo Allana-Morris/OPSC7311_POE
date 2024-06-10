@@ -176,6 +176,8 @@ class ViewTimeSheetEntry_activity : AppCompatActivity() {
                                                         inflatedView.findViewById<TextView>(R.id.tvTask_description)
                                                     val imgCheet =
                                                         inflatedView.findViewById<ImageView>(R.id.imgSheet)
+                                                    val imgIcon =
+                                                        inflatedView.findViewById<ImageView>(R.id.imgTaskIcon)
 
                                                     taskNameTextView.text = task
                                                     taskDesc.text =
@@ -211,6 +213,8 @@ class ViewTimeSheetEntry_activity : AppCompatActivity() {
                                                     } else {
                                                         imgCheet.visibility = ImageView.GONE
                                                     }
+                                                    imgIcon.setImageResource(categorySnapshot.getValue(Category::class.java)!!.icon)
+
 
                                                     layout.addView(inflatedView)
                                                     layout.addView(recordingDateTextView)

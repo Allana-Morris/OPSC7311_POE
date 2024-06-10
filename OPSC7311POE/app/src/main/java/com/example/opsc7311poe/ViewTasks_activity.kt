@@ -117,12 +117,15 @@ class ViewTasks_activity : AppCompatActivity() {
                             val taskEnd = inflatedView.findViewById<TextView>(R.id.tvTask_end_time)
                             val taskDesc = inflatedView.findViewById<TextView>(R.id.tvTask_description)
                             val imgSheet = inflatedView.findViewById<ImageView>(R.id.imgSheet)
+                            val imgIcon = inflatedView.findViewById<ImageView>(R.id.imgTaskIcon)
 
                             taskNameTextView.text = it.name // Set the text to the task name dynamically
                             taskDesc.text = it.description
                             taskStart.text = it.startTime.toString()
                             taskEnd.text = it.endTime.toString()
                             imgSheet.visibility = ImageView.GONE
+
+                            imgIcon.setImageResource(categorySnapshot.getValue(Category::class.java)!!.icon)
 
                             layout.addView(inflatedView)
                         }
