@@ -3,6 +3,7 @@ package com.example.opsc7311poe
 import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
+import android.widget.Button
 import android.widget.ImageButton
 import android.widget.ListView
 import android.widget.TextView
@@ -10,6 +11,8 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.google.firebase.database.DataSnapshot
 import com.google.firebase.database.DatabaseError
@@ -22,7 +25,7 @@ import java.util.Calendar
 import java.util.Locale
 
 class TaskCalendar_activity : AppCompatActivity() {
-    lateinit var set_event: TextView
+    lateinit var set_event: Button
     lateinit var DateToday: TextView
     lateinit var backButton: TextView
     lateinit var forwardButton: TextView
@@ -30,10 +33,11 @@ class TaskCalendar_activity : AppCompatActivity() {
     var onScreenDate = datenow
     lateinit var bottomNav: BottomNavigationView
 
+    private lateinit var taskAdapter: TaskAdapter
     lateinit var  currentUserTasksRef: DatabaseReference
     private val tasks = mutableListOf<Task>()
-    private val dateFormat = SimpleDateFormat("dd MM", Locale.getDefault())
-    private var currentDate = Calendar.getInstance()
+    //private val dateFormat = SimpleDateFormat("dd MM", Locale.getDefault())
+    //private var currentDate = Calendar.getInstance()
     val database = FirebaseDatabase.getInstance()
     val reference = database.getReference("categories")
 
@@ -44,13 +48,17 @@ class TaskCalendar_activity : AppCompatActivity() {
 
 
         // Initialize views
-        set_event = findViewById<TextView>(R.id.tv_add_event)
-        DateToday = findViewById<TextView>(R.id.dayOfWeekTV)
-        backButton = findViewById<TextView>(R.id.tv_Back)
-        forwardButton = findViewById<TextView>(R.id.tv_Forward)
-        var taskListing = findViewById<ListView>(R.id.listView)
+        set_event = findViewById(R.id.btnNewEvent)
+        DateToday = findViewById(R.id.dayOfWeekTV)
+        backButton = findViewById(R.id.tv_Back)
+        forwardButton = findViewById(R.id.tv_Forward)
+        var taskListing = findViewById<RecyclerView>(R.id.rvCalendar)
         //Sets Textview to current Date
         DateToday.text = datenow.toString()
+
+        taskListing.layoutManager = LinearLayoutManager(this)
+        taskAdapter = TaskAdapter(tasks)
+        taskListing.adapter = taskAdapter
 
         //Opens Create Task page when clicked
         set_event.setOnClickListener {
@@ -128,10 +136,8 @@ class TaskCalendar_activity : AppCompatActivity() {
                         }
                     }
                 }
-                tasks.add(2, Task("Cellphone", "You used to call me on my", true, 12.0, 14.0))
                 taskAdapter.notifyDataSetChanged()
             }
-
             override fun onCancelled(databaseError: DatabaseError) {
                 Toast.makeText(
                     applicationContext,
