@@ -137,12 +137,22 @@ class MainActivity : AppCompatActivity() {
         { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
-            val headerText: TextView = findViewById(R.id.tvBlackBox)
 
-            headerText.text = "Welcome Back, " + SessionUser.currentUser?.username
+            val headerText: TextView = findViewById(R.id.tvBlackBox)
+            val username = SessionUser.currentUser?.username
+            val welcomeMessage = getString(R.string.homeWelcomeBack)
+            headerText.text = if (username != null) {
+                "$welcomeMessage $username"
+            } else {
+                "$welcomeMessage, guest"
+            }
+
+
+
             insets
 
         }
+
     }
 
 

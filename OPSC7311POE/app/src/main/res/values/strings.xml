@@ -92,6 +92,8 @@
     <string name="Select">Select</string>
     <string name="SelectPeriod">Select a time period</string>
     <string name="yourHugeText">Output Will be displayed here:</string>
+    <string name="homeWelcomeBack">Welcome back </string>
+    <string name="profilePrompt">\'s Profile</string>
 
 
     <!-- Monthly Summary Page Strings-->

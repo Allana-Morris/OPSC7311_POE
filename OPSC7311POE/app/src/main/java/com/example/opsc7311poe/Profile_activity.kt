@@ -32,6 +32,18 @@ class Profile_activity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_profile)
 
+        val greetingText: TextView = findViewById(R.id.tvuserProfile)
+        greetingText.setTextColor(resources.getColor(android.R.color.black))
+
+        val username2 = SessionUser.currentUser?.username
+        val helloMessage = getString(R.string.profilePrompt)
+        greetingText.text = if (username2 != null) {
+            "$username2$helloMessage"
+        } else {
+            "$helloMessage, guest"
+        }
+
+
 
         bottomNav = findViewById(R.id.bottomNav)!!
         bottomNav.selectedItemId = R.id.profile
