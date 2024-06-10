@@ -30,7 +30,6 @@ import java.util.*
 import kotlin.collections.ArrayList
 
 class ViewGraphTotalHours : AppCompatActivity() {
-
     private lateinit var editTextStartDate: EditText
     private lateinit var editTextEndDate: EditText
     private lateinit var buttonSelect: Button
@@ -40,18 +39,14 @@ class ViewGraphTotalHours : AppCompatActivity() {
     private val dateFormat = SimpleDateFormat("yyyy-MM-dd", Locale.US)
     lateinit var bottomNav: BottomNavigationView
     var dataSet = LineGraphSeries<DataPoint>()
-
     private lateinit var database: FirebaseDatabase
     private lateinit var currentUserRef: DatabaseReference
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_view_graph_total_hours) // Make sure this matches your layout file
-
         database =
             FirebaseDatabase.getInstance("https://atomic-affinity-421915-default-rtdb.europe-west1.firebasedatabase.app/")
         currentUserRef = database.getReference("user").child(SessionUser.currentUser!!.username)
-
         bottomNav = findViewById(R.id.bottomNav) as BottomNavigationView
         // Clear selection by setting invalid item ID
         bottomNav.menu.setGroupCheckable(0, true, false) // Enable manual selection
@@ -66,30 +61,23 @@ class ViewGraphTotalHours : AppCompatActivity() {
                     startActivity(Intent(this, MainActivity::class.java))
                     true
                 }
-
                 R.id.profile -> {
                     startActivity(Intent(this, Profile_activity::class.java))
                     true
                 }
-
                 R.id.calendar -> {
                     startActivity(Intent(this, TaskCalendar_activity::class.java))
                     true
                 }
-
                 R.id.timer -> {
                     startActivity(Intent(this, Timer_activity::class.java))
                     true
                 }
-
                 else -> {
                     false
                 }
             }
         }
-
-
-
         editTextStartDate = findViewById(R.id.editTextDate)
         editTextEndDate = findViewById(R.id.editTextDate2)
         buttonSelect = findViewById(R.id.button)
@@ -100,7 +88,6 @@ class ViewGraphTotalHours : AppCompatActivity() {
             val year = calendar.get(Calendar.YEAR)
             val month = calendar.get(Calendar.MONTH)
             val dayOfMonth = calendar.get(Calendar.DAY_OF_MONTH)
-
             // Create a date picker dialog
             val datePickerDialog = DatePickerDialog(
                 this,
@@ -119,7 +106,6 @@ class ViewGraphTotalHours : AppCompatActivity() {
             )
             datePickerDialog.show()
         }
-
         editTextEndDate.setOnClickListener {
             val calendar = Calendar.getInstance()
             val year = calendar.get(Calendar.YEAR)
@@ -144,19 +130,16 @@ class ViewGraphTotalHours : AppCompatActivity() {
             )
             datePickerDialog.show()
         }
-
         buttonSelect.setOnClickListener {
             startDate = editTextStartDate.text.toString().let { parseDate(it) }
             endDate = editTextEndDate.text.toString().let { parseDate(it) }
             if (startDate != null && endDate != null) {
-
+                dataSet = LineGraphSeries<DataPoint>()
                 updateChart()
             }
         }
     }
     private fun updateChart() {
-
-
         var calStart = Calendar.getInstance()
         calStart.time = startDate
 
@@ -164,15 +147,15 @@ class ViewGraphTotalHours : AppCompatActivity() {
         calEnd.time = endDate
 
 
-var i = 0;
+        var i = 0;
         var entryCheck : Double = 0.0
         while (calStart.time != calEnd.time)
         {
             getTasksBetweenDates(calStart.time, calEnd.time, i.toDouble())
-             //   Toast.makeText(this,"first " + entryCheck.toString() , Toast.LENGTH_SHORT).show()
+            //   Toast.makeText(this,"first " + entryCheck.toString() , Toast.LENGTH_SHORT).show()
 
-                calStart.add(Calendar.DATE, 1)
-                i++
+            calStart.add(Calendar.DATE, 1)
+            i++
         }
 
         lineChart.animate()
@@ -196,14 +179,12 @@ var i = 0;
         // data series to our graph view.
         lineChart.addSeries(dataSet)
     }
-
     private fun getTasksBetweenDates(
         startDate: Date?,
         endDate: Date?,
         i: Double
     ){
         var totalHours = 0.0
-
         currentUserRef.addListenerForSingleValueEvent(object : ValueEventListener {
             override fun onDataChange(snapshot: DataSnapshot) {
 
@@ -226,19 +207,13 @@ var i = 0;
                         }
                     }
                 }
-
                 add(i, totalHours)
-
-
             }
-
             override fun onCancelled(error: DatabaseError) {
                 // Handle error
             }
         })
-
     }
-
     private fun parseDurationToHours(duration: String): Double {
         val parts = duration.split(":").map { it.toInt() }
         val hours = parts[0]
@@ -246,29 +221,26 @@ var i = 0;
         val seconds = parts[2]
         return hours + minutes / 60.0 + seconds / 3600.0
     }
-        private fun parseDate(dateString: String?): Date? {
-            val dateFormats = arrayOf(
-                SimpleDateFormat("dd/MM/yyyy", Locale.getDefault()),
-                SimpleDateFormat(
-                    "EEE MMM dd HH:mm:ss z yyyy",
-                    Locale.ENGLISH
-                ) // Format for "Sun Jun 09 19:59:44 GMT+02:00 2024"
-            )
+    private fun parseDate(dateString: String?): Date? {
+        val dateFormats = arrayOf(
+            SimpleDateFormat("dd/MM/yyyy", Locale.getDefault()),
+            SimpleDateFormat(
+                "EEE MMM dd HH:mm:ss z yyyy",
+                Locale.ENGLISH
+            ) // Format for "Sun Jun 09 19:59:44 GMT+02:00 2024"
+        )
 
-            for (format in dateFormats) {
-                try {
-                    return format.parse(dateString)
-                } catch (e: ParseException) {
-                    // Try the next format
-                }
+        for (format in dateFormats) {
+            try {
+                return format.parse(dateString)
+            } catch (e: ParseException) {
+                // Try the next format
             }
-            return null
         }
-
+        return null
+    }
     private fun add(i: Double, entryCheck: Double)
     {
-        dataSet.appendData(DataPoint((i), entryCheck), true, 100000)
+        dataSet.appendData(DataPoint((i.toDouble()), entryCheck), true, 100000)
     }
-
-
 }
