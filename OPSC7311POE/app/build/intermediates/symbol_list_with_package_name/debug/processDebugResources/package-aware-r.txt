@@ -3877,6 +3877,7 @@ id transition_scene_layoutid_cache
 id transition_transform
 id triangle
 id tvAddTask
+id tvAveHoursPD
 id tvBlackBox
 id tvCategorySpinner
 id tvCustomiseProfile
@@ -3888,6 +3889,8 @@ id tvEndTime
 id tvEntryDate
 id tvEntryTime
 id tvFullName
+id tvMaxHours
+id tvMinHours
 id tvNewPhoto
 id tvProfilePhoto
 id tvSeePassword
@@ -3905,6 +3908,9 @@ id tvTask_name
 id tvTask_start_time
 id tvTimer
 id tvUpPhoto
+id tvUserAve
+id tvUserMax
+id tvUserMin
 id tv_Back
 id tv_Category
 id tv_Colour
@@ -4234,6 +4240,7 @@ string androidx_startup
 string app_name
 string appbar_scrolling_view_behavior
 string ave_hours_per_day
+string average_hours_per_day
 string back
 string bar
 string bottom_sheet_behavior
@@ -4371,6 +4378,8 @@ string material_timepicker_minute
 string material_timepicker_pm
 string material_timepicker_select_time
 string material_timepicker_text_input_mode_description
+string maximum_hours_goal
+string minimum_hours_goal
 string most_productive_day
 string most_time_consuming_task
 string mtrl_badge_numberless_content_description

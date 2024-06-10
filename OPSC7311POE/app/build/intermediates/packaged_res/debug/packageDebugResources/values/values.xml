@@ -43,6 +43,7 @@
     <string name="all_taps">All Taps</string>
     <string name="app_name">OPSC7311 POE</string>
     <string name="ave_hours_per_day">Average Hours Recorded Per Day: </string>
+    <string name="average_hours_per_day">Average Hours per Day:</string>
     <string name="back">←</string>
     <string name="bar">Bar Graph</string>
     <string name="busiest_week">Busiest Week: </string>
@@ -91,6 +92,8 @@
     <string name="invalid_password">Password must be >5 characters</string>
     <string name="invalid_username">Not a valid username</string>
     <string name="login_failed">"Login failed"</string>
+    <string name="maximum_hours_goal">Maximum Hours Goal:</string>
+    <string name="minimum_hours_goal">Minimum Hours Goal:</string>
     <string name="most_productive_day">Most Productive Day: </string>
     <string name="most_time_consuming_task">Most Time Consuming Task: </string>
     <string name="name">Name</string>

@@ -1,9 +1,9 @@
 <component name="libraryTable">
   <library name="Gradle: androidx.navigation:navigation-fragment:2.7.7@aar" external-system-id="GRADLE">
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-4/0cfb3ced6f65d6d0ce79ff16f456c2c7/transformed/navigation-fragment-2.7.7/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-4/0cfb3ced6f65d6d0ce79ff16f456c2c7/transformed/navigation-fragment-2.7.7/AndroidManifest.xml" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-4/0cfb3ced6f65d6d0ce79ff16f456c2c7/transformed/navigation-fragment-2.7.7/res" />
+      <root url="file://$USER_HOME$/Downloads/OPSC7311POE/OPSC7311POE/gradle/wrapper/dists/gradle-8.7-all/caches/transforms-4/0cfb3ced6f65d6d0ce79ff16f456c2c7/transformed/navigation-fragment-2.7.7/res" />
+      <root url="jar://$USER_HOME$/Downloads/OPSC7311POE/OPSC7311POE/gradle/wrapper/dists/gradle-8.7-all/caches/transforms-4/0cfb3ced6f65d6d0ce79ff16f456c2c7/transformed/navigation-fragment-2.7.7/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/Downloads/OPSC7311POE/OPSC7311POE/gradle/wrapper/dists/gradle-8.7-all/caches/transforms-4/0cfb3ced6f65d6d0ce79ff16f456c2c7/transformed/navigation-fragment-2.7.7/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

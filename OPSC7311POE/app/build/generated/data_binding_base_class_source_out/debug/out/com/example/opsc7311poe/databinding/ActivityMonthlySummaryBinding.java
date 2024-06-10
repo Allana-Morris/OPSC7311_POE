@@ -7,6 +7,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.Spinner;
+import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.constraintlayout.widget.ConstraintLayout;
@@ -42,12 +43,32 @@ public final class ActivityMonthlySummaryBinding implements ViewBinding {
   public final ConstraintLayout main;
 
   @NonNull
+  public final TextView tvAveHoursPD;
+
+  @NonNull
+  public final TextView tvMaxHours;
+
+  @NonNull
+  public final TextView tvMinHours;
+
+  @NonNull
+  public final TextView tvUserAve;
+
+  @NonNull
+  public final TextView tvUserMax;
+
+  @NonNull
+  public final TextView tvUserMin;
+
+  @NonNull
   public final View vMonthlySummary;
 
   private ActivityMonthlySummaryBinding(@NonNull ConstraintLayout rootView,
       @NonNull BottomNavigationView bottomNav, @NonNull Button btnSummary,
       @NonNull Spinner catSpinSum, @NonNull GraphView idGraphView, @NonNull ImageView imageView,
-      @NonNull ConstraintLayout main, @NonNull View vMonthlySummary) {
+      @NonNull ConstraintLayout main, @NonNull TextView tvAveHoursPD, @NonNull TextView tvMaxHours,
+      @NonNull TextView tvMinHours, @NonNull TextView tvUserAve, @NonNull TextView tvUserMax,
+      @NonNull TextView tvUserMin, @NonNull View vMonthlySummary) {
     this.rootView = rootView;
     this.bottomNav = bottomNav;
     this.btnSummary = btnSummary;
@@ -55,6 +76,12 @@ public final class ActivityMonthlySummaryBinding implements ViewBinding {
     this.idGraphView = idGraphView;
     this.imageView = imageView;
     this.main = main;
+    this.tvAveHoursPD = tvAveHoursPD;
+    this.tvMaxHours = tvMaxHours;
+    this.tvMinHours = tvMinHours;
+    this.tvUserAve = tvUserAve;
+    this.tvUserMax = tvUserMax;
+    this.tvUserMin = tvUserMin;
     this.vMonthlySummary = vMonthlySummary;
   }
 
@@ -117,6 +144,42 @@ public final class ActivityMonthlySummaryBinding implements ViewBinding {
 
       ConstraintLayout main = (ConstraintLayout) rootView;
 
+      id = R.id.tvAveHoursPD;
+      TextView tvAveHoursPD = ViewBindings.findChildViewById(rootView, id);
+      if (tvAveHoursPD == null) {
+        break missingId;
+      }
+
+      id = R.id.tvMaxHours;
+      TextView tvMaxHours = ViewBindings.findChildViewById(rootView, id);
+      if (tvMaxHours == null) {
+        break missingId;
+      }
+
+      id = R.id.tvMinHours;
+      TextView tvMinHours = ViewBindings.findChildViewById(rootView, id);
+      if (tvMinHours == null) {
+        break missingId;
+      }
+
+      id = R.id.tvUserAve;
+      TextView tvUserAve = ViewBindings.findChildViewById(rootView, id);
+      if (tvUserAve == null) {
+        break missingId;
+      }
+
+      id = R.id.tvUserMax;
+      TextView tvUserMax = ViewBindings.findChildViewById(rootView, id);
+      if (tvUserMax == null) {
+        break missingId;
+      }
+
+      id = R.id.tvUserMin;
+      TextView tvUserMin = ViewBindings.findChildViewById(rootView, id);
+      if (tvUserMin == null) {
+        break missingId;
+      }
+
       id = R.id.vMonthlySummary;
       View vMonthlySummary = ViewBindings.findChildViewById(rootView, id);
       if (vMonthlySummary == null) {
@@ -124,7 +187,8 @@ public final class ActivityMonthlySummaryBinding implements ViewBinding {
       }
 
       return new ActivityMonthlySummaryBinding((ConstraintLayout) rootView, bottomNav, btnSummary,
-          catSpinSum, idGraphView, imageView, main, vMonthlySummary);
+          catSpinSum, idGraphView, imageView, main, tvAveHoursPD, tvMaxHours, tvMinHours, tvUserAve,
+          tvUserMax, tvUserMin, vMonthlySummary);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

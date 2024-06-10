@@ -2061,6 +2061,7 @@
     <string name="app_name">OPSC7311 POE</string>
     <string name="appbar_scrolling_view_behavior" translatable="false">com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior</string>
     <string name="ave_hours_per_day">Average Hours Recorded Per Day: </string>
+    <string name="average_hours_per_day">Average Hours per Day:</string>
     <string name="back">←</string>
     <string name="bar">Bar Graph</string>
     <string name="bottom_sheet_behavior" translatable="false">com.google.android.material.bottomsheet.BottomSheetBehavior</string>
@@ -2200,6 +2201,8 @@
     <string description="Suffix for time in 12-hour standard, after noon. [CHAR_LIMIT=2]" name="material_timepicker_pm">PM</string>
     <string description="Title for the dialog with a time picker. [CHAR_LIMIT=32]" name="material_timepicker_select_time">Select time</string>
     <string name="material_timepicker_text_input_mode_description">Switch to text input mode for the time input.</string>
+    <string name="maximum_hours_goal">Maximum Hours Goal:</string>
+    <string name="minimum_hours_goal">Minimum Hours Goal:</string>
     <string name="most_productive_day">Most Productive Day: </string>
     <string name="most_time_consuming_task">Most Time Consuming Task: </string>
     <string description="Content description for new notification (no number count) [CHAR_LIMIT=NONE]" name="mtrl_badge_numberless_content_description">New notification</string>

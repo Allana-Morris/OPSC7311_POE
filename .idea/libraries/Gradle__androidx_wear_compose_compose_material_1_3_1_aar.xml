@@ -1,9 +1,9 @@
 <component name="libraryTable">
   <library name="Gradle: androidx.wear.compose:compose-material:1.3.1@aar" external-system-id="GRADLE">
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-4/fdf57cccfd68bc02cadd07b599f69d86/transformed/jetified-compose-material-1.3.1/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-4/fdf57cccfd68bc02cadd07b599f69d86/transformed/jetified-compose-material-1.3.1/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-4/fdf57cccfd68bc02cadd07b599f69d86/transformed/jetified-compose-material-1.3.1/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/Downloads/OPSC7311POE/OPSC7311POE/gradle/wrapper/dists/gradle-8.7-all/caches/transforms-4/fdf57cccfd68bc02cadd07b599f69d86/transformed/jetified-compose-material-1.3.1/res" />
+      <root url="jar://$USER_HOME$/Downloads/OPSC7311POE/OPSC7311POE/gradle/wrapper/dists/gradle-8.7-all/caches/transforms-4/fdf57cccfd68bc02cadd07b599f69d86/transformed/jetified-compose-material-1.3.1/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/Downloads/OPSC7311POE/OPSC7311POE/gradle/wrapper/dists/gradle-8.7-all/caches/transforms-4/fdf57cccfd68bc02cadd07b599f69d86/transformed/jetified-compose-material-1.3.1/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

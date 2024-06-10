@@ -7,6 +7,7 @@ import android.widget.ArrayAdapter
 import android.widget.Button
 import android.widget.ImageButton
 import android.widget.Spinner
+import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.example.opsc7311poe.R.layout
@@ -35,6 +36,12 @@ class MonthlySummary : AppCompatActivity() {
 
 
     var dataSet = LineGraphSeries<DataPoint>()
+
+    var average = 0.0;
+    var min = 0.0
+    var max = 0.0
+
+
 
     lateinit var lineGraphView: GraphView
     private var _binding: ActivityMonthlySummaryBinding? = null
@@ -115,6 +122,8 @@ class MonthlySummary : AppCompatActivity() {
 
         select.setOnClickListener()
         {
+            dataSet = LineGraphSeries<DataPoint>()
+
             var start = Calendar.getInstance()
             start.time = parseDate(start.time.toString())
 
@@ -133,6 +142,17 @@ class MonthlySummary : AppCompatActivity() {
 
                 i++
             }
+
+            average = average/30
+
+
+            val UserMin: TextView = findViewById(R.id.tvUserMin)
+            val UserMax: TextView = findViewById(R.id.tvUserMax)
+            val UserAve: TextView = findViewById(R.id.tvUserAve)
+
+            UserMin.text = min.toString()
+            UserMax.text = max.toString()
+            UserAve.text = average.toString()
 
             // on below line adding animation
             lineGraphView.animate()
@@ -194,31 +214,15 @@ class MonthlySummary : AppCompatActivity() {
                 }
             }
 
-
-            //Code for TextView Summaries
-
-            //Top Category
-
-            //Total Hours Recorded
-
-            //Ave Hours
-
-            //Most Productive Day
-
-            //Busiest Week
-
-            //Most Time consuming Task
-
-
         }
 
-        }
+    }
     private fun getTasksBetweenDates(
         startDate: Date?,
         endDate: Date?,
         i: Double,
-        cat: String,
-    ) {
+        cat :String,
+    ){
         var totalHours = 0.0
 
         currentUserRef.addListenerForSingleValueEvent(object : ValueEventListener {
@@ -227,18 +231,25 @@ class MonthlySummary : AppCompatActivity() {
                 // Counter to keep track of the number of tasks processed
 
                 for (categorySnapshot in snapshot.child("categories").children) {
-                    val categoryName = categorySnapshot.child("name").getValue(String::class.java)
-                    if (categoryName == cat) { // Check if the category matches the provided 'cat'
+                    if ( categorySnapshot.key == cat )
+                    {
+                        min = categorySnapshot.child("minHours").getValue(Double::class.java)!!
+                        max = categorySnapshot.child("maxHours").getValue(Double::class.java)!!
+
+
                         for (taskSnapshot in categorySnapshot.child("tasks").children) {
                             for (recordingSnapshot in taskSnapshot.child("recordings").children) {
-                                val recordingDate = recordingSnapshot.child("recDate").getValue(String::class.java)
-                                val duration = recordingSnapshot.child("duration").getValue(String::class.java)
+                                val recordingDate =
+                                    recordingSnapshot.child("recDate").getValue(String::class.java)
+                                val duration =
+                                    recordingSnapshot.child("duration").getValue(String::class.java)
 
                                 val parsed = parseDate(recordingDate)
 
                                 if (recordingDate != null && duration != null && parsed != null) {
-                                    if (parsed >= startDate && parsed <= endDate) {
+                                    if (parsed >= endDate && parsed <= startDate) {
                                         totalHours += parseDurationToHours(duration)
+
                                     }
                                 }
                             }
@@ -247,12 +258,16 @@ class MonthlySummary : AppCompatActivity() {
                 }
 
                 add(i, totalHours)
+                getAverage(totalHours)
+
+
             }
 
             override fun onCancelled(error: DatabaseError) {
                 // Handle error
             }
         })
+
     }
 
     private fun parseDate(dateString: String?): Date? {
@@ -285,4 +300,10 @@ class MonthlySummary : AppCompatActivity() {
         val seconds = parts[2]
         return hours + minutes / 60.0 + seconds / 3600.0
     }
+
+    private fun getAverage(totalHours: Double)
+    {
+        average += totalHours
+    }
+
 }

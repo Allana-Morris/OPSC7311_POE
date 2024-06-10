@@ -109,5 +109,8 @@
     <string name="home_fragment">Home fragment</string>
     <string name="choose_an_icon">Choose an Icon</string>
     <string name="new_event">New Event</string>
+    <string name="minimum_hours_goal">Minimum Hours Goal:</string>
+    <string name="maximum_hours_goal">Maximum Hours Goal:</string>
+    <string name="average_hours_per_day">Average Hours per Day:</string>
 
 </resources>

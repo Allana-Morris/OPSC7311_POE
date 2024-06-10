@@ -176,6 +176,7 @@ id textview1
 id timer
 id title
 id tvAddTask
+id tvAveHoursPD
 id tvBlackBox
 id tvCategorySpinner
 id tvCustomiseProfile
@@ -187,6 +188,8 @@ id tvEndTime
 id tvEntryDate
 id tvEntryTime
 id tvFullName
+id tvMaxHours
+id tvMinHours
 id tvNewPhoto
 id tvProfilePhoto
 id tvSeePassword
@@ -204,6 +207,9 @@ id tvTask_name
 id tvTask_start_time
 id tvTimer
 id tvUpPhoto
+id tvUserAve
+id tvUserMax
+id tvUserMin
 id tv_Back
 id tv_Category
 id tv_Colour
@@ -271,6 +277,7 @@ string add_event
 string all_taps
 string app_name
 string ave_hours_per_day
+string average_hours_per_day
 string back
 string bar
 string busiest_week
@@ -319,6 +326,8 @@ string icon
 string invalid_password
 string invalid_username
 string login_failed
+string maximum_hours_goal
+string minimum_hours_goal
 string most_productive_day
 string most_time_consuming_task
 string name

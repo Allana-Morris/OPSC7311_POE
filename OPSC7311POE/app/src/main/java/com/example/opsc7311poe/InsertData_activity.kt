@@ -152,23 +152,20 @@ class InsertData_activity : AppCompatActivity() {
             val endTime = findViewById<TextView>(R.id.edtEnd).text.toString().trim()
             val desc = findViewById<TextView>(R.id.edtDescription).text.toString().trim()
 
-            Vali.isTaskNameExists(selectedCategory, taskName) { exists ->
-                if (exists) {
-                    Toast.makeText(this, "Task Already Exists", Toast.LENGTH_SHORT).show()
-                } else {
-                    if (selectedCategory == "No categories" || selectedCategory.isEmpty() || taskName.isEmpty() || startTime.isEmpty() || endTime.isEmpty()) {
+
+                    if (selectedCategory == "No categories" || selectedCategory.isEmpty() || taskName.isEmpty()) {
                         Toast.makeText(
                             this@InsertData_activity,
                             "Please fill in all required fields",
                             Toast.LENGTH_SHORT
                         ).show()
-                    } else if (!isValidTime(startTime) || !isValidTime(endTime)) {
+                    } else if ((!isValidTime(startTime) || !isValidTime(endTime)) && (repeatSwitch.isChecked)) {
                         Toast.makeText(
                             this@InsertData_activity,
                             "Please enter valid time format (HH:mm)",
                             Toast.LENGTH_SHORT
                         ).show()
-                    } else if (!isEndTimeAfterStartTime(startTime, endTime)) {
+                    } else if ((!isEndTimeAfterStartTime(startTime, endTime))  && (repeatSwitch.isChecked)) {
                         Toast.makeText(
                             this@InsertData_activity,
                             "End time must be after start time",
@@ -225,10 +222,7 @@ class InsertData_activity : AppCompatActivity() {
                         }
                     }
                 }
-            }
 
-
-        }
     }
         private fun isValidTime(time: String): Boolean {
             // Regular expression to validate time format (HH:mm)
