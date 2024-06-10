@@ -24,9 +24,10 @@
 
         <ImageView
             android:id="@+id/imgTaskIcon"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
             android:layout_marginStart="8dp"
+            android:scaleType="fitXY"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/tvTask_name"
             app:srcCompat="@drawable/baseline_cleaning_services_24" />

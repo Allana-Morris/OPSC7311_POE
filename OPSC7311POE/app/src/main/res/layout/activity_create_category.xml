@@ -223,7 +223,6 @@
         android:layout_height="50dp"
         android:layout_marginEnd="29dp"
         android:clickable="true"
-        android:editable="false"
         android:ems="10"
         android:inputType="time"
         app:layout_constraintBottom_toBottomOf="@+id/view12"

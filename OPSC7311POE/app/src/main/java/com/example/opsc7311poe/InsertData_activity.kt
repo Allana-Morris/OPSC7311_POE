@@ -18,6 +18,7 @@ class InsertData_activity : AppCompatActivity() {
 
     val DbRef = database.getReference("user")
     lateinit var bottomNav: BottomNavigationView
+    private lateinit var backbutton: ImageView
     @SuppressLint("UseSwitchCompatOrMaterialCode")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -58,6 +59,14 @@ class InsertData_activity : AppCompatActivity() {
                 }
             }
         }
+
+        //back button
+        backbutton = findViewById(R.id.iv_Back)
+        backbutton.setOnClickListener {
+            startActivity(Intent(this, MainActivity::class.java))
+            true
+        }
+
         // Spinner for Categories
         // Spinner for Categories
         val catSpin: Spinner = findViewById(R.id.sp_Category)

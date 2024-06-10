@@ -32,6 +32,7 @@ class create_category_activity : AppCompatActivity(), IconPickerDialogFragment.O
     private var mDefaultColour = 0
     private lateinit var ivColourPicker: ImageView
     private lateinit var ivColourPreview: View
+    private lateinit var backbutton: ImageView
     private var catIcon = 0
     private lateinit var catMinHours: EditText
     private lateinit var catMaxHours: EditText
@@ -71,6 +72,14 @@ class create_category_activity : AppCompatActivity(), IconPickerDialogFragment.O
                 else -> false
             }
         }
+
+        //back button
+        backbutton = findViewById(R.id.iv_Back)
+        backbutton.setOnClickListener {
+            startActivity(Intent(this, MainActivity::class.java))
+            true
+        }
+
 
         // Initialize views after setContentView()
         ivColourPicker = findViewById(R.id.iv_Pick_Colour)
@@ -122,13 +131,7 @@ class create_category_activity : AppCompatActivity(), IconPickerDialogFragment.O
         }
 
 
-        catMinHours.setOnClickListener {
-            showTimePicker(catMinHours)
-        }
 
-        catMaxHours.setOnClickListener {
-            showTimePicker(catMaxHours)
-        }
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
@@ -166,24 +169,6 @@ class create_category_activity : AppCompatActivity(), IconPickerDialogFragment.O
         ivColourPicker.setOnClickListener {
             openColorPickerDialogue()
         }
-    }
-
-    private fun showTimePicker(editText: EditText) {
-        val calendar = java.util.Calendar.getInstance()
-        val hour = calendar.get(java.util.Calendar.HOUR_OF_DAY)
-        val minute = calendar.get(java.util.Calendar.MINUTE)
-
-        val timePickerDialog = TimePickerDialog(
-            this,
-            { _, selectedHour, selectedMinute ->
-                val selectedTime = LocalTime.of(selectedHour, selectedMinute)
-                editText.text = Editable.Factory.getInstance().newEditable(selectedTime.toString())
-            },
-            hour,
-            minute,
-            true
-        )
-        timePickerDialog.show()
     }
 
     private fun validateGoals(minHours: String, maxHours: String): Boolean {
