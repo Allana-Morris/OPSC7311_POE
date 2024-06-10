@@ -8,14 +8,6 @@
         android:minSdkVersion="26"
         android:targetSdkVersion="34" />
 
-    <uses-permission android:name="android.permission.CAMERA" />
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-
-    <uses-feature android:name="android.hardware.camera2.full" />
-    <uses-feature
-        android:name="android.hardware.camera"
-        android:required="false" />
-
     <!-- Although the *SdkVersion is captured in gradle build files, this is required for non gradle builds -->
     <!-- <uses-sdk android:minSdkVersion="21" /> -->
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
@@ -64,6 +56,12 @@
             android:name="com.example.opsc7311poe.cat_total_activity"
             android:exported="false" />
         <activity
+            android:name="com.example.opsc7311poe.view_graphs_activity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.opsc7311poe.MonthlySummary"
+            android:exported="false" />
+        <activity
             android:name="com.example.opsc7311poe.Timer_activity"
             android:exported="false" />
         <activity
@@ -81,10 +79,6 @@
         <activity android:name="com.example.opsc7311poe.Profile_activity" />
         <activity android:name="com.example.opsc7311poe.ViewTimeSheetEntry_activity" />
         <activity android:name="com.example.opsc7311poe.InsertData_activity" />
-
-        <meta-data
-            android:name="preloaded_fonts"
-            android:resource="@array/preloaded_fonts" />
 
         <service
             android:name="com.google.firebase.components.ComponentDiscoveryService"
@@ -123,18 +117,6 @@
             <meta-data
                 android:name="com.google.firebase.components:com.google.firebase.FirebaseCommonKtxRegistrar"
                 android:value="com.google.firebase.components.ComponentRegistrar" />
-        </service>
-        <!--
-        Service for holding metadata. Cannot be instantiated.
-        Metadata will be merged from other manifests.
-        -->
-        <service
-            android:name="androidx.camera.core.impl.MetadataHolderService"
-            android:enabled="false"
-            android:exported="false" >
-            <meta-data
-                android:name="androidx.camera.core.impl.MetadataHolderService.DEFAULT_CONFIG_PROVIDER"
-                android:value="androidx.camera.camera2.Camera2Config$DefaultProvider" />
         </service>
 
         <property

@@ -4,7 +4,9 @@ package com.example.opsc7311poe.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.Spinner;
 import android.widget.TableLayout;
 import android.widget.TableRow;
 import android.widget.TextView;
@@ -26,6 +28,12 @@ public final class ActivityMonthlySummaryBinding implements ViewBinding {
 
   @NonNull
   public final BottomNavigationView bottomNav;
+
+  @NonNull
+  public final Button btnSummary;
+
+  @NonNull
+  public final Spinner catSpinSum;
 
   @NonNull
   public final GraphView idGraphView;
@@ -115,22 +123,25 @@ public final class ActivityMonthlySummaryBinding implements ViewBinding {
   public final View vMonthlySummary;
 
   private ActivityMonthlySummaryBinding(@NonNull ConstraintLayout rootView,
-      @NonNull BottomNavigationView bottomNav, @NonNull GraphView idGraphView,
-      @NonNull ImageView imageView, @NonNull ConstraintLayout main,
-      @NonNull TableLayout tlGraphData, @NonNull TableRow trAveHours, @NonNull TableRow trBlank,
-      @NonNull TableRow trBusiestWeek, @NonNull TableRow trMostProdDay,
-      @NonNull TableRow trSmallBlank, @NonNull TableRow trSmallBlank2,
-      @NonNull TableRow trSmallBlank3, @NonNull TableRow trSmallBlank4,
-      @NonNull TableRow trSmallBlank5, @NonNull TableRow trTimeTask, @NonNull TableRow trTopCat,
-      @NonNull TableRow trTotalHours, @NonNull TextView tvAveHoursAns,
-      @NonNull TextView tvAveHoursPD, @NonNull TextView tvBusiestWeek,
-      @NonNull TextView tvBusyWeekAns, @NonNull TextView tvMostProdDay,
-      @NonNull TextView tvMostProdDayAns, @NonNull TextView tvMostTimeTask,
-      @NonNull TextView tvMostTimeTaskAns, @NonNull TextView tvTopCatAns,
-      @NonNull TextView tvTopCategory, @NonNull TextView tvTotHoursAns,
-      @NonNull TextView tvTotalHours, @NonNull View vMonthlySummary) {
+      @NonNull BottomNavigationView bottomNav, @NonNull Button btnSummary,
+      @NonNull Spinner catSpinSum, @NonNull GraphView idGraphView, @NonNull ImageView imageView,
+      @NonNull ConstraintLayout main, @NonNull TableLayout tlGraphData,
+      @NonNull TableRow trAveHours, @NonNull TableRow trBlank, @NonNull TableRow trBusiestWeek,
+      @NonNull TableRow trMostProdDay, @NonNull TableRow trSmallBlank,
+      @NonNull TableRow trSmallBlank2, @NonNull TableRow trSmallBlank3,
+      @NonNull TableRow trSmallBlank4, @NonNull TableRow trSmallBlank5,
+      @NonNull TableRow trTimeTask, @NonNull TableRow trTopCat, @NonNull TableRow trTotalHours,
+      @NonNull TextView tvAveHoursAns, @NonNull TextView tvAveHoursPD,
+      @NonNull TextView tvBusiestWeek, @NonNull TextView tvBusyWeekAns,
+      @NonNull TextView tvMostProdDay, @NonNull TextView tvMostProdDayAns,
+      @NonNull TextView tvMostTimeTask, @NonNull TextView tvMostTimeTaskAns,
+      @NonNull TextView tvTopCatAns, @NonNull TextView tvTopCategory,
+      @NonNull TextView tvTotHoursAns, @NonNull TextView tvTotalHours,
+      @NonNull View vMonthlySummary) {
     this.rootView = rootView;
     this.bottomNav = bottomNav;
+    this.btnSummary = btnSummary;
+    this.catSpinSum = catSpinSum;
     this.idGraphView = idGraphView;
     this.imageView = imageView;
     this.main = main;
@@ -192,6 +203,18 @@ public final class ActivityMonthlySummaryBinding implements ViewBinding {
       id = R.id.bottomNav;
       BottomNavigationView bottomNav = ViewBindings.findChildViewById(rootView, id);
       if (bottomNav == null) {
+        break missingId;
+      }
+
+      id = R.id.btnSummary;
+      Button btnSummary = ViewBindings.findChildViewById(rootView, id);
+      if (btnSummary == null) {
+        break missingId;
+      }
+
+      id = R.id.catSpinSum;
+      Spinner catSpinSum = ViewBindings.findChildViewById(rootView, id);
+      if (catSpinSum == null) {
         break missingId;
       }
 
@@ -365,12 +388,12 @@ public final class ActivityMonthlySummaryBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityMonthlySummaryBinding((ConstraintLayout) rootView, bottomNav, idGraphView,
-          imageView, main, tlGraphData, trAveHours, trBlank, trBusiestWeek, trMostProdDay,
-          trSmallBlank, trSmallBlank2, trSmallBlank3, trSmallBlank4, trSmallBlank5, trTimeTask,
-          trTopCat, trTotalHours, tvAveHoursAns, tvAveHoursPD, tvBusiestWeek, tvBusyWeekAns,
-          tvMostProdDay, tvMostProdDayAns, tvMostTimeTask, tvMostTimeTaskAns, tvTopCatAns,
-          tvTopCategory, tvTotHoursAns, tvTotalHours, vMonthlySummary);
+      return new ActivityMonthlySummaryBinding((ConstraintLayout) rootView, bottomNav, btnSummary,
+          catSpinSum, idGraphView, imageView, main, tlGraphData, trAveHours, trBlank, trBusiestWeek,
+          trMostProdDay, trSmallBlank, trSmallBlank2, trSmallBlank3, trSmallBlank4, trSmallBlank5,
+          trTimeTask, trTopCat, trTotalHours, tvAveHoursAns, tvAveHoursPD, tvBusiestWeek,
+          tvBusyWeekAns, tvMostProdDay, tvMostProdDayAns, tvMostTimeTask, tvMostTimeTaskAns,
+          tvTopCatAns, tvTopCategory, tvTotHoursAns, tvTotalHours, vMonthlySummary);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

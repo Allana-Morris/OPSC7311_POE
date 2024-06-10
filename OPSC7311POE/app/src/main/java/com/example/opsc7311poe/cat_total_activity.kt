@@ -9,16 +9,32 @@ import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import com.google.android.material.bottomnavigation.BottomNavigationView
+import com.google.firebase.database.DataSnapshot
+import com.google.firebase.database.DatabaseError
+import com.google.firebase.database.DatabaseReference
+import com.google.firebase.database.FirebaseDatabase
+import com.google.firebase.database.ValueEventListener
+import java.text.ParseException
+import java.text.SimpleDateFormat
 import java.util.Calendar
+import java.util.Date
+import java.util.Locale
 
 class cat_total_activity : AppCompatActivity() {
+
+    private lateinit var database: FirebaseDatabase
+    private lateinit var currentUserRef: DatabaseReference
 
     lateinit var bottomNav: BottomNavigationView
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_total_cat_hours)
-/*
+
+        database =
+            FirebaseDatabase.getInstance("https://atomic-affinity-421915-default-rtdb.europe-west1.firebasedatabase.app/")
+        currentUserRef = database.getReference("user").child(SessionUser.currentUser!!.username)
+
         val start: TextView = findViewById(R.id.tvStartDate1)
         val end: TextView = findViewById(R.id.tvEndDate1)
         val select: Button = findViewById(R.id.btnSelectHours)
@@ -62,31 +78,73 @@ class cat_total_activity : AppCompatActivity() {
 
         // Date picker dialog for start date
         start.setOnClickListener {
-            showDatePicker(start)
+            val calendar = Calendar.getInstance()
+            val year = calendar.get(Calendar.YEAR)
+            val month = calendar.get(Calendar.MONTH)
+            val dayOfMonth = calendar.get(Calendar.DAY_OF_MONTH)
+
+            // Create a date picker dialog
+            val datePickerDialog = DatePickerDialog(
+                this,
+                DatePickerDialog.OnDateSetListener { _, selectedYear, selectedMonth, selectedDay ->
+                    // Update the date TextView with the selected date
+                    val calendar = Calendar.getInstance()
+                    calendar.set(selectedYear, selectedMonth, selectedDay)
+                    val selectedDate: Date = calendar.time
+                    val formatter = SimpleDateFormat("dd/MM/yyyy", Locale.getDefault())
+                    val formattedDate = formatter.format(selectedDate)
+                    start.text = formattedDate
+                },
+                year,
+                month,
+                dayOfMonth
+            )
+            datePickerDialog.show()
         }
 
         // Date picker dialog for end date
         end.setOnClickListener {
-            showDatePicker(end)
+            val calendar = Calendar.getInstance()
+            val year = calendar.get(Calendar.YEAR)
+            val month = calendar.get(Calendar.MONTH)
+            val dayOfMonth = calendar.get(Calendar.DAY_OF_MONTH)
+
+            // Create a date picker dialog
+            val datePickerDialog = DatePickerDialog(
+                this,
+                DatePickerDialog.OnDateSetListener { _, selectedYear, selectedMonth, selectedDay ->
+                    // Update the date TextView with the selected date
+                    val calendar = Calendar.getInstance()
+                    calendar.set(selectedYear, selectedMonth, selectedDay)
+                    val selectedDate: Date = calendar.time
+                    val formatter = SimpleDateFormat("dd/MM/yyyy", Locale.getDefault())
+                    val formattedDate = formatter.format(selectedDate)
+                    end.text = formattedDate
+                },
+                year,
+                month,
+                dayOfMonth
+            )
+            datePickerDialog.show()
         }
 
         select.setOnClickListener {
-            // Get the selected start and end dates
-            val startDate = start.text.toString()
-            val endDate = end.text.toString()
+            var start = findViewById<TextView>(R.id.tvStartDate1).text.toString()
+            var end = findViewById<TextView>(R.id.tvEndDate1).text.toString()
 
-            //validation
-            if (startDate.isEmpty() || endDate.isEmpty()) {
+            if (start.isEmpty() || end.isEmpty()) {
                 Toast.makeText(this, "Please select both start and end dates", Toast.LENGTH_SHORT)
                     .show()
                 return@setOnClickListener
             }
 
-            // Perform search and calculate total hours
-            val totalHoursByCategory = calculateTotalHoursByCategory(startDate, endDate)
+            val dateFormat = SimpleDateFormat("dd/MM/yyyy", Locale.getDefault())
+            val startDate = dateFormat.parse(start)
+            val endDate = dateFormat.parse(end)
 
-            // Display total hours by category in the bigTextView
-            displayTotalHoursByCategory(totalHoursByCategory)
+            Toast.makeText(this, "Start date: $startDate, End date: $endDate", Toast.LENGTH_SHORT).show()
+
+            calculateTotalHoursByCategory(startDate, endDate)
         }
     }
 
@@ -108,49 +166,100 @@ class cat_total_activity : AppCompatActivity() {
         datePickerDialog.show()
     }
 
-    private fun calculateTotalHoursByCategory(
-        startDate: String,
-        endDate: String,
-    ): Map<String, Double> {
-        val currentUser = SessionUser.currentUser
-        val totalHoursByCategory = mutableMapOf<String, Double>()
+    private fun calculateTotalHoursByCategory(startDate: Date, endDate: Date) {
+        currentUserRef.addListenerForSingleValueEvent(object : ValueEventListener {
+            override fun onDataChange(snapshot: DataSnapshot) {
+                val totalHoursByCategory = mutableMapOf<String, Double>()
 
-        currentUser?.categories?.forEach { (_, category) ->
-            var totalHours = 0.0
-            category.tasks.forEach { (_, task) ->
-                task.taskRecords.forEach { recording ->
-                    // Check if recording date is within the selected range
-                    val recordingDate = recording.RecDate.toString()
-                    if (recordingDate >= startDate && recordingDate <= endDate) {
-                        // Parse duration string and calculate total hours
-                        val duration = recording.Duration
-                        val durationHours = parseDurationToHours(duration)
-                        totalHours += durationHours
+                for (categorySnapshot in snapshot.child("categories").children) {
+                    val categoryName = categorySnapshot.key
+                    var totalHours = 0.0
+
+                    for (taskSnapshot in categorySnapshot.child("tasks").children) {
+                        for (recordingSnapshot in taskSnapshot.child("recordings").children) {
+                            val recordingDate =
+                                recordingSnapshot.child("recDate").getValue(String::class.java)
+                            val duration =
+                                recordingSnapshot.child("duration").getValue()
+
+
+                            Toast.makeText(this@cat_total_activity,
+                                "rec date" + parseDate(recordingDate), Toast.LENGTH_SHORT).show()
+
+                            val parsed = parseDate(recordingDate)
+
+                            if (recordingDate != null && duration != null) {
+                                if (parsed != null) {
+                                    if (parsed >= startDate && parsed <= endDate) {
+                                        totalHours += parseDurationToHours(duration.toString())
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    categoryName?.let {
+                        totalHoursByCategory[it] = totalHours
                     }
                 }
+
+                displayTotalHoursByCategory(totalHoursByCategory)
             }
-            totalHoursByCategory[category.name] = totalHours
-        }
-        return totalHoursByCategory
+
+            override fun onCancelled(error: DatabaseError) {
+                // Handle error
+            }
+        })
     }
 
-    // Function to parse duration string to hours
     private fun parseDurationToHours(duration: String): Double {
         val parts = duration.split(":")
         val hours = parts[0].toDouble()
         val minutes = parts[1].toDouble()
         val seconds = parts[2].toDouble()
-        // Convert hours, minutes, and seconds to total hours
         return hours + (minutes / 60) + (seconds / 3600)
     }
 
+    // Function to parse duration string to hours
 
     private fun displayTotalHoursByCategory(totalHoursByCategory: Map<String, Double>) {
         val bigTextView: TextView = findViewById(R.id.tv_Total)
         var displayText = ""
         totalHoursByCategory.forEach { (categoryName, totalHours) ->
             displayText += "$categoryName: $totalHours hours\n"
-        }*/
-        //bigTextView.text = displayText
+        }
+        bigTextView.text = displayText
+    }
+    fun convertDateFormat(inputDate: String): String {
+        val inputDateFormat = SimpleDateFormat("EEE MMM dd HH:mm:ss zzz yyyy", Locale.ENGLISH)
+        val outputDateFormat = SimpleDateFormat("dd/MM/yyyy", Locale.ENGLISH)
+        val date = inputDateFormat.parse(inputDate)
+        return outputDateFormat.format(date)
+    }
+
+    fun convertOtherDateFormat(inputDate: String): String {
+        val dateFormat = SimpleDateFormat("dd/MM/yyyy", Locale.getDefault())
+        val out = dateFormat.parse(inputDate)
+        return (inputDate)
+    }
+
+    private fun parseDate(dateString: String?): Date? {
+        val dateFormats = arrayOf(
+            SimpleDateFormat("dd/MM/yyyy", Locale.getDefault()),
+            SimpleDateFormat(
+                "EEE MMM dd HH:mm:ss z yyyy",
+                Locale.ENGLISH
+            ) // Format for "Sun Jun 09 19:59:44 GMT+02:00 2024"
+        )
+
+        for (format in dateFormats) {
+            try {
+                return format.parse(dateString)
+            } catch (e: ParseException) {
+                // Try the next format
+            }
+        }
+        return null
     }
 }
+

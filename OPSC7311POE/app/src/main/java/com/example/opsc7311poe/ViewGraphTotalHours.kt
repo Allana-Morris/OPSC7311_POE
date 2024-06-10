@@ -5,12 +5,26 @@ import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.github.mikephil.charting.charts.BarChart
+import com.github.mikephil.charting.charts.LineChart
 import com.github.mikephil.charting.data.BarData
 import com.github.mikephil.charting.data.BarDataSet
 import com.github.mikephil.charting.data.BarEntry
+import com.github.mikephil.charting.data.Entry
+import com.github.mikephil.charting.data.LineData
+import com.github.mikephil.charting.data.LineDataSet
 import com.google.android.material.bottomnavigation.BottomNavigationView
+import com.google.firebase.database.DataSnapshot
+import com.google.firebase.database.DatabaseError
+import com.google.firebase.database.DatabaseReference
+import com.google.firebase.database.FirebaseDatabase
+import com.google.firebase.database.ValueEventListener
+import com.jjoe64.graphview.GraphView
+import com.jjoe64.graphview.series.DataPoint
+import com.jjoe64.graphview.series.LineGraphSeries
+import java.text.ParseException
 import java.text.SimpleDateFormat
 import java.util.*
 import kotlin.collections.ArrayList
@@ -20,15 +34,23 @@ class ViewGraphTotalHours : AppCompatActivity() {
     private lateinit var editTextStartDate: EditText
     private lateinit var editTextEndDate: EditText
     private lateinit var buttonSelect: Button
-    private lateinit var barChart: BarChart
+    private lateinit var lineChart: GraphView
     private var startDate: Date? = null
     private var endDate: Date? = null
     private val dateFormat = SimpleDateFormat("yyyy-MM-dd", Locale.US)
     lateinit var bottomNav: BottomNavigationView
+    var dataSet = LineGraphSeries<DataPoint>()
+
+    private lateinit var database: FirebaseDatabase
+    private lateinit var currentUserRef: DatabaseReference
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_view_graph_total_hours) // Make sure this matches your layout file
+
+        database =
+            FirebaseDatabase.getInstance("https://atomic-affinity-421915-default-rtdb.europe-west1.firebasedatabase.app/")
+        currentUserRef = database.getReference("user").child(SessionUser.currentUser!!.username)
 
         bottomNav = findViewById(R.id.bottomNav) as BottomNavigationView
         // Clear selection by setting invalid item ID
@@ -71,67 +93,153 @@ class ViewGraphTotalHours : AppCompatActivity() {
         editTextStartDate = findViewById(R.id.editTextDate)
         editTextEndDate = findViewById(R.id.editTextDate2)
         buttonSelect = findViewById(R.id.button)
-        barChart = findViewById(R.id.barChart)
+        lineChart = findViewById(R.id.graf)
 
         editTextStartDate.setOnClickListener {
-            showDatePicker { date ->
-                startDate = date
-                editTextStartDate.setText(dateFormat.format(date))
-            }
+            val calendar = Calendar.getInstance()
+            val year = calendar.get(Calendar.YEAR)
+            val month = calendar.get(Calendar.MONTH)
+            val dayOfMonth = calendar.get(Calendar.DAY_OF_MONTH)
+
+            // Create a date picker dialog
+            val datePickerDialog = DatePickerDialog(
+                this,
+                DatePickerDialog.OnDateSetListener { _, selectedYear, selectedMonth, selectedDay ->
+                    // Update the date TextView with the selected date
+                    val calendar = Calendar.getInstance()
+                    calendar.set(selectedYear, selectedMonth, selectedDay)
+                    val selectedDate: Date = calendar.time
+                    val formatter = SimpleDateFormat("dd/MM/yyyy", Locale.getDefault())
+                    val formattedDate = formatter.format(selectedDate)
+                    editTextStartDate.setText(formattedDate)
+                },
+                year,
+                month,
+                dayOfMonth
+            )
+            datePickerDialog.show()
         }
 
         editTextEndDate.setOnClickListener {
-            showDatePicker { date ->
-                endDate = date
-                editTextEndDate.setText(dateFormat.format(date))
-            }
+            val calendar = Calendar.getInstance()
+            val year = calendar.get(Calendar.YEAR)
+            val month = calendar.get(Calendar.MONTH)
+            val dayOfMonth = calendar.get(Calendar.DAY_OF_MONTH)
+
+            // Create a date picker dialog
+            val datePickerDialog = DatePickerDialog(
+                this,
+                DatePickerDialog.OnDateSetListener { _, selectedYear, selectedMonth, selectedDay ->
+                    // Update the date TextView with the selected date
+                    val calendar = Calendar.getInstance()
+                    calendar.set(selectedYear, selectedMonth, selectedDay)
+                    val selectedDate: Date = calendar.time
+                    val formatter = SimpleDateFormat("dd/MM/yyyy", Locale.getDefault())
+                    val formattedDate = formatter.format(selectedDate)
+                    editTextEndDate.setText(formattedDate)
+                },
+                year,
+                month,
+                dayOfMonth
+            )
+            datePickerDialog.show()
         }
 
         buttonSelect.setOnClickListener {
+            startDate = editTextStartDate.text.toString().let { parseDate(it) }
+            endDate = editTextEndDate.text.toString().let { parseDate(it) }
             if (startDate != null && endDate != null) {
-                //updateChart()
+
+                updateChart()
             }
         }
     }
+    private fun updateChart() {
 
-    private fun showDatePicker(listener: (Date) -> Unit) {
-        val calendar = Calendar.getInstance()
-        DatePickerDialog(
-            this,
-            { _, year, month, dayOfMonth ->
-                calendar.set(year, month, dayOfMonth)
-                listener(calendar.time)
-            },
-            calendar.get(Calendar.YEAR),
-            calendar.get(Calendar.MONTH),
-            calendar.get(Calendar.DAY_OF_MONTH)
-        ).show()
+
+        var calStart = Calendar.getInstance()
+        calStart.time = startDate
+
+        var calEnd = Calendar.getInstance()
+        calEnd.time = endDate
+
+
+var i = 0;
+        var entryCheck : Double = 0.0
+        while (calStart.time != calEnd.time)
+        {
+            getTasksBetweenDates(calStart.time, calEnd.time, i.toDouble())
+             //   Toast.makeText(this,"first " + entryCheck.toString() , Toast.LENGTH_SHORT).show()
+
+                calStart.add(Calendar.DATE, 1)
+                i++
+        }
+
+        lineChart.animate()
+
+        // on below line we are setting scrollable
+        // for point graph view
+        lineChart.viewport.isScrollable = true
+
+        // on below line we are setting scalable.
+        lineChart.viewport.isScalable = true
+
+        // on below line we are setting scalable y
+        lineChart.viewport.setScalableY(true)
+
+        // on below line we are setting scrollable y
+        lineChart.viewport.setScrollableY(true)
+
+        // on below line we are setting color for series.
+
+        // on below line we are adding
+        // data series to our graph view.
+        lineChart.addSeries(dataSet)
     }
 
- //   private fun updateChart() {
-/*       val tasks = getTasksBetweenDates(startDate, endDate)
-        val entries = ArrayList<BarEntry>()
+    private fun getTasksBetweenDates(
+        startDate: Date?,
+        endDate: Date?,
+        i: Double
+    ){
         var totalHours = 0.0
-        for ((index, task) in tasks.withIndex()) {
-            totalHours += task.taskRecords.sumOf { parseDurationToHours(it.Duration) }
-            entries.add(BarEntry(index.toFloat(), totalHours.toFloat()))
-        }
-        val dataSet = BarDataSet(entries, "Total Hours Worked")
-        val barData = BarData(dataSet)
-        barChart.data = barData
-        barChart.invalidate() // Refresh chart
+
+        currentUserRef.addListenerForSingleValueEvent(object : ValueEventListener {
+            override fun onDataChange(snapshot: DataSnapshot) {
+
+                // Counter to keep track of the number of tasks processed
+
+                for (categorySnapshot in snapshot.child("categories").children) {
+                    for (taskSnapshot in categorySnapshot.child("tasks").children) {
+                        for (recordingSnapshot in taskSnapshot.child("recordings").children) {
+                            val recordingDate = recordingSnapshot.child("recDate").getValue(String::class.java)
+                            val duration = recordingSnapshot.child("duration").getValue(String::class.java)
+
+                            val parsed = parseDate(recordingDate)
+
+                            if (recordingDate != null && duration != null && parsed != null) {
+                                if (parsed >= startDate && parsed <= endDate) {
+                                    totalHours += parseDurationToHours(duration)
+
+                                }
+                            }
+                        }
+                    }
+                }
+
+                add(i, totalHours)
+
+
+            }
+
+            override fun onCancelled(error: DatabaseError) {
+                // Handle error
+            }
+        })
+
     }
 
-    private fun getTasksBetweenDates(startDate: Date?, endDate: Date?): List<Task> {
-        val start = startDate ?: return emptyList()
-        val end = endDate ?: return emptyList()
 
-        return TaskRepository.tasks.filter { task ->
-            task.taskRecords.any { record ->
-                !record.RecDate.before(start) && !record.RecDate.after(end)
-            }
-        }
-    }*/
 
     private fun parseDurationToHours(duration: String): Double {
         val parts = duration.split(":").map { it.toInt() }
@@ -140,4 +248,29 @@ class ViewGraphTotalHours : AppCompatActivity() {
         val seconds = parts[2]
         return hours + minutes / 60.0 + seconds / 3600.0
     }
+        private fun parseDate(dateString: String?): Date? {
+            val dateFormats = arrayOf(
+                SimpleDateFormat("dd/MM/yyyy", Locale.getDefault()),
+                SimpleDateFormat(
+                    "EEE MMM dd HH:mm:ss z yyyy",
+                    Locale.ENGLISH
+                ) // Format for "Sun Jun 09 19:59:44 GMT+02:00 2024"
+            )
+
+            for (format in dateFormats) {
+                try {
+                    return format.parse(dateString)
+                } catch (e: ParseException) {
+                    // Try the next format
+                }
+            }
+            return null
+        }
+
+    private fun add(i: Double, entryCheck: Double)
+    {
+        dataSet.appendData(DataPoint((i.toDouble()), entryCheck), true, 100000)
+    }
+
+
 }

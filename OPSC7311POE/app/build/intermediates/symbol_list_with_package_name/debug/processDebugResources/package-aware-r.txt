@@ -85,10 +85,6 @@ animator nav_default_enter_anim
 animator nav_default_exit_anim
 animator nav_default_pop_enter_anim
 animator nav_default_pop_exit_anim
-array com_google_android_gms_fonts_certs
-array com_google_android_gms_fonts_certs_dev
-array com_google_android_gms_fonts_certs_prod
-array preloaded_fonts
 attr SharedValue
 attr SharedValueId
 attr action
@@ -674,7 +670,6 @@ attr imagePanX
 attr imagePanY
 attr imageRotate
 attr imageZoom
-attr implementationMode
 attr indeterminateAnimationType
 attr indeterminateProgressStyle
 attr indicatorColor
@@ -1054,7 +1049,6 @@ attr roundPercent
 attr route
 attr saturation
 attr scaleFromTextSize
-attr scaleType
 attr scopeUris
 attr scrimAnimationDuration
 attr scrimBackground
@@ -3074,6 +3068,7 @@ drawable ambilwarna_target
 drawable arc_1
 drawable avd_hide_password
 drawable avd_show_password
+drawable bag
 drawable bar
 drawable baseline_add_24
 drawable baseline_airplay_24
@@ -3093,7 +3088,6 @@ drawable baseline_ios_share_24
 drawable baseline_person_24
 drawable baseline_timer_24
 drawable bed
-drawable biphobia
 drawable blueskyback
 drawable border
 drawable bordertwo
@@ -3134,13 +3128,10 @@ drawable design_ic_visibility
 drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
-drawable drink
 drawable file
-drawable gaming
 drawable google
 drawable googleg_disabled_color_18
 drawable googleg_standard_color_18
-drawable gym
 drawable ic_arrow_back_black_24
 drawable ic_baseline_info_24
 drawable ic_baseline_person_outline_24
@@ -3168,6 +3159,7 @@ drawable ic_notifications_black_24dp
 drawable ic_search_black_24
 drawable icon
 drawable laptop
+drawable leaf
 drawable logo
 drawable m3_avd_hide_password
 drawable m3_avd_show_password
@@ -3241,7 +3233,6 @@ drawable notification_template_icon_bg
 drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
-drawable outdoors
 drawable pencilbtn
 drawable piechart
 drawable profilebtn
@@ -3250,23 +3241,22 @@ drawable rectangular_vignette_top
 drawable round_btn
 drawable roundstyle
 drawable roundstyle2
-drawable school
 drawable search
-drawable shoppingcart
+drawable shopping
 drawable skyblue
+drawable sport
 drawable taskicon
 drawable test_level_drawable
 drawable thumb
 drawable timer
+drawable tools
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
 drawable track
 drawable uploadphoto
-drawable virtualdating
 drawable whitescreen
+drawable work
 drawable write
-font butcherman
-font metal_mania
 id ALT
 id BOTTOM_END
 id BOTTOM_START
@@ -3372,7 +3362,6 @@ id auto
 id autoComplete
 id autoCompleteToEnd
 id autoCompleteToStart
-id barChart
 id barrier
 id baseline
 id beginOnFirstDraw
@@ -3389,7 +3378,6 @@ id btnCatHours
 id btnCategory
 id btnLogin
 id btnMonthlySummary
-id btnNewEvent
 id btnReset
 id btnSaveEntry
 id btnSaveProfile
@@ -3397,6 +3385,7 @@ id btnSelectHours
 id btnSignUp
 id btnStart
 id btnStop
+id btnSummary
 id btnTask
 id btnTimesheet
 id btnViewEntries
@@ -3412,6 +3401,7 @@ id callMeasure
 id cancel_action
 id cancel_button
 id carryVelocity
+id catSpinSum
 id center
 id centerCrop
 id centerInside
@@ -3432,7 +3422,6 @@ id clip_vertical
 id clockwise
 id closest
 id collapseActionView
-id compatible
 id compose_view_saveable_id_tag
 id compress
 id confirm_button
@@ -3520,9 +3509,6 @@ id expand_activities_button
 id expanded_menu
 id fade
 id fill
-id fillCenter
-id fillEnd
-id fillStart
 id fill_horizontal
 id fill_vertical
 id filled
@@ -3541,6 +3527,7 @@ id fullscreen_header
 id ghost_view
 id ghost_view_holder
 id gone
+id graf
 id graph
 id graph_wrap
 id group_divider
@@ -3555,7 +3542,6 @@ id homeAsUp
 id honorRequest
 id horizontal_only
 id ib_Icon
-id ibtnPhoto
 id icon
 id iconImageView
 id iconRecyclerView
@@ -3584,9 +3570,9 @@ id is_pooling_container_tag
 id italic
 id item_touch_helper_previous_elevation
 id iv_Back
+id iv_Google
 id iv_Password
 id iv_Pick_Colour
-id iv_ProfPhoto
 id iv_Username
 id iv_colourPreview
 id jumpToEnd
@@ -3604,6 +3590,7 @@ id linear
 id linearLayout3
 id linearLayout6
 id listMode
+id listView
 id list_item
 id locale
 id ltr
@@ -3721,7 +3708,6 @@ id path
 id pathRelative
 id peekHeight
 id percent
-id performance
 id pin
 id pooling_container_listener_holder_tag
 id position
@@ -3743,7 +3729,6 @@ id right_side
 id rounded
 id row_index_key
 id rtl
-id rvCalendar
 id saveTimebtn
 id save_non_transition_alpha
 id save_overlay_view
@@ -3911,10 +3896,7 @@ id tvSelectPeriod1
 id tvStartDate
 id tvStartDate1
 id tvStartTime
-id tvTaskDescription
-id tvTaskName
 id tvTaskSpinner
-id tvTaskTime
 id tvTask_description
 id tvTask_end_time
 id tvTask_name
@@ -3941,6 +3923,7 @@ id tv_Time_Dash
 id tv_Title
 id tv_Total
 id tv_Username
+id tv_add_event
 id tv_add_eventevent
 id tvuserProfile
 id txtEmail
@@ -3953,6 +3936,7 @@ id unlabeled
 id up
 id useLogo
 id vMonthlySummary
+id v_Event
 id vertLayout
 id vertical_only
 id view
@@ -4112,6 +4096,7 @@ layout activity_task_calendar
 layout activity_timer
 layout activity_total_cat_hours
 layout activity_view_graph_total_hours
+layout activity_view_graphs
 layout activity_view_tasks
 layout activity_view_time_sheet_entry
 layout ambilwarna_dialog
@@ -4133,11 +4118,11 @@ layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
 layout dialog_icon_picker
+layout fragment_icon_picker
 layout ime_base_split_test_activity
 layout ime_secondary_split_test_activity
 layout item_icon
 layout item_select
-layout item_task
 layout m3_alert_dialog
 layout m3_alert_dialog_actions
 layout m3_alert_dialog_title
@@ -4459,7 +4444,6 @@ string name_
 string nav_app_bar_navigate_up_description
 string nav_app_bar_open_drawer_description
 string navigation_menu
-string new_event
 string no_account
 string not_selected
 string note
@@ -5785,7 +5769,6 @@ styleable OnClick clickAction targetId
 styleable OnSwipe autoCompleteMode dragDirection dragScale dragThreshold limitBoundsTo maxAcceleration maxVelocity moveWhenScrollAtTop nestedScrollFlags onTouchUp rotationCenterId springBoundary springDamping springMass springStiffness springStopThreshold touchAnchorId touchAnchorSide touchRegionId
 styleable PopupWindow android_popupBackground android_popupAnimationStyle overlapAnchor
 styleable PopupWindowBackgroundState state_above_anchor
-styleable PreviewView implementationMode scaleType
 styleable PropertySet android_visibility android_alpha layout_constraintTag motionProgress visibilityMode
 styleable RadialViewGroup materialCircleRadius
 styleable RangeSlider minSeparation values
@@ -5832,5 +5815,4 @@ styleable ViewTransition android_id SharedValue SharedValueId clearsTag duration
 styleable include constraintSet
 xml backup_rules
 xml data_extraction_rules
-xml file_paths
 xml ga_ad_services_config

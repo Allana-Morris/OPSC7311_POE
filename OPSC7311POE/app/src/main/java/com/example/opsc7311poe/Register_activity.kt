@@ -95,7 +95,6 @@ class Register_activity : AppCompatActivity() {
                                     val message = "User signed up: ${user.username}"
                                     Toast.makeText(this, message, Toast.LENGTH_SHORT).show()
 
-                                    val intent = Intent(this, ViewTasks_activity::class.java)
                                     startActivity(intent)
                                 }.addOnFailureListener {
                                     Toast.makeText(this, "Failed to sign up user.", Toast.LENGTH_SHORT).show()
