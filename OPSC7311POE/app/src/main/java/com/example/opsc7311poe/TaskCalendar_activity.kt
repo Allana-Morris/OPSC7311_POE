@@ -110,11 +110,16 @@ class TaskCalendar_activity : AppCompatActivity() {
             FirebaseDatabase.getInstance("https://atomic-affinity-421915-default-rtdb.europe-west1.firebasedatabase.app/")
 
         //val DbRef = database.getReference("user")
+        val currentUsername = SessionUser.currentUser?.username
+        if (currentUsername != null) {
+            currentUserTasksRef = database.getReference("user").child(currentUsername).child("categories")
+        } else {
+            Toast.makeText(this, "Current user not found", Toast.LENGTH_SHORT).show()
+            return
+        }
 
-
-
-        // Read data from Firebase
-        reference.addValueEventListener(object : ValueEventListener {
+        // Add a ValueEventListener to fetch tasks from the database
+        currentUserTasksRef.addListenerForSingleValueEvent(object : ValueEventListener {
             override fun onDataChange(dataSnapshot: DataSnapshot) {
                 for (categorySnapshot in dataSnapshot.children) {
                     for (taskSnapshot in categorySnapshot.child("tasks").children) {
