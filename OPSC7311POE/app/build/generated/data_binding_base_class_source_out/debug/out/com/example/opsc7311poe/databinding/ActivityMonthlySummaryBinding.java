@@ -7,9 +7,6 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.Spinner;
-import android.widget.TableLayout;
-import android.widget.TableRow;
-import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.constraintlayout.widget.ConstraintLayout;
@@ -45,99 +42,12 @@ public final class ActivityMonthlySummaryBinding implements ViewBinding {
   public final ConstraintLayout main;
 
   @NonNull
-  public final TableLayout tlGraphData;
-
-  @NonNull
-  public final TableRow trAveHours;
-
-  @NonNull
-  public final TableRow trBlank;
-
-  @NonNull
-  public final TableRow trBusiestWeek;
-
-  @NonNull
-  public final TableRow trMostProdDay;
-
-  @NonNull
-  public final TableRow trSmallBlank;
-
-  @NonNull
-  public final TableRow trSmallBlank2;
-
-  @NonNull
-  public final TableRow trSmallBlank3;
-
-  @NonNull
-  public final TableRow trSmallBlank4;
-
-  @NonNull
-  public final TableRow trSmallBlank5;
-
-  @NonNull
-  public final TableRow trTimeTask;
-
-  @NonNull
-  public final TableRow trTopCat;
-
-  @NonNull
-  public final TableRow trTotalHours;
-
-  @NonNull
-  public final TextView tvAveHoursAns;
-
-  @NonNull
-  public final TextView tvAveHoursPD;
-
-  @NonNull
-  public final TextView tvBusiestWeek;
-
-  @NonNull
-  public final TextView tvBusyWeekAns;
-
-  @NonNull
-  public final TextView tvMostProdDay;
-
-  @NonNull
-  public final TextView tvMostProdDayAns;
-
-  @NonNull
-  public final TextView tvMostTimeTask;
-
-  @NonNull
-  public final TextView tvMostTimeTaskAns;
-
-  @NonNull
-  public final TextView tvTopCatAns;
-
-  @NonNull
-  public final TextView tvTopCategory;
-
-  @NonNull
-  public final TextView tvTotHoursAns;
-
-  @NonNull
-  public final TextView tvTotalHours;
-
-  @NonNull
   public final View vMonthlySummary;
 
   private ActivityMonthlySummaryBinding(@NonNull ConstraintLayout rootView,
       @NonNull BottomNavigationView bottomNav, @NonNull Button btnSummary,
       @NonNull Spinner catSpinSum, @NonNull GraphView idGraphView, @NonNull ImageView imageView,
-      @NonNull ConstraintLayout main, @NonNull TableLayout tlGraphData,
-      @NonNull TableRow trAveHours, @NonNull TableRow trBlank, @NonNull TableRow trBusiestWeek,
-      @NonNull TableRow trMostProdDay, @NonNull TableRow trSmallBlank,
-      @NonNull TableRow trSmallBlank2, @NonNull TableRow trSmallBlank3,
-      @NonNull TableRow trSmallBlank4, @NonNull TableRow trSmallBlank5,
-      @NonNull TableRow trTimeTask, @NonNull TableRow trTopCat, @NonNull TableRow trTotalHours,
-      @NonNull TextView tvAveHoursAns, @NonNull TextView tvAveHoursPD,
-      @NonNull TextView tvBusiestWeek, @NonNull TextView tvBusyWeekAns,
-      @NonNull TextView tvMostProdDay, @NonNull TextView tvMostProdDayAns,
-      @NonNull TextView tvMostTimeTask, @NonNull TextView tvMostTimeTaskAns,
-      @NonNull TextView tvTopCatAns, @NonNull TextView tvTopCategory,
-      @NonNull TextView tvTotHoursAns, @NonNull TextView tvTotalHours,
-      @NonNull View vMonthlySummary) {
+      @NonNull ConstraintLayout main, @NonNull View vMonthlySummary) {
     this.rootView = rootView;
     this.bottomNav = bottomNav;
     this.btnSummary = btnSummary;
@@ -145,31 +55,6 @@ public final class ActivityMonthlySummaryBinding implements ViewBinding {
     this.idGraphView = idGraphView;
     this.imageView = imageView;
     this.main = main;
-    this.tlGraphData = tlGraphData;
-    this.trAveHours = trAveHours;
-    this.trBlank = trBlank;
-    this.trBusiestWeek = trBusiestWeek;
-    this.trMostProdDay = trMostProdDay;
-    this.trSmallBlank = trSmallBlank;
-    this.trSmallBlank2 = trSmallBlank2;
-    this.trSmallBlank3 = trSmallBlank3;
-    this.trSmallBlank4 = trSmallBlank4;
-    this.trSmallBlank5 = trSmallBlank5;
-    this.trTimeTask = trTimeTask;
-    this.trTopCat = trTopCat;
-    this.trTotalHours = trTotalHours;
-    this.tvAveHoursAns = tvAveHoursAns;
-    this.tvAveHoursPD = tvAveHoursPD;
-    this.tvBusiestWeek = tvBusiestWeek;
-    this.tvBusyWeekAns = tvBusyWeekAns;
-    this.tvMostProdDay = tvMostProdDay;
-    this.tvMostProdDayAns = tvMostProdDayAns;
-    this.tvMostTimeTask = tvMostTimeTask;
-    this.tvMostTimeTaskAns = tvMostTimeTaskAns;
-    this.tvTopCatAns = tvTopCatAns;
-    this.tvTopCategory = tvTopCategory;
-    this.tvTotHoursAns = tvTotHoursAns;
-    this.tvTotalHours = tvTotalHours;
     this.vMonthlySummary = vMonthlySummary;
   }
 
@@ -232,156 +117,6 @@ public final class ActivityMonthlySummaryBinding implements ViewBinding {
 
       ConstraintLayout main = (ConstraintLayout) rootView;
 
-      id = R.id.tlGraphData;
-      TableLayout tlGraphData = ViewBindings.findChildViewById(rootView, id);
-      if (tlGraphData == null) {
-        break missingId;
-      }
-
-      id = R.id.trAveHours;
-      TableRow trAveHours = ViewBindings.findChildViewById(rootView, id);
-      if (trAveHours == null) {
-        break missingId;
-      }
-
-      id = R.id.trBlank;
-      TableRow trBlank = ViewBindings.findChildViewById(rootView, id);
-      if (trBlank == null) {
-        break missingId;
-      }
-
-      id = R.id.trBusiestWeek;
-      TableRow trBusiestWeek = ViewBindings.findChildViewById(rootView, id);
-      if (trBusiestWeek == null) {
-        break missingId;
-      }
-
-      id = R.id.trMostProdDay;
-      TableRow trMostProdDay = ViewBindings.findChildViewById(rootView, id);
-      if (trMostProdDay == null) {
-        break missingId;
-      }
-
-      id = R.id.trSmallBlank;
-      TableRow trSmallBlank = ViewBindings.findChildViewById(rootView, id);
-      if (trSmallBlank == null) {
-        break missingId;
-      }
-
-      id = R.id.trSmallBlank2;
-      TableRow trSmallBlank2 = ViewBindings.findChildViewById(rootView, id);
-      if (trSmallBlank2 == null) {
-        break missingId;
-      }
-
-      id = R.id.trSmallBlank3;
-      TableRow trSmallBlank3 = ViewBindings.findChildViewById(rootView, id);
-      if (trSmallBlank3 == null) {
-        break missingId;
-      }
-
-      id = R.id.trSmallBlank4;
-      TableRow trSmallBlank4 = ViewBindings.findChildViewById(rootView, id);
-      if (trSmallBlank4 == null) {
-        break missingId;
-      }
-
-      id = R.id.trSmallBlank5;
-      TableRow trSmallBlank5 = ViewBindings.findChildViewById(rootView, id);
-      if (trSmallBlank5 == null) {
-        break missingId;
-      }
-
-      id = R.id.trTimeTask;
-      TableRow trTimeTask = ViewBindings.findChildViewById(rootView, id);
-      if (trTimeTask == null) {
-        break missingId;
-      }
-
-      id = R.id.trTopCat;
-      TableRow trTopCat = ViewBindings.findChildViewById(rootView, id);
-      if (trTopCat == null) {
-        break missingId;
-      }
-
-      id = R.id.trTotalHours;
-      TableRow trTotalHours = ViewBindings.findChildViewById(rootView, id);
-      if (trTotalHours == null) {
-        break missingId;
-      }
-
-      id = R.id.tvAveHoursAns;
-      TextView tvAveHoursAns = ViewBindings.findChildViewById(rootView, id);
-      if (tvAveHoursAns == null) {
-        break missingId;
-      }
-
-      id = R.id.tvAveHoursPD;
-      TextView tvAveHoursPD = ViewBindings.findChildViewById(rootView, id);
-      if (tvAveHoursPD == null) {
-        break missingId;
-      }
-
-      id = R.id.tvBusiestWeek;
-      TextView tvBusiestWeek = ViewBindings.findChildViewById(rootView, id);
-      if (tvBusiestWeek == null) {
-        break missingId;
-      }
-
-      id = R.id.tvBusyWeekAns;
-      TextView tvBusyWeekAns = ViewBindings.findChildViewById(rootView, id);
-      if (tvBusyWeekAns == null) {
-        break missingId;
-      }
-
-      id = R.id.tvMostProdDay;
-      TextView tvMostProdDay = ViewBindings.findChildViewById(rootView, id);
-      if (tvMostProdDay == null) {
-        break missingId;
-      }
-
-      id = R.id.tvMostProdDayAns;
-      TextView tvMostProdDayAns = ViewBindings.findChildViewById(rootView, id);
-      if (tvMostProdDayAns == null) {
-        break missingId;
-      }
-
-      id = R.id.tvMostTimeTask;
-      TextView tvMostTimeTask = ViewBindings.findChildViewById(rootView, id);
-      if (tvMostTimeTask == null) {
-        break missingId;
-      }
-
-      id = R.id.tvMostTimeTaskAns;
-      TextView tvMostTimeTaskAns = ViewBindings.findChildViewById(rootView, id);
-      if (tvMostTimeTaskAns == null) {
-        break missingId;
-      }
-
-      id = R.id.tvTopCatAns;
-      TextView tvTopCatAns = ViewBindings.findChildViewById(rootView, id);
-      if (tvTopCatAns == null) {
-        break missingId;
-      }
-
-      id = R.id.tvTopCategory;
-      TextView tvTopCategory = ViewBindings.findChildViewById(rootView, id);
-      if (tvTopCategory == null) {
-        break missingId;
-      }
-
-      id = R.id.tvTotHoursAns;
-      TextView tvTotHoursAns = ViewBindings.findChildViewById(rootView, id);
-      if (tvTotHoursAns == null) {
-        break missingId;
-      }
-
-      id = R.id.tvTotalHours;
-      TextView tvTotalHours = ViewBindings.findChildViewById(rootView, id);
-      if (tvTotalHours == null) {
-        break missingId;
-      }
-
       id = R.id.vMonthlySummary;
       View vMonthlySummary = ViewBindings.findChildViewById(rootView, id);
       if (vMonthlySummary == null) {
@@ -389,11 +124,7 @@ public final class ActivityMonthlySummaryBinding implements ViewBinding {
       }
 
       return new ActivityMonthlySummaryBinding((ConstraintLayout) rootView, bottomNav, btnSummary,
-          catSpinSum, idGraphView, imageView, main, tlGraphData, trAveHours, trBlank, trBusiestWeek,
-          trMostProdDay, trSmallBlank, trSmallBlank2, trSmallBlank3, trSmallBlank4, trSmallBlank5,
-          trTimeTask, trTopCat, trTotalHours, tvAveHoursAns, tvAveHoursPD, tvBusiestWeek,
-          tvBusyWeekAns, tvMostProdDay, tvMostProdDayAns, tvMostTimeTask, tvMostTimeTaskAns,
-          tvTopCatAns, tvTopCategory, tvTotHoursAns, tvTotalHours, vMonthlySummary);
+          catSpinSum, idGraphView, imageView, main, vMonthlySummary);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

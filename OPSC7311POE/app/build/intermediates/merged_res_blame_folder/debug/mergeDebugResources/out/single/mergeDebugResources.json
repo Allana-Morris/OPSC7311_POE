@@ -1,5 +1,9 @@
 [
     {
+        "merged": "com.example.opsc7311poe.app-debug-5:/xml_file_paths.xml.flat",
+        "source": "com.example.opsc7311poe.app-main-7:/xml/file_paths.xml"
+    },
+    {
         "merged": "com.example.opsc7311poe.app-debug-5:/drawable_bordertwo.xml.flat",
         "source": "com.example.opsc7311poe.app-main-7:/drawable/bordertwo.xml"
     },
@@ -184,10 +188,6 @@
         "source": "com.example.opsc7311poe.app-main-7:/drawable/baseline_discount_24.xml"
     },
     {
-        "merged": "com.example.opsc7311poe.app-debug-5:/layout_fragment_icon_picker.xml.flat",
-        "source": "com.example.opsc7311poe.app-main-7:/layout/fragment_icon_picker.xml"
-    },
-    {
         "merged": "com.example.opsc7311poe.app-debug-5:/mipmap-xxxhdpi_ic_launcher.webp.flat",
         "source": "com.example.opsc7311poe.app-main-7:/mipmap-xxxhdpi/ic_launcher.webp"
     },
@@ -344,10 +344,6 @@
         "source": "com.example.opsc7311poe.app-main-7:/layout/activity_task_calendar.xml"
     },
     {
-        "merged": "com.example.opsc7311poe.app-debug-5:/layout_activity_view_graphs.xml.flat",
-        "source": "com.example.opsc7311poe.app-main-7:/layout/activity_view_graphs.xml"
-    },
-    {
         "merged": "com.example.opsc7311poe.app-debug-5:/drawable_baseline_auto_graph_24.xml.flat",
         "source": "com.example.opsc7311poe.app-main-7:/drawable/baseline_auto_graph_24.xml"
     },
@@ -366,6 +362,10 @@
     {
         "merged": "com.example.opsc7311poe.app-debug-5:/drawable_bed.png.flat",
         "source": "com.example.opsc7311poe.app-main-7:/drawable/bed.png"
+    },
+    {
+        "merged": "com.example.opsc7311poe.app-debug-5:/font_butcherman.xml.flat",
+        "source": "com.example.opsc7311poe.app-main-7:/font/butcherman.xml"
     },
     {
         "merged": "com.example.opsc7311poe.app-debug-5:/drawable_baseline_chevron_right_24.xml.flat",
@@ -396,7 +396,15 @@
         "source": "com.example.opsc7311poe.app-main-7:/drawable/profilebtn.png"
     },
     {
+        "merged": "com.example.opsc7311poe.app-debug-5:/layout_item_task.xml.flat",
+        "source": "com.example.opsc7311poe.app-main-7:/layout/item_task.xml"
+    },
+    {
         "merged": "com.example.opsc7311poe.app-debug-5:/layout_activity_total_cat_hours.xml.flat",
         "source": "com.example.opsc7311poe.app-main-7:/layout/activity_total_cat_hours.xml"
+    },
+    {
+        "merged": "com.example.opsc7311poe.app-debug-5:/font_metal_mania.xml.flat",
+        "source": "com.example.opsc7311poe.app-main-7:/font/metal_mania.xml"
     }
 ]

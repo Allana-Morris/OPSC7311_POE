@@ -239,8 +239,6 @@ var i = 0;
 
     }
 
-
-
     private fun parseDurationToHours(duration: String): Double {
         val parts = duration.split(":").map { it.toInt() }
         val hours = parts[0]
@@ -269,7 +267,7 @@ var i = 0;
 
     private fun add(i: Double, entryCheck: Double)
     {
-        dataSet.appendData(DataPoint((i.toDouble()), entryCheck), true, 100000)
+        dataSet.appendData(DataPoint((i), entryCheck), true, 100000)
     }
 
 
