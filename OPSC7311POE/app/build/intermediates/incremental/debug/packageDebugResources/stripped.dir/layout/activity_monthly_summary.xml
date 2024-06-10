@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/skyblue"
+    android:orientation="vertical"
+    android:textAlignment="center"
+    tools:context=".MonthlySummary">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="411dp"
+        android:layout_height="73dp"
+        android:layout_marginTop="150dp"
+
+        android:scaleType="centerCrop"
+        android:src="@drawable/arc_1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/vMonthlySummary"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <com.jjoe64.graphview.GraphView
+        android:id="@+id/idGraphView"
+        android:layout_width="379dp"
+        android:layout_height="278dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <TableLayout
+        android:id="@+id/tlGraphData"
+        android:layout_width="390dp"
+        android:layout_height="256dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.476"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idGraphView">
+
+        <TableRow
+            android:id="@+id/trBlank"
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="30dp" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/trTopCat"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:gravity="center|right">
+
+                <TextView
+                    android:id="@+id/tvTopCategory"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/top_category" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center|left">
+
+                <TextView
+                    android:id="@+id/tvTopCatAns"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </TableRow>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/trSmallBlank"
+            android:layout_width="match_parent"
+            android:layout_height="20dp">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/trTotalHours"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:gravity="center|right">
+
+                <TextView
+                    android:id="@+id/tvTotalHours"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/total_hours_recorded" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center|left">
+
+                <TextView
+                    android:id="@+id/tvTotHoursAns"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </TableRow>
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/trSmallBlank2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/trAveHours"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:gravity="center|right">
+
+                <TextView
+                    android:id="@+id/tvAveHoursPD"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ave_hours_per_day" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center|left">
+
+                <TextView
+                    android:id="@+id/tvAveHoursAns"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </TableRow>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/trSmallBlank3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/trBusiestWeek"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:gravity="center|right">
+
+                <TextView
+                    android:id="@+id/tvBusiestWeek"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/busiest_week" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center|left">
+
+                <TextView
+                    android:id="@+id/tvBusyWeekAns"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </TableRow>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/trSmallBlank4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/trMostProdDay"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:gravity="center|right">
+
+                <TextView
+                    android:id="@+id/tvMostProdDay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/most_productive_day" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center|left">
+
+                <TextView
+                    android:id="@+id/tvMostProdDayAns"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </TableRow>
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/trSmallBlank5"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/trTimeTask"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:gravity="center|right">
+
+                <TextView
+                    android:id="@+id/tvMostTimeTask"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/most_time_consuming_task" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center|left">
+
+                <TextView
+                    android:id="@+id/tvMostTimeTaskAns"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </TableRow>
+        </TableRow>
+
+    </TableLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNav"
+        android:layout_width="415dp"
+        android:layout_height="90dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:scrollIndicators="left"
+        app:itemIconTint="@color/nav_item_color_state"
+        app:itemTextColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/nav_menu" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

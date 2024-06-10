@@ -106,5 +106,6 @@
     <string name="calendar_fragment">Calendar Fragment</string>
     <string name="home_fragment">Home fragment</string>
     <string name="choose_an_icon">Choose an Icon</string>
+    <string name="new_event">New Event</string>
 
 </resources>

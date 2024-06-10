@@ -3365,7 +3365,6 @@ int id auto 0x7f080065
 int id autoComplete 0x7f080066
 int id autoCompleteToEnd 0x7f080067
 int id autoCompleteToStart 0x7f080068
-int id barChart 0x7f080069
 int id barrier 0x7f08006a
 int id baseline 0x7f08006b
 int id beginOnFirstDraw 0x7f08006c
@@ -3389,6 +3388,7 @@ int id btnSelectHours 0x7f08007d
 int id btnSignUp 0x7f08007e
 int id btnStart 0x7f08007f
 int id btnStop 0x7f080080
+int id btnSummary 0x7f0802c8
 int id btnTask 0x7f080081
 int id btnTimesheet 0x7f080082
 int id btnViewEntries 0x7f080083
@@ -3404,6 +3404,7 @@ int id callMeasure 0x7f08008c
 int id cancel_action 0x7f08008d
 int id cancel_button 0x7f08008e
 int id carryVelocity 0x7f08008f
+int id catSpinSum 0x7f0802c7
 int id center 0x7f080090
 int id centerCrop 0x7f080091
 int id centerInside 0x7f080092
@@ -3529,6 +3530,7 @@ int id fullscreen_header 0x7f080109
 int id ghost_view 0x7f08010a
 int id ghost_view_holder 0x7f08010b
 int id gone 0x7f08010c
+int id graf 0x7f0802c5
 int id graph 0x7f08010d
 int id graph_wrap 0x7f08010e
 int id group_divider 0x7f08010f

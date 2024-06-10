@@ -76,7 +76,6 @@ drawable virtualdating
 drawable whitescreen
 drawable work
 drawable write
-id barChart
 id bottomNav
 id btnCatHours
 id btnCategory
@@ -89,6 +88,7 @@ id btnSelectHours
 id btnSignUp
 id btnStart
 id btnStop
+id btnSummary
 id btnTask
 id btnTimesheet
 id btnViewEntries
@@ -98,6 +98,7 @@ id btn_Google_signin
 id btn_Login
 id button
 id calendar
+id catSpinSum
 id chooseWeek
 id chooseWeek1
 id constraintLayout
@@ -120,6 +121,7 @@ id edtUserNameEdit
 id empyViews
 id ett_Max_Goal
 id ett_Min_Goal
+id graf
 id home
 id ib_Icon
 id iconImageView

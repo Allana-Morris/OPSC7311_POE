@@ -3366,7 +3366,6 @@ id auto
 id autoComplete
 id autoCompleteToEnd
 id autoCompleteToStart
-id barChart
 id barrier
 id baseline
 id beginOnFirstDraw
@@ -3390,6 +3389,7 @@ id btnSelectHours
 id btnSignUp
 id btnStart
 id btnStop
+id btnSummary
 id btnTask
 id btnTimesheet
 id btnViewEntries
@@ -3405,6 +3405,7 @@ id callMeasure
 id cancel_action
 id cancel_button
 id carryVelocity
+id catSpinSum
 id center
 id centerCrop
 id centerInside
@@ -3530,6 +3531,7 @@ id fullscreen_header
 id ghost_view
 id ghost_view_holder
 id gone
+id graf
 id graph
 id graph_wrap
 id group_divider

@@ -32,10 +32,10 @@ public final class ActivityLoginBinding implements ViewBinding {
   public final ImageView imageView;
 
   @NonNull
-  public final ImageView ivGoogle;
+  public final ImageView ivPassword;
 
   @NonNull
-  public final ImageView ivPassword;
+  public final ImageView ivProfPhoto;
 
   @NonNull
   public final ImageView ivUsername;
@@ -65,8 +65,8 @@ public final class ActivityLoginBinding implements ViewBinding {
   public final View view;
 
   private ActivityLoginBinding(@NonNull ConstraintLayout rootView, @NonNull Button btnGoogleSignin,
-      @NonNull Button btnLogin, @NonNull ImageView imageView, @NonNull ImageView ivGoogle,
-      @NonNull ImageView ivPassword, @NonNull ImageView ivUsername, @NonNull ConstraintLayout main,
+      @NonNull Button btnLogin, @NonNull ImageView imageView, @NonNull ImageView ivPassword,
+      @NonNull ImageView ivProfPhoto, @NonNull ImageView ivUsername, @NonNull ConstraintLayout main,
       @NonNull TextView tvNoAccount, @NonNull TextView tvOpenRegister, @NonNull EditText tvPassword,
       @NonNull TextView tvResetPassword, @NonNull TextView tvTitle, @NonNull EditText tvUsername,
       @NonNull View view) {
@@ -74,8 +74,8 @@ public final class ActivityLoginBinding implements ViewBinding {
     this.btnGoogleSignin = btnGoogleSignin;
     this.btnLogin = btnLogin;
     this.imageView = imageView;
-    this.ivGoogle = ivGoogle;
     this.ivPassword = ivPassword;
+    this.ivProfPhoto = ivProfPhoto;
     this.ivUsername = ivUsername;
     this.main = main;
     this.tvNoAccount = tvNoAccount;
@@ -132,15 +132,15 @@ public final class ActivityLoginBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.iv_Google;
-      ImageView ivGoogle = ViewBindings.findChildViewById(rootView, id);
-      if (ivGoogle == null) {
-        break missingId;
-      }
-
       id = R.id.iv_Password;
       ImageView ivPassword = ViewBindings.findChildViewById(rootView, id);
       if (ivPassword == null) {
+        break missingId;
+      }
+
+      id = R.id.iv_ProfPhoto;
+      ImageView ivProfPhoto = ViewBindings.findChildViewById(rootView, id);
+      if (ivProfPhoto == null) {
         break missingId;
       }
 
@@ -195,7 +195,7 @@ public final class ActivityLoginBinding implements ViewBinding {
       }
 
       return new ActivityLoginBinding((ConstraintLayout) rootView, btnGoogleSignin, btnLogin,
-          imageView, ivGoogle, ivPassword, ivUsername, main, tvNoAccount, tvOpenRegister,
+          imageView, ivPassword, ivProfPhoto, ivUsername, main, tvNoAccount, tvOpenRegister,
           tvPassword, tvResetPassword, tvTitle, tvUsername, view);
     }
     String missingId = rootView.getResources().getResourceName(id);

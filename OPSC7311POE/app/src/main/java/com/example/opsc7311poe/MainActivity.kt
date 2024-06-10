@@ -13,6 +13,9 @@ import androidx.core.view.WindowInsetsCompat
 import androidx.fragment.app.Fragment
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.google.firebase.Firebase
+import com.google.firebase.database.DataSnapshot
+import com.google.firebase.database.DatabaseError
+import com.google.firebase.database.ValueEventListener
 import com.google.firebase.firestore.firestore
 
 class MainActivity : AppCompatActivity() {
@@ -20,11 +23,16 @@ class MainActivity : AppCompatActivity() {
     val AppDataBase = Firebase.firestore
     lateinit var bottomNav: BottomNavigationView
 
+
+
     @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_main)
+
+
+
         //Variables for each button on Navbar™
 
         bottomNav = findViewById(R.id.bottomNav) as BottomNavigationView
@@ -116,7 +124,7 @@ class MainActivity : AppCompatActivity() {
 
             val ViewGraphintent = Intent(this, ViewGraphTotalHours::class.java)
             startActivity(ViewGraphintent)
-        }
+            }
 
         activityMonthlySummary.setOnClickListener{
 
@@ -130,10 +138,13 @@ class MainActivity : AppCompatActivity() {
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             val headerText: TextView = findViewById(R.id.tvBlackBox)
-            headerText.text = SessionUser.currentUser?.username ?: "its null L"
+
+            headerText.text = "Welcome Back, " + SessionUser.currentUser?.username
             insets
 
         }
     }
 
-}
+
+
+    }
