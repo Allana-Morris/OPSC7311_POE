@@ -5,8 +5,6 @@ Lifetime by SARS
 - Reilly Mare - ST10080623
 - Salem Ali - ST10082869
 
-Demonstration Video:
-https://youtu.be/SwyaqPQT1tk
 
 Feature One - Timer:
 This feature allows the user to time how long they spend on a certain task while they are doing said task. They will be prompted select the category and task that they will be timing for. Upon clicking save, it saves the task recording immediately. Their entry will be saved just as if they manually entered the time themselves using the enter timesheet entry page.
