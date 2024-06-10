@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/skyblue"
+    android:orientation="vertical"
+    android:textAlignment="center"
+    tools:context=".MonthlySummary">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="411dp"
+        android:layout_height="73dp"
+        android:layout_marginTop="88dp"
+
+        android:scaleType="centerCrop"
+        android:src="@drawable/arc_1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/vMonthlySummary"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <com.jjoe64.graphview.GraphView
+        android:id="@+id/idGraphView"
+        android:layout_width="379dp"
+        android:layout_height="278dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnSummary" />
+
+    <Spinner
+        android:id="@+id/catSpinSum"
+        android:layout_width="242dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="12dp"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <Button
+        android:id="@+id/btnSummary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="@string/select"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/catSpinSum" />
+
+    <TableLayout
+        android:layout_width="391dp"
+        android:layout_height="153dp"
+        app:layout_constraintBottom_toTopOf="@+id/bottomNav"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idGraphView">
+
+        <TableRow
+            android:layout_width="130dp"
+            android:layout_height="130dp">
+
+            <TableRow
+                android:layout_width="193dp"
+                android:layout_height="match_parent"
+                android:gravity="center|right">
+
+                <TextView
+                    android:id="@+id/tvMinHours"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/minimum_hours_goal"
+                    android:textAlignment="textEnd" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center|left">
+
+                <TextView
+                    android:id="@+id/tvUserMin"
+                    android:layout_width="195dp"
+                    android:layout_height="match_parent"
+                    android:text="" />
+            </TableRow>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="130dp"
+            android:layout_height="130dp">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center|right">
+
+                <TextView
+                    android:id="@+id/tvMaxHours"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/maximum_hours_goal" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center|left">
+
+                <TextView
+                    android:id="@+id/tvUserMax"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="" />
+            </TableRow>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="130dp"
+            android:layout_height="130dp">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center|right">
+
+                <TextView
+                    android:id="@+id/tvAveHoursPD"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/average_hours_per_day" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center|left">
+
+                <TextView
+                    android:id="@+id/tvUserAve"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="" />
+            </TableRow>
+        </TableRow>
+
+    </TableLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNav"
+        android:layout_width="415dp"
+        android:layout_height="90dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:scrollIndicators="none"
+        app:itemIconTint="@color/nav_item_color_state"
+        app:itemTextColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/nav_menu" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
