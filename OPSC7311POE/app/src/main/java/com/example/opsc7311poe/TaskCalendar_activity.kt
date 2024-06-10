@@ -4,16 +4,21 @@ import android.annotation.SuppressLint
 import android.content.Intent
 import android.icu.text.SimpleDateFormat
 import android.os.Bundle
-import android.widget.ListView
+import android.util.Log
 import android.widget.TextView
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import androidx.recyclerview.widget.RecyclerView.Recycler
+import com.example.opsc7311poe.TaskRepository.tasks
 import com.google.android.material.bottomnavigation.BottomNavigationView
-import com.google.type.DateTime
+import com.google.firebase.database.DataSnapshot
+import com.google.firebase.database.DatabaseError
+import com.google.firebase.database.DatabaseReference
+import com.google.firebase.database.FirebaseDatabase
+import com.google.firebase.database.ValueEventListener
 import java.time.LocalDate
 import java.util.Calendar
 import java.util.Locale
@@ -24,19 +29,16 @@ class TaskCalendar_activity : AppCompatActivity() {
     lateinit var backButton: TextView
     lateinit var forwardButton: TextView
     var datenow = LocalDate.now()
-    var onScreenDate = datenow
+    private lateinit var taskAdapter: TaskAdapter
     lateinit var bottomNav: BottomNavigationView
 
-
+    lateinit var  currentUserTasksRef: DatabaseReference
+    private val tasks = mutableListOf<Task>()
     private val dateFormat = SimpleDateFormat("dd MM", Locale.getDefault())
     private var currentDate = Calendar.getInstance()
+    val database = FirebaseDatabase.getInstance()
+    val reference = database.getReference("categories")
 
-    private val tasks = listOf(
-       Task("Meeting", "Discuss project status", true, 10.0, 11.0),
-       // Task("Coding", "Work on feature X", false, 11.5, 13.0),
-       // Task("Lunch", "Take a break", true, 13.0, 14.0),
-       // Task("Review", "Code review", false, 14.0, 15.0)
-    )
 
     @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -52,7 +54,8 @@ class TaskCalendar_activity : AppCompatActivity() {
         DateToday.text = dateFormat.format(currentDate.time)
 
         taskListing.layoutManager = LinearLayoutManager(this)
-        taskListing.adapter = TaskAdapter(tasks)
+        taskAdapter = TaskAdapter(tasks)
+        taskListing.adapter = taskAdapter
 
         //Opens Create Task page when clicked
         set_event.setOnClickListener {
@@ -102,15 +105,49 @@ class TaskCalendar_activity : AppCompatActivity() {
             }
         }
 
+        //For Each loop for Categories
+        val database: FirebaseDatabase =
+            FirebaseDatabase.getInstance("https://atomic-affinity-421915-default-rtdb.europe-west1.firebasedatabase.app/")
+
+        //val DbRef = database.getReference("user")
+
+
+
+        // Read data from Firebase
+        reference.addValueEventListener(object : ValueEventListener {
+            override fun onDataChange(dataSnapshot: DataSnapshot) {
+                for (categorySnapshot in dataSnapshot.children) {
+                    for (taskSnapshot in categorySnapshot.child("tasks").children) {
+                        val task = taskSnapshot.getValue(Task::class.java)
+                        task?.let {
+                            if (it.isRepeating) {
+                                tasks.add(it)
+                            }
+                        }
+                    }
+                }
+                tasks.add(2, Task("Cellphone", "You used to call me on my", true, 12.0, 14.0))
+                taskAdapter.notifyDataSetChanged()
+            }
+
+            override fun onCancelled(databaseError: DatabaseError) {
+                Toast.makeText(
+                    applicationContext,
+                    "Failed to retrieve tasks: ${databaseError.message}",
+                    Toast.LENGTH_SHORT
+                ).show()
+            }
+        })
+
+
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
     }
-
-    private fun updateDateDisplay() {
-        DateToday.text = dateFormat.format(currentDate.time)
-    }
+        private fun updateDateDisplay() {
+            DateToday.text = dateFormat.format(currentDate.time)
+        }
 
 }
